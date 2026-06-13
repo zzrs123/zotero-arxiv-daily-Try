@@ -9,6 +9,7 @@ from datetime import datetime
 from .reranker import get_reranker_cls
 from .construct_email import render_email
 from .utils import send_email
+from .archive import archive_papers
 from openai import OpenAI
 from tqdm import tqdm
 
@@ -157,6 +158,12 @@ class Executor:
         elif not self.config.executor.send_empty:
             logger.info("No new papers found. No email will be sent.")
             return
+        if self.config.archive.enabled:
+            archive_papers(
+                reranked_papers,
+                output_root=self.config.archive.output_dir,
+                download_pdfs=self.config.archive.download_pdfs,
+            )
         logger.info("Sending email...")
         email_content = render_email(reranked_papers)
         send_email(self.config, email_content)

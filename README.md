@@ -126,8 +126,37 @@ uv run python -m zotero_arxiv_daily.openalex_search \
   --keywords "spatial transcriptomics;cell-cell communication;niche analysis" \
   --journals "Nature Methods;Bioinformatics" \
   --from-date 2025-01-01 --to-date 2026-06-14 \
-  --max-results 30 --summarize
+  --max-results 30 --summarize --output-dir .
 ```
+
+Both the daily run and on-demand search create a dated archive:
+
+```text
+PaperDailyReading/
+└── 2026-06-14/
+    ├── papers.csv
+    ├── summaries.md
+    └── pdf/
+        ├── 2026-06-14_01_Paper title.pdf
+        └── 2026-06-14_02_Another paper.pdf
+```
+
+Only publicly accessible PDFs are downloaded. Missing or blocked PDFs are recorded by URL in
+the CSV and Markdown files without failing the complete run.
+
+On Windows, run the same search from the repository root with:
+
+```powershell
+.\scripts\search-papers.ps1 `
+  -Keywords "spatial transcriptomics;cell-cell communication;niche analysis" `
+  -Journals "Nature Methods;Bioinformatics" `
+  -FromDate "2025-01-01" `
+  -ToDate "2026-06-14" `
+  -MaxResults 30
+```
+
+The Windows helper invokes `uv` through Python, so it also works when the `uv` executable is
+not yet available on `PATH`.
 >[!NOTE]
 > `${oc.env:XXX,yyy}` means the value of the environment variable `XXX`. If the variable is not set, the default value `yyy` will be used.
 

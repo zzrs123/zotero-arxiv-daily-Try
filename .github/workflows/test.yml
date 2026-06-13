@@ -32,3 +32,10 @@ jobs:
           echo "Use custom config: "
           cat config/custom.yaml
           uv run src/zotero_arxiv_daily/main.py
+
+      - name: Upload test paper archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-paper-archive
+          path: 20??-??-??
+          if-no-files-found: warn

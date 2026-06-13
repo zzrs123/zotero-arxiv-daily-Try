@@ -1,5 +1,4 @@
 import argparse
-import csv
 import os
 from datetime import date
 from pathlib import Path
@@ -8,6 +7,7 @@ import requests
 from openai import OpenAI
 
 from .protocol import Paper
+from .archive import archive_papers
 
 
 OPENALEX_API = "https://api.openalex.org"
@@ -112,28 +112,6 @@ class OpenAlexSearch:
         )
 
 
-def write_csv(papers: list[Paper], output: Path) -> None:
-    output.parent.mkdir(parents=True, exist_ok=True)
-    with output.open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(
-            handle,
-            fieldnames=["title", "authors", "abstract", "tldr", "url", "pdf_url", "source"],
-        )
-        writer.writeheader()
-        for paper in papers:
-            writer.writerow(
-                {
-                    "title": paper.title,
-                    "authors": "; ".join(paper.authors),
-                    "abstract": paper.abstract,
-                    "tldr": paper.tldr or "",
-                    "url": paper.url,
-                    "pdf_url": paper.pdf_url or "",
-                    "source": paper.source,
-                }
-            )
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="Search journal articles through OpenAlex")
     parser.add_argument("--keywords", required=True, help="Semicolon-separated keywords (OR)")
@@ -141,7 +119,9 @@ def main() -> None:
     parser.add_argument("--from-date", required=True, help="Start date, YYYY-MM-DD")
     parser.add_argument("--to-date", default=date.today().isoformat(), help="End date, YYYY-MM-DD")
     parser.add_argument("--max-results", type=int, default=30)
-    parser.add_argument("--output", default="paper-search-results.csv")
+    parser.add_argument("--output-dir", default=".")
+    parser.add_argument("--archive-date", default=date.today().isoformat())
+    parser.add_argument("--skip-pdf-download", action="store_true")
     parser.add_argument("--summarize", action="store_true")
     args = parser.parse_args()
 
@@ -171,8 +151,13 @@ def main() -> None:
         for paper in papers:
             paper.generate_tldr(openai_client, llm_config)
 
-    write_csv(papers, Path(args.output))
-    print(f"Saved {len(papers)} papers to {args.output}")
+    archive_dir = archive_papers(
+        papers,
+        output_root=Path(args.output_dir),
+        run_date=args.archive_date,
+        download_pdfs=not args.skip_pdf_download,
+    )
+    print(f"Saved {len(papers)} papers to {archive_dir}")
 
 
 if __name__ == "__main__":

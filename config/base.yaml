@@ -47,6 +47,11 @@ paper_filter:
   include_keywords: null # Keep papers whose title or abstract contains any keyword (OR matching, case-insensitive). Example: ["spatial transcriptomics", "cell-cell communication"]
   exclude_keywords: null # Exclude papers whose title or abstract contains any keyword. Exclusions take precedence. Example: ["clinical trial", "case report"]
 
+archive:
+  enabled: true # Save papers.csv, summaries.md, and available PDFs in a dated folder.
+  output_dir: . # The repository root locally; for example E:/PaperDailyReading.
+  download_pdfs: true # Download only PDFs that are publicly accessible.
+
 executor:
   debug: false # Whether to use debug mode. Example: true
   send_empty: false # Whether to send an empty email even if no new papers today. Example: true

@@ -60,10 +60,10 @@ jobs:
             --from-date "$SEARCH_FROM_DATE" \
             --to-date "$SEARCH_TO_DATE" \
             --max-results "$SEARCH_MAX_RESULTS" \
-            --output paper-search-results.csv \
+            --output-dir PaperDailyReading \
             $summarize
-      - name: Upload CSV
+      - name: Upload paper archive
         uses: actions/upload-artifact@v4
         with:
           name: paper-search-results
-          path: paper-search-results.csv
+          path: PaperDailyReading
