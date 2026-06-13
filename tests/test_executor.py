@@ -5,8 +5,8 @@ from datetime import datetime
 import pytest
 from omegaconf import OmegaConf
 
-from zotero_arxiv_daily.executor import Executor, normalize_path_patterns
-from zotero_arxiv_daily.protocol import CorpusPaper
+from zotero_arxiv_daily.executor import Executor, normalize_keywords, normalize_path_patterns
+from zotero_arxiv_daily.protocol import CorpusPaper, Paper
 
 
 # ---------------------------------------------------------------------------
@@ -43,6 +43,19 @@ def test_normalize_path_patterns_accepts_empty_list():
 
 def test_normalize_path_patterns_accepts_none():
     assert normalize_path_patterns(None, "include_path") is None
+
+
+def test_normalize_keywords_normalizes_case_and_whitespace():
+    keywords = OmegaConf.create([" Spatial Omics ", "CELL-CELL Communication", ""])
+    assert normalize_keywords(keywords, "include_keywords") == [
+        "spatial omics",
+        "cell-cell communication",
+    ]
+
+
+def test_normalize_keywords_rejects_single_string():
+    with pytest.raises(TypeError, match="must be a list"):
+        normalize_keywords("spatial omics", "include_keywords")
 
 
 # ---------------------------------------------------------------------------
@@ -97,6 +110,48 @@ def test_filter_corpus_no_filters_returns_all():
     ]
     filtered = executor.filter_corpus(corpus)
     assert filtered == corpus
+
+
+def _make_paper(title, abstract):
+    return Paper(
+        source="arxiv",
+        title=title,
+        authors=[],
+        abstract=abstract,
+        url="https://example.com/paper",
+    )
+
+
+def test_filter_papers_matches_include_keywords_case_insensitively():
+    executor = Executor.__new__(Executor)
+    executor.include_keywords = ["spatial transcriptomics", "niche analysis"]
+    executor.exclude_keywords = []
+    papers = [
+        _make_paper("Spatial Transcriptomics Atlas", "A tissue study."),
+        _make_paper("Unrelated Paper", "A new NICHE ANALYSIS method."),
+        _make_paper("Language Models", "General reasoning."),
+    ]
+
+    filtered = executor.filter_papers(papers)
+
+    assert [paper.title for paper in filtered] == [
+        "Spatial Transcriptomics Atlas",
+        "Unrelated Paper",
+    ]
+
+
+def test_filter_papers_exclude_keywords_take_precedence():
+    executor = Executor.__new__(Executor)
+    executor.include_keywords = ["spatial omics"]
+    executor.exclude_keywords = ["clinical trial"]
+    papers = [
+        _make_paper("Spatial Omics", "A computational method."),
+        _make_paper("Spatial Omics Clinical Trial", "A patient study."),
+    ]
+
+    filtered = executor.filter_papers(papers)
+
+    assert [paper.title for paper in filtered] == ["Spatial Omics"]
 
 
 # ---------------------------------------------------------------------------

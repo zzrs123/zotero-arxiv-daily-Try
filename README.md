@@ -102,6 +102,15 @@ executor:
   source: ['arxiv']
 ```
 Set `source.arxiv.include_cross_list: true` if you want cross-listed papers included.
+
+Optionally filter titles and abstracts by keywords. A paper is kept when any include keyword
+matches (OR matching, case-insensitive). Exclusions take precedence.
+
+```yaml
+paper_filter:
+  include_keywords: ["spatial transcriptomics", "cell-cell communication", "niche analysis", "large language model", "knowledge graph", "agent"]
+  exclude_keywords: ["clinical trial", "case report"]
+```
 >[!NOTE]
 > `${oc.env:XXX,yyy}` means the value of the environment variable `XXX`. If the variable is not set, the default value `yyy` will be used.
 

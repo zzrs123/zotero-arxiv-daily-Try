@@ -43,6 +43,10 @@ reranker:
     model: null # The model name of the embedding model. Example: text-embedding-3-large
     batch_size: null # The batch size for embedding API requests. Adjust to match your provider's limit. Example: 64
 
+paper_filter:
+  include_keywords: null # Keep papers whose title or abstract contains any keyword (OR matching, case-insensitive). Example: ["spatial transcriptomics", "cell-cell communication"]
+  exclude_keywords: null # Exclude papers whose title or abstract contains any keyword. Exclusions take precedence. Example: ["clinical trial", "case report"]
+
 executor:
   debug: false # Whether to use debug mode. Example: true
   send_empty: false # Whether to send an empty email even if no new papers today. Example: true

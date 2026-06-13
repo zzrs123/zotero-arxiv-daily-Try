@@ -3,7 +3,7 @@ from pyzotero import zotero
 from omegaconf import DictConfig, ListConfig
 from .utils import glob_match
 from .retriever import get_retriever_cls
-from .protocol import CorpusPaper
+from .protocol import CorpusPaper, Paper
 import random
 from datetime import datetime
 from .reranker import get_reranker_cls
@@ -29,11 +29,28 @@ def normalize_path_patterns(patterns: list[str] | ListConfig | None, config_key:
     return list(patterns)
 
 
+def normalize_keywords(keywords: list[str] | ListConfig | None, config_key: str) -> list[str]:
+    if keywords is None:
+        return []
+
+    if not isinstance(keywords, (list, ListConfig)):
+        raise TypeError(
+            f"config.paper_filter.{config_key} must be a list of strings or null."
+        )
+
+    if any(not isinstance(keyword, str) for keyword in keywords):
+        raise TypeError(f"config.paper_filter.{config_key} must contain only strings.")
+
+    return [keyword.strip().casefold() for keyword in keywords if keyword.strip()]
+
+
 class Executor:
     def __init__(self, config:DictConfig):
         self.config = config
         self.include_path_patterns = normalize_path_patterns(config.zotero.include_path, "include_path")
         self.ignore_path_patterns = normalize_path_patterns(config.zotero.ignore_path, "ignore_path")
+        self.include_keywords = normalize_keywords(config.paper_filter.include_keywords, "include_keywords")
+        self.exclude_keywords = normalize_keywords(config.paper_filter.exclude_keywords, "exclude_keywords")
         self.retrievers = {
             source: get_retriever_cls(source)(config) for source in config.executor.source
         }
@@ -89,6 +106,27 @@ class Executor:
             logger.info(f"Selected {len(corpus)} zotero papers:\n{samples}\n...")
         return corpus
 
+    def filter_papers(self, papers: list[Paper]) -> list[Paper]:
+        if not self.include_keywords and not self.exclude_keywords:
+            return papers
+
+        filtered = []
+        for paper in papers:
+            searchable_text = f"{paper.title}\n{paper.abstract}".casefold()
+            if any(keyword in searchable_text for keyword in self.exclude_keywords):
+                continue
+            if self.include_keywords and not any(
+                keyword in searchable_text for keyword in self.include_keywords
+            ):
+                continue
+            filtered.append(paper)
+
+        logger.info(
+            f"Keyword filter retained {len(filtered)} of {len(papers)} papers "
+            f"(include={self.include_keywords}, exclude={self.exclude_keywords})"
+        )
+        return filtered
+
     
     def run(self):
         corpus = self.fetch_zotero_corpus()
@@ -106,6 +144,7 @@ class Executor:
             logger.info(f"Retrieved {len(papers)} {source} papers")
             all_papers.extend(papers)
         logger.info(f"Total {len(all_papers)} papers retrieved from all sources")
+        all_papers = self.filter_papers(all_papers)
         reranked_papers = []
         if len(all_papers) > 0:
             logger.info("Reranking papers...")
