@@ -1,0 +1,69 @@
+name: Search papers on demand
+
+on:
+  workflow_dispatch:
+    inputs:
+      keywords:
+        description: "English keywords separated by semicolons (OR)"
+        required: true
+        default: "spatial transcriptomics;spatial multi-omics;cell-cell communication;niche analysis"
+        type: string
+      journals:
+        description: "Exact journal names separated by semicolons; blank searches all journals"
+        required: false
+        default: ""
+        type: string
+      from_date:
+        description: "Start date (YYYY-MM-DD)"
+        required: true
+        type: string
+      to_date:
+        description: "End date (YYYY-MM-DD)"
+        required: true
+        type: string
+      max_results:
+        description: "Maximum number of results (1-100)"
+        required: true
+        default: "30"
+        type: string
+      summarize:
+        description: "Generate Chinese summaries using the configured LLM"
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v7
+      - name: Search papers
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          OPENAI_MODEL: gpt-5.4
+          SUMMARY_LANGUAGE: Chinese
+          SEARCH_KEYWORDS: ${{ inputs.keywords }}
+          SEARCH_JOURNALS: ${{ inputs.journals }}
+          SEARCH_FROM_DATE: ${{ inputs.from_date }}
+          SEARCH_TO_DATE: ${{ inputs.to_date }}
+          SEARCH_MAX_RESULTS: ${{ inputs.max_results }}
+          SEARCH_SUMMARIZE: ${{ inputs.summarize }}
+        run: |
+          summarize=""
+          if [ "$SEARCH_SUMMARIZE" = "true" ]; then summarize="--summarize"; fi
+          uv run python -m zotero_arxiv_daily.openalex_search \
+            --keywords "$SEARCH_KEYWORDS" \
+            --journals "$SEARCH_JOURNALS" \
+            --from-date "$SEARCH_FROM_DATE" \
+            --to-date "$SEARCH_TO_DATE" \
+            --max-results "$SEARCH_MAX_RESULTS" \
+            --output paper-search-results.csv \
+            $summarize
+      - name: Upload CSV
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-search-results
+          path: paper-search-results.csv

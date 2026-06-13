@@ -111,6 +111,23 @@ paper_filter:
   include_keywords: ["spatial transcriptomics", "cell-cell communication", "niche analysis", "large language model", "knowledge graph", "agent"]
   exclude_keywords: ["clinical trial", "case report"]
 ```
+
+### Search journals on demand
+
+The `Search papers on demand` workflow searches OpenAlex without changing the daily feed.
+It supports semicolon-separated keywords (OR), exact journal names (OR), a publication date
+range, optional Chinese summaries, and a downloadable CSV artifact. Add an
+`OPENALEX_API_KEY` repository secret, then run the workflow from the Actions page.
+
+The same search can be run locally:
+
+```bash
+uv run python -m zotero_arxiv_daily.openalex_search \
+  --keywords "spatial transcriptomics;cell-cell communication;niche analysis" \
+  --journals "Nature Methods;Bioinformatics" \
+  --from-date 2025-01-01 --to-date 2026-06-14 \
+  --max-results 30 --summarize
+```
 >[!NOTE]
 > `${oc.env:XXX,yyy}` means the value of the environment variable `XXX`. If the variable is not set, the default value `yyy` will be used.
 
