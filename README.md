@@ -173,8 +173,6 @@ source:
       - "International Conference on Learning Representations"
       - "International Conference on Machine Learning"
       - "Proceedings of the AAAI Conference on Artificial Intelligence"
-      - "Advances in Neural Information Processing Systems"
-      - "Annual Meeting of the Association for Computational Linguistics"
     lookback_days: 3
     max_results: 500
 
@@ -185,6 +183,11 @@ executor:
 OpenAlex indexing can lag behind publisher or conference websites. Once indexed, these papers
 join the same keyword filtering, cross-source deduplication, Zotero reranking, email, and daily
 archive pipeline as arXiv and bioRxiv papers.
+
+ACL and NeurIPS are intentionally omitted from the OpenAlex example because their aggregate
+venue records are not stable enough for reliable daily subscriptions. They should use ACL
+Anthology and NeurIPS Proceedings respectively. An unresolved OpenAlex venue is logged and
+skipped without failing the complete daily run.
 
 On Windows, run the same search from the repository root with:
 

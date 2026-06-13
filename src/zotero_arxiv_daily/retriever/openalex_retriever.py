@@ -22,7 +22,12 @@ class OpenAlexRetriever(BaseRetriever):
         venue_ids = []
         for venue_type in ("journal", "conference"):
             names = list(self.retriever_config.get(f"{venue_type}s", []) or [])
-            for name, source_id in zip(names, self.client.resolve_journals(names), strict=True):
+            for name in names:
+                try:
+                    source_id = self.client.resolve_journals([name])[0]
+                except (ValueError, IndexError) as exc:
+                    logger.warning(f"Skipping unresolved OpenAlex {venue_type} {name}: {exc}")
+                    continue
                 venue_ids.append(source_id)
                 self.venue_types[source_id] = venue_type
                 logger.info(f"Resolved OpenAlex {venue_type}: {name} -> {source_id}")

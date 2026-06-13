@@ -53,3 +53,25 @@ def test_openalex_retriever_labels_formal_conference_publications(config, monkey
     assert papers[0].publication_status == "formally_published"
     assert papers[0].journal == "International Conference on Machine Learning"
     assert "type:article" in calls[0][1]["filter"]
+
+
+def test_openalex_retriever_skips_one_unresolved_venue(config, monkeypatch):
+    with open_dict(config):
+        config.source.openalex.api_key = "fake-key"
+        config.source.openalex.journals = ["Nature Methods"]
+        config.source.openalex.conferences = ["ACL unstable venue"]
+
+    def resolve_journals(self, names):
+        if names == ["ACL unstable venue"]:
+            raise ValueError("Journal not found")
+        return ["S1"]
+
+    monkeypatch.setattr("zotero_arxiv_daily.openalex_search.OpenAlexSearch.resolve_journals", resolve_journals)
+    monkeypatch.setattr(
+        "zotero_arxiv_daily.openalex_search.OpenAlexSearch._get",
+        lambda self, path, params: {"results": [], "meta": {}},
+    )
+
+    retriever = OpenAlexRetriever(config)
+
+    assert retriever._resolve_venues() == ["S1"]
