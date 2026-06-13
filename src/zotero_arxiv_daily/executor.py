@@ -10,6 +10,7 @@ from .reranker import get_reranker_cls
 from .construct_email import render_email
 from .utils import send_email
 from .archive import archive_papers
+from .history import exclude_previously_sent, load_history, update_history
 from openai import OpenAI
 from tqdm import tqdm
 import re
@@ -46,6 +47,33 @@ def normalize_keywords(keywords: list[str] | ListConfig | None, config_key: str)
     return [keyword.strip().casefold() for keyword in keywords if keyword.strip()]
 
 
+def normalize_keyword_groups(groups) -> list[dict]:
+    if groups is None:
+        return []
+    if not isinstance(groups, (list, ListConfig)):
+        raise TypeError("config.paper_filter.include_groups must be a list or null.")
+
+    normalized = []
+    for group_index, group in enumerate(groups):
+        clauses = group.get("all") if hasattr(group, "get") else None
+        if not isinstance(clauses, (list, ListConfig)) or not clauses:
+            raise TypeError(
+                f"config.paper_filter.include_groups[{group_index}].all must be a non-empty list."
+            )
+        normalized_clauses = []
+        for clause_index, clause in enumerate(clauses):
+            keywords = clause.get("any") if hasattr(clause, "get") else None
+            normalized_keywords = normalize_keywords(
+                keywords,
+                f"include_groups[{group_index}].all[{clause_index}].any",
+            )
+            if not normalized_keywords:
+                raise ValueError("Each include_groups any clause must contain a keyword.")
+            normalized_clauses.append(normalized_keywords)
+        normalized.append({"name": group.get("name", f"group-{group_index + 1}"), "all": normalized_clauses})
+    return normalized
+
+
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
     deduplicated: dict[str, Paper] = {}
     for paper in papers:
@@ -73,7 +101,10 @@ class Executor:
         self.config = config
         self.include_path_patterns = normalize_path_patterns(config.zotero.include_path, "include_path")
         self.ignore_path_patterns = normalize_path_patterns(config.zotero.ignore_path, "ignore_path")
-        self.include_keywords = normalize_keywords(config.paper_filter.include_keywords, "include_keywords")
+        legacy_keywords = normalize_keywords(config.paper_filter.get("include_keywords"), "include_keywords")
+        self.include_any = normalize_keywords(config.paper_filter.get("include_any"), "include_any")
+        self.include_any = sorted(set(legacy_keywords + self.include_any))
+        self.include_groups = normalize_keyword_groups(config.paper_filter.get("include_groups"))
         self.exclude_keywords = normalize_keywords(config.paper_filter.exclude_keywords, "exclude_keywords")
         self.retrievers = {
             source: get_retriever_cls(source)(config) for source in config.executor.source
@@ -131,7 +162,7 @@ class Executor:
         return corpus
 
     def filter_papers(self, papers: list[Paper]) -> list[Paper]:
-        if not self.include_keywords and not self.exclude_keywords:
+        if not self.include_any and not self.include_groups and not self.exclude_keywords:
             return papers
 
         filtered = []
@@ -139,17 +170,29 @@ class Executor:
             searchable_text = f"{paper.title}\n{paper.abstract}".casefold()
             if any(keyword in searchable_text for keyword in self.exclude_keywords):
                 continue
-            matched_keywords = [
-                keyword for keyword in self.include_keywords if keyword in searchable_text
-            ]
-            if self.include_keywords and not matched_keywords:
+            matched_keywords = [keyword for keyword in self.include_any if keyword in searchable_text]
+            matched_groups = []
+            for group in self.include_groups:
+                clause_matches = [
+                    [keyword for keyword in clause if keyword in searchable_text]
+                    for clause in group["all"]
+                ]
+                if all(clause_matches):
+                    matched_groups.append(group["name"])
+                    matched_keywords.extend(
+                        keyword for matches in clause_matches for keyword in matches
+                    )
+            if (self.include_any or self.include_groups) and not (
+                matched_keywords or matched_groups
+            ):
                 continue
-            paper.matched_keywords = matched_keywords
+            paper.matched_keywords = sorted(set(matched_keywords + matched_groups))
             filtered.append(paper)
 
         logger.info(
             f"Keyword filter retained {len(filtered)} of {len(papers)} papers "
-            f"(include={self.include_keywords}, exclude={self.exclude_keywords})"
+            f"(include_any={self.include_any}, groups={len(self.include_groups)}, "
+            f"exclude={self.exclude_keywords})"
         )
         return filtered
 
@@ -176,6 +219,17 @@ class Executor:
             f"Deduplicated papers from {before_deduplication} to {len(all_papers)}"
         )
         all_papers = self.filter_papers(all_papers)
+        history_enabled = self.config.daily_history.enabled and not (
+            self.config.executor.debug and self.config.daily_history.skip_when_debug
+        )
+        if history_enabled:
+            history = load_history(self.config.daily_history.path)
+            before_history_filter = len(all_papers)
+            all_papers = exclude_previously_sent(all_papers, history)
+            logger.info(
+                f"Daily history filter retained {len(all_papers)} of "
+                f"{before_history_filter} papers"
+            )
         reranked_papers = []
         if len(all_papers) > 0:
             logger.info("Reranking papers...")
@@ -197,4 +251,6 @@ class Executor:
         logger.info("Sending email...")
         email_content = render_email(reranked_papers)
         send_email(self.config, email_content)
+        if history_enabled and reranked_papers:
+            update_history(self.config.daily_history.path, reranked_papers)
         logger.info("Email sent successfully")

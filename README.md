@@ -68,10 +68,9 @@ Below are all the secrets you need to set. They are invisible to anyone includin
 | OPENAI_API_KEY | API Key when using the API to access LLMs. You can get FREE API for using advanced open source LLMs in [SiliconFlow](https://cloud.siliconflow.cn/i/b3XhBRAm). | sk-xxx |
 | OPENAI_API_BASE | API URL when using the API to access LLMs. | https://api.siliconflow.cn/v1 |
 
-Then you should also set a public variable `CUSTOM_CONFIG` for your custom configuration.
-![vars](./assets/repo_var.png)
-![custom_config](./assets/config_var.png)
-Paste the following content into the value of `CUSTOM_CONFIG` variable:
+Edit `config/custom.yaml` in your fork for custom configuration. The file can be edited locally
+and pushed to GitHub; secrets remain environment references and must not be written in plaintext.
+For example:
 ```yaml
 zotero:
   user_id: ${oc.env:ZOTERO_ID}
@@ -108,7 +107,12 @@ matches (OR matching, case-insensitive). Exclusions take precedence.
 
 ```yaml
 paper_filter:
-  include_keywords: ["spatial transcriptomics", "cell-cell communication", "niche analysis", "large language model", "knowledge graph", "agent"]
+  include_any: ["flow matching", "diffusion model", "large language model"]
+  include_groups:
+    - name: "spatial-omics-computation"
+      all:
+        - any: ["spatial transcriptomics", "spatial omics"]
+        - any: ["computational", "method", "algorithm", "model"]
   exclude_keywords: ["clinical trial", "case report"]
 ```
 
@@ -188,6 +192,12 @@ ACL and NeurIPS are intentionally omitted from the OpenAlex example because thei
 venue records are not stable enough for reliable daily subscriptions. They should use ACL
 Anthology and NeurIPS Proceedings respectively. An unresolved OpenAlex venue is logged and
 skipped without failing the complete daily run.
+
+Daily runs keep a persistent `papers/daily/history.json` index. A paper already sent by the
+daily workflow is excluded on later days using both DOI and normalized title aliases. The
+manual search workflow neither reads nor updates this history, so manual results may overlap
+with daily results. Daily CSV and Markdown files are committed by GitHub Actions; downloaded
+PDF files remain excluded from Git.
 
 On Windows, run the same search from the repository root with:
 

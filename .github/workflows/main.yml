@@ -1,4 +1,7 @@
 name: Send emails daily
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   schedule:
@@ -10,9 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          repository: ${{ vars.REPOSITORY }}
-          ref: ${{ vars.REF }}
 
       - name: Setup uv
         uses: astral-sh/setup-uv@v7
@@ -27,9 +27,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-          CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
         run: |
-          printf "%b\n" "$CUSTOM_CONFIG" > config/custom.yaml
           echo "Use custom config: "
           cat config/custom.yaml
           uv run src/zotero_arxiv_daily/main.py
@@ -40,3 +38,16 @@ jobs:
           name: daily-paper-archive
           path: papers/daily/20??-??-??
           if-no-files-found: warn
+
+      - name: Commit daily metadata and history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/daily/history.json || true
+          find papers/daily -type f \( -name papers.csv -o -name summaries.md \) -print0 | xargs -0 --no-run-if-empty git add --
+          if git diff --cached --quiet; then
+            echo "No daily metadata changes to commit"
+          else
+            git commit -m "chore: update daily paper archive [skip ci]"
+            git push
+          fi

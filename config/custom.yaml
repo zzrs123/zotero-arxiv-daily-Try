@@ -1,12 +1,13 @@
 zotero:
   user_id: ${oc.env:ZOTERO_ID}
   api_key: ${oc.env:ZOTERO_KEY}
-  include_path: null # Or set a list of glob patterns, e.g. ["2026/survey/**","2026/reading-group/**"]
+  include_path: null
+  ignore_path: null
 
 email:
   sender: ${oc.env:SENDER}
   receiver: ${oc.env:RECEIVER}
-  smtp_server: smtp.qq.com
+  smtp_server: smtp.gmail.com
   smtp_port: 465
   sender_password: ${oc.env:SENDER_PASSWORD}
 
@@ -15,12 +16,157 @@ llm:
     key: ${oc.env:OPENAI_API_KEY}
     base_url: ${oc.env:OPENAI_API_BASE}
   generation_kwargs:
-    model: gpt-4o-mini
+    model: gpt-5.4
+  language: Chinese
 
 source:
   arxiv:
-    category: ["cs.AI","cs.CV","cs.LG","cs.CL"]
+    category: ["q-bio.GN", "q-bio.QM", "q-bio.MN", "q-bio.CB", "cs.LG", "stat.ML", "cs.AI"]
+    include_cross_list: true
+  biorxiv:
+    category: ["bioinformatics", "genomics"]
+  openalex:
+    api_key: ${oc.env:OPENALEX_API_KEY}
+    journals:
+      - "Nature Genetics"
+      - "Nature Methods"
+      - "Nature Communications"
+      - "Nature Computational Science"
+      - "Nature Machine Intelligence"
+      - "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    conferences:
+      - "International Conference on Learning Representations"
+      - "International Conference on Machine Learning"
+      - "Proceedings of the AAAI Conference on Artificial Intelligence"
+    lookback_days: 3
+    max_results: 500
+
+paper_filter:
+  include_any:
+    - "graph self-supervised learning"
+    - "self-supervised graph learning"
+    - "graph contrastive learning"
+    - "graph representation learning"
+    - "graph generative model"
+    - "deep generative model"
+    - "flow matching"
+    - "rectified flow"
+    - "diffusion"
+    - "energy model"
+    - "energy-based model"
+    - "score matching"
+    - "score-based model"
+    - "normalizing flow"
+    - "variational autoencoder"
+    - "foundation model"
+    - "large language model"
+    - "multimodal large language model"
+    - "knowledge graph"
+    - "AI agent"
+    - "LLM agent"
+    - "agentic workflow"
+    - "multi-agent system"
+    - "tool-using agent"
+    - "reasoning agent"
+
+  include_groups:
+    - name: "spatial-omics-computation"
+      all:
+        - any:
+            - "spatial transcriptomics"
+            - "spatial omics"
+            - "spatial multi-omics"
+            - "spatial multiomics"
+            - "spatial proteomics"
+            - "spatial metabolomics"
+            - "spatially resolved transcriptomics"
+            - "spatially resolved omics"
+        - any:
+            - "computational"
+            - "algorithm"
+            - "method"
+            - "model"
+            - "framework"
+            - "machine learning"
+            - "deep learning"
+            - "integration"
+            - "deconvolution"
+            - "clustering"
+            - "representation learning"
+            - "benchmark"
+            - "inference"
+
+    - name: "cell-communication-computation"
+      all:
+        - any:
+            - "cell-cell communication"
+            - "cell cell communication"
+            - "cellular communication"
+            - "intercellular communication"
+            - "cell-cell interaction"
+            - "cellular interaction"
+            - "ligand-receptor interaction"
+            - "ligand receptor interaction"
+            - "niche analysis"
+            - "cellular niche"
+            - "tissue niche"
+        - any:
+            - "computational"
+            - "inference"
+            - "prediction"
+            - "algorithm"
+            - "method"
+            - "model"
+            - "framework"
+            - "network analysis"
+            - "machine learning"
+
+    - name: "single-cell-computation"
+      all:
+        - any:
+            - "single-cell"
+            - "single cell"
+            - "scRNA-seq"
+            - "scATAC-seq"
+            - "CITE-seq"
+            - "single-cell multi-omics"
+        - any:
+            - "computational"
+            - "algorithm"
+            - "method"
+            - "model"
+            - "framework"
+            - "integration"
+            - "annotation"
+            - "inference"
+            - "representation learning"
+
+  exclude_keywords:
+    - "clinical trial"
+    - "randomized controlled trial"
+    - "randomised controlled trial"
+    - "case report"
+    - "case series"
+    - "patient recruitment"
+    - "treatment outcome"
+    - "surgical procedure"
+    - "clinical guideline"
+    - "clinical practice"
+    - "hospitalized patient"
+
+archive:
+  enabled: true
+  output_dir: papers/daily
+  download_pdfs: true
+
+daily_history:
+  enabled: true
+  path: papers/daily/history.json
+  skip_when_debug: true
 
 executor:
-  debug: ${oc.env:DEBUG,null}
-  source: ['arxiv']
+  debug: ${oc.env:DEBUG,false}
+  send_empty: true
+  max_paper_num: 30
+  source: ["arxiv", "biorxiv", "openalex"]
+  reranker: local

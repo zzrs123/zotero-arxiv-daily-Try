@@ -5,7 +5,13 @@ from datetime import datetime
 import pytest
 from omegaconf import OmegaConf
 
-from zotero_arxiv_daily.executor import Executor, deduplicate_papers, normalize_keywords, normalize_path_patterns
+from zotero_arxiv_daily.executor import (
+    Executor,
+    deduplicate_papers,
+    normalize_keyword_groups,
+    normalize_keywords,
+    normalize_path_patterns,
+)
 from zotero_arxiv_daily.protocol import CorpusPaper, Paper
 
 
@@ -56,6 +62,28 @@ def test_normalize_keywords_normalizes_case_and_whitespace():
 def test_normalize_keywords_rejects_single_string():
     with pytest.raises(TypeError, match="must be a list"):
         normalize_keywords("spatial omics", "include_keywords")
+
+
+def test_normalize_keyword_groups_builds_and_or_structure():
+    groups = OmegaConf.create([
+        {
+            "name": "spatial-computation",
+            "all": [
+                {"any": ["Spatial Omics", "spatial transcriptomics"]},
+                {"any": ["method", "algorithm"]},
+            ],
+        }
+    ])
+
+    assert normalize_keyword_groups(groups) == [
+        {
+            "name": "spatial-computation",
+            "all": [
+                ["spatial omics", "spatial transcriptomics"],
+                ["method", "algorithm"],
+            ],
+        }
+    ]
 
 
 # ---------------------------------------------------------------------------
@@ -122,27 +150,54 @@ def _make_paper(title, abstract):
     )
 
 
-def test_filter_papers_matches_include_keywords_case_insensitively():
+def test_filter_papers_supports_independent_or_keywords():
     executor = Executor.__new__(Executor)
-    executor.include_keywords = ["spatial transcriptomics", "niche analysis"]
+    executor.include_any = ["flow matching", "large language model"]
+    executor.include_groups = []
     executor.exclude_keywords = []
     papers = [
-        _make_paper("Spatial Transcriptomics Atlas", "A tissue study."),
-        _make_paper("Unrelated Paper", "A new NICHE ANALYSIS method."),
-        _make_paper("Language Models", "General reasoning."),
+        _make_paper("Flow Matching", "A new generative model."),
+        _make_paper("Language Models", "A LARGE LANGUAGE MODEL study."),
+        _make_paper("Spatial Transcriptomics", "An observational atlas."),
     ]
 
     filtered = executor.filter_papers(papers)
 
     assert [paper.title for paper in filtered] == [
-        "Spatial Transcriptomics Atlas",
-        "Unrelated Paper",
+        "Flow Matching",
+        "Language Models",
     ]
+
+
+def test_filter_papers_requires_all_group_clauses():
+    executor = Executor.__new__(Executor)
+    executor.include_any = []
+    executor.include_groups = [
+        {
+            "name": "spatial-computation",
+            "all": [
+                ["spatial transcriptomics", "spatial omics"],
+                ["computational", "method", "algorithm", "model"],
+            ],
+        }
+    ]
+    executor.exclude_keywords = []
+    papers = [
+        _make_paper("Spatial Transcriptomics Atlas", "An observational resource."),
+        _make_paper("Spatial Transcriptomics Method", "A computational framework."),
+        _make_paper("New Computational Method", "A generic machine learning study."),
+    ]
+
+    filtered = executor.filter_papers(papers)
+
+    assert [paper.title for paper in filtered] == ["Spatial Transcriptomics Method"]
+    assert "spatial-computation" in filtered[0].matched_keywords
 
 
 def test_filter_papers_exclude_keywords_take_precedence():
     executor = Executor.__new__(Executor)
-    executor.include_keywords = ["spatial omics"]
+    executor.include_any = ["spatial omics"]
+    executor.include_groups = []
     executor.exclude_keywords = ["clinical trial"]
     papers = [
         _make_paper("Spatial Omics", "A computational method."),

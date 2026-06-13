@@ -50,13 +50,20 @@ reranker:
     batch_size: null # The batch size for embedding API requests. Adjust to match your provider's limit. Example: 64
 
 paper_filter:
-  include_keywords: null # Keep papers whose title or abstract contains any keyword (OR matching, case-insensitive). Example: ["spatial transcriptomics", "cell-cell communication"]
+  include_keywords: null # Legacy OR list; use include_any for new configurations.
+  include_any: null # Independent interests: any keyword match keeps the paper.
+  include_groups: null # Groups are OR; all clauses in one group must match; keywords inside any are OR.
   exclude_keywords: null # Exclude papers whose title or abstract contains any keyword. Exclusions take precedence. Example: ["clinical trial", "case report"]
 
 archive:
   enabled: true # Save papers.csv, summaries.md, and available PDFs in a dated folder.
   output_dir: papers/daily # Daily archives are stored separately from manual searches.
   download_pdfs: true # Download only PDFs that are publicly accessible.
+
+daily_history:
+  enabled: true # Prevent papers already sent by the daily workflow from being sent again.
+  path: papers/daily/history.json
+  skip_when_debug: true # Test Workflow does not read or update production history.
 
 executor:
   debug: false # Whether to use debug mode. Example: true
