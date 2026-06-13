@@ -22,8 +22,15 @@ def test_to_paper_uses_open_access_pdf_and_doi():
         "doi": "https://doi.org/10.1/example",
         "abstract_inverted_index": {"Spatial": [0], "omics": [1]},
         "authorships": [{"author": {"display_name": "A. Author"}}],
-        "primary_location": {"landing_page_url": "https://journal.example/article"},
+        "primary_location": {
+            "landing_page_url": "https://journal.example/article",
+            "source": {"display_name": "Nature Methods"},
+        },
         "best_oa_location": {"pdf_url": "https://journal.example/article.pdf"},
+        "publication_date": "2026-06-01",
+        "open_access": {"is_oa": True, "oa_status": "gold"},
+        "cited_by_count": 12,
+        "topics": [{"display_name": "Spatial Transcriptomics"}],
     }
 
     paper = OpenAlexSearch._to_paper(work)
@@ -33,3 +40,7 @@ def test_to_paper_uses_open_access_pdf_and_doi():
     assert paper.authors == ["A. Author"]
     assert paper.url == "https://doi.org/10.1/example"
     assert paper.pdf_url == "https://journal.example/article.pdf"
+    assert paper.journal == "Nature Methods"
+    assert paper.publication_date == "2026-06-01"
+    assert paper.open_access_status == "gold"
+    assert paper.cited_by_count == 12

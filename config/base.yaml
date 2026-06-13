@@ -49,7 +49,7 @@ paper_filter:
 
 archive:
   enabled: true # Save papers.csv, summaries.md, and available PDFs in a dated folder.
-  output_dir: . # The repository root locally; for example E:/PaperDailyReading.
+  output_dir: papers/daily # Daily archives are stored separately from manual searches.
   download_pdfs: true # Download only PDFs that are publicly accessible.
 
 executor:

@@ -57,5 +57,10 @@ class BiorxivRetriever(BaseRetriever):
             abstract=abstract,
             url=pdf_url,
             pdf_url=pdf_url,
-            full_text=full_text
+            full_text=full_text,
+            publication_date=raw_paper.get('date'),
+            doi=raw_paper.get('doi'),
+            journal=self.server,
+            categories=[raw_paper['category']] if raw_paper.get('category') else [],
+            open_access_status="open",
         )

@@ -116,10 +116,12 @@ class Executor:
             searchable_text = f"{paper.title}\n{paper.abstract}".casefold()
             if any(keyword in searchable_text for keyword in self.exclude_keywords):
                 continue
-            if self.include_keywords and not any(
-                keyword in searchable_text for keyword in self.include_keywords
-            ):
+            matched_keywords = [
+                keyword for keyword in self.include_keywords if keyword in searchable_text
+            ]
+            if self.include_keywords and not matched_keywords:
                 continue
+            paper.matched_keywords = matched_keywords
             filtered.append(paper)
 
         logger.info(

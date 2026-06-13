@@ -18,5 +18,5 @@ test-compose.yml
 outputs
 config/private.yaml
 # Downloaded paper files are local-only; CSV and Markdown archives may be committed.
-/20??-??-??/pdf/
-/PaperDailyReading/20??-??-??/pdf/
+/papers/daily/20??-??-??/pdf/
+/papers/manual/20??-??-??/pdf/

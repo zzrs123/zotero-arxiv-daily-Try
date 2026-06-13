@@ -26,7 +26,7 @@ $arguments = @(
     '--from-date', $FromDate,
     '--to-date', $ToDate,
     '--max-results', $MaxResults,
-    '--output-dir', '.'
+    '--output-dir', 'papers/manual'
 )
 
 if (-not $SkipSummary) {

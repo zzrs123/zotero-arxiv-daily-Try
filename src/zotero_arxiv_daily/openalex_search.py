@@ -87,7 +87,15 @@ class OpenAlexSearch:
                 },
             )
             for work in data["results"]:
-                papers_by_id[work["id"]] = self._to_paper(work)
+                if work["id"] in papers_by_id:
+                    matched = papers_by_id[work["id"]].matched_keywords or []
+                    if keyword not in matched:
+                        matched.append(keyword)
+                    papers_by_id[work["id"]].matched_keywords = matched
+                else:
+                    paper = self._to_paper(work)
+                    paper.matched_keywords = [keyword]
+                    papers_by_id[work["id"]] = paper
                 if len(papers_by_id) >= max_results:
                     break
             if len(papers_by_id) >= max_results:
@@ -98,6 +106,8 @@ class OpenAlexSearch:
     def _to_paper(work: dict) -> Paper:
         primary = work.get("primary_location") or {}
         best_oa = work.get("best_oa_location") or {}
+        source = primary.get("source") or {}
+        open_access = work.get("open_access") or {}
         authors = [
             authorship.get("author", {}).get("display_name", "")
             for authorship in work.get("authorships", [])
@@ -109,6 +119,18 @@ class OpenAlexSearch:
             abstract=reconstruct_abstract(work.get("abstract_inverted_index")),
             url=work.get("doi") or primary.get("landing_page_url") or work["id"],
             pdf_url=best_oa.get("pdf_url"),
+            publication_date=work.get("publication_date"),
+            doi=work.get("doi"),
+            journal=source.get("display_name"),
+            categories=[
+                topic.get("display_name", "")
+                for topic in work.get("topics", [])
+                if topic.get("display_name")
+            ],
+            open_access_status=open_access.get("oa_status") or (
+                "open" if open_access.get("is_oa") else "closed"
+            ),
+            cited_by_count=work.get("cited_by_count"),
         )
 
 

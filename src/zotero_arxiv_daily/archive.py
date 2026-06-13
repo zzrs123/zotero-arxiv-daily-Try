@@ -38,13 +38,20 @@ def download_pdf(url: str, destination: Path) -> bool:
         return False
 
 
-def write_papers_csv(papers: list[Paper], output: Path, pdf_names: dict[int, str]) -> None:
+def write_papers_csv(
+    papers: list[Paper],
+    output: Path,
+    pdf_names: dict[int, str],
+    pdf_statuses: dict[int, str],
+) -> None:
     with output.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
             fieldnames=[
-                "index", "title", "authors", "abstract", "summary", "score",
-                "source", "url", "pdf_url", "local_pdf",
+                "index", "title", "authors", "abstract", "summary", "source",
+                "journal", "publication_date", "doi", "categories", "score",
+                "matched_keywords", "cited_by_count", "article_url", "pdf_url", "open_access_status",
+                "local_pdf", "pdf_download_status",
             ],
         )
         writer.writeheader()
@@ -56,11 +63,19 @@ def write_papers_csv(papers: list[Paper], output: Path, pdf_names: dict[int, str
                     "authors": "; ".join(paper.authors),
                     "abstract": paper.abstract,
                     "summary": paper.tldr or "",
-                    "score": "" if paper.score is None else paper.score,
                     "source": paper.source,
-                    "url": paper.url,
+                    "journal": paper.journal or "",
+                    "publication_date": paper.publication_date or "",
+                    "doi": paper.doi or "",
+                    "categories": "; ".join(paper.categories or []),
+                    "score": "" if paper.score is None else paper.score,
+                    "matched_keywords": "; ".join(paper.matched_keywords or []),
+                    "cited_by_count": "" if paper.cited_by_count is None else paper.cited_by_count,
+                    "article_url": paper.url,
                     "pdf_url": paper.pdf_url or "",
+                    "open_access_status": paper.open_access_status or "unknown",
                     "local_pdf": pdf_names.get(index, ""),
+                    "pdf_download_status": pdf_statuses.get(index, "not_attempted"),
                 }
             )
 
@@ -76,6 +91,10 @@ def write_summaries(papers: list[Paper], output: Path, run_date: str, pdf_names:
                 "",
                 f"- Authors: {', '.join(paper.authors) or 'Unknown'}",
                 f"- Source: {paper.source}",
+                f"- Journal: {paper.journal or 'Unknown'}",
+                f"- Publication date: {paper.publication_date or 'Unknown'}",
+                f"- DOI: {paper.doi or 'Unavailable'}",
+                f"- Categories: {', '.join(paper.categories or []) or 'Unknown'}",
                 f"- Relevance: {paper.score if paper.score is not None else 'Unknown'}",
                 f"- Article: {paper.url}",
                 f"- PDF: {paper.pdf_url or 'Unavailable'}",
@@ -101,15 +120,22 @@ def archive_papers(
     pdf_dir.mkdir(exist_ok=True)
 
     pdf_names = {}
+    pdf_statuses = {}
     if download_pdfs:
         for index, paper in enumerate(papers, start=1):
             if not paper.pdf_url:
+                pdf_statuses[index] = "no_pdf_url"
                 continue
             filename = paper_filename(archive_date, index, paper.title)
             if download_pdf(paper.pdf_url, pdf_dir / filename):
                 pdf_names[index] = f"pdf/{filename}"
+                pdf_statuses[index] = "downloaded"
+            else:
+                pdf_statuses[index] = "failed"
+    else:
+        pdf_statuses = {index: "skipped" for index in range(1, len(papers) + 1)}
 
-    write_papers_csv(papers, archive_dir / "papers.csv", pdf_names)
+    write_papers_csv(papers, archive_dir / "papers.csv", pdf_names, pdf_statuses)
     write_summaries(papers, archive_dir / "summaries.md", archive_date, pdf_names)
     logger.info(f"Archived {len(papers)} papers to {archive_dir.resolve()}")
     return archive_dir

@@ -126,23 +126,32 @@ uv run python -m zotero_arxiv_daily.openalex_search \
   --keywords "spatial transcriptomics;cell-cell communication;niche analysis" \
   --journals "Nature Methods;Bioinformatics" \
   --from-date 2025-01-01 --to-date 2026-06-14 \
-  --max-results 30 --summarize --output-dir .
+  --max-results 30 --summarize --output-dir papers/manual
 ```
 
-Both the daily run and on-demand search create a dated archive:
+Daily runs use `papers/daily/YYYY-MM-DD`; on-demand searches use
+`papers/manual/YYYY-MM-DD`. Each dated folder contains `papers.csv`,
+`summaries.md`, and a `pdf` directory.
 
 ```text
 PaperDailyReading/
-└── 2026-06-14/
-    ├── papers.csv
-    ├── summaries.md
-    └── pdf/
-        ├── 2026-06-14_01_Paper title.pdf
-        └── 2026-06-14_02_Another paper.pdf
+└── papers/
+    ├── daily/2026-06-14/
+    │   ├── papers.csv
+    │   ├── summaries.md
+    │   └── pdf/
+    └── manual/2026-06-14/
+        ├── papers.csv
+        ├── summaries.md
+        └── pdf/
 ```
 
 Only publicly accessible PDFs are downloaded. Missing or blocked PDFs are recorded by URL in
 the CSV and Markdown files without failing the complete run.
+
+The CSV contains: index, title, authors, abstract, summary, source, journal,
+publication date, DOI, categories, relevance score, matched keywords, citation count, article URL,
+PDF URL, open-access status, local PDF path, and PDF download status.
 
 On Windows, run the same search from the repository root with:
 
