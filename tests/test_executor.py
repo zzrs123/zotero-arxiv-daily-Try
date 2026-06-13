@@ -5,7 +5,7 @@ from datetime import datetime
 import pytest
 from omegaconf import OmegaConf
 
-from zotero_arxiv_daily.executor import Executor, normalize_keywords, normalize_path_patterns
+from zotero_arxiv_daily.executor import Executor, deduplicate_papers, normalize_keywords, normalize_path_patterns
 from zotero_arxiv_daily.protocol import CorpusPaper, Paper
 
 
@@ -152,6 +152,21 @@ def test_filter_papers_exclude_keywords_take_precedence():
     filtered = executor.filter_papers(papers)
 
     assert [paper.title for paper in filtered] == ["Spatial Omics"]
+
+
+def test_deduplicate_papers_merges_formal_publication_metadata():
+    preprint = _make_paper("Spatial Omics", "Detailed abstract")
+    preprint.pdf_url = "https://arxiv.org/pdf/1"
+    published = _make_paper("Spatial Omics", "")
+    published.doi = "10.1000/example"
+    published.journal = "Nature Methods"
+    published.publication_status = "published"
+
+    result = deduplicate_papers([preprint, published])
+
+    assert len(result) == 1
+    assert result[0].pdf_url == "https://arxiv.org/pdf/1"
+    assert result[0].journal == "Nature Methods"
 
 
 # ---------------------------------------------------------------------------

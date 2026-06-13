@@ -12,6 +12,7 @@ from .utils import send_email
 from .archive import archive_papers
 from openai import OpenAI
 from tqdm import tqdm
+import re
 
 
 def normalize_path_patterns(patterns: list[str] | ListConfig | None, config_key: str) -> list[str] | None:
@@ -43,6 +44,28 @@ def normalize_keywords(keywords: list[str] | ListConfig | None, config_key: str)
         raise TypeError(f"config.paper_filter.{config_key} must contain only strings.")
 
     return [keyword.strip().casefold() for keyword in keywords if keyword.strip()]
+
+
+def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
+    deduplicated: dict[str, Paper] = {}
+    for paper in papers:
+        doi = (paper.doi or "").casefold().removeprefix("https://doi.org/")
+        normalized_title = re.sub(r"\W+", "", paper.title.casefold())
+        key = f"title:{normalized_title}" if normalized_title else f"doi:{doi}"
+        if key not in deduplicated:
+            deduplicated[key] = paper
+            continue
+
+        existing = deduplicated[key]
+        for field in (
+            "abstract", "pdf_url", "full_text", "publication_date", "doi", "journal",
+            "open_access_status", "cited_by_count", "venue_type", "publication_status",
+        ):
+            if not getattr(existing, field) and getattr(paper, field):
+                setattr(existing, field, getattr(paper, field))
+        existing.categories = sorted(set((existing.categories or []) + (paper.categories or [])))
+        existing.authors = existing.authors or paper.authors
+    return list(deduplicated.values())
 
 
 class Executor:
@@ -147,6 +170,11 @@ class Executor:
             logger.info(f"Retrieved {len(papers)} {source} papers")
             all_papers.extend(papers)
         logger.info(f"Total {len(all_papers)} papers retrieved from all sources")
+        before_deduplication = len(all_papers)
+        all_papers = deduplicate_papers(all_papers)
+        logger.info(
+            f"Deduplicated papers from {before_deduplication} to {len(all_papers)}"
+        )
         all_papers = self.filter_papers(all_papers)
         reranked_papers = []
         if len(all_papers) > 0:

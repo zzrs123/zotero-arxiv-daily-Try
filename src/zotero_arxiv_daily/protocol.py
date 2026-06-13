@@ -27,6 +27,8 @@ class Paper:
     open_access_status: Optional[str] = None
     cited_by_count: Optional[int] = None
     matched_keywords: Optional[list[str]] = None
+    venue_type: Optional[str] = None
+    publication_status: Optional[str] = None
 
     def _generate_tldr_with_llm(self, openai_client:OpenAI,llm_params:dict) -> str:
         lang = llm_params.get('language', 'English')

@@ -12,6 +12,12 @@ source:
     category: null # The categories of target biorxiv papers. Find categories from [here](https://www.biorxiv.org/). Example: ["biochemistry","animal behavior and cognition"]
   medrxiv:
     category: null # The categories of target medrxiv papers. Find categories from [here](https://www.medrxiv.org/) Example: ["psychiatry and clinical psychology", "neurology"]
+  openalex:
+    api_key: ${oc.env:OPENALEX_API_KEY,null}
+    journals: null # Exact journal names. Example: ["Nature Genetics", "Nature Methods"]
+    conferences: null # Published proceedings only. Example: ["International Conference on Learning Representations"]
+    lookback_days: 3 # Wider than one day to tolerate indexing delays.
+    max_results: 500
 
 email:
   sender: ??? # The email account of the SMTP server that sends you email. Example: abc@qq.com

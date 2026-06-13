@@ -103,7 +103,7 @@ class OpenAlexSearch:
         return list(papers_by_id.values())[:max_results]
 
     @staticmethod
-    def _to_paper(work: dict) -> Paper:
+    def _to_paper(work: dict, venue_type: str | None = None) -> Paper:
         primary = work.get("primary_location") or {}
         best_oa = work.get("best_oa_location") or {}
         source = primary.get("source") or {}
@@ -131,6 +131,10 @@ class OpenAlexSearch:
                 "open" if open_access.get("is_oa") else "closed"
             ),
             cited_by_count=work.get("cited_by_count"),
+            venue_type=venue_type,
+            publication_status=(
+                "formally_published" if venue_type == "conference" else "published"
+            ),
         )
 
 

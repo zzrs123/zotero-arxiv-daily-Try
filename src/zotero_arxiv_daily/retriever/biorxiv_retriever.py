@@ -63,4 +63,6 @@ class BiorxivRetriever(BaseRetriever):
             journal=self.server,
             categories=[raw_paper['category']] if raw_paper.get('category') else [],
             open_access_status="open",
+            venue_type="preprint",
+            publication_status="preprint",
         )

@@ -180,6 +180,8 @@ class ArxivRetriever(BaseRetriever):
             journal=getattr(raw_paper, "journal_ref", None),
             categories=list(getattr(raw_paper, "categories", []) or []),
             open_access_status="open",
+            venue_type="preprint",
+            publication_status="preprint",
         )
 
 

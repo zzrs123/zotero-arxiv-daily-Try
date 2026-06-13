@@ -149,9 +149,42 @@ PaperDailyReading/
 Only publicly accessible PDFs are downloaded. Missing or blocked PDFs are recorded by URL in
 the CSV and Markdown files without failing the complete run.
 
-The CSV contains: index, title, authors, abstract, summary, source, journal,
-publication date, DOI, categories, relevance score, matched keywords, citation count, article URL,
+The CSV contains: index, title, authors, abstract, summary, source, venue type,
+journal, publication status, publication date, DOI, categories, relevance score, matched keywords, citation count, article URL,
 PDF URL, open-access status, local PDF path, and PDF download status.
+
+### Daily journals and accepted conference papers
+
+Add `openalex` to `executor.source` to include formally published journal articles and
+conference proceedings. Conference submissions and rejected papers are not included.
+
+```yaml
+source:
+  openalex:
+    api_key: ${oc.env:OPENALEX_API_KEY}
+    journals:
+      - "Nature Genetics"
+      - "Nature Methods"
+      - "Nature Communications"
+      - "Nature Computational Science"
+      - "Nature Machine Intelligence"
+      - "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    conferences:
+      - "International Conference on Learning Representations"
+      - "International Conference on Machine Learning"
+      - "Proceedings of the AAAI Conference on Artificial Intelligence"
+      - "Advances in Neural Information Processing Systems"
+      - "Annual Meeting of the Association for Computational Linguistics"
+    lookback_days: 3
+    max_results: 500
+
+executor:
+  source: ["arxiv", "biorxiv", "openalex"]
+```
+
+OpenAlex indexing can lag behind publisher or conference websites. Once indexed, these papers
+join the same keyword filtering, cross-source deduplication, Zotero reranking, email, and daily
+archive pipeline as arXiv and bioRxiv papers.
 
 On Windows, run the same search from the repository root with:
 
