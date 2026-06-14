@@ -38,3 +38,5 @@ jobs:
           name: test-paper-archive
           path: papers/daily/20??-??-??
           if-no-files-found: warn
+
+# 这里没有添加与和或的逻辑我直接停止workflow测试了
