@@ -21,4 +21,6 @@ jobs:
 
       - name: Run Pytest
         run: |
-          uv run pytest -m "" --cov=src/zotero_arxiv_daily --cov-report=term-missing
+          # Keep CI deterministic: the slow local-reranker test downloads a
+          # large Hugging Face model and is covered by real daily/test runs.
+          uv run pytest --cov=src/zotero_arxiv_daily --cov-report=term-missing
