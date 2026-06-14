@@ -118,6 +118,41 @@ paper_filter:
 
 ### Search journals on demand
 
+### Synchronize GitHub Actions archives to Windows
+
+GitHub-hosted runners cannot write directly to a local `E:` drive. The serial Windows sync
+script checks successful daily and manual-search runs, downloads each new artifact once, and
+then exits. It does not run downloads in parallel.
+
+First authenticate GitHub CLI once:
+
+```powershell
+gh auth login
+```
+
+Run one synchronization manually:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/sync-action-artifacts.ps1
+```
+
+Download archives and commit only CSV, Markdown, and history metadata locally:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/sync-action-artifacts.ps1 -CommitMetadata
+```
+
+Add `-PushMetadata` to also push that metadata to `origin/main`. PDF files remain local because
+their archive folders are ignored by Git.
+
+Windows Task Scheduler can start this one-shot script every 30 minutes. The script exits after
+each check, so it consumes no CPU between checks. Registering the task changes Windows system
+configuration and should be done only after reviewing the command:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/register-artifact-sync-task.ps1 -IntervalMinutes 30 -PushMetadata
+```
+
 The `Search papers on demand` workflow searches OpenAlex without changing the daily feed.
 It supports semicolon-separated keywords (OR), exact journal names (OR), a publication date
 range, optional Chinese summaries, and a downloadable CSV artifact. Add an
