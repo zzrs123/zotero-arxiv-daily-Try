@@ -100,7 +100,7 @@ function Sync-WorkflowArtifacts {
         [hashtable]$State
     )
 
-    $runs = Get-RecentSuccessfulRuns -WorkflowFile $WorkflowFile
+    $runs = @((Get-RecentSuccessfulRuns -WorkflowFile $WorkflowFile))
     if ($runs.Count -eq 0) {
         Write-Host "No recent successful runs found for $WorkflowFile."
         return
