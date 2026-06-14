@@ -1,4 +1,9 @@
-from zotero_arxiv_daily.openalex_search import OpenAlexSearch, reconstruct_abstract, split_values
+from zotero_arxiv_daily.openalex_search import (
+    OpenAlexSearch,
+    match_keywords,
+    reconstruct_abstract,
+    split_values,
+)
 
 
 def test_split_values_uses_semicolon_or_newline():
@@ -13,6 +18,103 @@ def test_reconstruct_abstract_orders_words_by_position():
     assert reconstruct_abstract({"cell": [1], "Spatial": [0], "communication": [2]}) == (
         "Spatial cell communication"
     )
+
+
+def make_search_work(work_id, title, abstract_words=None):
+    abstract_words = abstract_words or []
+    return {
+        "id": work_id,
+        "display_name": title,
+        "abstract_inverted_index": {
+            word: [index] for index, word in enumerate(abstract_words)
+        },
+        "authorships": [],
+        "primary_location": {},
+    }
+
+
+def test_match_keywords_records_actual_text_matches():
+    work = make_search_work(
+        "W1",
+        "Spatial transcriptomics method",
+        ["computational", "method"],
+    )
+
+    assert match_keywords(
+        work,
+        ["spatial transcriptomics", "computational method", "cell communication"],
+    ) == ["spatial transcriptomics", "computational method"]
+
+
+def test_search_all_requires_every_keyword(monkeypatch):
+    works = [
+        make_search_work("W1", "Spatial transcriptomics computational method"),
+        make_search_work("W2", "Spatial transcriptomics atlas"),
+    ]
+    client = OpenAlexSearch("fake-key")
+    monkeypatch.setattr(client, "_get", lambda path, params: {"results": works})
+
+    papers = client.search(
+        ["spatial transcriptomics", "computational method"],
+        [], "2026-01-01", "2026-06-15", 30, "all",
+    )
+
+    assert [paper.title for paper in papers] == [
+        "Spatial transcriptomics computational method"
+    ]
+    assert papers[0].matched_keywords == [
+        "spatial transcriptomics", "computational method"
+    ]
+
+
+def test_search_any_keeps_partial_matches(monkeypatch):
+    works = [
+        make_search_work("W1", "Spatial transcriptomics atlas"),
+        make_search_work("W2", "Computational method for graphs"),
+    ]
+    client = OpenAlexSearch("fake-key")
+    monkeypatch.setattr(client, "_get", lambda path, params: {"results": works})
+
+    papers = client.search(
+        ["spatial transcriptomics", "computational method"],
+        [], "2026-01-01", "2026-06-15", 30, "any",
+    )
+
+    assert len(papers) == 2
+    assert {tuple(paper.matched_keywords) for paper in papers} == {
+        ("spatial transcriptomics",),
+        ("computational method",),
+    }
+
+
+def test_search_default_uses_configured_group_rules(monkeypatch):
+    works = [
+        make_search_work("W1", "Spatial transcriptomics computational method"),
+        make_search_work("W2", "Spatial transcriptomics clinical trial method"),
+        make_search_work("W3", "Spatial transcriptomics atlas"),
+    ]
+    client = OpenAlexSearch("fake-key")
+    monkeypatch.setattr(client, "_get", lambda path, params: {"results": works})
+    rules = (
+        [],
+        [{
+            "name": "spatial-computation",
+            "all": [
+                ["spatial transcriptomics"],
+                ["computational", "method"],
+            ],
+        }],
+        ["clinical trial"],
+    )
+
+    papers = client.search(
+        [], [], "2026-01-01", "2026-06-15", 30, "default", rules,
+    )
+
+    assert [paper.title for paper in papers] == [
+        "Spatial transcriptomics computational method"
+    ]
+    assert "spatial-computation" in papers[0].matched_keywords
 
 
 def test_to_paper_uses_open_access_pdf_and_doi():

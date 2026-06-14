@@ -5,9 +5,11 @@ from pathlib import Path
 
 import requests
 from openai import OpenAI
+from omegaconf import OmegaConf
 
 from .protocol import Paper
 from .archive import archive_papers
+from .paper_filter import collect_query_keywords, filter_papers, rules_from_config
 
 
 OPENALEX_API = "https://api.openalex.org"
@@ -26,6 +28,13 @@ def reconstruct_abstract(inverted_index: dict[str, list[int]] | None) -> str:
         for position in positions
     ]
     return " ".join(word for _, word in sorted(words))
+
+
+def match_keywords(work: dict, keywords: list[str]) -> list[str]:
+    title = work.get("display_name") or ""
+    abstract = reconstruct_abstract(work.get("abstract_inverted_index"))
+    searchable_text = f"{title}\n{abstract}".casefold()
+    return [keyword for keyword in keywords if keyword.casefold() in searchable_text]
 
 
 class OpenAlexSearch:
@@ -65,7 +74,21 @@ class OpenAlexSearch:
         from_date: str,
         to_date: str,
         max_results: int,
+        match_mode: str = "all",
+        configured_rules: tuple[list[str], list[dict], list[str]] | None = None,
     ) -> list[Paper]:
+        if match_mode not in {"default", "all", "any"}:
+            raise ValueError("match_mode must be 'default', 'all', or 'any'")
+        if match_mode == "default":
+            if configured_rules is None:
+                raise ValueError("configured_rules are required for default match mode")
+            include_any, include_groups, _ = configured_rules
+            query_keywords = collect_query_keywords(include_any, include_groups)
+        else:
+            query_keywords = keywords
+        if not query_keywords:
+            raise ValueError("At least one search keyword is required")
+
         source_ids = self.resolve_journals(journals) if journals else []
         filters = [
             f"from_publication_date:{from_date}",
@@ -75,32 +98,36 @@ class OpenAlexSearch:
         if source_ids:
             filters.append(f"primary_location.source.id:{'|'.join(source_ids)}")
 
-        papers_by_id = {}
-        for keyword in keywords:
+        works_by_id = {}
+        for keyword in query_keywords:
             data = self._get(
                 "works",
                 {
                     "search": keyword,
                     "filter": ",".join(filters),
                     "sort": "publication_date:desc",
-                    "per-page": min(max_results, 100),
+                    "per-page": 100,
                 },
             )
             for work in data["results"]:
-                if work["id"] in papers_by_id:
-                    matched = papers_by_id[work["id"]].matched_keywords or []
-                    if keyword not in matched:
-                        matched.append(keyword)
-                    papers_by_id[work["id"]].matched_keywords = matched
-                else:
-                    paper = self._to_paper(work)
-                    paper.matched_keywords = [keyword]
-                    papers_by_id[work["id"]] = paper
-                if len(papers_by_id) >= max_results:
-                    break
-            if len(papers_by_id) >= max_results:
-                break
-        return list(papers_by_id.values())[:max_results]
+                works_by_id[work["id"]] = work
+
+        papers = [self._to_paper(work) for work in works_by_id.values()]
+        if match_mode == "default":
+            include_any, include_groups, exclude_keywords = configured_rules
+            papers = filter_papers(papers, include_any, include_groups, exclude_keywords)
+        else:
+            matched_papers = []
+            for paper, work in zip(papers, works_by_id.values(), strict=True):
+                matched = match_keywords(work, keywords)
+                keep = len(matched) == len(keywords) if match_mode == "all" else bool(matched)
+                if keep:
+                    paper.matched_keywords = matched
+                    matched_papers.append(paper)
+            papers = matched_papers
+
+        papers.sort(key=lambda paper: paper.publication_date or "", reverse=True)
+        return papers[:max_results]
 
     @staticmethod
     def _to_paper(work: dict, venue_type: str | None = None) -> Paper:
@@ -147,7 +174,14 @@ class OpenAlexSearch:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Search journal articles through OpenAlex")
-    parser.add_argument("--keywords", required=True, help="Semicolon-separated keywords (OR)")
+    parser.add_argument("--keywords", default="", help="Semicolon-separated keywords for all/any mode")
+    parser.add_argument(
+        "--match-mode",
+        choices=("default", "all", "any"),
+        default="default",
+        help="Use configured filters, require all keywords, or require any keyword",
+    )
+    parser.add_argument("--config", default="config/custom.yaml", help="Config used by default mode")
     parser.add_argument("--journals", default="", help="Semicolon-separated exact journal names (OR)")
     parser.add_argument("--from-date", required=True, help="Start date, YYYY-MM-DD")
     parser.add_argument("--to-date", default=date.today().isoformat(), help="End date, YYYY-MM-DD")
@@ -163,13 +197,23 @@ def main() -> None:
     if args.from_date > args.to_date:
         parser.error("--from-date must not be after --to-date")
 
+    keywords = split_values(args.keywords)
+    configured_rules = None
+    if args.match_mode == "default":
+        custom_config = OmegaConf.load(args.config)
+        configured_rules = rules_from_config(custom_config.paper_filter)
+    elif not keywords:
+        parser.error("--keywords is required when --match-mode is all or any")
+
     client = OpenAlexSearch(os.environ.get("OPENALEX_API_KEY", ""))
     papers = client.search(
-        split_values(args.keywords),
+        keywords,
         split_values(args.journals),
         args.from_date,
         args.to_date,
         args.max_results,
+        args.match_mode,
+        configured_rules,
     )
 
     if args.summarize and papers:

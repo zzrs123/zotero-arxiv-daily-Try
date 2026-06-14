@@ -11,6 +11,12 @@ from .construct_email import render_email
 from .utils import send_email
 from .archive import archive_papers
 from .history import exclude_previously_sent, load_history, update_history
+from .paper_filter import (
+    filter_papers as apply_paper_filter,
+    normalize_keyword_groups,
+    normalize_keywords,
+    rules_from_config,
+)
 from openai import OpenAI
 from tqdm import tqdm
 import re
@@ -30,48 +36,6 @@ def normalize_path_patterns(patterns: list[str] | ListConfig | None, config_key:
         raise TypeError(f"config.zotero.{config_key} must contain only glob pattern strings.")
 
     return list(patterns)
-
-
-def normalize_keywords(keywords: list[str] | ListConfig | None, config_key: str) -> list[str]:
-    if keywords is None:
-        return []
-
-    if not isinstance(keywords, (list, ListConfig)):
-        raise TypeError(
-            f"config.paper_filter.{config_key} must be a list of strings or null."
-        )
-
-    if any(not isinstance(keyword, str) for keyword in keywords):
-        raise TypeError(f"config.paper_filter.{config_key} must contain only strings.")
-
-    return [keyword.strip().casefold() for keyword in keywords if keyword.strip()]
-
-
-def normalize_keyword_groups(groups) -> list[dict]:
-    if groups is None:
-        return []
-    if not isinstance(groups, (list, ListConfig)):
-        raise TypeError("config.paper_filter.include_groups must be a list or null.")
-
-    normalized = []
-    for group_index, group in enumerate(groups):
-        clauses = group.get("all") if hasattr(group, "get") else None
-        if not isinstance(clauses, (list, ListConfig)) or not clauses:
-            raise TypeError(
-                f"config.paper_filter.include_groups[{group_index}].all must be a non-empty list."
-            )
-        normalized_clauses = []
-        for clause_index, clause in enumerate(clauses):
-            keywords = clause.get("any") if hasattr(clause, "get") else None
-            normalized_keywords = normalize_keywords(
-                keywords,
-                f"include_groups[{group_index}].all[{clause_index}].any",
-            )
-            if not normalized_keywords:
-                raise ValueError("Each include_groups any clause must contain a keyword.")
-            normalized_clauses.append(normalized_keywords)
-        normalized.append({"name": group.get("name", f"group-{group_index + 1}"), "all": normalized_clauses})
-    return normalized
 
 
 def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
@@ -113,11 +77,7 @@ class Executor:
         self.config = config
         self.include_path_patterns = normalize_path_patterns(config.zotero.include_path, "include_path")
         self.ignore_path_patterns = normalize_path_patterns(config.zotero.ignore_path, "ignore_path")
-        legacy_keywords = normalize_keywords(config.paper_filter.get("include_keywords"), "include_keywords")
-        self.include_any = normalize_keywords(config.paper_filter.get("include_any"), "include_any")
-        self.include_any = sorted(set(legacy_keywords + self.include_any))
-        self.include_groups = normalize_keyword_groups(config.paper_filter.get("include_groups"))
-        self.exclude_keywords = normalize_keywords(config.paper_filter.exclude_keywords, "exclude_keywords")
+        self.include_any, self.include_groups, self.exclude_keywords = rules_from_config(config.paper_filter)
         self.retrievers = {
             source: get_retriever_cls(source)(config) for source in config.executor.source
         }
@@ -174,32 +134,9 @@ class Executor:
         return corpus
 
     def filter_papers(self, papers: list[Paper]) -> list[Paper]:
-        if not self.include_any and not self.include_groups and not self.exclude_keywords:
-            return papers
-
-        filtered = []
-        for paper in papers:
-            searchable_text = f"{paper.title}\n{paper.abstract}".casefold()
-            if any(keyword in searchable_text for keyword in self.exclude_keywords):
-                continue
-            matched_keywords = [keyword for keyword in self.include_any if keyword in searchable_text]
-            matched_groups = []
-            for group in self.include_groups:
-                clause_matches = [
-                    [keyword for keyword in clause if keyword in searchable_text]
-                    for clause in group["all"]
-                ]
-                if all(clause_matches):
-                    matched_groups.append(group["name"])
-                    matched_keywords.extend(
-                        keyword for matches in clause_matches for keyword in matches
-                    )
-            if (self.include_any or self.include_groups) and not (
-                matched_keywords or matched_groups
-            ):
-                continue
-            paper.matched_keywords = sorted(set(matched_keywords + matched_groups))
-            filtered.append(paper)
+        filtered = apply_paper_filter(
+            papers, self.include_any, self.include_groups, self.exclude_keywords
+        )
 
         logger.info(
             f"Keyword filter retained {len(filtered)} of {len(papers)} papers "

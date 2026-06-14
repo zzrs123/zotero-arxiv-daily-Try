@@ -4,10 +4,19 @@ on:
   workflow_dispatch:
     inputs:
       keywords:
-        description: "English keywords separated by semicolons (OR)"
-        required: true
+        description: "Keywords for ALL/ANY; ignored in DEFAULT mode"
+        required: false
         default: "spatial transcriptomics;spatial multi-omics;cell-cell communication;niche analysis"
         type: string
+      match_mode:
+        description: "DEFAULT=config filters; ALL=AND; ANY=OR"
+        required: true
+        default: "default"
+        type: choice
+        options:
+          - "default"
+          - "all"
+          - "any"
       journals:
         description: "Exact journal names separated by semicolons; blank searches all journals"
         required: false
@@ -46,6 +55,7 @@ jobs:
           OPENAI_MODEL: gpt-5.4
           SUMMARY_LANGUAGE: Chinese
           SEARCH_KEYWORDS: ${{ inputs.keywords }}
+          SEARCH_MATCH_MODE: ${{ inputs.match_mode }}
           SEARCH_JOURNALS: ${{ inputs.journals }}
           SEARCH_FROM_DATE: ${{ inputs.from_date }}
           SEARCH_TO_DATE: ${{ inputs.to_date }}
@@ -56,6 +66,7 @@ jobs:
           if [ "$SEARCH_SUMMARIZE" = "true" ]; then summarize="--summarize"; fi
           uv run python -m zotero_arxiv_daily.openalex_search \
             --keywords "$SEARCH_KEYWORDS" \
+            --match-mode "$SEARCH_MATCH_MODE" \
             --journals "$SEARCH_JOURNALS" \
             --from-date "$SEARCH_FROM_DATE" \
             --to-date "$SEARCH_TO_DATE" \

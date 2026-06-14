@@ -1,6 +1,8 @@
 param(
-    [Parameter(Mandatory = $true)]
-    [string]$Keywords,
+    [string]$Keywords = "",
+
+    [ValidateSet('default', 'all', 'any')]
+    [string]$MatchMode = 'default',
 
     [string]$Journals = "",
 
@@ -22,6 +24,7 @@ param(
 $arguments = @(
     'run', 'python', '-m', 'zotero_arxiv_daily.openalex_search',
     '--keywords', $Keywords,
+    '--match-mode', $MatchMode,
     '--journals', $Journals,
     '--from-date', $FromDate,
     '--to-date', $ToDate,
