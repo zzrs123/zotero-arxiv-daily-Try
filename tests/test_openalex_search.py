@@ -21,7 +21,15 @@ def test_to_paper_uses_open_access_pdf_and_doi():
         "display_name": "Spatial Omics",
         "doi": "https://doi.org/10.1/example",
         "abstract_inverted_index": {"Spatial": [0], "omics": [1]},
-        "authorships": [{"author": {"display_name": "A. Author"}}],
+        "authorships": [
+            {
+                "author": {"display_name": "A. Author"},
+                "institutions": [
+                    {"display_name": "Example University"},
+                    {"display_name": "Example Institute"},
+                ],
+            }
+        ],
         "primary_location": {
             "landing_page_url": "https://journal.example/article",
             "source": {"display_name": "Nature Methods"},
@@ -38,6 +46,7 @@ def test_to_paper_uses_open_access_pdf_and_doi():
     assert paper.title == "Spatial Omics"
     assert paper.abstract == "Spatial omics"
     assert paper.authors == ["A. Author"]
+    assert paper.affiliations == ["Example University", "Example Institute"]
     assert paper.url == "https://doi.org/10.1/example"
     assert paper.pdf_url == "https://journal.example/article.pdf"
     assert paper.journal == "Nature Methods"

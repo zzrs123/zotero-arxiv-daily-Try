@@ -112,10 +112,17 @@ class OpenAlexSearch:
             authorship.get("author", {}).get("display_name", "")
             for authorship in work.get("authorships", [])
         ]
+        affiliations = []
+        for authorship in work.get("authorships", []):
+            for institution in authorship.get("institutions", []):
+                name = institution.get("display_name", "")
+                if name and name not in affiliations:
+                    affiliations.append(name)
         return Paper(
             source="openalex",
             title=work.get("display_name") or "Untitled",
             authors=[author for author in authors if author],
+            affiliations=affiliations or None,
             abstract=reconstruct_abstract(work.get("abstract_inverted_index")),
             url=work.get("doi") or primary.get("landing_page_url") or work["id"],
             pdf_url=best_oa.get("pdf_url"),

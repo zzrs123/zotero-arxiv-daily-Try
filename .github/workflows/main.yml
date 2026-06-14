@@ -38,6 +38,16 @@ jobs:
           name: daily-paper-archive
           path: papers/daily/20??-??-??
           if-no-files-found: warn
+          retention-days: 30
+
+      - name: Show archive location
+        if: always()
+        run: |
+          echo "## Daily archive" >> "$GITHUB_STEP_SUMMARY"
+          echo "Download **daily-paper-archive** from the Artifacts section of this run." >> "$GITHUB_STEP_SUMMARY"
+          echo '```text' >> "$GITHUB_STEP_SUMMARY"
+          find papers/daily -maxdepth 3 -type f -print 2>/dev/null | sort >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit daily metadata and history
         run: |
