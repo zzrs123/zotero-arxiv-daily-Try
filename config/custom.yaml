@@ -49,7 +49,7 @@ source:
       - "Knowledge Discovery and Data Mining"
     lookback_days: 3
     journals_lookback_days: 365
-    conferences_lookback_days: 365
+    conferences_lookback_days: 730
     max_results: 500
   acl_anthology:
     events:

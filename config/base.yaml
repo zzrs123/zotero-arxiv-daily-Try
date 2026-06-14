@@ -18,7 +18,7 @@ source:
     conferences: null # Published proceedings only. Example: ["International Conference on Learning Representations"]
     lookback_days: 3 # Wider than one day to tolerate indexing delays.
     journals_lookback_days: 365 # Journal records can be discovered up to one year back; daily history prevents repeats.
-    conferences_lookback_days: 365 # Conference proceedings are often released or indexed in batches.
+    conferences_lookback_days: 730 # Conference proceedings are often released or indexed in batches; daily history prevents repeats.
     max_results: 500 # Maximum results per venue type (journals and conferences separately).
   acl_anthology:
     events: null # Official ACL Anthology event slugs. Example: ["acl", "emnlp"]
