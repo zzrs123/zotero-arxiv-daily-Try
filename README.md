@@ -124,6 +124,10 @@ GitHub-hosted runners cannot write directly to a local `E:` drive. The serial Wi
 script checks successful daily and manual-search runs, downloads each new artifact once, and
 then exits. It does not run downloads in parallel.
 
+By default, only the newest successful run of each workflow is checked. Use `-Backfill` only
+when older runs from the lookback window are also needed. The script prints each artifact size
+before downloading and stops a single download after 30 minutes by default.
+
 First authenticate GitHub CLI once:
 
 ```powershell
@@ -134,6 +138,12 @@ Run one synchronization manually:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/sync-action-artifacts.ps1
+```
+
+Explicitly download older artifacts from the lookback window:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/sync-action-artifacts.ps1 -Backfill -LookbackHours 72
 ```
 
 Download archives and commit only CSV, Markdown, and history metadata locally:
