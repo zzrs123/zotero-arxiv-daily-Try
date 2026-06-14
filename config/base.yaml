@@ -18,6 +18,15 @@ source:
     conferences: null # Published proceedings only. Example: ["International Conference on Learning Representations"]
     lookback_days: 3 # Wider than one day to tolerate indexing delays.
     max_results: 500
+  acl_anthology:
+    events: null # Official ACL Anthology event slugs. Example: ["acl", "emnlp"]
+    years: null # Optional exact years. If null, uses lookback_years.
+    lookback_years: 2
+    max_results: 300
+  neurips:
+    years: null # Optional exact years. If null, uses lookback_years.
+    lookback_years: 2
+    max_results: 300
 
 email:
   sender: ??? # The email account of the SMTP server that sends you email. Example: abc@qq.com

@@ -34,12 +34,30 @@ source:
       - "Nature Computational Science"
       - "Nature Machine Intelligence"
       - "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      - "IEEE Transactions on Knowledge and Data Engineering"
+      - "Communications Biology"
+      - "Genome Biology"
+      - "Genome Research"
+      - "Advanced Science"
+      - "Science Advances"
+      - "Cell Genomics"
+      - "Genome Medicine"
     conferences:
       - "International Conference on Learning Representations"
       - "International Conference on Machine Learning"
       - "Proceedings of the AAAI Conference on Artificial Intelligence"
+      - "Knowledge Discovery and Data Mining"
     lookback_days: 3
     max_results: 500
+  acl_anthology:
+    events:
+      - "acl"
+      - "emnlp"
+    lookback_years: 2
+    max_results: 5000
+  neurips:
+    lookback_years: 2
+    max_results: 300
 
 paper_filter:
   include_any:
@@ -68,6 +86,9 @@ paper_filter:
     - "multi-agent system"
     - "tool-using agent"
     - "reasoning agent"
+    - "causal inference"
+    - "causal discovery"
+    - "causal representation learning"
 
   include_groups:
     - name: "spatial-omics-computation"
@@ -95,6 +116,11 @@ paper_filter:
             - "representation learning"
             - "benchmark"
             - "inference"
+            - "perturbation"
+            - "perturb-seq"
+            - "simulation"
+            - "simulator"
+            - "synthetic data"
 
     - name: "cell-communication-computation"
       all:
@@ -120,6 +146,8 @@ paper_filter:
             - "framework"
             - "network analysis"
             - "machine learning"
+            - "causal inference"
+            - "perturbation"
 
     - name: "single-cell-computation"
       all:
@@ -140,6 +168,65 @@ paper_filter:
             - "annotation"
             - "inference"
             - "representation learning"
+
+    - name: "single-cell-perturbation"
+      all:
+        - any:
+            - "single-cell"
+            - "single cell"
+            - "scRNA-seq"
+            - "single-cell omics"
+            - "single-cell multi-omics"
+        - any:
+            - "perturbation"
+            - "perturb-seq"
+            - "crispr screen"
+            - "genetic perturbation"
+            - "chemical perturbation"
+            - "drug perturbation"
+            - "interventional"
+            - "counterfactual"
+            - "causal inference"
+            - "causal discovery"
+            - "treatment effect"
+
+    - name: "spatial-omics-perturbation"
+      all:
+        - any:
+            - "spatial transcriptomics"
+            - "spatial omics"
+            - "spatial multi-omics"
+            - "spatial multiomics"
+            - "spatially resolved transcriptomics"
+        - any:
+            - "perturbation"
+            - "spatial perturbation"
+            - "perturb-seq"
+            - "crispr"
+            - "interventional"
+            - "counterfactual"
+            - "causal inference"
+            - "causal discovery"
+
+    - name: "omics-simulation"
+      all:
+        - any:
+            - "single-cell"
+            - "single cell"
+            - "single-cell omics"
+            - "spatial transcriptomics"
+            - "spatial omics"
+            - "spatial multi-omics"
+            - "spatial multiomics"
+        - any:
+            - "simulation"
+            - "simulator"
+            - "synthetic data"
+            - "data generation"
+            - "benchmark simulation"
+            - "in silico"
+            - "generative model"
+            - "digital twin"
 
     - name: "statistical-bioinformatics"
       all:
@@ -186,6 +273,10 @@ paper_filter:
             - "false discovery rate"
             - "uncertainty quantification"
             - "causal inference"
+            - "causal discovery"
+            - "causal model"
+            - "causal effect"
+            - "treatment effect"
 
   exclude_keywords:
     - "clinical trial"
@@ -214,5 +305,5 @@ executor:
   debug: ${oc.env:DEBUG,false}
   send_empty: true
   max_paper_num: 30
-  source: ["arxiv", "biorxiv", "openalex"]
+  source: ["arxiv", "biorxiv", "openalex", "acl_anthology", "neurips"]
   reranker: local
