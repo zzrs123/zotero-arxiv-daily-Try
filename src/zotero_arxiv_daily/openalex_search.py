@@ -199,16 +199,25 @@ def main() -> None:
 
     keywords = split_values(args.keywords)
     configured_rules = None
+    configured_venues: list[str] = []
     if args.match_mode == "default":
         custom_config = OmegaConf.load(args.config)
         configured_rules = rules_from_config(custom_config.paper_filter)
+        openalex_cfg = custom_config.get("source", {}).get("openalex", {})
+        for venue_type in ("journals", "conferences"):
+            for name in openalex_cfg.get(venue_type, []) or []:
+                configured_venues.append(str(name))
     elif not keywords:
         parser.error("--keywords is required when --match-mode is all or any")
+
+    journals = split_values(args.journals)
+    if args.match_mode == "default" and not journals and configured_venues:
+        journals = configured_venues
 
     client = OpenAlexSearch(os.environ.get("OPENALEX_API_KEY", ""))
     papers = client.search(
         keywords,
-        split_values(args.journals),
+        journals,
         args.from_date,
         args.to_date,
         args.max_results,

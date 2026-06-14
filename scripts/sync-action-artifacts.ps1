@@ -4,6 +4,11 @@ param(
     [ValidateRange(1, 168)]
     [int]$LookbackHours = 72,
 
+    [ValidateRange(1, 240)]
+    [int]$DownloadTimeoutMinutes = 30,
+
+    [switch]$Backfill,
+
     [switch]$SkipDaily,
 
     [switch]$SkipManual,
@@ -55,19 +60,36 @@ function Invoke-GhJson {
     return $output | ConvertFrom-Json
 }
 
-function Get-RecentSuccessfulRuns {
-    param([string]$WorkflowFile)
+function Format-FileSize {
+    param([long]$Bytes)
 
+    if ($Bytes -ge 1GB) { return "{0:N1} GB" -f ($Bytes / 1GB) }
+    if ($Bytes -ge 1MB) { return "{0:N1} MB" -f ($Bytes / 1MB) }
+    if ($Bytes -ge 1KB) { return "{0:N1} KB" -f ($Bytes / 1KB) }
+    return "$Bytes B"
+}
+
+function Get-RecentSuccessfulRuns {
+    param(
+        [string]$WorkflowFile,
+        [int]$MaxRuns = 1
+    )
+
+    $limit = if ($Backfill) { 20 } else { $MaxRuns }
     $runs = Invoke-GhJson @(
         "run", "list",
         "--repo", $Repository,
         "--workflow", $WorkflowFile,
         "--status", "success",
-        "--limit", "20",
+        "--limit", "$limit",
         "--json", "databaseId,createdAt,displayTitle"
     )
     $cutoff = (Get-Date).ToUniversalTime().AddHours(-$LookbackHours)
-    return @($runs | Where-Object { ([datetime]$_.createdAt).ToUniversalTime() -ge $cutoff })
+    $filtered = @($runs | Where-Object { ([datetime]$_.createdAt).ToUniversalTime() -ge $cutoff })
+    if (-not $Backfill) {
+        $filtered = @($filtered | Sort-Object createdAt -Descending | Select-Object -First $MaxRuns)
+    }
+    return @($filtered | Sort-Object createdAt)
 }
 
 function Sync-WorkflowArtifacts {
@@ -78,7 +100,16 @@ function Sync-WorkflowArtifacts {
         [hashtable]$State
     )
 
-    foreach ($run in (Get-RecentSuccessfulRuns $WorkflowFile | Sort-Object createdAt)) {
+    $runs = Get-RecentSuccessfulRuns -WorkflowFile $WorkflowFile
+    if ($runs.Count -eq 0) {
+        Write-Host "No recent successful runs found for $WorkflowFile."
+        return
+    }
+
+    $modeLabel = if ($Backfill) { "backfill" } else { "latest-only" }
+    Write-Host "[$modeLabel] Found $($runs.Count) run(s) for $WorkflowFile."
+
+    foreach ($run in $runs) {
         $artifactResponse = Invoke-GhJson @(
             "api", "repos/$Repository/actions/runs/$($run.databaseId)/artifacts"
         )
@@ -86,20 +117,45 @@ function Sync-WorkflowArtifacts {
             $_.name -eq $ArtifactName -and -not $_.expired
         })
 
+        if ($artifacts.Count -eq 0) {
+            Write-Host "  Run $($run.databaseId): no '$ArtifactName' artifact found, skipping."
+            continue
+        }
+
         foreach ($artifact in $artifacts) {
             $artifactId = [string]$artifact.id
             if ($State.downloaded_artifact_ids -contains $artifactId) {
+                Write-Host "  Run $($run.databaseId): artifact $artifactId already synced, skipping."
                 continue
             }
 
-            Write-Host "Downloading $ArtifactName from run $($run.databaseId)..."
+            $sizeStr = Format-FileSize $artifact.size_in_bytes
+            Write-Host "  Run $($run.databaseId): downloading $ArtifactName ($sizeStr)..."
+
             $staging = Join-Path $tempRoot "$($run.databaseId)-$artifactId"
             Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
             New-Item -ItemType Directory -Force -Path $staging | Out-Null
 
-            & gh run download $run.databaseId --repo $Repository --name $ArtifactName --dir $staging
-            if ($LASTEXITCODE -ne 0) {
-                throw "Failed to download artifact $artifactId from run $($run.databaseId)."
+            $psi = [System.Diagnostics.ProcessStartInfo]::new()
+            $psi.FileName = (Get-Command gh).Source
+            $psi.Arguments = "run download $($run.databaseId) --repo $Repository --name $ArtifactName --dir `"$staging`""
+            $psi.UseShellExecute = $false
+            $psi.CreateNoWindow = $true
+
+            $proc = [System.Diagnostics.Process]::Start($psi)
+            $ok = $proc.WaitForExit([int]($DownloadTimeoutMinutes * 60 * 1000))
+
+            if (-not $ok) {
+                Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+                Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
+                Write-Host "  Run $($run.databaseId): download timed out after $DownloadTimeoutMinutes min, skipping."
+                continue
+            }
+
+            if ($proc.ExitCode -ne 0) {
+                Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
+                Write-Host "  Run $($run.databaseId): download failed (exit $($proc.ExitCode)), skipping."
+                continue
             }
 
             New-Item -ItemType Directory -Force -Path $Destination | Out-Null
@@ -110,7 +166,7 @@ function Sync-WorkflowArtifacts {
             $State.downloaded_artifact_ids = @($State.downloaded_artifact_ids) + $artifactId
             Save-State $State
             Remove-Item -LiteralPath $staging -Recurse -Force
-            Write-Host "Saved $ArtifactName to $Destination"
+            Write-Host "  Run $($run.databaseId): saved $ArtifactName to $Destination"
         }
     }
 }
