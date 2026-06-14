@@ -96,6 +96,18 @@ def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
     return list(deduplicated.values())
 
 
+def filter_by_relevance_score(
+    papers: list[Paper],
+    min_score: float | None,
+) -> list[Paper]:
+    if min_score is None:
+        return papers
+    return [
+        paper for paper in papers
+        if paper.score is not None and paper.score >= min_score
+    ]
+
+
 class Executor:
     def __init__(self, config:DictConfig):
         self.config = config
@@ -234,6 +246,14 @@ class Executor:
         if len(all_papers) > 0:
             logger.info("Reranking papers...")
             reranked_papers = self.reranker.rerank(all_papers, corpus)
+            min_score = self.config.executor.get("min_relevance_score")
+            before_score_filter = len(reranked_papers)
+            reranked_papers = filter_by_relevance_score(reranked_papers, min_score)
+            if min_score is not None:
+                logger.info(
+                    f"Relevance score filter retained {len(reranked_papers)} of "
+                    f"{before_score_filter} papers (minimum={min_score})"
+                )
             reranked_papers = reranked_papers[:self.config.executor.max_paper_num]
             logger.info("Generating TLDR and affiliations...")
             for p in tqdm(reranked_papers):

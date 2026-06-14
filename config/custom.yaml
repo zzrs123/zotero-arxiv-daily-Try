@@ -48,6 +48,8 @@ source:
       - "Proceedings of the AAAI Conference on Artificial Intelligence"
       - "Knowledge Discovery and Data Mining"
     lookback_days: 3
+    journals_lookback_days: 365
+    conferences_lookback_days: 365
     max_results: 500
   acl_anthology:
     events:
@@ -305,5 +307,6 @@ executor:
   debug: ${oc.env:DEBUG,false}
   send_empty: true
   max_paper_num: 30
+  min_relevance_score: 2
   source: ["arxiv", "biorxiv", "openalex", "acl_anthology", "neurips"]
   reranker: local

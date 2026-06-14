@@ -8,6 +8,7 @@ from omegaconf import OmegaConf
 from zotero_arxiv_daily.executor import (
     Executor,
     deduplicate_papers,
+    filter_by_relevance_score,
     normalize_keyword_groups,
     normalize_keywords,
     normalize_path_patterns,
@@ -222,6 +223,28 @@ def test_deduplicate_papers_merges_formal_publication_metadata():
     assert len(result) == 1
     assert result[0].pdf_url == "https://arxiv.org/pdf/1"
     assert result[0].journal == "Nature Methods"
+
+
+def test_filter_by_relevance_score_drops_scores_below_threshold():
+    papers = [
+        _make_paper("Score 1.9", ""),
+        _make_paper("Score 2.0", ""),
+        _make_paper("Score 3.5", ""),
+        _make_paper("No Score", ""),
+    ]
+    papers[0].score = 1.9
+    papers[1].score = 2.0
+    papers[2].score = 3.5
+
+    filtered = filter_by_relevance_score(papers, 2)
+
+    assert [paper.title for paper in filtered] == ["Score 2.0", "Score 3.5"]
+
+
+def test_filter_by_relevance_score_can_be_disabled():
+    papers = [_make_paper("No Score", "")]
+
+    assert filter_by_relevance_score(papers, None) == papers
 
 
 # ---------------------------------------------------------------------------

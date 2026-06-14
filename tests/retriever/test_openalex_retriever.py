@@ -31,6 +31,8 @@ def test_openalex_retriever_labels_formal_conference_publications(config, monkey
         config.source.openalex.journals = ["Nature Methods"]
         config.source.openalex.conferences = ["International Conference on Machine Learning"]
         config.source.openalex.lookback_days = 3
+        config.source.openalex.journals_lookback_days = 365
+        config.source.openalex.conferences_lookback_days = 180
         config.source.openalex.max_results = 30
 
     def resolve_journals(self, names):
@@ -40,7 +42,11 @@ def test_openalex_retriever_labels_formal_conference_publications(config, monkey
 
     def get(self, path, params):
         calls.append((path, params))
-        return {"results": [make_work("S2", "International Conference on Machine Learning")], "meta": {}}
+        if "source.id:S1" in params["filter"]:
+            results = [make_work("S1", "Nature Methods")]
+        else:
+            results = [make_work("S2", "International Conference on Machine Learning")]
+        return {"results": results, "meta": {}}
 
     monkeypatch.setattr("zotero_arxiv_daily.openalex_search.OpenAlexSearch.resolve_journals", resolve_journals)
     monkeypatch.setattr("zotero_arxiv_daily.openalex_search.OpenAlexSearch._get", get)
@@ -48,11 +54,17 @@ def test_openalex_retriever_labels_formal_conference_publications(config, monkey
     retriever = OpenAlexRetriever(config)
     papers = retriever.retrieve_papers()
 
-    assert len(papers) == 1
-    assert papers[0].venue_type == "conference"
-    assert papers[0].publication_status == "formally_published"
-    assert papers[0].journal == "International Conference on Machine Learning"
+    assert len(papers) == 2
+    assert papers[0].venue_type == "journal"
+    assert papers[0].publication_status == "published"
+    assert papers[1].venue_type == "conference"
+    assert papers[1].publication_status == "formally_published"
+    assert papers[1].journal == "International Conference on Machine Learning"
     assert "type:article" in calls[0][1]["filter"]
+    assert len(calls) == 2
+    assert "from_publication_date:" in calls[0][1]["filter"]
+    assert "from_publication_date:" in calls[1][1]["filter"]
+    assert calls[0][1]["filter"] != calls[1][1]["filter"]
 
 
 def test_openalex_retriever_skips_one_unresolved_venue(config, monkeypatch):

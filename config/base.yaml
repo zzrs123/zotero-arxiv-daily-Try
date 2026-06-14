@@ -17,7 +17,9 @@ source:
     journals: null # Exact journal names. Example: ["Nature Genetics", "Nature Methods"]
     conferences: null # Published proceedings only. Example: ["International Conference on Learning Representations"]
     lookback_days: 3 # Wider than one day to tolerate indexing delays.
-    max_results: 500
+    journals_lookback_days: 365 # Journal records can be discovered up to one year back; daily history prevents repeats.
+    conferences_lookback_days: 365 # Conference proceedings are often released or indexed in batches.
+    max_results: 500 # Maximum results per venue type (journals and conferences separately).
   acl_anthology:
     events: null # Official ACL Anthology event slugs. Example: ["acl", "emnlp"]
     years: null # Optional exact years. If null, uses lookback_years.
@@ -78,5 +80,6 @@ executor:
   debug: false # Whether to use debug mode. Example: true
   send_empty: false # Whether to send an empty email even if no new papers today. Example: true
   max_paper_num: 100 # The maximum number of the papers presented in the email. Example: 100
+  min_relevance_score: null # Drop reranked papers below this score. Example: 2
   source: ??? # The sources of papers to retrieve. Example: ['arxiv','biorxiv','medrxiv']
   reranker: local # The reranker to use. Example: 'local' or 'api'
