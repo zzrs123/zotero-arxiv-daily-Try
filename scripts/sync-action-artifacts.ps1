@@ -5,7 +5,7 @@ param(
     [int]$LookbackHours = 72,
 
     [ValidateRange(1, 240)]
-    [int]$DownloadTimeoutMinutes = 30,
+    [int]$DownloadTimeoutMinutes = 60,
 
     [switch]$Backfill,
 
@@ -202,6 +202,12 @@ function Publish-Metadata {
         }
 
         if ($PushMetadata) {
+            Write-Host "Synchronizing remote main before pushing metadata..."
+            & git pull --rebase origin main
+            if ($LASTEXITCODE -ne 0) {
+                throw "Metadata was committed locally, but remote changes could not be integrated. Resolve the rebase before pushing."
+            }
+
             & git push origin main
             if ($LASTEXITCODE -ne 0) {
                 throw "Metadata was committed locally, but push failed."
