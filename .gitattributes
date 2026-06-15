@@ -1,0 +1,6 @@
+.gitattributes text eol=lf
+
+# Keep generated paper metadata identical across Windows and Linux runners.
+papers/**/*.csv text eol=lf
+papers/**/*.md text eol=lf
+papers/**/*.json text eol=lf
