@@ -15,7 +15,9 @@ param(
 
     [switch]$CommitMetadata,
 
-    [switch]$PushMetadata
+    [switch]$PushMetadata,
+
+    [switch]$ForceDownload
 )
 
 $ErrorActionPreference = "Stop"
@@ -124,7 +126,7 @@ function Sync-WorkflowArtifacts {
 
         foreach ($artifact in $artifacts) {
             $artifactId = [string]$artifact.id
-            if ($State.downloaded_artifact_ids -contains $artifactId) {
+            if (-not $ForceDownload -and $State.downloaded_artifact_ids -contains $artifactId) {
                 Write-Host "  Run $($run.databaseId): artifact $artifactId already synced, skipping."
                 continue
             }
@@ -141,9 +143,13 @@ function Sync-WorkflowArtifacts {
             $psi.Arguments = "run download $($run.databaseId) --repo $Repository --name $ArtifactName --dir `"$staging`""
             $psi.UseShellExecute = $false
             $psi.CreateNoWindow = $true
+            $psi.RedirectStandardError = $true
+            $psi.RedirectStandardOutput = $true
 
             $proc = [System.Diagnostics.Process]::Start($psi)
             $ok = $proc.WaitForExit([int]($DownloadTimeoutMinutes * 60 * 1000))
+            $stdout = $proc.StandardOutput.ReadToEnd()
+            $stderr = $proc.StandardError.ReadToEnd()
 
             if (-not $ok) {
                 Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
@@ -155,6 +161,8 @@ function Sync-WorkflowArtifacts {
             if ($proc.ExitCode -ne 0) {
                 Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
                 Write-Host "  Run $($run.databaseId): download failed (exit $($proc.ExitCode)), skipping."
+                if ($stdout) { Write-Host $stdout.Trim() }
+                if ($stderr) { Write-Host $stderr.Trim() }
                 continue
             }
 
@@ -163,7 +171,9 @@ function Sync-WorkflowArtifacts {
                 Copy-Item -LiteralPath $_.FullName -Destination $Destination -Recurse -Force
             }
 
-            $State.downloaded_artifact_ids = @($State.downloaded_artifact_ids) + $artifactId
+            if ($State.downloaded_artifact_ids -notcontains $artifactId) {
+                $State.downloaded_artifact_ids = @($State.downloaded_artifact_ids) + $artifactId
+            }
             Save-State $State
             Remove-Item -LiteralPath $staging -Recurse -Force
             Write-Host "  Run $($run.databaseId): saved $ArtifactName to $Destination"
