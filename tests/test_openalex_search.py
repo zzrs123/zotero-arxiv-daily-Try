@@ -20,7 +20,7 @@ def test_reconstruct_abstract_orders_words_by_position():
     )
 
 
-def make_search_work(work_id, title, abstract_words=None):
+def make_search_work(work_id, title, abstract_words=None, journal=None, publication_date=None):
     abstract_words = abstract_words or []
     return {
         "id": work_id,
@@ -29,7 +29,10 @@ def make_search_work(work_id, title, abstract_words=None):
             word: [index] for index, word in enumerate(abstract_words)
         },
         "authorships": [],
-        "primary_location": {},
+        "primary_location": {
+            "source": {"display_name": journal} if journal else {},
+        },
+        "publication_date": publication_date,
     }
 
 
@@ -115,6 +118,47 @@ def test_search_default_uses_configured_group_rules(monkeypatch):
         "Spatial transcriptomics computational method"
     ]
     assert "spatial-computation" in papers[0].matched_keywords
+
+
+def test_search_prefers_configured_source_order_before_date(monkeypatch):
+    works = [
+        make_search_work(
+            "W1",
+            "Entropy bioinformatics later low-priority paper",
+            journal="Genome Medicine",
+            publication_date="2026-06-15",
+        ),
+        make_search_work(
+            "W2",
+            "Entropy bioinformatics earlier high-priority paper",
+            journal="Nature Methods",
+            publication_date="2026-05-01",
+        ),
+        make_search_work(
+            "W3",
+            "Entropy bioinformatics newest high-priority paper",
+            journal="Nature Methods",
+            publication_date="2026-06-01",
+        ),
+    ]
+    client = OpenAlexSearch("fake-key")
+    monkeypatch.setattr(client, "_get", lambda path, params: {"results": works})
+
+    papers = client.search(
+        ["entropy", "bioinformatics"],
+        [],
+        "2026-01-01",
+        "2026-06-15",
+        30,
+        "all",
+        source_rank={"nature methods": 0, "genome medicine": 1},
+    )
+
+    assert [paper.title for paper in papers] == [
+        "Entropy bioinformatics newest high-priority paper",
+        "Entropy bioinformatics earlier high-priority paper",
+        "Entropy bioinformatics later low-priority paper",
+    ]
 
 
 def test_to_paper_uses_open_access_pdf_and_doi():

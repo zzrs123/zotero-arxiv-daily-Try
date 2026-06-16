@@ -18,7 +18,7 @@ on:
           - "all"
           - "any"
       journals:
-        description: "Exact journal names separated by semicolons; blank searches all journals"
+        description: "Exact source names separated by semicolons; blank uses configured priority venues"
         required: false
         default: ""
         type: string
