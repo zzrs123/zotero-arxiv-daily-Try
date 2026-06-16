@@ -1,5 +1,6 @@
 from zotero_arxiv_daily.openalex_search import (
     OpenAlexSearch,
+    manual_archive_name,
     match_keywords,
     reconstruct_abstract,
     split_values,
@@ -68,6 +69,18 @@ def test_search_all_requires_every_keyword(monkeypatch):
     assert papers[0].matched_keywords == [
         "spatial transcriptomics", "computational method"
     ]
+
+
+def test_manual_archive_name_uses_default_topic():
+    assert manual_archive_name("2026-06-16", "default", []) == "2026-06-16-default"
+
+
+def test_manual_archive_name_summarizes_keywords_safely():
+    assert manual_archive_name(
+        "2026-06-16",
+        "all",
+        ["Spatial Transcriptomics", "cell-cell communication", "Graph/learning", "ignored"],
+    ) == "2026-06-16-spatial-transcriptomics-cell-cell-communication-graph-learning"
 
 
 def test_search_any_keeps_partial_matches(monkeypatch):

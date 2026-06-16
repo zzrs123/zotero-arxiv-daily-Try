@@ -116,9 +116,10 @@ def archive_papers(
     output_root: str | Path = ".",
     run_date: str | None = None,
     download_pdfs: bool = True,
+    directory_name: str | None = None,
 ) -> Path:
     archive_date = run_date or date.today().isoformat()
-    archive_dir = Path(output_root) / archive_date
+    archive_dir = Path(output_root) / (directory_name or archive_date)
     pdf_dir = archive_dir / "pdf"
     archive_dir.mkdir(parents=True, exist_ok=True)
     pdf_dir.mkdir(exist_ok=True)

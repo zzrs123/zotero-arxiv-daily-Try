@@ -54,3 +54,18 @@ def test_archive_papers_creates_expected_structure(tmp_path: Path):
     assert "10.1000/example" in csv_text
     assert "Spatial Transcriptomics; Bioinformatics" in csv_text
     assert "spatial omics; cell communication" in csv_text
+
+
+def test_archive_papers_supports_distinct_directory_name(tmp_path: Path):
+    archive_dir = archive_papers(
+        [make_paper()],
+        output_root=tmp_path / "papers" / "manual",
+        run_date="2026-06-16",
+        directory_name="2026-06-16-spatial-transcriptomics",
+        download_pdfs=False,
+    )
+
+    assert archive_dir == (
+        tmp_path / "papers" / "manual" / "2026-06-16-spatial-transcriptomics"
+    )
+    assert (archive_dir / "papers.csv").exists()

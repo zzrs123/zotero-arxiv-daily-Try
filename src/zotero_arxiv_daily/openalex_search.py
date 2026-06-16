@@ -1,5 +1,6 @@
 import argparse
 import os
+import re
 from datetime import date
 from pathlib import Path
 
@@ -35,6 +36,16 @@ def match_keywords(work: dict, keywords: list[str]) -> list[str]:
     abstract = reconstruct_abstract(work.get("abstract_inverted_index"))
     searchable_text = f"{title}\n{abstract}".casefold()
     return [keyword for keyword in keywords if keyword.casefold() in searchable_text]
+
+
+def manual_archive_name(run_date: str, match_mode: str, keywords: list[str]) -> str:
+    if match_mode == "default":
+        return f"{run_date}-default"
+
+    topic = "-".join(keywords[:3]).casefold()
+    topic = re.sub(r"[^\w]+", "-", topic, flags=re.UNICODE).strip("-_")
+    topic = topic[:80].rstrip("-_") or "search"
+    return f"{run_date}-{topic}"
 
 
 class OpenAlexSearch:
@@ -272,6 +283,7 @@ def main() -> None:
         output_root=Path(args.output_dir),
         run_date=args.archive_date,
         download_pdfs=not args.skip_pdf_download,
+        directory_name=manual_archive_name(args.archive_date, args.match_mode, keywords),
     )
     print(f"Saved {len(papers)} papers to {archive_dir}")
 
