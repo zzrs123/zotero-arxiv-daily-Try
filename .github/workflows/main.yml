@@ -41,6 +41,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          DEBUG: "false"
         run: |
           echo "Use custom config: "
           cat config/custom.yaml
