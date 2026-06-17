@@ -1,5 +1,6 @@
 import html
 import re
+import time
 from dataclasses import dataclass
 from datetime import date
 from typing import Iterable
@@ -79,9 +80,20 @@ class OfficialConferenceRetriever(BaseRetriever):
         return papers
 
     def _get(self, url: str) -> str:
-        response = self.session.get(url, timeout=60)
-        response.raise_for_status()
-        return response.text
+        last_exc = None
+        for attempt in range(1, 4):
+            try:
+                response = self.session.get(url, timeout=60)
+                response.raise_for_status()
+                return response.text
+            except requests.HTTPError:
+                raise
+            except requests.RequestException as exc:
+                last_exc = exc
+                if attempt < 3:
+                    logger.warning(f"Retrying {url} after request failure ({attempt}/3): {exc}")
+                    time.sleep(2 * attempt)
+        raise last_exc
 
     def _years(self) -> list[int]:
         configured = self.retriever_config.get("years")
@@ -139,6 +151,9 @@ class ACLAnthologyRetriever(OfficialConferenceRetriever):
                     logger.info(f"ACL Anthology event not available yet: {url}")
                     continue
                 raise
+            except requests.RequestException as exc:
+                logger.warning(f"Skipping ACL Anthology event {url}: {exc}")
+                continue
 
             papers.extend(self._parse_event_page(page, event.upper(), year))
             if len(papers) >= self._max_results():
@@ -200,6 +215,9 @@ class NeurIPSRetriever(OfficialConferenceRetriever):
                     logger.info(f"NeurIPS proceedings not available yet: {url}")
                     continue
                 raise
+            except requests.RequestException as exc:
+                logger.warning(f"Skipping NeurIPS proceedings {url}: {exc}")
+                continue
             paper_urls = self._parse_listing_page(page)
             for paper_url in paper_urls:
                 if len(papers) >= self._max_results():

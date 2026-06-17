@@ -1,3 +1,4 @@
+import requests
 from omegaconf import open_dict
 
 from zotero_arxiv_daily.retriever.official_conference_retriever import (
@@ -52,6 +53,21 @@ def test_acl_anthology_retriever_parses_event_page(config):
     assert papers[0].abstract == "Graph representation learning abstract."
     assert papers[0].pdf_url == "https://aclanthology.org/2025.acl-long.2.pdf"
     assert papers[0].publication_date == "2025-01-01"
+
+
+def test_acl_anthology_retriever_skips_request_failures(config, monkeypatch):
+    with open_dict(config):
+        config.source.acl_anthology.events = ["acl"]
+        config.source.acl_anthology.years = [2025]
+
+    retriever = ACLAnthologyRetriever(config)
+    monkeypatch.setattr(
+        retriever,
+        "_get",
+        lambda url: (_ for _ in ()).throw(requests.ConnectionError("closed")),
+    )
+
+    assert retriever._retrieve_raw_papers() == []
 
 
 def test_neurips_retriever_parses_listing_and_detail(config):
