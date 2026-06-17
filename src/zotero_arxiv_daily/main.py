@@ -9,8 +9,22 @@ from zotero_arxiv_daily.executor import Executor
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 dotenv.load_dotenv()
 
+
+def parse_bool(value) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        normalized = value.strip().casefold()
+        if normalized in {"true", "1", "yes", "y", "on"}:
+            return True
+        if normalized in {"false", "0", "no", "n", "off", ""}:
+            return False
+    return bool(value)
+
+
 @hydra.main(version_base=None, config_path="../../config", config_name="default")
 def main(config:DictConfig):
+    config.executor.debug = parse_bool(config.executor.debug)
     # Configure loguru log level based on config
     log_level = "DEBUG" if config.executor.debug else "INFO"
     logger.remove()  # Remove default handler
