@@ -13,6 +13,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Verify main branch checkout
+        run: |
+          git fetch origin main --depth=1
+          current_sha="$(git rev-parse HEAD)"
+          main_sha="$(git rev-parse origin/main)"
+          echo "Current SHA: $current_sha"
+          echo "origin/main SHA: $main_sha"
+          if [ "$current_sha" != "$main_sha" ]; then
+            echo "::error::Daily workflow is not running the latest origin/main commit."
+            exit 1
+          fi
 
       - name: Setup uv
         uses: astral-sh/setup-uv@v7
