@@ -1,0 +1,511 @@
+# Paper Daily Reading - 2026-06-25
+
+## 1. Learning Fair Graph Representations via Probability of Necessity and Sufficiency
+
+- Authors: Chuxun Liu, Qingfeng Chen, Debo Cheng, Jiangzhang Gan, Xiaoli Li, Lin Liu
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i28.39540
+- Categories: Advanced Graph Neural Networks, Ethics and Social Impacts of AI, Machine Learning in Healthcare
+- Relevance: 3.5277466018709767
+- Article: https://doi.org/10.1609/aaai.v40i28.39540
+- PDF: https://ojs.aaai.org/index.php/AAAI/article/download/39540/43501
+- Local PDF: Not downloaded
+
+Graph Neural Networks (GNNs) excel at modeling graph data but often amplify biases tied to sensitive attributes like gender and race. Existing causality-based methods use isolated interventions on graph topology or features but struggle to produce representations that balance predictive power with fairness. This leads to two issues: (1) weak predictive power, where representations miss critical task-relevant features, and (2) bias amplification, where representations encode sensitive attributes, causing unfair outcomes. To address these issues, we introduce the Probability of Necessity and Sufficiency (PNS), where necessity ensures representations capture only essential features for predictions, and sufficiency guarantees these features are adequate without relying on sensitive attributes. We propose FairSNR, a fairness-aware graph representation learning framework that introduces constraints based on the PNS. This leverages PNS to guide the learning of fair representations from graph data. In particular, FairSNR employs an encoder to learn node representations with high PNS for downstream tasks. To compute and optimize PNS, FairSNR introduces an intervenor to generate the most challenging counterfactual interventions on the representations, thereby enhancing the model’s causal stability even under worst-case scenarios. Further, a discriminator is trained to detect and mitigate sensitive information leakage in the learned representations, effectively disentangling sensitive biases from task-relevant features. Experiments on real-world graph datasets demonstrate that FairSNR outperforms existing state-of-the-art (SOTA) methods in both fairness and utility.
+
+## 2. An atlas-scale generative model for unified representation learning of bulk RNA-seq data
+
+- Authors: Pande, A., Uyar, B., Akalin, A.
+- Source: biorxiv
+- Venue type: preprint
+- Journal: biorxiv
+- Publication status: preprint
+- Publication date: 2026-06-24
+- DOI: 10.64898/2026.06.18.733198
+- Categories: bioinformatics
+- Relevance: 3.5122729135106923
+- Article: https://www.biorxiv.org/content/10.64898/2026.06.18.733198v1.full.pdf
+- PDF: https://www.biorxiv.org/content/10.64898/2026.06.18.733198v1.full.pdf
+- Local PDF: Not downloaded
+
+Public bulk RNA-seq repositories contain hundreds of thousands of samples, creating opportunities for large-scale representation learning, but integration across studies remains challenging because of heterogeneous annotations, experimental protocols, and technical variation. While pre-trained foundation models are now widely available for single-cell RNA-seq, comparable resources for bulk RNA-seq remain scarce, motivating a model that learns a unified, tissue-aware representation directly from bulk data. We trained a supervised variational autoencoder (VAE) on a compendium of 118,263 bulk RNA-seq samples that we assembled from TCGA, GTEx, and ARCHS4 and mapped to 42 tissue categories. The model classifies tissue of origin at 94.9% balanced accuracy (weighted F1 96.2%) and compresses 16,115 genes into a 121-dimensional latent space. Tissue identity is the primary organizing axis of the latent space, while source effects remain secondary. To assess the impact of data volume, we constructed training sets at three different scales (38K, 75K, and 118K samples). Our results demonstrated that reconstruction fidelity improved incrementally with each expansion of the dataset, but with diminishing returns. We validated the model on an independent cohort of 734 paediatric tumour samples from TARGET, achieving 84.6% agreement with the expected tissue of origin. The trained model and code are available at GitHub (https://github.com/BIMSBbioinfo/flexynesis_tissue_vae_manuscript) with an interactive web application.
+
+## 3. HiGoE: Hierarchical Graph of Evidence to Enhance Retrieval-Augmented Generation for Long-context Summarization
+
+- Authors: Long Yuan, Kaiwen Tian, Zi Chen, Bolong Zheng, Chuan Ma
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.4096606533862603
+- Article: https://aclanthology.org/2026.acl-long.902/
+- PDF: https://aclanthology.org/2026.acl-long.902.pdf
+- Local PDF: pdf/2026-06-25_03_HiGoE_ Hierarchical Graph of Evidence to Enhance Retrieval-Augmented Generation for Long-context Summarization.pdf
+
+Long-context summarization is pivotal for extracting core insights from extensive documents. While Large Language Models (LLMs) show remarkable capabilities, they frequently encounter attention dilution and hallucination with lengthy inputs. Retrieval-Augmented Generation (RAG) partially mitigates this, but conventional RAG relies on shallow similarity retrieval of fragmented chunks, failing to capture high-level thematic structures and long-range dependencies. Although graph-based RAG approaches have emerged to address these structural limitations, existing solutions, such as Graph of Records (GoR), critically suffer from a fundamental flaw: they paradoxically re-introduce hallucinations by constructing graphs based on unreliable, LLM-generated responses. To overcome these challenges, we introduce Hierarchical Graph of Evidence (HiGoE) (Code link https://github.com/tkw123/HiGOE). HiGoE redefines the retrieval process by replacing unreliable chunk-based methods with a filtered proposition–evidence graph, ensuring verifiable fact grounding and substantially reducing hallucination. Moreover, HiGoE leverages Personalized PageRank (PPR) to cluster related nodes into thematic hierarchies, thereby restoring global document structure and effectively mitigating attention dilution. To model complex, multi-level relations beyond mere shallow similarity, we develop an Enhanced Graph Attention Network. Experiments show HiGoE consistently surpasses baselines in quality and efficiency.
+
+## 4. Sparse Feature Coactivation Reveals Causal Semantic Modules in Large Language Models
+
+- Authors: Ruixuan Deng, Xiaoyang Hu, Miles Gilberti, Shane Storks, Aman Taxali, Mike Angstadt, Chandra Sripada, Joyce Chai
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.4051456612006814
+- Article: https://aclanthology.org/2026.acl-long.155/
+- PDF: https://aclanthology.org/2026.acl-long.155.pdf
+- Local PDF: pdf/2026-06-25_04_Sparse Feature Coactivation Reveals Causal Semantic Modules in Large Language Models.pdf
+
+We identify semantically coherent, context-consistent network components in large language models (LLMs) using coactivation of sparse autoencoder (SAE) features collected from just a handful of prompts. Focusing on concept-relation prediction tasks, we show that ablating these components for concepts (e.g., countries and words) and relations (e.g., capital city and translation language) changes model outputs in predictable ways, while amplifying these components induces counterfactual responses. Notably, composing relation and concept components yields compound counterfactual outputs. Further analysis reveals that while most concept components emerge from the very first layer, more abstract relation components are concentrated in later layers. Lastly, we show that extracted components more comprehensively capture concepts and relations than individual features while maintaining specificity. Overall, our findings suggest a modular organization of knowledge and advance methods for efficient, targeted LLM manipulation.
+
+## 5. Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval
+
+- Authors: Joaquin Polonuer, Lucas Vittor, Iñaki Arango, Ayush Noori, David A. Clifton, Luciano Del Corro, Marinka Zitnik
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3915181799005234
+- Article: https://aclanthology.org/2026.acl-long.714/
+- PDF: https://aclanthology.org/2026.acl-long.714.pdf
+- Local PDF: pdf/2026-06-25_05_Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval.pdf
+
+Retrieving evidence for language model queries from knowledge graphs requires balancing broad search across the graph with multi-hop traversal to follow relational links. Similarity-based retrievers provide coverage but remain shallow, whereas traversal-based methods rely on selecting seed nodes to start exploration, which can fail when queries span multiple entities and relations. We introduce ARK: Adaptive Retriever of Knowledge, a tool-using KG retriever that gives a language model control over this breadth-depth tradeoff using a two-operation toolset: global lexical search over node descriptors and one-hop neighborhood exploration that composes into multi-hop traversal. ARK alternates between breadth-oriented discovery and depth-oriented expansion without depending on a fragile seed selection, a pre-set hop depth, or requiring retrieval training. ARK adapts tool use to queries, using global search for language-heavy queries and neighborhood exploration for relation-heavy queries.On STaRK, ARK reaches 59.1% average Hit@1 and 67.4 average MRR, improving average Hit@1 by up to 31.4% and average MRR by up to 28.0% over retrieval-based and agent-based training-free methods.Finally, we distill ARK’s tool-use trajectories from a large teacher into an 8B model via label-free imitation, improving Hit@1 by +7.0, +26.6, and +13.5 absolute points over the base 8B model on AMAZON, MAG, and PRIME datasets, respectively, while retaining up to 98.5% of the teacher’s Hit@1 rate.
+
+## 6. CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models
+
+- Authors: Shengli Zhou, Xiangchen Wang, Guanhua Chen, Feng Zheng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3911375587744432
+- Article: https://aclanthology.org/2026.acl-long.23/
+- PDF: https://aclanthology.org/2026.acl-long.23.pdf
+- Local PDF: pdf/2026-06-25_06_CAPruner_ Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models.pdf
+
+Large language models (LLMs) have recently been applied to 3D vision-language (3D-VL) tasks, which require spatial reasoning to identify target objects relative to anchors. Scene graphs are commonly employed to represent such relations, but reasoning over complete graphs incurs high token costs and computational inefficiencies, motivating the need for pruning. Existing pruning methods primarily rely on spatial proximity and often remove task-relevant relations, thereby undermining reliable spatial reasoning. To address these limitations, we derive a key requirement for scene graph pruning: preserving spatial relations that are most pertinent to the specific 3D-VL task. Guided by this insight, we propose the Conceptual-Adjacent Scene Graph Pruner (CAPruner). CAPruner integrates fuzzy semantic relevance with spatial proximity to estimate the importance of relations, enabling the selection of critical relations in a task-specific context. Moreover, to avoid costly relation-level annotations, CAPruner is trained by supervising the aggregated scores of each node’s incident edges. Extensive experiments demonstrate that CAPruner effectively preserves relations essential for spatial reasoning, leading to substantial performance improvements of LLMs on 3D-VL tasks. Code is available at https://github.com/fz-zsl/CAPruner.
+
+## 7. Revealing the Seen, Imagining the Beyond: A Survey of Image-Grounded Chain-of-Thought Reasoning in Multimodal LLMs
+
+- Authors: Qihua Dong, Yitian Zhang, Huimin Zeng, Yizhou Wang, Jianglin Lu, Kuo Yang, Yun Fu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.377750355481294
+- Article: https://aclanthology.org/2026.acl-long.2087/
+- PDF: https://aclanthology.org/2026.acl-long.2087.pdf
+- Local PDF: pdf/2026-06-25_07_Revealing the Seen, Imagining the Beyond_ A Survey of Image-Grounded Chain-of-Thought Reasoning in Multimodal LLMs.pdf
+
+Multimodal large language models (MLLMs) are making rapid strides in complex visual reasoning. This survey synthesizes the emerging paradigm of Image-Grounded Chain-of-Thought (IG-CoT), where models ground intermediate inferences by interleaving textual rationales with visual state updates. We formalize IG-CoT, present a method-centric taxonomy covering prompting, supervised fine-tuning, and reinforcement learning, and map these techniques to representative benchmarks. Our analysis identifies two domains where IG-CoT offers significant advantages: detail-oriented reasoning requiring meticulous perception, and imagined-world reasoning for simulating unseen states in games, geometry, and planning. We discuss the practical trade-offs of current methods regarding controllability, data, and compute. We conclude by highlighting key challenges (efficiency, data quality, and generative capabilities) and outlining promising future directions, including lightweight architectures, richer intermediate supervision, and method-aware evaluations that better assess faithfulness and long-horizon reasoning. We maintain a continuously updated paper list at https://github.com/dddraxxx/Awesome-Image-Grounded-CoT.
+
+## 8. GS-Quant: Granular Semantic and Generative Structural Quantization for Knowledge Graph Completion
+
+- Authors: Qizhuo Xie, Yunhui Liu, Yu Xing, Qianzi Hou, Xudong Jin, Tao Zheng, Tieke He
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3756248950947407
+- Article: https://aclanthology.org/2026.acl-long.765/
+- PDF: https://aclanthology.org/2026.acl-long.765.pdf
+- Local PDF: pdf/2026-06-25_08_GS-Quant_ Granular Semantic and Generative Structural Quantization for Knowledge Graph Completion.pdf
+
+Large Language Models (LLMs) have shown immense potential in Knowledge Graph Completion (KGC), yet bridging the modality gap between continuous graph embeddings and discrete LLM tokens remains a critical challenge. While recent quantization-based approaches attempt to align these modalities, they typically treat quantization as flat numerical compression, resulting in semantically entangled codes that fail to mirror the hierarchical nature of human reasoning. In this paper, we propose GS-Quant, a novel framework that generates semantically coherent and structurally stratified discrete codes for KG entities. Unlike prior methods, GS-Quant is grounded in the insight that entity representations should follow a linguistic coarse-to-fine logic. We introduce a Granular Semantic Enhancement module that injects hierarchical knowledge into the codebook, ensuring that earlier codes capture global semantic categories while later codes refine specific attributes. Furthermore, a Generative Structural Reconstruction module imposes causal dependencies on the code sequence, transforming independent discrete units into structured semantic descriptors. By expanding the LLM vocabulary with these learned codes, we enable the model to reason over graph structures isomorphically to natural language generation. Experimental results demonstrate that GS-Quant significantly outperforms existing text-based and embedding-based baselines.
+
+## 9. SP-Mind: An Autonomous Reasoning Agent for Spatial Proteomics Analysis
+
+- Authors: Yucheng Yuan, Yuanfeng Ji, Zhongxiao Li, Ruijiang Li
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-06-23
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.3754242968676507
+- Article: http://arxiv.org/abs/2606.24235v1
+- PDF: https://arxiv.org/pdf/2606.24235v1
+- Local PDF: pdf/2026-06-25_09_SP-Mind_ An Autonomous Reasoning Agent for Spatial Proteomics Analysis.pdf
+
+Spatial proteomics enables single-cell-resolution characterization of protein expression within tissue architecture, playing a critical role in understanding tumor microenvironments and guiding precision medicine. However, current analysis workflows remain fragmented, requiring expert manual orchestration of heterogeneous tools and limiting research scalability and reproducibility. We present SP-Mind, the first autonomous AI agent designed to unify the spatial proteomics analysis pipeline, from raw multiplexed tissue imaging to downstream phenotype discovery. Equipped with expert-curated biological analysis skills and specialized computational tools, SP-Mind converts natural-language queries into end-to-end analytical workflows without task-specific fine-tuning. To rigorously evaluate its capabilities, we introduce SP-Bench, a comprehensive benchmark spanning diverse tissue types, comprising 102 tasks across 18 distinct categories. Through extensive evaluation on SP-Bench and established downstream tasks, SP-Mind achieves state-of-the-art performance compared to existing open-source biomedical agent baselines.
+
+## 10. TRN-R1-Zero: Text-rich Network Reasoning via LLMs with Reinforcement Learning Only
+
+- Authors: Yilun Liu, Ruihong Qiu, Zi Huang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3392618392549247
+- Article: https://aclanthology.org/2026.acl-long.823/
+- PDF: https://aclanthology.org/2026.acl-long.823.pdf
+- Local PDF: pdf/2026-06-25_10_TRN-R1-Zero_ Text-rich Network Reasoning via LLMs with Reinforcement Learning Only.pdf
+
+Zero-shot reasoning on text-rich networks (TRNs) remains a challenging frontier, as models must integrate textual semantics with relational structure without task-specific supervision. While graph neural networks rely on fixed label spaces and supervised objectives, recent large language model (LLM)-based approaches often overlook graph context or depend on distillation from larger models, limiting generalisation. We propose TRN-R1-Zero, a post-training framework for TRN reasoning trained solely via reinforcement learning. TRN-R1-Zero directly optimises base LLMs using a Neighbour-aware Group Relative Policy Optimisation objective that dynamically adjusts rewards based on a novel margin gain metric for the informativeness of neighbouring signals, effectively guiding the model toward relational reasoning. Unlike prior methods, TRN-R1-Zero requires no supervised fine-tuning or chain-of-thought data generated from large reasoning models. Extensive experiments across citation, hyperlink, social and co-purchase TRN benchmarks demonstrate the superiority and robustness of TRN-R1-Zero. Beyond cross-domain transfer, TRN-R1-Zero, trained solely on node-level tasks, further generalises to edge- and graph-level tasks in a zero-shot manner. The codebase is open-source at [https://github.com/superallen13/TRN-R1-Zero](https://github.com/superallen13/TRN-R1-Zero).
+
+## 11. Thesis Proposal: On the Granularity-Robustness Trade-off in Text-Derived Knowledge Graphs
+
+- Authors: Surawat Pralomram
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.331707142186515
+- Article: https://aclanthology.org/2026.acl-srw.17/
+- PDF: https://aclanthology.org/2026.acl-srw.17.pdf
+- Local PDF: pdf/2026-06-25_11_Thesis Proposal_ On the Granularity-Robustness Trade-off in Text-Derived Knowledge Graphs.pdf
+
+Retrieval-augmented generation (RAG) based on dense embeddings has become a dominant paradigm for text retrieval. However, many real-world applications require attribute-specific querying, where explicit values or properties must be extracted from text (e.g., symptoms in clinical notes or dosage values in medical reports). Dense retrieval handles paraphrastic variation well but often entangles multiple attributes within a single embedding, making value extraction difficult. Knowledge graphs (KGs), in contrast, support explicit attribute access but are brittle under linguistic and structural variation, leading to low recall.This thesis proposal aims to investigate the representational trade-off underlying these approaches. We study knowledge graph representations from an information-theoretic and optimal coding perspective, focusing on the tension between fine-grained factorization and compact canonicalization of concepts. Building on this perspective, we propose a query-driven framework for constructing and retrieving knowledge graphs from text, aiming to combine the robustness of dense retrieval with the explicit queryability of symbolic representations.
+
+## 12. TIDEST: post-imputation differential expression testing for spatial transcriptomics data
+
+- Authors: Roeder, K., Lei, J., Testa, L.
+- Source: biorxiv
+- Venue type: preprint
+- Journal: biorxiv
+- Publication status: preprint
+- Publication date: 2026-06-24
+- DOI: 10.64898/2026.06.19.733432
+- Categories: genomics
+- Relevance: 3.3312842986644298
+- Article: https://www.biorxiv.org/content/10.64898/2026.06.19.733432v1.full.pdf
+- PDF: https://www.biorxiv.org/content/10.64898/2026.06.19.733432v1.full.pdf
+- Local PDF: Not downloaded
+
+Spatial transcriptomics enables the study of tissue organization in situ, but many high-resolution platforms measure only a limited gene panel, leaving much of the transcriptome unobserved. Although deep learning methods can reconstruct missing genes from matched single-cell references, downstream differential expression (DE) analysis remains unreliable because prediction uncertainty and spatially structured sources of variation are typically ignored. These factors can bias effect estimates and inflate false discoveries. We present TIDEST, a framework for DE testing after spatial transcriptomic imputation. TIDEST uses information from measured genes to correct systematic errors in reconstructed expression and adjusts for latent spatial variation, such as tissue architecture or cell type composition, that can create spurious differences between biological groups. Across extensive simulations, TIDEST maintains substantially better error control than existing approaches while preserving power. Applications to mouse brain, human glioblastoma, and human breast cancer data recover biologically meaningful DE signals that are missed or distorted by conventional analyses. TIDEST provides a principled framework for DE analysis on reconstructed spatial transcriptomes.
+
+## 13. GenDis: Generative-Discriminative Dual-View Co-Training for Generalized Category Discovery
+
+- Authors: Xi Chen, Chuan Qin, Jinpeng Li, Shasha Hu, Chao Wang, Hengshu Zhu, Hui Xiong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.329217159698463
+- Article: https://aclanthology.org/2026.acl-long.107/
+- PDF: https://aclanthology.org/2026.acl-long.107.pdf
+- Local PDF: pdf/2026-06-25_13_GenDis_ Generative-Discriminative Dual-View Co-Training for Generalized Category Discovery.pdf
+
+Generalized Category Discovery (GCD) aims to identify both known and novel categories from partially labeled data, reflecting more realistic open-world learning scenarios. However, most existing methods rely solely on one-hot discriminative supervision, leading to overfitting on seen classes and poor generalization to unseen ones. Recent advances introduce large language models (LLMs) to incorporate external semantics, yet they often suffer from semantic–label misalignment and weak semantic integration during training. We propose GenDis, a Generative–Discriminative Dual-View Co-Training framework that unifies discriminative classification and semantic label generation within an LLM. Discriminative pseudo-labels guide the formation of a separable generative latent space, enabling semantically meaningful supervision for novel classes. To ensure consistency between the two views, we employ Canonical Correlation Analysis (CCA)-based alignment and a curriculum-guided, dispersion-aware pseudo-labeling strategy for iterative refinement. Extensive experiments on five GCD benchmarks demonstrate that GenDis substantially outperforms prior methods, validating the effectiveness of dual-view co-training with semantically enriched supervision. The anonymized repository is available at https://anonymous.4open.science/r/GenDis.
+
+## 14. Defense Against Knowledge Poisoning Attack on GraphRAG
+
+- Authors: Havva Alizadeh Noughabi, Fattane Zarrinkalam, Ali Dehghantanha
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3291693093124533
+- Article: https://aclanthology.org/2026.acl-short.47/
+- PDF: https://aclanthology.org/2026.acl-short.47.pdf
+- Local PDF: pdf/2026-06-25_14_Defense Against Knowledge Poisoning Attack on GraphRAG.pdf
+
+GraphRAG augments large language models with structured knowledge graphs, enabling graph-based context selection and a more integrated view of the knowledge space. However, recent work shows that GraphRAG exposes a new attack surface: corpus-level knowledge poisoning can inject spurious entities and relationships during graph construction, corrupting query-specific subgraphs and steering the generator toward incorrect answers. We propose Hop-wise Guard for GraphRAG (HoG-GRAG), a defense layer between retriever and generator that decomposes multi-hop questions into ordered subqueries, monitors hop-wise execution for poisoning-induced inconsistencies, and locally repairs the retrieved subgraph by pruning compromised entities and relationships and adding only minimal missing evidence. Experiments on multi-hop datasets and multiple GraphRAG configurations show that HoG-GRAG recovers a large fraction of the lost performance. The code is available at https://github.com/CyberScienceLab/HoG-GRAG.
+
+## 15. Collaboration of Fusion and Independence: Hypercomplex-driven Robust Multi-Modal Knowledge Graph Completion
+
+- Authors: Zhiqiang Liu, Yichi Zhang, Mengshu Sun, Lei Liang, Wen Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.327319641005083
+- Article: https://aclanthology.org/2026.acl-long.1289/
+- PDF: https://aclanthology.org/2026.acl-long.1289.pdf
+- Local PDF: pdf/2026-06-25_15_Collaboration of Fusion and Independence_ Hypercomplex-driven Robust Multi-Modal Knowledge Graph Completion.pdf
+
+Multi-modal knowledge graph completion (MMKGC) aims to discover missing facts in multi-modal knowledge graphs (MMKGs) by leveraging both structural relationships and diverse modality information of entities. Existing MMKGC methods follow two multi-modal paradigms: fusion-based and ensemble-based. Fusion-based methods employ fixed fusion strategies, which inevitably leads to the loss of modality-specific information and a lack of flexibility to adapt to varying modality relevance across contexts. In contrast, ensemble-based methods retain modality independence through dedicated sub-models but struggle to capture the nuanced, context-dependent semantic interplay between modalities. To overcome these dual limitations, we propose a novel MMKGC method M-Hyper, which achieves the coexistence and collaboration of fused and independent modality representations. Our method integrates the strengths of both paradigms, enabling effective cross-modal interactions while maintaining modality-specific information. Inspired by “quaternion” algebra, we utilize its four orthogonal bases to represent multiple independent modalities and employ the Hamilton product to efficiently model pair-wise interactions among them. Specifically, we introduce a Fine-grained Entity Representation Factorization (FERF) module and a Robust Relation-aware Modality Fusion (R2MF) module to obtain robust representations for three independent modalities and one fused modality. The resulting four modality representations are then mapped to the four orthogonal bases of a biquaternion for comprehensive modality interaction. Extensive experiments indicate its state-of-the-art performance with better robustness.
+
+## 16. Compressing then Matching: An Efficient Pre-training Paradigm for Multimodal Embedding
+
+- Authors: Da Li, Yuxiao Luo, Keping Bi, Jiafeng Guo, Wei Yuan, Biao Yang, Yan Wang, Fan Yang, Tingting Gao, Guorui Zhou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3207900529276024
+- Article: https://aclanthology.org/2026.acl-long.169/
+- PDF: https://aclanthology.org/2026.acl-long.169.pdf
+- Local PDF: pdf/2026-06-25_16_Compressing then Matching_ An Efficient Pre-training Paradigm for Multimodal Embedding.pdf
+
+Multimodal Large Language Models advance multimodal representation learning by acquiring transferable semantic embeddings, thereby substantially enhancing performance across a range of vision-language tasks, including cross-modal retrieval, clustering, and classification. An effective embedding is expected to comprehensively preserve the semantic content of the input while simultaneously emphasizing features that are discriminative for downstream tasks. Recent approaches demonstrate that MLLMs can be adapted into competitive embedding models via large-scale contrastive learning, enabling the simultaneous optimization of two complementary objectives. We argue that the two aforementioned objectives can be decoupled: a comprehensive understanding of the input enables the embedding model to achieve superior performance on downstream tasks via contrastive learning. In this paper, we propose CoMa, a compressed pre-training phase, which serves as a warm-up stage for contrastive learning. Experiments demonstrate that with only a small amount of pre-training data, we can transform an MLLM into a competitive embedding model. CoMa achieves new state-of-the-art results among MLLMs of comparable size on the MMEB, realizing optimization in both efficiency and effectiveness. Our project is available at https://github.com/Trustworthy-Information-Access/CoMa.
+
+## 17. KG-ViP: Bridging Knowledge Grounding and Visual Perception in Multi-modal LLMs for Visual Question Answering
+
+- Authors: Zhiyang Li, Ao Ke, Yukun Cao, Xike Xie
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3108619227436358
+- Article: https://aclanthology.org/2026.acl-long.1622/
+- PDF: https://aclanthology.org/2026.acl-long.1622.pdf
+- Local PDF: pdf/2026-06-25_17_KG-ViP_ Bridging Knowledge Grounding and Visual Perception in Multi-modal LLMs for Visual Question Answering.pdf
+
+Multi-modal Large Language Models (MLLMs) for Visual Question Answering (VQA) often suffer from dual limitations: knowledge hallucination and insufficient fine-grained visual perception. Crucially, we identify that commonsense graphs and scene graphs provide precisely complementary solutions to these respective deficiencies by providing rich external knowledge and capturing fine-grained visual details. However, prior works typically treat them in isolation, overlooking their synergistic potential. To bridge this gap, we propose KG-ViP, a unified framework that empowers MLLMs by fusing scene graphs and commonsense graphs. The core of the KG-ViP framework is a novel retrieval-and-fusion pipeline that utilizes the query as a semantic bridge to progressively integrate both graphs, synthesizing a unified structured context that facilitates reliable multi-modal reasoning. Extensive experiments on FVQA 2.0+ and MVQA benchmarks demonstrate that KG-ViP significantly outperforms existing VQA methods.
+
+## 18. AutoSchemaKG: Autonomous Knowledge Graph Construction through Dynamic Schema Induction from Web-Scale Corpora
+
+- Authors: Jiaxin Bai, Wei Fan, Qi Hu, Qing Zong, Chunyang Li, Hong Ting Tsang, Hongyu Luo, Yauwai Yim, Haoyu Huang, Xiao Zhou, Feng Qin, Tianshi Zheng, Xi Peng, Xin Yao, Huiwen Yang, Leijie Wu, JI Yi, Gong Zhang, Renhai Chen, Yangqiu Song
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3048636558995
+- Article: https://aclanthology.org/2026.acl-long.942/
+- PDF: https://aclanthology.org/2026.acl-long.942.pdf
+- Local PDF: pdf/2026-06-25_18_AutoSchemaKG_ Autonomous Knowledge Graph Construction through Dynamic Schema Induction from Web-Scale Corpora.pdf
+
+We present AutoSchemaKG, a framework for fully autonomous knowledge graph construction that eliminates the need for predefined schemas. Our system leverages large language models to simultaneously extract knowledge triples and induce comprehensive schemas directly from text, modeling both entities and events while employing conceptualization to organize instances into semantic categories. Processing over 50 million documents, we construct ATLAS (Automated Triple Linking And Schema induction), a family of knowledge graphs with 900+ million nodes and 5.9 billion edges. This approach outperforms state-of-the-art baselines on multi-hop QA tasks and enhances LLM factuality. Notably, our schema induction achieves 92% semantic alignment with human-crafted schemas with zero manual intervention, demonstrating that billion-scale knowledge graphs with dynamically induced schemas can effectively complement parametric knowledge in large language models.
+
+## 19. Graph-Based Alternatives to LLMs for Human Simulation
+
+- Authors: Joseph Suh, Suhong Moon, Serina Chang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.3022760698024642
+- Article: https://aclanthology.org/2026.acl-long.2157/
+- PDF: https://aclanthology.org/2026.acl-long.2157.pdf
+- Local PDF: pdf/2026-06-25_19_Graph-Based Alternatives to LLMs for Human Simulation.pdf
+
+Large language models (LLMs) have become a popular approach for simulating human behaviors, yet it remains unclear if LLMs are necessary for all simulation tasks. We study a broad family of close-ended simulation tasks, with applications from survey prediction to test-taking, and show that a graph neural network can match or surpass strong LLM-based methods. We introduce Graph-basEd Models for Human Simulation (GEMS) which formulates close-ended simulation as link prediction on a heterogeneous graph of individuals and choices. Across three datasets and three evaluation settings, GEMS matches or outperforms the strongest LLM-based methods while using three orders of magnitude fewer parameters. These results suggest that graph-based modeling can complement LLMs as an efficient and transparent approach to simulating human behaviors. Code is available at https://github.com/schang-lab/gems.
+
+## 20. Semantic Span Annotation: An Exploratory Study of LLM Annotation
+
+- Authors: Tejas Goyal, Dhriti Krishnan, Anuj Gupta, Jaromir Savelka
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.2978119355081748
+- Article: https://aclanthology.org/2026.acl-srw.39/
+- PDF: https://aclanthology.org/2026.acl-srw.39.pdf
+- Local PDF: pdf/2026-06-25_20_Semantic Span Annotation_ An Exploratory Study of LLM Annotation.pdf
+
+Structured span extraction research is siloed by context length, annotation task, and domain, making it difficult to assess how well large language models (LLMs) generalize across realistic extraction settings. We introduce SSA (Structured Span Annotation), a unified evaluation framework bringing together five datasets across four domains: finance, biomedicine, affective analysis, and privacy, under a common JSONL format with character-level offsets. We conduct an exploratory study evaluating seven models (three closed, four open-weight) under three prompting configurations: zero-shot, definition-augmented, and few-shot, formulating extraction as inline XML generation where models reproduce the document with tagged spans. Our results reveal two distinct performance regimes: on tasks requiring complex ontology reasoning, zero-shot performance is near zero (e.g., 0.00% F1 on FiNER-139) but improves substantially with label definitions (e.g., Claude Opus 4.6 rises from 8.8% to 57.5% F1); on pattern-based tasks like PII detection, definitions consistently hurt performance across all models. These findings suggest that prompting strategy must be matched to task structure, and that unified evaluation frameworks spanning varied domains and input lengths are essential for understanding LLM extraction capabilities.
+
+## 21. Rethinking Data Mixing from the Perspective of Large Language Models
+
+- Authors: Yuanjian Xu, Tianze Sun, Changwei Xu, XinLong Zhao, Jianing Hao, Ran Chen, Yang Liu, Ruijie Xu, Stephen Chen, Guang Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.28982037314679
+- Article: https://aclanthology.org/2026.acl-short.28/
+- PDF: https://aclanthology.org/2026.acl-short.28.pdf
+- Local PDF: pdf/2026-06-25_21_Rethinking Data Mixing from the Perspective of Large Language Models.pdf
+
+Data mixing strategy is essential for large language model (LLM) training. Empirical evidence shows that inappropriate strategies can significantly reduce generalization. Although recent methods have improved empirical performance, several fundamental questions remain open: what constitutes a domain, whether human and model perceptions of domains are aligned, and how domain weighting influences generalization. We address these questions by establishing formal connections between gradient dynamics and domain distributions, offering a theoretical framework that clarifies the role of domains in training dynamics. Building on this analysis, we introduce DoGraph, a reweighting framework that formulates data scheduling as a graph-constrained optimization problem. Extensive experiments on GPT-2 models of varying scales demonstrate that DoGraph consistently achieves competitive performance.
+
+## 22. GraphSynth: Resolving the Diversity-Reliability Trade-off with Probabilistic Factor Graphs
+
+- Authors: Zehua Cheng, Wei Dai, Jiahao Sun, Thomas Lukasiewicz
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.284461806167005
+- Article: https://aclanthology.org/2026.acl-long.1969/
+- PDF: https://aclanthology.org/2026.acl-long.1969.pdf
+- Local PDF: pdf/2026-06-25_22_GraphSynth_ Resolving the Diversity-Reliability Trade-off with Probabilistic Factor Graphs.pdf
+
+The large language models offer a scaleable solution for the generation of synthetic data faced with a trade-off between maintaining the diversity of generation and achieving factually accurate results. This paper introduces Graphsynth, a framework which leverages a probabilistic factor graph modeling the universe of attributes. The framework leverages a high-level schema mapping compiled into efficient hard masks during the decoding phase for maintaining the syntactic truth and a span-synchronized verifier for dismissing logical contradictions at the decode time. The experiments conducted on biomedical, legal, and generic domains show that the method outperforms the state-of-the-art baselines with a structural integrity approaching perfection, a coverage of around 94% attributes on the factor graph solution, and a boost in performance on downstream tasks such as +17.9% on TruthfulQA.
+
+## 23. Factual Retrieval in LLMs Is a Redundant, Distributed and Non-Contiguous Process
+
+- Authors: Hail Hochman, Natalie Shapira, Yoav Goldberg
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.275538398643687
+- Article: https://aclanthology.org/2026.acl-long.2168/
+- PDF: https://aclanthology.org/2026.acl-long.2168.pdf
+- Local PDF: pdf/2026-06-25_23_Factual Retrieval in LLMs Is a Redundant, Distributed and Non-Contiguous Process.pdf
+
+Large language models (LLMs) store and recall factual knowledge, yet the precise mechanism of how entity representations are transformed to enable specific attribute retrieval remains underexplored. In this work, we investigate this mechanism through the lens of an “attribute-computation path”—a sequence of computational steps over the entity representation required to elicit a target attribute. We then propose an iterative patching protocol to identify a minimal subset of layers necessary for this computation. Applying our method to LLaMA 3.1 8B and Qwen 3 8B, we find that these paths are non-contiguous, often skipping layers, and that models possess multiple, functionally-equivalent paths for the same entity and fact, highlighting a high degree of redundancy in attribute computation. This implies that knowledge computation is highly distributed, potentially explaining the localization-editing mismatch and suggesting that knowledge storage and retrieval in LLMs is far from being well understood.
+
+## 24. Query-Efficient Agentic Graph Extraction Attacks on GraphRAG Systems
+
+- Authors: Shuhua Yang, Jiahao Zhang, Yilong Wang, Dongwon Lee, Suhang Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.272062903001851
+- Article: https://aclanthology.org/2026.acl-long.727/
+- PDF: https://aclanthology.org/2026.acl-long.727.pdf
+- Local PDF: pdf/2026-06-25_24_Query-Efficient Agentic Graph Extraction Attacks on GraphRAG Systems.pdf
+
+Graph-based retrieval-augmented generation (GraphRAG) systems construct knowledge graphs over document collections to support multi-hop reasoning. While prior work shows that GraphRAG responses may leak retrieved subgraphs, the feasibility of *query-efficient* reconstruction of the hidden graph structure remains unexplored under realistic query budgets. We study a budget-constrained black-box setting where an adversary adaptively queries the system to steal its latent entity–relation graph. We propose AGEA (Agentic Graph Extraction Attack), a framework that leverages a novelty-guided exploration–exploitation strategy, external graph memory modules, and a two-stage graph extraction pipeline combining lightweight discovery with LLM-based filtering. We evaluate AGEA on medical, agriculture, and literary datasets across Microsoft-GraphRAG and LightRAG systems. Under identical query budgets, AGEA significantly outperforms prior attack baselines, recovering up to 90% of entities and relationships while maintaining high precision. These results demonstrate that modern GraphRAG systems are highly vulnerable to structured, agentic extraction attacks, even under strict query limits. The code is available at https://github.com/shuashua0608/AGEA.
+
+## 25. Mind the Heads: Topological Representation Alignment for Multimodal LLMs
+
+- Authors: Davide Caffagni, Alberto Compagnoni, Federico Melis, Sara Sarto, Pier Luigi Dovesi, Mark Granroth-Wilding, Marcella Cornia, Lorenzo Baraldi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-06-22
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI, cs.CL, cs.MM
+- Relevance: 3.2705807451975124
+- Article: http://arxiv.org/abs/2606.23885v1
+- PDF: https://arxiv.org/pdf/2606.23885v1
+- Local PDF: pdf/2026-06-25_25_Mind the Heads_ Topological Representation Alignment for Multimodal LLMs.pdf
+
+Representation alignment has emerged as an effective approach to improve Multimodal Large Language Models (MLLMs) by regularizing their internal representations toward those of an external vision encoder. However, existing methods typically align a fixed layer of the language backbone, overlooking the fine-grained structure of Transformer models. In this work, we propose Head-Wise Representation Alignment (HeRA), a method that enforces cross-modal alignment at the level of individual attention heads. Our approach is grounded in the Platonic Representation Hypothesis, focusing on preserving the topological structure of representations (i.e., their local neighborhood relationships) across modalities. Following the Mutual K-Nearest Neighbor (MKNN) alignment metric, we introduce a contrastive objective that acts as a differentiable proxy for matching local structures. HeRA applies this objective during multimodal training to specific attention heads in the LLM, selected by their alignment score according to the MKNN metric. Counterintuitively, we find that aligning the least aligned heads yields the largest gains. Extensive evaluations across multiple MLLMs and 18 benchmarks demonstrate that HeRA consistently improves performance on challenging vision-centric tasks and serves as an effective regularizer against visual hallucinations by naturally curbing the over-reliance on linguistic priors. Our code is publicly released.
+
+## 26. SPIO: Ensemble and Selective Strategies via LLM-Based Multi-Agent Planning in Automated Data Science
+
+- Authors: Wonduk Seo, Juhyeon Lee, Yanjun Shao, Qingshan Zhou, Seunghyun Lee, Yi Bu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.260368439859604
+- Article: https://aclanthology.org/2026.acl-long.1039/
+- PDF: https://aclanthology.org/2026.acl-long.1039.pdf
+- Local PDF: pdf/2026-06-25_26_SPIO_ Ensemble and Selective Strategies via LLM-Based Multi-Agent Planning in Automated Data Science.pdf
+
+Large Language Models (LLMs) have enabled dynamic reasoning in automated data analytics, yet recent multi-agent systems remain limited by rigid, single-path workflows that restrict strategic exploration and often lead to suboptimal outcomes. To overcome these limitations, we propose SPIO (Sequential Plan Integration and Optimization), a framework that replaces rigid workflows with adaptive, multi-path planning across four core modules: data preprocessing, feature engineering, model selection, and hyperparameter tuning. In each module, specialized agents generate diverse candidate strategies, which are cascaded and refined by an optimization agent. SPIO offers two operating modes: SPIO-S for selecting a single optimal pipeline, and SPIO-E for ensembling top-k pipelines to maximize robustness. Extensive evaluations on Kaggle and OpenML benchmarks show that SPIO consistently outperforms state-of-the-art baselines, achieving an average performance gain of 5.6%. By explicitly exploring and integrating multiple solution paths, SPIO delivers a more flexible, accurate, and reliable foundation for automated data science.
+
+## 27. FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation
+
+- Authors: Haorui Ji, Weizhe Liu, Hongdong Li, Hengkai Guo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-06-23
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.2599662604066246
+- Article: http://arxiv.org/abs/2606.24874v1
+- PDF: https://arxiv.org/pdf/2606.24874v1
+- Local PDF: pdf/2026-06-25_27_FLUX3D_ High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation.pdf
+
+Sparse voxel representation has emerged as a scalable foundation for image-to-3D Gaussian Splatting (3DGS) generation, yet current methods struggle to preserve high-frequency visual details of input images due to two structural bottlenecks. First, they adopt discriminative 2D features optimized for semantic abstraction to construct sparse voxel latents, which suppress reconstructive cues and induce a representation bottleneck. Second, in the generation stage, standard diffusion transformers lack effective mechanisms to align dense 2D image tokens with sparse 3D voxel latents, resulting in a cross-modal correspondence bottleneck. To address these issues, we propose FLUX3D, a scalable image-to-3DGS framework that boosts both representation learning and cross-modal alignment during generation. We first revisit 2D feature selection for sparse-voxel-based 3D representation learning, propose Diffusion-Aligned Structured Latents (DA-SLAT) and couple it with a decoder-only architecture to improve 3DGS reconstruction fidelity. We also design a sparse-structure-aware diffusion framework, which integrates the Sparse-structure Multimodal Diffusion Transformer (SMDiT) and Modal-Aware Rotary Positional Embedding (MARoPE) to achieve geometry-agnostic 2D-3D alignment. Extensive benchmark experiments demonstrate that FLUX3D yields substantial improvements in appearance fidelity and significantly outperforms all state-of-the-art (SOTA) methods in generating high-quality 3DGS assets.
+
+## 28. SCAIR: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs
+
+- Authors: Prateek Chaturvedi, Yuqicheng Zhu, Hongkuan Zhou, Dongzhuoran Zhou, Yunjie He, Steffen Staab, Fei Du, Jie Tang, Evgeny Kharlamov
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.258424531995857
+- Article: https://aclanthology.org/2026.acl-industry.76/
+- PDF: https://aclanthology.org/2026.acl-industry.76.pdf
+- Local PDF: pdf/2026-06-25_28_SCAIR_ Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs.pdf
+
+Knowledge Graph–based Retrieval-Augmented Generation (KG-RAG) enables natural language interaction with structured enterprise knowledge, yet existing agentic approaches that perform well on public benchmarks often fail to generalize to real-world enterprise Knowledge Graphs (KGs), which are dense, schema-driven, and operationally constrained. To address these limitations, we propose SCAIR (Schema-Conditioned Agentic Iterative Reasoning), a training-free framework that integrates structured planning with controlled iterative reasoning by injecting schema-conditioned structural priors and enforcing schema-aware traversal during multi-hop reasoning. Experiments on an enterprise-oriented benchmark constructed from a real-world Configuration Management DataBase (CMDB) demonstrate that SCAIR substantially improves performance over existing KG-RAG methods. Crucially, our study highlights that reliable enterprise graph reasoning cannot rely on generic agentic designs; instead, it must explicitly incorporate the target domain’s structural and operational constraints into the reasoning process. We demonstrate that by aligning agent design with business logic, substantial performance gains can be achieved without the need for costly model retraining.
+
+## 29. TeCES: Collaborative Geometric Knowledge Representation Framework under Evolving Fact Snapshots
+
+- Authors: Jiujiang Guo, Zhengliang Guo, Kai Wang, Meiyang Wang, Dehua Peng, Shaozu Yuan, Chengyin Hu, Shuan Ai, Yiwei Wei
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.257743955336214
+- Article: https://aclanthology.org/2026.acl-long.1181/
+- PDF: https://aclanthology.org/2026.acl-long.1181.pdf
+- Local PDF: pdf/2026-06-25_29_TeCES_ Collaborative Geometric Knowledge Representation Framework under Evolving Fact Snapshots.pdf
+
+Existing knowledge graph completion research is gradually shifting from representing logical semantics of static facts to modeling evolving semantics of temporal facts, yet lacks collaborative modeling of both within a unified framework. To this end, we use concept of snapshots to decompose fact features into two complementary mechanisms: (a) intra-snapshot semantic coupling, where entities and relations exhibit snapshot-specific meanings through multidimensional interactions; (b) trans-snapshot evolutionary synergy, where relations between entities evolve across snapshots and manifest varying states. These snapshot mechanisms jointly reveal underlying logic of facts. To track them, we propose TeCES, a framework for high-fidelity modeling of evolving snapshots. TeCES embeds facts into a 2-grade geometric algebra (GA) system to capture complex semantics via multilevel structures. Temporal information is attached to each entity for mapping into snapshot spaces, while relations and timestamps are reconfigured into composite GA representations. Geometric products enable multidimensional interactions, revealing relation state changes over time. Lastly, the head entity at each snapshot combines with fused temporal-relational representation via geometric product to approximate the target tail entity at multiple levels. Overall, TeCES supports joint modeling of evolving snapshots within a lightweight GA system and significantly outperforms SOTA models on six benchmarks.
+
+## 30. Constructing Interpretable Features from Compositional Neuron Groups
+
+- Authors: Or David Shafran, Atticus Geiger, Mor Geva
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.257581949777153
+- Article: https://aclanthology.org/2026.acl-long.1959/
+- PDF: https://aclanthology.org/2026.acl-long.1959.pdf
+- Local PDF: pdf/2026-06-25_30_Constructing Interpretable Features from Compositional Neuron Groups.pdf
+
+A central goal for mechanistic interpretability has been to identify the right units of analysis in large language models (LLMs) that causally explain their outputs. While early work focused on individual neurons, evidence that neurons often encode multiple concepts has motivated a shift toward analyzing directions in activation space. A key question is how to find directions that capture interpretable features in an unsupervised manner. Current methods rely on dictionary learning with sparse autoencoders (SAEs), commonly trained over residual stream activations to learn directions from scratch. However, SAEs often struggle in causal evaluations and lack intrinsic interpretability, as their learning is not explicitly tied to the computations of the model. Here, we tackle these limitations by directly decomposing MLP activations with semi-nonnegative matrix factorization (SNMF), such that the learned features are (a) sparse linear combinations of co-activated neurons, and (b) mapped to their activating inputs, making them directly interpretable. Experiments on Llama 3.1, Gemma 2 and GPT-2 show that SNMF derived features outperform SAEs and a strong supervised baseline (difference-in-means) on causal steering, while aligning with human-interpretable concepts. Further analysis reveals that specific neuron combinations are reused across semantically-related features, exposing a hierarchical structure in the MLP’s activation space. Together, these results position SNMF as a simple and effective tool for identifying interpretable features and dissecting concept representations in LLMs.
