@@ -1,0 +1,30 @@
+# Manage the people and groups you want the tracking workflow to follow here.
+# Prefer stable OpenAlex / Semantic Scholar IDs when available. Aliases are used
+# only for arXiv/bioRxiv author-name matching and are treated as medium confidence.
+tracking:
+  researchers: []
+  # Example:
+  # researchers:
+  #   - name: "Jane Doe"
+  #     openalex_id: "A123456789"
+  #     semantic_scholar_id: "123456789"
+  #     orcid: "0000-0000-0000-0000"
+  #     aliases:
+  #       - "J. Doe"
+  #       - "Jane A. Doe"
+  #     keywords:
+  #       - "spatial transcriptomics"
+
+  groups: []
+  # Example:
+  # groups:
+  #   - name: "Doe Lab"
+  #     pi:
+  #       name: "Jane Doe"
+  #       openalex_id: "A123456789"
+  #       semantic_scholar_id: "123456789"
+  #     members:
+  #       - name: "Student A"
+  #         openalex_id: "A987654321"
+  #         aliases:
+  #           - "A. Student"

@@ -13,12 +13,15 @@ from omegaconf import OmegaConf
 from openai import OpenAI
 
 from .archive import archive_papers
+from .construct_email import render_email
 from .history import exclude_previously_sent, load_history, paper_identity, update_history
-from .openalex_search import OpenAlexSearch, reconstruct_abstract
+from .openalex_search import OpenAlexSearch
 from .paper_filter import filter_papers, rules_from_config
 from .protocol import Paper
+from .utils import send_email
 
 CONFIDENCE_RANK = {"low": 0, "medium": 1, "high": 2}
+TRACKING_MODES = {"daily", "manual"}
 
 
 @dataclass(frozen=True)
@@ -32,12 +35,6 @@ class TrackedResearcher:
     keywords: tuple[str, ...] = ()
 
 
-def split_values(value: str | None) -> list[str]:
-    if not value:
-        return []
-    return [item.strip() for item in value.replace("\n", ";").split(";") if item.strip()]
-
-
 def normalize_openalex_id(value: str | None) -> str | None:
     if not value:
         return None
@@ -46,6 +43,15 @@ def normalize_openalex_id(value: str | None) -> str | None:
 
 def normalize_author_name(value: str) -> str:
     return re.sub(r"\s+", " ", value.casefold()).strip()
+
+
+def load_tracking_config(config_path: str, tracking_config_path: str | None = None):
+    config = OmegaConf.load(config_path)
+    if tracking_config_path:
+        tracking_path = Path(tracking_config_path)
+        if tracking_path.exists():
+            config = OmegaConf.merge(config, OmegaConf.load(tracking_path))
+    return config
 
 
 def configured_researchers(config) -> list[TrackedResearcher]:
@@ -65,12 +71,13 @@ def configured_researchers(config) -> list[TrackedResearcher]:
         existing = by_key.get(key)
         merged_groups = tuple(sorted(set((existing.groups if existing else ()) + groups)))
         merged_keywords = tuple(sorted(set((existing.keywords if existing else ()) + keywords)))
+        merged_aliases = tuple(dict.fromkeys((existing.aliases if existing else ()) + aliases))
         by_key[key] = TrackedResearcher(
-            name=name,
-            aliases=aliases,
-            openalex_id=openalex_id,
-            semantic_scholar_id=semantic_scholar_id,
-            orcid=orcid,
+            name=existing.name if existing else name,
+            aliases=merged_aliases,
+            openalex_id=openalex_id or (existing.openalex_id if existing else None),
+            semantic_scholar_id=semantic_scholar_id or (existing.semantic_scholar_id if existing else None),
+            orcid=orcid or (existing.orcid if existing else None),
             groups=merged_groups,
             keywords=merged_keywords,
         )
@@ -145,6 +152,34 @@ def date_in_range(value: str | None, from_date: str, to_date: str) -> bool:
     if not value:
         return False
     return from_date <= value[:10] <= to_date
+
+
+def mode_date_range(mode: str, to_date: str | None, tracking_config) -> tuple[str, str]:
+    end_date = to_date or date.today().isoformat()
+    if mode == "daily":
+        lookback_days = int(tracking_config.get("daily_lookback_days", 3))
+    else:
+        lookback_days = int(tracking_config.get("manual_lookback_days", 30))
+    start_date = (date.fromisoformat(end_date) - timedelta(days=max(lookback_days - 1, 0))).isoformat()
+    return start_date, end_date
+
+
+def tracking_archive_name(run_date: str, mode: str) -> str:
+    if mode not in TRACKING_MODES:
+        raise ValueError("mode must be 'daily' or 'manual'")
+    return f"{run_date}_{mode}_tracking"
+
+
+def mode_history_path(tracking_config, mode: str) -> str:
+    if mode == "daily":
+        return str(tracking_config.get("daily_history_path", "papers/tracking/daily_history.json"))
+    return str(tracking_config.get("manual_history_path", "papers/tracking/manual_history.json"))
+
+
+def history_enabled_for_mode(tracking_config, mode: str) -> bool:
+    if mode == "daily":
+        return bool(tracking_config.get("daily_history_enabled", True))
+    return bool(tracking_config.get("manual_history_enabled", False))
 
 
 def retrieve_openalex(
@@ -340,6 +375,7 @@ def write_tracking_summaries(
     papers: list[Paper],
     output: Path,
     run_date: str,
+    mode: str,
     min_confidence: str,
 ) -> None:
     min_rank = CONFIDENCE_RANK[min_confidence]
@@ -347,7 +383,7 @@ def write_tracking_summaries(
         paper for paper in papers
         if CONFIDENCE_RANK.get(paper.tracking_confidence or "low", 0) >= min_rank
     ]
-    lines = [f"# Researcher Tracking - {run_date}", ""]
+    lines = [f"# Researcher Tracking - {run_date} ({mode})", ""]
     lines.extend([f"Total new tracked papers: {len(papers)}", f"Highlighted papers: {len(focused)}", ""])
     if not focused:
         lines.extend(["No highlighted papers found.", ""])
@@ -360,6 +396,7 @@ def write_tracking_summaries(
             f"- Matched researchers: {', '.join(paper.matched_researchers or []) or 'N/A'}",
             f"- Matched groups: {', '.join(paper.matched_groups or []) or 'N/A'}",
             f"- Confidence: {paper.tracking_confidence or 'N/A'} ({paper.tracking_match_type or 'unknown'})",
+            f"- Topic keywords: {', '.join(paper.matched_keywords or []) or 'N/A'}",
             f"- Journal/source: {paper.journal or paper.source}",
             f"- Publication date: {paper.publication_date or 'Unknown'}",
             f"- Article: {paper.url}",
@@ -370,24 +407,23 @@ def write_tracking_summaries(
     output.write_text("\n".join(lines), encoding="utf-8")
 
 
-def tracking_archive_name(run_date: str) -> str:
-    return run_date
-
-
 def run_tracking(args: argparse.Namespace) -> Path:
-    config = OmegaConf.load(args.config)
+    mode = args.mode
+    if mode not in TRACKING_MODES:
+        raise ValueError("--mode must be daily or manual")
+    config = load_tracking_config(args.config, args.tracking_config)
     tracking = config.get("tracking", {}) or {}
     researchers = configured_researchers(config)
     if not researchers:
         logger.warning("No tracking researchers or group members configured.")
 
     to_date = args.to_date or date.today().isoformat()
-    default_lookback = int(tracking.get("lookback_days", 14))
-    from_date = args.from_date or (date.fromisoformat(to_date) - timedelta(days=default_lookback)).isoformat()
+    from_date = args.from_date or mode_date_range(mode, to_date, tracking)[0]
     max_results = int(args.max_results or tracking.get("max_results", 100))
     max_per_researcher = int(tracking.get("max_results_per_researcher", max_results))
     sources = list(tracking.get("sources", ["openalex", "semantic_scholar", "arxiv", "biorxiv"]) or [])
 
+    logger.info(f"Running {mode} tracking from {from_date} to {to_date} across {sources}")
     papers: list[Paper] = []
     openalex_key = os.environ.get("OPENALEX_API_KEY") or (config.source.openalex.get("api_key") if config.get("source") else None)
     if "openalex" in sources and any(r.openalex_id for r in researchers):
@@ -407,12 +443,12 @@ def run_tracking(args: argparse.Namespace) -> Path:
         if paper_identity(paper) in topic_matched:
             paper.matched_keywords = topic_matched[paper_identity(paper)]
 
-    history_path = tracking.get("history_path", "papers/tracking/history.json")
-    if bool(tracking.get("history_enabled", True)):
+    history_path = mode_history_path(tracking, mode)
+    if history_enabled_for_mode(tracking, mode):
         history = load_history(history_path)
         before = len(papers)
         papers = exclude_previously_sent(papers, history)
-        logger.info(f"Tracking history filter retained {len(papers)} of {before} papers")
+        logger.info(f"Tracking {mode} history filter retained {len(papers)} of {before} papers")
 
     papers.sort(key=lambda p: (CONFIDENCE_RANK.get(p.tracking_confidence or "low", 0), p.publication_date or ""), reverse=True)
     papers = papers[:max_results]
@@ -429,31 +465,38 @@ def run_tracking(args: argparse.Namespace) -> Path:
         for paper in papers:
             paper.generate_tldr(openai_client, llm_config)
 
+    archive_date = args.archive_date or date.today().isoformat()
     output_root = Path(args.output_dir or tracking.get("output_dir", "papers/tracking"))
     archive_dir = archive_papers(
         papers,
         output_root=output_root,
-        run_date=args.archive_date or date.today().isoformat(),
+        run_date=archive_date,
         download_pdfs=not args.skip_pdf_download and bool(tracking.get("download_pdfs", True)),
-        directory_name=tracking_archive_name(args.archive_date or date.today().isoformat()),
+        directory_name=tracking_archive_name(archive_date, mode),
     )
     write_tracking_summaries(
         papers,
         archive_dir / "summaries.md",
-        args.archive_date or date.today().isoformat(),
+        archive_date,
+        mode,
         str(tracking.get("min_confidence_for_summary", "medium")),
     )
     uncertain = [paper for paper in papers if paper.tracking_confidence == "low"]
     if uncertain:
-        write_tracking_summaries(uncertain, archive_dir / "uncertain.md", args.archive_date or date.today().isoformat(), "low")
-    if bool(tracking.get("history_enabled", True)) and papers:
+        write_tracking_summaries(uncertain, archive_dir / "uncertain.md", archive_date, mode, "low")
+    if history_enabled_for_mode(tracking, mode) and papers:
         update_history(history_path, papers)
+    if args.send_email:
+        logger.info("Sending tracking email...")
+        send_email(config, render_email(papers), subject_prefix=f"Researcher Tracking {mode}")
     return archive_dir
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Track configured researchers and groups across scholarly sources")
     parser.add_argument("--config", default="config/custom.yaml")
+    parser.add_argument("--tracking-config", default="config/tracking.yaml")
+    parser.add_argument("--mode", choices=("daily", "manual"), default="manual")
     parser.add_argument("--from-date", default=None)
     parser.add_argument("--to-date", default=None)
     parser.add_argument("--archive-date", default=date.today().isoformat())
@@ -461,9 +504,10 @@ def main() -> None:
     parser.add_argument("--output-dir", default=None)
     parser.add_argument("--skip-pdf-download", action="store_true")
     parser.add_argument("--summarize", action="store_true")
+    parser.add_argument("--send-email", action="store_true")
     args = parser.parse_args()
     archive_dir = run_tracking(args)
-    print(f"Saved tracking results to {archive_dir}")
+    print(f"Saved {args.mode} tracking results to {archive_dir}")
 
 
 if __name__ == "__main__":

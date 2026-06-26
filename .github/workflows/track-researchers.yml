@@ -1,10 +1,20 @@
 name: Track researchers and groups
+permissions:
+  contents: write
 
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: "Tracking mode: manual uses 30 days by default; daily uses daily_lookback_days"
+        required: true
+        default: "manual"
+        type: choice
+        options:
+          - "manual"
+          - "daily"
       from_date:
-        description: "Optional start date (YYYY-MM-DD); blank uses tracking.lookback_days"
+        description: "Optional start date (YYYY-MM-DD); blank uses mode default"
         required: false
         default: ""
         type: string
@@ -23,8 +33,13 @@ on:
         required: true
         default: true
         type: boolean
+      send_email:
+        description: "Send tracking results by email"
+        required: true
+        default: false
+        type: boolean
   schedule:
-    - cron: "0 22 * * 0"
+    - cron: "0 23 * * *"
 
 jobs:
   track:
@@ -40,22 +55,37 @@ jobs:
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           OPENAI_MODEL: gpt-5.4
           SUMMARY_LANGUAGE: Chinese
-          TRACK_FROM_DATE: ${{ inputs.from_date }}
-          TRACK_TO_DATE: ${{ inputs.to_date }}
+          SENDER: ${{ secrets.SENDER }}
+          RECEIVER: ${{ secrets.RECEIVER }}
+          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
+          TRACK_EVENT_NAME: ${{ github.event_name }}
+          TRACK_MODE_INPUT: ${{ inputs.mode || 'manual' }}
+          TRACK_FROM_DATE: ${{ inputs.from_date || '' }}
+          TRACK_TO_DATE: ${{ inputs.to_date || '' }}
           TRACK_MAX_RESULTS: ${{ inputs.max_results || '100' }}
           TRACK_SUMMARIZE: ${{ inputs.summarize || 'true' }}
+          TRACK_SEND_EMAIL: ${{ inputs.send_email || 'false' }}
         run: |
+          mode="$TRACK_MODE_INPUT"
+          send_email=""
+          if [ "$TRACK_EVENT_NAME" = "schedule" ]; then
+            mode="daily"
+            TRACK_SEND_EMAIL="true"
+          fi
           from_arg=""
           to_arg=""
           summarize=""
           if [ -n "$TRACK_FROM_DATE" ]; then from_arg="--from-date $TRACK_FROM_DATE"; fi
           if [ -n "$TRACK_TO_DATE" ]; then to_arg="--to-date $TRACK_TO_DATE"; fi
           if [ "$TRACK_SUMMARIZE" = "true" ]; then summarize="--summarize"; fi
+          if [ "$TRACK_SEND_EMAIL" = "true" ]; then send_email="--send-email"; fi
           uv run python -m zotero_arxiv_daily.tracking \
+            --mode "$mode" \
             $from_arg \
             $to_arg \
             --max-results "$TRACK_MAX_RESULTS" \
-            $summarize
+            $summarize \
+            $send_email
       - name: Upload tracking archive
         uses: actions/upload-artifact@v4
         with:
@@ -70,3 +100,16 @@ jobs:
           echo '```text' >> "$GITHUB_STEP_SUMMARY"
           find papers/tracking -maxdepth 3 -type f -print 2>/dev/null | sort >> "$GITHUB_STEP_SUMMARY" || true
           echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit daily tracking metadata and history
+        if: github.event_name == 'schedule'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/tracking/daily_history.json || true
+          find papers/tracking -type f \( -name papers.csv -o -name summaries.md -o -name uncertain.md \) -print0 | xargs -0 --no-run-if-empty git add --
+          if git diff --cached --quiet; then
+            echo "No tracking metadata changes to commit"
+          else
+            git commit -m "chore: update researcher tracking archive [skip ci]"
+            git push
+          fi

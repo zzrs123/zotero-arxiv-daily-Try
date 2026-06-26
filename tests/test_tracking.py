@@ -5,7 +5,10 @@ from zotero_arxiv_daily.tracking import (
     TrackedResearcher,
     configured_researchers,
     deduplicate_tracking_papers,
+    load_tracking_config,
     mark_tracking,
+    mode_date_range,
+    tracking_archive_name,
 )
 
 
@@ -81,3 +84,29 @@ def test_deduplicate_tracking_papers_merges_source_hits_by_doi():
     assert papers[0].source_hits == ["arxiv", "openalex"]
     assert papers[0].tracking_confidence == "high"
     assert papers[0].author_ids == ["A1"]
+
+def test_tracking_archive_name_separates_daily_and_manual():
+    assert tracking_archive_name("2026-06-26", "daily") == "2026-06-26_daily_tracking"
+    assert tracking_archive_name("2026-06-26", "manual") == "2026-06-26_manual_tracking"
+
+
+def test_mode_date_range_uses_daily_and_manual_defaults():
+    tracking = OmegaConf.create({"daily_lookback_days": 3, "manual_lookback_days": 30})
+
+    assert mode_date_range("daily", "2026-06-26", tracking) == ("2026-06-24", "2026-06-26")
+    assert mode_date_range("manual", "2026-06-26", tracking) == ("2026-05-28", "2026-06-26")
+
+
+def test_load_tracking_config_merges_external_tracking_yaml(tmp_path):
+    base = tmp_path / "custom.yaml"
+    tracking = tmp_path / "tracking.yaml"
+    base.write_text("tracking:\n  researchers: []\n", encoding="utf-8")
+    tracking.write_text(
+        "tracking:\n  researchers:\n    - name: Jane Doe\n      openalex_id: A1\n",
+        encoding="utf-8",
+    )
+
+    config = load_tracking_config(str(base), str(tracking))
+
+    assert config.tracking.researchers[0].name == "Jane Doe"
+    assert config.tracking.researchers[0].openalex_id == "A1"

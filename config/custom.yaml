@@ -297,9 +297,12 @@ tracking:
   enabled: true
   sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv"]
   output_dir: papers/tracking
-  history_enabled: true
-  history_path: papers/tracking/history.json
-  lookback_days: 14
+  daily_history_enabled: true
+  daily_history_path: papers/tracking/daily_history.json
+  manual_history_enabled: false
+  manual_history_path: papers/tracking/manual_history.json
+  daily_lookback_days: 3
+  manual_lookback_days: 30
   max_results: 100
   max_results_per_researcher: 50
   min_confidence_for_summary: medium
