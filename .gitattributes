@@ -4,3 +4,6 @@
 papers/**/*.csv text eol=lf
 papers/**/*.md text eol=lf
 papers/**/*.json text eol=lf
+# Keep GitHub workflow and main docs portable across Windows/Linux.
+.github/workflows/*.yml text eol=lf
+README.md text eol=lf

@@ -120,7 +120,7 @@ paper_filter:
 ### Researcher tracking
 
 The `Track researchers and groups` workflow is separate from the daily paper feed and the
-on-demand OpenAlex search. It has two modes:
+on-demand OpenAlex search. It uploads a `researcher-tracking-results` artifact and commits CSV/Markdown/history metadata under `papers/tracking` for both scheduled and manually dispatched runs. It has two modes:
 
 - `daily`: scheduled every day. It checks the recent tracking window (`tracking.daily_lookback_days`,
   default 3 days) and writes `papers/tracking/YYYY-MM-DD_daily_tracking/`.
