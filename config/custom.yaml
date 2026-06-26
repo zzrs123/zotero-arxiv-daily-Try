@@ -293,6 +293,21 @@ paper_filter:
     - "clinical practice"
     - "hospitalized patient"
 
+tracking:
+  enabled: true
+  sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv"]
+  output_dir: papers/tracking
+  history_enabled: true
+  history_path: papers/tracking/history.json
+  lookback_days: 14
+  max_results: 100
+  max_results_per_researcher: 50
+  min_confidence_for_summary: medium
+  download_pdfs: true
+  semantic_scholar_api_key: ${oc.env:SEMANTIC_SCHOLAR_API_KEY,null}
+  researchers: []
+  groups: []
+
 archive:
   enabled: true
   output_dir: papers/daily

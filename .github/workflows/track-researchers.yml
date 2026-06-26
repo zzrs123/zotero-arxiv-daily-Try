@@ -1,0 +1,72 @@
+name: Track researchers and groups
+
+on:
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: "Optional start date (YYYY-MM-DD); blank uses tracking.lookback_days"
+        required: false
+        default: ""
+        type: string
+      to_date:
+        description: "Optional end date (YYYY-MM-DD); blank uses today"
+        required: false
+        default: ""
+        type: string
+      max_results:
+        description: "Maximum number of results"
+        required: true
+        default: "100"
+        type: string
+      summarize:
+        description: "Generate Chinese summaries using the configured LLM"
+        required: true
+        default: true
+        type: boolean
+  schedule:
+    - cron: "0 22 * * 0"
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v7
+      - name: Track researchers and groups
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          OPENAI_MODEL: gpt-5.4
+          SUMMARY_LANGUAGE: Chinese
+          TRACK_FROM_DATE: ${{ inputs.from_date }}
+          TRACK_TO_DATE: ${{ inputs.to_date }}
+          TRACK_MAX_RESULTS: ${{ inputs.max_results || '100' }}
+          TRACK_SUMMARIZE: ${{ inputs.summarize || 'true' }}
+        run: |
+          from_arg=""
+          to_arg=""
+          summarize=""
+          if [ -n "$TRACK_FROM_DATE" ]; then from_arg="--from-date $TRACK_FROM_DATE"; fi
+          if [ -n "$TRACK_TO_DATE" ]; then to_arg="--to-date $TRACK_TO_DATE"; fi
+          if [ "$TRACK_SUMMARIZE" = "true" ]; then summarize="--summarize"; fi
+          uv run python -m zotero_arxiv_daily.tracking \
+            $from_arg \
+            $to_arg \
+            --max-results "$TRACK_MAX_RESULTS" \
+            $summarize
+      - name: Upload tracking archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: researcher-tracking-results
+          path: papers/tracking
+          retention-days: 30
+      - name: Show archive location
+        if: always()
+        run: |
+          echo "## Researcher tracking archive" >> "$GITHUB_STEP_SUMMARY"
+          echo "Download **researcher-tracking-results** from the Artifacts section of this run." >> "$GITHUB_STEP_SUMMARY"
+          echo '```text' >> "$GITHUB_STEP_SUMMARY"
+          find papers/tracking -maxdepth 3 -type f -print 2>/dev/null | sort >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

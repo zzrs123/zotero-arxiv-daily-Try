@@ -20,4 +20,5 @@ config/private.yaml
 .local-state/
 # Downloaded paper files are local-only; CSV and Markdown archives may be committed.
 /papers/daily/20??-??-??/pdf/
-/papers/manual/20??-??-??/pdf/
+/papers/manual/20??-??-??*/pdf/
+/papers/tracking/20??-??-??*/pdf/

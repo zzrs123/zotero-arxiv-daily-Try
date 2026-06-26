@@ -29,6 +29,13 @@ class Paper:
     matched_keywords: Optional[list[str]] = None
     venue_type: Optional[str] = None
     publication_status: Optional[str] = None
+    author_ids: Optional[list[str]] = None
+    institution_ids: Optional[list[str]] = None
+    source_hits: Optional[list[str]] = None
+    matched_researchers: Optional[list[str]] = None
+    matched_groups: Optional[list[str]] = None
+    tracking_confidence: Optional[str] = None
+    tracking_match_type: Optional[str] = None
 
     def _generate_tldr_with_llm(self, openai_client:OpenAI,llm_params:dict) -> str:
         lang = llm_params.get('language', 'English')

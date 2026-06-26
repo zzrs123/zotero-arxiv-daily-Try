@@ -182,10 +182,10 @@ def test_to_paper_uses_open_access_pdf_and_doi():
         "abstract_inverted_index": {"Spatial": [0], "omics": [1]},
         "authorships": [
             {
-                "author": {"display_name": "A. Author"},
+                "author": {"display_name": "A. Author", "id": "https://openalex.org/A123"},
                 "institutions": [
-                    {"display_name": "Example University"},
-                    {"display_name": "Example Institute"},
+                    {"display_name": "Example University", "id": "https://openalex.org/I456"},
+                    {"display_name": "Example Institute", "id": "https://openalex.org/I789"},
                 ],
             }
         ],
@@ -212,3 +212,5 @@ def test_to_paper_uses_open_access_pdf_and_doi():
     assert paper.publication_date == "2026-06-01"
     assert paper.open_access_status == "gold"
     assert paper.cited_by_count == 12
+    assert paper.author_ids == ["A123"]
+    assert paper.institution_ids == ["I456", "I789"]

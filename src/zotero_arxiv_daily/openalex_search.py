@@ -168,12 +168,21 @@ class OpenAlexSearch:
             authorship.get("author", {}).get("display_name", "")
             for authorship in work.get("authorships", [])
         ]
+        author_ids = []
+        for authorship in work.get("authorships", []):
+            author_id = (authorship.get("author") or {}).get("id", "")
+            if author_id:
+                author_ids.append(author_id.rsplit("/", 1)[-1])
         affiliations = []
+        institution_ids = []
         for authorship in work.get("authorships", []):
             for institution in authorship.get("institutions", []):
                 name = institution.get("display_name", "")
                 if name and name not in affiliations:
                     affiliations.append(name)
+                institution_id = institution.get("id", "")
+                if institution_id:
+                    institution_ids.append(institution_id.rsplit("/", 1)[-1])
         return Paper(
             source="openalex",
             title=work.get("display_name") or "Untitled",
@@ -198,6 +207,8 @@ class OpenAlexSearch:
             publication_status=(
                 "formally_published" if venue_type == "conference" else "published"
             ),
+            author_ids=sorted(set(author_ids)) or None,
+            institution_ids=sorted(set(institution_ids)) or None,
         )
 
 

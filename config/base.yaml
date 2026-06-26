@@ -76,6 +76,21 @@ daily_history:
   path: papers/daily/history.json
   skip_when_debug: true # Test Workflow does not read or update production history.
 
+tracking:
+  enabled: false # Independent researcher/group tracking stream.
+  sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv"] # Source evidence layers.
+  output_dir: papers/tracking
+  history_enabled: true
+  history_path: papers/tracking/history.json
+  lookback_days: 14
+  max_results: 100
+  max_results_per_researcher: 50
+  min_confidence_for_summary: medium # low, medium, or high.
+  download_pdfs: true
+  semantic_scholar_api_key: ${oc.env:SEMANTIC_SCHOLAR_API_KEY,null}
+  researchers: [] # Example item: {name: "Jane Doe", openalex_id: "A123", semantic_scholar_id: "456", aliases: ["J. Doe"]}
+  groups: [] # Example item: {name: "Doe Lab", pi: {name: "Jane Doe", openalex_id: "A123"}, members: []}
+
 executor:
   debug: false # Whether to use debug mode. Example: true
   send_empty: false # Whether to send an empty email even if no new papers today. Example: true
