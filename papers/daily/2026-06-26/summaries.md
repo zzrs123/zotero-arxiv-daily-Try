@@ -1,0 +1,511 @@
+# Paper Daily Reading - 2026-06-26
+
+## 1. MPBoCo: Multimodal Prompt-based Boundary-enhanced Continual Framework for Joint Entity and Relation Extraction
+
+- Authors: Guanglu Sun, Xinyu Liu, Lili Liang, Yang Yu, Fei Lang, Suxia Zhu, Ming Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.183528395215074
+- Article: https://aclanthology.org/2026.acl-long.1220/
+- PDF: https://aclanthology.org/2026.acl-long.1220.pdf
+- Local PDF: pdf/2026-06-26_01_MPBoCo_ Multimodal Prompt-based Boundary-enhanced Continual Framework for Joint Entity and Relation Extraction.pdf
+
+In real-world scenarios, multimodal information continuously evolves, with new entity and relation types emerging, necessitating timely updates to multimodal knowledge graphs for supporting downstream tasks. However, existing methods struggle to balance real-time adaptability and computational efficiency in continual learning scenarios. To this end, this paper proposes the Continual Multimodal Entity and Relation Joint Extraction (CMERJE) task and a Multimodal Prompt-based Boundary-enhanced Continual (MPBoCo) framework. Specifically, MPBoCo incrementally stores task-specific knowledge via learnable multimodal prompts, dynamically matches relevant prompts for each instance, and fuses them into a frozen backbone model for task-specific reasoning. Subsequently, the boundary-enhanced dual-branch module leverages the auxiliary branch to preserve local syntactic continuity and provide boundary guidance. Experimental results demonstrate that MPBoCo achieves superior performance in real-world scenarios, significantly outperforming baseline methods by 5.5% and 7.2% in 10-task and 5-task settings, respectively.
+
+## 2. A Stage-Aware Mixture of Experts Framework for Neurodegenerative Disease Progression Modelling
+
+- Authors: Tiantian He, Keyue Jiang, An Zhao, Anna Schroder, Elinor Thompson, Sonja Soskic, Frederik Barkhof, Daniel C. Alexander
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i26.39316
+- Categories: Functional Brain Connectivity Studies, Advanced Neuroimaging Techniques and Applications, Machine Learning in Healthcare
+- Relevance: 3.1816692400068503
+- Article: https://doi.org/10.1609/aaai.v40i26.39316
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+The long-term progression of neurodegenerative diseases is commonly conceptualized as a spatiotemporal diffusion process that consists of a graph diffusion process across the structural brain connectome and a localized reaction process within brain regions. However, modeling this progression remains challenging due to 1) the scarcity of longitudinal data obtained through irregular and infrequent subject visits and 2) the complex interplay of pathological mechanisms across brain regions and disease stages, where traditional models assume fixed mechanisms throughout disease progression. To address these limitations, we propose a novel stage-aware Mixture of Experts (MoE) framework that explicitly models how different contributing mechanisms dominate at different disease stages through time-dependent expert weighting. This architecture is a key innovation designed to maximize the utility of small datasets and provide interpretable insights into disease etiology. Data-wise, we utilize an iterative dual optimization method to properly estimate the temporal position of individual observations, constructing a cohort-level progression trajectory from irregular snapshots. Model-wise, we enhance the spatial component with an inhomogeneous graph neural diffusion model (IGND) that allows diffusivity to vary based on node states and time, providing more flexible representations of brain networks. We also introduce a localized neural reaction module to capture complex dynamics beyond standard processes.The resulting IGND-MoE model dynamically integrates these components across temporal states, offering a principled way to understand how stage-specific pathological mechanisms contribute to progression. When used to model tau pathology propagation in human brains, IGND-MoE outperforms purely pathophysiological and purely neural baselines in long-term prediction accuracy. Moreover, its stage-wise weights yield novel clinical insights that align with literature, suggesting that graph-related processes are more influential at early stages, while other unknown physical processes become dominant later on. Our findings highlight the necessity of designing hybrid and expert-constrained models that account for the evolving nature of neurodegenerative processes.
+
+## 3. UMPIRE: Unveiling LLM-generated Posts via Redundant Expressions
+
+- Authors: Xiaoquan Yi, Haixing Wu, Haozhao Wang, Yichen Li, Yuhua Li, Rui Zhang, Ruixuan Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.181552471459996
+- Article: https://aclanthology.org/2026.acl-long.1427/
+- PDF: https://aclanthology.org/2026.acl-long.1427.pdf
+- Local PDF: pdf/2026-06-26_03_UMPIRE_ Unveiling LLM-generated Posts via Redundant Expressions.pdf
+
+The proliferation of Large Language Models (LLMs) has saturated social media platforms with hyper-realistic posts, rendering traditional detection methods that rely on low-level artifacts or unimodal statistics increasingly ineffective. In this work, we identify a fundamental semantic distinction: humans tend to complement visual content with additional context, while LLMs predominantly describe the visual information. To capture this, UMPIRE employs an orthogonal semantic decomposition mechanism that disentangles textual embeddings into redundant and complementary components. An adaptive gating module dynamically weighs these components to reflect diverse communicative styles. To enforce the desired geometric structure, we introduce a latent contrastive redundancy regularization loss that encourages LLM-generated content to exhibit high semantic redundancy, while human-written content emphasizes complementarity. Experimental results demonstrate that UMPIRE significantly outperforms state-of-the-art detection methods across multiple datasets, achieving up to a 5.38% improvement in accuracy.
+
+## 4. iTAG: Inverse Design for Natural Text Generation with Accurate Causal Graph Annotations
+
+- Authors: Wenshuo Wang, Boyu Cao, Nan Zhuang, Wei Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1782250985419336
+- Article: https://aclanthology.org/2026.acl-long.364/
+- PDF: https://aclanthology.org/2026.acl-long.364.pdf
+- Local PDF: pdf/2026-06-26_04_iTAG_ Inverse Design for Natural Text Generation with Accurate Causal Graph Annotations.pdf
+
+A fundamental obstacle to causal discovery from text is the lack of causally annotated text data for use as ground truth, due to high annotation costs. This motivates an important task of generating text with causal graph annotations. Early template-based generation methods sacrifice text naturalness in exchange for high causal graph annotation accuracy. Recent Large Language Model (LLM)-dependent methods directly generate natural text from target graphs through LLMs, but do not guarantee causal graph annotation accuracy. Therefore, we propose iTAG, which performs real-world concept assignment to nodes before converting causal graphs into text in existing LLM-dependent methods. iTAG frames this process as an inverse problem with the causal graph as the target, iteratively examining and refining concept selection through Chain-of-Thought (CoT) reasoning so that the induced relations between concepts are as consistent as possible with the target causal relationships described by the causal graph. iTAG demonstrates both extremely high annotation accuracy and naturalness across extensive tests, and the results of testing text-based causal discovery algorithms with the generated data show high statistical correlation with real-world data. This suggests that iTAG-generated data can serve as a practical surrogate for scalable benchmarking of text-based causal discovery algorithms.
+
+## 5. Dynamic Generation of Multi LLM Agents Communication Topologies with Graph Diffusion Models
+
+- Authors: Eric Hanchen Jiang, Levina Li, Frank Wan, Xiao Liang, Sophia Yin, Yuchen Wu, Xinfeng Li, Yizhou Sun, Wei Wang, Kai-Wei Chang, Ying Nian Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1780230808073453
+- Article: https://aclanthology.org/2026.acl-long.1764/
+- PDF: https://aclanthology.org/2026.acl-long.1764.pdf
+- Local PDF: pdf/2026-06-26_05_Dynamic Generation of Multi LLM Agents Communication Topologies with Graph Diffusion Models.pdf
+
+The efficiency of multi-agent systems driven by large language models (LLMs) largely hinges on their communication topology. However, designing an optimal topology is a non-trivial challenge, as it requires balancing competing objectives such as task performance, communication cost, and robustness. Existing frameworks often rely on static or hand-crafted topologies, which inherently fail to adapt to diverse task requirements, leading to either excessive token consumption for simple problems or performance bottlenecks for complex ones. To address this challenge, we introduce a novel generative framework called Guided Topology Diffusion (GTD) . Inspired by conditional discrete graph diffusion models, GTD formulates topology synthesis as an iterative construction process. At each step, the generation is steered by a lightweight proxy model that predicts multi-objective rewards (e.g., accuracy, utility, cost), enabling real-time, gradient-free optimization towards task-adaptive topologies. This iterative, guided synthesis process distinguishes GTD from single-step generative frameworks, enabling it to better navigate complex design trade-offs. We validated GTD across multiple benchmarks, and experiments show that this framework can generate highly task-adaptive, sparse, and efficient communication topologies, significantly outperforming existing methods in LLM agent collaboration. Our code is available at https://anonymous.4open.science/r/diffusion_agent-953C .
+
+## 6. Dual-Cluster Memory Agent: Resolving Multi-Paradigm Ambiguity in Optimization Problem Solving
+
+- Authors: Xinyu Zhang, Yuchen Wan, Boxuan Zhang, Zesheng Yang, Lingling Zhang, Bifan Wei, Jun Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1776857977801685
+- Article: https://aclanthology.org/2026.acl-long.266/
+- PDF: https://aclanthology.org/2026.acl-long.266.pdf
+- Local PDF: pdf/2026-06-26_06_Dual-Cluster Memory Agent_ Resolving Multi-Paradigm Ambiguity in Optimization Problem Solving.pdf
+
+Large Language Models (LLMs) often struggle with structural ambiguity in optimization problems, where a single problem admits multiple related but conflicting modeling paradigms, hindering effective solution generation. To address this, we propose Dual-Cluster Memory Agent (DCM-Agent) to enhance performance by leveraging historical solutions in a training-free manner. Central to this is Dual-Cluster Memory Construction. This agent assigns historical solutions to modeling and coding clusters, then distills each cluster’s content into three structured types: Approach, Checklist, and Pitfall. This process derives generalizable guidance knowledge. Furthermore, this agent introduces Memory-augmented Inference to dynamically navigate solution paths, detect and repair errors, and adaptively switch reasoning paths with structured knowledge. The experiments across seven optimization benchmarks demonstrate that DCM-Agent achieves an average performance improvement of 11%- 21%. Notably, our analysis reveals a “knowledge inheritance” phenomenon: memory constructed by larger models can guide smaller models toward superior performance, highlighting the framework’s scalability and efficiency.
+
+## 7. Simple-VGC: Enhancing Visual Grounding in Multimodal Reasoning via Adaptive Tool Composition
+
+- Authors: Ye Wang, Qianglong Chen, Siyuan Wang, Zejun Li, Shijie Guo, Zhirui Zhang, Zhongyu Wei
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.170085702245307
+- Article: https://aclanthology.org/2026.acl-long.223/
+- PDF: https://aclanthology.org/2026.acl-long.223.pdf
+- Local PDF: pdf/2026-06-26_07_Simple-VGC_ Enhancing Visual Grounding in Multimodal Reasoning via Adaptive Tool Composition.pdf
+
+Multimodal Large Language Models (MLLMs) have achieved strong performance on vision-language tasks, yet often fail to preserve and effectively leverage visual evidence throughout generation. We identify three fundamental types of visual grounding failures: Long-Context Grounding Error, where visual information gradually decays over long sequences; Fine-Grained Grounding Error, where low-resolution or degraded inputs hinder the recovery of detailed visual information; and Regional Grounding Error, where spatially diffuse attention weakens region-level vision-language alignment. To address these issues, we propose a tool-augmented reasoning framework with three targeted compensation strategies: reuse, which re-injects the original image to mitigate visual forgetting; focus_area, which constrains attention to task-relevant regions; and zoom_in, which enhances visual resolution for fine-grained perception. We further construct the TWI-Tools-146K dataset and develop Simple-VGC, a tool-augmented MLLM that interleaves visual and textual tokens. Extensive experiments show that each tool yields targeted improvements for its corresponding grounding error, while their combination produces synergistic gains in visual reasoning. Beyond performance, our analysis provides mechanistic insights into how tool-based interventions improve visual grounding, pointing toward more reliable multimodal reasoning.
+
+## 8. Nirvana: A Specialized Generalist Model With Task-Aware Memory Mechanism
+
+- Authors: Yuhua Jiang, Shuang Cheng, Yihao Liu, Ermo Hua, Che Jiang, Weigao Sun, Yu Cheng, Feifei Gao, Biqing Qi, Bowen Zhou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1674439022227316
+- Article: https://aclanthology.org/2026.acl-long.996/
+- PDF: https://aclanthology.org/2026.acl-long.996.pdf
+- Local PDF: pdf/2026-06-26_08_Nirvana_ A Specialized Generalist Model With Task-Aware Memory Mechanism.pdf
+
+Large Language Models (LLMs) excel at general language tasks but struggle in specialized domains. Specialized Generalist Models (SGMs) address this by preserving broad capabilities while adapting to target domains. However, existing architectures provide limited support for task-guided specialized memory mechanisms. In this work, we introduce Nirvana, an SGM featuring specialized memory, linear-time complexity, and test-time task information extraction. Central to Nirvana are: (1) Task-Aware Memory Trigger ( Trigger ), which treats each input as a self-supervised fine-tuning task and adjusts task-related parameters on the fly; and (2) Specialized Memory Updater ( Updater ), which dynamically consolidates task-relevant context. Nirvana matches or surpasses LLM baselines on general benchmarks and achieves the lowest perplexity across specialized domains including biomedicine, finance, and law. On the challenging task of Magnetic Resonance Imaging (MRI), we attach lightweight codecs to the frozen Nirvana backbone and fine-tune them on paired k-space signals and images. Nirvana achieves higher-fidelity reconstructions than conventional LLM-based models, with Trigger providing effective domain-specific adaptation. Ablation studies confirm that removing Trigger leads to substantial degradation across all tasks, underscoring its essential role in task-aware specialization. Models are available at https://huggingface.co/collections/YuhuaJiang/nirvana. Code is available at https://github.com/YuhuaJiang2002/Nirvana.
+
+## 9. A Survey of Large Language Models for Text-Guided Molecular Discovery: From Molecule Generation to Optimization
+
+- Authors: Ziqing Wang, Kexin Zhang, Zihan Zhao, Yibo Wen, Abhishek Pandey, Han Liu, Kaize Ding
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1614964920789204
+- Article: https://aclanthology.org/2026.acl-long.2026/
+- PDF: https://aclanthology.org/2026.acl-long.2026.pdf
+- Local PDF: pdf/2026-06-26_09_A Survey of Large Language Models for Text-Guided Molecular Discovery_ From Molecule Generation to Optimization.pdf
+
+Large language models (LLMs) are introducing a paradigm shift in molecular discovery by enabling text-guided interaction with chemical spaces through natural language and symbolic notations, with emerging extensions to incorporate multi-modal inputs. To advance this emerging field, this survey provides an up-to-date and forward-looking review of the emerging use of LLMs for two central tasks: molecule generation and molecule optimization. We organize our survey around four fundamental challenges that have emerged as critical evaluation dimensions in recent studies: ensuring validity, enhancing synthesizability, achieving precise property control, and maximizing diversity. Based on this, we systematically analyze how current LLM learning paradigms are applied to tackle each challenge, revealing the distinct capabilities and inherent limitations of each approach. In addition, we include the commonly used datasets and evaluation protocols aligned with these challenges. We conclude by discussing future directions, positioning this survey as a resource for researchers working at the intersection of LLMs and molecular science. A continuously updated reading list is available at https://github.com/REAL-Lab-NU/Awesome-LLM-Centric-Molecular-Discovery .
+
+## 10. Graph Reasoning Paradigm: Structured and Symbolic Reasoning with Topology-Aware Reinforcement Learning for Large Language Models
+
+- Authors: Runxuan Liu, Xianhao Ou, Xinyan Ma, Jiyuan Wang, Jiafeng Liang, Jiaqi Li, Tao He, Zheng Chu, Rongchuan Mu, Zekun Wang, Baoxin Wang, Dayong Wu, Ming Liu, Shijin Wang, Guoping Hu, Bing Qin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1567081969225095
+- Article: https://aclanthology.org/2026.acl-long.1660/
+- PDF: https://aclanthology.org/2026.acl-long.1660.pdf
+- Local PDF: pdf/2026-06-26_10_Graph Reasoning Paradigm_ Structured and Symbolic Reasoning with Topology-Aware Reinforcement Learning for Large Languag.pdf
+
+Long Chain-of-Thought (LCoT), achieved by Reinforcement Learning with Verifiable Rewards (RLVR), has proven effective in enhancing the reasoning capabilities of Large Language Models (LLMs). However, reasoning in current LLMs is primarily generated as plain text, where performing semantic evaluation on such unstructured data creates a computational bottleneck during training. Despite RLVR-based optimization, existing methods still suffer from coarse-grained supervision, reward hacking, high training costs, and poor generalization.To address these issues, we propose the Graph Reasoning Paradigm (GRP), which realizes structured and symbolic reasoning, implemented via graph-structured representations with step-level cognitive labels. Building upon GRP, we further design Process-Aware Stratified Clipping Group Relative Policy Optimization (PASC-GRPO), which leverages structured evaluation to replace semantic evaluation, achieves process-aware verification through graph-structured outcome rewards, and mitigates reward hacking via stratified clipping advantage estimation. Experiments demonstrate significant improvements across mathematical reasoning and code generation tasks. Data, models, and code will be released later.
+
+## 11. Constructing coherent spatial memory in LLM agents through graph rectification
+
+- Authors: Puzhen Zhang, Xuyang Chen, Yu Feng, Yuhan Jiang, Liqiu Meng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1537086726019963
+- Article: https://aclanthology.org/2026.acl-long.2222/
+- PDF: https://aclanthology.org/2026.acl-long.2222.pdf
+- Local PDF: pdf/2026-06-26_11_Constructing coherent spatial memory in LLM agents through graph rectification.pdf
+
+Given a map description through global traversal navigation instructions, an LLM can often infer the implicit spatial layout and answer user queries by providing shortest paths. However, such context-dependent querying becomes incapable as environments grow larger, motivating the need for incremental map construction that builds a complete topological graph from stepwise observations. We propose a framework for LLM-driven construction and map repair, designed to detect, localize, and correct structural inconsistencies in incrementally constructed navigation graphs. Central to our method is the Version Control, which records the full history of graph edits and their source observations, enabling fine-grained rollback, conflict tracing, and repair evaluation. We further introduce an Edge Impact Score to prioritize minimal-cost repairs based on structural reachability, path usage, and conflict propagation. To properly evaluate our approach, we create a refined version of the MANGO benchmark dataset by systematically removing non-topological actions and inherent structural conflicts, providing a cleaner testbed for LLM-driven construction and map repair. Our approach significantly improves map correctness and robustness, especially in scenarios with entangled or chained inconsistencies. Our results highlight the importance of introspective, history-aware repair mechanisms for maintaining coherent spatial memory in LLM agents.
+
+## 12. Curvature-Guided Mixing for MLLM Adaptation
+
+- Authors: Jinglong Yang, Jiaxuan He, Wenjian Huang, Zhan Zhuang, Jianguo Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-06-23
+- DOI: Unavailable
+- Categories: cs.CV, cs.LG
+- Relevance: 3.1533493048090113
+- Article: http://arxiv.org/abs/2606.24963v1
+- PDF: https://arxiv.org/pdf/2606.24963v1
+- Local PDF: pdf/2026-06-26_12_Curvature-Guided Mixing for MLLM Adaptation.pdf
+
+Fine-tuning Multimodal Large Language Models (MLLMs) on specialized tasks often leads to catastrophic forgetting of their general capabilities. Existing model merging methods to combat this are often heuristic or use sub-optimal objectives. We propose CurvatureGuided Mixing (CGM), a theoretically grounded framework that merges pre-trained and fine-tuned models. CGM formulates a joint optimization objective and uses a second-order (Hessian) approximation of the loss landscapes to analytically derive an optimal, closed-form "soft mixing" ratio. This ratio intelligently blends parameters based on their relative task-specific curvatures. We also introduce CGM$\dagger$, a robust "hard mixing" variant that performs sparse parameter selection guided by a novel, curvature-aware score. Experiments on LLaVA-1.5 and Qwen2.5VL across multiple downstream tasks show that CGM and CGM$\dagger$ consistently improve the trade-off between task specialization and general knowledge retention over existing methods. Code is available at github.com/zzsyjl/CGM-ECCV-2026.
+
+## 13. Memory-Augmented LLM-based Multi-Agent System for Automated Feature Generation on Tabular Data
+
+- Authors: FengXian Dong, Zhi Zheng, Xiao Han, Wei Chen, Jingqing Ruan, Tong Xu, Yong Chen, Enhong Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1516245393107774
+- Article: https://aclanthology.org/2026.acl-long.503/
+- PDF: https://aclanthology.org/2026.acl-long.503.pdf
+- Local PDF: pdf/2026-06-26_13_Memory-Augmented LLM-based Multi-Agent System for Automated Feature Generation on Tabular Data.pdf
+
+Automated feature generation extracts informative features from raw tabular data without manual intervention and is crucial for accurate, generalizable machine learning. Traditional methods rely on predefined operator libraries and cannot leverage task semantics, limiting their ability to produce diverse, high-value features for complex tasks. Recent Large Language Model (LLM)-based approaches introduce richer semantic signals, but still suffer from a restricted feature space due to fixed generation patterns and from the absence of feedback from the learning objective. To address these challenges, we propose a Memory-Augmented LLM-based Multi-Agent System ( MALMAS ) for automated feature generation. MALMAS decomposes the generation process into agents with distinct responsibilities, and a Router Agent activates an appropriate subset of agents per iteration, further broadening exploration of the feature space. We further integrate a memory module comprising procedural memory, feedback memory, and conceptual memory, enabling iterative refinement that adaptively guides subsequent feature generation and improves feature quality and diversity. Extensive experiments on multiple public datasets against state-of-the-art baselines demonstrate the effectiveness of our approach.
+
+## 14. From Graph to Text and Back: Semantic Fidelity in Automated Industrial Knowledge Graphs
+
+- Authors: Kamyar Zeinalipour, Silvia Severini, Alessia Borghini, Sara Cardarelli, Marco Maggini, Marco Gori
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1497953598321815
+- Article: https://aclanthology.org/2026.acl-industry.140/
+- PDF: https://aclanthology.org/2026.acl-industry.140.pdf
+- Local PDF: pdf/2026-06-26_14_From Graph to Text and Back_ Semantic Fidelity in Automated Industrial Knowledge Graphs.pdf
+
+Knowledge Graphs (KGs) are the backbone of reliable industrial data strategies, yet verbalizing them with Large Language Models (LLMs) often leads to unacceptable risks for high-stakes applications, such as hallucinations or omitted relations. To enforce strict semantic fidelity in KG-to-text generation, we introduce a self-supervised round-trip pipeline. The system verbalizes KG triples into text and immediately attempts to reconstruct the original graph from that text; only verbalizations that enable perfect graph recovery are retained. This creates a closed feedback loop that guarantees the generated text is semantically equivalent to the source data. Experiments confirm that our automated round-trip consistency score correlates strongly with expert judgment, effectively acting as a scalable proxy for human review. Furthermore, we show that standard LLMs can bootstrap their own KG-extraction and generation capabilities by fine-tuning on this trusted synthetic data. Our approach yields significant improvements in triple-extraction accuracy and verbalization faithfulness without relying on costly manual annotation or massive teacher models, offering a practical path to deploying trustworthy, KG-grounded AI systems.
+
+## 15. HeLa-Mem: Hebbian Learning and Associative Memory for LLM Agents
+
+- Authors: Jinchang Zhu, Jindong Li, Cheng Zhang, Jiahong Liu, Menglin Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1497356032251322
+- Article: https://aclanthology.org/2026.acl-long.625/
+- PDF: https://aclanthology.org/2026.acl-long.625.pdf
+- Local PDF: pdf/2026-06-26_15_HeLa-Mem_ Hebbian Learning and Associative Memory for LLM Agents.pdf
+
+Long-term memory is a critical challenge for Large Language Model agents, as fixed context windows cannot preserve coherence across extended interactions. Existing memory systems represent conversation history as unstructured embedding vectors, retrieving information through semantic similarity. This paradigm fails to capture the associative structure of human memory, wherein related experiences progressively strengthen interconnections through repeated co-activation. Inspired by cognitive neuroscience, we identify three mechanisms central to biological memory: association, consolidation, and spreading activation, which remain largely absent in current research. To bridge this gap, we propose HeLa-Mem, a bio-inspired memory architecture that models memory as a dynamic graph with Hebbian learning dynamics. HeLa-Mem employs a dual-level organization: (1) an episodic memory graph that evolves through co-activation patterns, and (2) a semantic memory store populated via Hebbian Distillation, wherein a Reflective Agent identifies densely connected memory hubs and distills them into structured, reusable semantic knowledge. This dual-path design leverages both semantic similarity and learned associations, mirroring the episodic-semantic distinction in human cognition. Experiments on LoCoMo demonstrate superior performance across four question categories while using significantly fewer context tokens. Code is available on GitHub: https://github.com/ReinerBRO/HeLa-Mem
+
+## 16. Multimodal Large Language Models for Multi-Subject In-Context Image Generation
+
+- Authors: Yucheng Zhou, Dubing Chen, Huan Zheng, Jianbing Shen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.143368606507464
+- Article: https://aclanthology.org/2026.acl-long.1518/
+- PDF: https://aclanthology.org/2026.acl-long.1518.pdf
+- Local PDF: pdf/2026-06-26_16_Multimodal Large Language Models for Multi-Subject In-Context Image Generation.pdf
+
+Recent advances in text-to-image (T2I) generation have enabled visually coherent image synthesis from descriptions, but generating images containing multiple given subjects remains challenging. As the number of reference identities increases, existing methods often suffer from subject missing and semantic drift. To address this problem, we propose MUSIC, the first MLLM specifically designed for MUlti-Subject In-Context image generation. To overcome the data scarcity, we introduce an automatic and scalable data generation pipeline that eliminates the need for manual annotation. Furthermore, we enhance the model’s understanding of multi-subject semantic relationships through a vision chain-of-thought (CoT) mechanism, guiding step-by-step reasoning from subject images to semantics and generation. To mitigate identity entanglement and manage visual complexity, we develop a novel semantics-driven spatial layout planning method and demonstrate its test-time scalability. By incorporating complex subject images during training, we improve the model’s capacity for chained reasoning. In addition, we curate MSIC, a new benchmark tailored for multi-subject in-context generation. Experimental results demonstrate that MUSIC significantly surpasses other methods in both multi- and single-subject scenarios.
+
+## 17. Toward Consistent World Models with Multi-Token Prediction and Latent Semantic Enhancement
+
+- Authors: Qimin Zhong, Hao Liao, Haiming Qin, Mingyang Zhou, Rui Mao, Wei Chen, Naipeng Chao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1430145879501903
+- Article: https://aclanthology.org/2026.acl-long.618/
+- PDF: https://aclanthology.org/2026.acl-long.618.pdf
+- Local PDF: pdf/2026-06-26_17_Toward Consistent World Models with Multi-Token Prediction and Latent Semantic Enhancement.pdf
+
+Whether Large Language Models (LLMs) develop coherent internal world models remains a core debate. While conventional Next-Token Prediction (NTP) focuses on one-step-ahead supervision, Multi-Token Prediction (MTP) has shown promise in learning more structured representations. In this work, we provide a theoretical perspective analyzing the gradient inductive bias of MTP, supported by empirical evidence, showing that MTP promotes the convergence toward internal belief states by inducing representational contractivity via gradient coupling. However, we reveal that standard MTP often suffers from structural hallucinations, where discrete token supervision encourages illegal shortcuts in latent space that violate environmental constraints. To address this, we propose a novel method **Latent Semantic Enhancement MTP (LSE-MTP)**, which anchors predictions to ground-truth hidden state trajectories. Experiments on synthetic graphs and real-world Manhattan Taxi Ride show that LSE-MTP effectively bridges the gap between discrete tokens and continuous state representations, enhancing representation alignment, reducing structural hallucinations, and improving robustness to perturbations.
+
+## 18. CoreGaze: Core Subgraph-Driven Visual Gaze Diffusion for Training-Free Referring Multimodal Large Language Models
+
+- Authors: Xiaoyang Yi, Jing Chen, Yuru Bao, Jian Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1422900994024427
+- Article: https://aclanthology.org/2026.acl-long.57/
+- PDF: https://aclanthology.org/2026.acl-long.57.pdf
+- Local PDF: pdf/2026-06-26_18_CoreGaze_ Core Subgraph-Driven Visual Gaze Diffusion for Training-Free Referring Multimodal Large Language Models.pdf
+
+Referring multimodal large language models enable users to ground queries to specific image regions via spatial prompts, supporting fine-grained referring dialogue. However, existing methods rely on extensive fine-tuning to mitigate attention distraction, which incurs high computational costs and limits adaptability. Without sufficient training data, irrelevant regions in single images easily divert model focus, leading to redundant outputs or hallucinations. To address this, we propose CoreGaze, a training-free framework that simulates human visual gaze diffusion for fine-grained comprehension. First, CoreGaze constructs a sparse semantic graph from visual tokens, modeling region-wise affinities via thresholded similarity. It then maps the user’s visual prompt to a core subgraph with amplified initial influence, which drives a degree-normalized diffusion process using restart-equipped random walks to propagate relevance to contextual neighborhoods. This process prunes irrelevant tokens while preserving user-indicated targets and semantically linked context, distilling a focused yet comprehensive subgraph. Finally, CoreGaze fuses this subgraph with prompt tokens in the frozen large language model decoder, facilitating fine-grained referring generation. Experimental results show that CoreGaze achieves outstanding performance in multiple referring dialogue tasks, showcasing its effectiveness.
+
+## 19. Bringing Real-World Relations into Video Generation with Graph-Structured Knowledge
+
+- Authors: Joonhyung Park, Jaeyun Song, Sihwan Park, Eunho Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1417188494383947
+- Article: https://aclanthology.org/2026.acl-long.172/
+- PDF: https://aclanthology.org/2026.acl-long.172.pdf
+- Local PDF: pdf/2026-06-26_19_Bringing Real-World Relations into Video Generation with Graph-Structured Knowledge.pdf
+
+Recent proprietary video generation models have demonstrated remarkable proficiency in synthesizing highly realistic videos from textual instructions. Most open-source text-to-video models, however, still struggle to accurately simulate real-world physics and dynamic entity interactions. Existing approaches rely on scaling laws and large-scale, high-quality video datasets to implicitly learn physical dynamics, yet this paradigm is constrained by prohibitive costs and the burdensome demands of data curation. Motivated by this, we propose a novel framework that integrates graph-structured temporal knowledge into video latent diffusion models to enhance compositional generation and interaction fidelity. Our framework constructs video scene graphs specifically designed to capture entity relationships, temporal dynamics, and global scene context. These graph-structured representations guide the generation process through cross-attention mechanisms. Additionally, we introduce Graph-Aligned Denoising Loss (GADL), a training objective that ensures adherence to conditioned graphs by incorporating node modification tasks within the denoising process, leveraging synchronized edited video-graph pairs. Comprehensive evaluations demonstrate that incorporating graph-structured knowledge significantly enhances compositionality and the accurate portrayal of real-world interactions in generated videos.
+
+## 20. Cell-Based Representation of Relational Binding in Language Models
+
+- Authors: Qin Dai, Benjamin Heinzerling, Kentaro Inui
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1392545076944645
+- Article: https://aclanthology.org/2026.acl-long.2194/
+- PDF: https://aclanthology.org/2026.acl-long.2194.pdf
+- Local PDF: pdf/2026-06-26_20_Cell-Based Representation of Relational Binding in Language Models.pdf
+
+Understanding a discourse requires tracking entities and the relations that hold between them. While Large Language Models (LLMs) perform well on relational reasoning, the mechanism by which they bind entities, relations, and attributes remains unclear. We study discourse-level relational binding and show that LLMs encode it via a Cell-based Binding Representation (CBR): a low-dimensional linear subspace in which each “cell” corresponds to an entity–relation index pair, and bound attributes are retrieved from the corresponding cell during inference. Using controlled multi-sentence data annotated with entity and relation indices, we identify the CBR subspace by decoding these indices from attribute-token activations with Partial Least Squares regression. Across domains and two model families, the indices are linearly decodable and form a grid-like geometry in the projected space. We further find that context-specific CBR representations are related by translation vectors in activation space, enabling cross-context transfer. Finally, activation patching shows that manipulating this subspace systematically changes relational predictions and that perturbing it disrupts performance, providing causal evidence that LLMs rely on CBR for relational binding.
+
+## 21. From Inheritance to Saturation: Disentangling the Evolution of Visual Redundancy for Architecture-Aware MLLM Inference Acceleration
+
+- Authors: Jiaqi Shi, Xulong Zhang, Yuechan Li, Xiaoyang Qu, Jianzong Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1369266802290636
+- Article: https://aclanthology.org/2026.acl-long.787/
+- PDF: https://aclanthology.org/2026.acl-long.787.pdf
+- Local PDF: pdf/2026-06-26_21_From Inheritance to Saturation_ Disentangling the Evolution of Visual Redundancy for Architecture-Aware MLLM Inference A.pdf
+
+High-resolution Multimodal Large Language Models (MLLMs) face prohibitive computational costs during inference due to the explosion of visual tokens. Existing acceleration strategies, such as token pruning or layer sparsity, suffer from severe "backbone dependency", performing well on Vicuna or Mistral architectures (e.g., LLaVA) but causing significant performance degradation when transferred to architectures like Qwen. To address this, we leverage truncated matrix entropy to uncover a universal three-stage inference lifecycle, decoupling visual redundancy into universal Intrinsic Visual Redundancy (IVR) and architecture-dependent Secondary Saturation Redundancy (SSR). Guided by this insight, we propose HalfV, a framework that first mitigates IVR via a unified pruning strategy and then adaptively handles SSR based on its specific manifestation. Experiments demonstrate that HalfV achieves superior efficiency-performance trade-offs across diverse backbones. Notably, on Qwen25-VL, it retains 96.8% performance at a 4.1 × FLOPs speedup, significantly outperforming state-of-the-art baselines. Our code is available at https://github.com/civilizwa/HalfV .
+
+## 22. Textual Steering Vectors Can Improve Visual Understanding in Multimodal Large Language Models
+
+- Authors: Woody Haosheng Gan, Deqing Fu, Julian Asilis, Ollie Liu, Vatsal Sharan, Robin Jia, Willie Neiswanger
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1365680784463335
+- Article: https://aclanthology.org/2026.acl-long.1861/
+- PDF: https://aclanthology.org/2026.acl-long.1861.pdf
+- Local PDF: pdf/2026-06-26_22_Textual Steering Vectors Can Improve Visual Understanding in Multimodal Large Language Models.pdf
+
+Steering methods have emerged as effective tools for guiding large language models’ behavior, yet multimodal large language models (MLLMs) lack comparable techniques due to architectural diversity and limited availability of multimodal steering vectors. Inspired by this gap, we demonstrate that steering vectors derived solely from text-only LLM backbones can effectively guide and enhance their multimodal counterparts, revealing a novel cross-modal transfer that enables reuse of existing interpretability tools. Using community-standard methods—Sparse Autoencoders (SAE), Mean Shift, and Linear Probing—we validate this transfer effect across diverse MLLM architectures and visual reasoning tasks. Text-derived steering consistently enhances multimodal performance, with Mean Shift achieving up to +7.3% improvement in spatial relationship accuracy and +3.3% in counting accuracy on CV-Bench, and exhibits strong generalization to out-of-distribution datasets, for example reaching +34.2% on CLEVR counting tasks. This reveals that textual representations alone can effectively enhance visual grounding in MLLMs, bridging the mature ecosystem of text-based steering to MLLMs with minimal additional data collection or computational overhead.
+
+## 23. MTA: Multi-Granular Trajectory Alignment for Large Language Model Distillation
+
+- Authors: Pham Khanh Chi, Quoc Phong Dao, Thuat Nguyen, Linh Ngo Van, Trung Le, Thanh Hong Nguyen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1265953333478835
+- Article: https://aclanthology.org/2026.acl-long.1507/
+- PDF: https://aclanthology.org/2026.acl-long.1507.pdf
+- Local PDF: pdf/2026-06-26_23_MTA_ Multi-Granular Trajectory Alignment for Large Language Model Distillation.pdf
+
+Knowledge distillation is a key technique for compressing large language models (LLMs), but most existing methods align representations at fixed layers or token-level outputs, ignoring how representations evolve across depth. As a result, the student is only weakly guided to capture the teacher’s internal relational structure during distillation, which limits knowledge transfer. To address this limitation, we propose Multi-Granular Trajectory Alignment (MTA) , a framework that aligns teacher and student representations along their layer-wise transformation trajectory. MTA adopts a layer-adaptive strategy: lower layers are aligned at the word level to preserve lexical information, while higher layers operate on phrase-level spans (e.g., noun and verb phrases) to capture compositional semantics. We instantiate this idea through a Dynamic Structural Alignment loss that matches the relative geometry among semantic units within each layer. This design is motivated by empirical findings that Transformer representations become increasingly abstract with depth, and is also consistent with linguistic views in which higher-level meaning emerges through the composition of lower-level lexical units. We further incorporate a Hidden Representation Alignment loss to directly align selected teacher–student layers. Experiments show that MTA consistently outperforms state-of-the-art baselines on standard benchmarks, with ablations confirming the contribution of each component.
+
+## 24. Decoding Scientific Experimental Images: The SPUR Benchmark for Perception, Understanding, and Reasoning
+
+- Authors: Junpeng Ding, Zichen Tang, Haihong E, Mengyuan Ji, Yang Liu, Haolin Tian, Haiyang Sun, Pengqi Sun, Yang Xu, Yichen Liu, Haocheng Gao, Zijie Xi, Ruomeng Jiang, Peizhi Zhao, Rongjin Li, Yuanze Li, Jiacheng Liu, Zhongjun Yang, Jintong Chen, Siying Lin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.124151302638809
+- Article: https://aclanthology.org/2026.acl-long.585/
+- PDF: https://aclanthology.org/2026.acl-long.585.pdf
+- Local PDF: pdf/2026-06-26_24_Decoding Scientific Experimental Images_ The SPUR Benchmark for Perception, Understanding, and Reasoning.pdf
+
+We introduce SPUR, a comprehensive benchmark for scientific experimental image perception, understanding, and reasoning, comprising 4,264 question-answering (QA) pairs derived from 1,084 expert-curated images. SPUR features three key innovations: (1) Panel-Level Fine-Grained Perception: evaluating the visual perception of multimodal large language models (MLLMs) across three dimensions (numerical, morphological, and information localization) on six fine-grained panel types; (2) Cross-Panel Relation Understanding: utilizing complex images with an average of 14.3 panels per sample to evaluate MLLMs’ ability to decipher intricate cross-panel relations; (3) Expert-Level Reasoning: assessment of qualitative and quantitative reasoning across five experimental paradigms to determine if models can infer conclusions from evidence as human experts do. Comprehensive evaluation of 20 MLLMs and four multimodal Chain-of-Thought (MCoT) methods reveals that current models fall significantly short of the expert-level requirements for scientific image interpretation, underscoring a critical bottleneck in AI for Science (AI4S) research.
+
+## 25. On the Role of Discriminative Models in Generative Relation Extraction
+
+- Authors: Guozheng Li, Peng Wang, Zijie Xu, Jing Zhou, Jiajun Liu, Ziyu Shang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1232611285082
+- Article: https://aclanthology.org/2026.acl-long.2093/
+- PDF: https://aclanthology.org/2026.acl-long.2093.pdf
+- Local PDF: pdf/2026-06-26_25_On the Role of Discriminative Models in Generative Relation Extraction.pdf
+
+Relation extraction (RE) identifies semantic relations between entities in text, with existing methods falling into two main paradigms: discriminative and generative. Discriminative models encode sentences and entities into relation representations and classify the most likely relation, whereas generative models directly produce relation labels through sequence generation. Although the latter have benefited from recent advances in large language models (LLMs), their performance remains limited by bottlenecks. In this work, we present the systematic investigation of how discriminative models can support generative RE. We propose the Discriminative-to-Generative (D2G) framework, which first leverages discriminative models to produce a top-k set of candidate relations, and then integrates this knowledge into generative models via in-context or prompt learning. Extensive experiments on five widely used RE benchmarks demonstrate that D2G consistently achieves state-of-the-art performance, with notable gains on long-tailed relation classes.
+
+## 26. SeLaR: Selective Latent Reasoning in Large Language Models
+
+- Authors: Renyu Fu, Guibo Luo
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1231487604994608
+- Article: https://aclanthology.org/2026.acl-long.320/
+- PDF: https://aclanthology.org/2026.acl-long.320.pdf
+- Local PDF: pdf/2026-06-26_26_SeLaR_ Selective Latent Reasoning in Large Language Models.pdf
+
+Chain-of-Thought (CoT) has become a cornerstone of reasoning in large language models, yet its effectiveness is constrained by the limited expressiveness of discrete token sampling. Recent latent reasoning approaches attempt to alleviate this limitation by replacing discrete tokens with soft embeddings (probability-weighted mixtures of token embeddings) or hidden states, but they commonly suffer from two issues: (1) global activation injects perturbations into high-confidence steps, impairing reasoning stability; and (2) soft embeddings quickly collapse toward the highest-probability token, limiting exploration of alternative trajectories. To address these challenges, we propose SeLaR (Selective Latent Reasoning), a lightweight and training-free framework. SeLaR introduces an entropy-gated mechanism that activates soft embeddings only at low-confidence steps, while preserving discrete decoding at high-confidence steps. Additionally, we propose an entropy-aware contrastive regularization that pushes soft embeddings away from the highest-probability token’s direction, encouraging sustained exploration of multiple latent reasoning paths. Experiments on five reasoning benchmarks demonstrate that SeLaR consistently outperforms standard CoT and state-of-the-art training-free methods.
+
+## 27. Beyond the Panorama: Training-Free Hierarchical Perception-Reasoning for Fine-Grained Vision in MLLMs
+
+- Authors: Xiaoyang Yi, Jing Chen, Li Peng, Yuru Bao, Jian Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1225390840389
+- Article: https://aclanthology.org/2026.acl-long.1409/
+- PDF: https://aclanthology.org/2026.acl-long.1409.pdf
+- Local PDF: pdf/2026-06-26_27_Beyond the Panorama_ Training-Free Hierarchical Perception-Reasoning for Fine-Grained Vision in MLLMs.pdf
+
+Multimodal large language models (MLLMs) enable cross-modal semantic understanding and generation by learning semantic alignment and fusion across modalities. However, existing MLLMs still face challenges in fine-grained visual tasks. Their uniform encoding for global understanding tends to blur or lose local details, while the lack of explicit modeling of intermediate visual evidence leads them to rely on semantic priors or the statistical patterns of language models rather than grounded visual information, resulting in potential hallucinations. To address these issues, we propose HiPerson, a training-free hierarchical perception-reasoning framework that enhances fine-grained visual understanding by simulating human perception mechanisms. Specifically, HiPerson fuses internal relative attention and gradient activation signals to generate a task-aware semantic heatmap, providing explicit perceptual anchors for precise localization. Then, it employs a dual-scale adaptive cropping strategy to extract visual cues for interactive reasoning, simulating the process of human visual focus shifting and detail attention. Finally, by combining local-global dual-image cooperative input with a multi-step reasoning prompting mechanism, HiPerson guides the model to complete a full perception loop from detail observation to contextual verification. Experiments show that HiPerson achieves competitive results on multiple datasets, demonstrating its generalizability and scalability.
+
+## 28. LOTUS: Evolving Multimodal Unlearning via Hyperbolic Entailment and Lorentz Transport
+
+- Authors: Zekun Wang, Jingjie Zeng, Yingxu Li, Hongfei Lin, Liang Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.1222554725726415
+- Article: https://aclanthology.org/2026.acl-long.2195/
+- PDF: https://aclanthology.org/2026.acl-long.2195.pdf
+- Local PDF: pdf/2026-06-26_28_LOTUS_ Evolving Multimodal Unlearning via Hyperbolic Entailment and Lorentz Transport.pdf
+
+Multimodal Large Language Models (MLLMs) face critical privacy challenges due to the indiscriminate memorization of sensitive data. Existing unlearning methods, largely adapted from Euclidean paradigms, suffer from a geometric mismatch: they fail to disentangle specific instances from general concepts, causing catastrophic forgetting or unsafe substitution. We introduce LOTUS (Lorentz Transport for Unlearning Strategies), a framework for surgical semantic pruning within the Lorentz manifold. Leveraging hyperbolic geometry’s hierarchical nature, LOTUS employs an Inverted Entailment Cone Loss to sever the inheritance of sensitive concepts and a Lorentz Transport mechanism to align pruned features within the tangent space, ensuring compatibility with Euclidean backbones via a safety refusal prior. Experiments on MLLMU-Bench with LLaVA and Qwen show that LOTUS significantly outperforms baselines, effectively erasing targeted visual data while preserving general utility.
+
+## 29. Spectral Disentanglement: Rank-Aware Task Adaptation for Rehearsal-free Continual Learning in LLMs
+
+- Authors: Huanxuan Liao, Shizhu He, Yupu Hao, Yequan Wang, Wenhao Teng, Xiangwen Liao, Jun Zhao, Kang Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.117658699080498
+- Article: https://aclanthology.org/2026.acl-long.334/
+- PDF: https://aclanthology.org/2026.acl-long.334.pdf
+- Local PDF: pdf/2026-06-26_29_Spectral Disentanglement_ Rank-Aware Task Adaptation for Rehearsal-free Continual Learning in LLMs.pdf
+
+Continual Learning (CL) for Large Language Models (LLMs) faces a fundamental Stability-Plasticity Dilemma: balancing the plasticity to acquire new capabilities with the stability to preserve prior knowledge. While Parameter-Efficient Fine-Tuning methods, such as LoRA, enable efficient adaptation, we identify a critical flaw in current approaches termed Rank-Blindness: the enforcement of a single rank constraint across diverse tasks, which entangles task-shared and task-specific knowledge, leading to catastrophic forgetting of earlier tasks and underfitting on complex new ones. To address this, we propose SpaRTA, a novel rehearsal-free framework guided by a rank-spectrum perspective that explicitly disentangles knowledge into two orthogonal subspaces. Specifically, SpaRTA employs a low-rank branch to capture task-shared representations and a high-rank branch to model task-specific features. To integrate these complementary representations, we introduce a context-aware dynamic router that adaptively fuses the two branches based on input semantics, while an explicit orthogonality constraint minimizes interference between shared and specific parameter subspaces. This design effectively isolates task-specific updates from shared knowledge, preventing the overwriting of prior capabilities while preserving strong adaptation capacity. Extensive experiments demonstrate that SpaRTA achieves a superior stability-plasticity balance compared to single-rank baselines. Notably, the proposed spectral disentanglement strategy substantially reduces inter-task interference and yields strong zero-shot generalization on unseen tasks. Our code will be available at https://github.com/Xnhyacinth/SpaRTA.
+
+## 30. Adaptive Spatial and Temporal Redundancy Optimization for Efficient Reasoning in Large Language Models
+
+- Authors: Tianle Chen, Pengyu Cheng, Qiyuan Zhu, Jiacheng Wang, Bei Liu, Hao Gu, Ruijie Shen, Xiaofeng Hou, Sirui Han, Jiacheng Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.117328943908136
+- Article: https://aclanthology.org/2026.acl-long.1130/
+- PDF: https://aclanthology.org/2026.acl-long.1130.pdf
+- Local PDF: pdf/2026-06-26_30_Adaptive Spatial and Temporal Redundancy Optimization for Efficient Reasoning in Large Language Models.pdf
+
+Large Language Models (LLMs) have achieved exceptional performance in complex reasoning via Chain-of-Thought (CoT), yet the associated computational costs remain prohibitive. CoT reasoning contains significant untapped efficiency potential across two dimensions: temporal redundancy , where reasoning steps may be unnecessary, and spatial redundancy , where computations can be performed at reduced precision. While current optimization techniques often necessitate resource-intensive fine-tuning or data curation, we introduce ASTRO (Adaptive Spatial and Temporal Redundancy Optimization), a training-free framework that simultaneously addresses both dimensions. ASTRO leverages Dewey’s reflective thinking model to segment reasoning phases, applying a progressive precision reduction strategy coupled with an entropy-based confidence mechanism for adaptive termination. Empirical results across diverse reasoning benchmarks demonstrate that ASTRO achieves up to an 11.3 × efficiency gain without compromising accuracy, highlighting the advantages of holistic multi-dimensional redundancy management over isolated optimization methods.
