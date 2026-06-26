@@ -7,7 +7,7 @@ param(
     [ValidateRange(1, 200)]
     [int]$MaxRuns = 100,
 
-    [long[]]$RunIds = @(),
+    [string[]]$RunIds = @(),
 
     [ValidateRange(1, 240)]
     [int]$DownloadTimeoutMinutes = 60,
@@ -78,6 +78,26 @@ function Test-DateInRange {
         return $false
     }
     return $true
+}
+
+function Resolve-RunIds {
+    param([string[]]$Values)
+
+    $ids = @()
+    foreach ($value in $Values) {
+        foreach ($part in ($value -split ",")) {
+            $trimmed = $part.Trim()
+            if (-not $trimmed) {
+                continue
+            }
+            $parsed = 0L
+            if (-not [long]::TryParse($trimmed, [ref]$parsed)) {
+                throw "Invalid run id: $trimmed"
+            }
+            $ids += $parsed
+        }
+    }
+    return @($ids)
 }
 
 function Get-DailyFolders {
@@ -202,9 +222,10 @@ if ($authExitCode -ne 0) {
 New-Item -ItemType Directory -Force -Path $destination | Out-Null
 New-Item -ItemType Directory -Force -Path $tempRoot | Out-Null
 
+$resolvedRunIds = Resolve-RunIds $RunIds
 $runs = @()
-if ($RunIds.Count -gt 0) {
-    foreach ($id in $RunIds) {
+if ($resolvedRunIds.Count -gt 0) {
+    foreach ($id in $resolvedRunIds) {
         $run = Invoke-GhJson @(
             "run", "view", "$id",
             "--repo", $Repository,
@@ -239,7 +260,7 @@ if ($runs.Count -eq 0) {
     exit 0
 }
 
-if ($RunIds.Count -gt 0) {
+if ($resolvedRunIds.Count -gt 0) {
     Write-Host "Found $($runs.Count) requested successful daily run(s)."
 }
 else {
