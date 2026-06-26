@@ -1,3 +1,4 @@
+import csv
 from pathlib import Path
 
 from zotero_arxiv_daily.archive import archive_papers, paper_filename, safe_title
@@ -69,3 +70,40 @@ def test_archive_papers_supports_distinct_directory_name(tmp_path: Path):
         tmp_path / "papers" / "manual" / "2026-06-16-spatial-transcriptomics"
     )
     assert (archive_dir / "papers.csv").exists()
+
+
+def test_archive_papers_merges_existing_daily_folder(tmp_path: Path):
+    output_root = tmp_path / "papers" / "daily"
+    first = make_paper("Existing Spatial Method")
+    duplicate = make_paper("Existing Spatial Method")
+    duplicate.tldr = "A later duplicate summary."
+    duplicate.matched_keywords = ["spatial omics", "computational method"]
+    second = make_paper("New Cell Communication Method")
+    second.doi = "10.1000/new"
+    second.url = "https://example.com/new"
+
+    archive_papers(
+        [first],
+        output_root=output_root,
+        run_date="2026-06-18",
+        download_pdfs=False,
+    )
+    archive_dir = archive_papers(
+        [duplicate, second],
+        output_root=output_root,
+        run_date="2026-06-18",
+        download_pdfs=False,
+    )
+
+    with (archive_dir / "papers.csv").open("r", encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+
+    assert [row["title"] for row in rows] == [
+        "Existing Spatial Method",
+        "New Cell Communication Method",
+    ]
+    assert rows[0]["summary"] == "A short Chinese summary."
+    assert rows[0]["matched_keywords"] == "spatial omics; cell communication; computational method"
+    summaries = (archive_dir / "summaries.md").read_text(encoding="utf-8")
+    assert "Existing Spatial Method" in summaries
+    assert "New Cell Communication Method" in summaries

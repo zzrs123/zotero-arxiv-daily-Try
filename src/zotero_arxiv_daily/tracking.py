@@ -12,7 +12,7 @@ from loguru import logger
 from omegaconf import OmegaConf
 from openai import OpenAI
 
-from .archive import archive_papers
+from .archive import archive_papers, load_archived_papers
 from .construct_email import render_email
 from .history import exclude_previously_sent, load_history, paper_identity, update_history
 from .openalex_search import OpenAlexSearch
@@ -477,14 +477,15 @@ def run_tracking(args: argparse.Namespace) -> Path:
         download_pdfs=not args.skip_pdf_download and bool(tracking.get("download_pdfs", True)),
         directory_name=tracking_archive_name(archive_date, mode),
     )
+    archived_papers, _, _ = load_archived_papers(archive_dir / "papers.csv")
     write_tracking_summaries(
-        papers,
+        archived_papers,
         archive_dir / "summaries.md",
         archive_date,
         mode,
         str(tracking.get("min_confidence_for_summary", "medium")),
     )
-    uncertain = [paper for paper in papers if paper.tracking_confidence == "low"]
+    uncertain = [paper for paper in archived_papers if paper.tracking_confidence == "low"]
     if uncertain:
         write_tracking_summaries(uncertain, archive_dir / "uncertain.md", archive_date, mode, "low")
     if history_enabled_for_mode(tracking, mode) and papers:
