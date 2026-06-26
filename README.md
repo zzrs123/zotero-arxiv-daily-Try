@@ -116,6 +116,64 @@ paper_filter:
   exclude_keywords: ["clinical trial", "case report"]
 ```
 
+
+### Researcher tracking
+
+The `Track researchers and groups` workflow is separate from the daily paper feed and the
+on-demand OpenAlex search. It has two modes:
+
+- `daily`: scheduled every day. It checks the recent tracking window (`tracking.daily_lookback_days`,
+  default 3 days) and writes `papers/tracking/YYYY-MM-DD_daily_tracking/`.
+- `manual`: run from the Actions page. It checks `tracking.manual_lookback_days` by default
+  (30 days) and writes `papers/tracking/YYYY-MM-DD_manual_tracking/`.
+
+The people to follow live in `config/tracking.yaml`. Prefer adding stable IDs when you know
+them:
+
+```yaml
+tracking:
+  researchers:
+    - name: "Jane Doe"
+      openalex_id: "A123456789"
+      semantic_scholar_id: "123456789"
+      aliases:
+        - "J. Doe"
+      keywords:
+        - "spatial transcriptomics"
+  groups: []
+```
+
+If you maintain a classified Google Scholar following CSV, regenerate `config/tracking.yaml`
+with:
+
+```powershell
+uv run python -m zotero_arxiv_daily.tracking_csv `
+  --input "C:\Users\22967\Documents\PaperDailyReading\google_scholar_following_classified_excel.csv" `
+  --output config\tracking.yaml
+```
+
+By default, the converter imports only rows whose `confidence` is `high` or `medium`. To also
+include low-confidence rows:
+
+```powershell
+uv run python -m zotero_arxiv_daily.tracking_csv `
+  --input "C:\Users\22967\Documents\PaperDailyReading\google_scholar_following_classified_excel.csv" `
+  --output config\tracking.yaml `
+  --include-low
+```
+
+CSV rows are converted as researcher entries. `normalized_name` becomes `name`, `topic_hint`
+becomes `keywords`, ORCID values in the alert title or notes are preserved, and classification
+fields such as `confidence`, `needs_review`, and `notes` are kept for human review. The CSV
+usually does not contain OpenAlex or Semantic Scholar IDs, so the first generated YAML mostly
+uses author-name matching for arXiv/bioRxiv. Add `openalex_id` and `semantic_scholar_id` to
+important researchers when possible for high-confidence tracking.
+
+Current limitation: Google Scholar alert email import is not implemented yet. The project does
+not scrape Google Scholar pages. A future Gmail/IMAP importer should read Scholar alert emails
+from a dedicated label, parse paper titles/authors/links, and keep only alerts matching the
+researchers listed in `config/tracking.yaml`.
+
 ### Search journals on demand
 
 ### Synchronize GitHub Actions archives to Windows
@@ -179,7 +237,9 @@ uv run python -m zotero_arxiv_daily.openalex_search \
 ```
 
 Daily runs use `papers/daily/YYYY-MM-DD`; on-demand searches use
-`papers/manual/YYYY-MM-DD`. Each dated folder contains `papers.csv`,
+`papers/manual/YYYY-MM-DD-topic`. Researcher tracking uses
+`papers/tracking/YYYY-MM-DD_daily_tracking` or `papers/tracking/YYYY-MM-DD_manual_tracking`.
+Each archive folder contains `papers.csv`,
 `summaries.md`, and a `pdf` directory.
 
 ```text
