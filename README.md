@@ -231,6 +231,24 @@ powershell -ExecutionPolicy Bypass -File scripts/sync-action-artifacts.ps1 -Comm
 Add `-PushMetadata` to also push that metadata to `origin/main`. PDF files remain local because
 their archive folders are ignored by Git. Use `-SkipTracking` to skip researcher tracking artifacts.
 
+If daily archives were missed because the regular sync only checked recent runs, backfill older
+daily artifacts by comparing GitHub Actions artifacts against local `papers/daily/YYYY-MM-DD`
+folders:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/backfill-daily-artifacts.ps1 -LookbackDays 30
+```
+
+If you know the missing Action run IDs, backfill only those runs:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/backfill-daily-artifacts.ps1 -RunIds 27481521593,27514745812
+```
+
+Use `-RepairEmpty` to replace an existing empty daily folder with a non-empty artifact, and
+`-CommitMetadata -PushMetadata` to commit and push restored CSV/Markdown metadata. PDFs remain
+local-only.
+
 Windows Task Scheduler can start this one-shot script every 30 minutes. The script exits after
 each check, so it consumes no CPU between checks. Registering the task changes Windows system
 configuration and should be done only after reviewing the command:
