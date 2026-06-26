@@ -1,30 +1,483 @@
-# Manage the people and groups you want the tracking workflow to follow here.
-# Prefer stable OpenAlex / Semantic Scholar IDs when available. Aliases are used
-# only for arXiv/bioRxiv author-name matching and are treated as medium confidence.
+# Generated from Google Scholar following CSV.
+# Prefer adding openalex_id / semantic_scholar_id later for high-confidence tracking.
 tracking:
-  researchers: []
-  # Example:
-  # researchers:
-  #   - name: "Jane Doe"
-  #     openalex_id: "A123456789"
-  #     semantic_scholar_id: "123456789"
-  #     orcid: "0000-0000-0000-0000"
-  #     aliases:
-  #       - "J. Doe"
-  #       - "Jane A. Doe"
-  #     keywords:
-  #       - "spatial transcriptomics"
-
+  researchers:
+  - name: Alfonso de Jesús Navas Gómez
+    aliases: []
+    keywords:
+    - statistical physics
+    - neural activity
+    - protein/neuroscience modeling
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Not classical bioinformatics, but recent visible work is biology/neuroscience-facing
+      ML/statistical physics.
+  - name: Beatriz Seoane Bartolomé
+    aliases: []
+    keywords:
+    - statistical physics
+    - RBMs
+    - protein/neural data modeling
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Crosses statistical physics and ML; grouped as bio/biomed because visible
+      papers include protein and neural activity modeling.
+    orcid: 0000-0003-4007-9406
+  - name: Can Yang
+    aliases: []
+    keywords:
+    - statistical genetics
+    - biostatistics
+    - genomics
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Name can be ambiguous; classified from likely Google Scholar author context.
+  - name: Chang Ho Sohn
+    aliases: []
+    keywords:
+    - radiology
+    - neuroimaging
+    - medical imaging
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Likely biomedical imaging/radiology; verify exact profile.
+  - name: Jorge Goncalves
+    aliases: []
+    keywords:
+    - systems biology
+    - control theory
+    - biomedical modeling
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Control/systems work with strong systems biology orientation.
+  - name: Junbum Kim
+    aliases: []
+    keywords:
+    - computational pathology
+    - spatial omics
+    - biomedical AI
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Public paper/profile signals point to tissue architecture and biomedical/spatial
+      omics work.
+  - name: Kai Tan
+    aliases: []
+    keywords:
+    - genomics
+    - systems biology
+    - computational biology
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly genomics/systems biology.
+  - name: Nicolas Béreux
+    aliases:
+    - Béreux Nicolas
+    keywords:
+    - neural activity modeling
+    - statistical physics
+    - RBMs
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Exact spelling/order may differ; visible paper signals point to neural
+      data modeling.
+  - name: Nikolaus Rajewsky
+    aliases: []
+    keywords:
+    - systems biology
+    - RNA biology
+    - single-cell biology
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly biology/systems biology.
+  - name: Qing Nie
+    aliases: []
+    keywords:
+    - mathematical biology
+    - systems biology
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Biology-facing mathematical/computational modeling.
+  - name: Sarah A. Teichmann
+    aliases: []
+    keywords:
+    - single-cell genomics
+    - systems biology
+    - human cell atlas
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly single-cell/systems biology.
+  - name: Shuai Cheng Li
+    aliases: []
+    keywords:
+    - bioinformatics
+    - computational biology
+    - genomics
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly bioinformatics/computational biology.
+  - name: Stathis Megas
+    aliases: []
+    keywords:
+    - single-cell
+    - spatial transcriptomics
+    - causal generative modeling
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Recent visible work includes single-cell and tissue perturbation modeling.
+  - name: Sun Xiaobo
+    aliases: []
+    keywords:
+    - biomedicine
+    - pharmacology or related biomedical research
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Likely biomedical/pharmacology rather than general AI; verify exact profile.
+  - name: Suoqin Jin
+    aliases: []
+    keywords:
+    - single-cell analysis
+    - cell-cell communication
+    - spatial transcriptomics
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly single-cell/spatial biology.
+  - name: Taeyun Ku
+    aliases: []
+    keywords:
+    - neuroscience
+    - tissue clearing
+    - brain imaging
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Likely neuroscience/biomedical imaging; verify exact profile.
+  - name: Tianzi Jiang
+    aliases:
+    - Tianzi Jiang, MAE, FIEEE, FIAPR, FAIMBE
+    keywords:
+    - neuroimaging
+    - brain informatics
+    - medical image analysis
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Biomedical/neuroimaging focus.
+  - name: Xiaowei Zhuang
+    aliases: []
+    keywords:
+    - super-resolution imaging
+    - spatial genomics
+    - cell biology
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly biology/biomedicine.
+  - name: Xin Gao
+    aliases: []
+    keywords:
+    - bioinformatics
+    - computational biology
+    - AI for biology
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Known for computational biology/bioinformatics and machine learning.
+  - name: Xiuwei Zhang
+    aliases: []
+    keywords:
+    - computational biology
+    - single-cell genomics
+    source: google_scholar_following_csv
+    google_scholar_group: bioinfo_biomed
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly computational biology/single-cell.
+  - name: Bryan Perozzi
+    aliases: []
+    keywords:
+    - graph representation learning
+    - network embedding
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/graph ML.
+  - name: Christopher Morris
+    aliases: []
+    keywords:
+    - graph neural networks
+    - graph kernels
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly graph ML.
+  - name: Chuan Shi
+    aliases: []
+    keywords:
+    - data mining
+    - heterogeneous networks
+    - graph learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/graph mining.
+  - name: Dawei Du
+    aliases: []
+    keywords:
+    - computer vision
+    - object detection/tracking
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/CV.
+  - name: Hanchen Wang
+    aliases: []
+    keywords:
+    - graph neural networks
+    - graph mining
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Name is common, but visible publication signals point to graph ML.
+  - name: Hang Xu
+    aliases: []
+    keywords:
+    - computer vision
+    - multimodal learning
+    - foundation models
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Likely AI/multimodal vision; verify exact profile because name is common.
+  - name: Junwei Han
+    aliases:
+    - Junwei Han, IEEE Fellow, IAPR Fellow
+    keywords:
+    - computer vision
+    - pattern recognition
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/CV.
+  - name: Jure Leskovec
+    aliases: []
+    keywords:
+    - machine learning
+    - networks
+    - data mining
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/ML/network science.
+  - name: Kaiming He
+    aliases: []
+    keywords:
+    - computer vision
+    - deep learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/ML.
+  - name: Maciej Besta
+    aliases: []
+    keywords:
+    - graph neural networks
+    - high-performance computing
+    - AI systems
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: CS/AI systems and graph learning.
+  - name: Michael Bronstein
+    aliases: []
+    keywords:
+    - geometric deep learning
+    - graph learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/ML.
+  - name: Ming Zhang（张铭）
+    aliases: []
+    keywords:
+    - information retrieval
+    - data mining
+    - AI signal likely
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Name is common; classified from likely AI/CS profile context.
+  - name: Muhan Zhang
+    aliases: []
+    keywords:
+    - graph neural networks
+    - graph learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/ML.
+  - name: Nate Veldt
+    aliases: []
+    keywords:
+    - graph algorithms
+    - data mining
+    - network science
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Graph algorithms/data science.
+  - name: Stan Z. Li
+    aliases:
+    - Stan Z. Li (李子青)
+    keywords:
+    - computer vision
+    - biometrics
+    - pattern recognition
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/CV.
+  - name: Torsten Hoefler
+    aliases: []
+    keywords:
+    - high-performance computing
+    - AI systems
+    - distributed ML
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: CS systems/HPC with AI systems overlap.
+  - name: Wei Ju（琚玮）
+    aliases: []
+    keywords:
+    - graph neural networks
+    - graph learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly graph ML.
+  - name: Xinwang Liu
+    aliases: []
+    keywords:
+    - multi-view learning
+    - clustering
+    - machine learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/ML.
+  - name: Y. Raymond Fu
+    aliases: []
+    keywords:
+    - computer vision
+    - machine learning
+    - pattern recognition
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: high
+    needs_review: 'no'
+    notes: Clearly AI/CV.
+  - name: Yixin Liu
+    aliases: []
+    keywords:
+    - graph learning
+    - machine learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Name is ambiguous; likely AI/graph ML from list context.
+  - name: Yongduo Sui
+    aliases: []
+    keywords:
+    - graph neural networks
+    - trustworthy graph learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Likely AI/graph learning from visible publication signals.
+  - name: Yue Gao
+    aliases: []
+    keywords:
+    - multimedia
+    - hypergraph learning
+    - machine learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Name is common; likely AI/graph/multimedia profile.
+  - name: Yuxuan Hu
+    aliases: []
+    keywords:
+    - software engineering AI
+    - graph neural networks
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Name is common; visible publication signals include graph neural networks/code
+      intelligence.
+  - name: Ziqi Zhang
+    aliases: []
+    keywords:
+    - knowledge graph
+    - NLP or graph learning
+    source: google_scholar_following_csv
+    google_scholar_group: general_ai
+    classification_confidence: medium
+    needs_review: 'yes'
+    notes: Name is common; likely AI/NLP/KG from list context.
   groups: []
-  # Example:
-  # groups:
-  #   - name: "Doe Lab"
-  #     pi:
-  #       name: "Jane Doe"
-  #       openalex_id: "A123456789"
-  #       semantic_scholar_id: "123456789"
-  #     members:
-  #       - name: "Student A"
-  #         openalex_id: "A987654321"
-  #         aliases:
-  #           - "A. Student"
