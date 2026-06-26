@@ -51,6 +51,8 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          SCHOLAR_IMAP_USERNAME: ${{ secrets.SCHOLAR_IMAP_USERNAME }}
+          SCHOLAR_IMAP_PASSWORD: ${{ secrets.SCHOLAR_IMAP_PASSWORD }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           OPENAI_MODEL: gpt-5.4

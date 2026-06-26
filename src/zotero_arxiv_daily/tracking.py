@@ -18,6 +18,7 @@ from .history import exclude_previously_sent, load_history, paper_identity, upda
 from .openalex_search import OpenAlexSearch
 from .paper_filter import filter_papers, rules_from_config
 from .protocol import Paper
+from .scholar_email import retrieve_scholar_email_alerts
 from .utils import send_email
 
 CONFIDENCE_RANK = {"low": 0, "medium": 1, "high": 2}
@@ -421,7 +422,7 @@ def run_tracking(args: argparse.Namespace) -> Path:
     from_date = args.from_date or mode_date_range(mode, to_date, tracking)[0]
     max_results = int(args.max_results or tracking.get("max_results", 100))
     max_per_researcher = int(tracking.get("max_results_per_researcher", max_results))
-    sources = list(tracking.get("sources", ["openalex", "semantic_scholar", "arxiv", "biorxiv"]) or [])
+    sources = list(tracking.get("sources", ["openalex", "semantic_scholar", "arxiv", "biorxiv", "scholar_email"]) or [])
 
     logger.info(f"Running {mode} tracking from {from_date} to {to_date} across {sources}")
     papers: list[Paper] = []
@@ -435,6 +436,8 @@ def run_tracking(args: argparse.Namespace) -> Path:
         papers.extend(retrieve_arxiv(researchers, from_date, to_date, max_per_researcher))
     if "biorxiv" in sources:
         papers.extend(retrieve_biorxiv(researchers, from_date, to_date, max_results))
+    if "scholar_email" in sources:
+        papers.extend(retrieve_scholar_email_alerts(config, researchers, from_date, to_date))
 
     papers = deduplicate_tracking_papers(papers)
     include_any, include_groups, exclude_keywords = rules_from_config(config.paper_filter)

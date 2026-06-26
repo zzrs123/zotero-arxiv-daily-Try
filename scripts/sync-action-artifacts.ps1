@@ -13,6 +13,8 @@ param(
 
     [switch]$SkipManual,
 
+    [switch]$SkipTracking,
+
     [switch]$CommitMetadata,
 
     [switch]$PushMetadata,
@@ -185,8 +187,8 @@ function Publish-Metadata {
     Push-Location $repoRoot
     try {
         $metadata = @(
-            Get-ChildItem "papers/daily", "papers/manual" -Recurse -File -ErrorAction SilentlyContinue |
-                Where-Object { $_.Name -in @("papers.csv", "summaries.md", "history.json") }
+            Get-ChildItem "papers/daily", "papers/manual", "papers/tracking" -Recurse -File -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -in @("papers.csv", "summaries.md", "uncertain.md", "history.json", "daily_history.json", "manual_history.json") }
         )
         if ($metadata.Count -eq 0) {
             Write-Host "No metadata files found to commit."
@@ -260,6 +262,14 @@ if (-not $SkipManual) {
         -State $state
 }
 
+
+if (-not $SkipTracking) {
+    Sync-WorkflowArtifacts `
+        -WorkflowFile "track-researchers.yml" `
+        -ArtifactName "researcher-tracking-results" `
+        -Destination (Join-Path $repoRoot "papers/tracking") `
+        -State $state
+}
 if ($CommitMetadata -or $PushMetadata) {
     Publish-Metadata
 }

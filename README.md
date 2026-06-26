@@ -169,17 +169,34 @@ usually does not contain OpenAlex or Semantic Scholar IDs, so the first generate
 uses author-name matching for arXiv/bioRxiv. Add `openalex_id` and `semantic_scholar_id` to
 important researchers when possible for high-confidence tracking.
 
-Current limitation: Google Scholar alert email import is not implemented yet. The project does
-not scrape Google Scholar pages. A future Gmail/IMAP importer should read Scholar alert emails
-from a dedicated label, parse paper titles/authors/links, and keep only alerts matching the
-researchers listed in `config/tracking.yaml`.
+Google Scholar alert email import is available as an optional IMAP source. It only reads a
+configured mailbox/label and does not scrape Google Scholar pages. For Gmail, a nested label such
+as `Papers/Google Scholar Alerts` remains readable even if the messages are archived, as long as
+that label is still attached.
+
+```yaml
+tracking:
+  sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv", "scholar_email"]
+  scholar_email:
+    enabled: true
+    imap_server: imap.gmail.com
+    imap_port: 993
+    mailbox: "Papers/Google Scholar Alerts"
+    username: ${oc.env:SCHOLAR_IMAP_USERNAME,null}
+    password: ${oc.env:SCHOLAR_IMAP_PASSWORD,null}
+```
+
+Set `SCHOLAR_IMAP_USERNAME` and `SCHOLAR_IMAP_PASSWORD` as GitHub Secrets. For Gmail, use an
+app password with IMAP enabled. The importer keeps only Scholar alert items whose authors or
+alert text match researchers/aliases in `config/tracking.yaml`, so your Gmail following list can
+be broader than the researchers tracked here.
 
 ### Search journals on demand
 
 ### Synchronize GitHub Actions archives to Windows
 
 GitHub-hosted runners cannot write directly to a local `E:` drive. The serial Windows sync
-script checks successful daily and manual-search runs, downloads each new artifact once, and
+script checks successful daily, manual-search, and researcher-tracking runs, downloads each new artifact once, and
 then exits. It does not run downloads in parallel.
 
 By default, only the newest successful run of each workflow is checked. Use `-Backfill` only
@@ -211,7 +228,7 @@ powershell -ExecutionPolicy Bypass -File scripts/sync-action-artifacts.ps1 -Comm
 ```
 
 Add `-PushMetadata` to also push that metadata to `origin/main`. PDF files remain local because
-their archive folders are ignored by Git.
+their archive folders are ignored by Git. Use `-SkipTracking` to skip researcher tracking artifacts.
 
 Windows Task Scheduler can start this one-shot script every 30 minutes. The script exits after
 each check, so it consumes no CPU between checks. Registering the task changes Windows system

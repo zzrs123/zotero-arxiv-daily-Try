@@ -78,7 +78,7 @@ daily_history:
 
 tracking:
   enabled: false # Independent researcher/group tracking stream.
-  sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv"] # Source evidence layers.
+  sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv", "scholar_email"] # Source evidence layers.
   output_dir: papers/tracking
   daily_history_enabled: true
   daily_history_path: papers/tracking/daily_history.json
@@ -91,6 +91,13 @@ tracking:
   min_confidence_for_summary: medium # low, medium, or high.
   download_pdfs: true
   semantic_scholar_api_key: ${oc.env:SEMANTIC_SCHOLAR_API_KEY,null}
+  scholar_email:
+    enabled: false
+    imap_server: imap.gmail.com
+    imap_port: 993
+    mailbox: "Papers/Google Scholar Alerts"
+    username: ${oc.env:SCHOLAR_IMAP_USERNAME,null}
+    password: ${oc.env:SCHOLAR_IMAP_PASSWORD,null}
   researchers: [] # Example item: {name: "Jane Doe", openalex_id: "A123", semantic_scholar_id: "456", aliases: ["J. Doe"]}
   groups: [] # Example item: {name: "Doe Lab", pi: {name: "Jane Doe", openalex_id: "A123"}, members: []}
 

@@ -295,7 +295,7 @@ paper_filter:
 
 tracking:
   enabled: true
-  sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv"]
+  sources: ["openalex", "semantic_scholar", "arxiv", "biorxiv", "scholar_email"]
   output_dir: papers/tracking
   daily_history_enabled: true
   daily_history_path: papers/tracking/daily_history.json
@@ -308,6 +308,13 @@ tracking:
   min_confidence_for_summary: medium
   download_pdfs: true
   semantic_scholar_api_key: ${oc.env:SEMANTIC_SCHOLAR_API_KEY,null}
+  scholar_email:
+    enabled: false
+    imap_server: imap.gmail.com
+    imap_port: 993
+    mailbox: "Papers/Google Scholar Alerts"
+    username: ${oc.env:SCHOLAR_IMAP_USERNAME,null}
+    password: ${oc.env:SCHOLAR_IMAP_PASSWORD,null}
   researchers: []
   groups: []
 
