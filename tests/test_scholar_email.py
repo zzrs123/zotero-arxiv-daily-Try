@@ -50,3 +50,39 @@ def test_alert_to_paper_marks_scholar_email_source():
     assert paper.matched_researchers == ["Jane Doe"]
     assert paper.matched_groups == ["Doe Lab"]
     assert paper.tracking_match_type == "scholar_alert_email"
+
+def test_retrieve_scholar_email_falls_back_to_sender_credentials(monkeypatch):
+    from omegaconf import OmegaConf
+    from zotero_arxiv_daily import scholar_email
+
+    captured = {}
+
+    class FakeImap:
+        def __init__(self, host, port):
+            captured["host"] = host
+            captured["port"] = port
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def login(self, username, password):
+            captured["username"] = username
+            captured["password"] = password
+
+        def select(self, mailbox, readonly=True):
+            return "NO", []
+
+    monkeypatch.setattr(scholar_email.imaplib, "IMAP4_SSL", FakeImap)
+    config = OmegaConf.create({
+        "email": {"sender": "sender@gmail.com", "sender_password": "app-password"},
+        "tracking": {"scholar_email": {"enabled": True, "mailbox": "Papers/Google Scholar Alerts"}},
+    })
+
+    papers = scholar_email.retrieve_scholar_email_alerts(config, [], "2026-06-01", "2026-06-26")
+
+    assert papers == []
+    assert captured["username"] == "sender@gmail.com"
+    assert captured["password"] == "app-password"

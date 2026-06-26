@@ -36,6 +36,14 @@ class ScholarEmailAlert:
     message_id: str | None
 
 
+def config_get(config, key: str, default=None):
+    if hasattr(config, "get"):
+        value = config.get(key)
+        if value is not None:
+            return value
+    return getattr(config, key, default)
+
+
 def normalize_author_name(value: str) -> str:
     return WHITESPACE_PATTERN.sub(" ", value.casefold()).strip().strip(".,;:")
 
@@ -169,11 +177,12 @@ def retrieve_scholar_email_alerts(config, researchers, from_date: str, to_date: 
         return []
     host = str(email_cfg.get("imap_server", "imap.gmail.com"))
     port = int(email_cfg.get("imap_port", 993))
-    username = str(email_cfg.get("username") or "")
-    password = str(email_cfg.get("password") or "")
+    email_config = config_get(config, "email", {}) or {}
+    username = str(email_cfg.get("username") or config_get(email_config, "sender", "") or "")
+    password = str(email_cfg.get("password") or config_get(email_config, "sender_password", "") or "")
     mailbox = str(email_cfg.get("mailbox", "Papers/Google Scholar Alerts"))
     if not username or not password:
-        logger.warning("Scholar email import is enabled but IMAP username/password is missing.")
+        logger.warning("Scholar email import is enabled but IMAP username/password is missing. Set SCHOLAR_IMAP_* or reuse SENDER/SENDER_PASSWORD.")
         return []
 
     logger.info(f"Reading Scholar alert emails from IMAP mailbox/label: {mailbox}")

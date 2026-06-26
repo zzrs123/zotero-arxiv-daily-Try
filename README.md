@@ -182,12 +182,13 @@ tracking:
     imap_server: imap.gmail.com
     imap_port: 993
     mailbox: "Papers/Google Scholar Alerts"
-    username: ${oc.env:SCHOLAR_IMAP_USERNAME,null}
-    password: ${oc.env:SCHOLAR_IMAP_PASSWORD,null}
+    username: ${oc.env:SCHOLAR_IMAP_USERNAME,null} # Optional; falls back to SENDER
+    password: ${oc.env:SCHOLAR_IMAP_PASSWORD,null} # Optional; falls back to SENDER_PASSWORD
 ```
 
-Set `SCHOLAR_IMAP_USERNAME` and `SCHOLAR_IMAP_PASSWORD` as GitHub Secrets. For Gmail, use an
-app password with IMAP enabled. The importer keeps only Scholar alert items whose authors or
+By default this reuses the existing `SENDER` and `SENDER_PASSWORD` secrets. Add
+`SCHOLAR_IMAP_USERNAME` and `SCHOLAR_IMAP_PASSWORD` only if the mailbox you read alerts from is
+different from the SMTP sender account. For Gmail, use an app password with IMAP enabled. The importer keeps only Scholar alert items whose authors or
 alert text match researchers/aliases in `config/tracking.yaml`, so your Gmail following list can
 be broader than the researchers tracked here.
 

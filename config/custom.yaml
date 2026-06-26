@@ -313,8 +313,8 @@ tracking:
     imap_server: imap.gmail.com
     imap_port: 993
     mailbox: "Papers/Google Scholar Alerts"
-    username: ${oc.env:SCHOLAR_IMAP_USERNAME,null}
-    password: ${oc.env:SCHOLAR_IMAP_PASSWORD,null}
+    username: ${oc.env:SCHOLAR_IMAP_USERNAME,null} # Optional; falls back to email.sender/SENDER
+    password: ${oc.env:SCHOLAR_IMAP_PASSWORD,null} # Optional; falls back to email.sender_password/SENDER_PASSWORD
   researchers: []
   groups: []
 
