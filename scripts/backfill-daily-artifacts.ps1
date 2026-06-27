@@ -20,6 +20,8 @@ param(
 
     [switch]$RepairEmpty,
 
+    [switch]$RepairMissingPdfs,
+
     [switch]$ForceUpdate,
 
     [switch]$CommitMetadata,
@@ -303,6 +305,21 @@ foreach ($run in $runs) {
         $shouldCopy = $ForceUpdate -or -not (Test-Path -LiteralPath $target)
         if (-not $shouldCopy -and $RepairEmpty) {
             $shouldCopy = (Get-CsvRowCount $targetCsv) -eq 0 -and (Get-CsvRowCount $sourceCsv) -gt 0
+        }
+        if (-not $shouldCopy -and $RepairMissingPdfs) {
+            $targetPdfDir = Join-Path $target "pdf"
+            $sourcePdfDir = Join-Path $folder.FullName "pdf"
+            $targetPdfCount = if (Test-Path -LiteralPath $targetPdfDir) {
+                @(Get-ChildItem -LiteralPath $targetPdfDir -File -Filter "*.pdf" -ErrorAction SilentlyContinue).Count
+            } else {
+                0
+            }
+            $sourcePdfCount = if (Test-Path -LiteralPath $sourcePdfDir) {
+                @(Get-ChildItem -LiteralPath $sourcePdfDir -File -Filter "*.pdf" -ErrorAction SilentlyContinue).Count
+            } else {
+                0
+            }
+            $shouldCopy = $sourcePdfCount -gt $targetPdfCount
         }
 
         if ($shouldCopy) {

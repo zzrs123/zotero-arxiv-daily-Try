@@ -245,9 +245,10 @@ If you know the missing Action run IDs, backfill only those runs:
 powershell -ExecutionPolicy Bypass -File scripts/backfill-daily-artifacts.ps1 -RunIds 27481521593,27514745812
 ```
 
-Use `-RepairEmpty` to replace an existing empty daily folder with a non-empty artifact, and
-`-CommitMetadata -PushMetadata` to commit and push restored CSV/Markdown metadata. PDFs remain
-local-only.
+Use `-RepairEmpty` to replace an existing empty daily folder with a non-empty artifact.
+Use `-RepairMissingPdfs` when CSV/Markdown metadata exists but the local PDF folder is missing
+or incomplete. Add `-CommitMetadata -PushMetadata` to commit and push restored CSV/Markdown
+metadata. PDFs remain local-only.
 
 Windows Task Scheduler can start this one-shot script every 30 minutes. The script exits after
 each check, so it consumes no CPU between checks. Registering the task changes Windows system
