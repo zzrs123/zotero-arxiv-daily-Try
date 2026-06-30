@@ -73,25 +73,37 @@ function Format-FileSize {
     return "$Bytes B"
 }
 
-function Get-RecentSuccessfulRuns {
+function Get-RecentRuns {
     param(
         [string]$WorkflowFile,
+        [string[]]$Statuses = @("success"),
         [int]$MaxRuns = 1
     )
 
-    $limit = if ($Backfill) { 20 } else { $MaxRuns }
-    $runs = Invoke-GhJson @(
-        "run", "list",
-        "--repo", $Repository,
-        "--workflow", $WorkflowFile,
-        "--status", "success",
-        "--limit", "$limit",
-        "--json", "databaseId,createdAt,displayTitle"
-    )
+    $candidateRuns = if ($Backfill) { 20 } else { [Math]::Max($MaxRuns, 5) }
+    $limit = $candidateRuns
+    $runs = @()
+    foreach ($status in $Statuses) {
+        $statusRuns = Invoke-GhJson @(
+            "run", "list",
+            "--repo", $Repository,
+            "--workflow", $WorkflowFile,
+            "--status", $status,
+            "--limit", "$limit",
+            "--json", "databaseId,createdAt,displayTitle,status,conclusion"
+        )
+        $runs += @($statusRuns)
+    }
     $cutoff = (Get-Date).ToUniversalTime().AddHours(-$LookbackHours)
-    $filtered = @($runs | Where-Object { ([datetime]$_.createdAt).ToUniversalTime() -ge $cutoff })
+    $filtered = @(
+        $runs |
+            Group-Object databaseId |
+            ForEach-Object { $_.Group | Select-Object -First 1 } |
+            Where-Object { ([datetime]$_.createdAt).ToUniversalTime() -ge $cutoff }
+    )
     if (-not $Backfill) {
-        $filtered = @($filtered | Sort-Object createdAt -Descending | Select-Object -First $MaxRuns)
+        $filtered = @($filtered | Sort-Object createdAt -Descending | Select-Object -First $candidateRuns)
+        return @($filtered | Sort-Object createdAt -Descending)
     }
     return @($filtered | Sort-Object createdAt)
 }
@@ -101,12 +113,13 @@ function Sync-WorkflowArtifacts {
         [string]$WorkflowFile,
         [string]$ArtifactName,
         [string]$Destination,
+        [string[]]$RunStatuses = @("success"),
         [hashtable]$State
     )
 
-    $runs = @((Get-RecentSuccessfulRuns -WorkflowFile $WorkflowFile))
+    $runs = @((Get-RecentRuns -WorkflowFile $WorkflowFile -Statuses $RunStatuses))
     if ($runs.Count -eq 0) {
-        Write-Host "No recent successful runs found for $WorkflowFile."
+        Write-Host "No recent matching runs found for $WorkflowFile."
         return
     }
 
@@ -251,6 +264,7 @@ if (-not $SkipDaily) {
         -WorkflowFile "main.yml" `
         -ArtifactName "daily-paper-archive" `
         -Destination (Join-Path $repoRoot "papers/daily") `
+        -RunStatuses @("success", "failure") `
         -State $state
 }
 
