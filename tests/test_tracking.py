@@ -8,6 +8,7 @@ from zotero_arxiv_daily.tracking import (
     load_tracking_config,
     mark_tracking,
     mode_date_range,
+    resolve_archive_date,
     tracking_archive_name,
 )
 
@@ -88,6 +89,23 @@ def test_deduplicate_tracking_papers_merges_source_hits_by_doi():
 def test_tracking_archive_name_separates_daily_and_manual():
     assert tracking_archive_name("2026-06-26", "daily") == "2026-06-26_daily_tracking"
     assert tracking_archive_name("2026-06-26", "manual") == "2026-06-26_manual_tracking"
+
+
+def test_resolve_archive_date_uses_runtime_today(monkeypatch):
+    class FakeDate:
+        @staticmethod
+        def today():
+            class FakeToday:
+                @staticmethod
+                def isoformat():
+                    return "2026-07-01"
+
+            return FakeToday()
+
+    monkeypatch.setattr("zotero_arxiv_daily.tracking.date", FakeDate)
+
+    assert resolve_archive_date(None) == "2026-07-01"
+    assert resolve_archive_date("2026-06-30") == "2026-06-30"
 
 
 def test_mode_date_range_uses_daily_and_manual_defaults():

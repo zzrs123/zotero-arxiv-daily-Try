@@ -171,6 +171,10 @@ def tracking_archive_name(run_date: str, mode: str) -> str:
     return f"{run_date}_{mode}_tracking"
 
 
+def resolve_archive_date(archive_date: str | None) -> str:
+    return archive_date or date.today().isoformat()
+
+
 def mode_history_path(tracking_config, mode: str) -> str:
     if mode == "daily":
         return str(tracking_config.get("daily_history_path", "papers/tracking/daily_history.json"))
@@ -468,7 +472,7 @@ def run_tracking(args: argparse.Namespace) -> Path:
         for paper in papers:
             paper.generate_tldr(openai_client, llm_config)
 
-    archive_date = args.archive_date or date.today().isoformat()
+    archive_date = resolve_archive_date(args.archive_date)
     output_root = Path(args.output_dir or tracking.get("output_dir", "papers/tracking"))
     archive_dir = archive_papers(
         papers,
@@ -503,7 +507,7 @@ def main() -> None:
     parser.add_argument("--mode", choices=("daily", "manual"), default="manual")
     parser.add_argument("--from-date", default=None)
     parser.add_argument("--to-date", default=None)
-    parser.add_argument("--archive-date", default=date.today().isoformat())
+    parser.add_argument("--archive-date", default=None)
     parser.add_argument("--max-results", type=int, default=None)
     parser.add_argument("--output-dir", default=None)
     parser.add_argument("--skip-pdf-download", action="store_true")
