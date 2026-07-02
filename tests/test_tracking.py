@@ -1,4 +1,5 @@
 from omegaconf import OmegaConf
+from types import SimpleNamespace
 
 from zotero_arxiv_daily.protocol import Paper
 from zotero_arxiv_daily.tracking import (
@@ -9,6 +10,7 @@ from zotero_arxiv_daily.tracking import (
     mark_tracking,
     mode_date_range,
     resolve_archive_date,
+    retrieve_arxiv,
     tracking_archive_name,
 )
 
@@ -128,3 +130,26 @@ def test_load_tracking_config_merges_external_tracking_yaml(tmp_path):
 
     assert config.tracking.researchers[0].name == "Jane Doe"
     assert config.tracking.researchers[0].openalex_id == "A1"
+
+
+def test_tracking_retrieve_arxiv_skips_rate_limited_alias(monkeypatch):
+    researcher = TrackedResearcher(name="Jane Doe", aliases=("Jane Doe",), groups=())
+
+    class FakeHTTPError(Exception):
+        def __init__(self, status):
+            self.status = status
+            super().__init__(f"HTTP {status}")
+
+    class FakeClient:
+        def __init__(self, **kw):
+            pass
+
+        def results(self, search):
+            raise FakeHTTPError(429)
+
+    monkeypatch.setattr("zotero_arxiv_daily.tracking.arxiv.Client", FakeClient)
+    monkeypatch.setattr("zotero_arxiv_daily.tracking.arxiv.HTTPError", FakeHTTPError)
+
+    papers = retrieve_arxiv([researcher], "2026-06-30", "2026-07-02", 10)
+
+    assert papers == []

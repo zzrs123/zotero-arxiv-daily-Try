@@ -300,34 +300,42 @@ def retrieve_arxiv(
                 max_results=max_results_per_researcher,
                 sort_by=arxiv.SortCriterion.SubmittedDate,
             )
-            for result in client.results(search):
-                published = getattr(result, "published", None)
-                publication_date = published.date().isoformat() if published else None
-                if not date_in_range(publication_date, from_date, to_date):
+            try:
+                results = client.results(search)
+                for result in results:
+                    published = getattr(result, "published", None)
+                    publication_date = published.date().isoformat() if published else None
+                    if not date_in_range(publication_date, from_date, to_date):
+                        continue
+                    paper = Paper(
+                        source="arxiv",
+                        title=result.title,
+                        authors=[a.name for a in result.authors],
+                        abstract=result.summary,
+                        url=result.entry_id,
+                        pdf_url=result.pdf_url,
+                        publication_date=publication_date,
+                        doi=getattr(result, "doi", None),
+                        journal=getattr(result, "journal_ref", None),
+                        categories=list(getattr(result, "categories", []) or []),
+                        open_access_status="open",
+                        venue_type="preprint",
+                        publication_status="preprint",
+                    )
+                    mark_tracking(
+                        paper,
+                        source_hit="arxiv",
+                        researcher=researcher,
+                        confidence="medium",
+                        match_type="author_alias",
+                    )
+                    papers.append(paper)
+            except arxiv.HTTPError as exc:
+                status = getattr(exc, "status", None)
+                if status in {429, 500, 502, 503, 504}:
+                    logger.warning(f"Skipping arXiv tracking for alias '{alias}' after HTTP {status}: {exc}")
                     continue
-                paper = Paper(
-                    source="arxiv",
-                    title=result.title,
-                    authors=[a.name for a in result.authors],
-                    abstract=result.summary,
-                    url=result.entry_id,
-                    pdf_url=result.pdf_url,
-                    publication_date=publication_date,
-                    doi=getattr(result, "doi", None),
-                    journal=getattr(result, "journal_ref", None),
-                    categories=list(getattr(result, "categories", []) or []),
-                    open_access_status="open",
-                    venue_type="preprint",
-                    publication_status="preprint",
-                )
-                mark_tracking(
-                    paper,
-                    source_hit="arxiv",
-                    researcher=researcher,
-                    confidence="medium",
-                    match_type="author_alias",
-                )
-                papers.append(paper)
+                raise
     return papers
 
 

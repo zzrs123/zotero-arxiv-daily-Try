@@ -21,6 +21,10 @@ PDF_EXTRACT_TIMEOUT = 180
 TAR_EXTRACT_TIMEOUT = 180
 
 
+def _is_retryable_arxiv_error(exc: arxiv.HTTPError) -> bool:
+    return getattr(exc, "status", None) in {429, 500, 502, 503, 504}
+
+
 def _download_file(url: str, path: str) -> None:
     with requests.get(url, stream=True, timeout=DOWNLOAD_TIMEOUT) as response:
         response.raise_for_status()
@@ -144,12 +148,18 @@ class ArxivRetriever(BaseRetriever):
                     raw_papers.extend(batch)
                     break
                 except arxiv.HTTPError as exc:
-                    if exc.status == 429 and attempt < max_batch_retries - 1:
+                    if _is_retryable_arxiv_error(exc) and attempt < max_batch_retries - 1:
                         wait = batch_retry_delay * (attempt + 1)
-                        logger.warning(f"arXiv API 429 on batch {i // 20}, retry {attempt + 1}/{max_batch_retries} in {wait}s")
+                        logger.warning(
+                            f"arXiv API {exc.status} on batch {i // 20}, retry {attempt + 1}/{max_batch_retries} in {wait}s"
+                        )
                         sleep(wait)
                     else:
-                        raise
+                        logger.warning(
+                            f"Skipping remaining arXiv batches after HTTP {exc.status} on batch {i // 20}: {exc}"
+                        )
+                        bar.close()
+                        return raw_papers
             if i + 20 < len(all_paper_ids):
                 sleep(3)
         bar.close()

@@ -88,3 +88,62 @@ def test_run_with_hard_timeout_returns_none_on_failure(monkeypatch):
     )
     assert result is None
     assert "boom" in warnings[0]
+
+
+def test_arxiv_retriever_returns_partial_results_when_api_is_rate_limited(monkeypatch, config):
+    monkeypatch.setattr("zotero_arxiv_daily.retriever.base.sleep", lambda _: None)
+
+    class FakeFeedEntry:
+        def __init__(self, paper_id: str, announce_type: str = "new"):
+            self.id = f"oai:arXiv.org:{paper_id}"
+            self._announce_type = announce_type
+
+        def get(self, key, default=None):
+            if key == "arxiv_announce_type":
+                return self._announce_type
+            return default
+
+    feed = SimpleNamespace(
+        feed=SimpleNamespace(title="ok"),
+        entries=[
+            FakeFeedEntry("one"),
+            FakeFeedEntry("two"),
+        ],
+    )
+    monkeypatch.setattr(arxiv_retriever.feedparser, "parse", lambda _: feed)
+
+    fake_result = SimpleNamespace(
+        title="Paper One",
+        authors=[SimpleNamespace(name="Test Author")],
+        summary="Test abstract",
+        pdf_url="https://arxiv.org/pdf/one",
+        entry_id="https://arxiv.org/abs/one",
+        source_url=lambda: "https://arxiv.org/e-print/one",
+    )
+
+    class FakeHTTPError(Exception):
+        def __init__(self, status):
+            self.status = status
+            super().__init__(f"HTTP {status}")
+
+    class FakeClient:
+        def __init__(self, **kw):
+            self.calls = 0
+
+        def results(self, search):
+            self.calls += 1
+            if self.calls == 1:
+                return iter([fake_result])
+            raise FakeHTTPError(429)
+
+    monkeypatch.setattr(arxiv_retriever.arxiv, "Client", FakeClient)
+    monkeypatch.setattr(arxiv_retriever.arxiv, "HTTPError", FakeHTTPError)
+    monkeypatch.setattr(arxiv_retriever, "extract_text_from_html", lambda paper: None)
+    monkeypatch.setattr(arxiv_retriever, "extract_text_from_pdf", lambda paper: None)
+    monkeypatch.setattr(arxiv_retriever, "extract_text_from_tar", lambda paper: None)
+
+    retriever = ArxivRetriever(config)
+    papers = retriever.retrieve_papers()
+
+    assert len(papers) == 1
+    assert papers[0].title == "Paper One"
