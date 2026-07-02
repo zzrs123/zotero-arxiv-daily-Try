@@ -545,6 +545,13 @@
     "title": "AGDN: Learning to Solve Traveling Salesman Problem with Anisotropic Graph Diffusion Network",
     "url": "http://arxiv.org/abs/2606.19185v1"
   },
+  "title:ageadaptivemaskingforgraphembeddingingraphretrievalaugmentedgeneration": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation",
+    "url": "http://arxiv.org/abs/2607.00052v1"
+  },
   "title:ageneralframeworkforlearningalgebraicpropertiesfromcayleygraphsusinggraphneuralnetworks": {
     "doi": null,
     "sent_date": "2026-06-27",
@@ -572,6 +579,13 @@
     "source": "acl_anthology",
     "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning",
     "url": "https://aclanthology.org/2026.acl-long.1161/"
+  },
+  "title:agentrouteraknowledgegraphguidedllmrouterforcollaborativemultiagentquestionanswering": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering",
+    "url": "https://aclanthology.org/2026.acl-long.33/"
   },
   "title:agraphtalksbutwhoslisteningrethinkingevaluationsforgraphlanguagemodels": {
     "doi": null,
@@ -811,6 +825,13 @@
     "title": "Beyond Visual Similarity: Rule-Guided Multimodal Clustering with explicit domain rules",
     "url": "https://aclanthology.org/2026.alvr-main.16/"
   },
+  "title:bimoldiffaunifieddiffusionframeworkformoleculargenerationandcaptioning": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "BiMol-Diff: A Unified Diffusion Framework for Molecular Generation and Captioning",
+    "url": "https://aclanthology.org/2026.acl-long.1059/"
+  },
   "title:biohoprabenchmarkformultihopmultianswerreasoninginbiomedicaldomain": {
     "doi": null,
     "sent_date": "2026-06-20",
@@ -944,6 +965,13 @@
     "title": "CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.23/"
   },
+  "title:catmodacceleratingmultimodalalignmentviacaptiontokenguidedasymmetricmixtureofdepths": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Cat-MoD: Accelerating Multimodal Alignment via Caption Token Guided Asymmetric Mixture-of-Depths",
+    "url": "https://aclanthology.org/2026.acl-long.1213/"
+  },
   "title:causalgraphbenchabenchmarkforevaluatinglanguagemodelscapabilitiesofcausalgraphdiscovery": {
     "doi": null,
     "sent_date": "2026-06-17",
@@ -978,6 +1006,13 @@
     "source": "biorxiv",
     "title": "CellOS: Learning a World Model of Cellular State through Joint Embedding Prediction",
     "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733163v1.full.pdf"
+  },
+  "title:cgbridgebridgingcodegraphsandlargelanguagemodelsforbetterstructureawarecodeunderstanding": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "CGBridge: Bridging Code Graphs and Large Language Models for Better Structure-Aware Code Understanding",
+    "url": "https://aclanthology.org/2026.findings-acl.434/"
   },
   "title:chartlensfinegrainedvisualattributionincharts": {
     "doi": null,
@@ -1441,6 +1476,13 @@
     "title": "EHRAG: Bridging Semantic Gaps in Lightweight GraphRAG via Hybrid Hypergraph Construction and Retrieval",
     "url": "https://aclanthology.org/2026.findings-acl.1233/"
   },
+  "title:embracinganisotropyturningmassiveactivationsintointerpretablecontrolknobsforlargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Embracing Anisotropy: Turning Massive Activations into Interpretable Control Knobs for Large Language Models",
+    "url": "https://aclanthology.org/2026.acl-long.1380/"
+  },
   "title:emergenceandlocalisationofsemanticrolecircuitsinllms": {
     "doi": null,
     "sent_date": "2026-06-28",
@@ -1482,6 +1524,13 @@
     "source": "acl_anthology",
     "title": "Enhancing NER by Harnessing Multiple Datasets with Conditional Variational Autoencoders",
     "url": "https://aclanthology.org/2025.acl-short.87/"
+  },
+  "title:enrichaggregateandgeneratethreestagebiomedicaldatatotextgenerationusinglargelanguagemodelsinlowresourcescenarios": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Enrich, Aggregate, and Generate: Three-stage Biomedical Data-to-Text Generation Using Large Language Models in Low-resource Scenarios",
+    "url": "https://aclanthology.org/2026.findings-acl.1875/"
   },
   "title:enrichongraphquerygraphalignmentforcomplexreasoningwithllmenriching": {
     "doi": null,
@@ -1567,6 +1616,13 @@
     "title": "Exploring Multimodal Relation Extraction of Hierarchical Tabular Data with Multi-task Learning",
     "url": "https://aclanthology.org/2025.acl-long.1298/"
   },
+  "title:exposingprivacyrisksingraphretrievalaugmentedgeneration": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Exposing Privacy Risks in Graph Retrieval-Augmented Generation",
+    "url": "https://aclanthology.org/2026.findings-acl.899/"
+  },
   "title:factualretrievalinllmsisaredundantdistributedandnoncontiguousprocess": {
     "doi": null,
     "sent_date": "2026-06-25",
@@ -1580,6 +1636,13 @@
     "source": "acl_anthology",
     "title": "Fast-and-Frugal Text-Graph Transformers are Effective Link Predictors",
     "url": "https://aclanthology.org/2025.findings-acl.615/"
+  },
+  "title:ffnlenshowtransformersdividelaborformultilingualtasks": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "FFN Lens: How Transformers Divide Labor for Multilingual Tasks",
+    "url": "https://aclanthology.org/2026.findings-acl.1180/"
   },
   "title:fidelisfaithfulreasoninginlargelanguagemodelsforknowledgegraphquestionanswering": {
     "doi": null,
@@ -1601,6 +1664,13 @@
     "source": "acl_anthology",
     "title": "Finite State Automata Inside Transformers with Chain-of-Thought: A Mechanistic Study on State Tracking",
     "url": "https://aclanthology.org/2025.acl-long.668/"
+  },
+  "title:fixingsemanticblindspotsinanchortokensofdmllms": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Fixing Semantic Blind Spots in Anchor Tokens of dMLLMs",
+    "url": "https://aclanthology.org/2026.findings-acl.966/"
   },
   "title:flexibleconceptbottleneckmodel": {
     "doi": "https://doi.org/10.1609/aaai.v40i25.39234",
@@ -1679,6 +1749,13 @@
     "title": "From Inheritance to Saturation: Disentangling the Evolution of Visual Redundancy for Architecture-Aware MLLM Inference Acceleration",
     "url": "https://aclanthology.org/2026.acl-long.787/"
   },
+  "title:fromlocaltoglobalrevisitingstructuredpruningparadigmsforlargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models",
+    "url": "https://aclanthology.org/2026.acl-long.1653/"
+  },
   "title:fromnodestonarrativesexplaininggraphneuralnetworkswithllmsandgraphcontext": {
     "doi": null,
     "sent_date": "2026-06-24",
@@ -1713,6 +1790,13 @@
     "source": "openalex",
     "title": "From Static to Active: Knowledge-Aware Node State Selection in Multi-view Graph Learning",
     "url": "https://doi.org/10.1609/aaai.v40i28.39518"
+  },
+  "title:fromstringstothingsforpersonalknowledgegraphsevaluatingllmtripleextractionforrecommendationsystems": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "From \"Strings\" to \"Things\" for Personal Knowledge Graphs: Evaluating LLM Triple Extraction for Recommendation Systems",
+    "url": "http://arxiv.org/abs/2607.00003v1"
   },
   "title:fromverbatimtogistdistillingpyramidalmultimodalmemoryviasemanticinformationbottleneckforlonghorizonvideoagents": {
     "doi": null,
@@ -1762,6 +1846,20 @@
     "source": "acl_anthology",
     "title": "GASim: A Graph-Accelerated Hybrid Framework for Social Simulation",
     "url": "https://aclanthology.org/2026.acl-long.569/"
+  },
+  "title:gategraphbasedadaptivetoolevolutionacrossdiversetasks": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "GATE: Graph-based Adaptive Tool Evolution Across Diverse Tasks",
+    "url": "https://aclanthology.org/2026.acl-long.87/"
+  },
+  "title:gciggraphragbasedcrossdocumentinstructiongenerationforboostingllmreasoning": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "GCIG: GraphRAG-based Cross-document Instruction Generation for Boosting LLM Reasoning",
+    "url": "https://aclanthology.org/2026.findings-acl.871/"
   },
   "title:gendisgenerativediscriminativedualviewcotrainingforgeneralizedcategorydiscovery": {
     "doi": null,
@@ -1951,6 +2049,13 @@
     "source": "acl_anthology",
     "title": "GraphNarrator: Generating Textual Explanations for Graph Neural Networks",
     "url": "https://aclanthology.org/2025.acl-long.2/"
+  },
+  "title:graphnativereinforcementlearningenablestraceablescientifichypothesisgenerationthroughconceptualrecombination": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination",
+    "url": "http://arxiv.org/abs/2607.00924v1"
   },
   "title:graphneuralnetworksapplicationsacrossdomainsallinsightsyouneed": {
     "doi": null,
@@ -2210,6 +2315,13 @@
     "source": "acl_anthology",
     "title": "IRIS: An Iterative and Integrated Framework for Verifiable Causal Discovery in the Absence of Tabular Data",
     "url": "https://aclanthology.org/2025.acl-long.463/"
+  },
+  "title:isgrokkingworthwhilefunctionalanalysisandtransferabilityofgeneralizationcircuitsintransformers": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Is Grokking Worthwhile? Functional Analysis and Transferability of Generalization Circuits in Transformers",
+    "url": "https://aclanthology.org/2026.findings-acl.1697/"
   },
   "title:isrselfrefiningreferringexpressionsforentitygrounding": {
     "doi": null,
@@ -2533,6 +2645,20 @@
     "title": "Measuring Graph-to-Graph Semantic Similarity in Knowledge Graphs: An Empirical Evaluation of Knowledge Graph Embeddings",
     "url": "http://arxiv.org/abs/2606.29180v1"
   },
+  "title:mechanisticinterpretabilityoftexttoimagediffusionmodelsviacrossattentioninterventions": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Mechanistic Interpretability of Text-to-Image Diffusion Models via Cross-Attention Interventions",
+    "url": "https://aclanthology.org/2026.findings-acl.1265/"
+  },
+  "title:medverseefficientandreliablemedicalreasoningviadagstructuredparallelexecution": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "MedVerse: Efficient and Reliable Medical Reasoning via DAG-Structured Parallel Execution",
+    "url": "https://aclanthology.org/2026.acl-long.699/"
+  },
   "title:megaragmultimodalknowledgegraphbasedretrievalaugmentedgeneration": {
     "doi": null,
     "sent_date": "2026-06-25",
@@ -2553,6 +2679,13 @@
     "source": "acl_anthology",
     "title": "Memory-Augmented LLM-based Multi-Agent System for Automated Feature Generation on Tabular Data",
     "url": "https://aclanthology.org/2026.acl-long.503/"
+  },
+  "title:memoryguidedharddataaugmentationformultimodalnamedentityrecognition": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Memory-Guided Hard Data Augmentation for Multimodal Named Entity Recognition",
+    "url": "https://aclanthology.org/2026.findings-acl.1075/"
   },
   "title:migicianrevealingthemagicoffreeformmultiimagegroundinginmultimodallargelanguagemodels": {
     "doi": null,
@@ -2904,6 +3037,13 @@
     "title": "PhenoXtract: combining Large Language Model and Knowledge Graph embedding to extract phenotypes from clinical descriptions",
     "url": "https://www.biorxiv.org/content/10.64898/2026.06.22.733382v1.full.pdf"
   },
+  "title:plamtrainingfreeplateauguidedmodelmergingforbettervisualgroundinginmllms": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "PlaM: Training-Free Plateau-Guided Model Merging for Better Visual Grounding in MLLMs",
+    "url": "https://aclanthology.org/2026.findings-acl.1056/"
+  },
   "title:pm3kieaprobabilisticmultitaskmetamodelfordocumentkeyinformationextraction": {
     "doi": null,
     "sent_date": "2026-06-18",
@@ -2960,6 +3100,13 @@
     "title": "PseudoGD: Enhancing Spatial Reasoning in Vision-Language Models through Pseudo Geometric Knowledge Distillation",
     "url": "https://aclanthology.org/2026.findings-acl.1539/"
   },
+  "title:queryawaregraphattentionforprecisesubgraphretrievalinknowledgeaugmentedreasoning": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Query-Aware Graph Attention for Precise Subgraph Retrieval in Knowledge-Augmented Reasoning",
+    "url": "https://aclanthology.org/2026.findings-acl.398/"
+  },
   "title:queryawareknowledgeretrievalviahyperbolicstructuring": {
     "doi": null,
     "sent_date": "2026-06-24",
@@ -3015,6 +3162,13 @@
     "source": "arxiv",
     "title": "ReaORE: Reasoning-Guided Progressive Open Relation Extraction Empowered by Large Reasoning Models",
     "url": "http://arxiv.org/abs/2606.26986v1"
+  },
+  "title:reaptowardseffectivetrainingfreechemicalreasoningwithexplicitatomicpriors": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "REAP: Towards Effective Training-Free Chemical Reasoning with Explicit Atomic Priors",
+    "url": "https://aclanthology.org/2026.findings-acl.97/"
   },
   "title:reasonclip58mvisuallygroundedcommonsensereasoningsupervisionforclip": {
     "doi": null,
@@ -3078,6 +3232,13 @@
     "source": "biorxiv",
     "title": "RepGene: Toward a Unified Gene Representation Space Robust to Missing Biological Views",
     "url": "https://www.biorxiv.org/content/10.64898/2026.06.11.731512v1.full.pdf"
+  },
+  "title:representationguidedparameterefficientllmunlearning": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Representation-Guided Parameter-Efficient LLM Unlearning",
+    "url": "https://aclanthology.org/2026.findings-acl.717/"
   },
   "title:ressatenhancingspatialtranscriptomicspredictionfromhampestainedhistologyimageswithaninteractivespottransformer": {
     "doi": "https://doi.org/10.1186/s13059-026-04168-x",
@@ -3149,6 +3310,13 @@
     "title": "Role Hypergraph Contrastive Learning for Multivariate Time-Series Analysis",
     "url": "https://doi.org/10.1609/aaai.v40i32.39965"
   },
+  "title:rosettacomposablenativemultimodalpretraining": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "Rosetta: Composable Native Multimodal Pretraining",
+    "url": "http://arxiv.org/abs/2607.00293v1"
+  },
   "title:routeragefficientretrievalaugmentedgenerationfromtextandgraphviareinforcementlearning": {
     "doi": null,
     "sent_date": "2026-06-28",
@@ -3198,6 +3366,20 @@
     "title": "SAE-SSV: Supervised Steering in Sparse Representation Spaces for Reliable Control of Language Models",
     "url": "https://aclanthology.org/2025.emnlp-main.112/"
   },
+  "title:samnersemanticarchetypemediationforzeroshotnamedentityrecognition": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "SAM-NER: Semantic Archetype Mediation for Zero-Shot Named Entity Recognition",
+    "url": "https://aclanthology.org/2026.findings-acl.2050/"
+  },
+  "title:saotselfsupervisedcontinualgraphlearningwithstructureawareoptimaltransport": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "SAOT: Self-Supervised Continual Graph Learning with Structure-Aware Optimal Transport",
+    "url": "http://arxiv.org/abs/2607.00377v1"
+  },
   "title:scairschemaconditionedagenticiterativereasoningforenterpriseknowledgegraphs": {
     "doi": null,
     "sent_date": "2026-06-25",
@@ -3232,6 +3414,13 @@
     "source": "arxiv",
     "title": "scGTN: Deep Siamese Graph Transformer Network for Single-cell RNA Sequencing Clustering",
     "url": "http://arxiv.org/abs/2606.18672v1"
+  },
+  "title:schemaragdynamiclargeschemareductionforllmdrivenstructuredinformationextraction": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "SchemaRAG: Dynamic Large Schema Reduction for LLM-driven Structured Information Extraction",
+    "url": "http://arxiv.org/abs/2607.00008v1"
   },
   "title:sckdgmkanguideddynamicgraphmaskedlearningforsinglecellrnaseqclustering": {
     "doi": null,
@@ -3646,12 +3835,26 @@
     "title": "Textual Steering Vectors Can Improve Visual Understanding in Multimodal Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.1861/"
   },
+  "title:theillusionofhighutilityinsafetyalignmentoftexttoimagediffusionmodels": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "The Illusion of High Utility in Safety Alignment of Text-to-Image Diffusion Models",
+    "url": "http://arxiv.org/abs/2607.00402v1"
+  },
   "title:thesisproposalonthegranularityrobustnesstradeoffintextderivedknowledgegraphs": {
     "doi": null,
     "sent_date": "2026-06-25",
     "source": "acl_anthology",
     "title": "Thesis Proposal: On the Granularity-Robustness Trade-off in Text-Derived Knowledge Graphs",
     "url": "https://aclanthology.org/2026.acl-srw.17/"
+  },
+  "title:thinkinginpicturesadiagnosticstudyofvisualvstextualchainofthoughtreasoninginvisionlanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "Thinking in Pictures: A Diagnostic Study of Visual vs. Textual Chain-of-Thought Reasoning in Vision-Language Models",
+    "url": "https://aclanthology.org/2026.alvr-main.1/"
   },
   "title:thinkparallaxsolvingmultihopproblemsviamultiviewknowledgegraphbasedretrievalaugmentedgeneration": {
     "doi": null,
@@ -3736,6 +3939,13 @@
     "source": "acl_anthology",
     "title": "Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience",
     "url": "https://aclanthology.org/2025.findings-acl.1224/"
+  },
+  "title:traceanexperientialframeworkforcoherentmultihopknowledgegraphquestionanswering": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "acl_anthology",
+    "title": "TRACE: An Experiential Framework for Coherent Multi-hop Knowledge Graph Question Answering",
+    "url": "https://aclanthology.org/2026.findings-acl.89/"
   },
   "title:tracingrelationalknowledgerecallinlargelanguagemodels": {
     "doi": null,
