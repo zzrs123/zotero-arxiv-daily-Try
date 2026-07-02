@@ -26,5 +26,12 @@
     "source": "arxiv",
     "title": "Decoupling Semantics and Geometric Grounding: Spatial Visual Prompts for Language-Conditioned Imitation Learning",
     "url": "http://arxiv.org/abs/2606.25360v1"
+  },
+  "title:dualsparseaggregationtransformerformultispectralobjectdetection": {
+    "doi": null,
+    "sent_date": "2026-07-02",
+    "source": "arxiv",
+    "title": "Dual Sparse Aggregation Transformer for Multispectral Object Detection",
+    "url": "http://arxiv.org/abs/2606.31015v1"
   }
 }
