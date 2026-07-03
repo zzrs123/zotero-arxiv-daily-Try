@@ -36,6 +36,19 @@ function Assert-Command {
     }
 }
 
+function Initialize-GitHubAuthEnvironment {
+    if ([string]::IsNullOrWhiteSpace($env:GH_TOKEN)) {
+        $userToken = [Environment]::GetEnvironmentVariable("GH_TOKEN", "User")
+        if (-not [string]::IsNullOrWhiteSpace($userToken)) {
+            $env:GH_TOKEN = $userToken
+        }
+    }
+
+    if ([string]::IsNullOrWhiteSpace($env:GITHUB_TOKEN) -and -not [string]::IsNullOrWhiteSpace($env:GH_TOKEN)) {
+        $env:GITHUB_TOKEN = $env:GH_TOKEN
+    }
+}
+
 function Load-State {
     if (-not (Test-Path -LiteralPath $statePath)) {
         return @{ downloaded_artifact_ids = @() }
@@ -246,6 +259,7 @@ function Publish-Metadata {
 
 Assert-Command "gh"
 Assert-Command "git"
+Initialize-GitHubAuthEnvironment
 
 $previousErrorActionPreference = $ErrorActionPreference
 $ErrorActionPreference = "SilentlyContinue"
@@ -253,7 +267,7 @@ $ErrorActionPreference = "SilentlyContinue"
 $authExitCode = $LASTEXITCODE
 $ErrorActionPreference = $previousErrorActionPreference
 if ($authExitCode -ne 0) {
-    throw "GitHub CLI is not logged in. Run 'gh auth login' once before using this script."
+    throw "GitHub CLI is not logged in. Set GH_TOKEN in the Windows user environment or run 'gh auth login' once before using this script."
 }
 
 New-Item -ItemType Directory -Force -Path $tempRoot | Out-Null
