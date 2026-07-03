@@ -33,5 +33,12 @@
     "source": "arxiv",
     "title": "Dual Sparse Aggregation Transformer for Multispectral Object Detection",
     "url": "http://arxiv.org/abs/2606.31015v1"
+  },
+  "title:rethinkingspeechllmintegrationforasreffectivejointspeechtexttrainingbyinterleaving": {
+    "doi": null,
+    "sent_date": "2026-07-03",
+    "source": "arxiv",
+    "title": "Rethinking Speech-LLM Integration for ASR: Effective Joint Speech-Text Training by Interleaving",
+    "url": "http://arxiv.org/abs/2607.01733v1"
   }
 }
