@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-07-06
+
+## 1. Horizontal and Vertical Federated Causal Structure Learning via Higher-order Cumulants
+
+- Authors: Wei Chen, Wenjia Gu, Limin Peng, Ting Yan, Ruichu Cai, Zhifeng Hao, Kun Zhang
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i24.39116
+- Categories: Privacy-Preserving Technologies in Data, Bayesian Modeling and Causal Inference, Advanced Causal Inference Techniques
+- Relevance: 3.0047037724067605
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i24.39116
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Federated causal discovery aims to uncover causal relationships while protecting data privacy, with significant real-world applications. Existing methods focus on horizontal federated settings where clients share the same variables but have different samples. However, in practice, clients may have different variables, leading to spurious causal relationships. To address this issue, we comprehensively consider causal structure learning methods under both horizontal and vertical federated settings. Interestingly, we find that, higher-order cumulants rely solely on the joint distribution of the relevant variables and are useful to solve the above problem in the linear non-Gaussian case. This motivates us to provide the identification theories for determining the causal order over observed variables, leveraging the difference in the product of the (cross) cumulants of the specific variables. Based on these theories, we develop a method for learning causal order in the horizontal and vertical federated scenarios. Specifically, we first obtain local (cross) cumulant matrices of observed variables from all participating clients to construct a global cumulant matrix. This global cumulant matrix is then used for recursive source variable identification, ultimately yielding a causal strength matrix of the union of variables from all clients. Our algorithm demonstrates superior performance in experiments on both synthetic and real-world data.
+
+## 2. ProgRAG: Hallucination-Resistant Progressive Retrieval and Reasoning over Knowledge Graphs
+
+- Authors: Minbae Park, Hyemin Yang, Jeonghyun Kim, Kunsoo Park, Hyunjoon Kim
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i39.40545
+- Categories: Advanced Graph Neural Networks, Topic Modeling, Multimodal Machine Learning Applications
+- Relevance: 3.004474157173267
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i39.40545
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Large Language Models (LLMs) demonstrate strong reasoning capabilities but still struggle with hallucinations and limited transparency. Recently, KG-enhanced LLMs that integrate knowledge graphs (KGs) have been shown to improve reasoning performance, particularly for complex, knowledge-intensive tasks. However, these methods still face significant challenges, including inaccurate retrieval and reasoning failures, often exacerbated by long input contexts that obscure relevant information. Furthermore, many of these approaches rely on LLMs to directly retrieve evidence from KGs, and to self-assess the sufficiency of this evidence, which often results in premature or incorrect reasoning. To address the retrieval and reasoning failures, we propose ProgRAG, a multi-hop knowledge graph question answering (KGQA) framework that decomposes complex questions into sub-questions, and progressively extends partial reasoning paths by answering each sub-question. At each step, external retrievers gather candidate evidence, which is then refined through uncertainty-aware pruning by the LLM. Finally, the context for LLM reasoning is optimized by organizing and rearranging the partial reasoning paths obtained from the sub-question answers. Experiments on two well-known datasets, WebQSP and CWQ, demonstrate that ProgRAG outperforms existing baselines in multi-hop KGQA, offering improved reliability and reasoning quality.
+
+## 3. RiTeK: A Dataset for Large Language Models Complex Reasoning over Textual Knowledge Graphs in Medicine
+
+- Authors: Jiatan Huang, Mingchen Li, Zonghai Yao, Dawei Li, Yuxin Zhang, Zhichao Yang, Yongkang Xiao, Feiyun Ouyang, Xiaohan Li, Shuo Han, Hong yu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.003844270096094
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1793/
+- PDF: https://aclanthology.org/2026.findings-acl.1793.pdf
+- Local PDF: pdf/2026-07-06_03_RiTeK_ A Dataset for Large Language Models Complex Reasoning over Textual Knowledge Graphs in Medicine.pdf
+
+Answering complex real-world questions in the medical domain often requires accurate retrieval from medical Textual Knowledge Graphs (medical TKGs), as the relational path information from TKGs could enhance the inference ability of Large Language Models (LLMs). However, the main bottlenecks lie in the scarcity of existing medical TKGs, the limited expressiveness of their topological structures, and the lack of comprehensive evaluations of current retrievers for medical TKGs. To address these challenges, we first develop a dataset for LLMs Complex R eason i ng over medical Te xtual K nowledge Graphs (RiTeK), covering a broad range of topological structures. Specifically, we synthesize realistic user queries integrating diverse topological structures, relational information, and complex textual descriptions. We conduct a rigorous medical expert evaluation process to assess and validate the quality of our synthesized queries. RiTeK also serves as a comprehensive benchmark dataset for evaluating the capabilities of retrieval systems built upon LLMs. By assessing 11 representative retrievers on this benchmark, we observe that existing methods struggle to perform well, revealing notable limitations in current LLM-driven retrieval approaches. These findings highlight the pressing need for more effective retrieval systems tailored for semi-structured data in the medical domain.
+
+## 4. Trustworthy and Explainable Causal Representation Learning in Transformers
+
+- Authors: Yang Liu, Yinghao Zhang, Lin Liu, Jiuyong Li, Debo Cheng, Zaiwen Feng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0026860648813782
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1368/
+- PDF: https://aclanthology.org/2026.findings-acl.1368.pdf
+- Local PDF: pdf/2026-07-06_04_Trustworthy and Explainable Causal Representation Learning in Transformers.pdf
+
+A prevalent approach to interpretable representation learning involves creating a mask that weights the significance of each input feature, followed by deriving a masked representation by applying this mask to the input representation. However, the identifiability of these learned masked representations is often uncertain, making the origin of these representations ambiguous or unreliable. Furthermore, the approaches to interpreting Transformer based on attention weights have been criticized for their faithfulness. To address these limitations, we propose a novel causal framework that directly learns identifiable and explainable representations from attention weights, rather than relying on importance masks. Our framework leverages identifiability theory and causal representation learning to extract explainable representations within a subspace of input representations, effectively transforming frozen representation learning methods into self-explaining systems. Experimental results on real-world datasets demonstrate that, compared to well-established state-of-the-art methods, our approach provides identifiable and more trustworthy explanations while guaranteeing faithfulness.
+
+## 5. LLM-XTM: Enhancing Cross-Lingual Topic Models with Large Language Models
+
+- Authors: Minh Chu Xuan, Tien-Phat Nguyen, Linh Ngo Van, Dinh Viet Sang, Nguyen Thi Ngoc Diep, Trung Le
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0025827483642353
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.170/
+- PDF: https://aclanthology.org/2026.acl-long.170.pdf
+- Local PDF: pdf/2026-07-06_05_LLM-XTM_ Enhancing Cross-Lingual Topic Models with Large Language Models.pdf
+
+Cross-lingual topic modeling aims to discover shared semantic structures across languages, yet existing models depend on sparse bilingual resources and often yield incoherent or weakly aligned topics. Recent LLM-based refinements improve interpretability but are costly, document-level, and prone to hallucination, with prior white-box approaches requiring inaccessible token probabilities. We propose LLM-XTM, a framework that integrates LLM-guided topic refinement with self-consistency uncertainty quantification, enabling black-box, stable, and scalable enhancement of cross-lingual topic models. Experiments on multilingual corpora show that LLM-XTM achieves superior topic coherence and alignment while reducing reliance on bilingual dictionaries and expensive LLM calls.
+
+## 6. Concept rather than Document: Context Compression via AMR-based Conceptual Entropy
+
+- Authors: Kaize Shi, Xueyao Sun, Xiaohui Tao, Lin Li, Qika Lin, Guandong Xu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0004637254518656
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.590/
+- PDF: https://aclanthology.org/2026.findings-acl.590.pdf
+- Local PDF: pdf/2026-07-06_06_Concept rather than Document_ Context Compression via AMR-based Conceptual Entropy.pdf
+
+Large Language Models (LLMs) face information overload when handling long contexts, particularly in Retrieval-Augmented Generation (RAG) where extensive supporting documents introduce redundant content that interferes with reasoning. Context engineering has emerged to address these challenges, yet existing methods rely on lexical or token-level features that fragment semantic units and fail to capture conceptually essential content. We propose an unsupervised context compression framework leveraging Abstract Meaning Representation (AMR) to preserve semantically essential information while filtering irrelevant text. By quantifying node-level entropy within AMR graphs, our method estimates the conceptual importance of each node, enabling retention of core semantics. Specifically, we construct AMR graphs from retrieved contexts, compute the conceptual entropy of each node, and identify statistically significant concepts to form a condensed, semantically focused context. Experiments on the PopQA and EntityQuestions datasets demonstrate that our method outperforms vanilla RAG and existing baselines, achieving superior accuracy while substantially reducing context length. To the best of our knowledge, this is the first work introducing AMR-based conceptual entropy for context compression, demonstrating the potential of structured linguistic representations in context engineering.
+
+## 7. HiRAS: A Hierarchical Multi-Agent Framework for Paper-to-Code Generation and Execution
+
+- Authors: Hanhua Hong, Yizhi LI, Jiaoyan Chen, Sophia Ananiadou, Xiaoli Li, Jung-jae Kim, Chenghua Lin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0002271776507934
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.377/
+- PDF: https://aclanthology.org/2026.findings-acl.377.pdf
+- Local PDF: pdf/2026-07-06_07_HiRAS_ A Hierarchical Multi-Agent Framework for Paper-to-Code Generation and Execution.pdf
+
+Recent advances in large language models have highlighted their potential to automate computational research, particularly reproducing experimental results. However, existing approaches still use fixed sequential agent pipelines with weak global coordination, which limits their robustness and overall performance. In this work, we propose Hierarchical Research Agent System (HiRAS), a hierarchical multi-agent framework for end-to-end paper reproduction that employs supervisory manager agents to coordinate specialised agents across fine-grained stages. We also identify limitations in the reference-free evaluation of the Paper2Code benchmark and introduce Paper2Code-Extra (P2C-Ex), a refined protocol that incorporates repository-level information and better aligns with the original reference-based metric. We conduct extensive evaluation, validating the effectiveness and robustness of our proposed methods, and observing improvements, including >10% relative performance gain above the previous state-of-the-art using open-source backbone models and significantly reduced hallucination in the evaluation. All code and data will be made publicly available.
+
+## 8. Modeling Multi-Dimensional Cognitive States in Large Language Models under Cognitive Crowding
+
+- Authors: Lin Zhong, Siyu Zhu, Zizhen Yuan, Jinhao Cui, Xinyang Zhao, Lingzhi Wang, Hao Chen, Qing Liao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0002018350809143
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1017/
+- PDF: https://aclanthology.org/2026.findings-acl.1017.pdf
+- Local PDF: pdf/2026-07-06_08_Modeling Multi-Dimensional Cognitive States in Large Language Models under Cognitive Crowding.pdf
+
+Modeling human cognitive states is essential for advanced artificial intelligence. Existing Large Language Models (LLMs) mainly address isolated tasks such as emotion analysis or stance detection, and fail to capture interactions among cognitive dimensions defined in psychology, including emotion, thinking style, stance, and intention. To bridge this gap, we construct CognitiveBench, the first benchmark with unified annotations across the above four dimensions. Experiments on CognitiveBench show that although LLMs perform well on single dimension tasks, their performance drops sharply in joint multi-dimensional modeling. Using Gromov-hyperbolicity analysis, we find that CognitiveBench exhibits a strong hierarchical structure. We attribute the performance bottleneck to “Cognitive Crowding”, where hierarchical cognitive states require exponential representational space, while the Euclidean space of LLMs grows only polynomially, causing representation overlap and degraded performance. To address this mismatch, we propose HyCoLLM, which models cognitive states in hyperbolic space and aligns LLM representations via Hyperbolic Guided Alignment Tuning. Results show that HyCoLLM substantially improves multi-dimensional cognitive understanding, allowing 8B parameter model to outperform strong baselines, including GPT-4o. Our code is available at https://anonymous.4open.science/r/HycoLLM.
+
+## 9. LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning
+
+- Authors: Zhengjun Huang, Zhoujin Tian, Qintian Guo, Fangyuan Zhang, Yingli Zhou, Di Jiang, Zeying Xie, Xiaofang Zhou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0001465401062086
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1835/
+- PDF: https://aclanthology.org/2026.findings-acl.1835.pdf
+- Local PDF: pdf/2026-07-06_09_LiCoMemory_ Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning.pdf
+
+Large Language Model (LLM) agents exhibit remarkable conversational and reasoning capabilities but remain constrained by limited context windows and the lack of persistent memory. Recent efforts address these limitations via external memory architectures, often employing graph-based representations, yet most adopt flat, entangled structures that intertwine semantics with topology, leading to redundant representations, unstructured retrieval, and degraded efficiency and accuracy. To resolve these issues, we propose LiCoMemory, an end-to-end agentic memory framework for real-time updating and retrieval, which introduces CogniGraph, a lightweight hierarchical graph that utilizes entities and relations as semantic indexing layers, and employs temporal and hierarchy-aware search with integrated reranking for adaptive and coherent knowledge retrieval. Experiments on long-term dialogue benchmarks, LoCoMo and LongMemEval, show that LiCoMemory not only outperforms established baselines in temporal reasoning, multi-session consistency, and retrieval efficiency, but also notably reduces update latency.
+
+## 10. On the Emergence and Test-Time Use of Structural Information in Large Language Models
+
+- Authors: Michelle Chao Chen, Moritz Miller, Bernhard Schölkopf, Siyuan Guo
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.999645571469678
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.65/
+- PDF: https://aclanthology.org/2026.acl-long.65.pdf
+- Local PDF: pdf/2026-07-06_10_On the Emergence and Test-Time Use of Structural Information in Large Language Models.pdf
+
+Learning structural information from observational data is central to producing new knowledge outside the training corpus. This holds for mechanistic understanding in scientific discovery as well as flexible test-time compositional generation. We thus study how language models learn abstract structures and utilize the learnt structural information at test-time. To ensure a controlled setup, we design a natural language dataset based on linguistic structural transformations. We empirically show that the emergence of learning structural information correlates with complex reasoning tasks, and that the ability to perform test-time compositional generation remains limited.
+
+## 11. Flow based approach for Dynamic Temporal Causal models with non-Gaussian or Heteroscedastic Noises
+
+- Authors: Rahmani, Abdellah, Frossard, Pascal
+- Source: neurips
+- Venue type: conference
+- Journal: NeurIPS 2025
+- Publication status: formally_published
+- Publication date: 2026-04-23
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9995478696335804
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://proceedings.neurips.cc/paper_files/paper/2025/hash/0c573ef147721b7f9d1dbfe549ddd25f-Abstract-Conference.html
+- PDF: https://proceedings.neurips.cc/paper_files/paper/2025/file/0c573ef147721b7f9d1dbfe549ddd25f-Paper-Conference.pdf
+- Local PDF: pdf/2026-07-06_11_Flow based approach for Dynamic Temporal Causal models with non-Gaussian or Heteroscedastic Noises.pdf
+
+Understanding causal relationships in multivariate time series is crucial in many scenarios, such as those dealing with financial or neurological data. Many such time series exhibit multiple regimes, i.e., consecutive temporal segments with a priori unknown boundaries, with each regime having its own causal structure. Inferring causal dependencies and regime shifts is critical for analyzing the underlying processes. However, causal structure learning in this setting is challenging due to (1) non-stationarity, i.e., each regime can have its own causal graph and mixing function, and (2) complex noise distributions, which may be non-Gaussian or heteroscedastic. Existing causal discovery approaches cannot address these challenges, since generally assume stationarity or Gaussian noise with constant variance. Hence, we introduce FANTOM, a unified framework for causal discovery that handles non-stationary processes along with non-Gaussian and heteroscedastic noises. FANTOM simultaneously infers the number of regimes and their corresponding indices and learns each regime’s Directed Acyclic Graph. It uses a Bayesian Expectation Maximization algorithm that maximizes the evidence lower bound of the data log-likelihood. On the theoretical side, we prove, under mild assumptions, that temporal heteroscedastic causal models, introduced in FANTOM's formulation, are identifiable in both stationary and non-stationary settings. In addition, extensive experiments on synthetic and real data show that FANTOM outperforms existing methods.
+
+## 12. Modeling LLM Unlearning as an Asymmetric Two-Task Learning Problem
+
+- Authors: Zeguan Xiao, Siqing Li, Yong Wang, Xuetao Wei, Jian Yang, Yun Chen, Guanhua Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9991380268318117
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.890/
+- PDF: https://aclanthology.org/2026.acl-long.890.pdf
+- Local PDF: pdf/2026-07-06_12_Modeling LLM Unlearning as an Asymmetric Two-Task Learning Problem.pdf
+
+Machine unlearning for large language models (LLMs) aims to remove targeted knowledge while preserving general capability. In this paper, we recast LLM unlearning as an asymmetric two-task problem: retention is the primary objective and forgetting is an auxiliary. From this perspective, we propose a retention-prioritized gradient synthesis framework that decouples task-specific gradient extraction from conflict-aware combination. Instantiating the framework, we adapt established PCGrad to resolve gradient conflicts, and introduce SAGO, a novel retention-prioritized gradient synthesis method. Theoretically, both variants ensure non-negative cosine similarity with the retain gradient, while SAGO achieves strictly tighter alignment through constructive sign-constrained synthesis. Empirically, on WMDP Bio/Cyber and RWKU benchmarks, SAGO consistently pushes the Pareto frontier: e.g., on WMDP Bio (SimNPO+GD), recovery of target model MMLU performance progresses from 44.6% (naive) to 94.0% (+PCGrad) and further to 96.0% (+SAGO), while maintaining comparable forgetting strength. Our results show that re-shaping gradient geometry, rather than re-balancing losses, is the key to mitigating unlearning-retention trade-offs.
+
+## 13. LLM2CLIP: Powerful Language Model Unlocks Richer Cross-Modality Representation
+
+- Authors: Weiquan Huang, Aoqi Wu, Yifan Yang, Xufang Luo, Yuqing Yang, Usman Naseem, Chunyu Wang, Qi Dai, Xiyang Dai, Dongdong Chen, Chong Luo, Lili Qiu, Liang Hu
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i7.37427
+- Categories: Multimodal Machine Learning Applications, Generative Adversarial Networks and Image Synthesis, Topic Modeling
+- Relevance: 2.99897530629301
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i7.37427
+- PDF: https://ojs.aaai.org/index.php/AAAI/article/download/37427/41389
+- Local PDF: Not downloaded
+
+CLIP is a seminal multimodal model that maps images and text into a shared representation space by contrastive learning on billions of image–caption pairs. Inspired by the rapid progress of large language models (LLMs), we investigate how the superior linguistic understanding and broad world knowledge of LLMs can further strengthen CLIP—particularly in handling long, complex captions. We introduce an efficient fine-tuning framework that embeds an LLM into a pretrained CLIP while incurring almost the same training cost as regular CLIP fine-tuning. Our method first “embedding-izes” the LLM for the CLIP setting, then couples it to the pretrained CLIP vision encoder through a lightweight adaptor trained on only a few million image–caption pairs. With this strategy we achieve large performance gains—without large-scale retraining—over state-of-the-art CLIP variants such as EVA02 and SigLIP-2. The LLM-enhanced CLIP delivers consistent improvements across a wide spectrum of downstream tasks, including linear-probe classification, zero-shot image–text retrieval with both short and long captions (in English and other languages), zero-shot/supervised image segmentation, object detection, and used as tokenizer for multimodal large-model benchmarks.
+
+## 14. X-Router: Decoupling Knowledge and Reasoning for Cost-Effective LLM Inference
+
+- Authors: Zixuan Wang, Yinze Ding, Zihan Wang, Jinyu Guo, Zhenhong Zhou, Junhao Dong, Chaomeng Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9988299857252185
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.994/
+- PDF: https://aclanthology.org/2026.findings-acl.994.pdf
+- Local PDF: pdf/2026-07-06_14_X-Router_ Decoupling Knowledge and Reasoning for Cost-Effective LLM Inference.pdf
+
+Large Language Models (LLMs) are often augmented with Retrieval-Augmented Generation (RAG) and Chain-of-Thought (CoT) prompting, yet static “always-on” use is computationally wasteful. Existing adaptive methods typically optimize a single axis, overlooking that evidence need and reasoning depth are only partially correlated. We present , a dual-axis routing framework that separates retrieval necessity from reasoning necessity under a user-defined cost–quality trade-off. Offline, profiles four pipelines (Direct, RAG, CoT, RAG+CoT) and derives supervision by selecting the utility-maximizing strategy that trades answer quality against token usage and latency. Online, a compact dual-head router, conditioned on cost weights, uses lightweight probes—retrieval-score dispersion (NQC) and single-pass draft negative log-likelihood (NLL)—to decide whether to invoke RAG and/or CoT without sampling or model internals. Across six QA benchmarks, reduces token usage by up to 86% and latency by up to 84% while improving answer quality over strong baselines.
+
+## 15. ChemVLR: Prioritizing Reasoning in Perception for Chemical Vision-Language Understanding
+
+- Authors: Xuanle Zhao, Xinyuan Cai, Xiang Cheng, Xiuyi Chen, Bo XU
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9986247059664843
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1206/
+- PDF: https://aclanthology.org/2026.findings-acl.1206.pdf
+- Local PDF: pdf/2026-07-06_15_ChemVLR_ Prioritizing Reasoning in Perception for Chemical Vision-Language Understanding.pdf
+
+While Vision-Language Models (VLMs) have demonstrated significant potential in chemical visual understanding, current models are predominantly optimized for direct visual question-answering tasks. This paradigm often results in "black-box" systems that fail to utilize the inherent capability of Large Language Models (LLMs) to infer underlying reaction mechanisms. In this work, we introduce ChemVLR, a chemical VLM designed to prioritize reasoning within the perception process. Unlike conventional chemical VLMs, ChemVLR analyzes visual inputs in a fine-grained manner by explicitly identifying granular chemical descriptors, such as functional groups, prior to generating answers. This approach ensures the production of explicit and interpretable reasoning paths for complex visual chemical problems. To facilitate this methodology, we implement a cross-modality reverse-engineering strategy combined with a rigorous filtering pipeline to curate a large-scale reasoning and caption dataset, comprising 760k high-quality samples across molecular and reaction tasks. Furthermore, we adopt a three-stage training framework that systemically builds model perception and reasoning capacity. Experiments demonstrate that ChemVLR achieves state-of-the-art (SOTA) performance, surpassing both leading proprietary models and domain-specific open-source baselines. We also provide comprehensive ablation studies to validate our training strategy and data generation designs.
+
+## 16. A Survey on MLLM-based Visually Rich Document Understanding: Methods, Challenges, and Emerging Trends
+
+- Authors: Yihao Ding, Siwen Luo, Yue Dai, Yanbei Jiang, Zechuan Li, Qiang Sun, Geoffrey Martin, Wei Liu, Yifan Peng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9983956340352336
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.652/
+- PDF: https://aclanthology.org/2026.findings-acl.652.pdf
+- Local PDF: pdf/2026-07-06_16_A Survey on MLLM-based Visually Rich Document Understanding_ Methods, Challenges, and Emerging Trends.pdf
+
+Visually Rich Document Understanding (VRDU) has become a pivotal area of research, driven by the need to automatically interpret documents that contain intricate visual, textual, and structural elements. Recently, Multimodal Large Language Models (MLLMs) have demonstrated significant promise in this domain, including both OCR-based and OCR-free approaches for information extraction from document images. This survey reviews recent advances in MLLM-based VRDU, highlighting emerging trends and promising research directions with a focus on two key aspects: (1) techniques for representing and integrating textual, visual, and layout features; (2) training paradigms, including pretraining, instruction tuning, and training strategies. Moreover, we address challenges such as data scarcity, handling multi-page and multilingual documents, and integrating emerging trends such as Retrieval-Augmented Generation and agentic frameworks. Our analysis offers a roadmap for advancing MLLM-based VRDU toward more scalable, reliable, and adaptable systems.
+
+## 17. Enhancing Lexical Relation Mining with Structured Sememe Knowledge
+
+- Authors: Hansi Wang, Qiliang Liang, Yue Wang, Yang Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9983053347233115
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.224/
+- PDF: https://aclanthology.org/2026.acl-long.224.pdf
+- Local PDF: pdf/2026-07-06_17_Enhancing Lexical Relation Mining with Structured Sememe Knowledge.pdf
+
+Lexical Relation Mining (LRM) aims to identify and classify lexical relations between word pairs. In this paper, we focus on two subtypes of LRM: Lexical Relation Classification (LRC) and Lexical Entailment (LE). Existing top-performing methods for them rely heavily on Pre-trained Language Models (PLMs) yet fail to distinguish nuanced lexical relations. From a linguistic perspective, intralexical tree-structured sememe information can reflect interlexical relations. Inspired by this, we are motivated to explore leveraging such structured knowledge to enhance LRC and LE. We first propose an automated Sememe Tree Construction (STC) pipeline to predict sememe trees; Then, we present the SememeLRM method to fully leverage structured sememe knowledge; Experimental results show that it achieves a notable 1.6% improvement on average across benchmarks, even outperforming Large Language Model (LLM)-based methods that contain 20 times more parameters on most benchmarks. Further results also suggest that sememe trees predicted by our pipeline can rival the gold-standard in HowNet, extending their applicability to lexico-semantic computing. Overall, this paper presents a potentially generalizable framework for leveraging complete sememe trees and makes significant progress, helping to unlock the value of such intralexical knowledge in downstream tasks.
+
+## 18. Frozen LLMs are Native Decoders for High-Norm Semantic Vectors
+
+- Authors: Yunsheng Zeng, Yongmei Tan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.997589368176926
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1717/
+- PDF: https://aclanthology.org/2026.acl-long.1717.pdf
+- Local PDF: pdf/2026-07-06_18_Frozen LLMs are Native Decoders for High-Norm Semantic Vectors.pdf
+
+Large language models (LLMs) are designed for discrete tokens, yet they operate in a continuous embedding space. Recent context compression methods exploit this property by encoding text into dense vectors for frozen LLM decoding. However, a key question remains unanswered: how does a frozen LLM interpret continuous vectors that encode complex semantics? We investigate this through controlled reconstruction experiments. Our analysis reveals a critical geometric property: compression encoders learn to produce vectors with L2 norms two orders of magnitude higher than standard embeddings. We show that this high-norm signal is causally necessary for the frozen LLM to decode compressed information. Based on this finding, we propose a landmark-based compression framework for long contexts. Our encoder uses bidirectional attention over landmark tokens. This design captures global dependencies and avoids semantic fragmentation from segment-based methods. Experiments on text reconstruction and four QA benchmarks validate our approach. At 4x and 16x compression ratios, our method outperforms prior soft compression baselines.
+
+## 19. ALTER: Asymmetric LoRA for Token-Entropy-Guided Unlearning of LLMs
+
+- Authors: Xunlei Chen, Jinyu Guo, Yuang Li, Zheng Wang, Yi Gong, Jie Zou, Jiwei Wei, Wenhong Tian
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i42.40845
+- Categories: Domain Adaptation and Few-Shot Learning, Topic Modeling, Generative Adversarial Networks and Image Synthesis
+- Relevance: 2.997441524129134
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i42.40845
+- PDF: https://ojs.aaai.org/index.php/AAAI/article/download/40845/44806
+- Local PDF: Not downloaded
+
+Large language models (LLMs) have advanced to encompass extensive knowledge across diverse domains. Yet controlling what a LLMs should not know is important for ensuring alignment and thus safe use. However, effective unlearning in LLMs is difficult due to the fuzzy boundary between knowledge retention and forgetting. This challenge is exacerbated by entangled parameter spaces from continuous multi-domain training, often resulting in collateral damage, especially under aggressive unlearning strategies. Furthermore, the computational overhead required to optimize State-of-the-Art (SOTA) models with billions of parameters poses an additional barrier. In this work, we present ALTER, a lightweight unlearning framework for LLMs to address both the challenges of knowledge entanglement and unlearning efficiency. ALTER operates through two phases: (I) high entropy tokens are captured and learned via the shared A matrix in LoRA, followed by (II) an asymmetric LoRA architecture that achieves a specified forgetting objective by parameter isolation and unlearning tokens within the target subdomains. Serving as a new research direction for achieving unlearning via token-level isolation in the asymmetric framework. ALTER achieves SOTA performance on TOFU, WMDP, and MUSE benchmarks with over 95% forget quality and shows minimal side effects through preserving foundational tokens. By decoupling unlearning from LLMs' billion-scale parameters, this framework delivers excellent efficiency while preserving over 90% of model utility, exceeding baseline preservation rates of 47.8-83.6%.
+
+## 20. Self-Consistency from Only Two Samples: CoT–PoT Ensembling for Efficient LLM Reasoning
+
+- Authors: Raman Saparkhan, Majd Hawasly, Md Rizwan Parvez, Mohammad Raza
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9971178885363376
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1642/
+- PDF: https://aclanthology.org/2026.findings-acl.1642.pdf
+- Local PDF: pdf/2026-07-06_20_Self-Consistency from Only Two Samples_ CoT–PoT Ensembling for Efficient LLM Reasoning.pdf
+
+Self-consistency (SC) is a popular technique for improving the reasoning accuracy of large language models by aggregating multiple sampled outputs, but it comes at a high computational cost due to extensive sampling. We introduce a hybrid ensembling approach that leverages the complementary strengths of two distinct modes of reasoning: Chain-of-Thought (CoT) and Program-of-Thought (PoT). We describe a general framework for combining these two forms of reasoning in self-consistency, as well as particular strategies for both full sampling and early-stopping. We show that CoT-PoT ensembling not only improves overall accuracy, but also drastically reduces the number of samples required for SC by a factor of 9.3x. In particular, the majority of tasks (78.6%) can be addressed with only two samples, which has not been possible with any prior SC methods.
+
+## 21. Logical Structure as Knowledge: Enhancing LLM Reasoning via Structured Logical Knowledge Density Estimation
+
+- Authors: Zhen Bi, Zhenlin Hu, Xueshu Chen, Mingyang Chen, Cheng Deng, Yida Xue, Zhen Wang, Qing Shen, Ningyu Zhang, Jungang Lou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9962996981667174
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.436/
+- PDF: https://aclanthology.org/2026.findings-acl.436.pdf
+- Local PDF: pdf/2026-07-06_21_Logical Structure as Knowledge_ Enhancing LLM Reasoning via Structured Logical Knowledge Density Estimation.pdf
+
+The reasoning capabilities of Large Language Models (LLMs) are increasingly attributed to training data quality rather than mere parameter scaling. However, existing data-centric paradigms often equate quality with factuality or diversity and ignore the internal logical complexity of training samples. In this work, we propose that natural language harbors Structured Logical Knowledge manifested through entailment relationships and logical topologies. To quantify this, we introduce Structured Logical Knowledge Density (SLKD), a novel metric that measures logical information content by decomposing natural language into executable predicates and logical primitives. Our analysis reveals a significant logical disparity in current datasets where sparse logical signals predominate. Consequently, we propose a density-aware re-cognizing optimization strategy that prioritizes high-density logical samples to align training with the model’s reasoning boundary. Extensive experiments demonstrate that our approach enhances reasoning performance and generalization without increasing total data volume. These results, further validated within a reinforcement learning framework, suggest that elevating logical density is more critical than expanding data scale for realizing the full cognitive potential of LLMs. The anonymized code is available in the Appendix C.
+
+## 22. HCRE: LLM-based Hierarchical Classification for Cross-Document Relation Extraction with a Prediction-then-Verification Strategy
+
+- Authors: Guoqi Ma, Liang Zhang, Hongyao Tu, Hao Fu, Hui Li, Yujie Lin, Longyue Wang, Weihua Luo, Jinsong Su
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.995814090921101
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1985/
+- PDF: https://aclanthology.org/2026.findings-acl.1985.pdf
+- Local PDF: pdf/2026-07-06_22_HCRE_ LLM-based Hierarchical Classification for Cross-Document Relation Extraction with a Prediction-then-Verification S.pdf
+
+Cross-document relation extraction (RE) aims to identify relations between the head and tail entities located in different documents. Existing approaches typically adopt the paradigm of “ Small Language Model (SLM) + Classifier ”. However, the limited language understanding ability of SLMs hinders further improvement of their performance. In this paper, we conduct a preliminary study to explore the performance of Large Language Models (LLMs) in cross-document RE. Despite their extensive parameters, our findings indicate that LLMs do not consistently surpass existing SLMs. Further analysis suggests that the underperformance is largely attributed to the challenges posed by the numerous predefined relations. To overcome this issue, we propose an LLM-based Hierarchical Classification model for cross-document RE (HCRE), which consists of two core components: 1) an LLM for relation prediction and 2) a hierarchical relation tree derived from the predefined relation set. This tree enables the LLM to perform hierarchical classification, where the target relation is inferred level by level. Since the number of child nodes is much smaller than the size of entire predefined relation set, the hierarchical relation tree significantly reduces the number of relation options that LLM needs to consider during inference. However, hierarchical classification introduces the risk of error propagation across levels. To mitigate this, we propose a prediction-then-verification inference strategy that improves prediction reliability through multi-view verification at each level. Extensive experiments show that HCRE outperforms existing baselines, validating its effectiveness.
+
+## 23. Refining and Reusing Annotation Guidelines for LLM Annotation
+
+- Authors: Kon Woo Kim, Jin-Dong Kim, Akiko Aizawa
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9931812464809076
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1760/
+- PDF: https://aclanthology.org/2026.acl-long.1760.pdf
+- Local PDF: pdf/2026-07-06_23_Refining and Reusing Annotation Guidelines for LLM Annotation.pdf
+
+While Large Language Models (LLMs) demonstrates remarkable zero-shot annotation tasks, they often struggle with the specialized conventions of gold-standard benchmarks. We propose the systematic reuse and refinement of annotation guidelines as an alignment mechanism, introducing an iterative moderation framework that simulates the early phases of annotation projects. We evaluate three hypotheses: (1) the efficacy of guideline integration, (2) the advantage of reasoning-optimized models, and (3) the viability of moderation under minimal supervision. Testing across biomedical NER tasks (NCBI Disease, BC5CDR, BioRED) with three LLM families (GPT, Gemini, DeepSeek), our results empirically confirm all three hypotheses. While the iterative moderation framework shows a good potential in effectively refining guidelines, our analysis also reveals a significant room for improvement.
+
+## 24. Progressive Re-ranking for Multimodal Retrieval-Augmented Generation via Curriculum Learning
+
+- Authors: Zhu Min, Yanchao Hao, Jian Liu, Shizhu He, Xi Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.992727493569085
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2045/
+- PDF: https://aclanthology.org/2026.findings-acl.2045.pdf
+- Local PDF: pdf/2026-07-06_24_Progressive Re-ranking for Multimodal Retrieval-Augmented Generation via Curriculum Learning.pdf
+
+Retrieval-augmented generation (RAG) can enhance large language models (LLMs) by providing external knowledge and helping reduce hallucinations. In multimodal RAG, however, retrieval remains challenging because a single retriever may fail to capture fine-grained multimodal semantics, and visually or semantically similar entities may still contain misleading information for answer generation. We propose a progressive multimodal re-ranking framework with curriculum learning to improve CLIP-based visual coarse-grained retrieval. Our framework progressively refines retrieval results through two stages: fine-grained section-level re-ranking and multimodal section reassessment. To better align re-ranking with multimodal queries, we introduce a curriculum-learning strategy that trains the model with hard negatives that are visually or semantically similar but contain misleading information. Experiments on InfoSeek and Enc-VQA show that our method achieves state-of-the-art answer accuracy and competitive retrieval performance.
+
+## 25. SpaceVLLM: Endowing Multimodal Large Language Model with Spatio-Temporal Video Grounding Capability
+
+- Authors: Jiankang Wang, Zhihan Zhang, Zhihang Liu, Yang Li, Jiannan Ge, Hongtao Xie, Yongdong Zhang
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i12.37956
+- Categories: Multimodal Machine Learning Applications, Human Motion and Animation, Topic Modeling
+- Relevance: 2.992693756072855
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i12.37956
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Multimodal Large Language Models (MLLMs) have shown remarkable progress in temporal or spatial localization tasks, but struggle with joint spatio-temporal video grounding (STVG). We identify two key bottlenecks hindering this capability: (1) the sheer number of visual tokens makes long-range and fine-grained visual modeling challenging; (2) generating a long sequence of bounding boxes in text makes it hard to accurately align each box with its specific video frame. Distinct from prior efforts that rely on attaching complex modules, we argue for a more elegant paradigm that unlocks the inherent potential of MLLMs and leverages their strengths. To this end, we propose \textbf{\textit{SpaceVLLM}}, a MLLM equipped with spatio-temporal video grounding capabilities. Specifically, we propose Spatio-Temporal Aware Queries, interleaved with video frames, to guide the MLLM in capturing both static appearance and dynamic motion features. We further present a lightweight Query-Guided Space Head that maps queries to precise spatial coordinates, bypassing the need for direct textual coordinate generation and enabling the MLLM to focus on video understanding. To further facilitate research in this area, we propose an automated data synthesis pipeline to construct \textbf{V-STG} dataset, comprising 110K STVG instances. Extensive experiments show that \textit{SpaceVLLM} achieves the state-of-the-art performance on STVG benchmarks and maintains strong performance on various video understanding tasks, validating our approach's effectiveness.
+
+## 26. Focus-dLLM: Accelerating Long-Context Diffusion LLM Inference via Confidence-Guided Context Focusing
+
+- Authors: Lingkun Long, Yushi Huang, Shihao Bai, Ruihao Gong, Jun Zhang, Ao Zhou, Jianlei Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9924901522484113
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.556/
+- PDF: https://aclanthology.org/2026.acl-long.556.pdf
+- Local PDF: pdf/2026-07-06_26_Focus-dLLM_ Accelerating Long-Context Diffusion LLM Inference via Confidence-Guided Context Focusing.pdf
+
+Diffusion Large Language Models (dLLMs) deliver strong long-context processing capability in a non-autoregressive decoding paradigm. However, the considerable computational cost of bidirectional full attention limits the inference efficiency. Although sparse attention is promising, existing methods remain ineffective. This stems from the need to estimate attention importance for tokens yet to be decoded, while the unmasked token positions are unknown during diffusion. In this paper, we present **Focus-dLLM**, a novel training-free attention sparsification framework tailored for accurate and efficient long-context dLLM inference. Based on the finding that token confidence strongly correlates across adjacent steps, we first design a *past confidence-guided indicator* to predict unmasked regions. Built upon this, we propose a *sink-aware pruning strategy* to accurately estimate and remove redundant attention computation, while preserving highly influential attention sinks. To further reduce overhead, this strategy reuses identified sink locations across layers, leveraging the observed cross-layer consistency. Experimental results show that our method offers more than 29× lossless speedup under 32K context length.
+
+## 27. GOBench: Stage-Wise Diagnostics and the Visual Paradox in Multimodal Graph Optimization
+
+- Authors: Yinghao Chen, Wantong Xie, Shuli Zeng, Sijia Zhang, Xiaotian Pan, Feng Wu, Xiangyang Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9911715032202055
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.306/
+- PDF: https://aclanthology.org/2026.findings-acl.306.pdf
+- Local PDF: pdf/2026-07-06_27_GOBench_ Stage-Wise Diagnostics and the Visual Paradox in Multimodal Graph Optimization.pdf
+
+Large language models (LLMs) and vision-language models (VLMs) are increasingly used as optimization assistants to produce solutions, generate solver-executable programs, or both. However, current evaluations are misaligned with deployment in three ways: they (P1) fail to represent multimodal problem specifications, (P2) score outcomes only and cannot localize where failures occur along the modeling pipeline, and (P3) rarely report inference cost, obscuring reliability–cost trade-offs. We introduce Graph Optimization benchmark (GOBench), an aligned multimodal benchmark with solver-derived oracles and a four-layer diagnostic protocol that evaluates intermediate artifacts as well as end results, together with the Visual Inference Penalty (VIP) to measure multimodal overhead. Across frontier and open-weight models under paired text-only vs. T+V settings, we find that vision reliably increases inference cost, while its reliability impact is regime-dependent: frontier models often benefit from visual grounding, whereas several mid-tier/open models exhibit a Visual Paradox where vision reduces downstream executability and verification coverage. End-to-end success is frequently bottlenecked by intermediate-stage dropout; supervised fine-tuning on intermediate targets can mitigate this attrition in open models, enabling a reproducible harness for diagnosing failure modes and quantifying reliability–cost trade-offs.
+
+## 28. Paper Circle: An Open-source Multi-agent Research Discovery and Analysis Framework
+
+- Authors: Komal Kumar, Aman Chadha, Salman Khan, Fahad Shahbaz Khan, Hisham Cholakkal
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.990581278567355
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1952/
+- PDF: https://aclanthology.org/2026.acl-long.1952.pdf
+- Local PDF: pdf/2026-07-06_28_Paper Circle_ An Open-source Multi-agent Research Discovery and Analysis Framework.pdf
+
+The rapid growth of scientific literature has made it increasingly difficult for researchers to efficiently discover, evaluate, and synthesize relevant work. Recent advances in multi-agent large language models (LLMs) have demonstrated strong potential for understanding user intent and are being trained to utilize various tools.In this paper, we introduce Paper Circle, a multi-agent research discovery and analysis system designed to reduce the effort required to find, assess, organize, and understand academic literature. The system comprises two complementary pipelines: (1) a Discovery Pipeline that integrates offline and online retrieval from multiple sources, multi-criteria scoring, diversity-aware ranking, and structured outputs; and (2) an Analysis Pipeline that transforms individual papers into structured knowledge graphs with typed nodes (e.g., concepts, methods, experiments, and figures) and edges, enabling graph-aware question answering and coverage verification. Both pipelines are implemented within a coder LLM–based multi-agent orchestration framework and produce fully reproducible, synchronized outputs (JSON, CSV, BibTeX, Markdown, and HTML) at each agent step. This paper describes the system architecture, agent roles, retrieval and scoring methods, knowledge graph schema, and evaluation interfaces that together form the Paper Circle research workflow. We benchmark Paper Circle on both paper retrieval and paper review generation, reporting hit rate, MRR, and Recall@K. Results show consistent improvements with stronger agent models. We have publicly released the website:https://papercircle.vercel.app/ and code: https://github.com/MAXNORM8650/papercircle.
+
+## 29. Subgraph-Guided Executable Logical Form Generation for Knowledge Base Question Answering
+
+- Authors: Yuhang Tian, Dandan Song, Zhijing Wu, Changzhi Zhou, Jun Yang, Huipeng Ma, Chenhao Li, Luan Zhang, Yading Li, Xudong Li, Shenxi Liu, Jing Jiang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9902232664270088
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.177/
+- PDF: https://aclanthology.org/2026.findings-acl.177.pdf
+- Local PDF: pdf/2026-07-06_29_Subgraph-Guided Executable Logical Form Generation for Knowledge Base Question Answering.pdf
+
+Large Language Models (LLMs) have shown great potential in Knowledge Base Question Answering (KBQA) via semantic parsing. However, existing retrieval-augmented approaches typically retrieve entities and relations in isolation based solely on semantic similarity, ignoring the structural information of the Knowledge Base (KB) and the question. To address this limitation, we propose SELF-KBQA ( S ubgraph-Guided E xecutable L ogical F orm Generation), a novel framework that empowers LLMs to generate logical forms conditioned on structurally aligned and semantically relevant subgraphs. Specifically, we introduce a structure-aware subgraph retrieval stage that ranks candidate subgraphs by aligning them with the question’s structure, along with semantic relevance. Subsequently, we employ a token-budgeted evidence condensation strategy to distill the top-ranked subgraphs into compact contexts for the generation stage. Extensive experiments on GrailQA, WebQSP, and GraphQuestions demonstrate that SELF-KBQA achieves state-of-the-art performance.
+
+## 30. Gardener: An Agentic AI System for Single-Cell RNA Sequence Analysis
+
+- Authors: Junhan Liu, Zhenke Liu, Yongcheng Shi, Peilin Yu, Minxing Zhang, Jiapeng Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9885594597903617
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-demo.40/
+- PDF: https://aclanthology.org/2026.acl-demo.40.pdf
+- Local PDF: pdf/2026-07-06_30_Gardener_ An Agentic AI System for Single-Cell RNA Sequence Analysis.pdf
+
+Gardener is an interactive agentic system for single-cell RNA-seq (scRNA-seq) analysis that enables expert-steered, iterative workflows under strict data-residency requirements. Existing large language model (LLM)-based analysis agents commonly encode workflow progress as implicit conversational state and rely on cloud-centric execution, which hinders traceability and auditability and complicates keeping sensitive expression data on-device. Gardener grounds cloud-side reasoning in a local, on-device scientific engine and an Experiment Management Kernel (EMK) that externalizes analysis progress as persistent, immutable snapshots linked by lineage. This explicit state representation supports rollback, branching, and comparison of alternative analysis paths while reusing prior computation. Gardener enforces data isolation by design: cloud-hosted LLMs operate only on snapshot identifiers and sanitized summaries, while raw expression matrices and local artifacts remain on the user’s device. A local graphical user interface (GUI) provides human-in-the-loop steering and inspection of workflow state and outputs. Gardener is released as an open-source desktop application for macOS and Windows under the Apache License 2.0.
