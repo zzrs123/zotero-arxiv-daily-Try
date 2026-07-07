@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-07-07
+
+## 1. DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction
+
+- Authors: Shiyan Su, Ruyi Zha, Danli Shi, Hongdong Li, Xuelian Cheng
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i11.37871
+- Categories: Medical Imaging Techniques and Applications, Computer Graphics and Visualization Techniques, 3D Shape Modeling and Analysis
+- Relevance: 3.0031776482280446
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i11.37871
+- PDF: https://ojs.aaai.org/index.php/AAAI/article/download/37871/41833
+- Local PDF: Not downloaded
+
+Neural representations (NRs), such as neural fields and 3D Gaussians, effectively model volumetric data in computed tomography (CT) but suffer from severe artifacts under sparse-view settings. To address this, we propose DiffNR, a novel framework that enhances NR optimization with diffusion priors. At its core is SliceFixer, a single-step diffusion model designed to correct artifacts in degraded slices. We integrate specialized conditioning layers into the network and develop tailored data curation strategies to support model finetuning. During reconstruction, SliceFixer periodically generates pseudo-reference volumes, providing auxiliary 3D perceptual supervision to fix underconstrained regions. Compared to prior methods that embed CT solvers into time-consuming iterative denoising, our repair-and-augment strategy avoids frequent diffusion model queries, leading to better runtime performance. Extensive experiments show that DiffNR improves PSNR by 3.99 dB on average, generalizes well across domains, and maintains efficient optimization.
+
+## 2. UCS: Estimating Unseen Coverage for Improved In-Context Learning
+
+- Authors: Jiayi Xin, Xiang Li, Evan Qiang, Weiqing He, Tianqi Shang, Weijie J Su, Qi Long
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.988009465804624
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.533/
+- PDF: https://aclanthology.org/2026.findings-acl.533.pdf
+- Local PDF: pdf/2026-07-07_02_UCS_ Estimating Unseen Coverage for Improved In-Context Learning.pdf
+
+In-context learning (ICL) performance depends critically on which demonstrations are placed in the prompt, yet most existing selectors prioritize heuristic notions of relevance or diversity and provide limited insight into the coverage of a demonstration set. We propose Unseen Coverage Selection (UCS) , a training-free, subset-level coverage prior motivated by the principle that a good demonstration set should expose the model to latent cluster unrevealed by the currently selected subset . UCS operationalizes this idea by (1) inducing discrete latent clusters from model-consistent embeddings and (2) estimating the number of unrevealed clusters within a candidate subset via a Smoothed Good-Turing estimator from its empirical frequency spectrum. Unlike previous selection methods, UCS is coverage-based and training-free, and can be seamlessly combined with both query-dependent and query-independent selection baselines via a simple regularized objective. Experiments on multiple intent-classification and reasoning benchmarks with frontier Large Language Models show that augmenting strong baselines with UCS consistently improves ICL accuracy by up to 2-6 % under the same selection budget, while also yielding insights into task- and model-level latent cluster distributions. Code is available at https://github.com/Raina-Xin/UCS.
+
+## 3. TransLLM: A Unified Multi-Task Large Language Model for Urban Transportation via Learnable Prompting
+
+- Authors: Jiaming Leng, Yunying Bi, Chuan Qin, Zhenya Huang, Bing Yin, Haojie Ren, Yanyong Zhang, Chao Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.987733597862439
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1195/
+- PDF: https://aclanthology.org/2026.acl-long.1195.pdf
+- Local PDF: pdf/2026-07-07_03_TransLLM_ A Unified Multi-Task Large Language Model for Urban Transportation via Learnable Prompting.pdf
+
+Urban transportation systems require precise modeling of dynamic spatiotemporal patterns across diverse tasks, such as traffic forecasting, electric vehicle (EV) charging demand prediction, and taxi dispatch. Existing approaches suffer from two key limitations: traditional deep learning models are task-specific and lack generalization capabilities, whereas Large Language Models (LLMs) struggle with structured spatiotemporal data and numerical reasoning. To bridge this gap, we propose TransLLM, a unified multi-task framework that synergizes spatiotemporal encoding with LLM reasoning through learnable prompt composition. To enable LLMs to perceive complex graph dependencies, we design a noise-augmented spatiotemporal encoder that projects structured signals into the LLM’s embedding space. Furthermore, to overcome the rigidity of fixed prompt templates in heterogeneous traffic scenarios, we introduce an instance-level prompt routing mechanism trained via reinforcement learning. The framework operates by encoding spatiotemporal patterns into contextual representations, dynamically composing personalized prompts to guide LLM reasoning, and projecting the resulting representations through specialized output layers to generate task-specific predictions. Experiments on seven datasets and three tasks demonstrate that TransLLM outperforms many baselines, showing superior adaptability in both supervised and zero-shot settings with excellent generalization and robustness. Our code and data are available at https://github.com/lengjiaming/TransLLM.
+
+## 4. NeuralFSM: Adaptive Multi-Agent Coordination via Learning Finite-State Execution Policy
+
+- Authors: Jiye Wang, Yu Wang, Jianbin Li, Shiduo Yang, Kenan Guo, Yuanhe Zhao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9861608518137435
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1543/
+- PDF: https://aclanthology.org/2026.acl-long.1543.pdf
+- Local PDF: pdf/2026-07-07_04_NeuralFSM_ Adaptive Multi-Agent Coordination via Learning Finite-State Execution Policy.pdf
+
+LLM-powered multi-agent systems (MAS) have demonstrated strong performance on complex tasks. However, most existing approaches still rely on hand-crafted communication protocols or automatically designed communication topologies, which generalize poorly across tasks. We introduce NeuralFSM, a state-driven framework that formulates multi-agent problem solving as a finite-state execution process. NeuralFSM learns both the state transition distribution and inter-agent communication weights from interaction traces using a Temporal Coordination Controller. Rather than prioritizing explicit structure generation, the proposed framework uses task context to modulate transition and routing decisions, enabling flexible coordination without manual protocol design. To improve robustness against noisy or adversarial agents, we incorporate graph regularization during training and apply trust-aware message attenuation at runtime. Experiments on diverse benchmarks show that NeuralFSM consistently outperforms prior baselines by an average margin of 6.74%–19.39%, while substantially reducing token consumption. Moreover, NeuralFSM exhibits strong inherent robustness, which is further enhanced by the protection layer, resulting in only a 1.82% performance drop under attack.
+
+## 5. Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling
+
+- Authors: Zhenghua Wang, Yiran Ding, Changze Lv, Yixin Wu, Tianlong Li, Zhibo Xu, Muling Wu, Tianyuan Shi, Shizheng Li, Qi Qian, Xuanjing Huang, Xiaoqing Zheng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.985995786874811
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1059/
+- PDF: https://aclanthology.org/2026.findings-acl.1059.pdf
+- Local PDF: pdf/2026-07-07_05_Mitigating Position Bias in Transformers via Layer-Specific Positional Embedding Scaling.pdf
+
+Large Language Models (LLMs) still struggle with the "lost-in-the-middle" problem, where critical information located in the middle of long-context inputs is often underrepresented or lost. While existing methods attempt to address this by combining multi-scale rotary position embeddings (RoPE), they typically suffer from high latency or rely on suboptimal hand-crafted scaling strategies. To overcome these limitations, we introduce a layer-specific positional embedding scaling (LPES) method that assigns distinct scaling factors to each layer. LPES achieves a more balanced attention distribution without fine-tuning model parameters or increasing inference delay. A specially designed genetic algorithm is employed to efficiently select the optimal scaling factors for each layer by incorporating B’ezier curves to significantly reduce the search space. Extensive experiments demonstrate that LPES effectively mitigates positional attention bias and delivers consistent improvements across multiple long-context benchmarks, yielding up to an 11.2% accuracy gain on the key-value retrieval dataset.
+
+## 6. Bridging the Pose-Semantic Gap: A Cascade Framework for Text-Based Person Anomaly Search
+
+- Authors: Zequn Xie, Guijin Luo, Chuxin Wang, Sihang Cai, Tao Jin, Zhou Zhao, Yixuan Tang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9849454920271667
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.197/
+- PDF: https://aclanthology.org/2026.findings-acl.197.pdf
+- Local PDF: pdf/2026-07-07_06_Bridging the Pose-Semantic Gap_ A Cascade Framework for Text-Based Person Anomaly Search.pdf
+
+Text-based person anomaly search retrieves specific behavioral events from surveillance archives using natural-language queries. Although recent pose-aware methods align geometric structures well, they face a fundamental Pose-Semantic Gap: semantically different actions can share similar skeletal geometries. While Multimodal Large Language Models (MLLMs) can reduce this ambiguity, using them for large-scale retrieval is computationally prohibitive. We propose the Structure-Semantic Decoupled Cascade (SSDC) framework, which decouples retrieval into two stages: (1) Structure-Aware Coarse Retrieval, where a lightweight model quickly filters candidates by skeletal similarity; and (2) Detective Squad Interaction, a multi-agent semantic verification module. The squad consists of a Detective for fast binary filtering, an Analyst for evidence extraction, and a Writer for semantic synthesis. Finally, we re-rank candidates by fusing the synthesized captions with structural priors. Experiments on the PAB benchmark show that SSDC achieves state-of-the-art performance by balancing efficiency and semantic reasoning.
+
+## 7. HybridKV: Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference
+
+- Authors: Bowen Zeng, Feiyang Ren, Jun Zhang, Xiaoling Gu, Ke Chen, Lidan Shou, Huan Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.984723181961156
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.594/
+- PDF: https://aclanthology.org/2026.acl-long.594.pdf
+- Local PDF: pdf/2026-07-07_07_HybridKV_ Hybrid KV Cache Compression for Efficient Multimodal Large Language Model Inference.pdf
+
+Multimodal Large Language Models (MLLMs) have advanced unified reasoning over text, images, and videos, but their inference is hindered by the rapid growth of key–value (KV) caches. Each visual input expands into thousands of tokens, causing caches to scale linearly with context length and remain resident in GPU memory throughout decoding, which leads to prohibitive memory overhead and latency even on high-end GPUs. A common solution is to compress caches under a fixed allocated budget at different granularities: token-level uniformly discards less important tokens, layer-level varies retention across layers, and head-level redistributes budgets across heads. Yet these approaches stop at allocation and overlook the heterogeneous behaviors of attention heads that require distinct compression strategies. We propose HybridKV, a hybrid KV cache compression framework that integrates complementary strategies in three stages: heads are first classified into static or dynamic types using text-centric attention; then a top-down budget allocation scheme hierarchically assigns KV budgets; finally, static heads are compressed by text-prior pruning and dynamic heads by chunk-wise retrieval. Experiments on 11 multimodal benchmarks with Qwen2.5-VL-7B show that HybridKV reduces KV cache memory by up to 7.9× and achieves 1.52× faster decoding, with almost no performance drop or even higher relative to the full-cache MLLM.
+
+## 8. TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination
+
+- Authors: Omar Naim, Krish Sharma, Niyar R Barman, Nicholas Asher
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.98385151304396
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1136/
+- PDF: https://aclanthology.org/2026.findings-acl.1136.pdf
+- Local PDF: pdf/2026-07-07_08_TELL-TALE_ Task Efficient LLMs with Task Aware Layer Elimination.pdf
+
+Large Language Models (LLMs) typically come with a fixed architecture, despite growing evidence that not all layers contribute equally to every downstream task. We introduce TALE (Task-Aware Layer Elimination), an inference-time method that improves task performance by selectively removing layers that are irrelevant or detrimental for a given task. TALE optimizes task-specific performance, yielding a task-optimized architecture without retraining. Across 9 tasks and 5 model families, under both zero-shot and few-shot settings, TALE consistently matches or surpasses baseline performance while simultaneously reducing computational costs. TALE also synergizes with fine-tuning, leading to further performance improvements. Computing TALE for a new task requires modest resources, making it a practical and deployable solution for task-specialized LLM inference.
+
+## 9. MemWeaver: Weaving Hybrid Memories for Traceable Long-Horizon Agentic Reasoning
+
+- Authors: Juexiang Ye, Xue Li, Yang Xinyu, Chengkai Huang, Lanshun Nie, Lina Yao, Dechen Zhan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9835193441897045
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.630/
+- PDF: https://aclanthology.org/2026.findings-acl.630.pdf
+- Local PDF: pdf/2026-07-07_09_MemWeaver_ Weaving Hybrid Memories for Traceable Long-Horizon Agentic Reasoning.pdf
+
+Large language model-based agents operating in long-horizon interactions require memory systems that support temporal consistency, multi-hop reasoning, and evidence-grounded reuse across sessions. Existing approaches largely rely on unstructured retrieval or coarse abstractions, which often lead to temporal conflicts, brittle reasoning, and limited traceability. We propose MemWeaver, a unified memory framework that consolidates long-term agent experiences into three interconnected components: a temporally grounded graph memory for structured relational reasoning, an experience memory that abstracts recurring interaction patterns from repeated observations, and a passage memory that preserves original textual evidence. MemWeaver employs a dual-channel retrieval strategy that jointly retrieves structured knowledge and supporting evidence to construct compact yet information-dense contexts for reasoning. Experiments on the LoCoMo benchmark demonstrate that MemWeaver substantially improves multi-hop and temporal reasoning accuracy while reducing input context length by over 95% compared to long-context baselines.
+
+## 10. CompassLLM: A Multi-Agent Approach toward Geo-Spatial Reasoning for Popular Path Query
+
+- Authors: Md. Nazmul Islam Ananto, Shamit Fatin, Mohammed Eunus Ali, Md Rizwan Parvez
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.983347980143277
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1599/
+- PDF: https://aclanthology.org/2026.findings-acl.1599.pdf
+- Local PDF: pdf/2026-07-07_10_CompassLLM_ A Multi-Agent Approach toward Geo-Spatial Reasoning for Popular Path Query.pdf
+
+The popular path query - identifying the most frequented routes between locations from historical trajectory data - has important applications in urban planning, navigation optimization, and travel recommendations. While traditional algorithms and machine learning approaches have achieved success in this domain, they typically require model training, parameter tuning, and retraining when accommodating data updates. As Large Language Models (LLMs) demonstrate increasing capabilities in spatial and graph-based reasoning, there is growing interest in exploring how these models can be applied to geo-spatial problems.We introduce CompassLLM, a novel multi-agent framework that intelligently leverages the reasoning capabilities of LLMs into the geo-spatial domain to solve the popular path query. CompassLLM employs its agents in a two-stage pipeline: the SEARCH stage that identifies popular paths, and a GENERATE stage that synthesizes novel paths in the absence of an existing one in the historical trajectory data. Experiments on real and synthetic datasets show that CompassLLM demonstrates superior accuracy in SEARCH and competitive performance in GENERATE while being cost-effective.
+
+## 11. VOYAGER: A Training Free Approach for Generating Diverse Datasets using LLMs
+
+- Authors: Avinash Amballa, Yashas Malur Saidutta, Chi-Heng Lin, Vivek Kulkarni, Srinivas Chappidi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.98254605174367
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.784/
+- PDF: https://aclanthology.org/2026.acl-long.784.pdf
+- Local PDF: pdf/2026-07-07_11_VOYAGER_ A Training Free Approach for Generating Diverse Datasets using LLMs.pdf
+
+Large language models (LLMs) are increasingly being used to generate synthetic datasets for the evaluation and training of downstream models. However, prior work has noted that such generated data lacks diversity. In this paper, we propose VOYAGER, a novel principled approach to generate diverse datasets. Our approach is iterative and directly optimizes a mathematical quantity that optimizes the diversity of the dataset using the machinery of determinantal point processes. Furthermore, our approach is training-free, applicable to closed-source models, and scalable. In addition to providing theoretical justification for the working of our method, we also demonstrate through comprehensive experiments that VOYAGER improves diversity by 1.5 - 𝟑 times compared to popular baseline approaches.
+
+## 12. TruthfulRAG: Resolving Factual-level Conflicts in Retrieval-Augmented Generation with Knowledge Graphs
+
+- Authors: Shuyi Liu, Yu-Ming Shang, Xi Zhang
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i38.40489
+- Categories: Advanced Graph Neural Networks, Topic Modeling, Multimodal Machine Learning Applications
+- Relevance: 2.9812003025556377
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i38.40489
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Retrieval-Augmented Generation (RAG) has emerged as a powerful framework for enhancing the capabilities of Large Language Models (LLMs) by integrating retrieval-based methods with generative models. As external knowledge repositories continue to expand and the parametric knowledge within models becomes outdated, a critical challenge for RAG systems is resolving conflicts between retrieved external information and LLMs' internal knowledge, which can significantly compromise the accuracy and reliability of generated content. However, existing approaches to conflict resolution typically operate at the token or semantic level, often leading to fragmented and partial understanding of factual discrepancies between LLMs' knowledge and context, particularly in knowledge-intensive tasks. To address this limitation, we propose TruthfulRAG, the first framework that leverages Knowledge Graphs (KGs) to resolve factual-level knowledge conflicts in RAG systems. Specifically, TruthfulRAG constructs KGs by systematically extracting triples from retrieved content, utilizes query-based graph retrieval to identify relevant knowledge, and employs entropy-based filtering mechanisms to precisely locate conflicting elements and mitigate factual inconsistencies, thereby enabling LLMs to generate faithful and accurate responses. Extensive experiments reveal that TruthfulRAG outperforms existing methods, effectively alleviating knowledge conflicts and improving the robustness and trustworthiness of RAG systems.
+
+## 13. InsightEval: An Expert-Curated Benchmark for Assessing Insight Discovery in LLM-Driven Data Agents
+
+- Authors: Zhenghao Zhu, Yuanfeng Song, Xing Chen, Chengzhong Liu, Cui Yakun, Caleb Chen Cao, Sirui Han, Yike Guo
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9799106571373986
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1729/
+- PDF: https://aclanthology.org/2026.findings-acl.1729.pdf
+- Local PDF: pdf/2026-07-07_13_InsightEval_ An Expert-Curated Benchmark for Assessing Insight Discovery in LLM-Driven Data Agents.pdf
+
+Data analysis has become an indispensable part of scientific research. To discover the latent knowledge and insights hidden within massive datasets, we need to perform deep exploratory analysis to realize their full value. With the advent of large language models (LLMs) and multi-agent systems, more and more researchers are making use of these technologies for insight discovery. However, there are few benchmarks for evaluating insight discovery capabilities. As one of the most comprehensive existing frameworks, InsightBench also suffers from many critical flaws: format inconsistencies, poorly conceived objectives, and redundant insights. These issues may significantly affect the quality of data and the evaluation of agents. To address these issues, we thoroughly investigate shortcomings in InsightBench and propose essential criteria for a high-quality insight benchmark. Regarding this, we develop a data-curation pipeline to construct a new dataset named InsightEval. We further introduce a novel metric to measure the exploratory performance of agents. Through extensive experiments on InsightEval, we highlight prevailing challenges in automated insight discovery and raise some key findings to guide future research in this promising direction.
+
+## 14. MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics
+
+- Authors: Yuxing Lu, Xukai Zhao, J. Ben Tamo, Micky C. Nnamdi, Rui Peng, Shuang Zeng, Xingyu Hu, Jinzhuo Wang, May Dongmei Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.979456518205997
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1506/
+- PDF: https://aclanthology.org/2026.acl-long.1506.pdf
+- Local PDF: pdf/2026-07-07_14_MetaBench_ A Multi-task Benchmark for Assessing LLMs in Metabolomics.pdf
+
+Large Language Models (LLMs) have demonstrated remarkable capabilities on general text; however, their proficiency in specialized scientific domains that require deep, interconnected knowledge remains largely uncharacterized. Metabolomics presents unique challenges with its complex biochemical pathways, heterogeneous identifier systems, and fragmented databases. To systematically evaluate LLM capabilities in this domain, we introduce MetaBench, the first benchmark for metabolomics assessment. Curated from authoritative public resources, MetaBench evaluates five capabilities essential for metabolomics research: knowledge , understanding, grounding, reasoning, and research. Our evaluation of 25 open- and closed-source LLMs reveals distinct performance patterns across metabolomics tasks: while models perform well on text generation tasks, cross-database identifier grounding remains challenging even with retrieval augmentation. Model performance also decreases on long-tail metabolites with sparse annotations. With MetaBench, we provide essential infrastructure for developing and evaluating metabolomics AI systems, enabling systematic progress toward reliable computational tools for metabolomics research.
+
+## 15. PaperScope: A Multi-Modal Multi-Document Benchmark for Agentic Deep Research Across Massive Scientific Papers
+
+- Authors: Lei Xiong, Huaying Yuan, Zheng Liu, Zhao Cao, Zhicheng Dou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9790715995755557
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.394/
+- PDF: https://aclanthology.org/2026.findings-acl.394.pdf
+- Local PDF: pdf/2026-07-07_15_PaperScope_ A Multi-Modal Multi-Document Benchmark for Agentic Deep Research Across Massive Scientific Papers.pdf
+
+Leveraging Multi-modal Large Language Models (MLLMs) to accelerate frontier scientific research is promising, yet how to rigorously evaluate such systems remains unclear. Existing benchmarks mainly focus on single-document understanding, whereas real scientific workflows require integrating evidence from multiple papers, including their text, tables, and figures. As a result, multi-modal, multi-document scientific reasoning remains underexplored and lacks systematic evaluation. To address this gap, we introduce PaperScope, a multi-modal multi-document benchmark designed for agentic deep research. PaperScope presents three advantages: (1) Structured scientific grounding. It is built on a knowledge graph of over 2,000 AI papers spanning three years, providing a structured foundation for research-oriented queries. (2) Semantically dense evidence construction. It integrates semantically related key information nodes and employs optimized random-walk article selector to sample thematically coherent paper sets, thereby ensuring adequate semantic density and task complexity. (3) Multi-task evaluation of scientific reasoning. It contains over 2,000 QA pairs across reasoning, retrieval, summarization, and problem solving, enabling evaluation of multi-step scientific reasoning. Experimental results show that even advanced systems such as OpenAI Deep Research and Tongyi Deep Research achieve limited scores on PaperScope, highlighting the difficulty of long-context retrieval and deep multi-source reasoning. PaperScope thus provides a rigorous benchmark alongside a scalable pipeline for constructing large-scale multi-modal, multi-source deep research datasets.
+
+## 16. Gap-K%: Measuring Top-1 Prediction Gap for Detecting Pretraining Data
+
+- Authors: Minseo Kwak, Jaehyung Kim
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.978584296357858
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1072/
+- PDF: https://aclanthology.org/2026.acl-long.1072.pdf
+- Local PDF: pdf/2026-07-07_16_Gap-K%_ Measuring Top-1 Prediction Gap for Detecting Pretraining Data.pdf
+
+The opacity of massive pretraining corpora in Large Language Models (LLMs) raises significant privacy and copyright concerns, making pretraining data detection a critical challenge.Existing state-of-the-art methods typically rely on token likelihoods, yet they often overlook the gap between the target token and the model’s top-1 prediction, as well as local correlations between adjacent tokens.In this work, we propose Gap-K%, a novel pretraining data detection method grounded in the optimization dynamics of LLM pretraining. By analyzing the next-token prediction objective, we observe that discrepancies between the model’s top-1 prediction and the target token induce strong gradient signals, which are explicitly penalized during training.Motivated by this, Gap-K% leverages the log probability gap between the top-1 predicted token and the target token, incorporating a sliding window strategy to capture local correlations and mitigate token-level fluctuations. Extensive experiments on the WikiMIA and MIMIR benchmarks demonstrate that Gap-K% achieves state-of-the-art performance, consistently outperforming prior baselines across various model sizes and input lengths.
+
+## 17. RepoDistill: Distilling Repository Knowledge through Compression-Aware Budget Allocation and Policy Optimization
+
+- Authors: Xin Yin, Zixiang Ding, Yiang Zhang, Qiang Wang, Rui Wang, Chao Ni, Zhe Cui
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9785174502654046
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.217/
+- PDF: https://aclanthology.org/2026.findings-acl.217.pdf
+- Local PDF: pdf/2026-07-07_17_RepoDistill_ Distilling Repository Knowledge through Compression-Aware Budget Allocation and Policy Optimization.pdf
+
+Large Language Models (LLMs) have achieved strong performance on many code-related tasks, yet they still struggle with repository-level scenarios where reasoning depends on long, noisy, and structurally complex contexts. While existing retrieval methods, including both similarity-based and graph-based approaches, can identify relevant code snippets, they often retrieve excessive contexts that intensify the "lost-in-the-middle" phenomenon and dilute model attention with redundant contexts. To address this, we present RepoDistill, a novel framework that integrates retrieval with learned budget allocation for fine-grained context compression. RepoDistill first employs a plug-and-play lightweight GraphRAG to retrieve context that follows logical flows. It then applies Compression-Aware Budget Allocation guided by Compression-Aware Policy Optimization, which formulates context management as a multi-step decision problem and learns allocation policies for contexts. Experiments show that RepoDistill outperforms baselines, achieving gains of up to +7.00 on SWE-QA, +24.4% on CoderEval, and +0.25 on LongCodeU. Furthermore, a compact 4B-parameter model trained with RepoDistill can serve as an effective context compressor for closed-source LLMs, reducing input tokens by up to 66% while maintaining comparable performance. We release our code at https://anonymous.4open.science/r/RepoDistill-12B0.
+
+## 18. Towards Effective, Stealthy, and Persistent Backdoor Attacks Targeting Graph Foundation Models
+
+- Authors: Jiayi Luo, Qingyun Sun, Lingjuan Lyu, Ziwei Zhang, Haonan Yuan, Xingcheng Fu, Jianxin Li
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i29.39593
+- Categories: Advanced Graph Neural Networks, Adversarial Robustness in Machine Learning, Explainable Artificial Intelligence (XAI)
+- Relevance: 2.97815962392205
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i29.39593
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Graph Foundation Models (GFMs) are pre-trained on diverse source domains and adapted to unseen targets, enabling broad generalization for graph machine learning. Despite that GFMs have attracted considerable attention recently, their vulnerability to backdoor attacks remains largely underexplored. A compromised GFM can introduce backdoor behaviors into downstream applications, posing serious security risks. However, launching backdoor attacks against GFMs is non-trivial due to three key challenges. (1) Effectiveness: Attackers lack knowledge of the downstream task during pre-training, complicating the assurance that triggers reliably induce misclassifications into desired classes. (2) Stealthiness: The variability in node features across domains complicates trigger insertion that remains stealthy. (3) Persistence: Downstream fine-tuning may erase backdoor behaviors by updating model parameters. To address these challenges, we propose GFM-BA, a novel Backdoor Attack model against Graph Foundation Models. Specifically, we first design a label-free trigger association module that links the trigger to a set of prototype embeddings, eliminating the need for knowledge about downstream tasks to perform backdoor injection. Then, we introduce a node-adaptive trigger generator, dynamically producing node-specific triggers, reducing the risk of trigger detection while reliably activating the backdoor. Lastly, we develop a persistent backdoor anchoring module that firmly anchors the backdoor to fine-tuning-insensitive parameters, enhancing the persistence of the backdoor under downstream adaptation. Extensive experiments demonstrate the effectiveness, stealthiness, and persistence of GFM-BA.
+
+## 19. GeoLaux: A Benchmark for Evaluating MLLMs’ Geometry Performance on Long-Step Problems Requiring Auxiliary Lines
+
+- Authors: Yumeng Fu, Jiayin Zhu, Lingling Zhang, Wenjun Wu, Bo Zhao, Shaoxuan Ma, Yushun Zhang, Jun Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9758678146031423
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1137/
+- PDF: https://aclanthology.org/2026.acl-long.1137.pdf
+- Local PDF: pdf/2026-07-07_19_GeoLaux_ A Benchmark for Evaluating MLLMs’ Geometry Performance on Long-Step Problems Requiring Auxiliary Lines.pdf
+
+Geometry problem solving (GPS) poses significant challenges for Multimodal Large Language Models (MLLMs) in diagram comprehension, knowledge application, long-step reasoning, and auxiliary line construction. However, current benchmarks lack fine-grained evaluation for long-step problems necessitating auxiliary construction. To address these limitations, we present GeoLaux, a fine-grained annotated dataset comprising 2186 calculation and proof problems. It features long-step reasoning (with an average solution length of 6.51 steps, maximum of 24 steps) and auxiliary line construction (required in 41.8% of problems). Building on the dataset, we conduct a comprehensive five-dimensional evaluation of 23 leading MLLMs. The evaluation yields three pivotal findings: First, models perform significantly worse on long-step problems compared to short-step ones, with 18 models exhibiting a performance drop of over 50%. Second, it is crucial to enhance models’ understanding, awareness, and proficiency in auxiliary line construction, which is vital for overall geometric reasoning. Third, limited answer hints effectively improve process correctness, whereas explicit answers lead models to neglect intermediate reasoning steps. These findings position GeoLaux both to benchmark MLLMs geometry reasoning abilities and to guide their improvement. Data and code are available at https://github.com/Candice-yu/GeoLaux
+
+## 20. Ground Then Rank: Revisiting Knowledge-Based VQA with Training-Free Entity Identification
+
+- Authors: Qian Ma, Qiong Wu, Zhengyi Zhou, Yao Ma
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9753320035144792
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.563/
+- PDF: https://aclanthology.org/2026.findings-acl.563.pdf
+- Local PDF: pdf/2026-07-07_20_Ground Then Rank_ Revisiting Knowledge-Based VQA with Training-Free Entity Identification.pdf
+
+Knowledge-Based Visual Question Answering (KB-VQA) requires grounding visual queries to external knowledge beyond directly observable content in images.While recent multi modal large language models (MLLMs) show strong perceptual abilities, they struggle on KB-VQA tasks requiring groundings from both fine-grained entity and evidence levels.Most existing multi-modal retrieval augmented generation (MM-RAG) methods tightly couple entity discrimination and section-level evidence ranking into a single re-ranking stage, leading to high cost and limited generalization.In this work, we revisit existing MM-RAG solutions from a workflow perspective and argue both entity-level and fact-level groundings are key bottlenecks.We observe that although MLLMs often fail under open-ended entity naming, they can better identify the correct entity when selecting from a small set of candidate names.Based on this insight, we propose a simple and training-free identify-before-answer IBA framework that decouples entity identification from section-level re-ranking.Our approach prompts an MLLM to select high-confidence entities using only candidate names, followed by an off-the-shelf textual re-ranker for evidence selection.Experiments on Encyclopedic-VQA and InfoSeek show that our method consistently outperforms fine-tuned multi-modal re-ranking baselines while reducing training and inference complexity.Additional analyses reveal that the improvements arise not only from better entity identification, but also from selecting more informative evidence once correct entity is fixed.Our implementation is made public to ease reproducibility
+
+## 21. Nature-Inspired Population-Based Evolution of Large Language Models
+
+- Authors: Yiqun Zhang, Peng Ye, Xiaocui Yang, Shi Feng, Shufei Zhang, Lei Bai, Wanli Ouyang, Shuyue Hu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9749266554860276
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.2044/
+- PDF: https://aclanthology.org/2026.acl-long.2044.pdf
+- Local PDF: pdf/2026-07-07_21_Nature-Inspired Population-Based Evolution of Large Language Models.pdf
+
+Evolution, the engine behind the survival and growth of life on Earth, operates through the population-based process of reproduction. Inspired by this principle, this paper formally defines a newly emerging problem: the population-based evolution of large language models (LLMs). We introduce a novel framework that starts with a population of parent LLMs and allows this population to evolve through four key operations: (i) crossover, merging the weights of different parents to create offspring LLMs, (ii) mutation, introducing small, random changes to model weights to foster diversity, (iii) selection, prioritizing high-performing models, and (iv) succession, transferring the learned experience from parent to offspring LLMs. With only 200 samples per new task, the LLM population evolves rapidly to adapt to the task at hand, without any gradients. Experiments on 12 datasets show that our framework consistently outperforms existing multi-LLM merging and adaptation methods, achieving relative performance gains of up to 54.8 over the best LLM in the initial population. Moreover, our framework allows for (i) the evolution of LLMs across multiple new tasks simultaneously, (ii) scaling effectively with populations of up to 40 LLMs, and (iii) even zero-shot generalization to unseen held-out tasks. Code: https://github.com/ZhangYiqun018/GENOME
+
+## 22. Probing Functional Correctness in Diffusion Language Models
+
+- Authors: Guan-Ming Chiu, Jeng-Yue Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9734052016351002
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-srw.15/
+- PDF: https://aclanthology.org/2026.acl-srw.15.pdf
+- Local PDF: pdf/2026-07-07_22_Probing Functional Correctness in Diffusion Language Models.pdf
+
+Diffusion language models generate text by iteratively denoising all tokens in parallel, but when and where their hidden states encode whether the output will be functionally correct remains unknown.We present the first probing study of DLM internals, training linear classifiers on hidden states to predict functional correctness.Across two models (LLaDA-8B, Dream-7B) and four tasks, we find that DLMs uniquely accumulate correctness signal across denoising steps (AUC gains of 0.08–0.11 on reasoning tasks), absent in single-pass AR decoding. However, step-0 signal reflects prompt difficulty rather than diffusion-specific computation. Signal emergence is task-dependent: structural tasks show flat profiles while reasoning tasks show gradual buildup. The two models exhibit distinct layer dynamics, with LLaDA concentrating signal in upper layers while Dream redistributes toward lower layers. We further show that probe confidence can identify likely failures, enabling selective generation that avoids 36–98% of wasted compute.
+
+## 23. Neural Chain-of-Thought Search: Searching the Optimal Reasoning Path to Enhance Large Language Models
+
+- Authors: Guoming Ling, Zhongzhan Huang, Yupei Lin, Junxin Li, Shanshan Zhong, Hefeng Wu, Liang Lin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9727579030907147
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1149/
+- PDF: https://aclanthology.org/2026.findings-acl.1149.pdf
+- Local PDF: pdf/2026-07-07_23_Neural Chain-of-Thought Search_ Searching the Optimal Reasoning Path to Enhance Large Language Models.pdf
+
+Chain-of-Thought reasoning has significantly enhanced the problem-solving capabilities of Large Language Models. Unfortunately, current models generate reasoning steps sequentially without foresight, often becoming trapped in suboptimal reasoning paths with redundant steps. In contrast, we introduce Neural Chain-of-Thought Search (NCoTS), a framework that reformulates reasoning as a dynamic search for the optimal thinking strategy. By quantitatively characterizing the solution space, we reveal the existence of sparse superior reasoning paths that are simultaneously more accurate and concise than standard outputs. Our method actively navigates towards these paths by evaluating candidate reasoning operators using a dual-factor heuristic that optimizes for both correctness and computational cost. Consequently, NCoTS achieves a Pareto improvement across diverse reasoning benchmarks, boosting accuracy by over 3.5% while reducing generation length by over 22%. We will make our code and data publicly available.
+
+## 24. MDocRAG-RL: Empowering Multi-Modal Document RAG via Complex Visual Reasoning with Reinforcement Learning
+
+- Authors: Zhongyu Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9726506462928826
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.420/
+- PDF: https://aclanthology.org/2026.findings-acl.420.pdf
+- Local PDF: pdf/2026-07-07_24_MDocRAG-RL_ Empowering Multi-Modal Document RAG via Complex Visual Reasoning with Reinforcement Learning.pdf
+
+While Retrieval-Augmented Generation(RAG) enhances multi-modal large language models(MLLMs) by introducing external knowledge, existing RAG systems still face significant limitations when dealing with complex visual reasoning. On one hand, MLLMs, being generative models, produce suboptimal embeddings for retrieval tasks. On the other hand, existing methods naively insert images into context without adequate visual perception, thereby limiting reasoning capabilities. To address these challenges, we propose MDocRAG-RL, a novel RAG framework for complex visual reasoning. We design specialized pre-training and fine-tuning tasks to enable MLLMs to compress visual document representations and align textual and visual embeddings for improved retrieval efficiency. Additionally, we design a visual perception action space for the generator that allows progressive coarse-to-fine information acquisition from visually-rich documents. Furthermore, we develop a reinforcement learning framework to enhance the complex visual reasoning capability of the RAG system. Extensive experiments on multiple challenging benchmarks demonstrate the significant effectiveness of our approach, achieving state-of-the-art performance across various benchmarks.
+
+## 25. SPARKLE: A Structured and Plug-and-play Agentic Retrieval Policy for Adaptive RAG Models
+
+- Authors: Jinyuan Fang, Zaiqiao Meng, Craig Macdonald
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.972485280459647
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1793/
+- PDF: https://aclanthology.org/2026.acl-long.1793.pdf
+- Local PDF: pdf/2026-07-07_25_SPARKLE_ A Structured and Plug-and-play Agentic Retrieval Policy for Adaptive RAG Models.pdf
+
+Adaptive retrieval-augmented generation (RAG) models offer an effective approach for integrating external knowledge. However, existing methods either rely on frozen large language models (LLMs) without explicit supervision or require costly LLM finetuning. Therefore, we propose SPARKLE, a structured and plug-and-play agentic retrieval policy where an additional proxy model is introduced to control the retrieval process. The proxy model leverages knowledge graph-based reasoning to make retrieval decisions in a structured manner, while operating independently of the retriever and the LLM. This plug-and-play design allows SPARKLE to generalise across different retrievers and LLMs. SPARKLE is optimised via reinforcement learning (RL), treating the retriever and the LLM as part of the environment. To enable more effective exploration during RL training, we further introduce a binary tree-structured rollout strategy. Experiments on three in-domain and four out-of-domain QA benchmarks show that SPARKLE outperforms state-of-the-art adaptive RAG baselines, achieving average improvements of 9.17% and 2.85%, respectively.
+
+## 26. Jakiro: Boosting Speculative Decoding via Decoupled MoE
+
+- Authors: Haiduo Huang, Fuwei Yang, Zhenhua Liu, Pengju Ren
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.972281283354086
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.487/
+- PDF: https://aclanthology.org/2026.acl-long.487.pdf
+- Local PDF: pdf/2026-07-07_26_Jakiro_ Boosting Speculative Decoding via Decoupled MoE.pdf
+
+Speculative decoding has emerged as a promising technique to accelerate large language model inference by employing a smaller draft model to predict multiple tokens, which are then verified in parallel by the larger target model. However, existing approaches face a fundamental limitation: candidates at the same tree layer share identical feature representations, constraining diversity and diminishing overall effectiveness. We identify this as an intra-layer coupling problem that limits prediction accuracy. To address this challenge, we propose Jakiro, which introduces decoupled Mixture of Experts (MoE) into the draft model, enabling different experts to generate diverse candidate tokens from distinct feature spaces. We further propose Contrastive-Enhanced Parallel Decoding (CEPD) that combines autoregressive and parallel decoding with a contrastive mechanism to reduce inference steps while maintaining accuracy. Extensive experiments across diverse models and tasks demonstrate that Jakiro achieves significant speedups over strong baselines, with particularly notable improvements in non-greedy decoding scenarios where token diversity is crucial.
+
+## 27. ConSensus: Multi-Agent Collaboration for Multimodal Sensing
+
+- Authors: Hyungjun Yoon, Mohammad Malekzadeh, Sung-Ju Lee, Fahim Kawsar, Lorena Qendro
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9717884754865134
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1649/
+- PDF: https://aclanthology.org/2026.findings-acl.1649.pdf
+- Local PDF: pdf/2026-07-07_27_ConSensus_ Multi-Agent Collaboration for Multimodal Sensing.pdf
+
+Large language models (LLMs) are increasingly grounded in sensor data to perceive and reason about human physiology and the physical world. However, accurately interpreting heterogeneous multimodal sensor data remains a fundamental challenge. We show that a single monolithic LLM often fails to reason coherently across modalities, leading to incomplete interpretations and prior-knowledge bias. We introduce ConSensus, a training-free multi-agent collaboration framework that decomposes multimodal sensing tasks into specialized, modality-aware agents. To aggregate agent-level interpretations, we propose a hybrid fusion mechanism that balances semantic aggregation, which enables cross-modal reasoning and contextual understanding, with statistical consensus, which provides robustness through agreement across modalities. While each approach has complementary failure modes, their combination enables reliable inference under sensor noise and missing data. We evaluate ConSensus on five diverse multimodal sensing benchmarks, demonstrating an average accuracy improvement of 7.1% over the single-agent baseline. Furthermore, ConSensus matches or exceeds the performance of iterative multi-agent debate methods while achieving a 12.7 times reduction in average fusion token cost through a single-round hybrid fusion protocol, yielding a robust and efficient solution for real-world multimodal sensing tasks. The source code is available at https://github.com/nokia/multi-agent-collaboration-for-multimodal-sensing.
+
+## 28. MaskTab: Scalable Masked Tabular Pretraining with Scaling Laws and Distillation for Industrial Classification
+
+- Authors: Bo Zheng, Yudong Chen, Zihua Xiong, Shuai Fang, Peidong He, Yang Yang, Sheng Guo
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9714682434953006
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2053/
+- PDF: https://aclanthology.org/2026.findings-acl.2053.pdf
+- Local PDF: pdf/2026-07-07_28_MaskTab_ Scalable Masked Tabular Pretraining with Scaling Laws and Distillation for Industrial Classification.pdf
+
+Tabular data forms the backbone of high-stakes decision systems in finance, healthcare, and beyond. Yet industrial tabular datasets are inherently difficult: high-dimensional, riddled with missing entries, and rarely labeled at scale. While foundation models have revolutionized vision and language, tabular learning still leans on handcrafted features and lacks a general self-supervised framework. We present MaskTab, a unified pre-training framework designed specifically for industrial-scale tabular data. MaskTab encodes missing values via dedicated learnable tokens, enabling the model to distinguish structural absence from random dropout. It jointly optimizes a hybrid supervised pre-training scheme—utilizing a twin-path architecture to reconcile masked reconstruction with task-specific supervision—and an MoE-augmented loss that adaptively routes features through specialized subnetworks. On industrial-scale benchmarks, it achieves +5.04% AUC and +8.28% KS over prior art under rigorous scaling. Moreover, its representations distill effectively into lightweight models, yielding +2.55% AUC and +4.85% KS under strict latency and interpretability constraints, while improving robustness to distribution shifts. Our work demonstrates that tabular data admits a foundation-model treatment—when its structural idiosyncrasies are respected.
+
+## 29. Understanding In-Context Learning Beyond Transformers: An Investigation of State Space and Hybrid Architectures
+
+- Authors: Shenran Wang, Timothy Tin-Long Tse, Jian Zhu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9712672158426727
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.39/
+- PDF: https://aclanthology.org/2026.findings-acl.39.pdf
+- Local PDF: pdf/2026-07-07_29_Understanding In-Context Learning Beyond Transformers_ An Investigation of State Space and Hybrid Architectures.pdf
+
+We perform in-depth evaluations of in-context learning (ICL) on state-of-the-art transformer, state-space, and hybrid large language models over two categories of knowledge-based ICL tasks. Using a combination of behavioral probing and intervention-based methods, we have discovered that, while LLMs of different architectures can behave similarly in task performance, their internals could remain different. We discover that function vectors (FVs) responsible for ICL are primarily located in the self-attention and Mamba layers, and speculate that Mamba2 uses a different mechanism from FVs to perform ICL. FVs are more important for ICL involving parametric knowledge retrieval, but not for contextual knowledge understanding. Our work contributes to a more nuanced understanding across architectures and task types. Methodologically, our approach also highlights the importance of combining both behavioural and mechanistic analyses to investigate LLM capabilities.
+
+## 30. Rethinking Parameter Sharing for LLM Fine-Tuning with Multiple LoRAs
+
+- Authors: Hao Ban, Kaiyi Ji
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.9709323082845653
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.625/
+- PDF: https://aclanthology.org/2026.findings-acl.625.pdf
+- Local PDF: pdf/2026-07-07_30_Rethinking Parameter Sharing for LLM Fine-Tuning with Multiple LoRAs.pdf
+
+Large language models are often adapted using parameter-efficient techniques such as Low-Rank Adaptation (LoRA), formulated as y = W 0 x + BAx , where W 0 is the pre-trained parameters and x is the input to the adapted layer. While multi-adapter extensions often employ multiple LoRAs, prior studies suggest that the inner A matrices are highly similar during training and thus suitable for sharing. We revisit this phenomenon and find that this similarity is largely attributable to the identical initialization rather than shared knowledge, with B playing a more critical role in knowledge encoding and transfer. Motivated by these insights, we propose **ALoRA**, an asymmetric multi-LoRA design with multiple A matrices and a single shared B in multi-task fine-tuning, and **Fed-ALoRA**, which shares B across clients in federated fine-tuning under both homogeneous and heterogeneous settings, through a novel matrix decomposition strategy to accommodate heterogeneous ranks across clients. Experiments on commonsense reasoning, math reasoning, multi-task NLP dataset, and federated NLP dataset demonstrate that our methods achieve more balanced performance across tasks with comparable or superior average accuracy relative to existing multi-LoRA approaches. The code is available at https://github.com/OptMN-Lab/ALoRA.
