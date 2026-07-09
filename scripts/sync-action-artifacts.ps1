@@ -75,9 +75,26 @@ function Invoke-GhJson {
 
     $lastOutput = ""
     for ($attempt = 1; $attempt -le $MaxAttempts; $attempt++) {
-        $output = & gh @Arguments 2>&1
+        $output = @()
+        $exitCode = 1
+        $previousErrorActionPreference = $ErrorActionPreference
+        $ErrorActionPreference = "Continue"
+        try {
+            $output = & gh @Arguments 2>&1
+            $exitCode = $LASTEXITCODE
+        }
+        catch {
+            $output = @($_.Exception.Message)
+            if ($LASTEXITCODE -ne $null) {
+                $exitCode = $LASTEXITCODE
+            }
+        }
+        finally {
+            $ErrorActionPreference = $previousErrorActionPreference
+        }
+
         $lastOutput = ($output | Out-String).Trim()
-        if ($LASTEXITCODE -eq 0) {
+        if ($exitCode -eq 0) {
             return $output | ConvertFrom-Json
         }
 
