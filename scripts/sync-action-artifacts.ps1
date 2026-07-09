@@ -68,13 +68,29 @@ function Save-State {
 }
 
 function Invoke-GhJson {
-    param([string[]]$Arguments)
+    param(
+        [string[]]$Arguments,
+        [int]$MaxAttempts = 4
+    )
 
-    $output = & gh @Arguments
-    if ($LASTEXITCODE -ne 0) {
-        throw "GitHub CLI failed: gh $($Arguments -join ' ')"
+    $lastOutput = ""
+    for ($attempt = 1; $attempt -le $MaxAttempts; $attempt++) {
+        $output = & gh @Arguments 2>&1
+        $lastOutput = ($output | Out-String).Trim()
+        if ($LASTEXITCODE -eq 0) {
+            return $output | ConvertFrom-Json
+        }
+
+        if ($attempt -lt $MaxAttempts) {
+            $waitSeconds = [Math]::Min(60, 5 * $attempt)
+            Write-Host "GitHub CLI failed on attempt $attempt/$MaxAttempts: gh $($Arguments -join ' ')"
+            if ($lastOutput) { Write-Host $lastOutput }
+            Write-Host "Retrying in $waitSeconds seconds..."
+            Start-Sleep -Seconds $waitSeconds
+        }
     }
-    return $output | ConvertFrom-Json
+
+    throw "GitHub CLI failed after $MaxAttempts attempts: gh $($Arguments -join ' ')`n$lastOutput"
 }
 
 function Format-FileSize {
