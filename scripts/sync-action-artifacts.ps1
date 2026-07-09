@@ -83,7 +83,7 @@ function Invoke-GhJson {
 
         if ($attempt -lt $MaxAttempts) {
             $waitSeconds = [Math]::Min(60, 5 * $attempt)
-            Write-Host "GitHub CLI failed on attempt $attempt/$MaxAttempts: gh $($Arguments -join ' ')"
+            Write-Host "GitHub CLI failed on attempt $attempt/${MaxAttempts}: gh $($Arguments -join ' ')"
             if ($lastOutput) { Write-Host $lastOutput }
             Write-Host "Retrying in $waitSeconds seconds..."
             Start-Sleep -Seconds $waitSeconds
