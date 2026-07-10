@@ -41,6 +41,20 @@
     "title": "FORGE: Towards Functional Tool-Use Generalization via Keypoint Trajectory Reasoning",
     "url": "http://arxiv.org/abs/2607.05780v1"
   },
+  "title:learningsocialnormsenhancescompatibilityindynamichumanaicoordination": {
+    "doi": null,
+    "sent_date": "2026-07-10",
+    "source": "arxiv",
+    "title": "Learning social norms enhances compatibility in dynamic human-AI coordination",
+    "url": "http://arxiv.org/abs/2607.07021v1"
+  },
+  "title:mmagentr2learningtorerankandrejectforagenticmrag": {
+    "doi": null,
+    "sent_date": "2026-07-10",
+    "source": "arxiv",
+    "title": "MMAgent-R$^2$: Learning to Rerank and Reject for Agentic mRAG",
+    "url": "http://arxiv.org/abs/2607.07383v1"
+  },
   "title:pointasskeletonaccumulatedpointcloudenhancedautoregressivegenerationforclosedloopautonomousdrivingsimulation": {
     "doi": null,
     "sent_date": "2026-07-09",
@@ -54,5 +68,12 @@
     "source": "arxiv",
     "title": "Rethinking Speech-LLM Integration for ASR: Effective Joint Speech-Text Training by Interleaving",
     "url": "http://arxiv.org/abs/2607.01733v1"
+  },
+  "title:spacellagentaselfevolvingllmbasedmultiagentframeworkfortrajectoryanalysis": {
+    "doi": null,
+    "sent_date": "2026-07-10",
+    "source": "arxiv",
+    "title": "SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis",
+    "url": "http://arxiv.org/abs/2607.07467v1"
   }
 }
