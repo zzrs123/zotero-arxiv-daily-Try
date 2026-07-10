@@ -1,7 +1,7 @@
 # Researcher Tracking - 2026-07-10 (daily)
 
-Total new tracked papers: 3
-Highlighted papers: 3
+Total new tracked papers: 4
+Highlighted papers: 4
 
 ## 1. Learning social norms enhances compatibility in dynamic human-AI coordination
 
@@ -44,3 +44,17 @@ Spatial and Single-cell transcriptomics are transformative in deciphering cellul
 - Article: http://arxiv.org/abs/2607.07383v1
 
 Knowledge-based Visual Question Answering (KB-VQA) requires models to retrieve visual entities matching the query image from large-scale encyclopedic knowledge bases and answer related questions. Existing multimodal Retrieval Augmented Generation (mRAG) methods rely on global visual features to match candidate entities, yet when the knowledge base contains numerous visually similar entities, the retriever struggles to distinguish them, populating the candidate set with visually similar but factually mismatched distractors. Since subsequent processing steps such as noise filtering are also confined to this fixed candidate set, errors from failed retrieval inevitably propagate to the final answer. To address these challenges, we propose MMAgent-R$^2$, an agentic mRAG framework that integrates visual reranking and active rejection as its internal verification mechanism. Visual reranking directly compares query and candidate images, capturing discriminative details beyond textual descriptions to precisely identify the target entity among similar candidates; active rejection discards unreliable results and retrieves additional candidates when no confident match is found, moving beyond the fixed candidate pool. We design a composite reward function with step-level verification rewards and achieve joint optimization of external retrieval, internal verification, and answer generation via GRPO training. Experiments on InfoSeek, E-VQA, and MMhops demonstrate that \ours{} achieves state-of-the-art performance, with particularly notable advantages in challenging retrieval scenarios and complex multi-image multi-hop reasoning tasks.
+
+## 4. UniRef-UAV: A Multimodal Benchmark for Universal Referring in UAV Imagery
+
+- Authors: Haibin Tian, Huichao Xie, Xuelin Qian, Ruitao Lu, Junwei Han, Dingwen Zhang
+- Source hits: arxiv
+- Matched researchers: Junwei Han
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-07-09
+- Article: http://arxiv.org/abs/2607.08267v1
+
+Unmanned aerial vehicles (UAVs) increasingly rely on visual grounding capabilities to localize task-relevant targets from diverse instructions in complex aerial scenes. Existing referring expression comprehension (REC) benchmarks and methods, however, are largely built around text-only queries and single-object outputs, which limits their applicability to practical UAV scenarios involving reference images, multimodal instructions, absent targets, and multiple valid target instances. To address this gap, we introduce \emph{Universal Referring}, a generalized UAV referring task that jointly expands the query modality and the output cardinality. We construct \emph{UniRef-UAV}, a multimodal benchmark that supports text-only, image-only, and text+image queries with modality-dependent target cardinality, where text-only and text+image queries admit no-target, single-target, and multi-target grounding while image-only queries focus on existence-aware single-instance grounding. It also provides in-domain and cross-domain evaluation protocols for visual-query generalization. We further present \emph{UAV-URNet}, a detection-style baseline that maps heterogeneous queries into a shared query space and predicts variable-size target sets through set prediction. Extensive experiments show that UAV-URNet provides a stable and reproducible baseline with more consistent no-target discrimination and a more lightweight, reproducible implementation than large general-purpose MLLMs. Additional domain analysis, query-representation analysis, and ablation studies demonstrate that multimodal queries help reduce visual-query ambiguity and promote a more unified query--target alignment space. The annotations, visual query crops/images, train/validation/test splits, evaluation scripts, and baseline code will be made publicly available to facilitate reproducible research.

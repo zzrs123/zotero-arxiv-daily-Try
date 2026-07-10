@@ -75,5 +75,12 @@
     "source": "arxiv",
     "title": "SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis",
     "url": "http://arxiv.org/abs/2607.07467v1"
+  },
+  "title:unirefuavamultimodalbenchmarkforuniversalreferringinuavimagery": {
+    "doi": null,
+    "sent_date": "2026-07-10",
+    "source": "arxiv",
+    "title": "UniRef-UAV: A Multimodal Benchmark for Universal Referring in UAV Imagery",
+    "url": "http://arxiv.org/abs/2607.08267v1"
   }
 }
