@@ -163,7 +163,14 @@ function Sync-WorkflowArtifacts {
         [hashtable]$State
     )
 
-    $runs = @((Get-RecentRuns -WorkflowFile $WorkflowFile -Statuses $RunStatuses))
+    try {
+        $runs = @((Get-RecentRuns -WorkflowFile $WorkflowFile -Statuses $RunStatuses))
+    }
+    catch {
+        Write-Host "Skipping $WorkflowFile because recent runs could not be listed after retries."
+        Write-Host $_.Exception.Message
+        return
+    }
     if ($runs.Count -eq 0) {
         Write-Host "No recent matching runs found for $WorkflowFile."
         return
@@ -188,7 +195,7 @@ function Sync-WorkflowArtifacts {
         foreach ($artifact in $artifacts) {
             $artifactId = [string]$artifact.id
             if (-not $ForceDownload -and $State.downloaded_artifact_ids -contains $artifactId) {
-                Write-Host "  Run $($run.databaseId): artifact $artifactId already synced, skipping."
+                Write-Host "  Run $($run.databaseId): artifact $artifactId already downloaded according to .local-state, skipping local copy. Use -ForceDownload to re-download PDFs/CSV."
                 continue
             }
 
@@ -196,34 +203,50 @@ function Sync-WorkflowArtifacts {
             Write-Host "  Run $($run.databaseId): downloading $ArtifactName ($sizeStr)..."
 
             $staging = Join-Path $tempRoot "$($run.databaseId)-$artifactId"
-            Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
-            New-Item -ItemType Directory -Force -Path $staging | Out-Null
-
-            $psi = [System.Diagnostics.ProcessStartInfo]::new()
-            $psi.FileName = (Get-Command gh).Source
-            $psi.Arguments = "run download $($run.databaseId) --repo $Repository --name $ArtifactName --dir `"$staging`""
-            $psi.UseShellExecute = $false
-            $psi.CreateNoWindow = $true
-            $psi.RedirectStandardError = $true
-            $psi.RedirectStandardOutput = $true
-
-            $proc = [System.Diagnostics.Process]::Start($psi)
-            $ok = $proc.WaitForExit([int]($DownloadTimeoutMinutes * 60 * 1000))
-            $stdout = $proc.StandardOutput.ReadToEnd()
-            $stderr = $proc.StandardError.ReadToEnd()
-
-            if (-not $ok) {
-                Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+            $downloaded = $false
+            $downloadAttempts = 3
+            for ($downloadAttempt = 1; $downloadAttempt -le $downloadAttempts; $downloadAttempt++) {
                 Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
-                Write-Host "  Run $($run.databaseId): download timed out after $DownloadTimeoutMinutes min, skipping."
-                continue
+                New-Item -ItemType Directory -Force -Path $staging | Out-Null
+
+                $psi = [System.Diagnostics.ProcessStartInfo]::new()
+                $psi.FileName = (Get-Command gh).Source
+                $psi.Arguments = "run download $($run.databaseId) --repo $Repository --name $ArtifactName --dir `"$staging`""
+                $psi.UseShellExecute = $false
+                $psi.CreateNoWindow = $true
+                $psi.RedirectStandardError = $true
+                $psi.RedirectStandardOutput = $true
+
+                $proc = [System.Diagnostics.Process]::Start($psi)
+                $ok = $proc.WaitForExit([int]($DownloadTimeoutMinutes * 60 * 1000))
+                $stdout = $proc.StandardOutput.ReadToEnd()
+                $stderr = $proc.StandardError.ReadToEnd()
+
+                if (-not $ok) {
+                    Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+                    Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
+                    Write-Host "  Run $($run.databaseId): download attempt $downloadAttempt/$downloadAttempts timed out after $DownloadTimeoutMinutes min."
+                }
+                elseif ($proc.ExitCode -eq 0) {
+                    $downloaded = $true
+                    break
+                }
+                else {
+                    Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
+                    Write-Host "  Run $($run.databaseId): download attempt $downloadAttempt/$downloadAttempts failed (exit $($proc.ExitCode))."
+                    if ($stdout) { Write-Host $stdout.Trim() }
+                    if ($stderr) { Write-Host $stderr.Trim() }
+                }
+
+                if ($downloadAttempt -lt $downloadAttempts) {
+                    $waitSeconds = [Math]::Min(60, 10 * $downloadAttempt)
+                    Write-Host "  Run $($run.databaseId): retrying download in $waitSeconds seconds..."
+                    Start-Sleep -Seconds $waitSeconds
+                }
             }
 
-            if ($proc.ExitCode -ne 0) {
-                Remove-Item -LiteralPath $staging -Recurse -Force -ErrorAction SilentlyContinue
-                Write-Host "  Run $($run.databaseId): download failed (exit $($proc.ExitCode)), skipping."
-                if ($stdout) { Write-Host $stdout.Trim() }
-                if ($stderr) { Write-Host $stderr.Trim() }
+            if (-not $downloaded) {
+                Write-Host "  Run $($run.databaseId): download failed after $downloadAttempts attempts, skipping."
                 continue
             }
 
