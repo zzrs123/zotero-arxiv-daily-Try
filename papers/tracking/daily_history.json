@@ -20,6 +20,13 @@
     "title": "Anatomy-Guided Residual Motion Diffusion for Controllable 4D Cardiac MRI Synthesis",
     "url": "http://arxiv.org/abs/2606.26764v1"
   },
+  "title:beyondtheeyeefficientmultimodalreasoningviaselfregulatedimplicitvisualtools": {
+    "doi": null,
+    "sent_date": "2026-07-14",
+    "source": "arxiv",
+    "title": "Beyond the Eye: Efficient Multimodal Reasoning via Self-Regulated Implicit Visual Tools",
+    "url": "http://arxiv.org/abs/2607.11106v1"
+  },
   "title:decouplingsemanticsandgeometricgroundingspatialvisualpromptsforlanguageconditionedimitationlearning": {
     "doi": null,
     "sent_date": "2026-06-26",
@@ -33,6 +40,13 @@
     "source": "arxiv",
     "title": "Dual Sparse Aggregation Transformer for Multispectral Object Detection",
     "url": "http://arxiv.org/abs/2606.31015v1"
+  },
+  "title:fasttpsanoptimizedmethodforllmtokenphaseforaiaccelerators": {
+    "doi": null,
+    "sent_date": "2026-07-14",
+    "source": "arxiv",
+    "title": "FastTPS: An Optimized Method for LLM Token Phase for AI accelerators",
+    "url": "http://arxiv.org/abs/2607.11211v1"
   },
   "title:forgetowardsfunctionaltoolusegeneralizationviakeypointtrajectoryreasoning": {
     "doi": null,
@@ -54,6 +68,13 @@
     "source": "arxiv",
     "title": "MMAgent-R$^2$: Learning to Rerank and Reject for Agentic mRAG",
     "url": "http://arxiv.org/abs/2607.07383v1"
+  },
+  "title:muxusctanoiserobustneuralnetworkforultrasoundcomputedtomography": {
+    "doi": null,
+    "sent_date": "2026-07-14",
+    "source": "arxiv",
+    "title": "MUX-USCT: A Noise-Robust Neural Network for Ultrasound Computed Tomography",
+    "url": "http://arxiv.org/abs/2607.10648v1"
   },
   "title:pointasskeletonaccumulatedpointcloudenhancedautoregressivegenerationforclosedloopautonomousdrivingsimulation": {
     "doi": null,
