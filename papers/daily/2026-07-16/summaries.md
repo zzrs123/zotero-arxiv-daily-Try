@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-07-16
+
+## 1. Conditional Distribution Learning for Graph Classification
+
+- Authors: Jie Chen, Hua Mao, Chuanbin Liu, Zhu Wang, Xi Peng
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i24.39097
+- Categories: Advanced Graph Neural Networks, Machine Learning in Healthcare, Domain Adaptation and Few-Shot Learning
+- Relevance: 3.868032172822431
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i24.39097
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Leveraging the diversity and quantity of data provided by various graph-structured data augmentations while preserving intrinsic semantic information is challenging. Additionally, successive layers in graph neural network (GNN) tend to produce more similar node embeddings, while graph contrastive learning aims to increase the dissimilarity between negative pairs of node embeddings. This inevitably results in a conflict between the message-passing mechanism (MPM) of GNNs and the contrastive learning (CL) of negative pairs via intraviews. In this paper, we propose a conditional distribution learning (CDL) method that learns graph representations from graph-structured data for semisupervised graph classification. Specifically, we present an end-to-end graph representation learning model to align the conditional distributions of weakly and strongly augmented features over the original features. This alignment enables the CDL model to effectively preserve intrinsic semantic information when both weak and strong augmentations are applied to graph-structured data. To avoid the conflict between the MPM and the CL of negative pairs, positive pairs of node representations are retained for measuring the similarity between the original features and the corresponding weakly augmented features. Extensive experiments with several benchmark graph datasets demonstrate the effectiveness of the proposed CDL method.
+
+## 2. Differentiable Clone-Structured Causal Graphs for End-to-End Cognitive Map Learning from Image Sequences
+
+- Authors: Arash Nikzad, Sasan Sarbishegi, Ali Dasmeh, Muhammad Asif, Parsa Gharavi, Erik Husom, Sagar Sen, Andrew B. Lehr, Olivier Penacchio, Ana Clemente, Tristan M. Stöber
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-14
+- DOI: Unavailable
+- Categories: cs.LG, q-bio.NC
+- Relevance: 3.7709296286730023
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12382v1
+- PDF: https://arxiv.org/pdf/2607.12382v1
+- Local PDF: pdf/2026-07-16_02_Differentiable Clone-Structured Causal Graphs for End-to-End Cognitive Map Learning from Image Sequences.pdf
+
+How can an agent build a structured map of its world from nothing but an ongoing sequence of raw sensory input and its own movements, especially when natural variation means exact sensory patterns rarely repeat? The Clone-Structured Causal Graph algorithm (CSCG), a normative hippocampus model, shows how an interpretable map can be learned from aliased observations. However, CSCG requires a predefined discrete alphabet, and its expectation-maximization formulation is not easily combined with existing neural network modules, preventing the end-to-end processing of raw image sequences. We remove this barrier by reformulating CSCG as a single, fully differentiable module, gradCSCG, and coupling it to a learned vector-quantized variational autoencoder (VQ-VAE) perceptual front-end. A soft emission forward pass allows the map-learning objective to flow back into perception, while a set of loss-balancing mechanisms mitigates module collapse during joint training. We demonstrate, first, that gradient training reproduces CSCG's results on original symbolic grid worlds by recovering room topology from heavily aliased observations. Second, we show that map recovery remains robust on MNIST image sequences, where each visit to a location yields a newly sampled image of its assigned digit. Across four heavily aliased environments, the end-to-end pipeline successfully uncovers the underlying adjacency graph with high edge precision and recall, directly from visual input. This work provides a proof of principle that CSCG can serve as a composable building block in a deep learning architecture.
+
+## 3. Trimodal, uncertainty-guided whole-slide framework for genome-scale spatial expression and image-only virtual perturbation in cancer cohorts
+
+- Authors: Zijun Wang, Chongyi Yang, Xiaoya Tang, Enzhi Yin, Yuxin Yao, Yuejun Luo, Jie He, Nan Sun
+- Source: openalex
+- Venue type: journal
+- Journal: Genome Medicine
+- Publication status: published
+- Publication date: 2026-07-14
+- DOI: https://doi.org/10.1186/s13073-026-01713-y
+- Categories: Single-cell and spatial transcriptomics, Ferroptosis and cancer prognosis, AI in cancer detection
+- Relevance: 3.6715643654171313
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1186/s13073-026-01713-y
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract Spatial transcriptomics is powerful but costly; hematoxylin and eosin (H&amp;E) images are routine. We present Coladan-human3K, the largest human spatial transcriptomics resource (~ 3,000 profiles), and Coladan, a trimodal (image, language, spatial-gene) whole-slide framework predicting genome-wide genes per spot with calibrated uncertainty while preserving foundation-model representations. Across 32 Visium datasets, Coladan improves Pearson correlation from 0.230 to 0.431 (~ 1.9 ×), shows pathway-level enrichment consistency, and transfers zero-shot to VisiumHD and spot-level Xenium. Classification token (CLS) embedding-only perturbation performs on par with expression-based baselines, enabling image-only virtual perturbation without measured expression, illustrated on normal and cancer prostate sections for in-situ hypothesis generation.
+
+## 4. Scalable Optimal Transport Algorithm for Network Alignment
+
+- Authors: Elaheh Hassani, Durga Mandarapu, Qi Yu, Hanghang Tong, Ariful Azad
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-11
+- DOI: Unavailable
+- Categories: cs.LG, cs.DC
+- Relevance: 3.50046426302897
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.11952v1
+- PDF: https://arxiv.org/pdf/2607.11952v1
+- Local PDF: pdf/2026-07-16_04_Scalable Optimal Transport Algorithm for Network Alignment.pdf
+
+Network alignment identifies node correspondences across different networks and is a fundamental primitive in many data science applications, including social network analysis, fraud detection, and knowledge graph integration. However, state-of-the-art network alignment methods often achieve high accuracy by repeatedly constructing and updating dense matrices, sacrificing scalability in the process. To address this scalability limitation without compromising alignment accuracy, we present FastAlign, a scalable, sparsity-aware framework for optimal transport-based network alignment. Rather than introducing a new alignment model, FastAlign preserves the original OT formulation and reinterprets its computation as a set of recurring mixed sparse-dense operations. FastAlign combines sparsity-aware graph computation with domain-specific kernel fusion, including a custom SpMM kernel. Our results show that FastAlign achieves alignment quality comparable to state-of-the-art OT-based methods while substantially reducing end-to-end runtime up to 3.89x-9.45x on CPU and 2.24x-32.54x on GPU.
+
+## 5. SinAE: A Single-Architecture Flow-Matching Autoencoder for Cross-Domain Atomic Systems
+
+- Authors: Yuxuan Ren, Fan Yang, Jianhua Yao, Yatao Bian
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-14
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.4486753330482305
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12380v1
+- PDF: https://arxiv.org/pdf/2607.12380v1
+- Local PDF: pdf/2026-07-16_05_SinAE_ A Single-Architecture Flow-Matching Autoencoder for Cross-Domain Atomic Systems.pdf
+
+Small molecules, crystals, and proteins all reduce to atoms in 3D space, yet their generative pipelines remain fragmented across domains, each with its Small molecules, crystals, and proteins all reduce to atoms in 3D space, yet their generative pipelines remain fragmented across domains, each with its own graph, equivariant, or frame-based architecture. Cross-domain training would mitigate per-domain data scarcity, but direct generation in 3D coordinate space cannot easily handle the heterogeneous structural priors of all three domains, and no prior latent autoencoder is simultaneously lossless and architecturally general across all three. We introduce SinAE, a single-architecture flow-matching autoencoder for molecules, crystals, and proteins, with vanilla Transformer encoder and decoder and no equivariant, graph, or domain-specific operators. Rather than requiring the encoder to capture fine-grained geometry, SinAE shifts the reconstruction burden into an iterative flow-matching decoder, achieving near-lossless reconstruction across domains and reducing reconstruction errors by orders of magnitude relative to prior latent baselines. The same per-token latent supports a standard Diffusion Transformer prior that reaches strong performance on molecular, crystal, and protein generation benchmarks. Joint molecule--crystal training strictly improves both domains, providing direct evidence of cross-domain transfer through a shared atomic latent. Code is available at https://github.com/BlueWhaleLab/SinAE .
+
+## 6. FAIR GraphRAG: A Retrieval-Augmented Generation Approach for Semantic Data Analysis
+
+- Authors: Marlena Flüh, Soo-Yon Kim, Carolin Victoria Schneider, Sandra Geisler
+- Source: arxiv
+- Venue type: preprint
+- Journal: 2025 IEEE International Conference on Knowledge Graph (ICKG), Limassol, Cyprus, 2025, pp. 90-97
+- Publication status: preprint
+- Publication date: 2026-07-13
+- DOI: 10.1109/ICKG66886.2025.00019
+- Categories: cs.IR, cs.AI, cs.CL, cs.DB
+- Relevance: 3.349193133807986
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.11464v1
+- PDF: https://arxiv.org/pdf/2607.11464v1
+- Local PDF: pdf/2026-07-16_06_FAIR GraphRAG_ A Retrieval-Augmented Generation Approach for Semantic Data Analysis.pdf
+
+Retrieval-Augmented Generation (RAG) addresses the limitations of Large Language Models (LLMs) when providing responses to domain-specific questions. Graph-based RAG approaches, such as GraphRAG, enhance retrieval by capturing semantic relationships within knowledge graphs (KGs). While the FAIR principles (Findability, Accessibility, Interoperability, and Reusability) are becoming prevalent for scientific data management, especially in complex domains such as medicine, existing RAG approaches lack a structured FAIRification of the underlying knowledge resources. This lack limits their potential for FAIR information retrieval in these domains. To address this gap, we introduce FAIR GraphRAG, a novel framework that integrates FAIR Digital Objects (FDOs) as the fundamental units of a graph-based retrieval system. Each graph node represents an FDO that incorporates core data, metadata, persistent identifiers, and semantic links. We leverage LLMs to support schema construction and automated extraction of content and metadata from data sources. The framework was co-designed by physicians and computer scientists to ensure technical and clinical relevance. We apply FAIR GraphRAG to a biomedical dataset in gastroenterology, demonstrating its applicability to RNA-sequencing data. Beyond ensuring adherence to the FAIR principles, FAIR GraphRAG significantly improves question answering accuracy, coverage, and explainability, particularly for complex queries involving metadata and ontology links. This work shows the feasibility of combining FAIR data practices with graph-based retrieval techniques. We see potential for applying our approach to other specialized fields such as education and business.
+
+## 7. ArchRAG: Attributed Community-based Hierarchical Retrieval-Augmented Generation
+
+- Authors: Shu Wang, Yixiang Fang, Yingli Zhou, Xilin Liu, Yuchi Ma
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i19.38619
+- Categories: Topic Modeling, Information Retrieval and Search Behavior, Expert finding and Q&A systems
+- Relevance: 3.3237514139932003
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i19.38619
+- PDF: https://ojs.aaai.org/index.php/AAAI/article/download/38619/42581
+- Local PDF: Not downloaded
+
+Retrieval-Augmented Generation (RAG) has proven effective in integrating external knowledge into large language models (LLMs) for solving question-answer (QA) tasks. The state-of-the-art RAG approaches often use the graph data as the external data since they capture the rich semantic information and link relationships between entities. However, existing graph-based RAG approaches cannot accurately identify the relevant information from the graph and also consume large numbers of tokens in the online retrieval process. To address these issues, we introduce a novel graph-based RAG approach, called Attributed Community-based Hierarchical RAG (ArchRAG), by augmenting the question using attributed communities, and also introducing a novel LLM-based hierarchical clustering method. To retrieve the most relevant information from the graph for the question, we build a novel hierarchical index structure for the attributed communities and develop an effective online retrieval method. Experimental results demonstrate that ArchRAG outperforms existing methods in both accuracy and token cost.
+
+## 8. An Agentic AI Scientific Community for Automated Neural Operator Discovery
+
+- Authors: Luis Loo, Ulisses Braga-Neto
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-13
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.2200036348556482
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12122v1
+- PDF: https://arxiv.org/pdf/2607.12122v1
+- Local PDF: pdf/2026-07-16_08_An Agentic AI Scientific Community for Automated Neural Operator Discovery.pdf
+
+We present an agentic approach to autonomous neural operator discovery based on an AI scientific community, which consists of a swarm of virtual laboratories that interact under a citation-based economy of influence. Highly-cited labs found new labs that follow their research direction and replace non-performing labs. Each virtual lab contains three agents: an LLM planner that proposes an architecture, a numerical worker that trains and measures it, and an LLM reviewer that participates in cross-lab peer review. All labs share a common vocabulary consisting of DeepONet (branch-trunk), Fourier, Transformer (attention), wavelet, and residual convolutional neural operator building blocks. We evaluate the neural operator AI scientific community on five problems, namely piecewise regression, the linear advection and Burgers 1D PDEs, and the Navier-Stokes and Darcy flow 2D PDEs, while repeating the simulation three times for each problem. The results show that the neural operator AI scientific community is capable of discovering high-accuracy, low-parameter-count neural operator architectures. All 9,623 LLM calls are logged and audited, which reveals that the virtual lab LLM planners choose to hybridize in 99.8% of their logged decisions, consistently returning multi-family hybrids. Moreover, we conducted an ablation study by replacing the LLM agents in each lab by rule-based alternatives, which caused the scientific community to collapse to non-hybridized single-family stacks in several cases, showing that LLM agency is needed to preserve diversity. The results suggest a no-free-lunch theorem for neural operators: there is no universal winner. The code, configurations, and the complete LLM transcripts are released at https://github.com/luislootx/AI-SC.
+
+## 9. CroCoNet: a framework for the quantitative comparison of gene regulatory networks across species
+
+- Authors: Anita Térmeg, Vladyslav Storozhuk, Zane Kliesmete, Fiona C. Edenhofer, Johanna Geuder, Tamina Dietl, Beate Vieth, Philipp Janssen, Daniel Richter, Boyan Bonev, Ines Hellmann
+- Source: openalex
+- Venue type: journal
+- Journal: Genome biology
+- Publication status: published
+- Publication date: 2026-07-15
+- DOI: https://doi.org/10.1186/s13059-026-04152-5
+- Categories: Single-cell and spatial transcriptomics, Bioinformatics and Genomic Networks, Gene Regulatory Network Analysis
+- Relevance: 3.1289495887065377
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1186/s13059-026-04152-5
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract To understand phenotypic evolution, it is essential to investigate the underlying gene regulatory networks (GRNs). However, most comparative GRN analyzes remain descriptive due to the low signal-to-noise ratio inherent in single-cell transcriptomics data. To address this, we introduce CroCoNet (Cross-species Comparison of Networks), an R-package for quantitative GRN comparison across species. CroCoNet builds comparable network modules centered on putative regulators and compares module topologies within and between species, distinguishing true evolutionary divergence from technical and biological confounders. We demonstrate its utility by comparing early neural differentiation across primates and validating results with a CRISPRi analysis of the diverged POU5F1 module.
+
+## 10. Continual Learning with Elastic Regularization and Synthetic Replay for Federated MLLM Fine-Tuning
+
+- Authors: Jing Liu, Chenxuanyin Zou, Jiayang Ren, Gaoyun Fang, Chengfang Li, Yan Wang, Zhenchao Ma, Bo Hu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-13
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, cs.CV, cs.DC
+- Relevance: 3.1140627729895294
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12112v1
+- PDF: https://arxiv.org/pdf/2607.12112v1
+- Local PDF: pdf/2026-07-16_10_Continual Learning with Elastic Regularization and Synthetic Replay for Federated MLLM Fine-Tuning.pdf
+
+Federated fine-tuning of Multimodal Large Language Models (MLLMs) across distributed networks enables privacy-sensitive adaptation to evolving data streams, yet a fundamental obstacle prevents robust deployment in dynamic environments: catastrophic forgetting, wherein sequential task updates erase previously acquired knowledge across visual, linguistic, and cross-modal representations. Addressing this challenge is especially critical for autonomous networked AI operating in safety-sensitive domains, such as content moderation, where reliable retention of prior knowledge underpins system integrity. To overcome this, we propose Federated Continual Multimodal Learning (FedCMM), a framework that embeds continual-learning safeguards into the federated optimization loop at three complementary levels. At the parameter level, modality-aware elastic weight consolidation computes separate Fisher information matrices for the vision encoder, language backbone, and cross-modal projector, providing granular, asymmetry-aware protection against modality-specific forgetting. At the data level, each client trains a lightweight local generative replay module to synthesize raw-data-free embedding-level multimodal replay tuples without any raw data sharing. At the aggregation level, Task-similarity-aware gradient aggregation autonomously filters and reweights client updates by gradient cosine similarity, suppressing conflicting directions and stabilizing the global learning trajectory. Extensive experiments on two benchmarks demonstrate that FedCMM consistently outperforms recent baselines on accuracy and backward transfer, confirming that holistic, modality-aware optimization enables robust evolutive adaptation across heterogeneous networked AI deployments.
+
+## 11. Demonstration of the common dual-channel feature decoupling characteristic of front-door mediation causal inference methods in whole-slice image classification
+
+- Authors: Zhirui Zhang, Tianhang Nan, Yong Ding, Zhuolun Song, Dayu Hu, Xiaoyu Cui
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-14
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.1072054654734096
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12376v1
+- PDF: https://arxiv.org/pdf/2607.12376v1
+- Local PDF: pdf/2026-07-16_11_Demonstration of the common dual-channel feature decoupling characteristic of front-door mediation causal inference meth.pdf
+
+Causal inference using front door intervention and multi-instance learning (MIL) has advanced the analysis of Whole Slide Images (WSI) in digital pathology. These methods adjust feature distributions of subtle evidence sub-images to correctly associate them with WSI-level diagnoses. We propose and prove 2 hypotheses for evaluating such methods: 1) Causal inference MIL introduces an independent classification channel that effectively completes WSI classification; 2) Greater difference between features extracted by the new and baseline channels increases effectiveness in eliminating false correlations. This hypothesis describes the core of causal inference MILs: overlaying parallel, independent channels to eliminate false associations between WSI-level diagnostic and non-diagnostic evidence sub-images by increasing deep feature diversity. Based on these hypotheses, we evaluated several causal inference MILs on breast cancer and non-small cell lung cancer datasets. This hypothesis provides a new theoretical perspective for applying causal inference to WSI analysis.
+
+## 12. The Emerging Paradigm of Geospatial Foundation Models: From Pre-Training to Agentic Reasoning
+
+- Authors: Shelley Cazares
+- Source: arxiv
+- Venue type: preprint
+- Journal: Lecture Notes in Computer Science, Vol. 16446 (2026)
+- Publication status: preprint
+- Publication date: 2026-07-13
+- DOI: 10.1007/978-3-032-18474-0_1
+- Categories: cs.AI, cs.CV
+- Relevance: 3.1064658251857677
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12177v1
+- PDF: https://arxiv.org/pdf/2607.12177v1
+- Local PDF: pdf/2026-07-16_12_The Emerging Paradigm of Geospatial Foundation Models_ From Pre-Training to Agentic Reasoning.pdf
+
+The analysis of satellite and aerial imagery has entered a new era with the advent of foundation models. This paper describes the concept of Geospatial Foundation Models (GeoFMs), which are artificial intelligence/machine learning (AI/ML) models pre-trained on massive geospatial datasets through varied methodologies. We first articulate the core paradigm shift that GeoFMs enable: a separation of duties, where large-scale model providers perform the computationally intensive pretraining, allowing domain experts to rapidly fine-tune or prompt these models for specific, mission-critical tasks. This approach democratizes access to state-of-the-art AI/ML while maintaining the security and confidentiality of the downstream task. We then explore the novel capabilities unlocked by different types of GeoFMs, distinguishing between the finetunable vision models produced by self-supervised techniques like masked auto-encoding, and the vision-language models produced by contrastive learning which enable zero-shot tasks like open-vocabulary image analysis. Next, we discuss the practical considerations for operationalizing GeoFMs, from performance-cost analysis to the broader MLOps ecosystem. To that end, we introduce a taxonomy of model adaptation strategies and propose a framework for domain experts to select the most cost-effective adaptation approach for their particular mission set. Finally, we present a forward-looking vision of Agentic Geospatial Reasoning, where Large Language Models act as intelligent orchestrators, leveraging GeoFMs as tools to answer high-level user queries in natural language and automate complex analytical workflows, moving the field from perception to cognition.
+
+## 13. The Geometry of Memorization: Finite-Time Spectral Sensitivity as a Diagnostic for Flow Matching Models
+
+- Authors: Shuchan Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-14
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.0927749774362354
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12616v1
+- PDF: https://arxiv.org/pdf/2607.12616v1
+- Local PDF: pdf/2026-07-16_13_The Geometry of Memorization_ Finite-Time Spectral Sensitivity as a Diagnostic for Flow Matching Models.pdf
+
+Continuous-time generative frameworks construct probability paths between base and target domains by optimizing time-dependent velocity fields. While theoretical targets favor straight trajectories, empirical networks develop complex path deformations. This paper presents the Finite-Time Spectral Sensitivity (FTSS) g(t), a gradient-free, forward-pass metric that exposes flow geometry by tracking the root-mean-square singular value of the state-transition matrix. Serving as a continuous proxy for stable rank, g(t) reveals a distinct geometric pathology under data scarcity: while generalizing models maintain stable effective dimensions, overfitting causes a spectral collapse. We leverage this structural phenomenon to develop an internal geometric audit based on g(t). Our framework detects generative memorization using purely internal trajectory dynamics, removing the need for external membership queries or baseline data comparison.
+
+## 14. Graph-Based Detection of Disinformation Narrative Diffusion between Russian and Ukrainian Telegram Channels
+
+- Authors: Yuliia Vistak, Viktoriia Makovska, Vera Schmitt, Veronika Solopova
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-05-09
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 3.0778224073686795
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.11894v1
+- PDF: https://arxiv.org/pdf/2607.11894v1
+- Local PDF: pdf/2026-07-16_14_Graph-Based Detection of Disinformation Narrative Diffusion between Russian and Ukrainian Telegram Channels.pdf
+
+Detecting disinformation narratives on social media is challenging due to the scale of amplification, rapid evolution, and linguistic variability of online content. We propose a graph-based framework for identifying and analyzing disinformation narratives in Telegram ecosystems by combining weak supervision with propagation graph analysis. The approach aggregates semantically related claims into narrative-level clusters and models their diffusion across interconnected channels. This enables the detection of coordinated narrative amplification that is difficult to capture through post-level analysis alone. Our results demonstrate that integrating textual signals with network structure provides a scalable method for detecting disinformation narratives and offers insights into how they propagate within large-scale messaging environments.
+
+## 15. NumCoKE: Ordinal-Aware Numerical Reasoning over Knowledge Graphs with Mixture-of-Experts and Contrastive Learning
+
+- Authors: Ming Yin, Zongsheng Cao, Qiqing Xia, Chenyang Tu, Neng Gao
+- Source: openalex
+- Venue type: conference
+- Journal: Proceedings of the AAAI Conference on Artificial Intelligence
+- Publication status: formally_published
+- Publication date: 2026-03-14
+- DOI: https://doi.org/10.1609/aaai.v40i19.38653
+- Categories: Advanced Graph Neural Networks, Machine Learning in Healthcare, Topic Modeling
+- Relevance: 2.9767567818842036
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1609/aaai.v40i19.38653
+- PDF: https://ojs.aaai.org/index.php/AAAI/article/download/38653/42615
+- Local PDF: Not downloaded
+
+Knowledge graphs (KGs) serve as a vital backbone for a wide range of AI applications, including natural language understanding and recommendation. A promising yet underexplored direction is numerical reasoning over KGs, which involves inferring new facts by leveraging not only symbolic triples but also numerical attribute values (e.g., length, weight). However, existing methods fall short in two key aspects: (1) Incomplete semantic integration: Most models struggle to jointly encode entities, relations, and numerical attributes in a unified representation space, limiting their ability to extract relation-aware semantics from numeric information. (2) Ordinal indistinguishability: Due to subtle differences between close values and sampling imbalance, models often fail to capture fine-grained ordinal relationships (e.g., longer, heavier), especially in the presence of hard negatives. To address these challenges, we propose NumCoKE—a numerical reasoning framework for KGs based on Mixture-of-Experts and Ordinal Contrastive Embedding. To overcome (C1), we introduce a Mixture-of-Experts Knowledge-Aware (MoEKA) encoder that jointly aligns symbolic and numeric components into a shared semantic space, while dynamically routing attribute features to relation-specific experts. To handle (C2), we propose Ordinal Knowledge Contrastive Learning (OKCL), which constructs ordinal-aware positive and negative samples using prior knowledge, enabling the model to better discriminate subtle semantic shifts. Extensive experiments on three public KG benchmarks demonstrate that NumCoKE consistently outperforms competitive baselines across diverse attribute distributions, validating its superiority in both semantic integration and ordinal reasoning.
+
+## 16. PFAdapter: Hierarchical LoRA Decomposition for Personalized Federated MLLMs
+
+- Authors: Jing Liu, Kun Yang, Yan Wang, Dingkang Yang, Xiaoshuai Hao, Wei Zhang, Yang Liu, Wei Zhou
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-13
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, cs.DC, cs.MA, cs.NI
+- Relevance: 2.9699624730169374
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12111v1
+- PDF: https://arxiv.org/pdf/2607.12111v1
+- Local PDF: pdf/2026-07-16_16_PFAdapter_ Hierarchical LoRA Decomposition for Personalized Federated MLLMs.pdf
+
+Agentic AI systems are reshaping communications and networking by deploying autonomous intelligent agents capable of collaborative learning while maintaining data privacy at network edges. Within distributed network environments, Multimodal Large Language Models (MLLMs) serve as cognitive engines for edge devices, yet federated fine-tuning faces substantial challenges in balancing global knowledge aggregation with local adaptation under heterogeneous network conditions. Conventional federated protocols typically rely on uniform parameter aggregation, which conflates domain-invariant features with client-specific nuances, thereby resulting in suboptimal personalization and excessive communication overhead. To address these challenges, we propose PFAdapter, a communication-efficient framework introducing hierarchical LoRA decomposition to explicitly separate adapter parameters into global-shared and local-private components. Query and key projections are assigned to global synchronization for capturing universal multimodal semantics across the network, while value and output projections remain localized for edge-specific adaptation. Additionally, orthogonality regularization based on the Frobenius norm enforces strict separation between these components, preventing redundant feature learning. Selective aggregation protocols synchronize only global-shared components across the federated network, preserving local expertise and reducing communication costs by nearly 50%. Extensive experiments on VQA-RAD, SLAKE, Hateful Memes, and CrisisMMD datasets demonstrate that PFAdapter consistently outperforms state-of-the-art baselines, achieving accuracy improvements ranging from 2.4% to 4.8% across diverse edge intelligence tasks. Consequently, our framework establishes an efficient solution for agentic AI deployment in resource-constrained communication networks.
+
+## 17. MixCIT: A Kernel Based Local-Polynomial Debiased Test for Conditional Independence on Mixed-Type Data
+
+- Authors: Mengxiao Gao, Kyra Gan, Promit Ghosal
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-14
+- DOI: Unavailable
+- Categories: math.ST, stat.ML
+- Relevance: 2.966107278801575
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12830v1
+- PDF: https://arxiv.org/pdf/2607.12830v1
+- Local PDF: pdf/2026-07-16_17_MixCIT_ A Kernel Based Local-Polynomial Debiased Test for Conditional Independence on Mixed-Type Data.pdf
+
+Conditional independence testing (CIT) is fundamental to modern statistical inference in areas related to causal discovery and variable selection. While marginal independence is relatively well-understood, despite multiple advances, no existing non-parametric CIT provides a unified, efficient, and statistically guaranteed solution across heterogeneous data. We introduce a graph-based test statistic comparing kernel similarities of the response within composite neighborhoods that use exact matching on discrete components and $k_n$-nearest-neighbor matching on continuous ones. The raw statistic, related to prior constructions, suffices under fully discrete conditioning. However, when at least one conditioning variable is continuous, we instead use a local-polynomial debiased variant that cancels the local smoothing bias. We rigorously establish its asymptotic null distribution across all data-type combinations. We further prove a dimension-free $n^{-1/4}$ detection threshold under local alternatives, eliminating the phase transition that affects geometric estimators in high dimensions. Finally, we develop efficient algorithms with near-quadratic complexity and analytic graph-based calibration, bypassing the cubic bottlenecks of global kernel methods.
+
+## 18. LiteTopK: Exploiting the Curse of Dimensionality for a Fused Indexer-TopK Kernel in Long-Context Sparse Attention
+
+- Authors: Ziqi Yin, Jianyang Gao, Peiqi Yin, Jiangneng Li, Gao Cong
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-13
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.9659156249351892
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.11976v1
+- PDF: https://arxiv.org/pdf/2607.11976v1
+- Local PDF: pdf/2026-07-16_18_LiteTopK_ Exploiting the Curse of Dimensionality for a Fused Indexer-TopK Kernel in Long-Context Sparse Attention.pdf
+
+Indexer-TopK, the operation to compute the scores and select the top-k candidates, is widely used by sparse attention kernels in large language models and vector retrieval in recommendation systems and vector databases. However, existing GPU-based Indexer-TopK kernels like DeepSeek Sparse Attention (DSA) remain inefficient due to excessive global memory traffic, costly synchronization, and prohibitive memory overhead. In this work, we exploit the curse of dimensionality in high-dimensional spaces, where distances between high-dimensional vectors tend to concentrate within a narrow range, to design LITETOPK, a novel and efficient fused Indexer-TopK kernel. LITETOPK first samples a small subset of data to estimate query-data score ranges, then uses these estimates to partition candidate results into bins online. This organization allows the LITETOPK kernel to maintain a tight approximate threshold, write back only promising candidates, reduce unnecessary I/O, substantially lower memory overhead, and still preserve exact Top-k correctness. Experimental results show that LITETOPK accelerates the prefill stage of GLM 5.2 by 1.2x in real-world deployment scenarios while incurring lower memory overhead.
+
+## 19. Constructed Reality, Contested Priors: Decoupling and the Architecture of Cognitive Relapse Under the Free Energy Principle
+
+- Authors: MD Ibrahim Hossain Ridoy
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-12
+- DOI: Unavailable
+- Categories: cs.LG, q-bio.NC
+- Relevance: 2.912187642545676
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.11958v1
+- PDF: https://arxiv.org/pdf/2607.11958v1
+- Local PDF: pdf/2026-07-16_19_Constructed Reality, Contested Priors_ Decoupling and the Architecture of Cognitive Relapse Under the Free Energy Princi.pdf
+
+Under the free energy principle, a predictive system does not observe reality directly; it maintains a generative model of the world and experiences that model's best current hypothesis. Can a synthetic environment be made consistent enough that a predictive system's own inference machinery adopts it as this default hypothesis, permanently displacing the environment that first shaped it? We call this state ontological inversion. Because inducing and monitoring such a transition in a nervous system is neither ethical nor technically feasible, we study the underlying computational problem through a controlled proxy: a convolutional variational autoencoder paired with a recurrent latent predictor, whose evidence lower bound objective is mathematically identical, up to sign, to variational free energy itself. The network is trained first on a baseline visual domain, then on a mixed stream in which a swept rehearsal ratio r controls how much baseline content persists during transition to a target domain. Representational capacity, what the latent space can discriminate, is tracked separately from default behavior, what the system generates when left unconstrained. Across a full sweep of 90 runs, the two diverge sharply: representational accuracy stays near ceiling, 0.97 to 0.998, regardless of r, while default behavior spans nearly the system's entire range depending on r alone, a decoupling of learning from acceptance. More strikingly, at intermediate r the system's default output rises toward the target domain, then partially reverts toward the baseline while training continues unchanged, a structural failure we term cognitive relapse. Resistance to reality-adoption is not reducible to learning speed; it is a structural property with its own distinct failure modes, established here as a computational existence proof and nothing further.
+
+## 20. QDEvo: A Multi-Objective Quality-Diversity Framework for Automated Heuristic Design
+
+- Authors: Nam Do Khanh, Nhat Nguyen Tran Minh, Dat Pham Vu Tuan, Long Doan, Binh Huynh Thi Thanh
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-06
+- DOI: 10.1145/3795101.3805343
+- Categories: cs.NE, cs.AI, cs.CL
+- Relevance: 2.9065932093667897
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.11916v1
+- PDF: https://arxiv.org/pdf/2607.11916v1
+- Local PDF: pdf/2026-07-16_20_QDEvo_ A Multi-Objective Quality-Diversity Framework for Automated Heuristic Design.pdf
+
+The integration of Large Language Models (LLMs) with evolutionary computation has emerged as a powerful paradigm for automated heuristic design in combinatorial optimization. However, existing approaches suffer from mode collapse, converging to homogeneous populations that lack semantic diversity and fail to explore the full algorithmic space. We propose Quality-Diversity Evolution (QDEvo), a multi-objective framework that integrates Quality-Diversity optimization with LLM-driven heuristic search, maintaining an unbounded archive of semantically diverse algorithms using pre-trained code embeddings and incorporating hierarchical self-reflection to guide the evolutionary process. Extensive experiments across standard benchmarks and real-world industrial applications demonstrate that QDEvo significantly outperforms state-of-the-art methods in both Hypervolume and Inverted Generational Distance metrics. Our framework enables the discovery of heuristics that are simultaneously high-performing, computationally efficient, and semantically diverse, providing practitioners with a rich portfolio of solutions for complex optimization problems.
+
+## 21. A Dual-Phase Self-Evolution Framework for Large Language Models
+
+- Authors: Haoran Sun, Zekun Zhang, Shaoning Zeng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8976586197710197
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.37/
+- PDF: https://aclanthology.org/2026.findings-acl.37.pdf
+- Local PDF: pdf/2026-07-16_21_A Dual-Phase Self-Evolution Framework for Large Language Models.pdf
+
+The capabilities of Large Language Models (LLMs) are limited to some extent by pre-training, so some researchers optimize LLMs through post-training. Existing post-training strategies, such as memory-based retrieval or preference optimization, improve user alignment yet fail to enhance the model’s domain cognition. To bridge this gap, we propose a novel Dual-Phase Self-Evolution (DPSE) framework that jointly optimizes user preference adaptation and domain-specific competence. DPSE introduces a Censor module to extract multi-dimensional interaction signals and estimate satisfaction scores, which guide structured data expansion via topic-aware and preference-driven strategies. These expanded datasets support a two-stage fine-tuning pipeline: supervised domain grounding followed by frequency-aware preference optimization. Experiments across general NLP benchmarks and long-term dialogue tasks demonstrate that DPSE consistently outperforms Supervised Fine-Tuning, Preference Optimization, and Memory-Augmented baselines. Ablation studies validate the contribution of each module. In this way, our framework provides an autonomous path toward continual self-evolution of LLMs.
+
+## 22. DGPO: Beyond Pairwise Preferences with Directional Consistent Groupwise Optimization
+
+- Authors: Mengyi Deng, Zhiwei Li, Xin Li, Tingyu Zhu, Yulan Yuan, Zhijiang Guo, Wei Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.893743300242886
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1963/
+- PDF: https://aclanthology.org/2026.findings-acl.1963.pdf
+- Local PDF: pdf/2026-07-16_22_DGPO_ Beyond Pairwise Preferences with Directional Consistent Groupwise Optimization.pdf
+
+Although Large Language Models (LLMs) have made remarkable progress, current preference optimization methods still struggle to align directional consistency while preserving reasoning diversity. To address this limitation, we propose Directional-Groupwise Preference Optimization (DGPO), a lightweight framework that aggregates supervision signals at the group level and explicitly models direction-aware alignment through multi-candidate comparisons. DGPO organizes forward and reverse question-answer instances into structured sets and optimizes a margin-based likelihood objective that separates coherent reasoning paths from inconsistent alternatives. This groupwise formulation captures richer relative information than pairwise objectives and reinforces consistency across diverse reasoning pathways. Empirical results show that our constructed reverse data yields a 3.2% average improvement across five benchmarks, while DGPO further delivers consistent gains across multiple datasets and model families, achieving average accuracy improvements of up to 3.6%. Our code and data are available at https://github.com/Demi-deng2/DGPO .
+
+## 23. What Deserves Memory: Adaptive Memory Distillation for LLM Agents
+
+- Authors: Wenquan Ma, Jiayan Nan, WenLong Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8935986109571377
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1607/
+- PDF: https://aclanthology.org/2026.acl-long.1607.pdf
+- Local PDF: pdf/2026-07-16_23_What Deserves Memory_ Adaptive Memory Distillation for LLM Agents.pdf
+
+Memory systems for LLM agents struggle to determine what information deserves retention. Existing approaches rely on predefined heuristics such as importance scores, emotional tags, or factual templates, encoding designer intuition rather than learning from the data itself. Inspired by cognitive ideas, we propose Nemori , an adaptive memory distillation framework that casts the assessment of the experience’s future utility as a matter of predictability. Specifically, Nemori comprises two cascading modules: Episodic Memory Integration transforms raw interactions into coherent narratives, and Semantic Knowledge Distillation extracts insights via prediction error. Centering on distillation, the framework remains agnostic to downstream management. Extensive experiments confirm that Nemori achieves strong performance, efficiency, and storage reduction. Our work suggests that observing the intrinsic properties of interaction sequences offers a viable, data-driven alternative to heuristic-based memory design.
+
+## 24. FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation
+
+- Authors: Ruoran Xu, Wending Gao, Qiufeng Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-14
+- DOI: Unavailable
+- Categories: cs.AI, cs.MA, cs.SC
+- Relevance: 2.893521374680353
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.12982v1
+- PDF: https://arxiv.org/pdf/2607.12982v1
+- Local PDF: pdf/2026-07-16_24_FormalAnalyticGeo_ A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation.pdf
+
+Math reasoning has achieved significant progress with the rapid advancement of Multimodal Large Language Models (MLLMs), however analytic geometry remains largely underexplored, primarily due to the scarcity of annotated samples. Existing diagram generation approaches struggle with analytic geometry: template methods cannot handle constraint-driven layouts, and generative models lack the geometric precision to render annotated conic curves correctly. We present FormalAnalyticGeo, a scalable framework for fully automatic generation of multimodal analytic geometry problems. Leveraging the rigor of formal languages, we design the framework around CDL (Condition Description Language), a formal intermediate representation that bridges free-form problem text with precise diagram rendering via a Signed Distance Field (SDF) engine. The framework employs four specialized LLM components in sequence: a Generator that produces diverse analytic geometry problems, a Formalizer that converts each problem into CDL for SDF-based rendering, a Measurer that extracts ground-truth answers through vision-based measurement on the rendered diagrams, and a Quality Verifier that checks outputs at three stages. Structured feedback from the Quality Verifier drives automatic retry, forming a closed loop that eliminates any need for human annotation. Applying FormalAnalyticGeo at scale yields AnalyticGeo7K, a dataset of over 7K verified multimodal problems, each with aligned text, diagram, formal annotation, and ground truth.Experiments show that the generated problems achieve a median ground-truth relative error of 0.70\%, with 82.3\% of answers falling within 5\% of the exact symbolic solution. Our framework and dataset will be publicly released.
+
+## 25. SPD-Faith Bench: Diagnosing and Improving Faithfulness in Chain-of-Thought for Multimodal Large Language Models
+
+- Authors: Weijiang Lv, Yaoxuan Feng, Xiaobo Xia, Jiayu Wang, Yan Jing, Wenchao Chen, Bo Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.892398629089098
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.995/
+- PDF: https://aclanthology.org/2026.findings-acl.995.pdf
+- Local PDF: pdf/2026-07-16_25_SPD-Faith Bench_ Diagnosing and Improving Faithfulness in Chain-of-Thought for Multimodal Large Language Models.pdf
+
+Chain-of-Thought reasoning is widely used to improve the interpretability of multimodal large language models (MLLMs), yet the faithfulness of the generated reasoning traces remains unclear. Prior work has mainly focused on perceptual hallucinations, leaving reasoning level unfaithfulness underexplored. To isolate faithfulness from linguistic priors, we introduce SPD-Faith Bench, a diagnostic benchmark based on fine-grained image difference reasoning that enforces explicit visual comparison. Evaluations on state-of-the-art MLLMs reveal two systematic failure modes, perceptual blindness and perception-reasoning dissociation. We trace these failures to decaying visual attention and representation shifts in the residual stream. Guided by this analysis, we propose SAGE, a train-free visual evidence-calibrated framework that improves visual routing and aligns reasoning with perception. Our results highlight the importance of explicitly evaluating faithfulness beyond response correctness. Our benchmark and codes are available at https://anonymous.4open.science/r/SPD-Faith/.
+
+## 26. Data Mixing Agent: Learning to Re-weight Domains for Continual Pre-training
+
+- Authors: Kailai Yang, Xiao Liu, Lei Ji, Hao Li, Xiao Liang, Zhiwei Liu, Yeyun Gong, Peng Cheng, Mao Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8922286252077356
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.427/
+- PDF: https://aclanthology.org/2026.acl-long.427.pdf
+- Local PDF: pdf/2026-07-16_26_Data Mixing Agent_ Learning to Re-weight Domains for Continual Pre-training.pdf
+
+Continual pre-training on small-scale task-specific data is an effective method for improving large language models in new target fields, yet it risks catastrophic forgetting of their original capabilities. A common solution is to re-weight training data mixtures from source and target fields on a domain space to achieve balanced performance. Previous domain reweighting strategies rely on manual designation with certain heuristics based on human intuition or empirical results. In this work, we prove that more general heuristics can be parameterized by proposing Data Mixing Agent, the first model-based, end-to-end framework that learns to re-weight domains. The agent learns generalizable heuristics through reinforcement learning on large quantities of data mixing trajectories with corresponding feedback from an evaluation environment. Experiments in continual pre-training on math reasoning show that Data Mixing Agent outperforms strong baselines in achieving balanced performance across source and target field benchmarks. Furthermore, it generalizes well across unseen source fields, target models, and domain spaces without retraining. Direct application to the code generation field also indicates its adaptability across target domains. Further analysis showcases the agents’ well-aligned heuristics with human intuitions and their efficiency in achieving superior model performance with less source-field data.
+
+## 27. Deciphering Cultural Representations in Large Language Models via Sparse Autoencoders
+
+- Authors: Chenye Zou, Difan Jiao, Lijie Hu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8920210211471673
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.278/
+- PDF: https://aclanthology.org/2026.findings-acl.278.pdf
+- Local PDF: pdf/2026-07-16_27_Deciphering Cultural Representations in Large Language Models via Sparse Autoencoders.pdf
+
+Large Language Models (LLMs) are increasingly deployed worldwide, yet they exhibit strong Western-centric biases, and the internal mechanisms governing their cultural behaviors remain poorly understood. Prior work has identified so-called cultural neurons, but individual neurons are often polysemous, conflating abstract cultural knowledge with surface-level lexical cues due to superposition. We apply Sparse Autoencoders (SAEs) to decompose intermediate LLM activations into sparse, interpretable feature representations that disentangle these factors. This analysis reveals culturally selective features that remain invariant across paraphrasing and task formats, indicating abstraction beyond lexical correlations. Through targeted feature ablation, we provide causal evidence that these features are necessary for cultural reasoning: their removal selectively degrades performance on culturally conditioned tasks. Furthermore, we show that steering model activations along these feature directions is sufficient to systematically modulate cultural-related knowledge generation, without retraining. Together, our results offer the first causal evidence that LLMs encode cultural knowledge as decoupled semantic structures rather than surface patterns, enabling a scalable pathway toward cultural alignment through mechanistic intervention. Code is available at https://github.com/IAN-YE/Cultural-features-SAE.
+
+## 28. ReaGeo: Reasoning-Enhanced End-to-End Geocoding with LLMs
+
+- Authors: Jian Cui, Zhiyuan Ren, Desheng Weng, Yongqi Zhao, Gong Wenbin, Yu Lei, Zhenning Dong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8919748357204917
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1396/
+- PDF: https://aclanthology.org/2026.findings-acl.1396.pdf
+- Local PDF: pdf/2026-07-16_28_ReaGeo_ Reasoning-Enhanced End-to-End Geocoding with LLMs.pdf
+
+This paper proposes ReaGeo, an end-to-end geocoding framework based on large language models, designed to overcome the limitations of traditional multi-stage approaches that rely on text or vector similarity retrieval over geographic databases, including workflow complexity, error propagation, and heavy dependence on structured geographic knowledge bases. The method converts geographic coordinates into geohash sequences, reformulating the coordinate prediction task as a text generation problem, and introduces a Chain-of-Thought mechanism to enhance the model’s reasoning over spatial relationships. Furthermore, reinforcement learning with a distance-deviation-based reward is applied to optimize the generation accuracy. Comprehensive experiments show that ReaGeo can accurately handle explicit address queries in single-point predictions and effectively resolve vague relative location queries. In addition, the model demonstrates strong predictive capability for non-point geometric regions, highlighting its versatility and generalization ability in geocoding tasks.
+
+## 29. Patches of Nonlinearity: Instruction Vectors in Large Language Models
+
+- Authors: Irina Bigoulaeva, Jonas Rohweder, Subhabrata Dutta, Iryna Gurevych
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8905150514453792
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.559/
+- PDF: https://aclanthology.org/2026.acl-long.559.pdf
+- Local PDF: pdf/2026-07-16_29_Patches of Nonlinearity_ Instruction Vectors in Large Language Models.pdf
+
+Despite the recent success of instruction-tuned language models and their ubiquitous usage, very little is known of how models process instructions internally. In this work, we address this gap from a mechanistic point of view by investigating how instruction-specific representations are constructed and utilized in different stages of post-training: Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO). Via causal mediation, we identify that instruction representation is fairly localized in models. These representations, which we call Instruction Vectors (IVs), demonstrate a curious juxtaposition of linear separability along with non-linear causal interaction, broadly questioning the scope of the linear representation hypothesis commonplace in mechanistic interpretability. To disentangle the non-linear causal interaction, we propose a novel method to localize information processing in language models that is free from the implicit linear assumptions of patching-based techniques. We find that, conditioned on the task representations formed in the early layers, different information pathways are selected in the later layers to solve that task, i.e., IVs act as circuit selectors.
+
+## 30. RoBSA: RoPE-based Blockwise Sparse Multi-head Latent Attention
+
+- Authors: Xinyu Shi, Kairong Luo, Zhen Zheng, Wenguang Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8897653295921764
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.46/
+- PDF: https://aclanthology.org/2026.acl-long.46.pdf
+- Local PDF: pdf/2026-07-16_30_RoBSA_ RoPE-based Blockwise Sparse Multi-head Latent Attention.pdf
+
+Large Language Models (LLMs) have rapidly advanced in recent years, scaling up in both parameter count and context length. However, as context windows extend from thousands to hundreds of thousands of tokens, attention computation becomes the dominant source of memory usage and runtime in decoding stages, severely limiting the efficiency and scalability of long-context LLMs. Sparse attention has emerged as a promising solution, reducing complexity by computing attention over only a subset of context tokens. However, the sparse attention for Multi-head Latent Attention(MLA) which is a variant of standard MHA is rarely studied. In this paper, we introduce RoPE-based Blockwise Sparse Attention (RoBSA), a method designed specifically for MLA during the decoding stage of model inference. RoBSA leverages the decoupled nature of RoPE within MLA to implement token selection in a blockwise manner. RoBSA is a lightweight, training-free, and layer-aware algorithm that can be integrated in a plug-and-play fashion. Our method significantly reduces end-to-end inference latency in the decoding stage by up to 2.55x with minimal accuracy loss compared to full attention in long-context scenarios for very large models.
