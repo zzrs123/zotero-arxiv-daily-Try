@@ -27,6 +27,13 @@
     "title": "Beyond the Eye: Efficient Multimodal Reasoning via Self-Regulated Implicit Visual Tools",
     "url": "http://arxiv.org/abs/2607.11106v1"
   },
+  "title:booguimage01boostingopensourceunifiedmultimodalunderstandingandgeneration": {
+    "doi": null,
+    "sent_date": "2026-07-16",
+    "source": "arxiv",
+    "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
+    "url": "http://arxiv.org/abs/2607.13125v1"
+  },
   "title:decouplingsemanticsandgeometricgroundingspatialvisualpromptsforlanguageconditionedimitationlearning": {
     "doi": null,
     "sent_date": "2026-06-26",
@@ -89,6 +96,13 @@
     "source": "arxiv",
     "title": "Point as Skeleton: Accumulated Point Cloud Enhanced Autoregressive Generation for Closed-Loop Autonomous Driving Simulation",
     "url": "http://arxiv.org/abs/2607.06516v1"
+  },
+  "title:researchprogressinhighpressuretuningoflayeredmagneticmaterials": {
+    "doi": null,
+    "sent_date": "2026-07-16",
+    "source": "arxiv",
+    "title": "Research progress in high-pressure tuning of layered magnetic materials",
+    "url": "http://arxiv.org/abs/2607.13632v1"
   },
   "title:rethinkingspeechllmintegrationforasreffectivejointspeechtexttrainingbyinterleaving": {
     "doi": null,
