@@ -1126,6 +1126,13 @@
     "title": "AnyGraph: Graph Foundation Model in the Wild",
     "url": "https://aclanthology.org/2026.findings-acl.44/"
   },
+  "title:arcactiveandreflectiondrivencontextmanagementforlonghorizoninformationseekingagents": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "ARC: Active and Reflection-driven Context Management for Long-Horizon Information Seeking Agents",
+    "url": "https://aclanthology.org/2026.findings-acl.930/"
+  },
   "title:archragattributedcommunitybasedhierarchicalretrievalaugmentedgeneration": {
     "doi": "https://doi.org/10.1609/aaai.v40i19.38619",
     "sent_date": "2026-07-16",
@@ -1146,6 +1153,20 @@
     "source": "acl_anthology",
     "title": "Are LLMs Truly Graph-Savvy? A Comprehensive Evaluation of Graph Generation",
     "url": "https://aclanthology.org/2025.acl-srw.64/"
+  },
+  "title:areweusingtherightbenchmarkanevaluationframeworkforvisualtokencompressionmethods": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods",
+    "url": "https://aclanthology.org/2026.acl-long.195/"
+  },
+  "title:arkanswercentricretrievertuningviakgaugmentedcurriculumlearning": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "ARK: Answer-Centric Retriever Tuning via KG-augmented Curriculum Learning",
+    "url": "https://aclanthology.org/2026.acl-long.371/"
   },
   "title:aromaaugmentedreasoningoveramultimodalarchitectureforvirtualcellgeneticperturbationmodeling": {
     "doi": null,
@@ -1987,6 +2008,13 @@
     "title": "CogGen: A Cognitively Inspired Recursive Framework for Deep Research Report Generation",
     "url": "https://aclanthology.org/2026.findings-acl.296/"
   },
+  "title:cognetkgempoweringtutoringdialogueswithacognitivelystructuredknowledgegraphforstemlearning": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "CogNet-KG: Empowering Tutoring Dialogues with a Cognitively-Structured Knowledge Graph for STEM Learning",
+    "url": "https://aclanthology.org/2026.findings-acl.639/"
+  },
   "title:cognitivescaffoldfromfluidcontexttocrystallizedmemoryforlonghorizondeepresearchagents": {
     "doi": null,
     "sent_date": "2026-07-05",
@@ -2631,6 +2659,13 @@
     "title": "Disentangled Multi-span Evolutionary Network against Temporal Knowledge Graph Reasoning",
     "url": "https://aclanthology.org/2025.findings-acl.658/"
   },
+  "title:disentanglingreasoninglogictoresolveexplicitknowledgeconflicts": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Disentangling Reasoning Logic to Resolve Explicit Knowledge Conflicts",
+    "url": "https://aclanthology.org/2026.acl-long.1451/"
+  },
   "title:dizinerdisagreementguidedinstructionrefinementviasimulatingpilotannotationforzeroshotnamedentityrecognition": {
     "doi": null,
     "sent_date": "2026-07-17",
@@ -2658,6 +2693,13 @@
     "source": "acl_anthology",
     "title": "Domain-Specific Data Generation Framework for RAG Adaptation",
     "url": "https://aclanthology.org/2026.findings-acl.960/"
+  },
+  "title:dosdependencyorientedsamplerformaskeddiffusionlanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "DOS: Dependency-Oriented Sampler for Masked Diffusion Language Models",
+    "url": "https://aclanthology.org/2026.findings-acl.861/"
   },
   "title:dragdistillingragforslmsfromllmstotransferknowledgeandmitigatehallucinationviaevidenceandgraphbaseddistillation": {
     "doi": null,
@@ -2791,6 +2833,13 @@
     "source": "acl_anthology",
     "title": "Emergence of Minimal Circuits for Indirect Object Identification in Attention-Only Transformers",
     "url": "https://aclanthology.org/2026.acl-srw.4/"
+  },
+  "title:endtoendoptimizationofllmdrivenmultiagentsearchsystemsviaheterogeneousgroupbasedreinforcementlearning": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "End-to-End Optimization of LLM-Driven Multi-Agent Search Systems via Heterogeneous-Group-Based Reinforcement Learning",
+    "url": "https://aclanthology.org/2026.acl-long.1399/"
   },
   "title:enhanceddatasynthesisforllmthroughreasoningstructuresgeneratedbyhierarchicalgflownet": {
     "doi": null,
@@ -3065,6 +3114,13 @@
     "title": "FiDeLiS: Faithful Reasoning in Large Language Models for Knowledge Graph Question Answering",
     "url": "https://aclanthology.org/2025.findings-acl.436/"
   },
+  "title:fillingthelongtailstructureawarecurriculumgapcompletionformedicaleducationwithllms": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Filling the Long Tail: Structure-Aware Curriculum-Gap Completion for Medical Education with LLMs",
+    "url": "https://aclanthology.org/2026.acl-srw.83/"
+  },
   "title:finerexfinetunednerreforhumansmugglingknowledgegraphs": {
     "doi": null,
     "sent_date": "2026-06-20",
@@ -3288,6 +3344,13 @@
     "source": "acl_anthology",
     "title": "From Pixels to Policies: Reinforcing Spatial Reasoning in Language Models for Content-Aware Layout Design",
     "url": "https://aclanthology.org/2026.acl-industry.104/"
+  },
+  "title:fromquerytologicontologydrivenmultihopreasoninginllms": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "From Query to Logic: Ontology-Driven Multi-Hop Reasoning in LLMs",
+    "url": "https://aclanthology.org/2026.findings-acl.687/"
   },
   "title:fromrecognitiontoreasoningbenchmarkingandenhancingmllmsonrealworldreceiptdocumentunderstanding": {
     "doi": null,
@@ -4234,6 +4297,13 @@
     "title": "Interleaved Latent Visual Reasoning with Selective Perceptual Modeling",
     "url": "https://aclanthology.org/2026.acl-long.1351/"
   },
+  "title:internalizingmultiagentreasoningforaccurateandefficientllmbasedrecommendation": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Internalizing Multi-Agent Reasoning for Accurate and Efficient LLM-based Recommendation",
+    "url": "https://aclanthology.org/2026.findings-acl.2134/"
+  },
   "title:interpretablespatialmultiomicsdataintegrationanddimensionalityreductionwithspamv": {
     "doi": "https://doi.org/10.1038/s41467-026-74718-1",
     "sent_date": "2026-07-04",
@@ -4429,6 +4499,13 @@
     "source": "arxiv",
     "title": "Laguerre Geometry for Interpreting Large Language Models",
     "url": "http://arxiv.org/abs/2607.10578v1"
+  },
+  "title:lamiaugmentinglargelanguagemodelsvialatemultiimagefusion": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "LaMI: Augmenting Large Language Models via Late Multi-Image Fusion",
+    "url": "https://aclanthology.org/2026.acl-short.3/"
   },
   "title:languageacquisitiondeviceinlargelanguagemodels": {
     "doi": null,
@@ -5123,6 +5200,13 @@
     "title": "Migician: Revealing the Magic of Free-Form Multi-Image Grounding in Multimodal Large Language Models",
     "url": "https://aclanthology.org/2025.findings-acl.512/"
   },
+  "title:mindfrompassivemimicrytoactivereasoningthroughcapabilityawaremultiperspectivecotdistillation": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "MIND: From Passive Mimicry to Active Reasoning through Capability-Aware Multi-Perspective CoT Distillation",
+    "url": "https://aclanthology.org/2026.acl-long.2020/"
+  },
   "title:mindtheglitchvisualcorrespondencefordetectinginconsistenciesinsubjectdrivengeneration": {
     "doi": null,
     "sent_date": "2026-06-18",
@@ -5213,6 +5297,13 @@
     "source": "acl_anthology",
     "title": "Mnemis: Dual-Route Retrieval on Hierarchical Graphs for Long-Term LLM Memory",
     "url": "https://aclanthology.org/2026.acl-long.1096/"
+  },
+  "title:moaheterogeneousmixtureofadaptersforparameterefficientfinetuningoflargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "MoA: Heterogeneous Mixture of Adapters for Parameter-Efficient Fine-Tuning of Large Language Models",
+    "url": "https://aclanthology.org/2026.acl-long.965/"
   },
   "title:modaldependencyparsingasstructuredpredictionoversourcecuescope": {
     "doi": null,
@@ -5522,6 +5613,13 @@
     "title": "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
     "url": "https://aclanthology.org/2025.emnlp-main.186/"
   },
+  "title:notallcitationsareequalentropyguidedcitationselectionfornoiseresistantmedicalllm": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Not All Citations Are Equal:Entropy-Guided Citation Selection for Noise-Resistant Medical LLM",
+    "url": "https://aclanthology.org/2026.findings-acl.1727/"
+  },
   "title:notalldirectionsmattertowardsstructuredandtaskawarelowrankmodeladaptation": {
     "doi": null,
     "sent_date": "2026-06-25",
@@ -5549,6 +5647,13 @@
     "source": "acl_anthology",
     "title": "Octopus: Gated Selective Attention for Memory-Bounded Long-Context Inference in Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.1631/"
+  },
+  "title:octotoolsamultiagentframeworkwithextensibletoolsforcomplexreasoning": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "OctoTools: A Multi-Agent Framework with Extensible Tools for Complex Reasoning",
+    "url": "https://aclanthology.org/2026.acl-long.1/"
   },
   "title:oddaanoodadrivendiversedataaugmentationframeworkforlowresourcerelationextraction": {
     "doi": null,
@@ -6005,6 +6110,13 @@
     "title": "RAG-KT: Cross-platform Explainable Knowledge Tracing with Multi-view Fusion Retrieval Generation",
     "url": "https://aclanthology.org/2026.findings-acl.257/"
   },
+  "title:ragovertableshierarchicalmemoryindexmultistageretrievalandbenchmarking": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+    "url": "https://aclanthology.org/2026.findings-acl.1902/"
+  },
   "title:raguamultistepgraphragenginewithacompactdomainadaptedllm": {
     "doi": null,
     "sent_date": "2026-07-15",
@@ -6039,6 +6151,13 @@
     "source": "arxiv",
     "title": "Reachability-Aware Pretraining for Efficient Target-Oriented Path Exploration in Temporal Knowledge Graph Reasoning",
     "url": "http://arxiv.org/abs/2607.14886v1"
+  },
+  "title:readashumancompressingcontextviaparallelizableclosereadingandskimming": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Read As Human: Compressing Context via Parallelizable Close Reading and Skimming",
+    "url": "https://aclanthology.org/2026.acl-long.1309/"
   },
   "title:reageoreasoningenhancedendtoendgeocodingwithllms": {
     "doi": null,
@@ -6095,6 +6214,13 @@
     "source": "acl_anthology",
     "title": "Reasoning-Based Refinement of Unsupervised Text Clusters with LLMs",
     "url": "https://aclanthology.org/2026.findings-acl.482/"
+  },
+  "title:reasoningforhierarchicaltextclassificationthecaseofpatents": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Reasoning for Hierarchical Text Classification: The Case of Patents",
+    "url": "https://aclanthology.org/2026.findings-acl.541/"
   },
   "title:reasoningoverspaceenablinggeographicreasoningforllmbasedgenerativenextpoirecommendation": {
     "doi": null,
@@ -6264,6 +6390,13 @@
     "title": "Rethinking Parameter Sharing for LLM Fine-Tuning with Multiple LoRAs",
     "url": "https://aclanthology.org/2026.findings-acl.625/"
   },
+  "title:rethinkingscaledeploymenttradeoffsofsmalllanguagemodelsunderagentparadigms": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms",
+    "url": "https://aclanthology.org/2026.acl-industry.123/"
+  },
   "title:rethinkingvisualtokenreductioninlvlmsundercrossmodalmisalignment": {
     "doi": "https://doi.org/10.1609/aaai.v40i32.39949",
     "sent_date": "2026-07-10",
@@ -6277,6 +6410,13 @@
     "source": "openalex",
     "title": "Retrieval-driven Reasoning for Deliberative Visual Classification",
     "url": "https://doi.org/10.1609/aaai.v40i13.38084"
+  },
+  "title:reusableexperienceslatentroutingandmodularcompositioninllms": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Reusable Experiences: Latent Routing and Modular Composition in LLMs",
+    "url": "https://aclanthology.org/2026.acl-long.1388/"
   },
   "title:revealingproceduralreasoningstructuresinchainofthoughttrainingviaspanlevelgradientorganization": {
     "doi": null,
@@ -6459,6 +6599,13 @@
     "source": "acl_anthology",
     "title": "SAE-SSV: Supervised Steering in Sparse Representation Spaces for Reliable Control of Language Models",
     "url": "https://aclanthology.org/2025.emnlp-main.112/"
+  },
+  "title:safesailtowardsafinegrainedsafetylandscapeoflargelanguagemodelsviasparseautoencoderinterpretationframework": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Safe-SAIL: Towards a Fine-grained Safety Landscape of Large Language Models via Sparse Autoencoder Interpretation Framework",
+    "url": "https://aclanthology.org/2026.findings-acl.944/"
   },
   "title:sagaschemaawaregroundingforagentictexttosparqlgeneration": {
     "doi": null,
@@ -6796,6 +6943,13 @@
     "title": "Share Your Attention: Transformer Weight Sharing via Matrix-based Dictionary Learning",
     "url": "https://doi.org/10.1609/aaai.v40i34.40165"
   },
+  "title:sharvetsimilarityawareparametersharingwithvectorbasedtuningforefficientllmcompression": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "SharVeT: Similarity-aware Parameter Sharing with Vector-based Tuning for Efficient LLM Compression",
+    "url": "https://aclanthology.org/2026.acl-long.2213/"
+  },
   "title:sheafgraphneuralnetworksviapacbayesspectraloptimization": {
     "doi": "https://doi.org/10.1609/aaai.v40i25.39193",
     "sent_date": "2026-06-17",
@@ -6844,6 +6998,13 @@
     "source": "openalex",
     "title": "SINTER3D: continuous 3D reconstruction of spatial transcriptomics via implicit neural representations",
     "url": "https://doi.org/10.1186/s13059-026-04160-5"
+  },
+  "title:skillweavingefficientllmimprovementviamodularskillpacks": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Skill Weaving: Efficient LLM Improvement via Modular Skillpacks",
+    "url": "https://aclanthology.org/2026.findings-acl.1989/"
   },
   "title:smartragnativegraphbasedragformobiledevice": {
     "doi": null,
@@ -6928,6 +7089,13 @@
     "source": "acl_anthology",
     "title": "SPARKLE: A Structured and Plug-and-play Agentic Retrieval Policy for Adaptive RAG Models",
     "url": "https://aclanthology.org/2026.acl-long.1793/"
+  },
+  "title:sparrowtextanchoredwindowattentionwithvisualsemanticglimpsingforspeculativedecodinginvideollms": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Sparrow: Text-Anchored Window Attention with Visual-Semantic Glimpsing for Speculative Decoding in Video LLMs",
+    "url": "https://aclanthology.org/2026.acl-long.450/"
   },
   "title:sparsefeaturecoactivationrevealscausalsemanticmodulesinlargelanguagemodels": {
     "doi": null,
@@ -7482,6 +7650,13 @@
     "title": "Timestamp-Aware Spatio-Temporal Graph Contrastive Learning for Network Intrusion Detection",
     "url": "http://arxiv.org/abs/2606.17109v1"
   },
+  "title:tlorataskawarelowrankadaptationoflargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "TLoRA: Task-aware Low Rank Adaptation of Large Language Models",
+    "url": "https://aclanthology.org/2026.acl-long.1348/"
+  },
   "title:tokenpenaltyalleviatingattentionsinksandpositionaldecayinlvlms": {
     "doi": null,
     "sent_date": "2026-07-17",
@@ -7509,6 +7684,13 @@
     "source": "acl_anthology",
     "title": "ToolExpNet: Optimizing Multi-Tool Selection in LLMs with Similarity and Dependency-Aware Experience Networks",
     "url": "https://aclanthology.org/2025.findings-acl.811/"
+  },
+  "title:toolomnienablingopenworldtooluseviaagenticlearningwithproactiveretrievalandgroundedexecution": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "ToolOmni: Enabling Open-World Tool Use via Agentic learning with Proactive Retrieval and Grounded Execution",
+    "url": "https://aclanthology.org/2026.acl-long.1736/"
   },
   "title:toolprmfinegrainedinferencescalingofstructuredoutputsforfunctioncalling": {
     "doi": null,
@@ -7769,6 +7951,13 @@
     "title": "Unleashing Spatial Reasoning in Multimodal Large Language Models via Textual Representation Guided Reasoning",
     "url": "https://aclanthology.org/2026.acl-long.620/"
   },
+  "title:unlockingimplicitexperiencesynthesizingtoolusetrajectoriesfromtext": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "Unlocking Implicit Experience: Synthesizing Tool-Use Trajectories from Text",
+    "url": "https://aclanthology.org/2026.acl-long.452/"
+  },
   "title:unlockingtheblackboxoflatentreasoninganinterpretabilityguidedapproachtointervention": {
     "doi": null,
     "sent_date": "2026-07-12",
@@ -7818,6 +8007,13 @@
     "title": "VideoStir: Understanding Long Videos via Spatio-Temporally Structured and Intent-Aware RAG",
     "url": "https://aclanthology.org/2026.acl-long.1656/"
   },
+  "title:viewr1asymmetricpolicyoptimizationfordifficultyawaremultimodalreinforcementlearning": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "View-R1: Asymmetric Policy Optimization for Difficulty-Aware Multimodal Reinforcement Learning",
+    "url": "https://aclanthology.org/2026.findings-acl.1538/"
+  },
   "title:virtualmultiplexstainingforhistologicalimagesusingamarkerwiseconditioneddiffusionmodel": {
     "doi": "https://doi.org/10.1609/aaai.v40i10.37764",
     "sent_date": "2026-06-20",
@@ -7860,6 +8056,13 @@
     "title": "VOYAGER: A Training Free Approach for Generating Diverse Datasets using LLMs",
     "url": "https://aclanthology.org/2026.acl-long.784/"
   },
+  "title:webaggregatorenhancingcompositionalreasoningcapabilitiesofdeepresearchagentfoundationmodels": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "WebAggregator: Enhancing Compositional Reasoning Capabilities of Deep Research Agent Foundation Models",
+    "url": "https://aclanthology.org/2026.acl-long.1124/"
+  },
   "title:whatdeservesmemoryadaptivememorydistillationforllmagents": {
     "doi": null,
     "sent_date": "2026-07-16",
@@ -7887,6 +8090,13 @@
     "source": "arxiv",
     "title": "What VGGT Knows About Overlap: Probing Geometric Foundation Models for Co-Visibility",
     "url": "http://arxiv.org/abs/2607.09503v1"
+  },
+  "title:whenagentslookthesamequantifyingdistillationinducedsimilarityintoolusebehaviors": {
+    "doi": null,
+    "sent_date": "2026-07-20",
+    "source": "acl_anthology",
+    "title": "When Agents Look the Same: Quantifying Distillation-Induced Similarity in Tool-Use Behaviors",
+    "url": "https://aclanthology.org/2026.acl-long.478/"
   },
   "title:whyllmshallucinateonstructuredknowledgeamechanisticanalysisofreasoningoverlinearizedrepresentations": {
     "doi": null,
