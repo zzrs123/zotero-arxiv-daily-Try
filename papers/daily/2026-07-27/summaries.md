@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-07-27
+
+## 1. Spatialproteomics: an interoperable toolbox for analyzing highly multiplexed fluorescence image data
+
+- Authors: Matthias Meyer-Bender, Harald Vöhringer, Christina Schniederjohann, Sarah Koziel, E Chung, Ekaterina Popova, Alexander Brobeil, Nicklas Griese, Nora Kolks, Lisa-Maria Held, Aamir Munir, Scverse Community, Mikaela Koutrouli, Luca Marconato, Wouter-Michiel Vierdag, Lucas Diedrich, Vincenth Brennsteiner, Theodoros Visvikis, Jose Nimo, Panos Roussos, Erwin Schoof, Sascha Dietrich, Peter‐Martin Bruch, Wolfgang Huber
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Methods
+- Publication status: published
+- Publication date: 2026-07-24
+- DOI: https://doi.org/10.1038/s41592-026-03155-1
+- Categories: Advanced Proteomics Techniques and Applications
+- Relevance: 3.1885950359052933
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41592-026-03155-1
+- PDF: https://www.nature.com/articles/s41592-026-03155-1.pdf
+- Local PDF: pdf/2026-07-27_01_Spatialproteomics_ an interoperable toolbox for analyzing highly multiplexed fluorescence image data.pdf
+
+Abstract Highly multiplexed immunofluorescence imaging visualizes and quantifies protein levels at single-cell resolution in intact tissues at low cost and high scalability. Analysis of these data involves multiple steps with many method and parameter choices that must be adapted to the data and analytical objectives. There is an unmet need for a toolbox that offers flexible end-to-end coverage of the workflow. Here we present ‘spatialproteomics’, a Python package that addresses these challenges. Spatialproteomics enables the processing and analysis of large imaging data, including steps such as segmentation, image processing and cell-type classification, while synchronizing shared coordinates across data modalities. We demonstrate spatialproteomics on images of reactive lymph nodes and B cell non-Hodgkin lymphomas from 132 patients. We showcase an end-to-end analysis from raw images to statistical characterization of how cell type composition and spatial distribution vary across indolent and aggressive lymphomas. Furthermore, we show how spatialproteomics can process Gigapixel whole-slide images.
+
+## 2. E 3 -TIR: Enhanced Experience Exploitation for Tool-Integrated Reasoning
+
+- Authors: Weiyang Guo, Zesheng Shi, Liye Zhao, Jiayuan Ma, Zeen Zhu, Junxian He, Min Zhang, Jing Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.848631528336634
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1229/
+- PDF: https://aclanthology.org/2026.findings-acl.1229.pdf
+- Local PDF: pdf/2026-07-27_02_E 3 -TIR_ Enhanced Experience Exploitation for Tool-Integrated Reasoning.pdf
+
+While Large Language Models (LLMs) have demonstrated significant potential in Tool-Integrated Reasoning (TIR), existing training paradigms face significant limitations: Zero-RL suffers from inefficient exploration and mode degradation due to a lack of prior guidance, while SFT-then-RL is limited by high data costs and capability plateaus caused by low-entropy collapse. To address these challenges, we propose E3-TIR (Enhanced Experience Exploitation), a warm-up paradigm for the early stages of agent training. Specifically, we formulate training as the dynamic integration of three experience types: Expert Prefixes, Expert Guided, and Self-Exploration. By executing diverse branching exploration around expert “anchors’’ and employing a mix policy optimization mechanism, we effectively mitigate distribution shifts and resolve optimization conflicts arising from shared prefixes. Our method dynamically adapts the model’s knowledge boundaries, effectively balancing exploration diversity with training efficiency. Experimental results demonstrate that E3-TIR achieves a 6% performance improvement over traditional paradigms on tool-use tasks, while requiring less than 10% of the synthetic data. Furthermore, in terms of ROI—a comprehensive metric integrating performance, data cost, and training efficiency—we achieve a 1.46 gain compared to baselines.
+
+## 3. Towards Interpretable Tabular Reasoning: Enhancing LLM Reasoning on Tabular Data with Pre-Constructed Logic Graph
+
+- Authors: Lirong Gao, Zewei Yu, Zhongrui Yin, Qi Zhang, Yuke Zhu, Bo Zheng, Haobo Wang, Junbo Zhao, Gang Chen, Sheng Guo
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8482932487343495
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1396/
+- PDF: https://aclanthology.org/2026.acl-long.1396.pdf
+- Local PDF: pdf/2026-07-27_03_Towards Interpretable Tabular Reasoning_ Enhancing LLM Reasoning on Tabular Data with Pre-Constructed Logic Graph.pdf
+
+Tabular data is widely used in fields such as finance and healthcare. Traditional tree-based models are prevalent for tabular prediction tasks due to their ability to handle heterogeneous features. However, their heavy reliance on feature engineering limits both their generalizability and their human-readable interpretability. On the other hand, Large Language Models (LLMs) naturally provide intermediate reasoning steps, thus offering greater transparency in decision-making. Nevertheless, LLMs often fail to match the predictive performance of tree-based models on tabular data. To address these challenges, we propose a novel Logic-Graph-Enhanced LLM Reasoning (LogGER) framework that integrates the strengths of tree-based models and LLMs. Specifically, we reformulate the traditional decision tree as a human-readable logic graph, which explicitly models the causal relationships between features and targets. This logic graph is automatically constructed using LLMs based on data priors and serves as the foundation for LogGER. To fully leverage the logic graph, we further introduce a logic-graph-guided process supervision approach, which evaluates and enhances the quality of LLM’s intermediate reasoning steps using logic-graph-aided process reward. Extensive experiments demonstrate that LogGER consistently outperforms both tree-based models and state-of-the-art LLM methods on a variety of tabular prediction tasks, achieving superior accuracy and interpretability.
+
+## 4. AutoPKG: An Automated Framework for Dynamic E-commerce Product-Attribute Knowledge Graph Construction
+
+- Authors: Pollawat Hongwimol, Haoning Shang, Chutong Wang, Zhichao Wan, Yi Gao, Yuanming Li, Lin Gui, Wenhao Sun, Cheng Yu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.847622027800475
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.766/
+- PDF: https://aclanthology.org/2026.findings-acl.766.pdf
+- Local PDF: pdf/2026-07-27_04_AutoPKG_ An Automated Framework for Dynamic E-commerce Product-Attribute Knowledge Graph Construction.pdf
+
+Product attribute extraction in e-commerce is bottlenecked by ontologies that are inconsistent, incomplete, and costly to maintain. We present AutoPKG, a multi-agent Large Language Model (LLM) framework that automatically constructs a Product-attribute Knowledge Graph (PKG) from multimodal product content. AutoPKG induces product types and type-specific attribute keys on demand, extracts attribute values from text and images, and consolidates updates through a centralized decision agent that maintains a globally consistent canonical graph. We also propose an evaluation protocol for dynamic PKGs that measures type/key validity and consolidation quality, as well as edge-level accuracy for value assertions after canonicalization. On a large real-world marketplace catalog dataset from Lazada (Alibaba), AutoPKG achieves up to 0.953 Weighted Knowledge Efficiency (WKE) for product types, 0.724 WKE for attribute keys, and 0.531 edge-level F1 for multimodal value extraction. Across three public benchmarks, we improve edge-level exact-match F1 by 0.152 and yield a 0.208 precision gain on the attribute extraction application. Online A/B tests show that AutoPKG-derived attributes increase Gross Merchandise Value (GMV) in Badge (+3.81%), Search (+5.32%), and Recommendation (+7.89%), supporting AutoPKG’s practical value in production.
+
+## 5. Reasoning in a Combinatorial and Constrained World: Benchmarking LLMs on Natural-Language Combinatorial Optimization
+
+- Authors: Xia Jiang, Jing Chen, Cong Zhang, Jie Gao, Chengpeng Hu, Chenhao Zhang, Yaoxin Wu, Yingqian Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8464631715823687
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1529/
+- PDF: https://aclanthology.org/2026.findings-acl.1529.pdf
+- Local PDF: pdf/2026-07-27_05_Reasoning in a Combinatorial and Constrained World_ Benchmarking LLMs on Natural-Language Combinatorial Optimization.pdf
+
+While large language models (LLMs) have shown strong performance in math and logic reasoning, their ability to handle combinatorial optimization (CO)—searching high-dimensional solution spaces under hard constraints—remains underexplored. To bridge the gap, we introduce NLCO, a **N**atural **L**anguage **C**ombinatorial **O**ptimization benchmark that evaluates LLMs on end-to-end CO reasoning: given a language-described decision-making scenario, the model must output a discrete solution without writing code or calling external solvers. NLCO covers 43 CO problems and is organized using a four-layer taxonomy of variable types, constraint families, global patterns, and objective classes, enabling fine-grained evaluation. We provide solver-annotated solutions and comprehensively evaluate LLMs by feasibility, solution optimality, and reasoning efficiency. Experiments across a wide range of modern LLMs show that high-performing models achieve strong feasibility and solution quality on small instances, but both degrade as instance size grows, even if more tokens are used for reasoning. We also observe systematic effects across the taxonomy: set-based tasks are relatively easy, whereas graph-structured problems and bottleneck objectives lead to more frequent failures. The benchmark dataset and code for data generation and evaluation are publicly available.
+
+## 6. HeteroSpec: Leveraging Contextual Heterogeneity for Efficient Speculative Decoding
+
+- Authors: Siran Liu, Yang Ye, Qianchao Zhu, Zane Cao, Yongchao He
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.844863968317349
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.589/
+- PDF: https://aclanthology.org/2026.acl-long.589.pdf
+- Local PDF: pdf/2026-07-27_06_HeteroSpec_ Leveraging Contextual Heterogeneity for Efficient Speculative Decoding.pdf
+
+Autoregressive decoding inherently limits the inference throughput of Large Language Model (LLM) due to its sequential dependency. Speculative decoding mitigates this by verifying multiple predicted tokens in parallel, but its efficiency remains constrained by what we identify as verification heterogeneity—the uneven difficulty of verifying different speculative candidates. In practice, a small subset of high-confidence predictions accounts for most successful verifications, yet existing methods treat all candidates uniformly, leading to redundant computation. We present **HeteroSpec**, a **hetero**geneity-adaptive **spec**ulative decoding framework that allocates verification effort in proportion to candidate uncertainty. HeteroSpec estimates verification complexity using a lightweight entropy-based quantifier, partitions candidates via a data-driven stratification policy, and dynamically tunes speculative depth and pruning thresholds through coordinated optimization. Across five benchmarks and four LLMs, HeteroSpec delivers an average **4.24×** decoding speedup over state-of-the-art methods such as EAGLE-3, while preserving exact output distributions. Crucially, HeteroSpec requires no model retraining and remains compatible with other inference optimizations, making it a practical direction for improving speculative decoding efficiency.
+
+## 7. What Tokens Truly Matter? The Logit Conflation Problem in LLM Sampling
+
+- Authors: Pinlong Zhao, Huijun Tang, Pengfei Jiao, Mengyang Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8441731881255956
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1841/
+- PDF: https://aclanthology.org/2026.findings-acl.1841.pdf
+- Local PDF: pdf/2026-07-27_07_What Tokens Truly Matter_ The Logit Conflation Problem in LLM Sampling.pdf
+
+Sampling methods for large language models select candidate tokens based on logit statistics, implicitly assuming that high logits indicate desirable outputs. We identify the Logit Conflation Problem, where a token’s logit aggregates prompt-independent factors, including linguistic fluency and parametric associations, with prompt-relevance. However, only prompt-relevance determines instruction-following quality. We propose SEAL-Sampling (Signal Extraction for Active ReLevance) to isolate this component through attention-weighted attribution. Our framework defines prompt-relevance as the causal effect of prompt content on token logits and establishes attention patterns as an efficient proxy. Experiments on LLaMA-3 demonstrate significant improvements over top-nσ, with gains of 1.8% on AlpacaEval 2.0 and 2.2% on IFEval. Furthermore, attribution scores correlate weakly with raw logits, confirming the extraction of an orthogonal signal. The method is training-free and introduces minimal latency, adding less than 12ms overhead per token.
+
+## 8. Energy Matching: Unifying Flow Matching and Energy-Based Models for Generative Modeling
+
+- Authors: Balcerak, Michal, Amiranashvili, Tamaz, Terpin, Antonio, Shit, Suprosanna, Bogensperger, Lea, Kaltenbach, Sebastian, Koumoutsakos, Petros, Menze, Bjoern
+- Source: neurips
+- Venue type: conference
+- Journal: NeurIPS 2025
+- Publication status: formally_published
+- Publication date: 2026-04-23
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8438480196972855
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://proceedings.neurips.cc/paper_files/paper/2025/hash/0cbbdfb0a4098af8dc7a497a5e59aff7-Abstract-Conference.html
+- PDF: https://proceedings.neurips.cc/paper_files/paper/2025/file/0cbbdfb0a4098af8dc7a497a5e59aff7-Paper-Conference.pdf
+- Local PDF: pdf/2026-07-27_08_Energy Matching_ Unifying Flow Matching and Energy-Based Models for Generative Modeling.pdf
+
+Current state-of-the-art generative models map noise to data distributions by matching flows or scores. A key limitation of these models is their inability to readily integrate available partial observations and additional priors. In contrast, energy-based models (EBMs) address this by incorporating corresponding scalar energy terms. Here, we propose Energy Matching, a framework that endows flow-based approaches with the flexibility of EBMs. Far from the data manifold, samples move from noise to data along irrotational, optimal transport paths. As they approach the data manifold, an entropic energy term guides the system into a Boltzmann equilibrium distribution, explicitly capturing the underlying likelihood structure of the data. We parameterize these dynamics with a single time-independent scalar field, which serves as both a powerful generator and a flexible prior for effective regularization of inverse problems. The present method substantially outperforms existing EBMs on CIFAR-10 and ImageNet generation in terms of fidelity, while retaining simulation-free training of transport-based approaches away from the data manifold. Furthermore, we leverage the flexibility of the method to introduce an interaction energy that supports the exploration of diverse modes, which we demonstrate in a controlled protein generation setting. This approach learns a scalar potential energy, without time conditioning, auxiliary generators, or additional networks, marking a significant departure from recent EBM methods. We believe this simplified yet rigorous formulation significantly advances EBMs capabilities and paves the way for their wider adoption in generative modeling in diverse domains.
+
+## 9. EvoRoute: Experience-Driven Self-Routing LLM Agent Systems
+
+- Authors: Guibin Zhang, Haiyang Yu, Kaiming Yang, Bingli Wu, Fei Huang, Yongbin Li, Shuicheng Yan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8434650365453153
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1771/
+- PDF: https://aclanthology.org/2026.acl-long.1771.pdf
+- Local PDF: pdf/2026-07-27_09_EvoRoute_ Experience-Driven Self-Routing LLM Agent Systems.pdf
+
+Complex agentic AI systems, powered by a coordinated ensemble of Large Language Models (LLMs), tool and memory modules, have demonstrated remarkable capabilities on intricate, multi-turn tasks. However, this success is shadowed by prohibitive economic costs and severe latency, exposing a critical, yet underexplored, trade-off. We formalize this challenge as the Agent System Trilemma : the inherent tension among achieving state-of-the-art performance, minimizing monetary cost, and ensuring rapid task completion. To dismantle this trilemma, we introduce EvoRoute, a self-evolving model routing paradigm that transcends static, pre-defined model assignments. Leveraging an ever-expanding knowledge base of prior experience, EvoRoute dynamically selects Pareto-optimal LLM backbones at each step, balancing accuracy, efficiency, and resource use, while continually refining its own selection policy through environment feedback. Experiments on challenging agentic benchmarks such as GAIA and BrowseComp+ demonstrate that EvoRoute, when integrated into off-the-shelf agentic systems, not only sustains or enhances system performance but also reduces execution cost by up to 80% and latency by over 70%.
+
+## 10. AnchorMem: Anchored Facts with Associative Contexts for Building Memory in Large Language Models
+
+- Authors: Zhanyu Shen, Sijie Cheng, Zhicheng Guo, Weiqin Wang, Yile Wang, Hui Huang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8423505056645846
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1736/
+- PDF: https://aclanthology.org/2026.findings-acl.1736.pdf
+- Local PDF: pdf/2026-07-27_10_AnchorMem_ Anchored Facts with Associative Contexts for Building Memory in Large Language Models.pdf
+
+While large language models have achieved remarkable performance in complex tasks, they still need a memory system to utilize historical experience in long-term interactions. Existing memory methods (e.g., A-Mem, Mem0) place excessive emphasis on organizing interactions by frequently rewriting them, however, this heavy reliance on summarization risks diluting essential contextual nuances and obscuring key retrieval features. To bridge this gap, we introduce AnchorMem, a novel memory framework inspired by the Proust Phenomenon in cognitive science, where a specific anchor triggers a holistic recollection. We propose a method that decouples the retrieval unit from the generation context. AnchorMem extracts atomic facts from interaction history to serve as retrieval anchors, while preserving the original context as the immutable context. To reveal implicit narrative cues, we construct an associative event graph that uses higher-order event links that bind sets of related facts into shared event representations, strengthening cross-memory integration without relying on generic entities as bridges. During retrieval, the system anchors queries to specific facts and events to locate relevant memories, but reconstructs the context using the associated raw chunks and events. Our method reconciles fine-grained retrieval with the contextual integrity of interactions. Experiments across three closed-source and open-source models on the LoCoMo benchmark demonstrate that AnchorMem significantly outperforms baselines.
+
+## 11. AHEAD: Attention Head Energy-Aware Dynamics for Hallucination Mitigation in MLLMs
+
+- Authors: Jiale Chang, Ying Li, Siliang Tang, Yueting Zhuang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8396426935030608
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.425/
+- PDF: https://aclanthology.org/2026.findings-acl.425.pdf
+- Local PDF: pdf/2026-07-27_11_AHEAD_ Attention Head Energy-Aware Dynamics for Hallucination Mitigation in MLLMs.pdf
+
+Multimodal large language models excel at vision-language tasks but remain prone to hallucinations that undermine their reliability. Existing approaches predominantly treat hallucinations as classification errors, overlooking the heterogeneous behaviors of attention heads and their dynamic influences during inference. We revisit MLLM reasoning from an energy perspective and identify that hallucinations stem from imbalances between visual potential and language prior potential: when visual information is ambiguous or language priors dominate, attention heads tend to be driven by linguistic statistical patterns, generating content inconsistent with visual evidence. We propose AHEAD, a framework that quantifies the energetic properties of each attention head during object generation through two potential networks—the Visual Grounding Potential Network and the Language Prior Potential Network—and dynamically adjusts their contributions at inference time. Specifically, we amplify attention heads with strong visual grounding capacity while suppressing those overly reliant on language priors. Experiments across multiple benchmarks demonstrate that AHEAD significantly reduces hallucination rates without fine-tuning the base MLLM while maintaining generation quality.
+
+## 12. Fast-Decoding Diffusion Language Models via Progress-Aware Confidence Schedules
+
+- Authors: Amr Mohamed, Yang Zhang, Michalis Vazirgiannis, Guokan Shang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.839553280667239
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1782/
+- PDF: https://aclanthology.org/2026.findings-acl.1782.pdf
+- Local PDF: pdf/2026-07-27_12_Fast-Decoding Diffusion Language Models via Progress-Aware Confidence Schedules.pdf
+
+Diffusion large language models (dLLMs) offer a promising alternative to autoregressive models, but their practical utility is severely hampered by slow, iterative sampling. We present *SchED*, a training-free, model-agnostic early-exit algorithm that terminates diffusion decoding using a progress-aware confidence threshold. We evaluate *SchED* across multiple diffusion model families and a diverse set of benchmarks spanning multiple-choice, math, long-form QA, and translation. *SchED* delivers substantial acceleration: on instruction-tuned models, it achieves approximately 4× speedups while retaining baseline performance on average. On base models, *SchED* yields consistent speedup gains with 99.1–100% performance retention, with up to 2.34× under more aggressive settings. Under a conservative quality–penalized speed metric, *SchED* consistently outperforms prior confidence-based early-exit methods, including on long-form generation where existing approaches tend to break down. An entropy analysis of the model’s token predictions reveals that instruction tuning speeds up the decay of predictive entropy. By leveraging inherent confidence stabilization as a signal for computational efficiency, *SchED* provides a robust framework for efficient dLLM inference.
+
+## 13. SLIM: Stealthy Low-Coverage Black-Box Watermarking via Latent-Space Confusion Zones
+
+- Authors: Hengyu WU, Yang Cao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.838792133524304
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.919/
+- PDF: https://aclanthology.org/2026.findings-acl.919.pdf
+- Local PDF: pdf/2026-07-27_13_SLIM_ Stealthy Low-Coverage Black-Box Watermarking via Latent-Space Confusion Zones.pdf
+
+Training data is a critical and often proprietary asset in Large Language Model (LLM) development, motivating the use of data watermarking to embed model-transferable signals for usage verification. We identify low coverage as a vital yet largely overlooked requirement for practicality, as individual data owners typically contribute only a minute fraction of massive training corpora. Prior methods fail to maintain stealthiness, verification feasibility, or robustness when only one or a few sequences can be modified. To address these limitations, we introduce SLIM, a framework enabling per-user data provenance verification under strict black-box access. SLIM leverages intrinsic LLM properties to induce a Latent-Space Confusion Zone by training the model to map semantically similar prefixes to divergent continuations. This manifests as localized generation instability, which can be reliably detected via hypothesis testing. Experiments demonstrate that SLIM achieves ultra-low coverage capability, strong black-box verification performance, and great scalability while preserving both stealthiness and model utility, offering a robust solution for protecting training data in modern LLM pipelines.
+
+## 14. PairCoder: Pair Programming-Inspired Two-Agent Collaboration for Code Generation
+
+- Authors: Junhao Chen, Xiang Li, Yibin Xu, Yuehan Cui, Fangsheng Weng, Hao Zhao, Fei Ma, Qi Tian
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8380358759724005
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.149/
+- PDF: https://aclanthology.org/2026.findings-acl.149.pdf
+- Local PDF: pdf/2026-07-27_14_PairCoder_ Pair Programming-Inspired Two-Agent Collaboration for Code Generation.pdf
+
+Large Language Models (LLMs) achieve strong results on code generation, but single model inference remains brittle on tasks that require iterative refinement. Existing multi agent frameworks improve reliability, yet they often incur substantial token and latency overhead. We introduce PairCoder, a framework that brings pair programming to autonomous LLM collaboration. PairCoder assigns one model to code generation and the other to review, and switches roles when repeated errors suggest that the current interaction has stalled. Across 13 LLMs on HumanEval, PairCoder consistently improves over single model inference. On eight representative backbones, it reaches 91.0% pass@1 and improves over single model inference by up to 20.3% while reducing token usage by 40% to 70% relative to multi agent baselines. Many heterogeneous pairings also outperform both constituent models, suggesting that the framework generalizes across model families. These results position PairCoder as an effective and deployment conscious alternative to heavier multi agent systems.Code is available at https://github.com/yisuanwang/PairCoder
+
+## 15. Verifiable LLM-Generated Text Detection via Projected Semantic-Structural Distributions
+
+- Authors: Ruochong Xiong, Qien Li, Wangwang Lian, Yulong Wan, Hanlin Xue, Zhouxing Tan, Han Yang, Fengyu Lu, Junfei Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8379574598741475
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.638/
+- PDF: https://aclanthology.org/2026.acl-long.638.pdf
+- Local PDF: pdf/2026-07-27_15_Verifiable LLM-Generated Text Detection via Projected Semantic-Structural Distributions.pdf
+
+The widespread deployment of large language models (LLMs) makes detecting LLM-Generated text a critical security task. Existing methods, primarily relying on output probabilities from proxy models or single semantic features, suffer from distribution misalignment and limited interpretability. We observe that machine-generated text exhibits a directionally consistent systematic translation relative to human-written text within the joint semantic-structural space. Accordingly, we propose ProSSD, a statistical framework utilizing supervised subspace learning to extract compact features and construct conditional semantic distributions based on syntactic structures. By employing a likelihood ratio test, we derive a modified Mahalanobis distance, weighted by the Wasserstein distance, as the discriminative metric. Experiments demonstrate ProSSD’s superior robustness and computational efficiency across cross-domain, cross-model, and adversarial scenarios. Furthermore, we reveal the phenomena of systematic semantic translation and semantic collapse in machine-generated text, offering interpretable statistical insights into LLM generation behaviors.
+
+## 16. LAFaCT: Attribution-based Localization and Focused Sequential Analysis of Fact-Critical Tokens for Hallucination Detection
+
+- Authors: Xin Wang, Jiahao Li, Licheng Zhang, Zhendong Mao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.836588805540068
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.312/
+- PDF: https://aclanthology.org/2026.acl-long.312.pdf
+- Local PDF: pdf/2026-07-27_16_LAFaCT_ Attribution-based Localization and Focused Sequential Analysis of Fact-Critical Tokens for Hallucination Detecti.pdf
+
+Large Language Models (LLMs) suffer from hallucinations, severely undermining their reliability. While white-box hallucination detection methods that leverage hidden states prevail, they fail to identify and focus on fact-critical information when analyzing token sequences. To address this, we propose LAFaCT, a Localize-then-Analyze detection framework. It first localizes fact-critical tokens using Factual Criticality, a novel metric derived from feature attribution. A subsequent stage then performs a focused sequential analysis on their hidden states. Extensive experiments on eight benchmarks and multiple model families confirm LAFaCT as the new state-of-the-art, with in-depth analyses validating the effectiveness of its core token-localization strategy.
+
+## 17. AMResources: Cataloging Argument Mining Datasets
+
+- Authors: Dexter Williams, Shiwei Liu, Manfred Stede, Henning Wachsmuth, Jodi Schneider
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8364481921010327
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.argmining-1.5/
+- PDF: https://aclanthology.org/2026.argmining-1.5.pdf
+- Local PDF: pdf/2026-07-27_17_AMResources_ Cataloging Argument Mining Datasets.pdf
+
+Annotated datasets are essential for developing and evaluating argument mining systems, yet information about argument mining datasets remains scattered across papers, repositories, and task-specific surveys. To address this, we introduce AMResources (http://purl.archive.org/amresources), an online catalog that organizes argument mining datasets by task, and captures relationships among datasets, releases, and papers. We draw particular attention to relationships such as re-annotation and dataset extension. To curate dataset information into a consistent and provenance-aware structure, AMResources links datasets to canonical papers. For each dataset release, AMResources records standardized metadata such as language, genre, unit type and unit count, annotator characteristics, agreement reporting, and accessibility. We argue that such structured dataset documentation remains critical in the era of large language models, where annotated datasets increasingly serve as high-quality evaluation benchmarks and where tracing dataset provenance and annotation layers is necessary for systematic comparisons across tasks.
+
+## 18. DiffCoT: Diffusion-styled Chain-of-Thought Reasoning in LLMs
+
+- Authors: Shidong Cao, Hongzhan Lin, Yuxuan Gu, Ziyang Luo, Jing Ma
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.836006486013259
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1939/
+- PDF: https://aclanthology.org/2026.findings-acl.1939.pdf
+- Local PDF: pdf/2026-07-27_18_DiffCoT_ Diffusion-styled Chain-of-Thought Reasoning in LLMs.pdf
+
+Chain-of-Thought (CoT) reasoning improves multi-step mathematical problem solving in large language models but remains vulnerable to exposure bias and error accumulation, as early mistakes propagate irreversibly through autoregressive decoding. In this work, we propose DiffCoT, a diffusion-styled CoT framework that reformulates CoT reasoning as an iterative denoising process. DiffCoT integrates diffusion principles at the reasoning-step level via a sliding-window mechanism, enabling unified generation and retrospective correction of intermediate steps while preserving token-level autoregression. To maintain causal consistency, we further introduce a causal diffusion noise schedule that respects the temporal structure of reasoning chains. Extensive experiments on three multi-step CoT reasoning benchmarks across diverse model backbones demonstrate that DiffCoT consistently outperforms existing CoT preference optimization methods, yielding improved robustness and error-correction capability in CoT reasoning.
+
+## 19. Interleaved Tool-Call Reasoning for Protein Function Understanding
+
+- Authors: Chuanliu Fan, Zicheng Ma, Huanran Meng, Aijia Zhang, Wenjie Du, Jun Zhang, Ziqiang Cao, Guohong Fu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.835765821874431
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.592/
+- PDF: https://aclanthology.org/2026.acl-long.592.pdf
+- Local PDF: pdf/2026-07-27_19_Interleaved Tool-Call Reasoning for Protein Function Understanding.pdf
+
+Recent advances in large language models (LLMs) have highlighted the effectiveness of chain-of-thought reasoning in symbolic domains such as mathematics and programming. However, our study shows that directly transferring such text-based reasoning paradigms to protein function understanding is ineffective: reinforcement learning mainly amplifies superficial keyword patterns while failing to introduce new biological knowledge, resulting in limited generalization. We argue that protein function prediction is a knowledge-intensive scientific task that fundamentally relies on external biological priors and computational tools rather than purely internal reasoning. To address this gap, we propose Protein Function Understanding Agent (PFUA), a tool-augmented protein reasoning agent that unifies problem decomposition, tool invocation, and grounded answer generation. Instead of relying on long unconstrained reasoning traces, PFUA integrates domain-specific tools to produce verifiable intermediate evidence. Experiments on four benchmarks demonstrate that PFUA consistently outperforms text-only reasoning models with an average performance improvement of 103%. We believe PFUA has the potential to become a standard paradigm for agentic reasoning in knowledge-intensive life science domains.
+
+## 20. Grammar Search for Multi-Agent Systems
+
+- Authors: Mayank Singh, Vikas Yadav, Shiva Krishna Reddy Malay, Shravan Nayak, Sai Rajeswar, Sathwik Tejaswi Madhusudhan, Eduardo Blanco
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8357051764085393
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.75/
+- PDF: https://aclanthology.org/2026.acl-long.75.pdf
+- Local PDF: pdf/2026-07-27_20_Grammar Search for Multi-Agent Systems.pdf
+
+Automatic search for Multi-Agent Systems has recently emerged as a key focus in agentic AI research. Several prior approaches have relied on LLM-based free-form search over the code space. In this work, we propose a more structured framework that explores the same space through a fixed set of composable components. We show that, despite lacking the generative flexibility of LLMs during the candidate generation stage, our method outperforms prior approaches on a majority of evaluated benchmarks across two backbone LLMs and two domains: mathematics and question answering. Furthermore, our method offers additional advantages, including a more cost-efficient search process and the generation of modular, interpretable multi-agent systems.
+
+## 21. CausalGaze: Unveiling Hallucinations via Counterfactual Graph Intervention in Large Language Models
+
+- Authors: Linggang Kong, Lei Wu, Yunlong Zhang, Xiaofeng Zhong, Wang Zhen, Yongjie Wang, Yao Pan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8347355494549142
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1943/
+- PDF: https://aclanthology.org/2026.findings-acl.1943.pdf
+- Local PDF: pdf/2026-07-27_21_CausalGaze_ Unveiling Hallucinations via Counterfactual Graph Intervention in Large Language Models.pdf
+
+Despite the groundbreaking advancements made by large language models (LLMs), hallucination remains a critical bottleneck for their deployment in high-stakes domains. Existing classification-based methods mainly rely on static and passive signals from internal states, which often captures the noise and spurious correlations, while overlooking the underlying causal mechanisms. To address this limitation, we shift the paradigm from passive observation to active intervention by introducing CausalGaze, a novel hallucination detection framework based on structural causal models (SCMs). CausalGaze models LLMs’ internal states as dynamic causal graphs and employs counterfactual interventions to disentangle causal reasoning paths from incidental noise, thereby enhancing model interpretability. Extensive experiments across four datasets and three widely used LLMs demonstrate the effectiveness of CausalGaze, especially achieving over 5.2% improvement in AUROC on the TruthfulQA dataset compared to state-of-the-art baselines.
+
+## 22. Can MLLMs Reason Beyond Language? VisReason: A Comprehensive Benchmark for Vision-Centric Reasoning
+
+- Authors: Longteng Guo, Yifan Wang, Pengkang Huo, Tailai Chen, Yuze Wu, Jing Liu, Xinxin Zhu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.834549550139698
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1996/
+- PDF: https://aclanthology.org/2026.findings-acl.1996.pdf
+- Local PDF: pdf/2026-07-27_22_Can MLLMs Reason Beyond Language_ VisReason_ A Comprehensive Benchmark for Vision-Centric Reasoning.pdf
+
+Recent multimodal large language models (MLLMs) achieve strong performance on visual reasoning benchmarks, yet it remains unclear to what extent such performance reflects reasoning directly grounded in visual evidence. We introduce VisReason, a benchmark for vision-centric reasoning in everyday scenarios where perception and inference are tightly coupled. VisReason contains 1,505 questions across 10 categories spanning perceptual, structural, and conceptual reasoning. Our evaluation shows that VisReason poses a qualitatively different challenge from existing benchmarks, exposing substantial gaps between humans and current MLLMs and revealing limited benefits from test-time reasoning strategies. VisReason offers a focused diagnostic for evaluating vision-centric reasoning beyond language.
+
+## 23. DiffER: Diffusion Entity-Relation Modeling for Reversal Curse in Diffusion Large Language Models
+
+- Authors: Shaokai He, Kaiwen Wei, Xinyi Zeng, Xiang Chen, Xue Yang, Zhenyang Li, Jiang Zhong, Yu Tian
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8341591169447753
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1053/
+- PDF: https://aclanthology.org/2026.findings-acl.1053.pdf
+- Local PDF: pdf/2026-07-27_23_DiffER_ Diffusion Entity-Relation Modeling for Reversal Curse in Diffusion Large Language Models.pdf
+
+The "reversal curse" refers to the phenomenon where large language models (LLMs) exhibit predominantly unidirectional behavior when processing logically bidirectional relationships. Prior work attributed this to autoregressive training—predicting the next token inherently favors left-to-right information flow over genuine bidirectional knowledge associations. However, we observe that Diffusion LLMs (DLLMs), despite being trained bidirectionally, also suffer from the reversal curse. To investigate the root causes, we conduct systematic experiments on DLLMs and identify three key reasons: 1) entity fragmentation during training, 2) data asymmetry, and 3) missing entity relations. Motivated by the analysis of these reasons, we propose Diffusion Entity-Relation Modeling (DiffER), which addresses the reversal curse through entity-aware training and balanced data construction. Specifically, DiffER introduces whole-entity masking, which mitigates entity fragmentation by predicting complete entities in a single step. DiffER further employs distribution-symmetric and relation-enhanced data construction strategies to alleviate data asymmetry and missing relations. Extensive experiments demonstrate that DiffER effectively alleviates the reversal curse in Diffusion LLMs, offering new perspectives for future research. The code is available at https://github.com/CQU-MM-Intelligent-Lab/DiffER.
+
+## 24. AdapShot: Adaptive Many-Shot In-Context Learning with Semantic-Aware KV Cache Reuse
+
+- Authors: Jie Ou, Jinyu Guo, Shiyao Guo, Yuang Li, Ruiqi Wu, Zhaokun Wang, Wenyi Li, Wenhong Tian
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.833938201713886
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1990/
+- PDF: https://aclanthology.org/2026.acl-long.1990.pdf
+- Local PDF: pdf/2026-07-27_24_AdapShot_ Adaptive Many-Shot In-Context Learning with Semantic-Aware KV Cache Reuse.pdf
+
+Many-Shot In-Context Learning (ICL) has emerged as a promising paradigm, leveraging extensive examples to unlock the reasoning potential of Large Language Models (LLMs). However, existing methods typically rely on a predetermined, fixed number of shots. This static approach often fails to adapt to the varying difficulty of different queries, leading to either insufficient context or interference from noise. Furthermore, the prohibitive computational and memory costs of long contexts severely limit Many-Shot’s feasibility. To address the above limitations, we propose AdapShot, which dynamically optimizes shot counts and leverages KV cache reuse for efficient inference. Specifically, we design a probe-based evaluation mechanism that utilizes output entropy to determine the optimal number of shots. To bypass the redundant prefilling computation during both the probing and inference phases, we incorporate a semantics-aware KV cache reuse strategy. Within this reuse strategy, to address positional encoding incompatibilities, we introduce a decoupling and re-encoding method that enables the flexible reordering of cached key-value pairs. Extensive experiments demonstrate that AdapShot achieves an average performance gain of ∼ 10% and a 4.64 × speedup compared to state-of-the-art DBSA.
+
+## 25. Efficient Paths and Dense Rewards: Probabilistic Flow Reasoning for Large Language Models
+
+- Authors: Yan Liu, Feng Zhang, Zhanyu Ma, Jun Xu, Jiuchong Gao, Jinghua Hao, Renqing He, Han Liu, Yangdong Deng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8334561918197405
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1215/
+- PDF: https://aclanthology.org/2026.acl-long.1215.pdf
+- Local PDF: pdf/2026-07-27_25_Efficient Paths and Dense Rewards_ Probabilistic Flow Reasoning for Large Language Models.pdf
+
+High-quality chain-of-thought has demonstrated strong potential for unlocking the reasoning capabilities of large language models. However, current paradigms typically treat the reasoning process as an indivisible sequence, lacking an intrinsic mechanism to quantify step-wise information gain. This granularity gap manifests in two limitations: inference inefficiency from redundant exploration without explicit guidance, and optimization difficulty due to sparse outcome supervision or costly external verifiers. In this work, we propose CoT-Flow , a framework that reconceptualizes discrete reasoning steps as a continuous probabilistic flow, quantifying the contribution of each step toward the ground-truth answer. Built on this formulation, CoT-Flow enables two complementary methodologies: flow-guided decoding, which employs a greedy flow-based decoding strategy to extract information-efficient reasoning paths, and flow-based reinforcement learning, which constructs a verifier-free dense reward function. Experiments on challenging benchmarks demonstrate that CoT-Flow achieves a superior balance between inference efficiency and reasoning performance.
+
+## 26. SEARCH-R: Structured Entity-Aware Retrieval with Chain-of-Reasoning Navigator for Multi-hop Question Answering
+
+- Authors: FU Yuqing, Yimin Deng, Wanyu Wang, Yuhao Wang, Yejing Wang, Hongshi Liu, Yiqi Wang, Xiao Han, Maolin Wang, Guoshuai Zhao, Yi Chang, Xiangyu Zhao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8327013518011923
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1953/
+- PDF: https://aclanthology.org/2026.findings-acl.1953.pdf
+- Local PDF: pdf/2026-07-27_26_SEARCH-R_ Structured Entity-Aware Retrieval with Chain-of-Reasoning Navigator for Multi-hop Question Answering.pdf
+
+Multi-hop Question Answering (MHQA) aims to answer questions that require multi-step reasoning. The complexity of user queries, coupled with potential knowledge deficiencies in Large Language Models (LLMs), gives rise to two pivotal challenges that underpin the performance on this task: the correct identification of the reasoning path and the accurate retrieval of essential knowledge. Existing approaches primarily rely on prompt-based methods to generate reasoning paths, which are further combined with traditional sparse or dense retrieval to produce the final answer. However, the generation of reasoning paths commonly lacks effective control over the generative process, thus leading the reasoning astray. Meanwhile, the retrieval methods over-rely on knowledge matching or similarity scores rather than evaluating the practical utility of the information, resulting in retrieving homogeneous or non-useful information. Therefore, we propose a Structured Entity-Aware Retrieval with Chain-of-Reasoning Navigator framework named SEARCH-R. Specifically, SEARCH-R trains an end-to-end reasoning path navigator, which is able to provide a powerful sub-question decomposer by fine-tuning the Llama3.1-8B model. Moreover, a novel dependency tree-based retrieval is designed to evaluate the informational contribution of the document quantitatively. Extensive experiments on three challenging multi-hop datasets validate the effectiveness of the proposed framework. The code and dataset are available at: https://github.com/Applied-Machine-Learning-Lab/ACL2026_SEARCH-R.
+
+## 27. Towards Inference-time Scaling for Continuous Space Reasoning
+
+- Authors: Minghan Wang, Thuy-Trang Vu, Ehsan Shareghi, Gholamreza Haffari
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8326609434118266
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1338/
+- PDF: https://aclanthology.org/2026.findings-acl.1338.pdf
+- Local PDF: pdf/2026-07-27_27_Towards Inference-time Scaling for Continuous Space Reasoning.pdf
+
+Inference-time scaling through multiple sample generation in combination with Process- or Outcome-Reward Model (PRM or ORM) re-ranking has proven effective for text-based reasoning in large language models. This paper investigates whether such established techniques can be successfully adapted to reasoning in the continuous space, using COCONUT (CITATION) continuous space reasoning LM as the backbone. We demonstrate the feasibility of generating diverse reasoning paths through dropout-based sampling. Our Pass@N analysis on the generated samples reveals the potential that could enable a significant gain in performance akin to gains observed in the discrete space. However, we highlight unique challenges faced for materializing this gain in the continuous thought space. In particular, working recipes for data generation and training PRM and ORM models in the discrete space unlocks only marginal improvements in the continuous space. Through probing various aspects including geometric properties and trajectory dynamics, we identify the underlying reasons that prevent effective discrimination between correct and incorrect reasoning (essential for the functioning of PRM and ORM). Our findings reveal that current limitations stem from the absence of key inductive biases in continuous thought representations.
+
+## 28. Dynamic Infilling Anchors for Format-Constrained Generation in Diffusion Large Language Models
+
+- Authors: Boyan Han, Yiwei Wang, Yi Song, Yujun Cai, Chi Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8325703349145934
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1205/
+- PDF: https://aclanthology.org/2026.acl-long.1205.pdf
+- Local PDF: pdf/2026-07-27_28_Dynamic Infilling Anchors for Format-Constrained Generation in Diffusion Large Language Models.pdf
+
+Diffusion large language models (dLLMs) offer bidirectional attention and parallel generation, enabling them to exploit global context and naturally support format-constrained tasks like parseable JSON or reasoning templates. While straightforward fixed anchors can enforce such constraints, they often impose rigid spans, leading to truncated reasoning or redundant content. To overcome this, we propose Dynamic Infilling Anchors (DIA), a training-free method that dynamically estimates end-anchor positions to adjust generation length before iterative infilling. This flexible mechanism ensures structural correctness and semantic coherence, avoiding the inefficiencies of fixed-span methods. Experiments on reasoning benchmarks demonstrate that DIA substantially improves format compliance and answer accuracy, achieving significant zero-shot gains on GSM8K and MATH. These results establish DIA as a robust pathway toward reliable, structure-aware generation.
+
+## 29. Test-Time Scaling in Multimodal Foundation Models: A Comprehensive Survey of Generation and Reasoning
+
+- Authors: Cong Wan, Ying He, Zhongzhan Huang, Hefeng Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.832228321359988
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.383/
+- PDF: https://aclanthology.org/2026.findings-acl.383.pdf
+- Local PDF: pdf/2026-07-27_29_Test-Time Scaling in Multimodal Foundation Models_ A Comprehensive Survey of Generation and Reasoning.pdf
+
+Test-time Scaling (TTS) has emerged as a pivotal research direction for enhancing model performance by dynamically allocating computational resources during inference. Recent advancements have adapted this paradigm to Multimodal Foundation Models (MFMs), unlocking their potential in multimodal reasoning and generation. Despite rapid progress, the field lacks a systematic survey and unified theoretical framework to delineate the developmental landscape of multimodal TTS. To bridge this gap, we present the first comprehensive review of TTS research for MFMs, proposing a unified taxonomic framework that categorizes existing methodologies into three distinct strategies: sampling-based, feedback-based, and search-based approaches. We further summarize representative applications and benchmarks commonly utilized to evaluate multimodal TTS capabilities in generation and reasoning tasks. Finally, this survey discusses open challenges and outlines future research directions, providing a systematic roadmap for subsequent studies in this rapidly evolving field.
+
+## 30. SplitThenMerge: Token-Level Skill-Compositional Sparse Mixture-of-Experts for Complex Domain-Specific Tasks
+
+- Authors: Yuting Huang, Jiawen Zhang, Yiquan Wu, Yinghao Hu, Fei Wu, Kun Kuang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.83212183664596
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.606/
+- PDF: https://aclanthology.org/2026.findings-acl.606.pdf
+- Local PDF: pdf/2026-07-27_30_SplitThenMerge_ Token-Level Skill-Compositional Sparse Mixture-of-Experts for Complex Domain-Specific Tasks.pdf
+
+Large language models have demonstrated strong performance on general-purpose tasks but often fail to satisfy the accuracy requirements of knowledge-intensive domains such as law, medicine, and finance. Complex domain-specific generation is inherently compositional, involving multiple atomic skills such as reasoning, knowledge grounding, and numerical computation that are frequently interleaved at the token level. Existing domain adaptation methods typically train these heterogeneous skills jointly within a single objective, which makes it difficult for models to reliably coordinate multiple skills when solving complex tasks. In this work, we explicitly incorporate atomic skills into domain-specific model training and propose SplitThenMerge, a framework that decomposes domain competence into atomic skills, trains them independently, and composes them dynamically during generation. SplitThenMerge adopts a token-level sparse Mixture-of-Experts architecture to enable fine-grained skill routing and coordination while implementing each skill as a lightweight LoRA expert to achieve parameter-efficient specialization. Experimental results demonstrate that our method consistently achieves superior performance in both legal and medical domains under the same training parameter budget.
