@@ -34,6 +34,13 @@
     "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
     "url": "http://arxiv.org/abs/2607.13125v1"
   },
+  "title:decomposeandreorganizeplanningwithprimitivesandvisuomotorpolicieslearnedfromdemonstrations": {
+    "doi": null,
+    "sent_date": "2026-07-29",
+    "source": "arxiv",
+    "title": "Decompose and Reorganize: Planning with Primitives and Visuomotor Policies Learned from Demonstrations",
+    "url": "http://arxiv.org/abs/2607.25397v1"
+  },
   "title:decouplingsemanticsandgeometricgroundingspatialvisualpromptsforlanguageconditionedimitationlearning": {
     "doi": null,
     "sent_date": "2026-06-26",
@@ -69,6 +76,13 @@
     "title": "Gaussian Mixture Modeling for Event-Aware Visual Allocation in Long Video Understanding",
     "url": "http://arxiv.org/abs/2607.12557v1"
   },
+  "title:hiskillempoweringllmagentswithhierarchicalskillgraphs": {
+    "doi": null,
+    "sent_date": "2026-07-29",
+    "source": "arxiv",
+    "title": "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs",
+    "url": "http://arxiv.org/abs/2607.25853v1"
+  },
   "title:informationtheoreticadaptivecoolingfordeterministicmppiviaentropyfeedback": {
     "doi": null,
     "sent_date": "2026-07-17",
@@ -96,6 +110,13 @@
     "source": "arxiv",
     "title": "MUX-USCT: A Noise-Robust Neural Network for Ultrasound Computed Tomography",
     "url": "http://arxiv.org/abs/2607.10648v1"
+  },
+  "title:p3probabilisticpolicypropagationforstablevaebasedrobotlearning": {
+    "doi": null,
+    "sent_date": "2026-07-29",
+    "source": "arxiv",
+    "title": "P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning",
+    "url": "http://arxiv.org/abs/2607.25541v1"
   },
   "title:phaseawareinterpretablehumaninthelooprehabilitationscoringwithboundarymonitoring": {
     "doi": null,
