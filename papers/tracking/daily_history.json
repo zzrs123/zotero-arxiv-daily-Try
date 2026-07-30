@@ -55,12 +55,26 @@
     "title": "Dual Sparse Aggregation Transformer for Multispectral Object Detection",
     "url": "http://arxiv.org/abs/2606.31015v1"
   },
+  "title:equilibriumtrainingofenergybasedmodelswithparalleltrajectorytempering": {
+    "doi": null,
+    "sent_date": "2026-07-30",
+    "source": "arxiv",
+    "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
+    "url": "http://arxiv.org/abs/2607.27077v1"
+  },
   "title:fasttpsanoptimizedmethodforllmtokenphaseforaiaccelerators": {
     "doi": null,
     "sent_date": "2026-07-14",
     "source": "arxiv",
     "title": "FastTPS: An Optimized Method for LLM Token Phase for AI accelerators",
     "url": "http://arxiv.org/abs/2607.11211v1"
+  },
+  "title:fedtoporelationleveltopologysharingformodelheterogeneousfederatedlearning": {
+    "doi": null,
+    "sent_date": "2026-07-30",
+    "source": "arxiv",
+    "title": "FedTopo: Relation-Level Topology Sharing for Model-Heterogeneous Federated Learning",
+    "url": "http://arxiv.org/abs/2607.26801v1"
   },
   "title:forgetowardsfunctionaltoolusegeneralizationviakeypointtrajectoryreasoning": {
     "doi": null,
@@ -75,6 +89,13 @@
     "source": "arxiv",
     "title": "Gaussian Mixture Modeling for Event-Aware Visual Allocation in Long Video Understanding",
     "url": "http://arxiv.org/abs/2607.12557v1"
+  },
+  "title:gptq2dcubictimetwosidedadaptiverounding": {
+    "doi": null,
+    "sent_date": "2026-07-30",
+    "source": "arxiv",
+    "title": "GPTQ-2D: Cubic-Time Two-Sided Adaptive Rounding",
+    "url": "http://arxiv.org/abs/2607.27042v1"
   },
   "title:hiskillempoweringllmagentswithhierarchicalskillgraphs": {
     "doi": null,
@@ -131,6 +152,13 @@
     "source": "arxiv",
     "title": "Point as Skeleton: Accumulated Point Cloud Enhanced Autoregressive Generation for Closed-Loop Autonomous Driving Simulation",
     "url": "http://arxiv.org/abs/2607.06516v1"
+  },
+  "title:registrationgroundedspectralfusionforunregisteredwlinbiendoscopiclesionsegmentation": {
+    "doi": null,
+    "sent_date": "2026-07-30",
+    "source": "arxiv",
+    "title": "Registration-Grounded Spectral Fusion for Unregistered WLI/NBI Endoscopic Lesion Segmentation",
+    "url": "http://arxiv.org/abs/2607.26395v1"
   },
   "title:researchprogressinhighpressuretuningoflayeredmagneticmaterials": {
     "doi": null,
