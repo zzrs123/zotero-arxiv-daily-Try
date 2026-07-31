@@ -125,6 +125,13 @@
     "title": "Context-aware sequence-to-function model of human gene regulation",
     "url": "https://doi.org/10.1038/s41467-026-75527-2"
   },
+  "doi:10.1038/s41467-026-75702-5": {
+    "doi": "https://doi.org/10.1038/s41467-026-75702-5",
+    "sent_date": "2026-07-31",
+    "source": "openalex",
+    "title": "Mol-CADiff: text-conditional molecule generation via causality-aware autoregressive diffusion",
+    "url": "https://doi.org/10.1038/s41467-026-75702-5"
+  },
   "doi:10.1038/s41467-026-75762-7": {
     "doi": "https://doi.org/10.1038/s41467-026-75762-7",
     "sent_date": "2026-07-26",
@@ -972,6 +979,34 @@
     "title": "UDIST: unsupervised disentanglement of shape and texture for multi-scale phenotypic profiling in 2D microscopy",
     "url": "https://www.biorxiv.org/content/10.64898/2026.07.26.740036v1.full.pdf"
   },
+  "doi:10.64898/2026.07.27.740958": {
+    "doi": "10.64898/2026.07.27.740958",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "Scale-Aware Compositional Inference Improves Reproducibility and Uncovers Convergent Aging Programs in Spatial Transcriptomics",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.740958v1.full.pdf"
+  },
+  "doi:10.64898/2026.07.27.740999": {
+    "doi": "10.64898/2026.07.27.740999",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "RKMR: A Rapid Kernel Machine Regression Framework for Optimal Marker Detection in Spatial Omics Data",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.740999v1.full.pdf"
+  },
+  "doi:10.64898/2026.07.27.741070": {
+    "doi": "10.64898/2026.07.27.741070",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "Quantitative assessment of cell fate commitment in single-cell transcriptomics using scCS",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.741070v1.full.pdf"
+  },
+  "doi:10.64898/2026.07.27.741117": {
+    "doi": "10.64898/2026.07.27.741117",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "LLM-powered Functional Gene Set Summarization with genesetGPT",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.741117v1.full.pdf"
+  },
   "title:abenchmarkstudyofvisionandpathologyfoundationmodelsforcomputationalpathology": {
     "doi": "https://doi.org/10.1038/s41467-026-76004-6",
     "sent_date": "2026-07-26",
@@ -1203,6 +1238,13 @@
     "title": "Agent-Dice: Disentangling Knowledge Updates via Geometric Consensus for Agent Continual Learning",
     "url": "https://aclanthology.org/2026.findings-acl.908/"
   },
+  "title:agentgfmagraphfoundationmodelwithnodeagentinformationflowcontrol": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "AgentGFM: A Graph Foundation Model with Node-Agent Information-Flow Control",
+    "url": "http://arxiv.org/abs/2607.26533v1"
+  },
   "title:agentgltowardsagenticgraphlearningwithllmsviareinforcementlearning": {
     "doi": null,
     "sent_date": "2026-06-24",
@@ -1230,6 +1272,13 @@
     "source": "arxiv",
     "title": "Agentic Routing: The Harness-Native Data Flywheel",
     "url": "http://arxiv.org/abs/2607.11399v1"
+  },
+  "title:agentmapjointequivalenceandsubsumptiondiscoveryforontologymatching": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "AgentMap: Joint Equivalence and Subsumption Discovery for Ontology Matching",
+    "url": "http://arxiv.org/abs/2607.27130v1"
   },
   "title:agentrouteraknowledgegraphguidedllmrouterforcollaborativemultiagentquestionanswering": {
     "doi": null,
@@ -1308,6 +1357,13 @@
     "title": "ALTER: Asymmetric LoRA for Token-Entropy-Guided Unlearning of LLMs",
     "url": "https://doi.org/10.1609/aaai.v40i42.40845"
   },
+  "title:amortizedmomentmatchingforvisualgeneration": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Amortized Moment Matching for Visual Generation",
+    "url": "http://arxiv.org/abs/2607.26860v1"
+  },
   "title:amresourcescatalogingargumentminingdatasets": {
     "doi": null,
     "sent_date": "2026-07-27",
@@ -1370,6 +1426,13 @@
     "source": "arxiv",
     "title": "Anatomically-conditioned Latent Diffusion Model for Data-Efficient Few-Shot Cross-Domain 3D Glioma MRI Synthesis",
     "url": "http://arxiv.org/abs/2606.25390v1"
+  },
+  "title:anatomycontextualizedadaptionofctfoundationmodels": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Anatomy Contextualized Adaption of CT Foundation Models",
+    "url": "http://arxiv.org/abs/2607.27154v1"
   },
   "title:anautomatedplatformforspatialfunctionalmodelingandfingerprintanalysisoftissuemolecularlandscapes": {
     "doi": "10.64898/2026.07.15.738836",
@@ -3086,6 +3149,13 @@
     "title": "Decoupled Reasoning with Implicit Fact Tokens (DRIFT): A Dual-Model Framework for Efficient Long-Context Inference",
     "url": "https://aclanthology.org/2026.findings-acl.1897/"
   },
+  "title:decoupledvisualprocessingefficientmultimodaladaptationviamodalityspecifictransformersubstitution": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Decoupled Visual Processing: Efficient Multimodal Adaptation via Modality-Specific Transformer Substitution",
+    "url": "http://arxiv.org/abs/2607.26596v1"
+  },
   "title:decouplinggeneralizationandadaptationinmetalearningforlargelanguagemodels": {
     "doi": null,
     "sent_date": "2026-07-13",
@@ -3331,6 +3401,13 @@
     "title": "DiZiNER: Disagreement-guided Instruction Refinement via Simulating Pilot Annotation for Zero-shot Named Entity Recognition",
     "url": "https://aclanthology.org/2026.acl-long.795/"
   },
+  "title:dkmerethinkingcoupledknowledgememoryforlifelongmodeleditingoflargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "acl_anthology",
+    "title": "DKME: Rethinking Coupled Knowledge Memory for Lifelong Model Editing of Large Language Models",
+    "url": "https://aclanthology.org/2026.findings-acl.792/"
+  },
   "title:dllmsimplediffusionlanguagemodeling": {
     "doi": null,
     "sent_date": "2026-07-04",
@@ -3372,6 +3449,13 @@
     "source": "acl_anthology",
     "title": "Domain-Specific Data Generation Framework for RAG Adaptation",
     "url": "https://aclanthology.org/2026.findings-acl.960/"
+  },
+  "title:donttelltheanswertrulyguidethereasoningduringrlrollouts": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "acl_anthology",
+    "title": "Don’t Tell the Answer, Truly Guide the Reasoning During RL Rollouts",
+    "url": "https://aclanthology.org/2026.findings-acl.169/"
   },
   "title:dosdependencyorientedsamplerformaskeddiffusionlanguagemodels": {
     "doi": null,
@@ -3716,6 +3800,13 @@
     "title": "EO-Agents: A Three-Agent LLM Pipeline for Earth Observation Hypothesis Generation",
     "url": "http://arxiv.org/abs/2607.01584v1"
   },
+  "title:equilibriumtrainingofenergybasedmodelswithparalleltrajectorytempering": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
+    "url": "http://arxiv.org/abs/2607.27077v1"
+  },
   "title:escacontextualizingembodiedagentsviascenegraphgeneration": {
     "doi": null,
     "sent_date": "2026-06-20",
@@ -3841,6 +3932,13 @@
     "source": "arxiv",
     "title": "ExecuGraph: A Multi-Agent, Execution-Grounded Framework for Reliable Backend Code Synthesis with Large Language Models",
     "url": "http://arxiv.org/abs/2607.20499v1"
+  },
+  "title:existencefielddiffusionmodelforspatialpointprocesseswithvariablecardinality": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Existence-Field Diffusion Model for Spatial Point Processes with Variable Cardinality",
+    "url": "http://arxiv.org/abs/2607.26428v1"
   },
   "title:explainableandfinegrainedsafeguardingofllmmultiagentsystemsviabilevelgraphanomalydetection": {
     "doi": null,
@@ -4073,6 +4171,13 @@
     "title": "FlowEdit: Information-Theoretic Control of LLM Reasoning Flows for Ill-posed Problems Involving Conflicts",
     "url": "http://arxiv.org/abs/2607.20500v1"
   },
+  "title:flowmaplearningvianongradientvectorflow": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Flow Map Learning via Nongradient Vector Flow",
+    "url": "http://arxiv.org/abs/2607.26398v1"
+  },
   "title:flux3dhighfidelity3dgaussiangenerationwithdiffusionalignedsparserepresentation": {
     "doi": null,
     "sent_date": "2026-06-25",
@@ -4234,6 +4339,13 @@
     "title": "From Insight to Action: A Novel Framework for Interpretability-Guided Data Selection in Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.283/"
   },
+  "title:frominterfacetoinferenceelicitinganyorderinferencefromanyordermodels": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "From Interface to Inference: Eliciting Any-Order Inference from Any-Order Models",
+    "url": "http://arxiv.org/abs/2607.26504v1"
+  },
   "title:fromisolatedscoringtocollaborativerankingacomparisonnativeframeworkforllmbasedpaperevaluation": {
     "doi": null,
     "sent_date": "2026-07-17",
@@ -4247,6 +4359,13 @@
     "source": "acl_anthology",
     "title": "From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.1653/"
+  },
+  "title:fromlogicaltocomputationalsparsitystructureawareblocksparseattentionforlongcodecompletion": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "acl_anthology",
+    "title": "From Logical to Computational Sparsity: Structure-Aware Block-Sparse Attention for Long-Code Completion",
+    "url": "https://aclanthology.org/2026.acl-long.1189/"
   },
   "title:fromnodestonarrativesexplaininggraphneuralnetworkswithllmsandgraphcontext": {
     "doi": null,
@@ -5137,6 +5256,13 @@
     "title": "High-Dimensional Interlingual Representations of Large Language Models",
     "url": "https://aclanthology.org/2025.sigtyp-1.14/"
   },
+  "title:highordermarkovblanketdiscoveryviaakorderrelaxationofthefaithfulnessassumption": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "High-Order Markov Blanket Discovery via a k-Order Relaxation of the Faithfulness Assumption",
+    "url": "http://arxiv.org/abs/2607.26357v1"
+  },
   "title:highresolutionmriguidedwholemousebrainneuronalcelltypeatlasusingdeeplearning": {
     "doi": "https://doi.org/10.1038/s42003-026-10608-y",
     "sent_date": "2026-07-09",
@@ -6005,6 +6131,13 @@
     "title": "LLM-OREF: An Open Relation Extraction Framework Based on Large Language Models",
     "url": "https://aclanthology.org/2025.emnlp-main.459/"
   },
+  "title:llmpoweredfunctionalgenesetsummarizationwithgenesetgpt": {
+    "doi": "10.64898/2026.07.27.741117",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "LLM-powered Functional Gene Set Summarization with genesetGPT",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.741117v1.full.pdf"
+  },
   "title:llmreasoningastrajectoriesstepspecificrepresentationgeometryandcorrectnesssignals": {
     "doi": null,
     "sent_date": "2026-07-13",
@@ -6656,6 +6789,13 @@
     "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
     "url": "http://arxiv.org/abs/2607.25948v1"
   },
+  "title:molcadifftextconditionalmoleculegenerationviacausalityawareautoregressivediffusion": {
+    "doi": "https://doi.org/10.1038/s41467-026-75702-5",
+    "sent_date": "2026-07-31",
+    "source": "openalex",
+    "title": "Mol-CADiff: text-conditional molecule generation via causality-aware autoregressive diffusion",
+    "url": "https://doi.org/10.1038/s41467-026-75702-5"
+  },
   "title:molragunlockingthepoweroflargelanguagemodelsformolecularpropertyprediction": {
     "doi": null,
     "sent_date": "2026-06-21",
@@ -6929,6 +7069,13 @@
     "title": "NeuRAG: End-to-End Neural Knowledge Augmentation via Hyper-Neurons",
     "url": "https://aclanthology.org/2026.findings-acl.1516/"
   },
+  "title:neuralarchitecturesearchfortrafficpredictionasurveyofmethodschallengesandfuturedirections": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Neural Architecture Search for Traffic Prediction: A Survey of Methods, Challenges, and Future Directions",
+    "url": "http://arxiv.org/abs/2607.26467v1"
+  },
   "title:neuralchainofthoughtsearchsearchingtheoptimalreasoningpathtoenhancelargelanguagemodels": {
     "doi": null,
     "sent_date": "2026-07-07",
@@ -7075,6 +7222,13 @@
     "source": "acl_anthology",
     "title": "One Pair Suffices: Unlocking Universal Zero-Shot Translation via Cross-Architecture Alignment",
     "url": "https://aclanthology.org/2026.acl-long.1912/"
+  },
+  "title:onerefinertounlockthemallinferencetimereasoningelicitationviareinforcementqueryrefinement": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "acl_anthology",
+    "title": "One Refiner to Unlock Them All: Inference-Time Reasoning Elicitation via Reinforcement Query Refinement",
+    "url": "https://aclanthology.org/2026.acl-long.1807/"
   },
   "title:oneshotdataselectionformedicalimageclassificationviagraphcoverage": {
     "doi": null,
@@ -7517,6 +7671,13 @@
     "title": "Progressive Fine-Tuning for Cost-Effective Structured Attribute Generation in E-commerce",
     "url": "https://aclanthology.org/2026.acl-industry.40/"
   },
+  "title:progressivemultimodalalignmentforcontinualinstructiontuning": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Progressive Multimodal Alignment for Continual Instruction Tuning",
+    "url": "http://arxiv.org/abs/2607.26947v1"
+  },
   "title:progressivererankingformultimodalretrievalaugmentedgenerationviacurriculumlearning": {
     "doi": null,
     "sent_date": "2026-07-06",
@@ -7586,6 +7747,13 @@
     "source": "arxiv",
     "title": "QDEvo: A Multi-Objective Quality-Diversity Framework for Automated Heuristic Design",
     "url": "http://arxiv.org/abs/2607.11916v1"
+  },
+  "title:quantitativeassessmentofcellfatecommitmentinsinglecelltranscriptomicsusingsccs": {
+    "doi": "10.64898/2026.07.27.741070",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "Quantitative assessment of cell fate commitment in single-cell transcriptomics using scCS",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.741070v1.full.pdf"
   },
   "title:queryawaregraphattentionforprecisesubgraphretrievalinknowledgeaugmentedreasoning": {
     "doi": null,
@@ -8063,6 +8231,13 @@
     "title": "RiTeK: A Dataset for Large Language Models Complex Reasoning over Textual Knowledge Graphs in Medicine",
     "url": "https://aclanthology.org/2026.findings-acl.1793/"
   },
+  "title:rkmrarapidkernelmachineregressionframeworkforoptimalmarkerdetectioninspatialomicsdata": {
+    "doi": "10.64898/2026.07.27.740999",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "RKMR: A Rapid Kernel Machine Regression Framework for Optimal Marker Detection in Spatial Omics Data",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.740999v1.full.pdf"
+  },
   "title:rmoaoptimizingmixtureofagentsthroughdiversitymaximizationandresidualcompensation": {
     "doi": null,
     "sent_date": "2026-06-19",
@@ -8308,6 +8483,13 @@
     "title": "Scalable Visual Pretraining for Language Intelligence",
     "url": "http://arxiv.org/abs/2607.09657v1"
   },
+  "title:scaleawarecompositionalinferenceimprovesreproducibilityanduncoversconvergentagingprogramsinspatialtranscriptomics": {
+    "doi": "10.64898/2026.07.27.740958",
+    "sent_date": "2026-07-31",
+    "source": "biorxiv",
+    "title": "Scale-Aware Compositional Inference Improves Reproducibility and Uncovers Convergent Aging Programs in Spatial Transcriptomics",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.740958v1.full.pdf"
+  },
   "title:scaleawarejepalatentrepresentationfordiscoveryinmultiscalephysicalfields": {
     "doi": null,
     "sent_date": "2026-07-01",
@@ -8377,6 +8559,13 @@
     "source": "acl_anthology",
     "title": "SciCustom: A Framework for Custom Evaluation of Scientific Capabilities in Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.2117/"
+  },
+  "title:scientificknowledgediscoveryintheageoflargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Scientific Knowledge Discovery in the Age of Large Language Models",
+    "url": "http://arxiv.org/abs/2607.26670v1"
   },
   "title:sciflowbenchevaluatingstructureawarescientificdiagramgenerationviainverseparsing": {
     "doi": null,
@@ -8503,6 +8692,13 @@
     "source": "acl_anthology",
     "title": "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
     "url": "https://aclanthology.org/2025.emnlp-main.55/"
+  },
+  "title:see2thinkdomultimodalmodelsreallyuseintermediatevisualstates": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
+    "url": "http://arxiv.org/abs/2607.26769v1"
   },
   "title:seeingandknowinginthewildopendomainvisualentityrecognitionwithlargescaleknowledgegraphsviacontrastivelearning": {
     "doi": "https://doi.org/10.1609/aaai.v40i16.38370",
@@ -8769,6 +8965,13 @@
     "source": "acl_anthology",
     "title": "SLIM: Stealthy Low-Coverage Black-Box Watermarking via Latent-Space Confusion Zones",
     "url": "https://aclanthology.org/2026.findings-acl.919/"
+  },
+  "title:slorabalancingplasticityandforgettinginlargelanguagemodelsforcontinuallearning": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "acl_anthology",
+    "title": "SLoRA: Balancing Plasticity and Forgetting in Large Language Models for Continual Learning",
+    "url": "https://aclanthology.org/2026.acl-long.247/"
   },
   "title:smartragnativegraphbasedragformobiledevice": {
     "doi": null,
@@ -9323,6 +9526,13 @@
     "title": "Temporal Knowledge Graph Forecasting under Distribution Shifts: A Synthetic Evaluation",
     "url": "http://arxiv.org/abs/2607.09232v1"
   },
+  "title:temporallycenteredsigregimprovesmultitaskleworldmodellearningfromanalysistomethod": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Temporally Centered SIGReg Improves Multi-Task LeWorldModel Learning: From Analysis to Method",
+    "url": "http://arxiv.org/abs/2607.26924v1"
+  },
   "title:tenptrapezoidalexpertneuronpruningformixtureofexperts": {
     "doi": null,
     "sent_date": "2026-07-25",
@@ -9673,6 +9883,13 @@
     "title": "Toward a mechanistic understanding of inference in visual cortex and diffusion models",
     "url": "http://arxiv.org/abs/2607.15693v1"
   },
+  "title:towardaunifiedstatisticaltheoryofunsupervisedpretrainingandsupervisedneuralknowledgegraphlearning": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Toward a Unified Statistical Theory of Unsupervised Pretraining and Supervised Neural Knowledge Graph Learning",
+    "url": "http://arxiv.org/abs/2607.26346v1"
+  },
   "title:towardconsistentworldmodelswithmultitokenpredictionandlatentsemanticenhancement": {
     "doi": null,
     "sent_date": "2026-06-26",
@@ -9756,6 +9973,13 @@
     "source": "acl_anthology",
     "title": "TRACE: An Experiential Framework for Coherent Multi-hop Knowledge Graph Question Answering",
     "url": "https://aclanthology.org/2026.findings-acl.89/"
+  },
+  "title:tracecliprecoveringlocalsemanticsfrompatchtoclscontributions": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "TraceCLIP: Recovering Local Semantics from Patch-to-CLS Contributions",
+    "url": "http://arxiv.org/abs/2607.26107v1"
   },
   "title:tracingrelationalknowledgerecallinlargelanguagemodels": {
     "doi": null,
@@ -10016,6 +10240,20 @@
     "title": "UR 2 : Unify RAG and Reasoning through Reinforcement Learning",
     "url": "https://aclanthology.org/2026.acl-long.580/"
   },
+  "title:urbandsagraphguidedllmmultiagentsystemfordataintensiveurbantasks": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "UrbanDS: A Graph-Guided LLM Multi-Agent System for Data-Intensive Urban Tasks",
+    "url": "http://arxiv.org/abs/2607.26724v1"
+  },
+  "title:usinglargelanguagemodelstoprobethelimitsofatomcenteredstructuraldescriptors": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Using large language models to probe the limits of atom-centered structural descriptors",
+    "url": "http://arxiv.org/abs/2607.26984v1"
+  },
   "title:vcorevariancecontrolledoptimizationbasedreweightingforchainofthoughtsupervision": {
     "doi": null,
     "sent_date": "2026-07-30",
@@ -10183,6 +10421,13 @@
     "source": "arxiv",
     "title": "When Does Deep Representation Learning Help Single-Cell Clustering? A Sensitivity-Aware Diagnostic Benchmark for Biomedical AI Pipelines",
     "url": "http://arxiv.org/abs/2607.25288v1"
+  },
+  "title:whendolearneddiffusionproposalshelpconstraintsolvingacontrolledstudyoncontinuousalgebraicsystems": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "When Do Learned Diffusion Proposals Help Constraint Solving? A Controlled Study on Continuous Algebraic Systems",
+    "url": "http://arxiv.org/abs/2607.27169v1"
   },
   "title:whenthinkingbeforeretrievalhurtstracebounddiagnosticsforadaptiveknowledgegraphretrieval": {
     "doi": null,
