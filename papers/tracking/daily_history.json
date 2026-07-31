@@ -20,6 +20,13 @@
     "title": "Anatomy-Guided Residual Motion Diffusion for Controllable 4D Cardiac MRI Synthesis",
     "url": "http://arxiv.org/abs/2606.26764v1"
   },
+  "title:beyondkvreconstructionfunctionalreconstructionformladraftmodelsinspeculativedecoding": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "Beyond KV Reconstruction: Functional Reconstruction for MLA Draft Models in Speculative Decoding",
+    "url": "http://arxiv.org/abs/2607.27269v1"
+  },
   "title:beyondtheeyeefficientmultimodalreasoningviaselfregulatedimplicitvisualtools": {
     "doi": null,
     "sent_date": "2026-07-14",
@@ -33,6 +40,13 @@
     "source": "arxiv",
     "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
     "url": "http://arxiv.org/abs/2607.13125v1"
+  },
+  "title:coreincontextreconstructionforunifiedtabularanomalydetection": {
+    "doi": null,
+    "sent_date": "2026-07-31",
+    "source": "arxiv",
+    "title": "CORE: In-Context Reconstruction for Unified Tabular Anomaly Detection",
+    "url": "http://arxiv.org/abs/2607.27615v1"
   },
   "title:decomposeandreorganizeplanningwithprimitivesandvisuomotorpolicieslearnedfromdemonstrations": {
     "doi": null,
