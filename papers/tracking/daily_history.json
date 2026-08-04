@@ -97,6 +97,13 @@
     "title": "FORGE: Towards Functional Tool-Use Generalization via Keypoint Trajectory Reasoning",
     "url": "http://arxiv.org/abs/2607.05780v1"
   },
+  "title:gabenchacomprehensivebenchmarkforevaluatingllmagentsongraphanalysistasks": {
+    "doi": null,
+    "sent_date": "2026-08-04",
+    "source": "arxiv",
+    "title": "GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks",
+    "url": "http://arxiv.org/abs/2608.01684v1"
+  },
   "title:gaussianmixturemodelingforeventawarevisualallocationinlongvideounderstanding": {
     "doi": null,
     "sent_date": "2026-07-15",
@@ -188,6 +195,13 @@
     "title": "Rethinking Speech-LLM Integration for ASR: Effective Joint Speech-Text Training by Interleaving",
     "url": "http://arxiv.org/abs/2607.01733v1"
   },
+  "title:rewritingorreweightingageometricaccountinlanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-08-04",
+    "source": "arxiv",
+    "title": "Rewriting or Reweighting? A Geometric Account in Language Models",
+    "url": "http://arxiv.org/abs/2608.01835v1"
+  },
   "title:spacellagentaselfevolvingllmbasedmultiagentframeworkfortrajectoryanalysis": {
     "doi": null,
     "sent_date": "2026-07-10",
@@ -215,5 +229,12 @@
     "source": "arxiv",
     "title": "UniRef-UAV: A Multimodal Benchmark for Universal Referring in UAV Imagery",
     "url": "http://arxiv.org/abs/2607.08267v1"
+  },
+  "title:wamdiff2hierarchicalartodiffusiondistillationforhighlyefficientautonomousdrivingvla": {
+    "doi": null,
+    "sent_date": "2026-08-04",
+    "source": "arxiv",
+    "title": "WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA",
+    "url": "http://arxiv.org/abs/2608.01035v1"
   }
 }
