@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-08-04
+
+## 1. Beyond Feature and Structure Alignment: Learning Transferable Propagation Knowledge for Graph Foundation Models
+
+- Authors: Yi Wang, Jitao Zhao, Di Jin, Dongxiao He
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.623268674405871
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.28980v1
+- PDF: https://arxiv.org/pdf/2607.28980v1
+- Local PDF: pdf/2026-08-04_01_Beyond Feature and Structure Alignment_ Learning Transferable Propagation Knowledge for Graph Foundation Models.pdf
+
+Graph Foundation Models (GFMs) have recently emerged as a promising paradigm for enabling knowledge transfer across diverse domains. Unlike traditional graph learning methods that are typically designed for in-domain settings, GFMs aim to learn transferable knowledge that can generalize to unseen graph domains. However, unlike language or visual data, graphs lack intrinsic and unified representation units, such as tokens in language and patches in vision, making it challenging to identify transferable knowledge units for building graph foundation models. Existing graph foundation models mainly focus on mitigating domain discrepancies through feature alignment and structure alignment, while overlooking the exploration of transferable knowledge units underlying graph data. Moreover, these methods generally rely on fixed propagation mechanisms during message passing, overlooking the heterogeneity in propagation patterns, as different edges may exhibit distinct propagation patterns for different feature dimensions. To address these limitations, we propose a Propagation-aware Graph Foundation Model (ProGFM), which regards the propagation relationships between edges and feature dimensions as transferable knowledge units. Through a propagation relationship prototype bank, ProGFM learns cross-domain transferable propagation knowledge, enabling adaptive information aggregation in unseen graph domains. Extensive experiments across various cross-domain transfer scenarios demonstrate that ProGFM possesses strong cross-domain knowledge transfer capability and exhibits superior generalization performance compared with existing methods.
+
+## 2. Federated Foundation Models Fine-Tuning with Heterogeneous Compressed Clients
+
+- Authors: Shengkun Zhu, Jinshan Zeng, Zhihua Allen-Zhao, Mayi Xu, Quanqing Xu, Wei Ren, Qiang Yang, Yang Liu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.308456663447703
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29071v1
+- PDF: https://arxiv.org/pdf/2607.29071v1
+- Local PDF: pdf/2026-08-04_02_Federated Foundation Models Fine-Tuning with Heterogeneous Compressed Clients.pdf
+
+Federated learning of foundation models faces a fundamental resource-asymmetry challenge: the institutions holding the most valuable domain-specific data cannot host billion-parameter models. Existing heterogeneous federated approaches attempt to bridge this gap through parameter-efficient tuning, model pruning, or knowledge distillation, yet each trades away a critical property, whether full-model memory reduction, architectural self-containedness, or representational fidelity, leaving the core tension unresolved. We propose FedSLM, a parameter-centric framework for federated fine-tuning with heterogeneous compressed clients. FedSLM uses SVD-based decomposition to produce self-contained client models, whose low-rank subspaces form nested manifolds that are structurally compatible for aggregation. It then applies a two-stage protocol that synchronizes lightweight adapters within compression groups and fuses full-rank reconstructions across groups via structural alignment. Finally, a weak-to-strong elicitation step with auxiliary confidence loss transfers the aggregated knowledge to the full-scale server, while an explicit bias--variance trade-off mitigates compression artifacts. We provide theoretical guarantees for adapter-level aggregation, subspace-alignment bounds for cross-group fusion, and a characterization of how the confidence loss mitigates weak-supervision noise. Experiments on natural language and vision--language benchmarks show that FedSLM outperforms existing federated baselines under both IID and non-IID partitions, while client models operate at roughly 50% of the GPU memory required by the full model.
+
+## 3. SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery
+
+- Authors: Jiamin Wu, Peishan Xiang, Jingyang Chen, Yuqing Zhu, Yuxi Li, Ling Luo, Qihao Zheng, Jialiang Zu, Yongchao Wu, Mindong Liu, Haitao Wu, Chaofan Hu, Yijie Sun, Yuqi Hang, Yu Zhu, Shuo Li, Yue Fan, Shiyang Feng, Wanghan Xu, Tianlei Zhang, Jie Zhang, Wenlong Zhang, Bo Zhang, Kai Wang, Lei Bai, Mianxin Liu, Wanli Ouyang, Jiulin Du, Chunfeng Song
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.MA, cs.AI
+- Relevance: 3.269592163322772
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29347v1
+- PDF: https://arxiv.org/pdf/2607.29347v1
+- Local PDF: pdf/2026-08-04_03_SeekBrain_ An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery.pdf
+
+Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic planning and execution engines, the framework scalably generates hypotheses and analytical pipelines on demand. Systematic evaluation on the expert-annotated BrainArena benchmark demonstrates that SeekBrain substantially outperforms state-of-the-art agent baselines across various analysis tasks. Crucially, when deployed in real-world research, SeekBrain integrated behavioral, neural, and anatomical data to reveal structured, distributed neural representations of larval zebrafish behavior and a shared axis of regional decoding strength across the brain in a mouse decision-making task. These results establish SeekBrain as a scalable and practical tool for accelerating data-driven discoveries in neuroscience.
+
+## 4. MoPET: Parameter-Efficient Mixture-of-Experts for Unified Medical Image Classification
+
+- Authors: Sebastian Doerrich, Daniel Würtinger, Francesco Di Salvo, Shyam Nandan Rai, Christian Ledig
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: eess.IV, cs.CV, cs.LG
+- Relevance: 3.201925126644229
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29462v1
+- PDF: https://arxiv.org/pdf/2607.29462v1
+- Local PDF: pdf/2026-08-04_04_MoPET_ Parameter-Efficient Mixture-of-Experts for Unified Medical Image Classification.pdf
+
+Adapting deep learning models to profound clinical heterogeneity typically relies on parameter-efficient fine-tuning (PEFT) to avoid the severe overfitting associated with full end-to-end network updates. Although PEFT successfully navigates limited data scenarios, it inherently forces the training of a separate, isolated adapter for every specific diagnostic task. Consolidating these isolated adapters into a single generalist network risks negative transfer, as optimization gradients from conflicting visual domains interfere. To address this, we propose MoPET, a mixture-of-experts (MoE) method that uses a learned sparse router to direct each input through a small subset of low-rank PEFT experts injected into a frozen foundation model, sharing capacity across datasets while limiting cross-domain gradient conflict. Through selected evaluations on the MedMNIST benchmark, we first establish that PEFT outperforms full network updates, improving average accuracy from 86.50% to 88.97%. We then show that a single MoPET model consolidates four heterogeneous datasets into one network, improving average accuracy over the best isolated PEFT adapters (93.46% versus 92.83%). Finally, we show that co-training with auxiliary datasets improves accuracy on data-constrained clinical targets, raising average target accuracy over the strongest isolated adapter from 81.58% to 83.58%. Our source code is publicly available at https://github.com/sdoerrich97/mopet .
+
+## 5. TerraNova: A Foundation Model for the Anthropocene
+
+- Authors: Carlos Rodriguez-Pardo, Massimo Tavoni
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, cs.CY, econ.EM, stat.ML
+- Relevance: 3.1996800425744656
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29527v1
+- PDF: https://arxiv.org/pdf/2607.29527v1
+- Local PDF: pdf/2026-08-04_05_TerraNova_ A Foundation Model for the Anthropocene.pdf
+
+A defining problem of the Anthropocene is to model the physical Earth and human societies as one coupled system, yet no learned representation spans their observational breadth. We argue the obstacle is geometric: the physical Earth is measured as continuous fields that ignore political borders, whereas societies are reported for administrative units. Earth-system foundation models serve the first geometry; coupling it to the second has required lossy averaging over borders. We introduce TerraNova, a foundation model trained on 1,024 physical and societal records in their native geometries: 512 gridded Earth-system fields and 512 national indicators. Dedicated encoders represent location, country, time and task, cross-modal transformers fuse them into a shared spatiotemporal state, and a hypernetwork generates a per-query decoder whose evidential head returns a predictive distribution. Two contrastive objectives couple the representation: a population-weighted alignment between each country and coordinates in its territory, and one to pretrained geospatial embeddings carrying image-derived semantics. Read out through that decoder, the representation is competitive with purpose-built geospatial encoders while spanning axes they do not represent (time, oceans and uncertainty) and supporting country-level capabilities. The frozen backbone reconstructs dense fields from sparse observations and adapts to unseen variables in minutes on consumer hardware.
+
+## 6. An Ontology-Guided, Deduplication-Aware Extraction Layer for Knowledge Graph Construction from Heterogeneous Documents
+
+- Authors: Vaibhav Dangaich, Kevin Lewis, Kundeshwar Pundalik
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.1862869062001415
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.28662v1
+- PDF: https://arxiv.org/pdf/2607.28662v1
+- Local PDF: pdf/2026-08-04_06_An Ontology-Guided, Deduplication-Aware Extraction Layer for Knowledge Graph Construction from Heterogeneous Documents.pdf
+
+Large language models extract entities and relationships from unstructured documents fluently but inconsistently: type vocabularies fracture across documents, the same person surfaces under several name variants, relationships duplicate, and distinct individuals who share a name risk silent conflation. This paper presents the design, implementation, and empirical refinement of a production extraction layer that converts a live document stream into a validated knowledge graph aligned to a formal ontology. The system consumes document metadata from Kafka, routes PDF, spreadsheet, Office, and image content through handlers built for each format, and extracts entities and relationships in two passes using a locally hosted Qwen3.5-9B model tuned on the ontology. Its distinguishing component is ontology-guided extraction: the relevant slice of a curated ontology is retrieved live from a graph database by embedding similarity and injected into the extraction prompt, reducing catalog overhead by about 94 percent relative to static domain slices. Extracted results then pass through a refinement pipeline of five stages: deterministic cleaning, merging across chunks, a second pass for relationships, six deduplication algorithms that require no model inference, and an embedding resolution subsystem whose conflict guard no similarity score can override. Evaluation on intelligence corpora improved search recall from roughly 70 to 95 percent with no false merges, and corrected seven classes of silent quality defect, ranging from a bug that truncated source text by a single character to the systematic duplication of entities that carried title prefixes.
+
+## 7. Persistent Convolution: A Topological Framework for AI Alignment Testing and Semantic Space Characterization
+
+- Authors: Tyler Ashoff, Jordan Rodu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG
+- Relevance: 3.177305765285343
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29008v1
+- PDF: https://arxiv.org/pdf/2607.29008v1
+- Local PDF: pdf/2026-08-04_07_Persistent Convolution_ A Topological Framework for AI Alignment Testing and Semantic Space Characterization.pdf
+
+Modern opaque AI models prize performance over interpretability, which makes testing difficult. However, formal statistical tests conducted on a model's embedding space can provide robust characterizations of semantic structure, concept separation, and knowledge graph alignment. Model developers would benefit from a model comparison technique that leverages human-curated knowledge structures to test alignment. The scale of the input space for even relatively simple tasks motivates the need for alignment checks that augment standard outcome reasoning. This work develops and demonstrates a topology-based multi-modal alignment test to make deployment, selection, and comparison of opaque models more interpretable. These methods also offer an intuitive connection to possibility theory and a unified decision theoretic framework from data to deployment.
+
+## 8. Harnessing the Wisdom of LLM Crowds through Complementarity-Driven Iterative Collaboration
+
+- Authors: Yanbin Fang, Xuan Wei, Wei Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.0354909926717526
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29087v1
+- PDF: https://arxiv.org/pdf/2607.29087v1
+- Local PDF: pdf/2026-08-04_08_Harnessing the Wisdom of LLM Crowds through Complementarity-Driven Iterative Collaboration.pdf
+
+Large language models (LLMs) are increasingly deployed in enterprise settings, yet individual models remain bounded by model-specific capability limitations. These heterogeneous boundaries pose a deployment challenge, but also create an opportunity: strategically coordinating multiple LLMs may unlock collective intelligence exceeding any single model. Existing approaches fix how models are combined in advance, overlooking the dynamic, state-dependent role of complementarity in complex problem solving. Drawing on the wisdom-of-crowds paradigm, we reconceptualize collective LLM intelligence as relay-style complementarity: a sequential process in which each successor model is selected to address the specific bottleneck identified in its predecessor's output. To operationalize this, we propose WILC (Wisdom Integration of LLM Crowds), a framework grounded in two design principles. First, iterative reflection-and-refinement establishes a state-preserving workflow through which models diagnose and refine prior outputs. Second, complementarity-driven model selection governs transitions via a dual-gate mechanism: prospective complementarity fit (PCF) identifies the worker most suited to the current bottleneck, while posterior complementarity gain (PCG) evaluates whether the selected transition improves the evolving solution. Experiments across four diverse benchmarks show that WILC outperforms existing approaches, including single-model self-refinement, ensemble methods, and query-routing methods. Under standardized pricing assumptions, WILC matches the average benchmark performance of GPT-5.2 at roughly 7 times lower estimated per-query cost, while facilitating data sovereignty through self-hosted deployment. This study extends wisdom-of-crowds theory from static aggregation to sequential AI complementarity and provides transferable design principles for multi-AI coordination.
+
+## 9. Improving scDiffusion with Sparsity-Biased Classifier-Free Guidance
+
+- Authors: Yu Song, Hao Sun, Ikuko Nishikawa, Yen-Wei Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: q-bio.GN, cs.AI
+- Relevance: 3.028450998951287
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29043v1
+- PDF: https://arxiv.org/pdf/2607.29043v1
+- Local PDF: pdf/2026-08-04_09_Improving scDiffusion with Sparsity-Biased Classifier-Free Guidance.pdf
+
+Single-cell RNA sequencing (scRNA-seq) has become an essential tool in modern cellular biology, and generating accurate synthetic scRNA-seq data is becoming increasingly important. Although diffusion models have achieved promising results in conditional scRNA-seq generation, existing guidance strategies, including classifier guidance and classifier-free guidance (CFG), rely on an unconditional branch trained to approximate the true marginal distribution, which may retain substantial gene-specific structure and limit guidance effectiveness. Inspired by recent work showing that diffusion models can be effectively guided using intentionally degraded references, we propose a sparsity-biased classifier-free guidance (SB-CFG) strategy for scRNA-seq generation. Rather than approximating the assumed "neutral" marginal distribution, SB-CFG introduces a deliberately under-informative sparse reference for the unconditional branch, removing gene identity while preserving only coarse sparsity statistics. This "bad" reference amplifies the contrast between conditional and unconditional predictions, leading to stronger and more effective guidance during sampling. We evaluated SB-CFG as a training-free sampling modification on five publicly available scRNA-seq datasets. Experimental results demonstrate consistent improvements over standard CFG-based sampling in terms of marker gene expression fidelity, cell-type consistency, and sparsity preservation, indicating that SB-CFG better captures biologically meaningful gene expression patterns.
+
+## 10. SciToolAgent-Evo: An Ontology-Aware Self-Evolving Agent for Open-World Scientific Tool Acquisition
+
+- Authors: Yuqi Tang, Chenyi Zhou, Libin Wang, Keyan Ding, Qiang Zhang, Huajun Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-30
+- DOI: Unavailable
+- Categories: cs.AI, cs.CL
+- Relevance: 2.877111374373349
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.28692v1
+- PDF: https://arxiv.org/pdf/2607.28692v1
+- Local PDF: pdf/2026-08-04_10_SciToolAgent-Evo_ An Ontology-Aware Self-Evolving Agent for Open-World Scientific Tool Acquisition.pdf
+
+Large language model (LLM) agents have been increasingly adopted in scientific research for organizing and invoking specialized computational tools. However, their reliance on predefined tool spaces with static semantics limits their applicability to open-world scientific workflows, where tool requirements, capabilities, and boundaries evolve dynamically. To this end, we propose SciToolAgent-Evo, an ontology-aware self-evolving agent for open-world scientific tool acquisition. Driven by an evolving memory of skills, experiences, and an ontologized tool graph, it distills generalizable knowledge from contrastive trajectories during accumulation, whereas during inference, it formulates active requests and utilizes a LinUCB-based bandit gate to dynamically balance exploration and exploitation. Once a novel tool is acquired, its scientific ontology is completed online for seamless integration into the known graph. Moreover, we introduce OpenSciToolBench, a benchmark containing 900 realistic tasks across four difficulty levels. Extensive evaluations show that SciToolAgent-Evo achieves state-of-the-art performance, validating its robustness and generalization.
+
+## 11. Benchmarks Are Not Monolithic: Sample-Level Auditing and Orchestration for LLM Evaluation
+
+- Authors: Philipp D. Siedler, Jordan Sassoon
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-30
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, cs.LG
+- Relevance: 2.8505137565610394
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.28801v1
+- PDF: https://arxiv.org/pdf/2607.28801v1
+- Local PDF: pdf/2026-08-04_11_Benchmarks Are Not Monolithic_ Sample-Level Auditing and Orchestration for LLM Evaluation.pdf
+
+Benchmark datasets are central to evaluating Large Language Models (LLMs), yet they are typically conceived as monolithic tasks, obscuring substantial variation in the demands of individual samples. We introduce a dataset-centric meta-evaluation framework that audits benchmark datasets at the sample level along five latent dimensions: 1. Cognitive and Knowledge Demands, 2. Language and Content Quality, 3. Task Properties, 4. Context, and 5. Ethics, Safety, and Fairness. Applying this framework, we annotate five influential benchmarks -- MMLU, ARC, WinoGrande, HellaSwag, and TruthfulQA -- revealing pronounced internal heterogeneity that is not captured by aggregate accuracy scores. We show how these annotations enable criterion-driven orchestration of composite benchmark subsets across datasets, supporting targeted evaluation of model capabilities such as Reasoning Depth or Ethical Sensitivity. This approach reframes benchmark evaluation as dataset introspection, providing a principled methodology for analyzing and re-composing existing benchmarks to better reflect diverse evaluation needs.
+
+## 12. Unveiling Inherent Visual Grounding in Multimodal LLMs for Text-Rich Images
+
+- Authors: Shijie Zhou, Jihyung Kil, Ming Li, Jiuxiang Gu, Curtis Wigington, Rajiv Jain, Changyou Chen, Ruiyi Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8210070590669907
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.16/
+- PDF: https://aclanthology.org/2026.findings-acl.16.pdf
+- Local PDF: pdf/2026-08-04_12_Unveiling Inherent Visual Grounding in Multimodal LLMs for Text-Rich Images.pdf
+
+Visual text grounding provides interpretable evidence for document question answering. Due to the complex layouts and mixed visual-text contents in text-rich images, effective visual text grounding requires strong visual and spatial reasoning to localize multiple referenced regions. Existing multimodal large language model (MLLM) approaches often struggle to align query tokens with visual–text patches, heavily relying on lengthy OCR inputs. To tackle this problem, we propose Doc-AGround, an OCR-free approach that leverages the MLLM’s inherent multi-head attention for multi-patch grounding. Doc-AGround extracts a patch-wise attention map as the grounding prediction. Concurrently, it introduces an effective multi-head weighting mechanism to amplify the attention heads’ intrinsic role in connecting vision and text. Empirical results of Doc-AGround show state-of-the-art performance on challenging document grounding benchmarks, demonstrating the effectiveness of the proposed attention-based grounding design.
+
+## 13. On the Closed-Form of Flow Matching: Generalization Does Not Arise from Target Stochasticity
+
+- Authors: Bertrand, Quentin, Gagneux, Anne, Massias, Mathurin, Emonet, Rémi
+- Source: neurips
+- Venue type: conference
+- Journal: NeurIPS 2025
+- Publication status: formally_published
+- Publication date: 2026-04-23
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.816423190248545
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://proceedings.neurips.cc/paper_files/paper/2025/hash/0ca819b3e8126e19a008c38cd0c371ea-Abstract-Conference.html
+- PDF: https://proceedings.neurips.cc/paper_files/paper/2025/file/0ca819b3e8126e19a008c38cd0c371ea-Paper-Conference.pdf
+- Local PDF: pdf/2026-08-04_13_On the Closed-Form of Flow Matching_ Generalization Does Not Arise from Target Stochasticity.pdf
+
+Modern deep generative models can now produce high-quality synthetic samples that are often indistinguishable from real training data. A growing body of research aims to understand why recent methods, such as diffusion and flow matching techniques, generalize so effectively. Among the proposed explanations are the inductive biases of deep learning architectures and the stochastic nature of the conditional flow matching loss. In this work, we rule out the noisy nature of the loss as a key factor driving generalization in flow matching. First, we empirically show that in high-dimensional settings, the stochastic and closed-form versions of the flow matching loss yield nearly equivalent losses. Then, using state-of-the-art flow matching models on standard image datasets, we demonstrate that both variants achieve comparable statistical performance, with the surprising observation that using the closed-form can even improve performance.
+
+## 14. ModelEquivBench: Certifying Multi-Relational Evaluation of LLM-Generated Optimization Models
+
+- Authors: Penglin Zhu, Jungang Xu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.816255552865219
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.29431v1
+- PDF: https://arxiv.org/pdf/2607.29431v1
+- Local PDF: pdf/2026-08-04_14_ModelEquivBench_ Certifying Multi-Relational Evaluation of LLM-Generated Optimization Models.pdf
+
+Large language models increasingly generate optimization models from natural language, but existing evaluation often reduces a generated model and its ground truth to a single equivalent/not-equivalent verdict or an execution-success rate--labels that are neither independently checkable nor faithful to the multiple distinct senses in which two formulations can agree. We present ModelEquivBench, a certifying, multi-relational evaluation system that reports a per-pair semantic profile E0--E6: model construction and exact ingestion (E0), verified representation alignment (E1), same-space and projected feasible-set relations (E2, E3), objective-order equivalence (E4), optimal-value equality (E5), and optimizer-set equivalence (E6). Each decided entry carries relation-appropriate, independently re-checkable evidence: replayable traces or explicit maps for E0--E1, exact-rational certificates for positive E2--E6 conclusions, and explicit witnesses for supported negatives. Incomplete mapping search, unsupported structure, and resource limits produce typed UNKNOWN or N/A outcomes rather than guesses, while unmet prerequisites are reported as ABSENT. Using ModelEquivBench to evaluate three model snapshots--GPT-5.4, Claude Sonnet 4.6, and Qwen3.5-397B-A17B--on the same frozen cohort of 173 base problems (346 cells per model) under a no-repair protocol, the resulting profiles expose distinctions that coarse baselines do not represent: 49, 35, and 25 cells contain executable candidates that are nevertheless certified negative on at least one supported relation, and 25, 8, and 18 structural rejections occur on pairs for which E2 certifies mapped feasible-set equality under a verified map. The three model snapshots fail at different stages of the profile and therefore cannot be meaningfully reduced to a single accuracy score.
+
+## 15. Scaling Scientific Discovery Environments for Turn-Level Agentic RL
+
+- Authors: Yucheng Xu, Keyi Zhang, Yuyang Yu, Min Zhang, Shiyuan Meng, Pei Chu, Zhongying Tu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.8160411311307234
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2607.28990v1
+- PDF: https://arxiv.org/pdf/2607.28990v1
+- Local PDF: pdf/2026-08-04_15_Scaling Scientific Discovery Environments for Turn-Level Agentic RL.pdf
+
+Large language model agents have shown promising capabilities in data-driven scientific discovery tasks, where an agent interacts with an execution environment and produces a statistical claim. Long-horizon scientific analysis remains constrained by the lack of process supervised environments over real-world scientific data. This paper introduces SciDisco, a scalable framework for training Scientific Discovery agents in process-verifiable environments. SciThèque compiles hypotheses, datasets, hidden evidence graphs, and verifiers into task environments where analytical progress can be checked during interaction. DAG-grounded trajectory synthesis uses these environments to construct verifier-filtered multi-turn demonstrations. DiscoPO then uses the environment as the source of training signal, assigning turn-level credit to actions that produce verifiable analytical evidence. Experiments show that SciDisco-14B reaches state-of-the-art on hypothesis-driven scientific data analysis benchmarks.
+
+## 16. SParK-Eval: Evaluating Structure-Aware Knowledge Acquisition in LLMs for Domain Adaptation to Industrial Records
+
+- Authors: Ekant Muljibhai Amin, Yuta Koreeda, Yasuhiro Sogawa
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8157154775508966
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1221/
+- PDF: https://aclanthology.org/2026.findings-acl.1221.pdf
+- Local PDF: pdf/2026-08-04_16_SParK-Eval_ Evaluating Structure-Aware Knowledge Acquisition in LLMs for Domain Adaptation to Industrial Records.pdf
+
+Large Language Models (LLMs) often underperform in domain adaptation for industrial settings, where available corpora are limited and structurally diverse. These corpora frequently include non-natural formats such as tables, entity lists, or bullet-point instructions that hinder effective learning. To understand and improve domain-adaptive pretraining on such data, we introduce SParK-Eval (Structure-aware Parametric Knowledge Evaluation), a framework that constructs question–answer pairs from pretraining data and annotates each with its input structure (e.g., natural sentence, table, list). This enables fine-grained analysis of how input structure affects parametric knowledge acquisition during DAPT. Additionally, we propose a prompt-based input normalization method that converts diverse inputs into coherent natural sentences, providing a reference for isolating structural effects. Our experiments show that LLMs acquire substantially more knowledge from natural sentences than from their structurally non-standard counterparts. These findings underscore the importance of structure-aware evaluation in diagnosing learning challenges and guiding effective domain adaptation strategies.
+
+## 17. LAMCL: A Length-aware Momentum Contrastive Learning Framework for Multiscale Machine-Revised Text Detection
+
+- Authors: Bing Zhou, Zhe Huang, Shilei Tan, Kai Zhao, Zhou Yongcheng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8157010053259013
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1118/
+- PDF: https://aclanthology.org/2026.acl-long.1118.pdf
+- Local PDF: pdf/2026-08-04_17_LAMCL_ A Length-aware Momentum Contrastive Learning Framework for Multiscale Machine-Revised Text Detection.pdf
+
+Detecting machine-revised text that exhibits subtle lexical differences from the original human-generated text remains a challenge. Recent detection methods, including watermarking-based, logit-based, and training-based models, struggle to capture the fine-grained semantic differences, especially for short texts. To address this issue, we propose Length-aware Momentum Contrastive Learning (LAMCL), a novel framework for multiscale machine-revised text detection that integrates two core modules. To enhance the discriminative semantic features, the Enhance Before Detection (EBD) module first fuses the original detected text with the counterpart processed by a Large Language Model (LLM), and then measures semantic consistency to distinguish between machine-revised and human-generated text. Meanwhile, based on the Momentum Contrastive Learning (MCL) framework, the Length-aware Weighting (LW) module leverages text length and label information for hard negative sampling, mitigating the ambiguity of short text attribution and boosting the robustness of representation learning. Experimental results demonstrate that our method outperforms the existing detectors in identifying multiscale machine-revised text across diverse practical scenarios, tasks, and LLMs. The code is available at https://github.com/hangtze/LAMCL .
+
+## 18. Evolutionary Search for Automated Design of Uncertainty Quantification Methods
+
+- Authors: Mikhail Seleznyov, Daniil Korbut, Viktor Moskvoretskii, Oleg Somov, Alexander Panchenko, Elena Tutubalina
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8155941793658634
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-srw.115/
+- PDF: https://aclanthology.org/2026.acl-srw.115.pdf
+- Local PDF: pdf/2026-08-04_18_Evolutionary Search for Automated Design of Uncertainty Quantification Methods.pdf
+
+Uncertainty quantification (UQ) methods for large language models are predominantly designed by hand based on domain knowledge and heuristics, limiting their scalability and generality. We apply LLM-powered evolutionary search to automatically discover unsupervised UQ methods represented as Python programs. On the task of atomic claim verification, our evolved methods outperform strong manually-designed baselines, achieving up to 6.7% relative ROC-AUC improvement across 9 datasets while generalizing robustly out-of-distribution. Qualitative analysis reveals that different LLMs employ qualitatively distinct evolutionary strategies: Claude models consistently design high-feature-count linear estimators, while Gpt-oss-120B gravitates toward simpler and more interpretable positional weighting schemes. Surprisingly, only Sonnet 4.5 and Opus 4.5 reliably leverage increased method complexity to improve performance – Opus 4.6 shows an unexpected regression relative to its predecessor. Overall, our results hint that LLM-powered evolutionary search is a promising paradigm for automated, interpretable hallucination detector design.
+
+## 19. FBS: Modeling Native Parallel Reading inside a Transformer
+
+- Authors: Tongxi Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.814566755954994
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.200/
+- PDF: https://aclanthology.org/2026.findings-acl.200.pdf
+- Local PDF: pdf/2026-08-04_19_FBS_ Modeling Native Parallel Reading inside a Transformer.pdf
+
+Large language models (LLMs) excel across many tasks, yet inference is still dominated by strictly token-by-token autoregression. Existing acceleration methods largely patch this pipeline and miss core human-reading ingredients: content-adaptive foresight, chunk-structure-aware compute allocation, and train–test consistency for preview/skimming. We propose the Fovea–Block–Skip Transformer (FBS), which injects a causal, trainable loop into Transformers via Parafovea-Attention Window (PAW), Chunk-Head (CH), and Skip-Gate (SG). Across diverse benchmarks, FBS improves the quality-efficiency trade-off without increasing parameters, and ablations show the three modules are complementary.
+
+## 20. Prompt Optimization for Relation Extraction using Reinforcement Learning
+
+- Authors: Ying Liu, Dong Shuai, Cui Zibo, TengQi Ye, Gang Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.813723717801302
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2100/
+- PDF: https://aclanthology.org/2026.findings-acl.2100.pdf
+- Local PDF: pdf/2026-08-04_20_Prompt Optimization for Relation Extraction using Reinforcement Learning.pdf
+
+Relation extraction is a fundamental task in information extraction. Still, existing supervised approaches rely heavily on large-scale annotated data, limiting their applicability in domain-specific and low-resource scenarios. Prompt-based methods with large language models provide a parameter-efficient alternative; however, their performance is susceptible to prompt design, which often requires extensive domain expertise and heuristic trial-and-error. We propose REPO, a reinforcement learning-based automated prompt optimization framework for domain relation extraction. REPO formulates prompt construction as a structured, sequential decision-making problem, optimizing prompt quality through interaction with a black-box LLM. To enable efficient and stable optimization, we introduce a two-stage framework comprising an initial prompt-construction stage that generates semantically grounded candidates and a DRL-based refinement stage that iteratively improves prompts within a constrained, domain-aware action space. We further design a composite evaluation metric that integrates extraction accuracy and semantic consistency to serve as a dense reward signal. Extensive experiments on multiple relation extraction datasets across medical, financial, legal, and news domains demonstrate that REPO consistently outperforms existing prompt-based methods and supervised baselines. Ablation studies further confirm the effectiveness and robustness of the proposed DRL-based prompt optimization strategy. Our code is available at https://github.com/dddong2-star/REPO .
+
+## 21. MATCH: Modulating Attention via In-Context Retrieval for Long-Context Transformers
+
+- Authors: Linrui Ma, Chun Hei Lo, Xinyu Wang, Peng Lu, Xihao Yuan, Hanting Chen, Kai Han, Xinghao Chen, Chengjun Zhan, Hanlin xu, Yichun Yin, Lifeng Shang, Feng Wen, Boxing Chen, Yufei Cui
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.813629939525355
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.692/
+- PDF: https://aclanthology.org/2026.acl-long.692.pdf
+- Local PDF: pdf/2026-08-04_21_MATCH_ Modulating Attention via In-Context Retrieval for Long-Context Transformers.pdf
+
+The quadratic computational cost of traditional attention mechanisms poses a major bottleneck to the scalability and practical deployment of large language models (LLMs), particularly in long-context scenarios. To improve efficiency, existing approaches often enforce rigid structural constraints such as local attention windows. However, these strategies typically lead to substantial performance degradation on tasks requiring precise long-range recall. In this work, we propose MATCH, a scalable and efficient framework that augments sparsified attention mechanisms with dynamically integrated in-context information through an efficient retrieval system. Empirical results show that MATCH significantly improves the performance of sparse-attention models on both synthetic and real-world natural-language tasks. These findings highlight the versatility of MATCH as a general approach for enhancing in-context retrieval capabilities while maintaining the efficiency benefits of sparse attention architectures.
+
+## 22. SelFusion: Self-distillation for Diffusion Language Models
+
+- Authors: Hyeongsoo Lim, Jinyoung Kim, Eun Seo Seo, Min Ho Jang, Ji Won Yoon
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8128807128044206
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1008/
+- PDF: https://aclanthology.org/2026.acl-long.1008.pdf
+- Local PDF: pdf/2026-08-04_22_SelFusion_ Self-distillation for Diffusion Language Models.pdf
+
+Diffusion language models (DLMs) alleviate the inherent latency bottleneck of autoregressive (AR) large language models (LLMs), but their degraded generation quality limits practical applicability. Although knowledge distillation (KD) can be a promising direction for improving performance, we empirically find that naively applying conventional KD yields only marginal gains, or even degrades generation quality. Based on these observations, we propose a novel self-distillation framework for DLMs, namely SelFusion. To enable effective KD without an external teacher model, SelFusion performs two forward passes with different masking levels, defining the hard mode with a larger masking probability and the easy mode with a smaller masking probability. However, the easy mode is not always more accurate than the hard mode and can be overconfident on incorrect tokens. Thus, we introduce bidirectional KD between the two modes, which can dynamically determine the distillation direction based on token-level correctness. Experimental results on instruction-following tasks show that the proposed self-distillation substantially outperforms other KD methods with external LLM and DLM teachers. In many configurations, the student trained with SelFusion even surpasses the performance of the LLM teacher, providing a practical path toward improving DLM generation quality. Source code can be found at https://github.com/scai-research/SelFusion_official
+
+## 23. Logical Consistency as a Bridge: Improving LLM Hallucination Detection via Label Constraint Modeling between Responses and Self-Judgments
+
+- Authors: Hao Mi, Qiang Sheng, Shaofei Wang, Beizhe Hu, Yifan Sun, Zhengjia Wang, Hengqi Zeng, Yang Li, Danding Wang, Juan Cao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.812028327477373
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.286/
+- PDF: https://aclanthology.org/2026.acl-long.286.pdf
+- Local PDF: pdf/2026-08-04_23_Logical Consistency as a Bridge_ Improving LLM Hallucination Detection via Label Constraint Modeling between Responses a.pdf
+
+Large Language Models (LLMs) are prone to factual hallucinations, risking their reliability in real-world applications. Existing hallucination detectors mainly extract micro-level intrinsic patterns for uncertainty quantification or elicit macro-level self-judgments through verbalized prompts. However, these methods address only a single facet of the hallucination, focusing either on implicit neural uncertainty or explicit symbolic reasoning, thereby treating these inherently coupled behaviors in isolation and failing to exploit their interdependence for a holistic view. In this paper, we propose LaaB (Logical Consistency-as-a-Bridge), a framework that bridges neural features and symbolic judgments for hallucination detection. LaaB introduces a “meta-judgment” process to map symbolic labels back into the feature space. By leveraging the inherent logical bridge where response and meta-judgment labels are either the same or opposite based on the self-judgment’s semantics, LaaB aligns and integrates dual-view signals via mutual learning and enhances the hallucination detection. Extensive experiments on 4 public datasets, across 4 LLMs, against 8 baselines demonstrate the superiority of LaaB.
+
+## 24. Budget-Aware Routing for Long Clinical Text
+
+- Authors: Khizar Qureshi, Geoffrey Martin, Yifan Peng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.811109093914486
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2114/
+- PDF: https://aclanthology.org/2026.findings-acl.2114.pdf
+- Local PDF: pdf/2026-08-04_24_Budget-Aware Routing for Long Clinical Text.pdf
+
+A key challenge for large language models is token cost per query and overall deployment cost. Clinical inputs are long, heterogeneous, and often redundant, while downstream tasks are short and high stakes. We study budgeted context selection, where a subset of document units is chosen under a strict token budget so an off-the-shelf generator can meet fixed cost and latency constraints. We cast this as a knapsack-constrained subset selection problem with two design choices, unitization that defines document segmentation and selection that determines which units are kept.We propose RCD, a monotone submodular objective that balances relevance, coverage, and diversity. We compare sentence, section, window, and cluster-based unitization, and introduce a routing heuristic that adapts to the budget regime. Experiments on MIMIC discharge notes, Cochrane abstracts, and L-Eval show that optimal strategies depend on the evaluation setting. Positional heuristics perform best at low budgets in extractive tasks, while diversity-aware methods such as MMR improve LLM generation. Selector choice matters more than unitization, with cluster-based grouping reducing performance and other schemes behaving similarly. ROUGE saturates for LLM summaries, while BERTScore better reflects quality differences.
+
+## 25. Exploring Layer-wise Information Effectiveness for Post-Training Quantization in Small Language Models
+
+- Authors: He Xiao, Qingyao Yang, Dirui Xie, Wendong XU, Zunhai Su, Runming Yang, Haobo Liu, Wenyong Zhou, Zhengwu Liu, Ngai Wong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.810703047858646
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.771/
+- PDF: https://aclanthology.org/2026.findings-acl.771.pdf
+- Local PDF: pdf/2026-08-04_25_Exploring Layer-wise Information Effectiveness for Post-Training Quantization in Small Language Models.pdf
+
+Large language models with billions of parameters are often over-provisioned: many layers contribute little unique information yet dominate the memory and energy footprint during inference. We present LieQ (Layer-wise information effectiveness Quantization), a hardware-native, metric-driven post-training quantization framework that addresses the critical challenge of maintaining accuracy in sub-8B models, model parameters less than 8B, under extreme low-bit compression. LieQ keeps uniform bit-width within each layer while mixing precision across layers, preserving standard multiplication kernels and avoiding irregular memory access, codebooks, or irregular formats at inference time. Our method uncovers a strong correlation between layer-wise functional saliency and representational compactness, revealing that layers with higher training-induced energy concentration are functionally irreplaceable. Leveraging this insight, we propose a purely geometry-driven sensitivity proxy that enables automatic bit-width allocation under a target average-bit budget without expensive gradient updates or inference-based perplexity probing. Under an average weight bit-width approaching two bits per parameter, LieQ consistently reduces the large accuracy gap typically observed for naive uniform 2-bit baselines on Qwen3 and LLaMA3.x families, while retaining standard-kernel efficiency. These properties make LieQ a practical path toward deploying small language models on resource-constrained edge devices. Code will be available at: https://github.com/HeXiao-55/LieQ-official.git .
+
+## 26. Learning to Edit Knowledge via Instruction-based Chain-of-Thought Prompting
+
+- Authors: Jinhu Fu, Yan Bai, Longzhu He, Yihang Lou, Yanxiao Zhao, Li Sun, Sen Su
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.810459305755395
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1133/
+- PDF: https://aclanthology.org/2026.acl-long.1133.pdf
+- Local PDF: pdf/2026-08-04_26_Learning to Edit Knowledge via Instruction-based Chain-of-Thought Prompting.pdf
+
+Large language models (LLMs) can effectively handle outdated information through knowledge editing. However, current approaches face two key limitations: (I) Poor generalization: Most approaches rigidly inject new knowledge without ensuring that the model can use it effectively to solve practical problems. (II) Narrow scope: Current methods focus primarily on structured fact triples, overlooking the diverse unstructured forms of factual information (e.g., news, articles) prevalent in real-world contexts. To address these challenges, we propose a new paradigm: teaching LLMs to edit knowledge via Chain of Thoughts (CoTs) reasoning (CoT2Edit). We first leverage language model agents for both structured and unstructured edited data to generate CoTs, building high-quality instruction data. The model is then trained to reason over edited knowledge through supervised fine-tuning (SFT) and Group Relative Policy Optimization (GRPO). At inference time, we integrate Retrieval-Augmented Generation (RAG) to dynamically retrieve relevant edited facts for real-time knowledge editing. Experimental results demonstrate that our method achieves strong generalization across six diverse knowledge editing scenarios with just a single round of training on three open-source language models.
+
+## 27. D 2 -RAG: Dual-Decision Retrieval-Augmented Generation via Multi-Dimensional Uncertainty and Utility-Aware Decoding
+
+- Authors: Jinshuo Zhang, Xiaoding Zhou, Weiyu Zhang, Guoqiang Chen, Ying Lian, Xiaoyang Meng, Yonghe Chen, Hongjiao Guan, Jiasheng Si, Wenpeng Lu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8100227951233525
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.754/
+- PDF: https://aclanthology.org/2026.findings-acl.754.pdf
+- Local PDF: pdf/2026-08-04_27_D 2 -RAG_ Dual-Decision Retrieval-Augmented Generation via Multi-Dimensional Uncertainty and Utility-Aware Decoding.pdf
+
+Retrieval-Augmented Generation (RAG) mitigates hallucinations in large language models by incorporating external knowledge. However, retrieval does not always return relevant documents and may return noisy ones. Indiscriminately retrieving and utilizing this external knowledge can interfere with the model’s originally correct reasoning. In this work, we propose Dual-Decision Retrieval-Augmented Generation (D 2 -RAG), which integrates multi-dimensional uncertainty estimation to decide whether to retrieve and employs adaptive contrastive decoding to handle retrieved contexts of varying quality. Specifically, we first integrate uncertainty estimation scores that assess model uncertainty from multiple perspectives, construct them into a comprehensive feature vector, and train a lightweight retrieval decision model to accurately identify the model’s knowledge boundaries and determine whether to retrieve. Subsequently, we dynamically adjust the contrastive decoding strategy based on the utility of retrieved contexts to enhance the utilization of relevant contexts while suppressing interference from noisy contexts. Extensive experiments on four medical question-answering datasets demonstrate that D 2 -RAG significantly outperforms baselines, enabling retrieval-augmented Llama3.1-8B to surpass non-retrieval-augmented Llama3.1-70B on the MedMCQA dataset. The source code is available on https://github.com/zakelawen/d--rag .
+
+## 28. The Shape of Vulnerability: How Adversarial Perturbations Reshape the Topology of Language Model Latent Spaces
+
+- Authors: Angelina Tsai, Shreya Subramanian, Catherine Liu, Kimberly Lopez, Leif Zinn-Brooks, Alexia E. Schulz, Adaku Uchendu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8099466567214613
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-srw.24/
+- PDF: https://aclanthology.org/2026.acl-srw.24.pdf
+- Local PDF: pdf/2026-08-04_28_The Shape of Vulnerability_ How Adversarial Perturbations Reshape the Topology of Language Model Latent Spaces.pdf
+
+Adversarial perturbations in the context of large language models (LLMs) are subtle changes added to input data (i.e., images or text) that are designed to alter predictions or outputs of machine learning models. We introduce several novel visualizations using topological data analysis (TDA) (leveraging persistent homology) to characterize how adversarial perturbations act on text inputs, specifically, how sandbagging and code-injection attacksalter the geometric structure of attention heads in transformer models. By computing persistent homology metrics from attention maps across different model architectures (such as BERT, RoBERTa, ELECTRA, DistilGPT, etc.), we find that adversarial inputs alter higher-dimensional topological features ( H 1 loops and H 2 voids) in ways that distinguish them from clean, non-adversarial inputs.
+
+## 29. Multimodal Dual-Path Decoding for Medical Report Generation
+
+- Authors: Jinghan Sun, Dong Wei, Zhihong Zhu, Yuyang Xue, Steven McDonagh, Xian Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.809835612963079
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1997/
+- PDF: https://aclanthology.org/2026.findings-acl.1997.pdf
+- Local PDF: pdf/2026-08-04_29_Multimodal Dual-Path Decoding for Medical Report Generation.pdf
+
+Radiology report generation requires precise alignment between medical imaging findings and clinically coherent textual descriptions. While current methods predominantly rely on either large vision-language models (LVLMs) for visual grounding or large language models (LLMs) for medical narrative generation, they often fail to effectively integrate multimodal clinical evidence with domain-specific knowledge. This paper proposes a novel multimodal dual-path framework that synergistically combines LVLMs and LLMs to address these limitations. Our approach establishes a dynamic fusion between LVLMs’ visual-semantic grounding capabilities and LLMs’ clinical knowledge reasoning. Specifically, we employ a structured prompting strategy that models the report generation task into three clinically meaningful sections and introduces fine-grained multi-label classification prompts to guide the models, enabling more accurate and comprehensive clinical report generation. Experiments on the public MIMIC-CXR benchmark demonstrate our framework’s superiority over state-of-the-art methods.
+
+## 30. MENTOR: Mitigating Identity Drift in Dynamic Role-Playing via Dual-Chain Structured Memory
+
+- Authors: Zhu Zhuoning, Xingyu Gao, Hailong Shi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8094833023389167
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1046/
+- PDF: https://aclanthology.org/2026.findings-acl.1046.pdf
+- Local PDF: pdf/2026-08-04_30_MENTOR_ Mitigating Identity Drift in Dynamic Role-Playing via Dual-Chain Structured Memory.pdf
+
+Long-context LLM agents increasingly serve multiple users or personas within a single session, requiring stable identity and knowledge boundaries under frequent switching. We identify a common failure mode, identity drift, where models conflate user-specific states and leak information across roles. On BEAM-SWITCH, a benchmark for controlled multi-user switching, performance consistently degrades as switching intensifies, even when responses remain fluent and locally coherent. We propose MENTOR, a cognitive architecture that mitigates identity drift without fine-tuning. MENTOR uses a Dual-Chain Memory Mechanism: a Global Chain ( 𝒢 ) for long-term event logging and isolated Role Chains ( ℛ r ) as per-role working memories, supported by a semantic Knowledge Graph ( 𝒦 ) that filters and verifies role-admissible information before generation. Across six LLM families, MENTOR improves the overall score (Avg) from 0.46 to 0.75 on average (+0.29 absolute), with substantial gains in identity adherence and knowledge fidelity.
