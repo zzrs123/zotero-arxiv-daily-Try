@@ -41,6 +41,13 @@
     "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
     "url": "http://arxiv.org/abs/2607.13125v1"
   },
+  "title:continualskillbenchcanllmagentstrulyevolvetheircapabilities": {
+    "doi": null,
+    "sent_date": "2026-08-05",
+    "source": "arxiv",
+    "title": "ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?",
+    "url": "http://arxiv.org/abs/2608.03874v1"
+  },
   "title:coreincontextreconstructionforunifiedtabularanomalydetection": {
     "doi": null,
     "sent_date": "2026-07-31",
@@ -132,6 +139,13 @@
     "title": "Information-Theoretic Adaptive Cooling for Deterministic MPPI via Entropy Feedback",
     "url": "http://arxiv.org/abs/2607.14245v1"
   },
+  "title:joyaivideoeditrealtimeopenendedvideoeditingwithautoregressivediffusion": {
+    "doi": null,
+    "sent_date": "2026-08-05",
+    "source": "arxiv",
+    "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+    "url": "http://arxiv.org/abs/2608.03974v1"
+  },
   "title:learningsocialnormsenhancescompatibilityindynamichumanaicoordination": {
     "doi": null,
     "sent_date": "2026-07-10",
@@ -216,12 +230,26 @@
     "title": "Strong-Field Coulomb Explosion of Ethane, Propane, and Butane in Circularly Polarized Laser Fields",
     "url": "http://arxiv.org/abs/2607.12843v1"
   },
+  "title:suvfuturesceneunderstandingasvideogenerationforendtoenddriving": {
+    "doi": null,
+    "sent_date": "2026-08-05",
+    "source": "arxiv",
+    "title": "SUV: Future Scene Understanding as Video Generation for End-to-End Driving",
+    "url": "http://arxiv.org/abs/2608.03084v1"
+  },
   "title:tcellaligncrossstudytcellpopulationsalignmentwithnomenclatureguidedmultiagentworkflow": {
     "doi": null,
     "sent_date": "2026-07-28",
     "source": "arxiv",
     "title": "TCellAlign: Cross-study T-cell Populations Alignment with Nomenclature-Guided Multi-Agent Workflow",
     "url": "http://arxiv.org/abs/2607.24093v1"
+  },
+  "title:tiredactorfatigueinformedcharactercontrol": {
+    "doi": null,
+    "sent_date": "2026-08-05",
+    "source": "arxiv",
+    "title": "Tired Actor: Fatigue-Informed Character Control",
+    "url": "http://arxiv.org/abs/2608.03528v1"
   },
   "title:unirefuavamultimodalbenchmarkforuniversalreferringinuavimagery": {
     "doi": null,
