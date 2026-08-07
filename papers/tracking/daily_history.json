@@ -34,6 +34,13 @@
     "title": "Beyond the Eye: Efficient Multimodal Reasoning via Self-Regulated Implicit Visual Tools",
     "url": "http://arxiv.org/abs/2607.11106v1"
   },
+  "title:biomjepajointembeddingpredictionofgraphconnectedgeneblocksinsinglecells": {
+    "doi": null,
+    "sent_date": "2026-08-07",
+    "source": "arxiv",
+    "title": "BioM-JEPA: joint-embedding prediction of graph-connected gene blocks in single cells",
+    "url": "http://arxiv.org/abs/2608.05928v1"
+  },
   "title:booguimage01boostingopensourceunifiedmultimodalunderstandingandgeneration": {
     "doi": null,
     "sent_date": "2026-07-16",
@@ -159,6 +166,13 @@
     "source": "arxiv",
     "title": "MMAgent-R$^2$: Learning to Rerank and Reject for Agentic mRAG",
     "url": "http://arxiv.org/abs/2607.07383v1"
+  },
+  "title:multivariatetimeseriesforecastingneedscrossvariableloss": {
+    "doi": null,
+    "sent_date": "2026-08-07",
+    "source": "arxiv",
+    "title": "Multivariate Time Series Forecasting needs Cross Variable Loss",
+    "url": "http://arxiv.org/abs/2608.05742v1"
   },
   "title:muxusctanoiserobustneuralnetworkforultrasoundcomputedtomography": {
     "doi": null,
