@@ -629,3 +629,633 @@ Post-hoc explanations provide transparency and are essential for guiding model o
 - Local PDF: pdf/2026-08-08_30_TARo_ Token-level Adaptive Routing for LLM Test-time Alignment.pdf
 
 Large language models (LLMs) exhibit strong reasoning capabilities but typically require expensive post-training to reach high performance. Recent test-time alignment methods offer a lightweight alternative, but have been explored mainly for preference alignment rather than reasoning. To bridge this gap, we propose Token-level Adaptive Routing (TARo), which steers frozen LLMs toward structured reasoning entirely at inference time. Specifically, we first train reward models on step-wise mathematical traces to capture fine-grained logical consistency signals, then introduce a learnable token-level router that automatically controls the guidance of the reward model to the base model. Extensive experiments show that TARo significantly improves reasoning performance by up to +22.4% over base model and +8.4% over existing token-level test-time alignment methods, while also boosting out-of-distribution clinical reasoning (MedXpertQA) and instruction following (AlpacaEval). Furthermore, TARo also generalizes from small to large backbones without retraining, extending test-time alignment from preference optimization to robust, cross-domain reasoning.
+
+## 31. RAG in the Wild: On the (In)effectiveness of LLMs with Mixture-of-Knowledge Retrieval Augmentation
+
+- Authors: Ran Xu, Yuchen Zhuang, Yue Yu, Haoyu Wang, Wenqi Shi, Carl Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8075575071387027
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.849/
+- PDF: https://aclanthology.org/2026.findings-acl.849.pdf
+- Local PDF: pdf/2026-08-08_31_RAG in the Wild_ On the (In)effectiveness of LLMs with Mixture-of-Knowledge Retrieval Augmentation.pdf
+
+Retrieval-augmented generation (RAG) enhances large language models (LLMs) by integrating external knowledge retrieved at inference time. While RAG demonstrates strong performance on benchmarks largely derived from general-domain corpora like Wikipedia, its effectiveness under realistic, diverse retrieval scenarios remains underexplored. We evaluate RAG systems using MassiveDS, a large-scale datastore with mixture of knowledge, and identified critical limitations: retrieval mainly benefits smaller models, rerankers add minimal value, and no single retrieval source consistently excels. Moreover, current LLMs struggle to route queries across heterogeneous knowledge sources. These findings highlight the need for adaptive retrieval strategies before deploying RAG in real-world settings.
+
+## 32. SOS-LoRA: Static Orthogonal-Subspace Low-Rank Adaptation with Fixed Multi-Scale Scaling
+
+- Authors: Yupeng Chang, Yuan Wu, Yi Chang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8068603616207333
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.184/
+- PDF: https://aclanthology.org/2026.acl-long.184.pdf
+- Local PDF: pdf/2026-08-08_32_SOS-LoRA_ Static Orthogonal-Subspace Low-Rank Adaptation with Fixed Multi-Scale Scaling.pdf
+
+Low-Rank Adaptation (LoRA) is a widely used parameter-efficient fine-tuning (PEFT) method for large language models. Under a fixed rank budget, LoRA parameterizes each adapted weight through a single low-dimensional input-side pathway, which may couple heterogeneous behaviors through shared input directions and induce interference during optimization. We propose Static Orthogonal Subspace LoRA (SOS-LoRA), a drop-in extension that reparameterizes a rank- r tot update as a sum of K static (always-on, non-routed) low-rank experts. SOS-LoRA (i) decomposes the total rank across experts, (ii) applies a fixed multi-scale scaling scheme to encourage scale-separated optimization dynamics, and (iii) promotes diverse input-side directions via cross-expert orthogonal initialization and a lightweight regularizer. SOS-LoRA remains fully mergeable, adding no inference-time parameters or latency after merging. Experiments on reasoning and knowledge-intensive benchmarks (Llama 2/3), encoder-based NLU (GLUE), and math reasoning (GSM8K/MATH) show consistent gains over matched-budget LoRA baselines and recent variants.
+
+## 33. AGTAO: Robust and Stabilized LLM Unlearning via Adversarial Gating Training with Adaptive Orthogonality
+
+- Authors: Pengyu Li, Lingling Zhang, Zhitao Gao, Yanrui Wu, Yuxuan Dong, Huan Liu, Bifan Wei, Jun Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8063466451656494
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.665/
+- PDF: https://aclanthology.org/2026.findings-acl.665.pdf
+- Local PDF: pdf/2026-08-08_33_AGTAO_ Robust and Stabilized LLM Unlearning via Adversarial Gating Training with Adaptive Orthogonality.pdf
+
+While Large Language Models (LLMs) have achieved remarkable capabilities, they unintentionally memorize sensitive data, posing critical privacy and security risks.Machine unlearning is pivotal for mitigating these risks, yet existing paradigms face a fundamental dilemma: aggressive unlearning often induces catastrophic forgetting that degrades model utility, whereas conservative strategies risk superficial forgetting, leaving models vulnerable to adversarial recovery. To address this trade-off, we propose AGTAO (Adversarial Gating Training with Adaptive Orthogonality), a unified framework designed to reconcile robust erasure with utility preservation. Specifically, our approach introduces Adaptive Orthogonality (AO) to dynamically mitigate geometric gradient conflicts between forgetting and retention objectives, thereby minimizing unintended knowledge degradation. Concurrently, Adversarial Gating Training (AGT) formulates unlearning as a latent-space min-max game, employing a curriculum-based gating mechanism to simulate and counter internal recovery attempts. Extensive experiments demonstrate that AGTAO achieves a superior trade-off between unlearning efficacy (KUR ≈ 0.01) and model utility (MMLU 58.30).[Code is available at ." class=acl-markup-url>https://anonymous.4open.science/r/AGT-unlearning>. ].
+
+## 34. Aligning What LLMs Do and Say: Towards Self-Consistent Explanations
+
+- Authors: Sahar Admoni, Ofra Amir, Assaf Hallak, Yftah Ziser
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.805907359839063
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.49/
+- PDF: https://aclanthology.org/2026.findings-acl.49.pdf
+- Local PDF: pdf/2026-08-08_34_Aligning What LLMs Do and Say_ Towards Self-Consistent Explanations.pdf
+
+Large language models (LLMs) seem to offer an easy path to interpretability: just ask them to explain their answers. Yet the features driving an answer often differ from those emphasized in its explanation, meaning post-hoc rationales can misrepresent what actually shaped the model’s output. We quantify this gap by comparing the feature-importance distributions of answers and their explanations. Prior analyses reveal such discrepancies, but large-scale study has been limited by the high computational cost of attribution methods. To address this, we introduce the Post-hoc Self-Consistency Bank (PSCB), a large-scale benchmark linking model decisions with diverse explanations and attribution vectors across datasets, methods, and model families. Using PSCB, we find that Spearman rank correlation provides a more reliable signal of alignment than cosine similarity. Building on this insight, we apply Direct Preference Optimization (DPO) to attribution-based preference data, improving alignment without degrading task accuracy, and show that standard supervised fine-tuning on the same data fails to achieve comparable gains. These improvements generalize robustly across domains, paving the way toward scalable and faithful alignment between LLM decisions and their natural language explanations.
+
+## 35. APEX: Learning Adaptive Priorities for Multi-Objective Alignment in Vision-Language Generation
+
+- Authors: Dongliang Chen, Xinlin Zhuang, Junjie Xu, Luojian Xie, Zehui Wang, Jiaxi Zhuang, Haolin Yang, Liang Dou, Xiao He, Xingjiao Wu, Ying Qian
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8050622179604288
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.243/
+- PDF: https://aclanthology.org/2026.findings-acl.243.pdf
+- Local PDF: pdf/2026-08-08_35_APEX_ Learning Adaptive Priorities for Multi-Objective Alignment in Vision-Language Generation.pdf
+
+Multi-objective alignment for text-to-image generation is commonly implemented via static linear scalarization, but fixed weights often fail under heterogeneous rewards, leading to optimization imbalance where models overfit high-variance, high-responsiveness objectives (e.g., OCR) while under-optimizing perceptual goals. We identify two mechanistic causes: variance hijacking , where reward dispersion induces implicit reweighting that dominates the normalized training signal, and gradient conflicts , where competing objectives produce opposing update directions and trigger seesaw-like oscillations. We propose APEX ( A daptive P riority-based E fficient X -objective Alignment), which stabilizes heterogeneous rewards with Dual-Stage Adaptive Normalization and dynamically schedules objectives via 𝒫 3 Adaptive Priorities that combine learning potential, conflict penalty, and progress need. On Stable Diffusion 3.5, APEX achieves improved Pareto trade-offs across four heterogeneous objectives, with balanced gains of +1.31 PickScore , +0.35 DeQA , and +0.53 Aesthetics while maintaining competitive OCR accuracy, mitigating the instability of multi-objective alignment.
+
+## 36. SwissGov-RSD: A Human-annotated, Cross-lingual Benchmark for Token-level Recognition of Semantic Differences Between Related Documents
+
+- Authors: Michelle Wastl, Jannis Vamvas, Rico Sennrich
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8029868082409393
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1437/
+- PDF: https://aclanthology.org/2026.acl-long.1437.pdf
+- Local PDF: pdf/2026-08-08_36_SwissGov-RSD_ A Human-annotated, Cross-lingual Benchmark for Token-level Recognition of Semantic Differences Between Rel.pdf
+
+Recognizing semantic differences across documents is crucial for text generation evaluation and content alignment, especially in cross-lingual settings. However, as a standalone task, it has received little attention. We address this by introducing SwissGov-RSD, the first naturalistic, document-level, cross-lingual dataset for semantic difference recognition. It encompasses a total of 224 multi-parallel documents in English–German, English–French, and English–Italian with token-level difference annotations by human annotators.We evaluate a variety of open-source and closed-source large language models as well as encoder models across different fine-tuning settings on this new benchmark. Our results show that current automatic approaches perform poorly compared to their performance on monolingual, sentence-level, and synthetic benchmarks, revealing a considerable gap for both LLMs and encoder models.
+
+## 37. When 20 Agents Fail to Sort: The Distributed Sorting Benchmark for Scalable Multi-Agent Systems
+
+- Authors: Xin Yang, Junhao Wang, Bintao Tang, Xuxin Cheng, Cao Liu, Ke Zeng, Wenyuan Jiang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.802578012989991
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1698/
+- PDF: https://aclanthology.org/2026.findings-acl.1698.pdf
+- Local PDF: pdf/2026-08-08_37_When 20 Agents Fail to Sort_ The Distributed Sorting Benchmark for Scalable Multi-Agent Systems.pdf
+
+Current LLM-based multi-agent systems remain fragile under scaling, even on algorithmically trivial tasks. We introduce MAS-BENCH, a distributed-sorting benchmark that isolates coordination under explicit communication constraints: each agent observes only a local segment and must collectively produce a globally consistent order via broadcasting, peer-to-peer messaging, or a shared key-value store. Across LLM-based agents, success drops sharply as the number of agents grows, exposing persistent failures in shared state, convention alignment, and consistent termination. To mitigate these breakdowns, we propose CAMOC, a lightweight, drop-in proof-of-concept built on collaboration-aware information sharing, early global metadata exchange, and single-commit verification. CAMOC substantially improves coordination success and efficiency across backends, with the largest gains under shared-state interaction. Overall, MAS-BENCH provides a diagnostic benchmark and CAMOC offers a practical step toward more reliable large-scale LLM collaboration, highlighting a gap between individual reasoning and collective correctness.
+
+## 38. SecureGate: Learning When to Reveal PII Safely via Token-Gated Dual-Adapters for Federated LLMs
+
+- Authors: Mohamed Shaaban, Mohamed Elmahallawy
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8024225701554197
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1972/
+- PDF: https://aclanthology.org/2026.acl-long.1972.pdf
+- Local PDF: pdf/2026-08-08_38_SecureGate_ Learning When to Reveal PII Safely via Token-Gated Dual-Adapters for Federated LLMs.pdf
+
+Federated learning (FL) enables collaborative training across organizational silos without sharing raw data, making it attractive for privacy-sensitive applications. With the rapid adoption of large language models (LLMs), federated fine-tuning of generative LLMs has gained attention as a way to leverage distributed data while preserving confidentiality. However, this setting introduces fundamental challenges: (i) privacy leakage of personally identifiable information (PII) due to LLM memorization, and (ii) a persistent tension between global generalization and local utility under heterogeneous data. Existing defenses, such as data sanitization and differential privacy, reduce leakage but often degrade downstream performance. We propose SecureGate, a privacy-aware federated fine-tuning framework for LLMs that provides fine-grained privacy control without sacrificing utility. SecureGate employs a dual-adapter LoRA architecture: a secure adapter that learns sanitized, globally shareable representations, and a revealing adapter that captures sensitive, organization-specific knowledge. A token-controlled gating module selectively activates these adapters at inference time, enabling controlled information disclosure without retraining. Extensive experiments across multiple LLMs and real-world datasets show that SecureGate improves task utility while substantially reducing PII leakage, achieving up to a 31.66x reduction in inference attack accuracy and a 17.07x reduction in extraction recall for unauthorized requests. Additionally, it maintains 100% routing reliability to the correct adapter and incurs only minimal computational and communication overhead. Code is available at https://github.com/wsu-cyber-security-lab-ai/SecureGate .
+
+## 39. LAD-RAG: Layout-aware Dynamic RAG for Visually-Rich Document Understanding
+
+- Authors: Zhivar Sourati, Zheng Wang, Marianne Menglin Liu, Yazhe Hu, Mengqing Guo, Sujeeth Bharadwaj, Kyu J. Han, Tao Sheng, Sujith Ravi, Morteza Dehghani, Dan Roth
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8015892787688856
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.724/
+- PDF: https://aclanthology.org/2026.acl-long.724.pdf
+- Local PDF: pdf/2026-08-08_39_LAD-RAG_ Layout-aware Dynamic RAG for Visually-Rich Document Understanding.pdf
+
+Question answering over visually rich documents (VRDs) requires reasoning not only over isolated content but also over documents’ structural organization and cross-page dependencies. However, conventional retrieval-augmented generation (RAG) methods encode content in isolated chunks during ingestion, losing structural and cross-page dependencies, and retrieve a fixed number of pages at inference, regardless of the specific demands of the question or context. This often results in incomplete evidence retrieval and degraded answer quality for multi-page reasoning tasks. To address these limitations, we propose LAD-RAG, a novel Layout-Aware Dynamic RAG framework. During ingestion, LAD-RAG constructs a symbolic document graph that captures layout structure and cross-page dependencies, adding it alongside standard neural embeddings to yield a more holistic representation of the document. During inference, an LLM agent dynamically interacts with the neural and symbolic indices to adaptively retrieve the necessary evidence based on the query. Experiments on MMLongBench-Doc, LongDocURL, DUDE, and MP-DocVQA demonstrate that LAD-RAG improves retrieval, achieving over 90% perfect recall on average without any top- k tuning, and outperforming baseline retrievers by up to 20% in recall at comparable noise levels, yielding higher QA accuracy with minimal latency.
+
+## 40. Tandem: Riding Together with Large and Small Language Models for Efficient Reasoning
+
+- Authors: Zichuan Fu, Xian Wu, Guojing Li, Yejing Wang, Yijun Chen, Zhao Zihao, Luo Yixuan, Hanyu Yan, Yefeng Zheng, Xiangyu Zhao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8015407921685282
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2098/
+- PDF: https://aclanthology.org/2026.findings-acl.2098.pdf
+- Local PDF: pdf/2026-08-08_40_Tandem_ Riding Together with Large and Small Language Models for Efficient Reasoning.pdf
+
+Recent advancements in large language models (LLMs) have catalyzed the rise of reasoningintensive inference paradigms, where models perform explicit step-by-step reasoning before generating final answers. While such approaches improve answer quality and interpretability, they incur substantial computational overhead due to the prolonged generation sequences. In this paper, we propose Tandem, a novel collaborative framework that synergizes large and small language models (LLMs and SLMs) to achieve high-quality reasoning with significantly reduced computational cost. Specifically, the LLM serves as a strategic coordinator, efficiently generating a compact set of critical reasoning insights. These insights are then used to guide a smaller, more efficient SLM in executing the full reasoning process and delivering the final response. To balance efficiency and reliability, Tandem introduces a cost-aware termination mechanism that adaptively determines when sufficient reasoning guidance has been accumulated, enabling early stopping of the LLM’s generation. Experiments on mathematical reasoning and code generation benchmarks demonstrate that Tandem reduces computational costs by approximately 40% compared to standalone LLM reasoning, while achieving superior or competitive performance. Furthermore, the sufficiency classifier trained on one domain transfers effectively to others without retraining. The code is available at: https://github.com/Applied-MachineLearning-Lab/ACL2026_Tandem .
+
+## 41. The Digital Dunning-Kruger Effect: Decoupling Hallucinations via Geometric Hidden-state Observation for Semantic Truthfulness
+
+- Authors: Yueheng Mao, Min Yu, Gengwang Li, Jianguo Jiang, Gang Li, Meng Zhang, Zhen Xu, Weiqing Huang, Ming Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8011210057872034
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.993/
+- PDF: https://aclanthology.org/2026.acl-long.993.pdf
+- Local PDF: pdf/2026-08-08_41_The Digital Dunning-Kruger Effect_ Decoupling Hallucinations via Geometric Hidden-state Observation for Semantic Truthfu.pdf
+
+Large Language Models (LLMs) often generate overconfident yet factually incorrect hallucinations. Current detection paradigms suffer from a trade-off between the high accuracy of computationally expensive black-box methods and the inability of white-box methods to detect stubborn hallucinations. To bridge this gap, we propose GHOST (Geometric Hidden-state Observation for Semantic Truthfulness), an efficient white-box framework for hallucination detection in LLMs. We primarily target confused hallucinations marked by internal reasoning instability, while also capturing stubborn hallucinations characterized by premature layer-wise convergence as a complementary signal. By integrating internal geometric dynamics with output probability distributions, GHOST constructs a high-dimensional feature space for non-linear truthfulness classification. Extensive evaluations on FinanceBench, RAGTruth, HaluEval, and PopQA show that GHOST outperforms white-box baselines and achieves competitive black-box performance while reducing computational overhead by over 90%, offering a robust solution for real-time detection.
+
+## 42. Long-Context Reasoning Through Proxy-Based Chain-of-Thought Tuning
+
+- Authors: Miao Li, Irina Saparina, Alexander Gurung, Mirella Lapata
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.800841115498721
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1917/
+- PDF: https://aclanthology.org/2026.acl-long.1917.pdf
+- Local PDF: pdf/2026-08-08_42_Long-Context Reasoning Through Proxy-Based Chain-of-Thought Tuning.pdf
+
+Recent large language models support inputs of up to 10 million tokens, yet they perform poorly on long-context tasks that require complex reasoning. Such tasks can be solved using only a subset of the input — a proxy context — rather than the full sequence. Despite sharing the same underlying reasoning process, models exhibit a significant performance disparity between proxy and full contexts. To improve long-context reasoning, we propose ProxyCoT, a novel training framework that transfers reasoning capabilities from short proxy contexts to full long contexts. Specifically, we first obtain high-quality chain-of-thought reasoning traces on proxy contexts through reinforcement learning or distillation from a larger teacher model, and then ground the generated traces in full long contexts with supervised fine-tuning. Experiments across different datasets demonstrate that ProxyCoT consistently outperforms strong baselines with reduced computational overhead. Furthermore, models trained with ProxyCoT generalize their long-context reasoning capabilities to out-of-domain tasks.
+
+## 43. G-LoRA: Global-Local Decoupled Low-Rank Adaptation
+
+- Authors: Jiahao Xiong, Yihong Huang, Yihe Liu, Xianming Hu, Hongbo Zhao, Kai Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8007947483885465
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1005/
+- PDF: https://aclanthology.org/2026.findings-acl.1005.pdf
+- Local PDF: pdf/2026-08-08_43_G-LoRA_ Global-Local Decoupled Low-Rank Adaptation.pdf
+
+Low-Rank Adaptation (LoRA) has achieved remarkable progress in improving the fine-tuning efficiency and downstream performance of large language models (LLMs). Although prior work has recognized that different weight update matrices 𝛥 𝐖 exhibit varying importance and therefore should be allocated different ranks, parameters within the same update matrix are still typically constrained to a uniform rank configuration, neglecting fine-grained parameter-level heterogeneity. To address this limitation, we propose G-LoRA (Global-Local Decoupled LoRA), which decomposes each update matrix into global and local adapters. The key idea is to reorganize the rows and columns of the update matrix using a first-order Taylor approximation of parameter importance, such that highly influential parameters are clustered into a local sub-block of 𝛥 𝐖 . During training, the local adapter then focuses on this high-importance sub-region and is allocated a higher rank, whereas the global adapter captures the residual updates for the entire update matrix with relatively lower rank. By allocating higher representational capacity to more critical parameters, G-LoRA enables more efficient utilization of model resources. Extensive evaluations on benchmarks spanning commonsense reasoning, mathematical reasoning, and code generation demonstrate that G-LoRA achieves up to 2.7% absolute accuracy improvement over LoRA and its variants, validating its effectiveness for LLM fine-tuning.
+
+## 44. SCALER: Synthetic Scalable Adaptive Learning Environment for Reasoning
+
+- Authors: Caijun Xu, Changyi Xiao, Zhongyuan Peng, Xinrun Wang, Yixin Cao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8002047684147415
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1596/
+- PDF: https://aclanthology.org/2026.findings-acl.1596.pdf
+- Local PDF: pdf/2026-08-08_44_SCALER_ Synthetic Scalable Adaptive Learning Environment for Reasoning.pdf
+
+Reinforcement learning (RL) offers a principled way to enhance the reasoning capabilities of large language models, yet its effectiveness hinges on training signals that remain informative as models evolve. In practice, RL progress often slows when task difficulty becomes poorly aligned with model capability or when training is dominated by a narrow set of recurring problem patterns.To jointly address these issues, we propose SCALER ( S ynthetic s C alable A daptive L earning E nvironment for R easoning), a framework that sustains effective learning signals through adaptive environment design.SCALER introduces a scalable synthesis pipeline that converts real-world programming problems into verifiable reasoning environments with controllable difficulty and unbounded instance generation, enabling RL training beyond finite datasets while preserving strong correctness guarantees. Building on this, SCALER further employs an adaptive multi-environment RL strategy that dynamically adjusts instance difficulty and curates the active set of environments to track the model’s capability frontier and maintain distributional diversity. This co-adaptation prevents reward sparsity, mitigates overfitting to narrow task patterns, and supports sustained improvement throughout training. Extensive experiments show that SCALER consistently outperforms other RL baselines across diverse reasoning benchmarks and exhibits more stable, long-horizon training dynamics.
+
+## 45. Search-P1: Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training
+
+- Authors: Tianle Xia, Ming Xu, Lingxiang Hu, Yiding Sun, Wenwei Li, Linfang Shang, Liqun Liu, Peng Shu, Huan Yu, Jie Jiang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7998651627004003
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.36/
+- PDF: https://aclanthology.org/2026.acl-industry.36.pdf
+- Local PDF: pdf/2026-08-08_45_Search-P1_ Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training.pdf
+
+Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by incorporating external knowledge, yet traditional single-round retrieval struggles with complex multi-step reasoning.Agentic RAG addresses this by enabling LLMs to dynamically decide when and what to retrieve, but current RL-based training methods suffer from sparse outcome rewards that discard intermediate signals and low sample efficiency where failed samples contribute nothing.We propose Search-P1, a framework that introduces path-centric reward shaping for agentic RAG training, comprising two key components: (1) Path-Centric Reward, which evaluates the structural quality of reasoning trajectories through order-agnostic step coverage and soft scoring that extracts learning signals even from failed samples, and (2) Dual-Track Path Scoring with offline-generated reference planners that assesses paths from both self-consistency and reference-alignment perspectives.Experiments on multiple QA benchmarks demonstrate that Search-P1 achieves significant improvements over Search-R1 and other strong baselines, with an average accuracy gain of 7.7 points.
+
+## 46. Schoenfeld’s Anatomy of Mathematical Reasoning by Language Models
+
+- Authors: Ming Li, Chenrui Fan, Yize Cheng, Soheil Feizi, Tianyi Zhou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.799531347907951
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1513/
+- PDF: https://aclanthology.org/2026.acl-long.1513.pdf
+- Local PDF: pdf/2026-08-08_46_Schoenfeld’s Anatomy of Mathematical Reasoning by Language Models.pdf
+
+Large language models increasingly expose reasoning traces, yet their underlying cognitive structure and steps remain difficult to identify and analyze beyond surface-level statistics. We adopt Schoenfeld’s Episode Theory as an inductive, intermediate-scale lens and introduce ThinkARM (Anatomy of Reasoning in Models), a scalable framework that explicitly abstracts reasoning traces into functional reasoning steps such as Analysis, Explore, Implement, Verify, etc. When applied to mathematical problem solving by diverse models, this abstraction reveals reproducible thinking dynamics and structural differences between reasoning and non-reasoning models, which are not apparent from token-level views. We further present two diagnostic case studies showing that exploration functions as a critical branching step associated with correctness, and that efficiency-oriented methods selectively suppress evaluative feedback steps rather than uniformly shortening responses. Together, our results demonstrate that episode-level representations make reasoning steps explicit, enabling systematic analysis of how reasoning is structured, stabilized, and altered in modern language models.
+
+## 47. Localized Low-Rank Adaptation within Clustered Parameter Subspaces
+
+- Authors: Jiahao Xiong, Yihe Liu, Xianming Hu, Hongbo Zhao, Nuoyi Chen, Jie Zhang, Kai Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.799132856811749
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1223/
+- PDF: https://aclanthology.org/2026.acl-long.1223.pdf
+- Local PDF: pdf/2026-08-08_47_Localized Low-Rank Adaptation within Clustered Parameter Subspaces.pdf
+
+Low-Rank Adaptation (LoRA) for large language models (LLMs) has achieved significant success in various domains. So far, most algorithms in the LoRA-family rely on global low-rank factors spanning the entire update weight matrix ( 𝛥 𝐖 ). Through careful analysis, however, we observe that the 𝛥 𝐖 during fine-tuning typically exhibit heterogeneous subspace clusters, each corresponding to specific sub-sets of rows and columns. This structural heterogeneity suggests that global low-rank factors may not optimally capture the local variations needed for effective model adaptation. To address this limitation, we propose LoRA within Clustered Parameter Subspaces, or CPS-LoRA, which performs independent low-rank updates within clustered blocks of parameter matrices. The key idea is to group the rows/columns of the update matrix into locally coherent, and maximally uncorrelated subspaces, perform low-rank adaptations in each subspace, and iteratively update the partition and local adaptations. This allows adapting to local structures more precisely while preserving high efficiency. Theoretical analysis reveals that in case 𝛥 𝐖 can be partitioned into subspace blocks with non-overlapping basis, CPS-LoRA have superior parameter efficiency than global adaptations. Empirical evaluations further demonstrate better rank utilization of CPS-LoRA and its consistent improvements against LoRA (and variants) by up to 3.0% in absolute accuracy in various benchmarks.
+
+## 48. DEFT: Demystifying VLN Failures via a Unified Dual-View Explainability Framework for LLM-based Agents
+
+- Authors: Yawen Wang, Yihan Dai, Jianming Chen, Junjie Wang, Qing Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7984322454311874
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1363/
+- PDF: https://aclanthology.org/2026.acl-long.1363.pdf
+- Local PDF: pdf/2026-08-08_48_DEFT_ Demystifying VLN Failures via a Unified Dual-View Explainability Framework for LLM-based Agents.pdf
+
+Large Language Models (LLMs) have emerged as central planners in Vision-and-Language Navigation (VLN), yet their complexity increasingly obscures their internal decision-making. Existing interpretability methods typically isolate temporal criticality from feature salience, creating an alignment gap and failing to account for the behavioral instability of black-box agents. To address this, we propose DEFT, a unified dual-view framework that demystifies agent behavior by jointly analyzing when a decision is pivotal and what visual evidence grounds it. Featuring a dual-head architecture with a shared latent representation, DEFT employs a Mask Head for counterfactual-based criticality detection and an Action Head that leverages an ensemble of surrogates to recover robust visual cues. Extensive experiments on MatterPort3D across three LLM-based agents demonstrate that DEFT outperforms baselines in both temporal and feature fidelity. User studies further validate its utility, showing 78% alignment with human intuition.
+
+## 49. EfficientLLM: Unified Pruning-Aware Pretraining for Auto-Designed Compact Language Models
+
+- Authors: Xingrun Xing, Zheng Liu, Shitao Xiao, Boyan Gao, Yiming Liang, Haokun Lin, Xianlin Zeng, Guoqi Li, Jiajun Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.798277610123354
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.355/
+- PDF: https://aclanthology.org/2026.acl-long.355.pdf
+- Local PDF: pdf/2026-08-08_49_EfficientLLM_ Unified Pruning-Aware Pretraining for Auto-Designed Compact Language Models.pdf
+
+Modern large language models (LLMs) driven by scaling laws achieve emergent intelligence in large model sizes. Recently, the increasing concerns about cloud costs, latency and privacy make it an urgent requirement to develop compact edge language models. Distinguished from direct pretraining that bounded by parameter scaling law, this work proposes the unified pruning-aware pretraining, focusing on pretraining compact models while preserving performance of much larger source models, termed EfficientLLM. It features following characteristics: 1) Pruning in Pretraining Corpus: we introduce minimal parameter groups to decouple LLMs and continuously optimize model architecture with classic pruning methods like LLM-Pruner and SparseGPT during pretraining. We reveal that it achieves top-quality compact language models to scale up LLM pruning to large scale pretraining. 2) Auto-Designed Architecture: the LLM architecture is auto-designed during saliency-driven pruning, unifying pretraining, architectural design, and parameter pruning into a single process. Based on these, EfficientLLM significantly outperforms directly pretrained baselines with 100M ∼ 1B parameters, such as MobileLLM, SmolLM, Qwen2.5-0.5B, OLMo-1B, Llama3.2-1B in commen sense benchmarks, which bridges the performance gap between traditional LLM compression and direct pretraining. We open source on https://github.com/Xingrun-Xing2/EfficientLLM .
+
+## 50. On-Policy Self-Distillation for Efficient Diffusion Language Models with Early-Stage Calibration
+
+- Authors: Huaisheng Zhu, MingYu Liu, Junze Liu, Zhen Ge, Tian Wang, Jiri Gesi, Dakuo Wang, Weiqi Zhang, Houyu Zhang, Yufan Guo, Xian Li, Bing Yin, Sujay Sanghavi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.798033954737173
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1344/
+- PDF: https://aclanthology.org/2026.findings-acl.1344.pdf
+- Local PDF: pdf/2026-08-08_50_On-Policy Self-Distillation for Efficient Diffusion Language Models with Early-Stage Calibration.pdf
+
+Diffusion Large Language Models (DLLMs) have recently achieved strong performance, e.g., masked diffusion models (MDMs) can surpass autoregressive models (ARMs) in various tasks. However, DLLMs often struggle with inaccurate early-stage predictions due to limited context, which hinders both the model’s inference efficiency and the output’s overall quality. We propose Calibrated On-Policy Self-Distillation (COPSD) for DLLMs, a simple and efficient method to calibrate early token predictions without requiring demonstration data. COPSD distills an unnormalized target distribution derived from later decoding steps into the original model, enabling more accurate early predictions during inference. Experiments on math, planning, and RLHF tasks show that COPSD improves both effectiveness and efficiency, and further enhances performance when combined with supervised fine-tuning.
+
+## 51. Uncertainty-Aware Test-Time Search for Optimization Problem Solving
+
+- Authors: Linlin Yu, Xujiang Zhao, Dong Li, Yanchi Liu, Wei Cheng, Zhengzhang Chen, Chen Zhao, Feng Chen, Haifeng Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.797912387564282
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1975/
+- PDF: https://aclanthology.org/2026.acl-long.1975.pdf
+- Local PDF: pdf/2026-08-08_51_Uncertainty-Aware Test-Time Search for Optimization Problem Solving.pdf
+
+Automatically solving optimization problems from natural language descriptions with both efficiency and reliability is highly desirable but remains challenging. Language model hallucinations and the limited availability of labeled datasets often result in misaligned formulations, code errors, and feasibility failures We propose UMCTS , an Uncertainty-aware Monte Carlo Tree Search framework that combines the language understanding capability of large language models with the reliability of well-established solvers. UMCTS structures the solution process into four stages: global instruction, assumptions, mathematical formulation, and solver code generation. It employs Monte Carlo Tree Search with semantic-equivalence pruning, prior-guided exploration, and solver-based feasibility checks. An LLM judge provides numerical reward signals, qualitative error information, and uncertainty estimates. These signals are backpropagated to guide the search and flag unreliable outputs. Across six public benchmarks, UMCTS achieves state-of-the-art solution accuracy, improves efficiency by reducing token usage.
+
+## 52. EvoCoT: Overcoming the Exploration Bottleneck in Reinforcement Learning for LLMs
+
+- Authors: Huanyu Liu, Jia Li, Yihong Dong, Chang Yu, Taozhi Chen, Lecheng Wang, Yongding Tao, Bin Gu, Ge Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.797738034718224
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1031/
+- PDF: https://aclanthology.org/2026.findings-acl.1031.pdf
+- Local PDF: pdf/2026-08-08_52_EvoCoT_ Overcoming the Exploration Bottleneck in Reinforcement Learning for LLMs.pdf
+
+Reinforcement learning with verifiable reward (RLVR) has become a promising paradigm for post-training large language models (LLMs) to improve their reasoning capability. However, when the rollout accuracy is low on hard problems, the reward becomes sparse, limiting learning efficiency and causing exploration bottlenecks. Existing approaches either rely on teacher models for distillation or filter out difficult problems, which limits scalability or restricts reasoning improvement through exploration.We propose EvoCoT, a self-evolving curriculum learning framework based on two-stage chain-of-thought (CoT) reasoning optimization. EvoCoT constrains the exploration space by self-generating and verifying CoT trajectories, then gradually shortens CoT steps to expand the space in a controlled way. The framework enables LLMs to stably learn from initially unsolved hard problems under sparse rewards. We apply EvoCoT to multiple LLM families, including Qwen, DeepSeek, and Llama. Experiments show that EvoCoT enables LLMs to solve previously unsolved problems, improves reasoning capability without external CoT supervision, and is compatible with various RL fine-tuning methods. We release the source code to support future research.
+
+## 53. Position: From Noise to Signal to Selbstzweck - Reframing Human Label Variation in the Era of Post-training in NLP
+
+- Authors: Shanshan Xu, Santosh T.Y.S.S, Barbara Plank
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7974509250496142
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1190/
+- PDF: https://aclanthology.org/2026.findings-acl.1190.pdf
+- Local PDF: pdf/2026-08-08_53_Position_ From Noise to Signal to Selbstzweck - Reframing Human Label Variation in the Era of Post-training in NLP.pdf
+
+Human Label Variation (HLV) refers to legitimate disagreement in annotation that reflects the diversity of human perspectives rather than mere error. Long treated in NLP as noise to be eliminated, HLV has only recently been reframed as a signal for improving model robustness. With the rise of large language models (LLMs) and post-training methods such as human feedback-based alignment, the role of HLV has become increasingly consequential. Yet current preference-learning datasets routinely collapse multiple annotations into a single label, flattening diverse perspectives into artificial consensus. Preserving HLV is necessary not only for pluralistic alignment but also for sociotechnical safety evaluation, where model behavior must be assessed in relation to human interaction and societal context.This position paper argues that preserving HLV as an embodiment of human pluralism must be treated as a Selbstzweck , an intrinsic value in itself. We analyze the limitations of existing preference datasets and propose actionable strategies for incorporating HLV into dataset construction to better preserve pluralistic human values.
+
+## 54. Agentic Episodic Control
+
+- Authors: Xidong Yang, Wenhao Li, Junjie Sheng, Yun Hua, Haosheng Chen, Chuyun Shen, Xiangfeng Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7971399569267
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.654/
+- PDF: https://aclanthology.org/2026.findings-acl.654.pdf
+- Local PDF: pdf/2026-08-08_54_Agentic Episodic Control.pdf
+
+Reinforcement learning (RL) remains fundamentally limited by poor data efficiency and weak generalization. Prior episodic RL methods attempt to alleviate this via external memory modules, yet they suffer from two key limitations: a representation bottleneck caused by shallow encoders, and a retrieval dilemma where episodic memory is accessed indiscriminately.To address these challenges, we propose Agentic Episodic Control (AEC), a novel architecture that integrates large language models (LLMs) into episodic RL.AEC uses an LLM-based semantic augmenter to generate semantic representations from raw observations, and a critical state recognizer to selectively retrieve valuable experiences.This transforms memory usage from passive similarity matching into strategic, context-aware recall.Across five BabyAI-Text environments, AEC achieves 2–6× higher data efficiency than baselines and is the only method to solve complex tasks like UnlockLocal with over 90% success.It further demonstrates strong cross-task and cross-environment generalization, maintaining performance even under distribution shifts.AEC shows that combining LLM-derived priors with reinforcement learning yields more sample-efficient and adaptable agents. Code is available at https://github.com/Xidong-Yang/Agentic_Episodic_Control .
+
+## 55. The GaoYao Benchmark: A Comprehensive Framework for Evaluating Multilingual and Multicultural Abilities of Large Language Models
+
+- Authors: Yilun Liu, Chunguang Zhao, Mengyao Piao, Lingqi Miao, Shimin Tao, Minggui HE, Chenxin Liu, Zhang Li, Mahongxia, Jiaxin Guo, Chen Liu, Liqun Deng, Jiansheng Wei, Xiaojun Meng, Fanyi Du, Daimeng Wei, Yanghua Xiao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7968993059317757
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.977/
+- PDF: https://aclanthology.org/2026.acl-long.977.pdf
+- Local PDF: pdf/2026-08-08_55_The GaoYao Benchmark_ A Comprehensive Framework for Evaluating Multilingual and Multicultural Abilities of Large Languag.pdf
+
+Evaluating the multilingual and multicultural capabilities of Large Language Models (LLMs) is essential for their global utility. However, current benchmarks face three critical limitations: (1) fragmented evaluation dimensions that often neglect deep cultural nuances; (2) insufficient language coverage in subjective tasks relying on low-quality machine translation; and (3) shallow analysis that lacks diagnostic depth beyond simple rankings. To address these, we introduce GaoYao, a comprehensive benchmark with 182.3k samples, 26 languages and 51 nations/areas. First, GaoYao proposes a unified framework categorizing evaluation tasks into three cultural layers (General Multilingual, Cross-cultural, Monocultural) and nine cognitive sub-layers. Second, we achieve native-quality expansion by leveraging experts to rigorously localize subjective benchmarks into 19 languages and synthesizing cross-cultural test sets for 34 cultures, surpassing prior coverage by up to 111%. Third, we conduct an in-depth diagnostic analysis on 20+ flagship and compact LLMs. Our findings reveal significant geographical performance disparities and distinct gaps between tasks, offering a reliable map for future work. We release the benchmark.
+
+## 56. RanLoRA: Residual-aware Nonlinear Low-Rank Adaptation
+
+- Authors: Xu Luo, Yongbin Liu, Chunping Ouyang, Ying Yu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7967760950530822
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.852/
+- PDF: https://aclanthology.org/2026.findings-acl.852.pdf
+- Local PDF: pdf/2026-08-08_56_RanLoRA_ Residual-aware Nonlinear Low-Rank Adaptation.pdf
+
+Low-Rank Adaptation (LoRA) is a widely adopted approach for parameter-efficient fine-tuning of large language models, enabling effective adaptation with a small number of trainable parameters. However, its reliance on linear low-rank projections restricts adaptation to linear subspaces, which can limit flexibility on complex downstream tasks. To address this, we propose RanLoRA, a Residual-aware nonlinear Low-Rank Adaptation approach that leverages the decomposition structure of pretrained weights. We used Singular Value Decomposition (SVD) to decompose pretrained weights into principal components that are kept frozen and residual components that are used for task-specific adaptation. To enhance the expressiveness of linear low-rank updates, RanLoRA incorporates a nonlinear activation layer together with a Hadamard-product-based vector modulation. This design supports an implicit progressive adaptation behavior, where optimization evolves from coarse approximation of dominant components toward residual alignment and fine-grained nonlinear refinement. Experiments on benchmarks covering commonsense reasoning, natural language understanding, image classification, and mathematical reasoning show that RanLoRA consistently outperforms vanilla LoRA and representative variants under comparable parameter budgets. These results suggest that incorporating structured nonlinearity into adapter design can enhance representational flexibility and generalization across tasks in large models.
+
+## 57. APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI
+
+- Authors: Pratyay Banerjee, Masud Moshtaghi, Shivashankar Subramanian, Amita Misra, Ankit Chadha
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7967339431252762
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.749/
+- PDF: https://aclanthology.org/2026.acl-long.749.pdf
+- Local PDF: pdf/2026-08-08_57_APEX-MEM_ Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI.pdf
+
+Large language models still struggle with reliable long-term conversational memory: simply enlarging context windows or applying naïve retrieval often introduces noise and destabilizes responses. We present APEX-MEM, a conversational memory system that combines three key innovations: (1) a property graph which use domain-agnostic ontology to structure conversations as temporally grounded events in an entity-centric framework, (2) append-only storage that preserves the full temporal evolution of information, and (3) a multi-tool retrieval agent that understands and resolves conflicting or evolving information at query time, producing a compact and contextually relevant memory summary. This retrieval-time resolution preserves the full interaction history while suppressing irrelevant details. APEX-MEM achieves 88.88% accuracy on LOCOMO and 86.2% on LongMemEval, outperforming state-of-the-art session-aware approaches and demonstrating that structured property graphs enable more temporally coherent long-term conversational reasoning.
+
+## 58. QuDAR: Query-Wise Dual-Perspective Adaptive Retrieval
+
+- Authors: Joeun Kim, Seunghyouk Yoon, Xuan-Bach Le, Youngeun Nam, Doyoung Kim, Hwanjun Song, Jae-Gil Lee
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7966501954245535
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1791/
+- PDF: https://aclanthology.org/2026.acl-long.1791.pdf
+- Local PDF: pdf/2026-08-08_58_QuDAR_ Query-Wise Dual-Perspective Adaptive Retrieval.pdf
+
+Retrieval-augmented generation(RAG) systems depend on retrieval modules to supply grounding evidence for large language models. While hybrid approaches combining sparse and dense retrievers improve performance, most rely on fixed weights that ignore query-specific and corpus-specific variation. Similarly, query expansion has long been used to enrich recall, but its integration with original queries is usually static and can introduce noise. We present QuDAR, a dual-perspective adaptive retrieval framework that adapts along two perspectives: retriever type (sparse vs. dense) and query format (original vs.expanded). Leveraging margin-derived confidence (e.g., top-1–top-2 score gaps) and blind LLM-based relevance scoring, QuDAR dynamically assigns query-specific weights, fusing lexical specificity with semantic breadth while mitigating noise. QuDAR is lightweight, retriever-agnostic, and broadly applicable. Experiments show consistent gains over static baselines, improving overall retrieval quality and yielding more stable performance across queries.
+
+## 59. Breaking the Generator Barrier: Disentangled Representation for Generalizable AI-Text Detection
+
+- Authors: Xiao Pu, Zepeng Cheng, Lin Yuan, Yu Wu, Xiuli Bi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.796472997899204
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.120/
+- PDF: https://aclanthology.org/2026.acl-long.120.pdf
+- Local PDF: pdf/2026-08-08_59_Breaking the Generator Barrier_ Disentangled Representation for Generalizable AI-Text Detection.pdf
+
+As large language models (LLMs) generate text that increasingly resembles human writing, the subtle cues that distinguish AI-generated content from human-written content become increasingly challenging to capture. Reliance on generator-specific artifacts is inherently unstable, since new models emerge rapidly and reduce the robustness of such shortcuts. This generalizes unseen generators as a central and challenging problem for AI-text detection. To tackle this challenge, we propose a progressively structured framework that disentangles AI-detection semantics from generator-aware artifacts. This is achieved through a compact latent encoding that encourages semantic minimality, followed by perturbation-based regularization to reduce residual entanglement, and finally a discriminative adaptation stage that aligns representations with task objectives. Experiments on MAGE benchmark, covering 20 representative LLMs across 7 categories, demonstrate consistent improvements over state-of-the-art methods, achieving up to 24.2% accuracy gain and 26.2% F 1 improvement. Notably, performance continues to improve as the diversity of training generators increases, confirming strong scalability and generalization in open-set scenarios. Our source code will be publicly available at https://github.com/PuXiao06/DRGD .
+
+## 60. CCD: Mitigating Hallucinations in Radiology MLLMs via Clinical Contrastive Decoding
+
+- Authors: Xi Zhang, Zaiqiao Meng, Jake Lever, Edmond S. L. Ho
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7963365472824346
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1755/
+- PDF: https://aclanthology.org/2026.findings-acl.1755.pdf
+- Local PDF: pdf/2026-08-08_60_CCD_ Mitigating Hallucinations in Radiology MLLMs via Clinical Contrastive Decoding.pdf
+
+Multimodal large language models (MLLMs) have recently achieved remarkable progress in radiology by integrating visual perception with natural language understanding. However, they often generate clinically unsupported descriptions, known as medical hallucinations, which pose serious risks in medical applications that demand accuracy and image-grounded outputs. Through empirical analysis, we find that prompt-induced hallucinations remain prevalent in radiology MLLMs, largely due to over-sensitivity to clinical sections. To address this, we introduce C linical C ontrastive D ecoding ( CCD ), a training-free and retrieval-free inference framework that integrates structured clinical signals from task-specific radiology expert models. CCD introduces a dual-stage contrastive mechanism to refine token-level logits during generation, thereby enhancing clinical fidelity without modifying the base MLLM. Experiments on three datasets and multiple models demonstrate that CCD consistently improves overall performance on radiology report generation (RRG). On the MIMIC-CXR dataset, it yields up to a 17% improvement in RadGraph-F1 when applied to state-of-the-art RRG models. Our approach provides a lightweight and generalisable solution for mitigating medical hallucinations, effectively bridging expert models and MLLMs in radiology.
