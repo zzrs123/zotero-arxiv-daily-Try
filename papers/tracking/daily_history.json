@@ -1,4 +1,11 @@
 {
+  "title:4dwam4dconsistentworldmodelingforautonomousdriving": {
+    "doi": null,
+    "sent_date": "2026-08-12",
+    "source": "arxiv",
+    "title": "4D-WAM: 4D Consistent World Modeling for Autonomous Driving",
+    "url": "http://arxiv.org/abs/2608.10107v1"
+  },
   "title:activevitalgeometryawareembodiedvitalsignsmonitoringforhomehealthcarerobots": {
     "doi": null,
     "sent_date": "2026-07-01",
@@ -243,6 +250,13 @@
     "source": "arxiv",
     "title": "Rewriting or Reweighting? A Geometric Account in Language Models",
     "url": "http://arxiv.org/abs/2608.01835v1"
+  },
+  "title:simultaneousheisenberglimitedmultiparametermetrologyviaindefiniteevolution": {
+    "doi": null,
+    "sent_date": "2026-08-12",
+    "source": "arxiv",
+    "title": "Simultaneous Heisenberg-Limited Multiparameter Metrology via Indefinite Evolution",
+    "url": "http://arxiv.org/abs/2608.10490v1"
   },
   "title:spacellagentaselfevolvingllmbasedmultiagentframeworkfortrajectoryanalysis": {
     "doi": null,
