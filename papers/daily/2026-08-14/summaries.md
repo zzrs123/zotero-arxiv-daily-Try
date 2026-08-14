@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-08-14
+
+## 1. Learning Discrete Cell and Niche Codes from Spatial Transcriptomics Using Dual Residual Vector Quantization
+
+- Authors: Birk, S., Merchant, A., Vahidi, A., Theis, F. J., Lotfollahi, M.
+- Source: biorxiv
+- Venue type: preprint
+- Journal: biorxiv
+- Publication status: preprint
+- Publication date: 2026-08-13
+- DOI: 10.64898/2026.08.07.743490
+- Categories: genomics
+- Relevance: 3.9204097497972104
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://www.biorxiv.org/content/10.64898/2026.08.07.743490v1.full.pdf
+- PDF: https://www.biorxiv.org/content/10.64898/2026.08.07.743490v1.full.pdf
+- Local PDF: pdf/2026-08-14_01_Learning Discrete Cell and Niche Codes from Spatial Transcriptomics Using Dual Residual Vector Quantization.pdf
+
+Spatially-resolved transcriptomics (SRT) measures gene expression at single-cell resolution while preserving each cell's spatial location, enabling the joint study of cell identity and cellular niche, the recurring microenvironment that organises tissue function. Existing representation-learning methods typically capture only one of these axes at a time. We present SQUINT, a graph vector quantized variational autoencoder (VQ-VAE) that learns two disjoint codebooks per cell from a shared architecture: a cell codebook quantising the per-cell embedding before neighbourhood aggregation, biased toward cell-intrinsic identity, and a niche codebook quantising the embedding after graph neural network (GNN) aggregation, biased toward spatial context. Both use residual vector quantization, giving a coarse-to-fine discrete-token hierarchy. SQUINT is trained with per-branch negative-binomial reconstruction objectives and three domain-motivated components that we show are crucial: a within-section cosine adjacency loss that anchors the niche codes in the spatial graph, a cross-section contrastive loss on the cell latents that aligns transcriptomically matched cells, and a decoder section covariate that absorbs batch effects. Across three datasets spanning four spatial assays (STARmap, MERFISH, CosMx, Xenium) and four tasks -- niche identification, cell-type identification, cross-section integration, and spatial gene-expression imputation in held-out regions -- SQUINT outperforms or is competitive with strong baselines on identification and achieves the most faithful cross-section integration. The resulting discrete vocabulary makes tissues directly consumable by transformer-style foundation models and enables one-step query-to-reference atlas mapping via code-distribution similarity, which we demonstrate on a CosMx human non-small-cell lung cancer cohort.
+
+## 2. CosMAP: Contrastive Manifold Approximation and Projection for Dimensionality Reduction of Omics and Genealogical Data
+
+- Authors: Fenosoa Randrianjatovo, Maya Saleh, Simon Girard, Amadou Barry
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-11
+- DOI: Unavailable
+- Categories: q-bio.GN, cs.LG, stat.CO, stat.ME
+- Relevance: 3.8410962428234097
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11269v1
+- PDF: https://arxiv.org/pdf/2608.11269v1
+- Local PDF: pdf/2026-08-14_02_CosMAP_ Contrastive Manifold Approximation and Projection for Dimensionality Reduction of Omics and Genealogical Data.pdf
+
+Omics datasets, particularly single-cell RNA sequencing data, are high-dimensional, sparse, noisy, and dominated by zero values, making faithful low-dimensional representation challenging. Existing dimensionality-reduction methods may distort local neighbourhoods, global organization, or the cohesion of meaningful populations, with similar limitations arising in genealogical data. We introduce Contrastive Manifold Approximation and Projection (CosMAP), a graph-based unsupervised dimensionality-reduction method for producing faithful and interpretable embeddings. CosMAP extends the graph-based framework of UMAP by combining cosine-similarity neighbourhoods with temperature-normalized contrastive affinities, which are optimized in the embedding space using an attractive--repulsive objective. It further employs a two-phase refinement strategy: an intermediate higher-dimensional representation is first learned and then used to reconstruct the neighbourhood graph and initialize the final low-dimensional embedding. We evaluate CosMAP on MNIST and USPS handwritten-digit datasets, mouse retina and cortex single-cell RNA-sequencing datasets, and a large genealogical kinship dataset derived from BALSAC-CARTaGENE. Compared with state-of-the-art dimensionality-reduction methods, CosMAP produces more coherent visual representations, improves neighbourhood preservation, and provides clearer global organization of digit classes, biological cell populations, and regional genealogical patterns. These results indicate that CosMAP offers a robust framework for exploratory analysis of complex, sparse, high-dimensional data. The implementation is publicly available at https://github.com/FenosoaRandrianjatovo/CosMAP-dr.
+
+## 3. Faithful, Sufficient and Understandable: Rethinking Graph Counterfactual Explanations via Discrete Diffusion Inversion
+
+- Authors: David Bechtoldt, Sidney Bender
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.6982419390834886
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.12083v1
+- PDF: https://arxiv.org/pdf/2608.12083v1
+- Local PDF: pdf/2026-08-14_03_Faithful, Sufficient and Understandable_ Rethinking Graph Counterfactual Explanations via Discrete Diffusion Inversion.pdf
+
+Graph Neural Networks (GNNs) achieve strong predictive performance on graph-structured data across domains such as chemistry, biology, and network analysis, yet they provide no intrinsic explanation of their predictions. This limits their adoption in high-stakes and safety-critical settings. Counterfactual explanations address this by revealing the minimal structural modifications that would change a model's prediction. On graphs, however, such a modification is hard to produce. The search space is discrete and combinatorial, and a valid answer must respect categorical node and edge types together with domain rules such as chemical valency in the case of molecular graphs. Existing explainers give up one of two things. Either edits are not held on the data manifold, or the search does not span the full edit space. We propose Graph Diffusion Counterfactual Explanation via Inversion (GDCE-I), which gives up neither. A discrete denoising diffusion model with a novel discrete inversion scheme enables distribution-aware edits leveraging the whole domain edit space. We further address the incomplete and inconsistent evaluation of graph counterfactuals by deriving a framework of explanation desiderata and applying it to every method under one shared protocol. Across four benchmarks, GDCE-I outperforms related work by a large margin on the defined framework. For the molecular domain, we further qualitatively show that GDCE-I attains interpretable in-distribution solutions.
+
+## 4. CellConsensus: An agent-curated atlas for automatic cell typing
+
+- Authors: de Mathelin, A., Quinn, J., Tosh, C., Tansey, W.
+- Source: biorxiv
+- Venue type: preprint
+- Journal: biorxiv
+- Publication status: preprint
+- Publication date: 2026-08-13
+- DOI: 10.64898/2026.08.07.743503
+- Categories: bioinformatics
+- Relevance: 3.2437869563159323
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://www.biorxiv.org/content/10.64898/2026.08.07.743503v1.full.pdf
+- PDF: https://www.biorxiv.org/content/10.64898/2026.08.07.743503v1.full.pdf
+- Local PDF: pdf/2026-08-14_04_CellConsensus_ An agent-curated atlas for automatic cell typing.pdf
+
+Assigning cell types to single-cell and spatial transcriptomic data remains inconsistent because marker gene knowledge is fragmented across thousands of individual studies. Here we present CellConsensus, a cell typing method built on a consensus corpus of marker genes aggregated from curated atlases (2,607 sources) and de novo mining of 1,174 papers. By reconciling overlapping and conflicting marker evidence into a consensus reference, CellConsensus assigns cell type labels that are more accurate and more reproducible than existing marker- and reference-based approaches, while remaining interpretable and applicable across tissues and platforms. CellConsensus is available as an open-source Python package (https://github.com/tansey-lab/cellconsensus), an interactive database (https://cellconsensus.org), and as an agentic MCP server for conversational querying.
+
+## 5. ScreenShot: A Foundation Model for Few-Shot Combination Drug Screening
+
+- Authors: Antoine de Mathelin, Christopher Tosh, Wesley Tansey
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.2065874223152138
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.12219v1
+- PDF: https://arxiv.org/pdf/2608.12219v1
+- Local PDF: pdf/2026-08-14_05_ScreenShot_ A Foundation Model for Few-Shot Combination Drug Screening.pdf
+
+Treating patients with combinations of drugs reduces the risk of resistance to any individual drug. Finding effective combinations is difficult because the large search space makes combinatorial screens prohibitively expensive, time consuming, and often technically infeasible. Predictive models can fill this gap, yet existing methods typically require molecular profiling of each sample and per-cohort training, limiting their applicability when time and tissue are scarce. To address this challenge, we introduce ScreenShot, a hierarchical transformer pretrained on 40 drug screening datasets covering 3,700 drugs and 6,000 biological samples, whose architecture mirrors the nested structure of screening data. Given a few-shot context of observations from a new patient, ScreenShot predicts the response of the sample to combination therapies through in-context learning, operating directly on functional measurements with no fine-tuning and no molecular profiling. On four held-out datasets, ScreenShot outperforms all baselines in both prediction accuracy and identification of selectively effective treatments. ScreenShot's internal representations are directly useful for experimental design: we use them to drive a weighted k-means++ active learning strategy that selects which experiments to run, achieving the same hit detection as uniform screening with a third of the budget. Source code and interactive dashboard: https://github.com/tansey-lab/screenshot.
+
+## 6. Probing and steering biology across Boltz-1s trunk-diffusion boundary
+
+- Authors: Piotr Jedryszek, Tongmeng Xie, Adam Winnifrith, Alexander Hasson, Weronika Ślesak, George Wicks, Toby Winnifrith, Oliver M. Crook
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-11
+- DOI: Unavailable
+- Categories: q-bio.QM, cs.LG
+- Relevance: 3.188429169373027
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11475v1
+- PDF: https://arxiv.org/pdf/2608.11475v1
+- Local PDF: pdf/2026-08-14_06_Probing and steering biology across Boltz-1s trunk-diffusion boundary.pdf
+
+AlphaFold3-class structure predictors pair a representational trunk, which processes sequence and context, with a diffusion module, which generates atomic coordinates. How biological information changes as it crosses this architectural boundary remains poorly understood. We analyze per-residue activations from the Pairformer trunk and diffusion module of Boltz-1 using linear probes, sparse autoencoders (SAEs), and causal interventions. From the trunk, both geometry (secondary structure, disorder) and sequence chemistry (amino-acid identity, signal peptides, disulfide-bond annotations) are linearly decodable. In the diffusion module, the two diverge. Secondary structure transfers essentially unchanged, whereas sequence chemistry is strongly attenuated. We then test whether decodable directions can steer the model, intervening on the final trunk single representation that conditions the diffusion module. Helix and coil directions change predicted structure dose-dependently against matched-norm random controls, but a beta-strand direction that is highly predictive (F1 =0.82) produces no measurable increase in strand content: linear decodability does not imply causal influence at the site we tested. The same probes also score markedly lower against sparse SwissProt annotations than against dense DSSP labels, because unannotated residues that the model gets right are charged as false positives; such scores are therefore lower bounds. Finally, supervised probes outscore single SAE features wherever a label already exists. We release the trained trunk and diffusion SAEs, Boltz-1 per-residue activations, and the analysis code.
+
+## 7. WavePhaseNet: A DFT-Based Method for Constructing Semantic Conceptual Hierarchy Structures (SCHS)
+
+- Authors: Kiyotaka Kasubuchi, Kazuo Fukiya
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-02-16
+- DOI: Unavailable
+- Categories: cs.CL, cs.LG
+- Relevance: 3.0929752656265643
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2602.14419v2
+- PDF: https://arxiv.org/pdf/2602.14419v2
+- Local PDF: pdf/2026-08-14_07_WavePhaseNet_ A DFT-Based Method for Constructing Semantic Conceptual Hierarchy Structures (SCHS).pdf
+
+This paper reformulates Transformer/Attention mechanisms in Large Language Models (LLMs) through measure theory and frequency analysis, theoretically demonstrating that hallucination is an inevitable structural limitation. The embedding space functions as a conditional expectation over a σ-algebra, and its failure to be isomorphic to the semantic truth set fundamentally causes logical consistency breakdown. WavePhaseNet Method The authors propose WavePhaseNet, which explicitly constructs a Semantic Conceptual Hierarchy Structure (SCHS) using Discrete Fourier Transform (DFT). By applying DFT along the sequence dimension, semantic information is decomposed into frequency bands: low-frequency components capture global meaning and intent, while high-frequency components represent local syntax and expression. This staged separation enables precise semantic manipulation in diagonalized space. Dimensionality Reduction GPT-4's 24,576-dimensional embedding space exhibits a 1/f spectral structure based on language self-similarity and Zipf's law. Through cumulative energy analysis, the authors derive that approximately 3,000 dimensions constitute the lower bound for "complete representation." This demonstrates that reduction from 24,576 to 3,000 dimensions preserves meaning and intent while enabling rigorous reasoning and suppressing hallucination. Cohomological Consistency Control The reduced embedding space, constructed via cohomological regularization over overlapping local windows, allows defining a graph structure and cochain complex. This quantifies inconsistencies among local inferences as coboundary-based losses. Applying harmonic projection based on Hodge theory positions cohomology as a computable regularization principle for controlling semantic consistency, extracting maximally consistent global representations.
+
+## 8. Can Frontier LLMs Match Natively Multimodal Embeddings? A Comparison on Hard-Negative Text-to-Image Retrieval
+
+- Authors: Archan Dutta, Vyanktesh Kanungo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-11
+- DOI: Unavailable
+- Categories: cs.AI, cs.CV, cs.IR, cs.LG
+- Relevance: 2.973555342316758
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11343v1
+- PDF: https://arxiv.org/pdf/2608.11343v1
+- Local PDF: pdf/2026-08-14_08_Can Frontier LLMs Match Natively Multimodal Embeddings_ A Comparison on Hard-Negative Text-to-Image Retrieval.pdf
+
+Multimodal retrieval and classification across different types of media, spanning text, images,video and audio, has traditionally relied on dual-encoder models that align visual and textual representations through contrastive learning. The March 2026 release of Gemini Embedding 2, Google's first natively multimodal embedding model to map text, images, video, audio, and documents into a single shared space, raises competition among multimodal retrieval systems. Simultaneously, frontier Large language models (LLMs) have also demonstrated strong visual understanding, raising the question of whether they can serve as effective zero-shot rankers. Our study provides the first direct comparison of native multimodal embeddings against LLM-based visual ranking on Flickr30k. We observe that GPT-4.1 and Claude Sonnet 4.6 perform on par with Gemini Embedding 2. Additionally, once embeddings are precomputed, multimodal embeddings are better suited for low-latency applications.
+
+## 9. CORA-Diff: Confidence-Oriented Residual Acceptance for Efficient Diffusion Language Model Inference
+
+- Authors: Yifan Wu, Yufeng Zhang, Kenli Li
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-31
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.9550836900942157
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11235v1
+- PDF: https://arxiv.org/pdf/2608.11235v1
+- Local PDF: pdf/2026-08-14_09_CORA-Diff_ Confidence-Oriented Residual Acceptance for Efficient Diffusion Language Model Inference.pdf
+
+Diffusion language models (DLMs) update many tokens in parallel, yet practical decoders often use a fixed denoising horizon. Many predictions stabilize early, but blockwise decoding continues until all positions are resolved, causing repeated dense forward passes. Existing accelerators often rely on learned filters, modified scores, dependency models, or cache-specific mechanisms. We ask whether native trajectory signals can identify residual positions likely to match the deterministic dense endpoint. We propose CORA-Diff, a training-free method that preserves the original transfer rule and applies confidence-and-persistence gating only to positions that rule leaves unresolved. Accepted tokens remain visible as context, and the block terminates once all positions are resolved. This requires no backbone change, learned acceptance model, or logit modification. Our theory explains why high-confidence, persistent predictions are more likely to match the fixed-horizon dense endpoint, and paired post-intervention trajectories provide direct empirical support. We select one operating point on a separate GSM8K calibration subset and freeze it for all evaluations. Under a matched Learn2PD-style LLaDA protocol, CORA-Diff has the lowest measured runtime in all eight task-length settings. Task scores match or exceed dense decoding in five settings, and the largest observed drop is 1.22 points. Its incremental speedups over EOS-aware dense decoding are 2.70x and 3.32x on GSM8K and HumanEval. It also reaches 13.14x under the fixed-horizon 1024/1024 mechanism-isolation protocol and transfers to Dream without retuning at 3.18x-3.53x. These results show that native confidence and persistence enable reliable residual acceptance, reducing repeated denoising computation while preserving task quality.
+
+## 10. Generative Semantic Segmentation via an Observable Semantic-Image Interface and Hierarchical Generator Evidence Alignment
+
+- Authors: Weize Cai, Yongqi Dong, Zhida Shao, Zixin Fu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI, cs.LG, eess.IV
+- Relevance: 2.937184052686514
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11537v1
+- PDF: https://arxiv.org/pdf/2608.11537v1
+- Local PDF: pdf/2026-08-14_10_Generative Semantic Segmentation via an Observable Semantic-Image Interface and Hierarchical Generator Evidence Alignmen.pdf
+
+Generative semantic segmentation exposes structured predictions as images, but direct color decoding is susceptible to color drift and boundary mixing, whereas latent-feature decoders that predict a separate output distribution may relegate the rendered image to an intermediate visualization. We present Semantic Prism, a conditional semantic-image generation-and-refinement framework with deterministic inference. A diffusion-distilled one-step generator renders a semantic RGB image; per-pixel distances from the rendered colors to a fixed class-color codebook define an explicit probabilistic interface. Hierarchical Generator Evidence Alignment spatially aligns multi-level generator features and uses a zero-initialized output projection to predict an additive residual in the interface logit space, retaining the image-defined interface as the reference for the final distribution. The interface and refined distributions further enable Contextual Interface--Hierarchy Disagreement (C-IHD), a fixed readout for ranking remaining pixel errors without an auxiliary predictor or additional forward pass. On the 500-image Cityscapes validation set, Semantic Prism achieves 72.07% mean intersection over union, 11.39 mIoU points above direct-interface decoding, with 0.41% expected calibration error. Matched-capacity ablations over three seeds support the benefit of jointly aligned multi-level evidence. A separately trained model attains 62.22% mIoU on BDD100K, while the Cityscapes-trained model reaches 46.89\% mIoU under source-frozen transfer to the Adverse Conditions Dataset with Correspondences, without target-domain adaptation. Across all three datasets, C-IHD consistently improves the area under the precision--recall curve for pixel-error ranking over maximum softmax probability on the same segmentation predictions; on ACDC, it raises AUPR from 0.6580 to 0.7557.
+
+## 11. NAE: Normalizing AutoEncoder
+
+- Authors: Muhammad Abdur Rafae, Niels Landwehr
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.935769093632822
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.12084v1
+- PDF: https://arxiv.org/pdf/2608.12084v1
+- Local PDF: pdf/2026-08-14_11_NAE_ Normalizing AutoEncoder.pdf
+
+We consider the setting of Normalizing flows with approximate inverses, an established paradigm spanning both full-dimensional ($d=D$) and bottleneck ($d<D$) settings, and group these models under the term flow autoencoders. We present a theoretical investigation into their training dynamics and prove that the proposed loss used by existing approaches is suboptimal; specifically, both encoder and decoder surrogates must be optimized in alignment with reconstruction loss. Guided by these insights, we propose Normalizing Autoencoder (NAE), which employs a novel conditional loss that aligns the surrogate loss gradient with that of reconstruction loss, directly improving upon the current standard. Extensive experiments across molecule generation, tabular data, and image benchmarks demonstrate that NAE achieves state of the art performance. Our work highlights the importance of loss alignment in flow autoencoders and establishes NAE as a powerful generative framework.
+
+## 12. Continuous-Latent Predictive Modeling with Semantic Alignment for EEG-Language Foundation Models
+
+- Authors: Myeong-Ju Cho, Hye-Bin Shin, Seo-Hyun Lee, Seong-Whan Lee
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.935101720654165
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11656v1
+- PDF: https://arxiv.org/pdf/2608.11656v1
+- Local PDF: pdf/2026-08-14_12_Continuous-Latent Predictive Modeling with Semantic Alignment for EEG-Language Foundation Models.pdf
+
+Recent advances in EEG foundation models have demonstrated the potential of large-scale pretraining to enable generalizable neural decoding across subjects, recording environments, and datasets. However, dominant pretraining paradigms face key challenges: masked autoencoding tends to prioritize low-level signal reconstruction over task-relevant semantics, while autoregressive modeling creates a mismatch between continuous neural dynamics and discrete token spaces. To address these challenges, new strategies are needed to effectively align continuous EEG representations with natural-language semantics and enable their integration with large language models. Accordingly, we propose Brain Latent Predictive Model (BLPM), an EEG-language foundation model that reformulates heterogeneous EEG decoding tasks as a continuous semantic embedding prediction problem. BLPM introduces a Continuous EEG Latent Predictive (CELP) encoder that learns transferable representations through latent target prediction. Building on these representations, a Multi-Query Semantic Decomposition (MQSD) module extracts task-relevant information and aligns continuous EEG representations with textual semantics within a shared latent space according to their semantic relationships. Experiments across multiple benchmarks demonstrate consistent generalization performance across diverse tasks, establishing continuous latent semantic prediction as an effective paradigm for EEG-language foundation models.
+
+## 13. Chemically Meaningful Textualization Enables Explainable Validation of Metal-Organic Frameworks by Large Language Models
+
+- Authors: Guobin Zhao, Xiao-Yan Li
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-11
+- DOI: Unavailable
+- Categories: cond-mat.mtrl-sci, cs.AI
+- Relevance: 2.925505569329797
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11283v1
+- PDF: https://arxiv.org/pdf/2608.11283v1
+- Local PDF: pdf/2026-08-14_13_Chemically Meaningful Textualization Enables Explainable Validation of Metal-Organic Frameworks by Large Language Models.pdf
+
+Computation-ready metal-organic framework (MOF) databases are essential for high-throughput screening, yet many reported crystal structures remain chemically unreasonable or disordered, compromising simulation fidelity. Existing validation approaches can identify non-computation-ready structures, but they often rely on heuristic rules, license requirement, or offer limited interpretability. Here, we show that large language models (LLMs) can serve as interpretable validators of MOF structures when crystallographic information is transformed into chemically meaningful text. By benchmarking nine descriptors, we find that successful LLM-based validation depends not on the amount of structural information alone, but on whether local coordination, framework connectivity, and chemical context are organized into a linguistically learnable representation. Fine-tuned LLMs using specialized descriptors (mof2text) achieve performance comparable to graph-based models in identifying unreasonable MOFs. Importantly, these models extend beyond black-box classification by generating diagnostic rationales for likely error sources, including abnormal bonding, connectivity, and charge states, as well as error-category predictions for annotated datasets. This work establishes chemically informed textualization as the key step that transforms LLMs from generic text models into practical and explainable tools for curating MOF databases.
+
+## 14. Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams
+
+- Authors: Weihao Bo, Shan Zhang, Yanpeng Sun, Jie Liu, Yongke Yao, Jinhao Du, Wei He, Kai Zou, Zechao Li, Jingdong Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 2.912767429854526
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.12262v1
+- PDF: https://arxiv.org/pdf/2608.12262v1
+- Local PDF: pdf/2026-08-14_14_Diagram-MMU_ A Multi-Modal Benchmark for Scientific Diagrams.pdf
+
+Multimodal Large Language Models (MLLMs) have been growing the capability for scientific writing and collaboration. For example, OpenAI Prism is a free workspace for scientific writing and collaboration. One important feature in Prism is turning scientific diagrams directly into LaTeX TikZ code. In this paper, we build a benchmark, Diagram-MMU, a multi-modal benchmark designed to assess MLLMs' ability for scientific diagram parsing and understanding. Diagram-MMU features 3.7k curated diagrams and 18.3k human-validated questions across six domains. It evaluates MLLMs on three tasks common in vibe writing workspaces: diagram-to-code parsing, diagram-to-code editing, and diagram question answering, alongside agentic settings per task. The evaluation of 12 MLLMs reveals that diagram-to-code tasks are more challenging than diagram question answering: models can reason well over diagrams but struggle to parse and edit them, underscoring the need for methods to enhance MLLMs' capability in diagram-to-code generation. Under agentic settings, most models improve parsing and editing performance but degrade on question answering, while Claude-4.6 Opus consistently improves across all three tasks. Project Page: https://vi-ocean.github.io/projects/diagram-mmu.
+
+## 15. GCPO: Diagnosing and Constraining Subspace Geometry in Rollout RL for LLMs
+
+- Authors: Kai Yang, Jingwei Xu, Wanyu Wang, Kai-Yuan Guo, Zhenbo Yu, Yi Wang, Yu Qiao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 2.9111843267418602
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11674v1
+- PDF: https://arxiv.org/pdf/2608.11674v1
+- Local PDF: pdf/2026-08-14_15_GCPO_ Diagnosing and Constraining Subspace Geometry in Rollout RL for LLMs.pdf
+
+On-policy rollout methods such as GRPO are central to post-training of large language models, yet they frequently suffer from training instabilities, cross-task capability degradation, and response-length inflation. Although prior work has characterized the subspace geometry of aggregate updates, the stepwise variation of this geometry and its relationship to model performance remain unclear. We introduce Principal-Subspace Overlap, a dimension-corrected measure of individual rollout updates relative to the dominant singular subspaces of pretrained weights. Despite low average overlap, transient spikes often precede performance degradation. To address this, we propose GCPO (Geometrically Constrained Policy Optimization), which applies hard bilateral orthogonal projections to constrain updates to the complementary subspaces, preventing such excursions by construction. Across mathematical reasoning, code generation, and tool-use tasks on Qwen3-8B and GLM4-9B, GCPO consistently outperforms GRPO and recent variants, including DAPO and GSPO, improving over the base models and the strongest baseline by up to 27.69 and 2.37 points, respectively. Furthermore, GCPO preserves general capabilities, eliminates response-length inflation, and stabilizes policy entropy. Our findings provide a new diagnostic lens and a principled design perspective for stable reinforcement learning post-training.
+
+## 16. Livestock Multi‐Omics Integration: A Systematic Framework From Statistical Association to Causal Interpretation
+
+- Authors: Jiying Wen, Zhongyu Wang, Jieping Huang, Fen Li, Ningbo Chen, Yun Ma
+- Source: openalex
+- Venue type: journal
+- Journal: Advanced Science
+- Publication status: published
+- Publication date: 2026-08-12
+- DOI: https://doi.org/10.1002/advs.77094
+- Categories: Genetic and phenotypic traits in livestock, Genetic Mapping and Diversity in Plants and Animals, Agriculture Sustainability and Environmental Impact
+- Relevance: 2.9088731420791665
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1002/advs.77094
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Livestock multi-omics integration is key to unraveling complex trait regulation, yet systematic, livestock-specific strategies remain scarce. This review traces the progression from single-omics accumulation to multi-dimensional integration, highlighting how large-scale genomic, epigenomic, and transcriptomic projects lay the foundation for functional dissection. We identify core impediments: extreme species diversity, marked data heterogeneity, limited sample sizes, and a pervasive reduction of multi-omics data to simplistic differential screens, resulting in low translational efficiency. We critically appraise four common pitfalls-overinterpreting correlation as causation, relegating proteomics to corroborating transcriptomics, incomplete microbiome-host integration lacking environmental context, and systematic neglect of metabolic fluxomics-and show how exposomics and fluxomics add necessary causal and dynamic dimensions. To address these, we propose a livestock-adapted three-tier analytical framework: (1) statistical association of cross-omics covariation patterns; (2) machine learning-driven feature mining and integrative modeling; and (3) causal interpretation encompassing Mendelian randomization, prior-knowledge-guided network inference, and physical causal evidence via fluxomics and metabolic control analysis. We further discuss how multimodal sequencing (single-cell, spatial, temporal) and generative AI can fundamentally mitigate heterogeneity and strengthen causal evidence. Finally, we outline future priorities in database standardization, livestock-specific benchmarking, and translational pipelines, charting a path from correlation-centric reporting to mechanistic causality and precision breeding.
+
+## 17. Semantic Lenia: Emergence of Homeostatic Solitons within the Semantic Space of Large Language Models
+
+- Authors: Yoshihiko Kayama
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, nlin.CG
+- Relevance: 2.888622992298988
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.11657v1
+- PDF: https://arxiv.org/pdf/2608.11657v1
+- Local PDF: pdf/2026-08-14_17_Semantic Lenia_ Emergence of Homeostatic Solitons within the Semantic Space of Large Language Models.pdf
+
+We introduce Semantic Lenia, an artificial life framework that transforms Large Language Model (LLM) inference from a static optimization problem into a continuous dynamical system within the macroscopic logit space. By establishing a non-linear homeostatic feedback loop to dynamically balance semantic attraction and syntactic repulsion, we demonstrate the emergence of "Autonomous Semantic Solitons" -- macroscopic dissipative structures that avoid repetitive crystallization. Our exhaustive parameter sweeps map a critical "Habitable Ridge" where applied steering forces perfectly balance the model's intrinsic syntactic inertia. This approach successfully maintains generative trajectories at the edge of chaos, triggering profound abductive leaps without structural collapse and establishing a physical scaling law for machine cognition.
+
+## 18. Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence
+
+- Authors: Mengru Wang, Junfeng Fang, Shuofei Qiao, Zhenqian Xu, Haoming Xu, Haoxiong Wang, Shumin Deng, Linyi Yang, Zhixiang Cui, Xin Xu, Yunzhi Yao, Buqiang Xu, Fei Shen, Haozhe Luo, Yunxiang Wei, Ningyu Zhang, Julian McAuley, Tat Seng Chua, Huajun Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.AI, cs.CL, cs.HC, cs.LG, cs.MA
+- Relevance: 2.8400074792852004
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.12036v1
+- PDF: https://arxiv.org/pdf/2608.12036v1
+- Local PDF: pdf/2026-08-14_18_Mechanist_ AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence.pdf
+
+AI models have achieved remarkable success across diverse domains, yet the mechanisms underlying their capabilities and the risks they may pose remain poorly understood. As AI development becomes faster and increasingly automated, mechanistic exploration remains largely manual, widening the gap between what models can do and our ability to understand and control them. To bridge this gap, we introduce Mechanist, an agentic system that uses AI as a scientific instrument for the autonomous discovery of mechanisms underlying AI intelligence. To support autonomous mechanistic discovery, we construct an interpretability-focused knowledge graph of approximately 13,000 papers and integrate it with a multidisciplinary database of 43 million papers spanning 26 fields. We further curate a library of 32 foundational methods for mechanism analysis, causal intervention, and validation. Compared with Claude Code and existing AI-scientist systems, Mechanist generates more valuable mechanism hypotheses and executes experiments more reliably. Mechanist also demonstrates a progression from discovering model behaviors to explaining and controlling AI models. Specifically, Mechanist first uncovers a counterintuitive safety risk in scientific laboratories, showing that unsafe traits can transfer across modalities through apparently safe training data. Mechanist then develops a mechanism theory of belief, revealing how models represent world knowledge, form beliefs, infer the beliefs of others, and how these mechanisms emerge during pretraining. Finally, Mechanist translates these mechanistic insights into practical interventions that improve model performance across diverse scenarios and steer scientific foundation models toward generating DNA sequences with specified properties.
+
+## 19. Segment any tumour: an uncertainty-aware vision foundation model for whole-body analysis
+
+- Authors: Himashi Peiris, Sizhe Wang, Gary F. Egan, Mehrtash Harandi, Meng Law, Zhaolin Chen
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-08-11
+- DOI: https://doi.org/10.1038/s41467-026-76531-2
+- Categories: AI in cancer detection, Advanced Neural Network Applications, Cutaneous Melanoma Detection and Management
+- Relevance: 2.83595423984254
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-76531-2
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Prompt-driven vision foundation models, such as the Segment Anything Model, have shown adaptability in computer vision, but their use in medical imaging remains challenging due to heterogeneous anatomy, artefacts, and low-contrast tumour boundaries. This is particularly difficult in whole-body tumour analysis, where models must transfer across modalities, anatomies, and tumour appearances. Here, we present Segment Any Tumour 3D (SAT3D), a lightweight volumetric foundation model for generalisable tumour segmentation across diverse medical imaging modalities, organs, and cohorts. SAT3D integrates a shifted-window vision transformer with critic-guided uncertainty-aware training, using confidence maps as dense prompts to guide boundary prediction in ambiguous regions. We benchmark SAT3D against vision foundation models, prompt-driven and task-specific methods across 11 public datasets. Trained on 17,075 three-dimensional volume-mask pairs, SAT3D shows robust generalisation, including in out-of-distribution settings, and is supported by a 3D-Slicer plugin for interactive segmentation, underscoring SAT3D’s potential as a scalable foundation model for medical image analysis. The application of prompt-driven vision foundation models to medical imaging, particularly whole-body tumour analysis, remains challenging. Here, the authors develop Segment Any Tumour 3D (SAT3D), a lightweight volumetric foundation model for robust and generalisable tumour segmentation across diverse medical imaging modalities, organs, and cohorts.
+
+## 20. LoSA: Near-Lossless Sparse Attention for Training-Free Video Diffusion Acceleration
+
+- Authors: Enhuai Liu, Yunke Wang, Yutong Wang, Changming Sun, Chang Xu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 2.8102399471721795
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.12032v1
+- PDF: https://arxiv.org/pdf/2608.12032v1
+- Local PDF: pdf/2026-08-14_20_LoSA_ Near-Lossless Sparse Attention for Training-Free Video Diffusion Acceleration.pdf
+
+Video diffusion transformers are costly to sample: every denoising step applies self-attention over a long 3D token sequence, a quadratic cost that dominates as resolution and duration grow. Sparse attention reduces this cost without retraining, but existing methods pursue aggressive sparsity, where further speedup costs disproportionately more attention fidelity. We target the opposite end of this trade-off: fix near-lossless fidelity by construction, and remove as much computation as this constraint permits. Two observations make this regime practical: roughly 40% of block interactions can be removed while retaining 99% of the attention mass, and the high-mass support remains stable across denoising steps. We propose LoSA, a training-free sparse-attention method that fixes a retained-mass threshold of 99% rather than a sparsity ratio: it measures exact block attention masses at one early dense step, keeps, for each head and query block, the smallest key/value block set meeting the threshold, and reuses the frozen block indices for all remaining steps. On Wan2.1-1.3B, LoSA alone gives a $1.36\times$ speedup with a 0.06-point VBench Overall drop. The benefit is largest under composition: combined with feature caching, LoSA reaches a $3.2\times$ speedup on HunyuanVideo at a 0.02-point drop, versus 0.32 points for the strongest sparse baseline at comparable speed. Across three video diffusion transformers and speedups up to $3.2\times$, LoSA consistently achieves the best training-free speed-quality trade-off.
+
+## 21. Direct Token Optimization: A Self-Contained Approach to Large Language Model Unlearning
+
+- Authors: Hong Kyu Lee, Ruixuan Liu, Li Xiong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7874780523567733
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2088/
+- PDF: https://aclanthology.org/2026.findings-acl.2088.pdf
+- Local PDF: pdf/2026-08-14_21_Direct Token Optimization_ A Self-Contained Approach to Large Language Model Unlearning.pdf
+
+Machine unlearning is an emerging technique that removes the influence of a subset of training data (forget set) from a model without full retraining, with applications including privacy protection, content moderation, and model correction. The key challenge lies in achieving strong unlearning efficacy while preserving the overall utility. Existing unlearning methods for large language models (LLMs) often rely on auxiliary models, retain datasets, or even commercial AI services. However, dependence on these external resources is often impractical and could potentially introduce additional privacy risks. In this work, we propose direct token optimization (DTO), a self-contained unlearning approach for LLMs that directly optimizes the token-level objectives to unlearn specific sequences without external resources.For each sequence to be unlearned, we identify target tokens that encode critical knowledge for unlearning and treat remaining tokens as non-target ones for maintaining the model utility. DTO maximizes an unlearning objective on target tokens and applies a utility-preservation regularizer on non-target tokens.Across multiple unlearning benchmarks, DTO improves the forget quality up to 16.8 × over the latest baselines while maintaining comparable model utility. Our code is available at github.com/Emory-AIMS/direct_token_optimization.
+
+## 22. Large Language Models Are Still Misled by Simple Bias Ensembles
+
+- Authors: Zhouhao Sun, Zhiyuan Kan, Xiao Ding, Li Du, Bibo Cai, Yang Zhao, Bing Qin, Ting Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7871770833653637
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.971/
+- PDF: https://aclanthology.org/2026.findings-acl.971.pdf
+- Local PDF: pdf/2026-08-14_22_Large Language Models Are Still Misled by Simple Bias Ensembles.pdf
+
+With the evolution of large language models (LLMs), their robustness against individual simple biases has been enhanced. However, we observe that the ensemble of multiple simple biases still exerts a significant adverse impact on LLMs. Given that real-world data samples are typically confounded by a wide range of biases, LLMs tend to exhibit unstable performance when deployed in high-stakes real-world scenarios such as clinical diagnosis and legal document analysis. However, previous benchmarks are constrained to datasets where each sample is manually injected with only one type of bias. To bridge this gap, we propose a multi-bias benchmark where each sample contains multiple types of biases. Experimental results reveal that existing LLMs and debiasing methods perform poorly on this benchmark, highlighting the challenge of eliminating such compounded biases.
+
+## 23. OmniOData: Unleashing Small Language Models for OData Query Generation with Synthetic Data and Reinforcement Learning
+
+- Authors: Tao Bai, Zhaochen Li, Hongxin Shao, Daniel Dahlmeier
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7870045708840587
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.119/
+- PDF: https://aclanthology.org/2026.acl-industry.119.pdf
+- Local PDF: pdf/2026-08-14_23_OmniOData_ Unleashing Small Language Models for OData Query Generation with Synthetic Data and Reinforcement Learning.pdf
+
+Despite the success of Large Language Models (LLMs) in structured query generation, OData—a critical RESTful protocol for enterprise APIs—remains under-researched due to a lack of high-fidelity, execution-validated datasets. To bridge this gap, we introduce OmniOData, a framework that generates SynOData, the first large-scale OData corpus featuring execution-grounded queries and reasoning traces. Using this corpus, we develop OmniOData-R1 (1.5B–3B parameters), a family of models that match or surpass frontier proprietary systems, such as GPT-4o and Gemini 3, on realistic industrial benchmarks. Our results demonstrate that the synergy of execution-verified synthetic data and Reinforcement Learning (RL) effectively unlocks the latent reasoning of Small Language Models (SLMs), providing a high-performance, low-latency solution for specialized enterprise query generation.The code and data will be released under an open-source license.
+
+## 24. UniCM: A Unified Consistency Model For Efficient Multimodal Generation and Understanding
+
+- Authors: Chenkai Xu, Xu Wang, Zhenyi Liao, Yishun Li, TianQi Hou, Zhijie Deng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7856560142722615
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.906/
+- PDF: https://aclanthology.org/2026.findings-acl.906.pdf
+- Local PDF: pdf/2026-08-14_24_UniCM_ A Unified Consistency Model For Efficient Multimodal Generation and Understanding.pdf
+
+Consistency models (CMs) have shown promise in the efficient generation of both image and text. This raises the natural question of whether we can learn a unified CM for efficient multimodal generation (e.g., text-to-image) and understanding (e.g., image-to-text). Intuitively, such a model could be acquired by applying the consistency distillation (CD) to existing unified multimodal models. However, the key challenge is establishing a unified denoising perspective for both image and text generation, which is essential for establishing the consistency mapping. To tackle this, at the representation level, we advocate for discrete tokens for both modalities to best preserve language modeling capabilities. Critically, instead of defining the text denoising trajectory via recent discrete diffusion language modeling principles, we specify it using the parallel decoding trace of an autoregressive language model, benefiting from the latter’s superior performance in general text generation tasks. The denoising trajectory of image tokens adheres to standard discrete diffusion. We train our unified consistency models (UniCMs) on these combined multimodal trajectories simultaneously with a unified objective. We introduce a trajectory segmentation strategy to improve the training convergence. Empirically, in text-to-image generation, UniCMs outperform SD3 on GenEval and Image Reward, while requiring only approximately 1/8 of the sampling time. Meanwhile, in image-to-text generation, UniCMs surpass Show-o on the MMMU benchmark while being 1.5 × faster at long-sequence generating speed.
+
+## 25. ComfyFlow: Benchmarking LLMs for AIGC Workflow Generation
+
+- Authors: Zhenran Xu, Yiyu Wang, Yunxin Li, Muyang Ye, Xue Yang, Kai Chen, Longyue Wang, Weihua Luo, Baotian Hu, Min Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.784502993456245
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.140/
+- PDF: https://aclanthology.org/2026.findings-acl.140.pdf
+- Local PDF: pdf/2026-08-14_25_ComfyFlow_ Benchmarking LLMs for AIGC Workflow Generation.pdf
+
+Large language models (LLMs) have shown promising advancements in tackling human-level tasks, wherein generating workflows for collaborative AI systems remains a critical and challenging step. To explore this frontier, we introduce ComfyFlow, a comprehensive benchmark to evaluate current LLMs’ ability to generate executable and instruction-following AIGC workflows in ComfyUI. The dataset includes 400 diverse visual generation tasks across 20 categories, supported by 10K training examples constructed from knowledge bases, which contain detailed annotations for 2,480 nodes and 3,298 workflows. We establish a systematic evaluation protocol that quantifies performance across multiple dimensions, ranging from basic format validity to multi-level hallucination rates. Our extensive evaluations show that: 1) ComfyFlow presents a substantial challenge even for top-tier proprietary LLMs such as GPT-5.1 and the Claude series; 2) Open-source models achieve new state-of-the-art results after post-training, yet struggle with long-horizon planning as the number of nodes increases; 3) Different post-training strategies offer complementary benefits in following instructions and mitigating hallucinations. By establishing both a challenging benchmark and a principled evaluation scheme, ComfyFlow lays the foundation for developing more intelligent and reliable collaborative AI systems.
+
+## 26. Taming Extreme Tokens: Covariance-Aware GRPO with Gaussian-Kernel Advantage Reweighting
+
+- Authors: Cheng Wang, Qin Liu, Wenxuan Zhou, Muhao Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7831304304675264
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-short.45/
+- PDF: https://aclanthology.org/2026.acl-short.45.pdf
+- Local PDF: pdf/2026-08-14_26_Taming Extreme Tokens_ Covariance-Aware GRPO with Gaussian-Kernel Advantage Reweighting.pdf
+
+Group Relative Policy Optimization (GRPO) has emerged as a promising approach for improving the reasoning capabilities of large language models. However, it struggles to effectively balance the trade-off between exploration and exploitation during training, often resulting in suboptimal performance. Motivated by the theoretical insight that changes in entropy are governed by the covariance between token probabilities and their corresponding advantages, we propose a hyperparameter-free, covariance-weighted optimization method that dynamically down-weights extreme token-level updates via a Gaussian kernel. This approach automatically reduces the instability caused by the exploration-exploitation trade-off while preserving informative learning signals. Extensive empirical evaluations show that our approach improves downstream performance across reasoning benchmarks compared with GRPO, and effectively stabilizes entropy as training progresses.
+
+## 27. SPARK: Strategic Policy-Aware Exploration via Dynamic Branching for Long-Horizon Agentic Learning
+
+- Authors: Jinyang Wu, Shuo Yang, Yuhao Shen, Shuai Zhang, Zhengqi Wen, Jianhua Tao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.782992796152895
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1100/
+- PDF: https://aclanthology.org/2026.acl-long.1100.pdf
+- Local PDF: pdf/2026-08-14_27_SPARK_ Strategic Policy-Aware Exploration via Dynamic Branching for Long-Horizon Agentic Learning.pdf
+
+Reinforcement learning has empowered large language models to act as intelligent agents, yet training them for long-horizon tasks remains challenging due to the scarcity of high-quality trajectories, especially under limited resources. Existing methods typically scale up rollout sizes and indiscriminately allocate computational resources among intermediate steps. Such attempts inherently waste substantial computation budget on trivial steps while failing to guarantee sample quality. To address this, we propose SPARK ( S trategic P olicy- A ware explo R ation via K ey-state dynamic branching), a novel framework that selectively branches at critical decision states for resource-efficient exploration. Our key insight is to activate adaptive branching exploration at critical decision points to probe promising trajectories, thereby achieving precise resource allocation that prioritizes sampling quality over blind coverage. This design leverages the agent’s intrinsic decision-making signals to reduce dependence on human priors, enabling the agent to autonomously expand exploration and achieve stronger generalization. Experiments across diverse tasks (e.g., embodied planning), demonstrate that SPARK achieves superior success rates with significantly fewer training samples, exhibiting robust generalization even in unseen scenarios. Our code and checkpoints are available at https://github.com/jinyangwu/SPARK .
+
+## 28. Global Adaptive Momentum Meets Local Personalized Perturbation: Efficient Federated LLM Fine-Tuning with Zeroth-Order Gradients
+
+- Authors: Zihan Chen, Howard Hao Yang, Tony Quek, Kai Fong Ernest Chong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.782405727319277
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1851/
+- PDF: https://aclanthology.org/2026.acl-long.1851.pdf
+- Local PDF: pdf/2026-08-14_28_Global Adaptive Momentum Meets Local Personalized Perturbation_ Efficient Federated LLM Fine-Tuning with Zeroth-Order Gr.pdf
+
+Federated fine-tuning of large language models (LLMs) provides a privacy-preserving approach to deploying pervasive generative AI services, yet the substantial memory overhead of first-order (FO) gradient computation presents significant practical challenges. While zeroth-order (ZO) optimization methods offer memory-efficient alternatives, they remain susceptible to performance degradation brought by data heterogeneity. Specifically, direct ZO-for-FO substitution is incompatible with existing strategies tailored for cross-client discrepancies. In response, we propose a new federated LLM fine-tuning framework, with a holistic revamped design of the entire ZO gradient processing pipeline. Crucially, with our proposed global adaptive optimization and local personalized perturbation, we present a unified solution for incorporating ZO gradients in federated learning, from local personalized perturbation sampling and ZO gradient transmission, to global ZO gradient reconstruction and aggregation with adaptive momentum, thereby directly addressing the challenges of inefficiencies and cross-client discrepancies. Our convergence analysis and experiment results demonstrate the superiority of our proposed framework over diverse heterogeneous data settings, both in terms of generalization and efficiency.
+
+## 29. GM-PRM: A Generative Multimodal Process Reward Model for Multimodal Mathematical Reasoning
+
+- Authors: Jianghangfan Zhang, Yibo Yan, Kening Zheng, Xin Zou, Song Dai, Xuming Hu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7822361212712954
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.alvr-main.11/
+- PDF: https://aclanthology.org/2026.alvr-main.11.pdf
+- Local PDF: pdf/2026-08-14_29_GM-PRM_ A Generative Multimodal Process Reward Model for Multimodal Mathematical Reasoning.pdf
+
+Multimodal Large Language Models (MLLMs) demonstrate remarkable capabilities but often struggle with complex, multi-step mathematical reasoning, where minor errors in visual perception or logical deduction can lead to complete failure. While Process Reward Models (PRMs) offer step-by-step supervision, existing multimodal PRMs are limited to being binary verifiers that can identify but not correct errors, offering little explanatory power. To address these deficiencies, we introduce the Generative Multimodal Process Reward Model (GM-PRM), a novel paradigm that transforms the PRM from a passive judge into an active reasoning collaborator . Instead of a simple scalar score, GM-PRM provides a fine-grained, interpretable analysis of each reasoning step, evaluating its step intent, visual alignment, and logical soundness. More critically, GM-PRM is trained to generate a corrected version of the first erroneous step it identifies. This unique corrective capability enables our new test-time inference strategy, Refined Best-of-N (Refined-BoN). This framework actively enhances solution quality by using the PRM’s generated correction to guide the policy model toward a more promising reasoning trajectory, thereby improving the diversity and correctness of the solution pool. We demonstrate that GM-PRM achieves state-of-the-art results on multiple multimodal math benchmarks, significantly boosting policy model performance with remarkable data efficiency, requiring only a 20K-sample training dataset.
+
+## 30. SEAD: A Surrogate-free Label-only Membership Inference Attack against Pre-trained LLMs with Semantic-Aware Density
+
+- Authors: Biao Yi, Jiahao Li, Yiming Li, Yu He, Baolei Zhang, Zheli Liu, Dacheng Tao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.78198581208863
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.337/
+- PDF: https://aclanthology.org/2026.findings-acl.337.pdf
+- Local PDF: pdf/2026-08-14_30_SEAD_ A Surrogate-free Label-only Membership Inference Attack against Pre-trained LLMs with Semantic-Aware Density.pdf
+
+Membership inference attacks (MIAs) aim to determine whether specific data was used to train a model. While existing MIAs against pre-trained Large Language Models (LLMs) typically require access to complete logits (probabilities), such access is sometimes unavailable in real-world deployments where only the generated text is exposed. Current label-only MIAs relied on surrogate models to estimate the target model’s token probabilities, but we identify fundamental limitations: high sensitivity to surrogate model selection and significant probability estimation errors. To address these challenges, we propose SEAD (Semantic-Aware Density), a novel surrogate-free label-only MIA approach that directly estimates token probabilities through Monte Carlo sampling of the target model itself. This approach eliminates dependency on surrogate models while reducing probability estimation errors by an order of magnitude. Furthermore, we introduce a semantic-aware density approach that enhances attack effectiveness by considering both exact token matches and semantically similar alternatives, inspired by the understanding that LLMs may express memorized information through different but semantically equivalent tokens. Extensive evaluations demonstrate that SEAD consistently outperforms existing label-only attacks and serves as a foundational density estimator in the label-only setting.
