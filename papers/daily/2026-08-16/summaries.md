@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-08-16
+
+## 1. Detection of Spatially Aberrant Cells in Spatial Transcriptomics Data by Conformal Prediction
+
+- Authors: Zhang, Z., Zheng, X., Yuan, Q., Luo, R.
+- Source: biorxiv
+- Venue type: preprint
+- Journal: biorxiv
+- Publication status: preprint
+- Publication date: 2026-08-15
+- DOI: 10.64898/2026.08.12.744448
+- Categories: bioinformatics
+- Relevance: 3.5322680078637756
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://www.biorxiv.org/content/10.64898/2026.08.12.744448v1.full.pdf
+- PDF: https://www.biorxiv.org/content/10.64898/2026.08.12.744448v1.full.pdf
+- Local PDF: pdf/2026-08-16_01_Detection of Spatially Aberrant Cells in Spatial Transcriptomics Data by Conformal Prediction.pdf
+
+The hexagonal organization of epithelial cells represents a fundamental feature of normal tissue architecture, reflecting the precise spatial coordination that underlies healthy biological structure. Disruptions to this organization-manifesting as spatially aberrant spots with abnormal gene expression and misplaced positioning-are closely associated with disease initiation and progression. Here, we introduce SPADE, a computational framework that integrates single-cell RNA sequencing and spatial transcriptomics data to quantitatively characterize and detect spatial aberrancy. SPADE leverages a variational autoencoder coupled with Gaussian mixture modeling for cell-type embedding and spatial deconvolution, and incorporates conformal prediction to enable uncertainty-calibrated identification of aberrant spots. Through extensive validation, SPADE demonstrates superior performance in identifying biologically meaningful aberrant spots.
+
+## 2. Nonparametric kernel-based detection of spatially variable genes with adaptive shrinkage and scalable multi-sample inference
+
+- Authors: Ghosh, T., Ghosh, D.
+- Source: biorxiv
+- Venue type: preprint
+- Journal: biorxiv
+- Publication status: preprint
+- Publication date: 2026-08-15
+- DOI: 10.64898/2026.08.10.744047
+- Categories: bioinformatics
+- Relevance: 3.4838289991806626
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://www.biorxiv.org/content/10.64898/2026.08.10.744047v1.full.pdf
+- PDF: https://www.biorxiv.org/content/10.64898/2026.08.10.744047v1.full.pdf
+- Local PDF: pdf/2026-08-16_02_Nonparametric kernel-based detection of spatially variable genes with adaptive shrinkage and scalable multi-sample infer.pdf
+
+Identifying spatially variable genes (SVGs), genes whose expression varies coherently across tissue space, is a central analytic goal in spatially resolved transcriptomics. Current methods rank spatially variable genes using either significance probabilities from parametric models or effect sizes such as the proportion of spatial variance, but parametric approaches impose distributional assumptions, such as Gaussian processes or negative binomial models, that may be violated for sparse or zero-inflated data. Furthermore, most detection tools cannot jointly model multiple biological replicates, and no existing framework provides both nonparametric significance probabilities and stabilized effect-size estimates with formal uncertainty quantification. Here, we introduce CytoKspace, a nonparametric framework that combines a sparse exponential kernel constructed from nearest-neighbor graphs with a quadratic-form test statistic and adaptive permutation testing. CytoKspace employs a multi-stage adaptive permutation schedule that yields substantial computational savings over fixed-permutation baselines, an adaptive shrinkage layer built on empirical Bayes estimation that stabilizes raw spatial effect sizes and provides posterior estimates with local false sign rates, and a scalable multi-sample extension via Fisher combination of significance probabilities and inverse-variance-weighted meta-analysis that accommodates studies with multiple biological replicates. In extensive simulations across a broad range of sample sizes, gene counts, spatially variable gene fractions, and effect sizes, as well as in applications to two real datasets from the Visium and seqFISH platforms, CytoKspace demonstrates competitive sensitivity, well-calibrated false positive rates, and practical computational requirements compared to existing methods. A software implementation of our method is freely available at \url{https://github.com/Ghoshlab/CytoKspace}.
+
+## 3. MuSpAn: a toolbox for multiscale spatial analysis
+
+- Authors: Joshua A. Bull, Joshua W. Moore, Shania M. Corry, Muyang Lin, Hayley L. Belnoue-Davis, Eoghan J. Mulholland-Illingworth, Simon J. Leedham, Helen M. Byrne
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-08-13
+- DOI: https://doi.org/10.1038/s41467-026-75649-7
+- Categories: Single-cell and spatial transcriptomics, Bioinformatics and Genomic Networks, Gene expression and cancer classification
+- Relevance: 3.455582840733402
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-75649-7
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract Advances in multiplex imaging and spatial omics have revolutionised spatial data generation in biology, revealing complex tissue organisation across multiple scales. However, methods for analysing these data have lagged behind, with fragmented, study-specific pipelines and limited guidance for tool selection. To address this, we introduce MuSpAn, a Multiscale Spatial Analysis package offering intuitive, flexible access to a wide range of mathematical tools - including spatial statistics, topological data analysis, geometry, and networks - within a unified framework. MuSpAn supports efficient data querying, is agnostic to imaging modality, and provides extensive documentation and community support. It enables users to create custom pipelines or conduct unbiased exploratory analyses. We demonstrate MuSpAn’s capacity to interrogate cross-compartmental cell interactions at multiple length scales in both normal and neoplastic tissue using mouse intestinal spatial transcriptomic datasets. Applied to a CMS4-like murine intestinal cancer model, MuSpAn identifies a continuum of fibroblastic functional phenotypes associated with discrete and coordinated fibroblast-immune interactions, highlighting its utility as a discovery tool across diverse biological contexts.
+
+## 4. LEN-Seek: Fast and scalable ligand binding-site similarity search in the latent space of an SE(3)-invariant graph VAE
+
+- Authors: Yeo, K., Kim, D., Sim, J., Lee, J.
+- Source: biorxiv
+- Venue type: preprint
+- Journal: biorxiv
+- Publication status: preprint
+- Publication date: 2026-08-15
+- DOI: 10.64898/2026.08.14.744759
+- Categories: bioinformatics
+- Relevance: 3.276836426308942
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://www.biorxiv.org/content/10.64898/2026.08.14.744759v1.full.pdf
+- PDF: https://www.biorxiv.org/content/10.64898/2026.08.14.744759v1.full.pdf
+- Local PDF: pdf/2026-08-16_04_LEN-Seek_ Fast and scalable ligand binding-site similarity search in the latent space of an SE(3)-invariant graph VAE.pdf
+
+Motivation: Ligand binding-site similarity search is a crucial step in drug discovery that reduces the conformational search space for docking and other downstream tasks by comparing a target protein against experimentally identified binding sites. Existing methods rely on either direct structural alignment or lossy compression of structural information, producing a trade-off between scalability and precision. Results: We propose LEN-Seek, a ligand binding-site search method based on a graph neural network (GNN)-driven variational autoencoder (VAE) that encodes the 3D structural and physicochemical context of a binding site into a probabilistic latent space, enabling similarity search within a low-dimensional vector space. A binding site is modeled as a graph of amino acid residues, with node features adopted from the protein language model, Ankh, and edges encoded as SE(3)-invariant (roto-translational invariant) geometric relationships, thereby avoiding expensive data augmentation or SE(3)-equivariant models. Compared to ProBiS, the purely geometric graph-clique based method, LEN-Seek successfully retrieves a substantial portion of similar binding sites with a roughly 3,400-fold lower per-comparison cost, demonstrating its potential as a scalable approach to template-based ligand binding-site search in large-scale protein structure databases.
+
+## 5. A systematic evaluation of in-context learning in large language models for antibody characterization
+
+- Authors: Sin-Hang Fung, Zhenghao Zhang, Ran Wang, Miao Chen, Brian Shing‐Hei Wong, Kelly Yichen Li, Chenyang Hong, Jingying Zhou, Kevin Y. Yip, Stephen Kwok‐Wing Tsui, Qin Cao
+- Source: openalex
+- Venue type: journal
+- Journal: Genome biology
+- Publication status: published
+- Publication date: 2026-08-13
+- DOI: https://doi.org/10.1186/s13059-026-04240-6
+- Categories: vaccines and immunoinformatics approaches, Monoclonal and Polyclonal Antibodies Research, Machine Learning in Bioinformatics
+- Relevance: 3.0160860472886886
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1186/s13059-026-04240-6
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract Large language models can learn new tasks through in-context learning (ICL), yet this ability remains underexplored for biological sequence classification. We evaluate ICL across 20 large language models on three antibody tasks: species-origin, antibody specificity, and isotype class classification. Few-shot prompting improves over zero-shot performance, but matching the performance of protein language model classifiers requires sequence-similar demonstrations. Building on this observation, we introduce a sequence similarity-based strategy for ICL in antibody sequence classification, Sim-ICL. Using 32-shot prompting, Sim-ICL achieves competitive performance on two of three tasks. Its simplicity makes few-shot ICL promising for antibody characterization, especially for researchers with limited coding expertise.
+
+## 6. Aligning protein-generative models to experimental fitness with ProteinDPO
+
+- Authors: Talal Widatalla, Ashir A. Borah, S. B. King, C. Driscoll, Rafael Rafailov, Brian Hie
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Methods
+- Publication status: published
+- Publication date: 2026-08-14
+- DOI: https://doi.org/10.1038/s41592-026-03137-3
+- Categories: Protein Structure and Dynamics, Machine Learning in Bioinformatics, vaccines and immunoinformatics approaches
+- Relevance: 2.899233201226836
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41592-026-03137-3
+- PDF: https://www.nature.com/articles/s41592-026-03137-3.pdf
+- Local PDF: pdf/2026-08-16_06_Aligning protein-generative models to experimental fitness with ProteinDPO.pdf
+
+Biological generative models can predict biological functions without task-specific training data but often under-perform specialized models. This is due to a fundamental 'alignment gap', where the rules learned during unsupervised training are not related to the function of interest. Here we demonstrate how to provide task-specific information without losing the general knowledge learned during pretraining by using direct preference optimization to align a structure-conditioned protein language model to preferentially generate stable protein sequences. Our aligned model, ProteinDPO, achieves stability prediction competitive to task-specific models and consistently outperforms unsupervised and fine-tuned versions of the model. Notably, ProteinDPO generalizes beyond its training data to enable stabilization and improved binding affinity prediction of large multichain protein complexes. When applied to stabilization of the hemagglutinin trimer, a primary component of influenza vaccines, ~80% of designs achieve increased or similar stability compared with the native hemagglutinin and up to 32 °C improvements from recently emerged mammalian strains. Our results demonstrate how to augment generative models with biophysical information and, more broadly, provide a general framework for the alignment of biological foundation models.
+
+## 7. SPICE: A Synergistic, Precise, Iterative, and Customizable Image Editing Workflow
+
+- Authors: Tang, Kenan, Li, Yanhong, Qin, Yao
+- Source: neurips
+- Venue type: conference
+- Journal: NeurIPS 2025
+- Publication status: formally_published
+- Publication date: 2026-08-14
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.8054328747291253
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://proceedings.neurips.cc/paper_files/paper/2025/hash/4051771acaf5ba90abe0539e1dc2821e-Abstract-Creative_AI_Track.html
+- PDF: https://proceedings.neurips.cc/paper_files/paper/2025/file/4051771acaf5ba90abe0539e1dc2821e-Paper-Creative_AI_Track.pdf
+- Local PDF: pdf/2026-08-16_07_SPICE_ A Synergistic, Precise, Iterative, and Customizable Image Editing Workflow.pdf
+
+Prompt-based models have demonstrated impressive prompt-following capability at image editing tasks. However, the models still struggle with following detailed editing prompts or performing local edits. Specifically, global image quality often deteriorates immediately after a single editing step. To address these challenges, we introduce SPICE, a training-free workflow that accepts arbitrary resolutions and aspect ratios, accurately follows user requirements, and consistently improves image quality during more than 100 editing steps, while keeping the unedited regions intact. By synergizing the strengths of a base diffusion model and a Canny edge ControlNet model, SPICE robustly handles free-form editing instructions from the user. On a challenging realistic image-editing dataset, SPICE quantitatively outperforms state-of-the-art baselines and is consistently preferred by human annotators. We release the workflow implementation for popular diffusion model Web UIs to support further research and artistic exploration.
+
+## 8. IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review
+
+- Authors: Fengbo Ma, Zixin Rao, Xiaoting Li, Zhetao Chen, Hongyue Sun, Yiping Zhao, Xianyan Chen, Zhen Xiang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7857900010966823
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.29/
+- PDF: https://aclanthology.org/2026.acl-long.29.pdf
+- Local PDF: pdf/2026-08-16_08_IntrAgent_ An LLM Agent for Content-Grounded Information Retrieval through Literature Review.pdf
+
+Scientific research relies on accurate information retrieval from literature to support analytical decisions.In this work, we introduce a new task, INformation reTRieval through literAture reVIEW (IntraView), which aims to automate fine-grained information retrieval faithfully grounded in the provided content in response to research-driven queries, and propose IntrAgent, an LLM-based agent that addresses this challenging task.In particular, IntrAgent is designed to mimic human behaviors when reading literature for information retrieval - identifying relevant sections and then iteratively extracting key details to refine the retrieved information.It follows a two-stage pipeline: a Section Ranking stage that prioritizes relevant literature sections through structural-knowledge-enabled reasoning, and an Iterative Reading stage that continuously extracts details and synthesizes them into concise, contextually grounded answers.To support rigorous evaluation, we introduce IntraBench, a new benchmark consisting of 315 test instances built from expert-authored questions paired with literature spanning five STEM domains.Across seven backbone LLMs, IntrAgent achieves on average 13.2% higher cross-domain accuracy than state-of-the-art RAG and research-agent baselines.
+
+## 9. Beyond Local vs. External: A Game-Theoretic Framework for Trustworthy Knowledge Acquisition
+
+- Authors: Rujing Yao, Yufei Shi, Yang Wu, Ang Li, Zhuoren Jiang, XiaoFeng Wang, Haixu Tang, Xiaozhong Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7843012076952256
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1299/
+- PDF: https://aclanthology.org/2026.findings-acl.1299.pdf
+- Local PDF: pdf/2026-08-16_09_Beyond Local vs. External_ A Game-Theoretic Framework for Trustworthy Knowledge Acquisition.pdf
+
+Cloud-hosted Large Language Models (LLMs) offer unmatched reasoning capabilities and dynamic knowledge, yet submitting raw queries to these external services risks exposing sensitive user intent. Conversely, relying exclusively on trusted local models preserves privacy but often compromises answer quality due to limited parameter scale and knowledge. To resolve this dilemma, we propose Game-theoretic Trustworthy Knowledge Acquisition (GTKA), a framework that formulates the trade-off between knowledge utility and privacy as a strategic game. GTKA consists of three components: (i) a privacy-aware sub-query generator that decomposes sensitive intent into generalized, low-risk fragments; (ii) an adversarial reconstruction attacker that attempts to infer the original query from these fragments, providing adaptive leakage signals; and (iii) a trusted local integrator that synthesizes external responses within a secure boundary. By training the generator and attacker in an alternating adversarial manner, GTKA optimizes the sub-query generation policy to maximize knowledge acquisition accuracy while minimizing the reconstructability of the original sensitive intent. To validate our approach, we construct two sensitive-domain benchmarks in the biomedical and legal fields. Extensive experiments demonstrate that GTKA significantly reduces intent leakage compared to state-of-the-art baselines while maintaining high-fidelity answer quality.
+
+## 10. BNLP: A Text Annotation Platform for Quality Control of LLM-Generated Annotations
+
+- Authors: Xinhao Zhuang, Qiongyu Tian, Yalin Chen, Tianle Xin, Yongyong Fu, Yunchao Ling, Guoqing Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.782500330826869
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1185/
+- PDF: https://aclanthology.org/2026.findings-acl.1185.pdf
+- Local PDF: pdf/2026-08-16_10_BNLP_ A Text Annotation Platform for Quality Control of LLM-Generated Annotations.pdf
+
+High-quality annotated data is crucial for NLP, yet manual annotation is costly and difficult to scale in low-resource settings. Large Language Models (LLMs) have demonstrated strong zero-shot and few-shot generalization in NLP tasks, but existing annotation tools either lack LLM support or use LLMs only as one-off pre-annotation engines, without incorporating collaboration or quality control, compromising data reliability. We present BNLP, a text annotation platform that embeds LLM-assisted labeling into a quality-aware collaborative workflow. BNLP treats LLM outputs as intermediate, revisable states and integrates multi-role collaboration, iterative review cycles, and consistency analysis to enable continuous quality monitoring while preserving efficiency gains. BNLP also natively supports AI-ready formats such as Excel and JSON, ensuring seamless data flow from manual annotation to model training. Experiments show that BNLP reduces annotation time by 74.3% and improves annotation quality by 11.6% over purely manual annotation in LLM-assisted settings.
+
+## 11. EULoInf: Efficient Hessian-Free Entropy Based Uncertainty-Aware Data Influence Approximation
+
+- Authors: Runxin Cai, Jingtan Wang, Bryan Kian Hsiang Low
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.780756432488625
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1839/
+- PDF: https://aclanthology.org/2026.findings-acl.1839.pdf
+- Local PDF: pdf/2026-08-16_11_EULoInf_ Efficient Hessian-Free Entropy Based Uncertainty-Aware Data Influence Approximation.pdf
+
+In Large Language Model post-training, high-quality data effectively enhances model performance with fine-tuning, highlighting the need to identify high-quality and beneficial fine-tuning data. However, one of the most popular data valuation paradigms, influence function and its variants, are computationally expensive due to their reliance on inverse Hessian-Vector Products (iHVP) computations that scale poorly with increasing model size. To examine whether influence values correlate with efficiently computable intrinsic features, we empirically investigate the distribution of top influential data for the model in fine-tuning, and observe that data with high influence tend to be those with high predictive uncertainty. Yet such highly uncertain samples exhibit a dual nature, which can be either beneficial or detrimental noisy data. Unlike traditional methods that treat uncertainty as a standalone criterion, we introduce a directional indicator to rigorously disentangle these opposing effects. Formally, we propose EULoInf (Entropy-based Uncertainty-aware Lookahead Influence), a computationally efficient valuation framework. By approximating influence via uncertainty and gradient based validation loss lookahead, EULoInf avoids iHVP computation, effectively reducing the iHVP-induced quadratic complexity in model parameters to linear time. We rigorously derive our framework from the influence function. Empirically, it matches or even outperforms prior methods across diverse data valuation tasks and LLM architectures, including mislabel detection and data selection, while reducing computational time and memory usage by over 50%.
+
+## 12. Med-SRAF: A Multi-Agent Framework for Medical Reasoning via Semantic Routing and Agentic Fusion
+
+- Authors: Xiao Li, Zhuo Chen, Jun Xia, Hongxin Xiang, Chao Wang, Wenjie Du, Yang Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7795670073224272
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1895/
+- PDF: https://aclanthology.org/2026.findings-acl.1895.pdf
+- Local PDF: pdf/2026-08-16_12_Med-SRAF_ A Multi-Agent Framework for Medical Reasoning via Semantic Routing and Agentic Fusion.pdf
+
+While Retrieval-Augmented Generation (RAG) has become a standard paradigm for mitigating hallucinations in Large Language Models (LLMs), its effectiveness in complex medical reasoning remains limited. Existing RAG methods suffer from two main challenges: First, Semantic Drift : without explicit domain constraints, LLM-driven query decomposition often deviates from the original clinical intent, introducing substantial noise that degrades retrieval relevance. Second, Concatenation Fallacy : retrieved evidence from different semantic aspects is aggregated in a naive, unstructured manner, without modeling their inter-dependencies and potential conflicts, which ultimately undermines downstream reasoning. To address these challenges, we propose Med-SRAF , a multi-agent retrieval augmentation framework guided by medical domain knowledge. This framework reconstructs the traditional RAG process through two core mechanisms: (1) Intent-driven Semantic Routing, where a UMLS-based NavigationAgent dynamically maps queries to medical dimensions for strategic search space pruning; and (2) Evidence-based Agentic Fusion, where a FusionAgent resolves conflicts among dimension-specific evidence to build logically consistent reasoning chains. Extensive experiments on five widely used medical benchmarks show that Med-SRAF consistently outperforms existing general RAG baselines, achieving an average accuracy improvement of over 4.9% , highlighting its effectiveness in robust and interpretable medical reasoning. Our code is at https://anonymous.4open.science/r/MultiAgent_RAG-F6DC .
+
+## 13. NeedleChain: Measuring Intact Context Comprehension Capability of Large Language Models
+
+- Authors: Hyeonseok Moon, Heuiseok Lim
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.779360467051423
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1637/
+- PDF: https://aclanthology.org/2026.findings-acl.1637.pdf
+- Local PDF: pdf/2026-08-16_13_NeedleChain_ Measuring Intact Context Comprehension Capability of Large Language Models.pdf
+
+Recent reports suggest that LLMs can handle increasingly long contexts. However, many existing benchmarks for context understanding embed substantial query-irrelevant content, which shifts evaluation toward retrieving relevant snippets rather than fully integrating all provided information. Under this setting, we view that current benchmarks can overestimate true context-understanding ability of LLMs. In particular, we demonstrate that when the context consists entirely of query-relevant text, even advanced models such as GPT-4o fail to reliably integrate inputs as short as 200 tokens. To evaluate this capability more rigorously, we introduce NeedleChain, a benchmark designed to test whether models can faithfully incorporate all given evidence. NeedleChain includes three variants that differ in the required order of comprehension, along with a parallel benchmark based on the needle-in-a-haystack(NIAH) paradigm. By comparing these variants, NeedleChain enables a more comprehensive assessment of context understanding. We further propose a training-free strategy that encourages models to reflect all available information, ROPE contraction, highlighting the importance of full-context integration and pointing to new directions for improving reliable reasoning over context.
+
+## 14. Empirical Analysis of Task Mixture Effects in Small-scale Instruction Tuning: A Statistical Approach
+
+- Authors: Jeesu Jung, Sangkeun Jung
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7788611490132187
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.643/
+- PDF: https://aclanthology.org/2026.findings-acl.643.pdf
+- Local PDF: pdf/2026-08-16_14_Empirical Analysis of Task Mixture Effects in Small-scale Instruction Tuning_ A Statistical Approach.pdf
+
+The performance of large language models heavily depends on instruction tuning, especially on task types and mixture ratios. However, previous research has primarily focused on mixing tasks at fixed ratios, lacking a systematic and quantitative analysis of task-wise interactions across diverse tasks . Moreover, it has relied heavily on human labeling. To address these limitations, this study conducts empirical experiments on unlabeled instruction corpora, varying both the number and proportion of task combinations to identify effective mixtures. To minimize manual labeling, we automatically extract five representative tasks—programming, math problem solving, history question answering, grammar correction, and creative writing—using only a few seed instructions. Across 51 mixtures, we find that 1–2 task mixtures work best with small datasets, while synergistic 3-task mixtures excel with larger data. Task interactions reveal both synergy (e.g., programming + math) and interference (e.g., programming + creative writing). These results provide practical guidelines for mixture design tailored to model scale and data size.
+
+## 15. SLR: Automated Synthesis for Scalable Logical Reasoning
+
+- Authors: Lukas Helff, Ahmad Omar, Felix Friedrich, Antonia Wüst, Hikaru Shindo, Rupert Mitchell, Tim Woydt, Patrick Schramowski, Wolfgang Stammer, Kristian Kersting
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.77820257207749
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.16/
+- PDF: https://aclanthology.org/2026.acl-long.16.pdf
+- Local PDF: pdf/2026-08-16_15_SLR_ Automated Synthesis for Scalable Logical Reasoning.pdf
+
+We introduce SLR, an end-to-end framework for systematic evaluation and training of Large Language Models (LLMs) via Scalable Logical Reasoning. Given a user’s task specification, SLR automatically synthesizes (i) an instruction prompt for an inductive reasoning task, (ii) a validation program, executable on model outputs to provide verifiable rewards, and (iii) the latent ground-truth rule. This process is fully automated, scalable, requires no human annotations, and offers precise control over task difficulty. Using SLR, we create SLR-Bench, a benchmark comprising 19k prompts organized into 20 curriculum levels that progressively increase in relational, arithmetic, and recursive complexity. Large-scale evaluation reveals that contemporary LLMs readily produce syntactically valid rules, yet often fail at correct logical inference. Recent reasoning LLMs demonstrate improved performance but incur very high test-time computation, with costs exceeding 300 for just 1,000 prompts. Finally, curriculum learning via SLR doubles Llama-3-8B accuracy on SLR-Bench, achieving parity with Gemini-Flash-Thinking at a fraction of computational cost. Moreover, these reasoning capabilities generalize to a wide range of established benchmarks, underscoring the effectiveness of SLR for downstream reasoning.
+
+## 16. Mitigating Catastrophic Forgetting in Target Language Adaptation of LLMs via Source-Shielded Updates
+
+- Authors: Atsuki Yamaguchi, Terufumi Morishita, Aline Villavicencio, Nikolaos Aletras
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7779400459145567
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.865/
+- PDF: https://aclanthology.org/2026.acl-long.865.pdf
+- Local PDF: pdf/2026-08-16_16_Mitigating Catastrophic Forgetting in Target Language Adaptation of LLMs via Source-Shielded Updates.pdf
+
+Expanding the linguistic diversity of instruct large language models (LLMs) is crucial for global accessibility but is often hindered by the reliance on costly specialized target language labeled data and catastrophic forgetting during adaptation. We tackle this challenge under a realistic, low-resource constraint: adapting instruct LLMs using only unlabeled target language data. We introduce Source-Shielded Updates (SSU), a selective parameter update strategy that proactively preserves source knowledge. Using a small set of source data and a parameter importance scoring method, SSU identifies parameters critical to maintaining source abilities. It then applies a column-wise freezing strategy to protect these parameters before adaptation. Experiments across five typologically diverse languages and 7B and 13B models demonstrate that SSU successfully mitigates catastrophic forgetting. It reduces performance degradation on monolingual source tasks to just 3.4% (7B) and 2.8% (13B) on average, a stark contrast to the 20.3% and 22.3% from full fine-tuning. SSU also achieves target-language performance highly competitive with full fine-tuning, outperforming it on all benchmarks for 7B models and the majority for 13B models.
+
+## 17. League of LLMs: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models
+
+- Authors: Qianhong Guo, Wei Xie, Xiaofang Cai, Enze Wang, Shuoyoucheng Ma, Xiaobing Sun, Tian Xia, Kai Chen, Xiaofeng Wang, Baosheng Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7778498862848853
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.922/
+- PDF: https://aclanthology.org/2026.acl-long.922.pdf
+- Local PDF: pdf/2026-08-16_17_League of LLMs_ A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models.pdf
+
+Although large language models (LLMs) have shown exceptional capabilities across a wide range of tasks, reliable evaluation remains a critical challenge due to data contamination, opaque operation, and subjective preferences. To address these issues, we propose League of LLMs (LOL), a novel benchmark-free evaluation paradigm that organizes multiple LLMs into a self-governed league for multi-round mutual evaluation. LOL integrates four core criteria (dynamic, transparent, objective, and professional) to mitigate key limitations of existing paradigms. Experiments on eight mainstream LLMs in mathematics and programming demonstrate that LOL can effectively distinguish LLM capabilities while maintaining high internal ranking stability (Top- k consistency = 70.7% ). Beyond ranking, LOL reveals empirical findings that are difficult for traditional paradigms to capture. For instance, “memorization-based answering” behaviors are observed in some models, and higher in-family scores are found in the OpenAI model family ( 𝛥 = 9 , p < 0.05 ). Finally, we make our framework and code publicly available as a valuable complement to the current LLM evaluation ecosystem.
+
+## 18. Deputy: Accelerating Large Language Model Inference with Dynamic Low-Rank Substitution
+
+- Authors: Yuhua Zhou, Shichao Weng, Changhai Zhou, Yuhan Wu, Qian Qiao, Jun Gao, Fei Yang, Aimin Pan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7777748643074163
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.991/
+- PDF: https://aclanthology.org/2026.findings-acl.991.pdf
+- Local PDF: pdf/2026-08-16_18_Deputy_ Accelerating Large Language Model Inference with Dynamic Low-Rank Substitution.pdf
+
+While the massive scale of modern LLMs enables remarkable performance, their static, input-agnostic computational graph incurs substantial resource wastage and high latency during inference. Existing dynamic schemes, such as early-exit and layer-drop reduce FLOPs but break batch processing or introduce KV-cache inconsistency. We propose Deputy, a dynamic low-rank substitution framework that employs a lightweight decision module at each layer to dynamically determine the execution branch for different tokens: Attention layers choose between full and low-rank computation to mitigate the KV cache issue, while FFN layers additionally support skipping to further reduce computation. We fine-tune the LLM with LoRA and then derive an additional low-rank matrix C via a least-squares fit BC ≈ W pre , where B is the shared LoRA matrix, so that only one extra low-rank matrix is introduced, effectively reducing memory overhead. Moreover, a hybrid KV cache strategy stores KV values generated by the low-rank branch, achieving a 38% reduction in cache storage. Experiments on Llama models demonstrate that Deputy reduces computation by approximately 40% compared to the original dense model while outperforming existing baseline methods.
+
+## 19. Large-Scale Multimodal Knowledge Graph about Classical Chinese Poetry: Fine-grained Method and Comprehensive Evaluation
+
+- Authors: Shuo Wang, Qing Zhu, Yang Xiao, Minglong Lei
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.777529724043257
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.720/
+- PDF: https://aclanthology.org/2026.findings-acl.720.pdf
+- Local PDF: pdf/2026-08-16_19_Large-Scale Multimodal Knowledge Graph about Classical Chinese Poetry_ Fine-grained Method and Comprehensive Evaluation.pdf
+
+Classical Chinese poetry is a treasured cultural heritage of humanity, attracting extensive research interest. However, the study of classical Chinese poetry is hindered by the lack of open, large-scale, and fine-grained multimodal datasets.Prior datasets are either limited by modality constraints, dataset size, or the level of dataset refinement, making them inadequate for effectively supporting studies and the development of applications in classical Chinese poetry.To address these issues, we propose a method for constructing a large-scale and fine-grained multimodal knowledge graph of classical Chinese poetry. We first design an informative ontology graph for classical Chinese poetry and comprehensively collect knowledge about poetry based on it. Furthermore, the method leverages knowledge augmentation, prompt optimization, and text-image alignment to acquire comprehensive, fine-grained knowledge. Both qualitative and quantitative evaluations are conducted on the Multimodal Knowledge Graph of Classical Chinese Poetry (CPMK), highlighting its comprehensiveness and high quality.We also conduct downstream evaluations on four tasks: poetry question answering, poetry theme classification, poetry-image retrieval, and rigid-formats poetry generation.Significant results are achieved across all four tasks, demonstrating CPMK’s effectiveness in supporting research on Chinese poetry.CPMK will be released to promote research in Chinese culture.
+
+## 20. See the Forest for the Trees: Loosely Speculative Decoding via Visual-Semantic Guidance for Efficient Inference of Video LLMs
+
+- Authors: Yicheng Ji, Jun Zhang, Jinpeng Chen, Cong Wang, Lidan Shou, Gang Chen, Huan Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7773745013074636
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1087/
+- PDF: https://aclanthology.org/2026.acl-long.1087.pdf
+- Local PDF: pdf/2026-08-16_20_See the Forest for the Trees_ Loosely Speculative Decoding via Visual-Semantic Guidance for Efficient Inference of Video.pdf
+
+Video Large Language Models (Video-LLMs) excel in video understanding but suffer from high inference latency due to autoregressive generation. Speculative Decoding (SD) mitigates this by applying a draft-and-verify paradigm, yet existing methods are constrained by rigid exact-match rules, severely limiting the acceleration potential. To bridge this gap, we propose LVSpec, the first training-free loosely SD framework tailored for Video-LLMs. Grounded in the insight that generation is governed by sparse visual-relevant anchors (mandating strictness) amidst abundant visual-irrelevant fillers (permitting loose verification), LVSpec employs a lightweight visual-relevant token identification scheme to accurately pinpoint the former. To further maximize acceptance, we augment this with a position-shift tolerant mechanism that effectively salvages positionally mismatched but semantically equivalent tokens. Experiments demonstrate that LVSpec is high-fidelity and rapid: it preserves >99.8 % of target performance while accelerating Qwen2.5-VL-32B by 2.70 × and LLaVA-OneVision-72B by 2.94 × . Notably, it boosts the mean accepted length and speedup ratio by 136% and 35% compared to SOTA training-free SD methods for Video-LLMs. Code is provided in the submitted software.
+
+## 21. CLaS-Bench: A Cross-Lingual Alignment and Steering Benchmark
+
+- Authors: Daniil Gurgurov, Yusser Al Ghussin, Tanja Baeumel, Cheng-Ting Chou, Patrick Schramowski, Marius Mosbach, Josef van Genabith, Simon Ostermann
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.776887840715813
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1086/
+- PDF: https://aclanthology.org/2026.findings-acl.1086.pdf
+- Local PDF: pdf/2026-08-16_21_CLaS-Bench_ A Cross-Lingual Alignment and Steering Benchmark.pdf
+
+Understanding and controlling the behavior of large language models (LLMs) is an increasingly important topic in multilingual NLP. Beyond prompting or fine-tuning, language steering , i.e., manipulating internal representations during inference, has emerged as a more efficient and interpretable technique for adapting models to a target language. Yet, no dedicated benchmarks or evaluation protocols exist to quantify the effectiveness of steering techniques. We introduce CLaS-Bench , a lightweight parallel-question benchmark for evaluating language-forcing behavior in LLMs across 32 languages, enabling systematic evaluation of multilingual steering methods. We evaluate a broad array of steering techniques, including residual-stream DiffMean interventions, probe-derived directions, language-specific neurons, PCA/LDA vectors, Sparse Autoencoders, and prompting baselines. Steering performance is measured along two axes: language control and semantic relevance, combined into a single harmonic-mean steering score. We find that across languages simple residual-based DiffMean method consistently outperforms all other methods. Moreover, a layer-wise analysis reveals that language-specific structure emerges predominantly in later layers and steering directions cluster based on language family. CLaS-Bench is the first standardized benchmark for multilingual steering, enabling both rigorous scientific analysis of language representations and practical evaluation of steering as a low-cost adaptation alternative.
+
+## 22. Diagnosing Spatial Consistency across Perspectives and Viewpoints in Large Vision-Language Models
+
+- Authors: Yoonji Kim, Jieun Kim, Yujin Jeong, Sung-Bae Cho
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.776820515076306
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1514/
+- PDF: https://aclanthology.org/2026.acl-long.1514.pdf
+- Local PDF: pdf/2026-08-16_22_Diagnosing Spatial Consistency across Perspectives and Viewpoints in Large Vision-Language Models.pdf
+
+Consistent reasoning about 3D spatial relations across changing viewpoints is fundamental for Embodied AI agents operating in dynamic environments. While Large Vision-Language Models (LVLMs) have advanced multimodal perception, their ability to maintain spatial consistency across diverse perspectives remains underexplored. Existing benchmarks primarily assess spatial capabilities from a static, single-view, and egocentric perspective, failing to capture the dynamic nature of real-world spatial cognition.To address this gap, we introduce SCOPE ( S patial CO nsistency across PE rspectives and Viewpoints), a comprehensive benchmark designed to rigorously diagnose spatial reasoning capabilities. Grounded in human cognitive theories of dual spatial representations, SCOPE discretizes the 360∘ field into multiview scenarios to systematically evaluate both allocentric and egocentric reasoning capabilities. Our dataset comprises 20.1K spatial VQA pairs derived from high-quality 3D environments. Through an extensive evaluation of 26 state-of-the-art LVLMs, we identify two fundamental limitations that prevent consistent spatial understanding across viewpoints.We hope SCOPE facilitates the diagnosis of spatial reasoning, serving as a stepping stone toward reliable embodied action.
+
+## 23. EMCEE: Improving Multilingual Capability of LLMs via Bridging Knowledge and Reasoning with Extracted Synthetic Multilingual Context
+
+- Authors: Hamin Koo, Jaehyung Kim
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.775629842655234
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.127/
+- PDF: https://aclanthology.org/2026.acl-long.127.pdf
+- Local PDF: pdf/2026-08-16_23_EMCEE_ Improving Multilingual Capability of LLMs via Bridging Knowledge and Reasoning with Extracted Synthetic Multiling.pdf
+
+Large Language Models (LLMs) have achieved impressive progress across a wide range of tasks, yet their heavy reliance on English-centric training data leads to significant performance degradation in non-English languages. While existing multilingual prompting methods emphasize reformulating queries into English or enhancing reasoning capabilities, they often fail to incorporate the language- and culture-specific grounding that is essential for some queries. To address this limitation, we propose EMCEE (Extracting synthetic Multilingual Context and merging), a simple yet effective framework that enhances the multilingual capabilities of LLMs by explicitly extracting and utilizing query-relevant knowledge from the LLM itself. In particular, EMCEE first extracts synthetic context to uncover latent, language-specific knowledge encoded within the LLM, and then dynamically merges this contextual insight with reasoning-oriented outputs through a judgment-based selection mechanism. Extensive experiments on four multilingual benchmarks covering diverse languages and tasks demonstrate that EMCEE consistently outperforms prior approaches, achieving an average relative improvement of 16.4% overall and 31.7% in low-resource languages.
+
+## 24. From Outcome to Process: Optimizing MoE Load Balancing with MCTS
+
+- Authors: Wenjun Ke, Hengyuan Xu, Ziyu Shang, Yao He, Jiahao Wang, Zijie Xu, Peng Wang, Yuhang Lou, Jiajun Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7756071153411765
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1440/
+- PDF: https://aclanthology.org/2026.findings-acl.1440.pdf
+- Local PDF: pdf/2026-08-16_24_From Outcome to Process_ Optimizing MoE Load Balancing with MCTS.pdf
+
+Mixture of Experts (MoE) dynamically routes inputs to specialized expert networks, enabling large language models to scale capacity with low inference overhead. To further improve MoE’s parameter efficiency in resource-constrained scenarios, LoRA–MoE integrates LoRA for lightweight adaptation while preserving MoE’s specialization. Despite these benefits, the effectiveness of LoRA–MoE still hinges on balanced expert utilization, where certain experts dominate activations while most remain underutilized. Existing balancing strategies focus on constraining the final distribution of expert usage, but overlook the routing decisions made at each layer. As a result, imbalances gradually accumulate across the routing hierarchy. To address this challenge, we propose LayerMoE, a novel three-stage framework that leverages process-level rewards to guide balanced expert routing. Specifically, to overcome the limitation of focusing only on final losses and ignoring intermediate routing, we introduce Monte Carlo Tree Search (MCTS)-based sampling that decomposes outcome-level supervision into layer-wise reward signals, guiding expert choices throughout the routing process. For efficiency, we organize Transformer layers into groups, which constrain the search space of MCTS and keep exploration overhead tractable while retaining the hierarchical structure. Extensive experiments on representative datasets (e.g., ARC, RACE, OBQA) show that applying LayerMoE consistently improves the performance of state-of-the-art LoRA-MoE baselines, yielding an average accuracy gain of 1.39%. Notably, the maximum improvement reaches 2.50%.
+
+## 25. AdaFuse: Adaptive Ensemble Decoding for Large Language Models
+
+- Authors: Chengming Cui, Tianxin Wei, Ziyi Chen, Ruizhong Qiu, Zhichen Zeng, Zhining Liu, Xuying Ning, Duo Zhou, Jingrui He
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.774866210745799
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1974/
+- PDF: https://aclanthology.org/2026.acl-long.1974.pdf
+- Local PDF: pdf/2026-08-16_25_AdaFuse_ Adaptive Ensemble Decoding for Large Language Models.pdf
+
+Large language models (LLMs) exhibit complementary strengths arising from differences in pretraining data, model architectures, and decoding behaviors. Inference-time ensembling provides a practical way to combine these capabilities without retraining. However, existing ensemble approaches suffer from fundamental limitations. Most rely on fixed fusion granularity, which lacks the flexibility required for mid-generation adaptation and fails to adapt to different generation characteristics across tasks. To address these challenges, we propose AdaFuse, an adaptive ensemble decoding framework that dynamically selects semantically appropriate fusion units during generation. Rather than committing to a fixed granularity, AdaFuse adjusts fusion behavior on the fly based on the decoding context, with words serving as basic building blocks for alignment. To be specific, we introduce an uncertainty-based criterion to decide whether to apply ensembling at each decoding step. Under confident decoding states, the model continues generation directly. In less certain states, AdaFuse invokes a diversity-aware scaling strategy to explore alternative candidate continuations and inform ensemble decisions. This design establishes a synergistic interaction between adaptive ensembling and test-time scaling, where ensemble decisions guide targeted exploration, and the resulting diversity in turn strengthens ensemble quality. Experiments on open-domain QA, arithmetic reasoning, and machine translation demonstrate that AdaFuse consistently outperforms strong ensemble baselines, achieving an average relative improvement of 6.88%.
+
+## 26. Distributional Clarity: The Hidden Driver of RL-Friendliness in Large Language Models
+
+- Authors: Shaoning Sun, Mingzhu Cai, Huang He, Bingjin Chen, Siqi Bao, Yujiu Yang, Hua Wu, Haifeng Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.774468255069032
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1004/
+- PDF: https://aclanthology.org/2026.acl-long.1004.pdf
+- Local PDF: pdf/2026-08-16_26_Distributional Clarity_ The Hidden Driver of RL-Friendliness in Large Language Models.pdf
+
+Language model families exhibit striking disparity in their capacity to benefit from reinforcement learning: under identical training, models like Qwen achieve substantial gains, while others like Llama yield limited improvements. Complementing data-centric approaches, we reveal that this disparity reflects a hidden structural property: distributional clarity in probability space. Through a three-stage analysis—from phenomenon to mechanism to interpretation—we uncover that RL-friendly models exhibit intra-class compactness and inter-class separation in their probability assignments to correct vs. incorrect responses. We quantify this clarity using the Silhouette Coefficient ( S ) and demonstrate that (1) high S correlates strongly with RL performance; (2) low S is associated with severe logic errors and reasoning instability. To confirm this property, we introduce a Silhouette-Aware Reweighting strategy that prioritizes low- S samples during training. Experiments across six mathematical benchmarks show consistent improvements across all model families, with gains up to 5.9 points on AIME24. Our work establishes distributional clarity as a fundamental, trainable property underlying RL-Friendliness.
+
+## 27. SIV-Bench: A Video Benchmark for Social Interaction Understanding and Reasoning
+
+- Authors: Fanqi Kong, Weiqin Zu, Xinyu Chen, Yaodong Yang, Song-Chun Zhu, Xue Feng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7743663496177238
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1863/
+- PDF: https://aclanthology.org/2026.findings-acl.1863.pdf
+- Local PDF: pdf/2026-08-16_27_SIV-Bench_ A Video Benchmark for Social Interaction Understanding and Reasoning.pdf
+
+Understanding social interaction, which encompasses perceiving numerous and subtle multimodal cues, inferring unobservable mental states and relations, and dynamically predicting others’ behavior, is the foundation for achieving human-machine interaction. Despite rapid advances in Multimodal Large Language Models (MLLMs), the rich and multifaceted nature of social interaction has hindered the development of benchmarks that holistically evaluate and guide their social interaction abilities. Based on social relation theory, which has been widely regarded as a foundational framework for understanding social behavior, we provide SIV-Bench, a novel video benchmark for systematically evaluating MLLMs’ capabilities across Social Scene Understanding (SSU), Social State Reasoning (SSR), and Social Dynamics Prediction (SDP). SIV-Bench features 2,792 originally collected video clips and 5,455 meticulously generated question-answer pairs derived from a human-LLM collaborative pipeline. It covers 14 typical relationships, diverse video lengths, genres, presentation styles, and linguistic and cultural backgrounds. Our comprehensive experiments show that leading MLLMs perform relatively well on SSU but remain weak on SSR and SDP, with the systematic confusion in relation inference as a key bottleneck. An in-depth analysis of the reasoning process attributes MLLMs’ suboptimal performance to misalignment with human thoughts and insufficient reasoning depth. Moreover, we find audio and subtitles aid in reasoning-intensive SSR and SDP. Together, SIV-Bench offers a unified testbed to measure progress, expose limitations, and guide future research toward more socially intelligent MLLMs.
+
+## 28. Mixture of Heterogeneous Grouped Experts for Language Modeling
+
+- Authors: Zhicheng Ma, Xiang Liu, Zhaoxiang Liu, Ning Wang, Yi Shen, Kai Wang, Shuming Shi, Shiguo Lian
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7741710380496807
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.20/
+- PDF: https://aclanthology.org/2026.acl-industry.20.pdf
+- Local PDF: pdf/2026-08-16_28_Mixture of Heterogeneous Grouped Experts for Language Modeling.pdf
+
+Large Language Models (LLMs) based on Mixture-of-Experts (MoE) are pivotal in industrial applications for their ability to scale performance efficiently. However, standard MoEs enforce uniform expert sizes, creating a rigidity that fails to align computational costs with varying token-level complexity. While heterogeneous expert architectures attempt to address this by diversifying expert sizes, they often suffer from significant system-level challenges, specifically unbalanced GPU utilization and inefficient parameter utilization, which hinder practical deployment.To bridge the gap between theoretical heterogeneity and robust industrial application, we propose Mixture of Heterogeneous Grouped Experts (MoHGE) which introduces a two-level routing mechanism to enable flexible, resource-aware expert combinations. To optimize inference efficiency, we propose a Group-Wise Auxiliary Loss, which dynamically steers tokens to the most parameter-efficient expert groups based on task difficulty.To address the critical deployment challenge of GPU load balancing, we introduce an All-size Group-decoupling Allocation strategy coupled with an Intra-Group Experts Auxiliary Loss. These mechanisms collectively ensure uniform computation distribution across GPUs.Extensive evaluations demonstrate that MoHGE matches the performance of MoE architectures while reducing the total parameters by approximately 20% and maintaining balanced GPU utilization. Our work establishes a scalable paradigm for resource-efficient MoE design, offering a practical solution for optimizing inference costs in real-world scenarios.
+
+## 29. METRO: Towards Strategy Induction from Expert Dialogue Transcripts for Non-collaborative Dialogues
+
+- Authors: Haofu Yang, Jiaji Liu, Chen Huang, Faguo Wu, Wenqiang Lei, See-Kiong Ng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7740221120944915
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.978/
+- PDF: https://aclanthology.org/2026.acl-long.978.pdf
+- Local PDF: pdf/2026-08-16_29_METRO_ Towards Strategy Induction from Expert Dialogue Transcripts for Non-collaborative Dialogues.pdf
+
+Developing non-collaborative dialogue agents traditionally requires the manual, unscalable codification of expert strategies. We propose METRO, a method that leverages large language models to autonomously induce both strategy actions and planning logic directly from raw transcripts. METRO formalizes expert knowledge into a Strategy Forest, a hierarchical structure that captures both short-term responses (nodes) and long-term strategic foresight (branches). Experimental results across two benchmarks show that METRO demonstrates promising performance, outperforming existing methods by an average of 9%-10%. Our further analysis not only reveals the success behind METRO (strategic behavioral diversity and foresight), but also demonstrates its robust cross-task transferability. This offers new insights into building non-collaborative agents in a cost-effective and scalable way. Our code is available at https://github.com/Humphrey-0125/METRO .
+
+## 30. Exploring Cross-Client Memorization of Training Data in Large Language Models for Federated Learning
+
+- Authors: Tinnakit Udsa, Can Udomcharoenchaikit, Patomporn Payoungkhamdee, Sarana Nutanong, Norrathep Rattanavipanon
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7731701386597574
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-short.56/
+- PDF: https://aclanthology.org/2026.acl-short.56.pdf
+- Local PDF: pdf/2026-08-16_30_Exploring Cross-Client Memorization of Training Data in Large Language Models for Federated Learning.pdf
+
+Federated learning (FL) enables collaborative training without raw data sharing, but still risks training data memorization. Existing FL memorization detection techniques focus on one sample at a time, underestimating more subtle risks of cross-sample memorization. In contrast, recent work on centralized learning (CL) has introduced fine-grained methods to assess memorization across all samples in training data, but these assume centralized access to data and cannot be applied directly to FL. We bridge this gap by proposing a framework that quantifies both intra- and inter-client memorization in FL using fine-grained cross-sample memorization measurement across all clients. Based on this framework, we conduct two studies: (1) measuring subtle memorization across clients and (2) examining key factors that influence memorization, including decoding strategies, prefix length, and FL algorithms. Our findings reveal that FL models do memorize client data, particularly intra-client data, more than inter-client data, with memorization influenced by training and inferencing factors.
