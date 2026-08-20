@@ -349,6 +349,13 @@
     "title": "UniRef-UAV: A Multimodal Benchmark for Universal Referring in UAV Imagery",
     "url": "http://arxiv.org/abs/2607.08267v1"
   },
+  "title:vajudgerrewardmodelingfromhumanpreferencefeedbackforjointvideoaudiogeneration": {
+    "doi": null,
+    "sent_date": "2026-08-20",
+    "source": "arxiv",
+    "title": "VA-Judger: Reward Modeling from Human Preference Feedback for Joint Video-Audio Generation",
+    "url": "http://arxiv.org/abs/2608.18607v1"
+  },
   "title:wamdiff2hierarchicalartodiffusiondistillationforhighlyefficientautonomousdrivingvla": {
     "doi": null,
     "sent_date": "2026-08-04",
