@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-08-24
+
+## 1. Towards Multi-System Log Anomaly Detection
+
+- Authors: Boyang Wang, Runqiang Zang, Hongcheng Guo, Shun Zhang, Shaosheng Cao, Donglin Di, Zhoujun Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.117088969093384
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-industry.8/
+- PDF: https://aclanthology.org/2025.acl-industry.8.pdf
+- Local PDF: pdf/2026-08-24_01_Towards Multi-System Log Anomaly Detection.pdf
+
+Despite advances in unsupervised log anomaly detection, current models require dataset-specific training, causing costly procedures, limited scalability, and performance bottlenecks. Furthermore, numerous models lack cognitive reasoning abilities, limiting their transferability to similar systems. Additionally, these models often encounter the “identical shortcut” predicament, erroneously predicting normal classes when confronted with rare anomaly logs due to reconstruction errors. To address these issues, we propose MLAD , a novel M ulti-system L og A nomaly D etection model incorporating semantic relational reasoning. Specifically, we extract cross-system semantic patterns and encode them as high-dimensional learnable vectors. Subsequently, we revamp attention formulas to discern keyword significance and model the overall distribution through vector space diffusion. Lastly, we employ a Gaussian mixture model to highlight rare word uncertainty, optimizing the vector space with maximum expectation. Experiments on real-world datasets demonstrate the superiority of MLAD.
+
+## 2. Know-MRI: A Knowledge Mechanisms Revealer&Interpreter for Large Language Models
+
+- Authors: Jiaxiang Liu, Boxuan Xing, Chenhao Yuan, Chenxiang Zhang, Di Wu, Xiusheng Huang, Haida Yu, Chuhan Lang, Pengfei Cao, Jun Zhao, Kang Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.086771516947965
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-demo.20/
+- PDF: https://aclanthology.org/2025.acl-demo.20.pdf
+- Local PDF: pdf/2026-08-24_02_Know-MRI_ A Knowledge Mechanisms Revealer&Interpreter for Large Language Models.pdf
+
+As large language models (LLMs) continue to advance, there is a growing urgency to enhance the interpretability of their internal knowledge mechanisms. Consequently, many interpretation methods have emerged, aiming to unravel the knowledge mechanisms of LLMs from various perspectives. However, current interpretation methods differ in input data formats and interpreting outputs. The tools integrating these methods are only capable of supporting tasks with specific inputs, significantly constraining their practical applications. To address these challenges, we present an open-source Know ledge M echanisms R evealer& I nterpreter ( Know-MRI ) designed to analyze the knowledge mechanisms within LLMs systematically. Specifically, we have developed an extensible core module that can automatically match different input data with interpretation methods and consolidate the interpreting outputs. It enables users to freely choose appropriate interpretation methods based on the inputs, making it easier to comprehensively diagnose the model’s internal knowledge mechanisms from multiple perspectives. Our code is available at https://github.com/nlpkeg/Know-MRI . We also provide a demonstration video on https://youtu.be/NVWZABJ43Bs .
+
+## 3. Beyond Similarity: A Gradient-based Graph Method for Instruction Tuning Data Selection
+
+- Authors: Yang Zhao, Li Du, Xiao Ding, Yangou Ouyang, Hepeng Wang, Kai Xiong, Jinglong Gao, Zhouhao Sun, Dongliang Xu, Qing Yang, Dongchen Li, Bing Qin, Ting Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0637619595957046
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.1189/
+- PDF: https://aclanthology.org/2025.acl-long.1189.pdf
+- Local PDF: pdf/2026-08-24_03_Beyond Similarity_ A Gradient-based Graph Method for Instruction Tuning Data Selection.pdf
+
+Large language models (LLMs) have shown great potential across various industries due to their remarkable ability to generalize through instruction tuning. However, the limited availability of domain-specific data significantly hampers their performance on specialized tasks. While existing methods primarily focus on selecting training data from general datasets that are similar to the target domain, they often fail to consider the joint distribution of instructions, resulting in inefficient learning and suboptimal knowledge transfer. To address these challenges, we introduce G2IS ( G radient-based G raph I nstruction S election), a novel method that constructs a mixed gradient-based instruction graph to capture the joint distribution and interdependencies among instructions. By accounting for the relationships between instructions, G2IS improves domain adaptation efficiency. Additionally, we propose a gradient walk algorithm to refine the data selection process, enhancing both training effectiveness and efficiency. Our experiments demonstrate that G2IS outperforms traditional methods across various domain adaptation tasks, yielding significant performance gains, particularly in complex, data-scarce scenarios. These results underscore the potential of G2IS in advancing the development of large, domain-specific models.
+
+## 4. nvAgent: Automated Data Visualization from Natural Language via Collaborative Agent Workflow
+
+- Authors: Geliang Ouyang, Jingyao Chen, Zhihe Nie, Yi Gui, Yao Wan, Hongyu Zhang, Dongping Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0635626279336914
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.960/
+- PDF: https://aclanthology.org/2025.acl-long.960.pdf
+- Local PDF: pdf/2026-08-24_04_nvAgent_ Automated Data Visualization from Natural Language via Collaborative Agent Workflow.pdf
+
+Natural Language to Visualization (NL2Vis) seeks to convert natural-language descriptions into visual representations of given tables, empowering users to derive insights from large-scale data. Recent advancements in Large Language Models (LLMs) show promise in automating code generation to transform tabular data into accessible visualizations. However, they often struggle with complex queries that require reasoning across multiple tables. To address this limitation, we propose a collaborative agent workflow, termed nvAgent , for NL2Vis. Specifically, nvAgent comprises three agents: a processor agent for database processing and context filtering, a composer agent for planning visualization generation, and a validator agent for code translation and output verification. Comprehensive evaluations on the new VisEval benchmark demonstrate that nvAgent consistently surpasses state-of-the-art baselines, achieving a 7.88% improvement in single-table and a 9.23% improvement in multi-table scenarios. Qualitative analyses further highlight that nvAgent maintains nearly a 20% performance margin over previous models, underscoring its capacity to produce high-quality visual representations from complex, heterogeneous data sources. All datasets and source code are available at: https://github.com/geliang0114/nvAgent .
+
+## 5. ReKG-MCTS: Reinforcing LLM Reasoning on Knowledge Graphs via Training-Free Monte Carlo Tree Search
+
+- Authors: Xiaozhuang Song, Shufei Zhang, Tianshu Yu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.056110984037222
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.484/
+- PDF: https://aclanthology.org/2025.findings-acl.484.pdf
+- Local PDF: pdf/2026-08-24_05_ReKG-MCTS_ Reinforcing LLM Reasoning on Knowledge Graphs via Training-Free Monte Carlo Tree Search.pdf
+
+Recent advancements in combining knowledge graphs (KGs) with large language models (LLMs) have demonstrated promising potential in complex KG reasoning tasks, yet existing approaches face limitations in path exploration strategies or excessive computational overhead. We propose ReKG-MCTS, a novel training-free framework that synergizes Monte Carlo Tree Search (MCTS) with LLM capabilities to enable dynamic reasoning over KGs. The framework conceptualizes KG reasoning as a decision-making process, where MCTS strategically explores paths over KG while LLMs provide semantic guidance for reasoning paths. The framework consists of four phases: (1) UCB-based node selection that balances exploration-exploitation on KG, (2) path expansion with KG structural constraints, (3) LLM-guided MC rollouts for simulation, and (4) value backpropagation. Experimental results on WebQSP and CWQ demonstrate that ReKG-MCTS outperforms existing training-free methods and achieves competitive performance compared to fine-tuned baselines. These findings suggest a new paradigm for leveraging language models in KG reasoning tasks. The code is available at https://github.com/ShawnKS/rekgmcts .
+
+## 6. A Strategic Coordination Framework of Small LMs Matches Large LMs in Data Synthesis
+
+- Authors: Xin Gao, Qizhi Pei, Zinan Tang, Yu Li, Honglin Lin, Jiang Wu, Lijun Wu, Conghui He
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0514358510233173
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.566/
+- PDF: https://aclanthology.org/2025.acl-long.566.pdf
+- Local PDF: pdf/2026-08-24_06_A Strategic Coordination Framework of Small LMs Matches Large LMs in Data Synthesis.pdf
+
+While data synthesis and distillation are promising strategies to enhance small language models, current approaches heavily rely on Large Language Models (LLMs), which suffer from high computational costs, environmental inefficiency, and potential biases inherited from monolithic architectures. In contrast, smaller LMs are more accessible and sustainable, but their individual capabilities often fall short in generating high-quality, diverse, and reliable data. Inspired by collaborative human processes (e.g., peer review), we propose a multiple small LMs involved framework, GRA, that aggregates specialized roles across small LMs to iterative refinement and quality control typically achieved by a single large LM. In this collaborative framework, multiple small LMs assume distinct roles—Generator, Reviewer, and Adjudicator—to simulate a peer-review-inspired data synthesis pipeline. The Generator proposes initial data samples, the Reviewer critiques their quality and diversity, and the Adjudicator resolves conflicts to finalize the output. By decomposing the synthesis process into specialized sub-tasks, collaborative small LMs can achieve data-level parity with distillation from large LMs. Through experiments across multiple benchmarks, we demonstrate that GRA-produced data matches or exceeds the quality of single large LM outputs, e.g., Qwen-2.5-72B-Instruct. Our results challenge the necessity of monolithic large models for high-quality data synthesis, advocating instead for strategic coordination of smaller agents.
+
+## 7. Large Language and Reasoning Models are Shallow Disjunctive Reasoners
+
+- Authors: Irtaza Khalid, Amir Masoud Nourollah, Steven Schockaert
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.047593787547154
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.433/
+- PDF: https://aclanthology.org/2025.acl-long.433.pdf
+- Local PDF: pdf/2026-08-24_07_Large Language and Reasoning Models are Shallow Disjunctive Reasoners.pdf
+
+Large Language Models (LLMs) have been found to struggle with systematic reasoning. Even on tasks where they appear to perform well, their performance often depends on shortcuts, rather than on genuine reasoning abilities, leading them to collapse on out-of-distribution (OOD) examples. Post-training strategies based on reinforcement learning and chain-of-thought prompting have recently been hailed as a step change. However, little is known about the potential of the resulting “Large Reasoning Models” (LRMs) beyond maths and programming-based problem solving, where genuine OOD problems can be sparse. In this paper, we focus on tasks that require systematic relational composition for qualitative spatial and temporal reasoning. The setting allows fine control over problem difficulty to precisely measure OOD generalization. We find that, zero-shot LRMs generally outperform their LLM counterparts in single-path reasoning tasks but struggle in the multi-path setting. Whilst showing comparatively better results, fine-tuned LLMs are also not capable of multi-path generalization. We also provide evidence for the behavioral interpretation for this, i.e., that LRMs are shallow disjunctive reasoners.
+
+## 8. Co-Evolving LLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering
+
+- Authors: Zetong Li, Qinliang Su, Minhua Huang, Yin Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: EMNLP
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.04255263214925
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.emnlp-main.241/
+- PDF: https://aclanthology.org/2025.emnlp-main.241.pdf
+- Local PDF: pdf/2026-08-24_08_Co-Evolving LLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering.pdf
+
+Large language models (LLMs) have shown strong potential in enhancing text clustering when combined with traditional embedding models. However, existing methods predominantly treat LLMs as static pseudo-oracles, i.e., unidirectionally querying them for similarity assessment or data augmentation, while never seeking feedback from embedding models to improve them. In this work, we propose a training framework that enables bidirectional refinement between LLMs and embedding models. We first design task-aware prompts to guide the LLM in generating interpretations for the input texts. These interpretations are projected into the embedding space, in which interpretations that are preferred by the embedding model are selected based on their distribution densities. The selected interpretations are then used to fine-tune the LLM via preference optimization to prioritize the generation of helpful interpretations. Meanwhile, we enhance the embedding model via contrastive learning on the generated interpretations and perform clustering on the output embeddings, leading to iterative co-training between the LLM and the embedding model. Experiments on 14 benchmark datasets across 5 tasks demonstrate the effectiveness of our method.
+
+## 9. Rank, Chunk and Expand: Lineage-Oriented Reasoning for Taxonomy Expansion
+
+- Authors: Sahil Mishra, Kumar Arjun, Tanmoy Chakraborty
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0405407181266835
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.671/
+- PDF: https://aclanthology.org/2025.findings-acl.671.pdf
+- Local PDF: pdf/2026-08-24_09_Rank, Chunk and Expand_ Lineage-Oriented Reasoning for Taxonomy Expansion.pdf
+
+Taxonomies are hierarchical knowledge graphs crucial for recommendation systems, and web applications. As data grows, expanding taxonomies is essential, but existing methods face key challenges: (1) discriminative models struggle with representation limits and generalization, while (2) generative methods either process all candidates at once, introducing noise and exceeding context limits, or discard relevant entities by selecting noisy candidates. We propose LORex ( L ineage- O riented Re asoning for Taxonomy E x pansion), a plug-and-play framework that combines discriminative ranking and generative reasoning for efficient taxonomy expansion. Unlike prior methods, LORex ranks and chunks candidate terms into batches, filtering noise and iteratively refining selections by reasoning candidates’ hierarchy to ensure contextual efficiency. Extensive experiments across four benchmarks and twelve baselines show that LORex improves accuracy by 12% and Wu & Palmer similarity by 5% over state-of-the-art methods.
+
+## 10. A Generative Adaptive Replay Continual Learning Model for Temporal Knowledge Graph Reasoning
+
+- Authors: Zhiyu Zhang, Wei Chen, Youfang Lin, Huaiyu Wan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.040237931817711
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.537/
+- PDF: https://aclanthology.org/2025.acl-long.537.pdf
+- Local PDF: pdf/2026-08-24_10_A Generative Adaptive Replay Continual Learning Model for Temporal Knowledge Graph Reasoning.pdf
+
+Recent Continual Learning (CL)-based Temporal Knowledge Graph Reasoning (TKGR) methods focus on significantly reducing computational cost and mitigating catastrophic forgetting caused by fine-tuning models with new data. However, existing CL-based TKGR methods still face two key limitations: (1) They usually one-sidedly reorganize individual historical facts, while overlooking the historical context essential for accurately understanding the historical semantics of these facts; (2) They preserve historical knowledge by simply replaying historical facts, while ignoring the potential conflicts between historical and emerging facts. In this paper, we propose a D eep G enerative A daptive R eplay (DGAR) method, which can generate and adaptively replay historical entity distribution representations from the whole historical context. To address the first challenge, historical context prompts as sampling units are built to preserve the whole historical context information. To overcome the second challenge, a pre-trained diffusion model is adopted to generate the historical distribution. During the generation process, the common features between the historical and current distributions are enhanced under the guidance of the TKGR model. In addition, a layer-by-layer adaptive replay mechanism is designed to effectively integrate historical and current distributions. Experimental results demonstrate that DGAR significantly outperforms baselines in reasoning and mitigating forgetting.
+
+## 11. Reefknot: A Comprehensive Benchmark for Relation Hallucination Evaluation, Analysis and Mitigation in Multimodal Large Language Models
+
+- Authors: Kening Zheng, Junkai Chen, Yibo Yan, Xin Zou, Huiyu Zhou, Xuming Hu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0379294293324497
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.322/
+- PDF: https://aclanthology.org/2025.findings-acl.322.pdf
+- Local PDF: pdf/2026-08-24_11_Reefknot_ A Comprehensive Benchmark for Relation Hallucination Evaluation, Analysis and Mitigation in Multimodal Large L.pdf
+
+Hallucination issues continue to affect multimodal large language models (MLLMs), with existing research mainly addressing object-level or attribute-level hallucinations, neglecting the more complex relation hallucinations that require advanced reasoning. Current benchmarks for relation hallucinations lack detailed evaluation and effective mitigation, and their datasets often suffer from biases due to systematic annotation processes. To address these challenges, we introduce Reefknot, a comprehensive benchmark targeting relation hallucinations, comprising over 20,000 real-world samples. We provide a systematic definition of relation hallucinations, integrating perceptive and cognitive perspectives, and construct a relation-based corpus using the Visual Genome scene graph dataset. Our comparative evaluation reveals significant limitations in current MLLMs’ ability to handle relation hallucinations. Additionally, we propose a novel confidence-based mitigation strategy, which reduces the hallucination rate by an average of 9.75% across three datasets, including Reefknot. Our work offers valuable insights for achieving trustworthy multimodal intelligence. The dataset and code are released at https://github.com/JackChen-seu/Reefknot .
+
+## 12. A MISMATCHED Benchmark for Scientific Natural Language Inference
+
+- Authors: Firoz Shaik, Mobashir Sadat, Nikita Gautam, Doina Caragea, Cornelia Caragea
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0362353187162405
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.1109/
+- PDF: https://aclanthology.org/2025.findings-acl.1109.pdf
+- Local PDF: pdf/2026-08-24_12_A MISMATCHED Benchmark for Scientific Natural Language Inference.pdf
+
+Scientific Natural Language Inference (NLI) is the task of predicting the semantic relation between a pair of sentences extracted from research articles. Existing datasets for this task are derived from various computer science (CS) domains, whereas non-CS domains are completely ignored. In this paper, we introduce a novel evaluation benchmark for scientific NLI, called MisMatched. The new MisMatched benchmark covers three non-CS domains–Psychology, Engineering, and Public Health, and contains 2,700 human annotated sentence pairs. We establish strong baselines on MisMatched using both Pre-trained Small Language Models (SLMs) and Large Language Models (LLMs). Our best performing baseline shows a Macro F1 of only 78.17% illustrating the substantial headroom for future improvements. In addition to introducing the MisMatched benchmark, we show that incorporating sentence pairs having an implicit scientific NLI relation between them in model training improves their performance on scientific NLI. We make our dataset and code publicly available on GitHub.
+
+## 13. KARPA: A Training-free Method of Adapting Knowledge Graph as References for Large Language Model’s Reasoning Path Aggregation
+
+- Authors: Siyuan Fang, Kaijing Ma, Tianyu Zheng, Xeron Du, Ningxuan Lu, Ge Zhang, Qingkun Tang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0360874161891793
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.1269/
+- PDF: https://aclanthology.org/2025.findings-acl.1269.pdf
+- Local PDF: pdf/2026-08-24_13_KARPA_ A Training-free Method of Adapting Knowledge Graph as References for Large Language Model’s Reasoning Path Aggreg.pdf
+
+Large language models (LLMs) demonstrate exceptional performance across a variety of tasks, yet they are often affected by hallucinations and the timeliness of knowledge. Leveraging knowledge graphs (KGs) as external knowledge sources has emerged as a viable solution, but existing methods for LLM-based knowledge graph question answering (KGQA) are often limited by step-by-step decision-making on KGs, restricting the global planning and reasoning capabilities of LLMs, or they require fine-tuning or pre-training on specific KGs. To address these challenges, we propose Knowledge graph Assisted Reasoning Path Aggregation (KARPA), a novel framework that harnesses the global planning abilities of LLMs for efficient and accurate KG reasoning. KARPA operates in three steps: pre-planning relation paths using the LLM’s global planning capabilities, matching semantically relevant paths via an embedding model, and reasoning over these paths to generate answers. Unlike existing KGQA methods, KARPA avoids stepwise traversal, requires no additional training, and is adaptable to various LLM architectures. Extensive experimental results show that KARPA achieves state-of-the-art performance in KGQA tasks, delivering both high efficiency and accuracy.
+
+## 14. LLaVA Steering: Visual Instruction Tuning with 500x Fewer Parameters through Modality Linear Representation-Steering
+
+- Authors: Jinhe Bi, Yujun Wang, Haokun Chen, Xun Xiao, Artur Hecker, Volker Tresp, Yunpu Ma
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.035212300691948
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.739/
+- PDF: https://aclanthology.org/2025.acl-long.739.pdf
+- Local PDF: pdf/2026-08-24_14_LLaVA Steering_ Visual Instruction Tuning with 500x Fewer Parameters through Modality Linear Representation-Steering.pdf
+
+Multimodal Large Language Models (MLLMs) enhance visual tasks by integrating visual representations into large language models (LLMs). The textual modality, inherited from LLMs, enables instruction following and in-context learning, while the visual modality boosts downstream task performance through rich semantic content, spatial information, and grounding capabilities. These modalities work synergistically across various visual tasks. Our research reveals a persistent imbalance between these modalities, with text often dominating output generation during visual instruction tuning, regardless of using full or parameter-efficient fine-tuning (PEFT). We found that re-balancing these modalities can significantly reduce trainable parameters, inspiring further optimization of visual instruction tuning. To this end, we introduce Modality Linear Representation-Steering (MoReS), which re-balances intrinsic modalities by steering visual representations through linear transformations in the visual subspace across each model layer. We validated our approach by developing LLaVA Steering, a suite of models using MoReS. Results show that LLaVA Steering requires, on average, 500 times fewer trainable parameters than LoRA while maintaining comparable performance across three visual benchmarks and eight visual question-answering tasks. Finally, we introduce the LLaVA Steering Factory, a platform that enables rapid customization of MLLMs with a component-based architecture, seamlessly integrating state-of-the-art models and evaluating intrinsic modality imbalance. This open-source project facilitates a deeper understanding of MLLMs within the research community.
+
+## 15. Multimodal Causal Reasoning Benchmark: Challenging Multimodal Large Language Models to Discern Causal Links Across Modalities
+
+- Authors: Zhiyuan Li, Heng Wang, Dongnan Liu, Chaoyi Zhang, Ao Ma, Jieting Long, Weidong Cai
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.033753452992044
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.288/
+- PDF: https://aclanthology.org/2025.findings-acl.288.pdf
+- Local PDF: pdf/2026-08-24_15_Multimodal Causal Reasoning Benchmark_ Challenging Multimodal Large Language Models to Discern Causal Links Across Modal.pdf
+
+Multimodal Large Language Models (MLLMs) have showcased exceptional Chain-of-Thought (CoT) reasoning ability in complex textual inference tasks including causal reasoning. However, will these causalities remain straightforward when crucial hints hide in visual details? If not, what factors might influence cross-modal generalization? Whether we can effectively enhance their capacity for robust causal inference across both text and vision? Motivated by these, we introduce MuCR - a novel Mu ltimodal C ausal R easoning benchmark that leverages synthetic siamese images and text pairs to challenge MLLMs. Additionally, we develop tailored metrics from multiple perspectives, including image-level match, phrase-level understanding, and sentence-level explanation, to comprehensively assess MLLMs’ comprehension abilities. Our experiments reveal that current MLLMs fall short in multimodal causal reasoning compared to their performance in purely textual settings. Additionally, we find that identifying visual cues across images is key to effective cross-modal generalization. Finally, we propose the VcCoT strategy that better highlights visual cues, and our results confirm its efficacy in enhancing multimodal causal reasoning.
+
+## 16. MMEvol: Empowering Multimodal Large Language Models with Evol-Instruct
+
+- Authors: Run Luo, Haonan Zhang, Longze Chen, Ting-En Lin, Xiong Liu, Yuchuan Wu, Min Yang, Yongbin Li, Minzheng Wang, Pengpeng Zeng, Lianli Gao, Heng Tao Shen, Yunshui Li, Hamid Alinejad-Rokny, Xiaobo Xia, Jingkuan Song, Fei Huang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.033735167126208
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.1009/
+- PDF: https://aclanthology.org/2025.findings-acl.1009.pdf
+- Local PDF: pdf/2026-08-24_16_MMEvol_ Empowering Multimodal Large Language Models with Evol-Instruct.pdf
+
+The development of Multimodal Large Language Models (MLLMs) has seen significant progress, driven by increasing demands across various fields (e.g., multimodal agents, embodied intelligence). While model-driven approaches aim to enhance MLLM capabilities through diverse architectures, their performance gains have become increasingly marginal. In contrast, data-driven methods, which scale up image-text instruction datasets, have proven more effective but face challenges related to limited data diversity and complexity. The absence of high-quality instruction data remains a major bottleneck in MLLM development. To address this issue, we propose , a novel multimodal instruction data evolution framework. This framework iteratively enhances data quality through a refined combination of fine-grained perception, cognitive reasoning, and interaction evolution, generating a more complex and diverse image-text instruction dataset that significantly improves MLLM capabilities. Starting with an initial dataset, SEED-163K, we employ to systematically expand instruction diversity, extend visual reasoning steps to improve cognitive abilities, and extract fine-grained visual details to enhance understanding and robustness. To rigorously evaluate our approach, we conduct extensive qualitative analysis and quantitative experiments across 13 vision-language tasks. Compared to baseline models trained on the original seed dataset, our method achieves an average accuracy improvement of 3.1 percentage points. Moreover, our approach attains state-of-the-art (SOTA) performance in nine tasks while using significantly less data than existing state-of-the-art models.
+
+## 17. GRAM: Generative Recommendation via Semantic-aware Multi-granular Late Fusion
+
+- Authors: Sunkyung Lee, Minjin Choi, Eunseong Choi, Hye-young Kim, Jongwuk Lee
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0311668087876322
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.1596/
+- PDF: https://aclanthology.org/2025.acl-long.1596.pdf
+- Local PDF: pdf/2026-08-24_17_GRAM_ Generative Recommendation via Semantic-aware Multi-granular Late Fusion.pdf
+
+Generative recommendation is an emerging paradigm that leverages the extensive knowledge of large language models by formulating recommendations into a text-to-text generation task. However, existing studies face two key limitations in (i) incorporating implicit item relationships and (ii) utilizing rich yet lengthy item information. To address these challenges, we propose a Generative Recommender via semantic-Aware Multi-granular late fusion (GRAM), introducing two synergistic innovations. First, we design semantic-to-lexical translation to encode implicit hierarchical and collaborative item relationships into the vocabulary space of LLMs. Second, we present multi-granular late fusion to integrate rich semantics efficiently with minimal information loss. It employs separate encoders for multi-granular prompts, delaying the fusion until the decoding stage. Experiments on four benchmark datasets show that GRAM outperforms eight state-of-the-art generative recommendation models, achieving significant improvements of 11.5-16.0% in Recall@5 and 5.3-13.6% in NDCG@5. The source code is available at https://github.com/skleee/GRAM .
+
+## 18. LLMTaxo: Leveraging Large Language Models for Constructing Taxonomy of Factual Claims from Social Media
+
+- Authors: Haiqi Zhang, Zhengyuan Zhu, Zeyu Zhang, Chengkai Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.029707752997957
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.1007/
+- PDF: https://aclanthology.org/2025.findings-acl.1007.pdf
+- Local PDF: pdf/2026-08-24_18_LLMTaxo_ Leveraging Large Language Models for Constructing Taxonomy of Factual Claims from Social Media.pdf
+
+With the rapid expansion of content on social media platforms, analyzing and comprehending online discourse has become increasingly complex. This paper introduces LLMTaxo, a novel framework leveraging large language models for the automated construction of taxonomies of factual claims from social media by generating topics at multiple levels of granularity. The resulting hierarchical structure significantly reduces redundancy and improves information accessibility. We also propose dedicated taxonomy evaluation metrics to enable comprehensive assessment. Evaluations conducted on three diverse datasets demonstrate LLMTaxo’s effectiveness in producing clear, coherent, and comprehensive taxonomies. Among the evaluated models, GPT-4o mini consistently outperforms others across most metrics. The framework’s flexibility and low reliance on manual intervention underscore its potential for broad applicability.
+
+## 19. AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity
+
+- Authors: Yu Zhang, Dong Guo, Fang Wu, Guoliang Zhu, Dian Ding, Yiming Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: EMNLP
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0282182183285733
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.emnlp-main.430/
+- PDF: https://aclanthology.org/2025.emnlp-main.430.pdf
+- Local PDF: pdf/2026-08-24_19_AnchorAttention_ Difference-Aware Sparse Attention with Stripe Granularity.pdf
+
+Large Language Models (LLMs) with extended context lengths face significant computational challenges during the pre-filling phase, primarily due to the quadratic complexity of self-attention. Existing methods typically employ dynamic pattern matching and block-sparse low-level implementations. However, their reliance on local information for pattern identification fails to capture global contexts, and the coarse granularity of blocks leads to persistent internal sparsity, resulting in suboptimal accuracy and efficiency. To address these limitations, we propose AnchorAttention , a difference-aware, dynamic sparse attention mechanism that efficiently identifies critical attention regions at a finer stripe granularity while adapting to global contextual information, achieving superior speed and accuracy. AnchorAttention comprises three key components: (1) Pattern-based Anchor Computation , leveraging the commonalities present across all inputs to rapidly compute a set of near-maximum scores as anchor; (2) Difference-aware Stripe Sparsity Identification , performing difference-aware comparisons with anchor to quickly obtain discrete coordinates of significant regions in a stripe-like sparsity pattern; (3) Fine-grained Sparse Computation , replacing the traditional contiguous loading strategy with a discrete key-value loading approach to maximize sparsity rates while preserving hardware computational potential. Additionally, we integrate the identification strategy into a single operator to maximize parallelization potential. With its finer-grained sparsity strategy, AnchorAttention achieves higher sparsity rates at the same recall level, significantly reducing computation time. Compared to previous state-of-the-art methods, at a text length of 128k, it achieves a speedup of 1.44 × while maintaining higher recall rates.
+
+## 20. Exploring Multi-Modal Data with Tool-Augmented LLM Agents for Precise Causal Discovery
+
+- Authors: ChengAo Shen, Zhengzhang Chen, Dongsheng Luo, Dongkuan Xu, Haifeng Chen, Jingchao Ni
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0263020189071845
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.36/
+- PDF: https://aclanthology.org/2025.findings-acl.36.pdf
+- Local PDF: pdf/2026-08-24_20_Exploring Multi-Modal Data with Tool-Augmented LLM Agents for Precise Causal Discovery.pdf
+
+Causal discovery is an imperative foundation for decision-making across domains, such as smart health, AI for drug discovery and AIOps. Traditional statistical causal discovery methods, while well-established, predominantly rely on observational data and often overlook the semantic cues inherent in cause-and-effect relationships. The advent of Large Language Models (LLMs) has ushered in an affordable way of leveraging the semantic cues for knowledge-driven causal discovery, but the development of LLMs for causal discovery lags behind other areas, particularly in the exploration of multi-modal data. To bridge the gap, we introduce MatMCD, a multi-agent system powered by tool-augmented LLMs. MatMCD has two key agents: a Data Augmentation agent that retrieves and processes modality-augmented data, and a Causal Constraint agent that integrates multi-modal data for knowledge-driven reasoning. The proposed design of the inner-workings ensures successful cooperation of the agents. Our empirical study across seven datasets suggests the significant potential of multi-modality enhanced causal discovery.
+
+## 21. C2KD: Cross-layer and Cross-head Knowledge Distillation for Small Language Model-based Recommendation
+
+- Authors: Xiao Chen, Changyi Ma, Wenqi Fan, Zhaoxiang Zhang, Li Qing
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0262519118581914
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.917/
+- PDF: https://aclanthology.org/2025.findings-acl.917.pdf
+- Local PDF: pdf/2026-08-24_21_C2KD_ Cross-layer and Cross-head Knowledge Distillation for Small Language Model-based Recommendation.pdf
+
+Sequential recommenders predict users’ next interactions based on historical behavior and are essential in modern recommendation systems. While Large Language Models (LLMs) show promise, their size and high inference costs limit deployment on resource-constrained devices. Small Language Models (SLMs) provide a more efficient alternative for edge devices, but bridging the recommendation performance gap between LLMs and SLMs remains challenging. Typical approaches like supervised fine-tuning or vanilla knowledge distillation (KD) often lead to suboptimal performance or even negative transfer. Our motivational experiments reveal key issues with vanilla KD methods: feature imitation suffers from redundancy and uneven recommendation ability across layers, while prediction mimicking faces conflicts caused by differing weight distributions of prediction heads. To address these challenges, we propose a simple yet effective framework, C2KD, to transfer task-relevant knowledge from two complementary dimensions. Specifically, our method incorporates: (1) cross-layer feature imitation, which uses a dynamic router to select the most relevant teacher layers and assimilate task-relevant knowledge from the teacher’s late layers, allowing the student to concentrate on the teacher’s specialized knowledge; and (2) cross-head logit distillation, which maps the intermediate features of the student to the teacher’s output head, thereby minimizing prediction discrepancies between the teacher and the student. Extensive experiments across diverse model families demonstrate that our approach enables 1B-parameter SLMs to achieve competitive performance compared to LLMs (e.g., Llama3-8B), offering a practical solution for real-world on-device sequential recommendations.
+
+## 22. Medical Graph RAG: Evidence-based Medical Large Language Model via Graph Retrieval-Augmented Generation
+
+- Authors: Junde Wu, Jiayuan Zhu, Yunli Qi, Jingkun Chen, Min Xu, Filippo Menolascina, Yueming Jin, Vicente Grau
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.026249790998998
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.1381/
+- PDF: https://aclanthology.org/2025.acl-long.1381.pdf
+- Local PDF: pdf/2026-08-24_22_Medical Graph RAG_ Evidence-based Medical Large Language Model via Graph Retrieval-Augmented Generation.pdf
+
+We introduce MedGraphRAG, a novel graph-based Retrieval-Augmented Generation (RAG) framework designed to enhance LLMs in generating evidence-based medical responses, improving safety and reliability with private medical data. We introduce Triple Graph Construction and U-Retrieval to enhance GraphRAG, enabling holistic insights and evidence-based response generation for medical applications. Specifically, we connect user documents to credible medical sources and integrate Top-down Precise Retrieval with Bottom-up Response Refinement for balanced context awareness and precise indexing. Validated on 9 medical Q&A benchmarks, 2 health fact-checking datasets, and a long-form generation test set, MedGraphRAG outperforms state-of-the-art models while ensuring credible sourcing. Our code is publicly available.
+
+## 23. Virtual CRISPR: Can LLMs Predict CRISPR Screen Results?
+
+- Authors: Steven Song, Abdalla Abdrabou, Asmita Dabholkar, Kastan Day, Pavan Dharmoju, Jason Perera, Volodymyr Kindratenko, Aly A. Khan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.026106720944328
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.bionlp-1.30/
+- PDF: https://aclanthology.org/2025.bionlp-1.30.pdf
+- Local PDF: pdf/2026-08-24_23_Virtual CRISPR_ Can LLMs Predict CRISPR Screen Results.pdf
+
+CRISPR-Cas systems enable systematic investigation of gene function, but experimental CRISPR screens are resource-intensive. Here, we investigate the potential of Large Language Models (LLMs) to predict the outcomes of CRISPR screens in silico, thereby prioritizing experiments and accelerating biological discovery. We introduce a benchmark dataset derived from BioGRID-ORCS and manually curated sources, and evaluate the performance of several LLMs across various prompting strategies, including chain-of-thought and few-shot learning. Furthermore, we develop a novel, efficient prediction framework using LLM-derived embeddings, achieving significantly improved performance and scalability compared to direct prompting. Our results demonstrate the feasibility of using LLMs to guide CRISPR screen experiments.
+
+## 24. Can Graph Descriptive Order Affect Solving Graph Problems with LLMs?
+
+- Authors: Yuyao Ge, Shenghua Liu, Baolong Bi, Yiwei Wang, Lingrui Mei, Wenjie Feng, Lizhe Chen, Xueqi Cheng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.025868614682801
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.321/
+- PDF: https://aclanthology.org/2025.acl-long.321.pdf
+- Local PDF: pdf/2026-08-24_24_Can Graph Descriptive Order Affect Solving Graph Problems with LLMs.pdf
+
+Large language models (LLMs) have achieved significant success in reasoning tasks, including mathematical reasoning and logical deduction. Among these reasoning tasks, graph problems stand out due to their complexity and unique structural characteristics, attracting considerable attention from researchers. Previous studies have explored LLMs’ graph reasoning abilities through various techniques, such as different encoding methods for graph structures and the use of carefully designed prompts. However, a critical factor has been mostly overlooked: the prompt sequential order in which graph descriptions are presented to the models. In this study, we present the first comprehensive analysis of how the order of graph descriptions impacts LLM performance. Specifically, we comprehensively evaluate four graph description orders across six graph problems using six mainstream LLMs. The results reveal that: (1) ordered graph descriptions significantly improve LLMs’ comprehension of graph structures; (2) the robustness of LLMs to graph description order varies across different tasks; and (3) the impact of graph order on performance is closely related to the inherent characteristics of tasks. This study provides a critical advancement in the application of LLMs for solving graph-related problems, paving the way for future research to optimize model performance through strategic graph description ordering.
+
+## 25. DocIE@XLLM25: ZeroSemble - Robust and Efficient Zero-Shot Document Information Extraction with Heterogeneous Large Language Model Ensembles
+
+- Authors: Nguyen Pham Hoang Le, An Dinh Thien, Son T. Luu, Kiet Van Nguyen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0229839219624437
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.xllm-1.25/
+- PDF: https://aclanthology.org/2025.xllm-1.25.pdf
+- Local PDF: pdf/2026-08-24_25_DocIE@XLLM25_ ZeroSemble - Robust and Efficient Zero-Shot Document Information Extraction with Heterogeneous Large Langu.pdf
+
+The schematization of knowledge, including the extraction of entities and relations from documents, poses significant challenges to traditional approaches because of the document’s ambiguity, heterogeneity, and high cost domain-specific training. Although Large Language Models (LLMs) allow for extraction without prior training on the dataset, the requirement of fine-tuning along with low precision, especially in relation extraction, serves as an obstacle. In absence of domain-specific training, we present a new zero-shot ensemble approach using DeepSeek-R1-Distill-Llama-70B, Llama-3.3-70B, and Qwen-2.5-32B. Our key innovation is a two-stage pipeline that first consolidates high-confidence entities through ensemble techniques, then leverages Qwen-2.5-32B with engineered prompts to generate precise semantic triples. This approach effectively resolves the low precision problem typically encountered in relation extraction. Experiments demonstrate significant gains in both accuracy and efficiency across diverse domains, with our method ranking in the top 2 on the official leaderboard in Shared Task-IV of The 1st Joint Workshop on Large Language Models and Structure Modeling. This competitive performance validates our approach as a compelling solution for practitioners seeking robust document-level information extraction without the burden of task-specific fine-tuning. Our code can be found at https://github.com/dinhthienan33/ZeroSemble .
+
+## 26. Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering
+
+- Authors: Xinyu Tang, Xiaolei Wang, Zhihao Lv, Yingqian Min, Wayne Xin Zhao, Binbin Hu, Ziqi Liu, Zhiqiang Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.021517515338694
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.339/
+- PDF: https://aclanthology.org/2025.acl-long.339.pdf
+- Local PDF: pdf/2026-08-24_26_Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering.pdf
+
+Recent advancements in long chain-of-thoughts (long CoTs) have significantly improved the reasoning capabilities of large language models (LLMs). Existing work finds that the capability of long CoT reasoning can be efficiently elicited by tuning on only a few examples and can easily transfer to other tasks. This motivates us to investigate whether long CoT reasoning is a general capability for LLMs. In this work, we conduct an empirical analysis for this question from the perspective of representation. We find that LLMs do encode long CoT reasoning as a general capability, with a clear distinction from vanilla CoTs. Furthermore, domain-specific representations are also required for the effective transfer of long CoT reasoning. Inspired by these findings, we propose GLORE, a novel representation engineering method to unleash the general long CoT reasoning capabilities of LLMs. Extensive experiments demonstrate the effectiveness and efficiency of GLORE in both in-domain and cross-domain scenarios. The code is available at https://github.com/txy77/GLoRE .
+
+## 27. ClaimPKG: Enhancing Claim Verification via Pseudo-Subgraph Generation with Lightweight Specialized LLM
+
+- Authors: Hoang Pham, Thanh-Do Nguyen, Khac-Hoai Nam Bui
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0211351132063258
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.274/
+- PDF: https://aclanthology.org/2025.findings-acl.274.pdf
+- Local PDF: pdf/2026-08-24_27_ClaimPKG_ Enhancing Claim Verification via Pseudo-Subgraph Generation with Lightweight Specialized LLM.pdf
+
+Integrating knowledge graphs (KGs) to enhance the reasoning capabilities of large language models (LLMs) is an emerging research challenge in claim verification. While KGs provide structured, semantically rich representations well-suited for reasoning, most existing verification methods rely on unstructured text corpora, limiting their ability to effectively leverage KGs. Additionally, despite possessing strong reasoning abilities, modern LLMs struggle with multi-step modular pipelines and reasoning over KGs without adaptation. To address these challenges, we propose ClaimPKG, an end-to-end framework that seamlessly integrates LLM reasoning with structured knowledge from KGs. Specifically, the main idea of ClaimPKG is to employ a lightweight, specialized LLM to represent the input claim as pseudo-subgraphs, guiding a dedicated subgraph retrieval module to identify relevant KG subgraphs. These retrieved subgraphs are then processed by a general-purpose LLM to produce the final verdict and justification. Extensive experiments on the FactKG dataset demonstrate that ClaimPKG achieves state-of-the-art performance, outperforming strong baselines in this research field by 9%-12% accuracy points across multiple categories. Furthermore, ClaimPKG exhibits zero-shot generalizability to unstructured datasets such as HoVer and FEVEROUS, effectively combining structured knowledge from KGs with LLM reasoning across various LLM backbones.
+
+## 28. NeuSym-RAG: Hybrid Neural Symbolic Retrieval with Multiview Structuring for PDF Question Answering
+
+- Authors: Ruisheng Cao, Hanchong Zhang, Tiancheng Huang, Zhangyi Kang, Yuxin Zhang, Liangtai Sun, Hanqi Li, Yuxun Miao, Shuai Fan, Lu Chen, Kai Yu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0200193815935243
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.311/
+- PDF: https://aclanthology.org/2025.acl-long.311.pdf
+- Local PDF: pdf/2026-08-24_28_NeuSym-RAG_ Hybrid Neural Symbolic Retrieval with Multiview Structuring for PDF Question Answering.pdf
+
+The increasing number of academic papers poses significant challenges for researchers to efficiently acquire key details. While retrieval augmented generation (RAG) shows great promise in large language model (LLM) based automated question answering, previous works often isolate neural and symbolic retrieval despite their complementary strengths. Moreover, conventional single-view chunking neglects the rich structure and layout of PDFs, e.g., sections and tables. In this work, we propose NeuSym-RAG, a hybrid neural symbolic retrieval framework which combines both paradigms in an interactive process. By leveraging multi-view chunking and schema-based parsing, NeuSym-RAG organizes semi-structured PDF content into both the relational database and vectorstore, enabling LLM agents to iteratively gather context until sufficient to generate answers. Experiments on three full PDF-based QA datasets, including a self-annotated one AirQA-Real, show that NeuSym-RAG stably defeats both the vector-based RAG and various structured baselines, highlighting its capacity to unify both retrieval schemes and utilize multiple views.
+
+## 29. More is not always better? Enhancing Many-Shot In-Context Learning with Differentiated and Reweighting Objectives
+
+- Authors: Xiaoqing Zhang, Ang Lv, Yuhan Liu, Flood Sung, Wei Liu, Jian Luan, Shuo Shang, Xiuying Chen, Rui Yan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.0189108178122135
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.acl-long.1475/
+- PDF: https://aclanthology.org/2025.acl-long.1475.pdf
+- Local PDF: pdf/2026-08-24_29_More is not always better_ Enhancing Many-Shot In-Context Learning with Differentiated and Reweighting Objectives.pdf
+
+Large language models (LLMs) excel at few-shot in-context learning (ICL) without requiring parameter updates. However, as ICL demonstrations increase from a few to many, performance tends to plateau and eventually decline. We identify two primary causes for this trend: the suboptimal negative log-likelihood (NLL) optimization objective and the incremental data noise. To address these issues, we introduce DrICL , a novel optimization method that enhances model performance through Differentiated and Reweighting objectives. Globally, DrICL utilizes differentiated learning to optimize the NLL objective, ensuring that many-shot performance surpasses zero-shot levels. Locally, it dynamically adjusts the weighting of many-shot demonstrations by leveraging cumulative advantages inspired by reinforcement learning, thereby mitigating the impact of noisy data.Recognizing the lack of multi-task datasets with diverse many-shot distributions, we develop the Many-Shot ICL Benchmark (ICL-50)-a large-scale benchmark of 50 tasks that cover shot numbers from 1 to 350 within sequences of up to 8,000 tokens-for both fine-tuning and evaluation purposes.Experimental results demonstrate that LLMs enhanced with DrICL achieve significant improvements in many-shot setups across various tasks, including both in-domain and out-of-domain scenarios.We release the code and dataset hoping to facilitate further research in many-shot ICL.
+
+## 30. Reinforcing Compositional Retrieval: Retrieving Step-by-Step for Composing Informative Contexts
+
+- Authors: Quanyu Long, Jianda Chen, Zhengyuan Liu, Nancy F. Chen, Wenya Wang, Sinno Jialin Pan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2025-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 3.018469092438897
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2025.findings-acl.396/
+- PDF: https://aclanthology.org/2025.findings-acl.396.pdf
+- Local PDF: pdf/2026-08-24_30_Reinforcing Compositional Retrieval_ Retrieving Step-by-Step for Composing Informative Contexts.pdf
+
+Large Language Models (LLMs) have demonstrated remarkable capabilities across numerous tasks, yet they often rely on external context to handle complex tasks. While retrieval-augmented frameworks traditionally focus on selecting top-ranked documents in a single pass, many real-world scenarios demand compositional retrieval, where multiple sources must be combined in a coordinated manner. In this work, we propose a tri-encoder sequential retriever that models this process as a Markov Decision Process (MDP), decomposing the probability of retrieving a set of elements into a sequence of conditional probabilities and allowing each retrieval step to be conditioned on previously selected examples. We train the retriever in two stages: first, we efficiently construct supervised sequential data for initial policy training; we then refine the policy to align with the LLM’s preferences using a reward grounded in the structural correspondence of generated programs. Experimental results show that our method consistently and significantly outperforms baselines, underscoring the importance of explicitly modeling inter-example dependencies. These findings highlight the potential of compositional retrieval for tasks requiring multiple pieces of evidence or examples.
