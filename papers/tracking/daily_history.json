@@ -1,4 +1,11 @@
 {
+  "doi:10.3847/1538-4357/ae9d64": {
+    "doi": "10.3847/1538-4357/ae9d64",
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Impact of Nuclear Level Density on $r$-Process Rare-Earth Peak Nucleosynthesis",
+    "url": "http://arxiv.org/abs/2608.25440v1"
+  },
   "title:4dwam4dconsistentworldmodelingforautonomousdriving": {
     "doi": null,
     "sent_date": "2026-08-12",
@@ -195,6 +202,13 @@
     "title": "Hypergraph-based Multimodal Retrieval-Augmented Generation with Incremental Refinement",
     "url": "http://arxiv.org/abs/2608.16628v1"
   },
+  "title:impactofnuclearleveldensityonrprocessrareearthpeaknucleosynthesis": {
+    "doi": "10.3847/1538-4357/ae9d64",
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Impact of Nuclear Level Density on $r$-Process Rare-Earth Peak Nucleosynthesis",
+    "url": "http://arxiv.org/abs/2608.25440v1"
+  },
   "title:informationtheoreticadaptivecoolingfordeterministicmppiviaentropyfeedback": {
     "doi": null,
     "sent_date": "2026-07-17",
@@ -215,6 +229,13 @@
     "source": "arxiv",
     "title": "Learning social norms enhances compatibility in dynamic human-AI coordination",
     "url": "http://arxiv.org/abs/2607.07021v1"
+  },
+  "title:maia200asoftwaredefineddataflowsystemforlargescaleaiacceleration": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Maia 200: A Software Defined Dataflow System for Large-scale AI Acceleration",
+    "url": "http://arxiv.org/abs/2608.24664v1"
   },
   "title:mmagentr2learningtorerankandrejectforagenticmrag": {
     "doi": null,
@@ -250,6 +271,13 @@
     "source": "arxiv",
     "title": "P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning",
     "url": "http://arxiv.org/abs/2607.25541v1"
+  },
+  "title:pastanoisynodeclassificationwithpartiallabellearning": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "PaSta: Noisy Node Classification with Partial Label Learning",
+    "url": "http://arxiv.org/abs/2608.25365v1"
   },
   "title:phaseawareinterpretablehumaninthelooprehabilitationscoringwithboundarymonitoring": {
     "doi": null,
@@ -341,6 +369,20 @@
     "source": "arxiv",
     "title": "Tired Actor: Fatigue-Informed Character Control",
     "url": "http://arxiv.org/abs/2608.03528v1"
+  },
+  "title:traceanevidencegroundedbenchmarkforsafetyevaluationoflargereasoningmodels": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "TRACE: An Evidence-Grounded Benchmark for Safety Evaluation of Large Reasoning Models",
+    "url": "http://arxiv.org/abs/2608.24232v1"
+  },
+  "title:unfoldingscientificpapersintomultiturngenerationtrajectoriesforcontinuedpretraining": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Unfolding Scientific Papers into Multi-Turn Generation Trajectories for Continued Pre-Training",
+    "url": "http://arxiv.org/abs/2608.25826v1"
   },
   "title:unirefuavamultimodalbenchmarkforuniversalreferringinuavimagery": {
     "doi": null,
