@@ -69,6 +69,13 @@
     "title": "STWave: Fine‐Scale Spatial Structure Discovery in Microscopic‐Resolution Spatial Transcriptomics via Patchwise Wavelet Graphs",
     "url": "https://doi.org/10.1002/advs.77240"
   },
+  "doi:10.1002/advs.77353": {
+    "doi": "https://doi.org/10.1002/advs.77353",
+    "sent_date": "2026-08-27",
+    "source": "openalex",
+    "title": "Tissue‐Agnostic Cellular Morphometric Biomarkers for Risk‐Adapted Management Across Gastrointestinal Precancerous Lesions and Cancers",
+    "url": "https://doi.org/10.1002/advs.77353"
+  },
   "doi:10.1002/widm.70093": {
     "doi": "10.1002/widm.70093",
     "sent_date": "2026-07-22",
@@ -2099,6 +2106,13 @@
     "title": "A Multi-Expert Structural-Semantic Hybrid Framework for Unveiling Historical Patterns in Temporal Knowledge Graphs",
     "url": "https://aclanthology.org/2025.findings-acl.1056/"
   },
+  "title:amultimodalfoundationmodelforlongitudinalpatientrepresentationandscalableinsightgenerationinoncology": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "A Multimodal Foundation Model for Longitudinal Patient Representation and Scalable Insight Generation in Oncology",
+    "url": "http://arxiv.org/abs/2608.24688v1"
+  },
   "title:amutualinformationperspectiveonknowledgegraphembedding": {
     "doi": null,
     "sent_date": "2026-06-17",
@@ -2505,6 +2519,13 @@
     "title": "A systematic evaluation of in-context learning in large language models for antibody characterization",
     "url": "https://doi.org/10.1186/s13059-026-04240-6"
   },
+  "title:atheoryofspeciationingenerativediffusionmodelsoncompactriemannianmanifolds": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "A Theory of Speciation in Generative Diffusion Models on Compact Riemannian Manifolds",
+    "url": "http://arxiv.org/abs/2608.23798v2"
+  },
   "title:atlasorchestratingheterogeneousmodelsandtoolsformultidomaincomplexreasoning": {
     "doi": null,
     "sent_date": "2026-07-03",
@@ -2609,6 +2630,13 @@
     "source": "acl_anthology",
     "title": "AutoGraph-R1: End-to-End Reinforcement Learning for Knowledge Graph Construction",
     "url": "https://aclanthology.org/2026.acl-long.1070/"
+  },
+  "title:automatafromagenttracesfailureandnextstepprediction": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Automata from Agent Traces: Failure and Next-Step Prediction",
+    "url": "http://arxiv.org/abs/2608.23670v1"
   },
   "title:automaticexpertdiscoveryinllmupcyclingviasparseinterpolatedmixtureofexperts": {
     "doi": null,
@@ -3905,6 +3933,13 @@
     "title": "COAST: Context-Aware Differential Learning for Gene Expression Prediction in Spatial Transcriptomics",
     "url": "http://arxiv.org/abs/2607.09166v1"
   },
+  "title:cociconferenceorganisersandcontentidentifier": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "COCI: Conference Organisers and Content Identifier",
+    "url": "http://arxiv.org/abs/2608.24559v1"
+  },
   "title:cocotreecompositionalhierarchicalconcepttreesforenhancedreasoninginvisionlanguagemodels": {
     "doi": null,
     "sent_date": "2026-06-21",
@@ -4157,6 +4192,13 @@
     "title": "Compressing then Matching: An Efficient Pre-training Paradigm for Multimodal Embedding",
     "url": "https://aclanthology.org/2026.acl-long.169/"
   },
+  "title:compressiontrinityexploringsparsityquantizationandlowrankapproximationsforllmcompression": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Compression Trinity: Exploring Sparsity, Quantization, and Low-Rank Approximations for LLM Compression",
+    "url": "http://arxiv.org/abs/2608.24070v1"
+  },
   "title:conceptguidanceprecisetrainingfreelatentcontrolfortexttoimagegeneration": {
     "doi": null,
     "sent_date": "2026-08-18",
@@ -4282,6 +4324,13 @@
     "source": "arxiv",
     "title": "Constraint-Anchored Reasoning Traces",
     "url": "http://arxiv.org/abs/2607.16727v1"
+  },
+  "title:constraintguidedenterprisedatamappingwithlargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Constraint-Guided Enterprise Data Mapping with Large Language Models",
+    "url": "http://arxiv.org/abs/2608.24218v1"
   },
   "title:constructedrealitycontestedpriorsdecouplingandthearchitectureofcognitiverelapseunderthefreeenergyprinciple": {
     "doi": null,
@@ -4772,6 +4821,13 @@
     "source": "acl_anthology",
     "title": "Data Mixing Agent: Learning to Re-weight Domains for Continual Pre-training",
     "url": "https://aclanthology.org/2026.acl-long.427/"
+  },
+  "title:datamixingasmixtureexperimentresponsesurfacemethodologyandoptimaldesignforlargelanguagemodelpretraining": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Data Mixing as Mixture Experiment: Response Surface Methodology and Optimal Design for Large Language Model Pretraining",
+    "url": "http://arxiv.org/abs/2608.23922v1"
   },
   "title:datasetsforscientificliteratureunderstandingasurvey": {
     "doi": null,
@@ -5298,6 +5354,13 @@
     "title": "Divergence Decoding: Training-Free Capability Fusion",
     "url": "http://arxiv.org/abs/2607.27248v1"
   },
+  "title:diversebyreasoningharnessingthewisdomofllmcrowdsforfutureprediction": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Diverse by Reasoning: Harnessing the Wisdom of LLM Crowds for Future Prediction",
+    "url": "http://arxiv.org/abs/2608.24001v2"
+  },
   "title:dizinerdisagreementguidedinstructionrefinementviasimulatingpilotannotationforzeroshotnamedentityrecognition": {
     "doi": null,
     "sent_date": "2026-07-17",
@@ -5409,6 +5472,13 @@
     "source": "acl_anthology",
     "title": "Don’t Tell the Answer, Truly Guide the Reasoning During RL Rollouts",
     "url": "https://aclanthology.org/2026.findings-acl.169/"
+  },
+  "title:dorecipeshavepersonascharacterizingandgeneratingcreatorstyleinattributedproceduralgraphs": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Do Recipes Have Personas? Characterizing and Generating Creator Style in Attributed Procedural Graphs",
+    "url": "http://arxiv.org/abs/2608.24369v1"
   },
   "title:dosdependencyorientedsamplerformaskeddiffusionlanguagemodels": {
     "doi": null,
@@ -5872,6 +5942,13 @@
     "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
     "url": "http://arxiv.org/abs/2607.27077v1"
   },
+  "title:equivariantcellularsheavesformolecularelectronicstructurebridgingsheafcohomologyande3equivarianthamiltonianlearning": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Equivariant Cellular Sheaves for Molecular Electronic Structure: Bridging Sheaf Cohomology and E(3)-Equivariant Hamiltonian Learning",
+    "url": "http://arxiv.org/abs/2608.23571v1"
+  },
   "title:escacontextualizingembodiedagentsviascenegraphgeneration": {
     "doi": null,
     "sent_date": "2026-06-20",
@@ -5941,6 +6018,13 @@
     "source": "acl_anthology",
     "title": "Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.464/"
+  },
+  "title:evidenceblindnessindirectcorpusinteractionpersistentnavigationwithatlasnav": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Evidence Blindness in Direct Corpus Interaction: Persistent Navigation with AtlasNav",
+    "url": "http://arxiv.org/abs/2608.24764v1"
   },
   "title:evidencegroundedmultimodalknowledgegraphconstructionformultilectureeducationalreasoning": {
     "doi": null,
@@ -6264,6 +6348,13 @@
     "title": "FedProxy: Federated Fine-Tuning of LLMs via Proxy SLMs and Heterogeneity-Aware Fusion",
     "url": "https://aclanthology.org/2026.acl-long.794/"
   },
+  "title:fedvkgqamultihopquestionansweringoververticallypartitionedknowledgegraphs": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "FedV-KGQA: Multi-Hop Question Answering over Vertically Partitioned Knowledge Graphs",
+    "url": "http://arxiv.org/abs/2608.24846v1"
+  },
   "title:ffnlenshowtransformersdividelaborformultilingualtasks": {
     "doi": null,
     "sent_date": "2026-07-02",
@@ -6404,6 +6495,13 @@
     "title": "Flow Map Learning via Nongradient Vector Flow",
     "url": "http://arxiv.org/abs/2607.26398v1"
   },
+  "title:flowneggflownetguideddiversehardnegativesamplingforknowledgegraphembedding": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "FlowNeg: GFlowNet-Guided Diverse Hard Negative Sampling for Knowledge Graph Embedding",
+    "url": "http://arxiv.org/abs/2608.23849v1"
+  },
   "title:fluidditgraphfreediffusiontransformersforfluidflowsimulationslearning": {
     "doi": null,
     "sent_date": "2026-08-11",
@@ -6536,6 +6634,13 @@
     "source": "acl_anthology",
     "title": "From Attenuation to Attention: Variational Information Flow Manipulation for Fine-Grained Visual Perception",
     "url": "https://aclanthology.org/2026.findings-acl.927/"
+  },
+  "title:fromcausalplausibilitytocausalreliabilityevaluatingllmsascalibrateddirectcausaledgeclassifiers": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "From Causal Plausibility to Causal Reliability: Evaluating LLMs as Calibrated Direct Causal-Edge Classifiers",
+    "url": "http://arxiv.org/abs/2608.23660v1"
   },
   "title:fromcompetitiontosynergyunlockingreinforcementlearningforsubjectdrivenimagegeneration": {
     "doi": null,
@@ -6985,6 +7090,13 @@
     "title": "Generalizable Prompt Tuning for Audio-Language Models via Semantic Expansion",
     "url": "https://aclanthology.org/2026.findings-acl.1583/"
   },
+  "title:generalizationmemorizationandoverfittingfordiffusionmodelstrainedinthelazyhighdimensionalregime": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Generalization, memorization, and overfitting for diffusion models trained in the lazy high-dimensional regime",
+    "url": "http://arxiv.org/abs/2608.23938v1"
+  },
   "title:generalsemanticknowledgeinfusionforspatiotemporaltrafficforecasting": {
     "doi": "10.1109/MDM71479.2026.00016",
     "sent_date": "2026-08-20",
@@ -7201,6 +7313,13 @@
     "source": "arxiv",
     "title": "GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis",
     "url": "http://arxiv.org/abs/2607.18218v1"
+  },
+  "title:giraffeamappingarchitecturefromhiddentextrepresentationstovisualembeddingsforefficientgraphicdesign": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Giraffe: A Mapping Architecture from Hidden Text Representations to Visual Embeddings for Efficient Graphic Design",
+    "url": "http://arxiv.org/abs/2608.23970v1"
   },
   "title:glagroundinglargelanguagemodelsinmolecularhierarchyforchemicalunderstanding": {
     "doi": null,
@@ -7923,6 +8042,13 @@
     "title": "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs",
     "url": "http://arxiv.org/abs/2607.25853v1"
   },
+  "title:hmgclipheterogeneousmultigranularitycontrastivelearningforecommercerepresentationlearning": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "HMGCLIP: Heterogeneous Multi-Granularity Contrastive Learning for E-commerce Representation Learning",
+    "url": "http://arxiv.org/abs/2608.24467v1"
+  },
   "title:hopperlearnablehopextractionforlinearizedgraphsequencemodels": {
     "doi": null,
     "sent_date": "2026-08-12",
@@ -8006,6 +8132,13 @@
     "source": "neurips",
     "title": "Hybrid Latent Reasoning via Reinforcement Learning",
     "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/087f7678af2abbe0c37ecc30bd7d1adf-Abstract-Conference.html"
+  },
+  "title:hybridsemantictooldiscoveryforenterprisemcpgatewayarchitectureandimplementation": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Hybrid Semantic Tool Discovery for Enterprise MCP Gateway: Architecture and Implementation",
+    "url": "http://arxiv.org/abs/2608.23992v1"
   },
   "title:hygrladaptivehybridgraphreasoningformultientityquestions": {
     "doi": null,
@@ -8146,6 +8279,13 @@
     "source": "acl_anthology",
     "title": "Improving the Throughput of Diffusion-based Large Language Models via a Training-Free Confidence-Aware Calibration",
     "url": "https://aclanthology.org/2026.findings-acl.478/"
+  },
+  "title:incorporatingcognitiveloadandknowledgetransferformultidomainknowledgetracing": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Incorporating Cognitive Load and Knowledge Transfer for Multi-Domain Knowledge Tracing",
+    "url": "http://arxiv.org/abs/2608.24005v1"
   },
   "title:inductivelearningonheterogeneousgraphsenhancedbyllmsforsoftwarementiondetection": {
     "doi": "",
@@ -9624,6 +9764,13 @@
     "title": "MASS-RAG: Multi-Agent Synthesis Retrieval-Augmented Generation",
     "url": "https://aclanthology.org/2026.findings-acl.480/"
   },
+  "title:matchedexcessoutrankerregularizationforcandidatesetinterferenceincontinualknowledgegraphembedding": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Matched Excess-Outranker Regularization for Candidate-Set Interference in Continual Knowledge Graph Embedding",
+    "url": "http://arxiv.org/abs/2608.24273v2"
+  },
   "title:matchmodulatingattentionviaincontextretrievalforlongcontexttransformers": {
     "doi": null,
     "sent_date": "2026-08-04",
@@ -9693,6 +9840,13 @@
     "source": "acl_anthology",
     "title": "MDocRAG-RL: Empowering Multi-Modal Document RAG via Complex Visual Reasoning with Reinforcement Learning",
     "url": "https://aclanthology.org/2026.findings-acl.420/"
+  },
+  "title:mdteminorityawarediffusionovertemporaledgeeventsforimbalancednodeclassification": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "MDTE: Minority-Aware Diffusion over Temporal Edge Events for Imbalanced Node Classification",
+    "url": "http://arxiv.org/abs/2608.24812v1"
   },
   "title:meanfielddynamicsofchainofthoughtreasoninginlargelanguagemodels": {
     "doi": null,
@@ -10240,6 +10394,13 @@
     "title": "Mol-CADiff: text-conditional molecule generation via causality-aware autoregressive diffusion",
     "url": "https://doi.org/10.1038/s41467-026-75702-5"
   },
+  "title:molembmultimodallargelanguagemodelscanbestrongmolecularembeddingmodels": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "MolEmb: Multimodal Large Language Models Can Be Strong Molecular Embedding Models",
+    "url": "http://arxiv.org/abs/2608.23646v1"
+  },
   "title:moljepaamultimodaljointembeddingpredictivearchitectureformolecules": {
     "doi": null,
     "sent_date": "2026-08-26",
@@ -10330,6 +10491,13 @@
     "source": "arxiv",
     "title": "MOSAIC: Adversarial Co-evolution of Specialist Heuristics and Problem Instances for LLM-based Automated Heuristic Design",
     "url": "http://arxiv.org/abs/2608.07544v1"
+  },
+  "title:motemixtureoftaskexpertsformultitaskvideounderstanding": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "MoTE: Mixture of Task Experts for Multi-Task Video Understanding",
+    "url": "http://arxiv.org/abs/2608.24763v1"
   },
   "title:motifagentlearningmolecularassemblythroughmultiagentcollaborationforchemicallanguageunderstanding": {
     "doi": null,
@@ -11353,6 +11521,13 @@
     "title": "PhenoXtract: combining Large Language Model and Knowledge Graph embedding to extract phenotypes from clinical descriptions",
     "url": "https://www.biorxiv.org/content/10.64898/2026.06.22.733382v1.full.pdf"
   },
+  "title:physmllmsspatialpriorsforunifiedreferringsegmentationandgroundedreasoningofimagesandvideos": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "PhysMLLMs: Spatial Priors for Unified Referring Segmentation and Grounded Reasoning of Images and Videos",
+    "url": "http://arxiv.org/abs/2608.24574v1"
+  },
   "title:pianoprobabilisticinferenceautoencodernetworksformultiomicsenablesrobustgenerativemodelingofgeneexpressionandscalessinglecellintegrationto100millioncells": {
     "doi": "10.64898/2026.08.06.743394",
     "sent_date": "2026-08-13",
@@ -11730,6 +11905,13 @@
     "source": "acl_anthology",
     "title": "Purging the Gray Zone: Latent-Geometric Denoising for Precise Knowledge Boundary Awareness",
     "url": "https://aclanthology.org/2026.findings-acl.122/"
+  },
+  "title:puzzlekvpagewiselowrankdecompositionforkvcachecompression": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "PuzzleKV: Page-Wise Low-Rank Decomposition for KV Cache Compression",
+    "url": "http://arxiv.org/abs/2608.23843v1"
   },
   "title:qcuegraphqueryconditionedvisualevidencegraphsformultimodalreasoning": {
     "doi": null,
@@ -12213,6 +12395,13 @@
     "source": "acl_anthology",
     "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
     "url": "https://aclanthology.org/2026.acl-long.2097/"
+  },
+  "title:renormalizationgroupflowmatchingforscalablelocalgenerativemodeling": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Renormalization Group Flow Matching for Scalable Local Generative Modeling",
+    "url": "http://arxiv.org/abs/2608.23696v1"
   },
   "title:repbenchcompilingbenchmarksintocapabilityrepresentationsforlargelanguagemodels": {
     "doi": null,
@@ -12724,6 +12913,13 @@
     "source": "arxiv",
     "title": "Scalable and Efficient Joint Spiking Embedding Predictive Architecture for Large-Scale Dynamic Graphs",
     "url": "http://arxiv.org/abs/2607.18412v1"
+  },
+  "title:scalableandversatileidentificationforhierarchicalstructuralcausalmodelsanewlookatprojectstar": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "Scalable and Versatile Identification for Hierarchical Structural Causal Models: A New Look at Project STAR",
+    "url": "http://arxiv.org/abs/2608.24500v1"
   },
   "title:scalableoptimaltransportalgorithmfornetworkalignment": {
     "doi": null,
@@ -14699,6 +14895,13 @@
     "title": "Timestamp-Aware Spatio-Temporal Graph Contrastive Learning for Network Intrusion Detection",
     "url": "http://arxiv.org/abs/2606.17109v1"
   },
+  "title:tissueagnosticcellularmorphometricbiomarkersforriskadaptedmanagementacrossgastrointestinalprecancerouslesionsandcancers": {
+    "doi": "https://doi.org/10.1002/advs.77353",
+    "sent_date": "2026-08-27",
+    "source": "openalex",
+    "title": "Tissue‐Agnostic Cellular Morphometric Biomarkers for Risk‐Adapted Management Across Gastrointestinal Precancerous Lesions and Cancers",
+    "url": "https://doi.org/10.1002/advs.77353"
+  },
   "title:tlorataskawarelowrankadaptationoflargelanguagemodels": {
     "doi": null,
     "sent_date": "2026-07-20",
@@ -15497,6 +15700,13 @@
     "title": "Virtual spatial transcriptomics from histopathology enables prognostic and therapeutic response prediction in cancer",
     "url": "https://www.biorxiv.org/content/10.64898/2026.08.04.742671v1.full.pdf"
   },
+  "title:viscachevisualkvcachepruningforefficientvisionlargelanguagemodelinference": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "VisCache: Visual KV Cache Pruning for Efficient Vision Large Language Model Inference",
+    "url": "http://arxiv.org/abs/2608.24063v1"
+  },
   "title:visionlanguageintrospectionmitigatingoverconfidenthallucinationsinmllmsviainterpretablebicausalsteering": {
     "doi": null,
     "sent_date": "2026-07-18",
@@ -15615,6 +15825,13 @@
     "source": "acl_anthology",
     "title": "What Deserves Memory: Adaptive Memory Distillation for LLM Agents",
     "url": "https://aclanthology.org/2026.acl-long.1607/"
+  },
+  "title:whatguidestheagentadjudicatingunauthorizedbehaviorvialocalizingbehaviorguidinginstructions": {
+    "doi": null,
+    "sent_date": "2026-08-27",
+    "source": "arxiv",
+    "title": "What Guides the Agent? Adjudicating Unauthorized Behavior via Localizing Behavior-Guiding Instructions",
+    "url": "http://arxiv.org/abs/2608.24022v1"
   },
   "title:whatmakesagoodreasoningchainuncoveringstructuralpatternsinlongchainofthoughtreasoning": {
     "doi": null,
