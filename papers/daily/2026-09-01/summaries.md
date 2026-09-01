@@ -1,0 +1,632 @@
+# Paper Daily Reading - 2026-09-01
+
+## 1. EXPOSE: Explainable and Domain-Robust Embeddings from Pathology Vision Foundation Models using Sparse Autoencoders
+
+- Authors: Anja Witte, Maximilian Lennartz, Jan Baumbach, Guido Sauter, Stefan Bonn, Patrick Fuhlert, Marina Zimmermann
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.CV, cs.LG
+- Relevance: 3.564414707694347
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28191v1
+- PDF: https://arxiv.org/pdf/2608.28191v1
+- Local PDF: pdf/2026-09-01_01_EXPOSE_ Explainable and Domain-Robust Embeddings from Pathology Vision Foundation Models using Sparse Autoencoders.pdf
+
+Vision Foundation Models (VFMs) are widely used in computational pathology but remain sensitive to domain shifts arising from variations in staining, tissue preparation, and scanner hardware. A key limitation is that VFM embeddings entangle biological with domain-specific information, hindering cross-domain generalization. We propose Explainable Probing of Cross-Domain Sparse Embeddings (EXPOSE), a framework that uses Sparse Autoencoders (SAEs) as an explainable bottleneck to identify and suppress domain-specific components in VFM embeddings. We train a sparse representation of VFM features, use a linear classifier to identify domain-specific latent dimensions, and mask these features prior to downstream relapse prediction without retraining the backbone model. Experiments on a large prostate cancer dataset with multiple acquisition domains show that SAE features capture both domain- and task-specific information, which are partially disentangled in the latent space. Removing domain-specific features improves cross-domain performance and increases embedding robustness as measured by the Domain Robustness Index (DoRI). Code is available at https://github.com/imsb-uke/expose .
+
+## 2. LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation
+
+- Authors: Neville K. Kitson, Anthony Constantinou
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-19
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.339156592783199
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27472v1
+- PDF: https://arxiv.org/pdf/2608.27472v1
+- Local PDF: pdf/2026-09-01_02_LLM-Augmented Causal Discovery_ Probabilistic Fusion of Edge Existence and Orientation.pdf
+
+Bayesian network structure learning (BNSL) from observational data struggles with orientation identifiability, while large language models (LLMs) offer broad but often unreliable causal knowledge. We propose combining these complementary sources through a novel representation, termed Probabilistic Dependency Graphs (PDGs). In a PDG, each edge is associated with a distribution over directed, undirected, and absent states, enabling fusion via weighted averaging. We evaluate this approach on 26 benchmark networks, combining ensembles of three BNSL algorithms (FGES, Tabu, PC) with three LLMs (Gemini, Claude, GPT) across multiple prompts and random seeds. A simple 50/50 fusion improves F1 over the better of either source alone in 22 of 26 networks, with a statistically significant mean improvement of $0.056$ $(p<0.001)$. Analysis reveals that the two sources play complementary roles: BNSL contributes a high-recall edge skeleton (80\% vs 60\% for LLM), while LLM contributes accurate edge orientation (96\% vs 77\% for BNSL). Our results show that representing both sources as probabilistic uncertainty over edge existence and orientation is a practical and effective way to improve causal graph accuracy.
+
+## 3. SOMTab: Set-Order Mamba for Efficient Tabular In-Context Learning
+
+- Authors: Hao Wang, Siyu Zhang, Wei Ma
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.2694387947476224
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27882v1
+- PDF: https://arxiv.org/pdf/2608.27882v1
+- Local PDF: pdf/2026-09-01_03_SOMTab_ Set-Order Mamba for Efficient Tabular In-Context Learning.pdf
+
+Tabular foundation models based on in-context learning have recently emerged as strong alternatives to task-specific model fitting. However, the current performance frontier remains dominated by attention-heavy architectures, where attention is used throughout the modeling pipeline. This raises a natural question: is attention necessary at every stage of tabular in-context learning? We introduce SOMTab, a Set-Order Mamba architecture for efficient tabular in-context learning. SOMTab separates representation construction from query-conditioned retrieval. For row and column representations, it maps unordered table tokens into stable latent slots and applies Mamba-based state-space mixing to construct compact representations. For final prediction, it retains attention-based in-context learning to preserve query-conditioned retrieval from labeled context examples. We further introduce DCH-TailMix, a synthetic prior that combines degree-corrected graph heterogeneity with mixed heavy-tailed regimes to diversify synthetic dependency structures. Across tabular benchmarks, SOMTab approaches the performance of strong Transformer-based tabular foundation models while achieving faster inference and lower GPU memory usage, yielding a favorable efficiency--accuracy trade-off.
+
+## 4. When Evidence Shapes Collaboration: Knowledge-Conditioned Topology Generation for Multi-Agent Systems
+
+- Authors: Yangxiao Jiang, Jiarun Fan, Mingcong Xu, Yanxi Guo, Jiwen Feng, Shanqing Xu, Mengchen Qian, Wei Chen, Xiaojin Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.2537719721379226
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27984v1
+- PDF: https://arxiv.org/pdf/2608.27984v1
+- Local PDF: pdf/2026-09-01_04_When Evidence Shapes Collaboration_ Knowledge-Conditioned Topology Generation for Multi-Agent Systems.pdf
+
+Multi-Agent Systems (MAS) have recently moved from static workflows toward dynamically generated collaboration topologies. However, existing topology generation methods rely primarily on the parametric knowledge of large language models, with external search or retrieval used only as a reactive tool rather than an explicit determinant of collaboration structure. This leads to structure-knowledge misalignment, where systems exhibit redundant interactions or insufficient verification in knowledge-intensive tasks. We propose K-GAT (Knowledge-Guided Agent Topology Generator), a neuro-symbolic framework that formulates collaboration topology design as a knowledge-conditioned structure learning problem, integrating external evidence directly into autoregressive graph generation. Extensive experiments on knowledge-intensive benchmarks demonstrate K-GAT's efficiency and effectiveness: notably on the expert-level GPQA dataset, K-GAT outperforms the LLM-Debate baseline by a substantial margin of +15.7% in accuracy, while consuming less than half the computational tokens.
+
+## 5. Biologically Inspired Mechanisms for Facilitating Grokking in Multilayer Perceptrons
+
+- Authors: Florin Leon
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.2489225616182127
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28184v1
+- PDF: https://arxiv.org/pdf/2608.28184v1
+- Local PDF: pdf/2026-09-01_05_Biologically Inspired Mechanisms for Facilitating Grokking in Multilayer Perceptrons.pdf
+
+Grokking is a delayed transition from memorization to generalization that is often accompanied by substantial reorganization of internal representations. This paper studies whether biologically inspired mechanisms, many of which are not commonly incorporated into artificial neural networks, can actively promote this transition by regulating hidden-layer computation at the levels of neuronal activity, response, and effective connectivity. We augment a multilayer perceptron with input gating, structural plasticity, gain modulation, threshold modulation, homeostasis, lateral inhibition, and activation decorrelation, and evaluate these mechanisms through systematic ablations on two established grokking benchmarks: sparse parity and noisy XOR classification. The results show that the mechanisms contribute unequally to generalization. Homeostasis provides the strongest and most consistent benefit, while structural sparsification emerges as the second major mechanism. The remaining biologically inspired mechanisms have smaller or less consistent effects in the present experiments. For both problems, the results support the common principle that explicit regulation of neuron utilization and effective connectivity can improve the emergence of generalizable internal computation. These findings motivate broader investigation of biologically inspired activity regulation and adaptive sparsification, including in large language models, where they may accelerate the development of generalizable representations and reduce the optimization time required for robust generalization.
+
+## 6. ARC-CT: Anatomy-Routed Contrastive Vision-Language Learning for 3D Chest CT
+
+- Authors: Huseyin Umut Isik, Mehmet Alp Ozaydin, Sila Kurugol, Şeyda Ertekin
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.220464140799533
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28455v1
+- PDF: https://arxiv.org/pdf/2608.28455v1
+- Local PDF: pdf/2026-09-01_06_ARC-CT_ Anatomy-Routed Contrastive Vision-Language Learning for 3D Chest CT.pdf
+
+Contrastive vision-language learning uses paired chest CT volumes and radiology reports to learn abnormality classifiers without manually annotated labels. However, two characteristics of chest CT challenge conventional global contrastive learning. First, many critical abnormalities are small or anatomically localized, and pooling an en- tire volume into a single embedding may dilute their visual evidence. Second, the standard contrastive objective treats every other scan in a batch as a negative. Because many chest CTs share abnormalities, this objective incorrectly pushes co-positive pairs apart. We propose Anatomy-Routed Contrastive Learning for 3D Chest CT (ARC-CT), a region-aware framework that addresses these limitations using only la- bels extracted from reports by an LLM, with no manual annotations or bounding boxes. ARC-CT combines three components: (1) an Anato- myQFormer localizing evidence via queries constrained by automatically generated organ masks; (2) a label-Jaccard soft InfoNCE objective in- tegrating the standard one-hot target with the label-set overlap of each pair, which reduces false-negative penalties between studies that share clinical findings; and (3) an organ-level alignment loss connecting mask- pooled visual features to organ-specific report text extracted offline with a large language model. ARC-CT achieves a 0.86 mask-free macro AUC across 18 abnormalities using a compact 3D ResNet-18 backbone. Over- all, ARC-CT outperforms both comparable efficient baselines and sev- eral larger transformer models. Our code and weights are available at https://github.com/arc-ct/arc-ct.
+
+## 7. TI$^2$PS: A Topology-Informed Inverse Design Framework for Stochastic Multicellular Pattern Formation
+
+- Authors: Kenji Komiya, Andrew Kailiang Jin, Ryo Nishikimi, Kunio Kashino
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.1263706135296845
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27931v1
+- PDF: https://arxiv.org/pdf/2608.27931v1
+- Local PDF: pdf/2026-09-01_07_TI$^2$PS_ A Topology-Informed Inverse Design Framework for Stochastic Multicellular Pattern Formation.pdf
+
+This study proposes a novel framework to estimate parameters for reproducing target multicellular patterns using an agent-based model (ABM). Two major challenges in multicellular ABMs are estimating cell-level parameters (agent-specific variables) and quantitatively evaluating the topological characteristics of multicellular arrangements under stochastic cell proliferation and death. To address these challenges, we integrate two approaches: Betti vectors and inverse surrogate modeling. The Betti vectors obtained through topological data analysis can consistently represent features of a wide range of multicellular spatial configurations. The inverse surrogate modeling enables direct inference of the corresponding ABM parameters from the target patterns. We validated the proposed framework using zebrafish pigment pattern formation, a representative model of pattern formation driven by multicellular interactions. The results demonstrate that our framework successfully estimates ABM parameters and outperforms conventional methods such as PointNet++. Notably, the proposed method, which used only 10% of the training data, outperformed PointNet++, which used 100% of the data, across all evaluation metrics.
+
+## 8. Video Generative Models as Geometry Learner
+
+- Authors: Haosen Yang, Jifei Song, Zhensong Zhang, Xiatian Zhu, Jiankang Deng
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.1188205094429797
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28549v1
+- PDF: https://arxiv.org/pdf/2608.28549v1
+- Local PDF: pdf/2026-09-01_08_Video Generative Models as Geometry Learner.pdf
+
+Recent generative approaches to geometry estimation adapt pretrained image diffusion models and treat the task as image-conditioned generation. Leveraging off-the-shelf image diffusion models, they either (i) train task-specific geometry models (for depth and surface normal estimation) independently, losing the opportunity of exploring the intrinsic correlation of these geometric targets, or (ii) jointly fine-tune modified image diffusion backbones (e.g., altered self-attention), which typically demands substantial labeled data. To overcome these limitations in a principled fashion, we repurpose pretrained video generative models as a unified and data-efficient framework for geometry estimation, formulated innovatively as a next-frames prediction task. Our method, GeoNeXt, inherits naturally structured knowledge and richer priors from the video model, while further adapting them for joint modeling of images and geometry targets (image <-> geometry), enabling more data efficient and effective learning of geometry. Extensive experiments validate our method for zero-shot monocular depth and surface normal estimation across diverse datasets, outperforming both previous task-specific and unified generative competitors while using substantially less training data. Notably, our method rivals discriminative state-of-the-art approaches trained on over 100x more data and even standouts on several benchmarks.
+
+## 9. Select, Don't Train: The Benefits of Modular Entity Disambiguation with LLM-Based Selection
+
+- Authors: Fina Polat, Daniel Daza, Pengyu Zhang, Klim Zaporojets, Paul Groth
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-17
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, cs.DB
+- Relevance: 3.103608448263644
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27470v1
+- PDF: https://arxiv.org/pdf/2608.27470v1
+- Local PDF: pdf/2026-09-01_09_Select, Don't Train_ The Benefits of Modular Entity Disambiguation with LLM-Based Selection.pdf
+
+Entity Disambiguation (ED) is a key task for constructing and using knowledge graphs. State-of-the-art neural approaches commonly model ED as a single task, although it consists of two distinct subproblems: retrieving candidate entities and selecting the correct one given context. Dual-encoder models optimize for both within a shared embedding space, forcing representations to balance high-recall retrieval with fine-grained selection, and they require trained retrievers, which are costly to maintain as knowledge graphs change. While recent work has begun to combine retrievers with LLM-based selectors, the interplay between the two stages has not been studied systematically. In this paper, we present a systematic comparison of retrieval strategies for candidate generation under a shared LLM-based selection stage, combining sparse retrieval (BM25), Web KB search, and a state-of-the-art trained dense retriever with several open- and closed-source LLMs. We show that, once selection is delegated to a capable LLM, training the retriever provides only modest additional value: a fully training-free BM25 retriever paired with an LLM selector reaches a new state of the art on the ZELDA benchmark, raising inKB micro-F1 from 82.3 to 86.3 (+4); pairing the same LLM with a trained dense retriever reaches 88.5. Decoupling retrieval from selection also exposes a limitation of current ED systems: when the correct entity is missing from retrieved candidates, they are forced to predict an incorrect entity. In contrast, our framework allows for abstention when retrieval failure is detected. In an evaluation setting that rewards correct abstentions, the training-free BM25 + LLM pipeline reaches 90.7 F1.
+
+## 10. Beyond Flat Netlist: Hierarchical Graph Representation Learning for Scalable Analysis of Sequential Circuits
+
+- Authors: Jingyi Zhou, Zhengyuan Shi, Jiaying Zhu, Ziyang Zheng, Qiang Xu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: 10.1145/3770743.3803902
+- Categories: cs.LG, cs.AI, cs.AR
+- Relevance: 3.08974902591747
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28188v1
+- PDF: https://arxiv.org/pdf/2608.28188v1
+- Local PDF: pdf/2026-09-01_10_Beyond Flat Netlist_ Hierarchical Graph Representation Learning for Scalable Analysis of Sequential Circuits.pdf
+
+Circuit Representation Learning (CRL) offers a powerful paradigm to guide and optimize core Electronic Design Automation (EDA) tasks, but its practical adoption is hindered by the immense scale of industrial netlists and a failure to explicitly model register-level temporal dynamics. To overcome these barriers, we introduce DeepSeq3, a novel hierarchical framework that abstracts circuits into a two-level representation: fine-grained combinational subgraphs partitioned by flip-flops (FFs), and a high-level Super-Node Graph (SNG) that models the register-transfer structure. A dual Graph Neural Network (GNN) architecture learns representations at both levels, capturing local Boolean logic and global state transitions. Crucially, we introduce a state-centric pre-training scheme that predicts the reachability between FF states, endowing the model with a deep understanding of temporal behavior. Demonstrated on large-scale benchmarks, DeepSeq3's approach yields superior scalability and richer representations, reducing bounded model checking (BMC) solving time by 18% while guaranteeing correctness.
+
+## 11. Do Medical Vision Models Reason About Anatomy? Probing the Spatial Inductive Biases of Learned Visual Representations
+
+- Authors: Naren Akash, Neeraja Ramanan
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: eess.IV, cs.AI, cs.CV, cs.LG
+- Relevance: 3.0490852998017277
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28092v1
+- PDF: https://arxiv.org/pdf/2608.28092v1
+- Local PDF: pdf/2026-09-01_11_Do Medical Vision Models Reason About Anatomy_ Probing the Spatial Inductive Biases of Learned Visual Representations.pdf
+
+Interpreting a CT scan means comparing structures on either side, judging how far apart organs sit, and knowing where each one belongs. Medical vision encoders are evaluated on diagnostic accuracy, or through assembled multimodal systems where a failure is hard to attribute, so it remains unclear whether their representations support any of this. We construct SPAR-Bench, eight probes over multi-organ abdominal CT that separate coordinate localization, relational reasoning, and spatial queries, and apply them to five architectural configurations and three medical foundation models, frozen and finetuned. Probes that ask for a comparison within the slice stay at chance, and neither pretraining scale, finetuning, nor architecture closes the gap. Probes that appear solved in domain fall to chance under zero-shot transfer, indicating that their accuracy reflects recall of canonical anatomy rather than computation over the image. Reading the same frozen features with a pooled head rather than the full set of tokens moves relational recovery from 0.7% to 67.8%, so pooled probing understates what a representation holds. Questions the encoders answer well are answered at chance by four open-weight MLLMs. Our results suggest these encoders carry a map of where organs usually lie, and little of the machinery for comparing structures within a particular patient. Code and data will be available at https://spar-bench.github.io.
+
+## 12. Predicting Single‐Cell Perturbation Responses Across Biological Contexts With a Deep Generative Model Integrating Optimal Transport
+
+- Authors: Jialiang Wang, Ziqi Liu, Zhengqian Zhang, Yikun Cao, Junjun Ren, Peng Cheng, Jingjing Tian, Lingyun Xie, Xin Lu, Zhanwei Du, Yongzhuang Liu
+- Source: openalex
+- Venue type: journal
+- Journal: Advanced Science
+- Publication status: published
+- Publication date: 2026-08-29
+- DOI: https://doi.org/10.1002/advs.77461
+- Categories: Single-cell and spatial transcriptomics, Cell Image Analysis Techniques, Generative Adversarial Networks and Image Synthesis
+- Relevance: 3.031861806000177
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1002/advs.77461
+- PDF: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.77461
+- Local PDF: Not downloaded
+
+ABSTRACT Predicting how single cells respond to perturbations is a central problem in computational biology, with potential relevance to emerging artificial intelligence virtual cell (AIVC) research and drug‐discovery efforts. However, substantial variation in perturbation responses across biological contexts and the limited generalizability of current models make prediction across cell types, patients, species, and other contexts particularly challenging. To address this challenge, we present single‐cell perturbation inference via latent optimal transport (scPILOT), a query‐conditioned framework for transferring responses to previously observed perturbations across biological contexts. scPILOT learns a generative latent representation through discriminator‐assisted training and separates perturbation inference into cell‐level response estimation from observed contexts and query‐specific response transfer using latent optimal transport. Across held‐out cell‐type, patient, and species benchmarks, scPILOT achieved context‐averaged R 2 mean /MMD 2 values of 0.945/0.137, 0.598/0.025, and 0.853/0.287, respectively. It also maintained strong population‐average accuracy in a held‐out cell‐line benchmark, while complementary analyses indicated that performance was associated with dataset learnability and query–context match. With the continued expansion of single‐cell perturbation datasets, scPILOT may provide a practical framework for transferring responses to previously observed perturbations across increasingly diverse biological contexts.
+
+## 13. A Novel Sparse Cellular Labeling System with Tunable Gradients and Long‐Term Stability
+
+- Authors: Xiaomei Tang, Zhenye Hou, Li Lu, Yige Song, Changdong Chai, Lanfang Li, Yuhang Shen, Shuo Wang, Ya Zhao, Jinyu Zeng, Yiqing Guo, Fuliang Jiang, Zhigao Xiang, Hao Li, Aodi He, Bing Zhang, Youming Lu, Xinyan Li
+- Source: openalex
+- Venue type: journal
+- Journal: Advanced Science
+- Publication status: published
+- Publication date: 2026-08-30
+- DOI: https://doi.org/10.1002/advs.77438
+- Categories: Neuroscience and Neural Engineering, Single-cell and spatial transcriptomics, Pluripotent Stem Cells Research
+- Relevance: 3.0192223119412622
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1002/advs.77438
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+ABSTRACT The dense packing of cells within tissues poses challenges for studying cellular properties. Sparse labeling, genetically targeting a small subset of densely distributed cells, provides a powerful approach to investigate cellular morphology, connectivity, dynamics, and functions, especially in neuroscience. However, current sparse labeling methods are generally restricted to fixed labeling densities and often exhibit a decline in sparsity over time. In this study, by maximizing the utility of commonly used recombinases and the relational recognition sites, we constructed a versatile sparse labeling system, termed Tri‐M (Multi‐recombinase, Multi‐recognition site, and Multi‐nested), built upon competitive recombination. The Tri‐M system, which integrates transgenic mice with viral injection, enables tunable and graded sparse labeling of specific cell types within specific brain regions with long‐term stability. This system significantly enhances the ability to track, analyze, and manipulate cells within tissues characterized by dense cellular packing, from single cells to populations.
+
+## 14. There and Back Again: Bidirectional Diffusion Bridges for Multimodality Translation
+
+- Authors: Gabe Guo, Elon Litman, Thanawat Sornwanee, Jose Blanchet, Stefano Ermon
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.010424597804744
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27885v1
+- PDF: https://arxiv.org/pdf/2608.27885v1
+- Local PDF: pdf/2026-09-01_14_There and Back Again_ Bidirectional Diffusion Bridges for Multimodality Translation.pdf
+
+Multimodality translation (e.g., text-to-image) is a core generative AI task. However, existing approaches (1) follow generative paths that do not directly represent the source modality, limiting the flexibility of some sampling algorithms; and (2) are unidirectional, preventing inversion (e.g., image-to-text). We propose BIT: Bidirectional Image-Text Diffusion Bridges. In contrast to previous approaches, BIT starts directly from text and interpolates into images, providing (1) a source-aware generative path that enables diverse and flexible sampling algorithms; and (2) an endpoint-conditioned process that can be traversed from image to text, providing a unified, bidirectional generative framework. BIT is derived through stochastic calculus, yielding SDE forms amenable to simulation and tractable loss functions that scale to high dimensions. Our experiments show that BIT is competitive with denoising-diffusion and deterministic-flow baselines, and outperforms them on several vision--language and natural-science evaluations.
+
+## 15. SciReC: Diagnostic Evaluation of Multimodal, Multi-Turn Relational Reasoning with Adaptive Interaction
+
+- Authors: Nilay Yilmaz, Naga Sai Abhiram Kusumba, Stella Wenxing Liu, Yezhou Yang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-07-01
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, cs.LG
+- Relevance: 2.984585276578855
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27461v1
+- PDF: https://arxiv.org/pdf/2608.27461v1
+- Local PDF: pdf/2026-09-01_15_SciReC_ Diagnostic Evaluation of Multimodal, Multi-Turn Relational Reasoning with Adaptive Interaction.pdf
+
+Relational reasoning requires the process of perceptual understanding, comparing, and integrating the underlying relationships between concepts. This ability consists of multiple categories, such as analogical, structural, and cause-effect, each capturing a different aspect of higher-order understanding. To examine the performance of multimodal large language models (MLLM) on these relational inference tasks, we developed SciReC, a model-adaptive multimodal academic dialog benchmark. As the relational reasoning process involves multiple representations and various factors (visual understanding, exhibiting knowledge, and memory recall), we propose DMRA, a deficit-based diagnostic framework that quantifies the contribution of these components to identify the primary cause of unsuccessful cases. Claude 4.6 achieved the best performance on the overall relational score with 73\%, followed by GPT 5.4 with 68\%. Performance trends indicate that open-source models achieve their lowest scores on spatial relations, while proprietary models struggle more with hierarchical and sequential relations. Across domains, model performance is lowest on Astronomy and highest on Psychology. The results of DMRA reveal that relational reasoning is the primary source of error across all models, followed by memory limitations.
+
+## 16. FastCNV: fast and accurate copy number variation prediction from high-definition spatial transcriptomics and scRNA-seq data
+
+- Authors: Gadea Cabrejas, Marine Sroussi, Hugo Croizer, Antoine Cazelles, Nicolas Salaün, Lara Jerman, Théo Z. Hirsch, Sophie Mouillet‐Richard, Pierre Laurent‐Puig, Clarice S. Groeneveld, Aurélien de Reyniès
+- Source: openalex
+- Venue type: journal
+- Journal: Genome Medicine
+- Publication status: published
+- Publication date: 2026-08-29
+- DOI: https://doi.org/10.1186/s13073-026-01731-w
+- Categories: Cancer Genomics and Diagnostics, Single-cell and spatial transcriptomics, Genomic variations and chromosomal abnormalities
+- Relevance: 2.9427224116414816
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1186/s13073-026-01731-w
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract Background Predicting DNA copy number variations (CNVs) from spatial transcriptomics (ST), including Visium HD, or single-cell RNA-sequencing (scRNA-seq) data helps to distinguish malignant from non-malignant cells and to characterize the clonal architecture of tumor cells. Though there are existing methods of CNV analysis, they are often limited by slow speed, high memory consumption, lower accuracy in the absence of a reference for diploid cells, lower sensitivity at low read counts, and no support for clonal tree construction. Results To overcome these issues, we developed the R package fastCNV for detecting CNVs from ST, including Visium HD, or scRNA-seq data. FastCNV pools diploid references across samples and, within each sample, aggregates similar spots or cells with few reads into meta spots or cells. It automatically builds a clonality tree, and runs several times faster than other methods while using less memory. To measure the accuracy of fastCNV, we used 117 cancer cell line samples with both scRNA-seq and bulk whole-exome sequencing (WES) data. FastCNV identified CNVs highly correlated to those calculated from WES data (median correlation above 0.75), showing a significant improvement as compared to other methods such as inferCNV. Notably, fastCNV enables, for the first time, the analysis of CNVs from the Visium HD spatial transcriptomics technology. Applied to Visium HD breast cancer ST data, fastCNV identifies tumor subclones tightly related to different histologies, linking specific genetic aberrations to tumor progression. Conclusions FastCNV is a significant improvement on existing R methods for CNV detection from ST, including Visium HD, or scRNA-seq data in terms of speed, memory usage, sensitivity and accuracy. This highlights its potential to advance cancer research and personalized medicine. FastCNV is available at https://github.com/must-bioinfo/fastCNV/ .
+
+## 17. GRACE:Gradient-guided Coreset Selection for LLM Unlearning
+
+- Authors: Praveen Bushipaka, Andrea D'Angelo, Lucia Passaro, Tommaso Cucinotta
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.AI, cs.LG
+- Relevance: 2.9273418566160347
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28361v1
+- PDF: https://arxiv.org/pdf/2608.28361v1
+- Local PDF: pdf/2026-09-01_17_GRACE_Gradient-guided Coreset Selection for LLM Unlearning.pdf
+
+Machine Unlearning methods for Large Language Models typically assume pre-specified forget and retain sets. In realistic settings, however, requests may provide only a few examples of undesired behavior, requiring forget and retain sets to be inferred from heterogeneous corpora. We study this data-selection problem and propose GRACE , a gradient-guided coreset selection method that constructs both forget and retain sets for LLM unlearning. GRACE first computes a forget direction from seed examples that elicit the undesired behavior, then selects a compact forget coreset whose gradients approximate this direction using non-negative orthogonal matching pursuit. To preserve model utility, it selects retain examples after projecting out the forget direction and applying clustered orthogonal matching pursuit in the remaining gradient space. Across two target domains, two model families, and four unlearning algorithms, GRACE improves model utility while maintaining comparable forget quality, with particularly consistent gains over prior gradient-based selection methods.
+
+## 18. Parser States Already Know: Structure-Conditioned KV Persistence for Structured Generation
+
+- Authors: Linze Wu, Xinrui Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.8438081245527904
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28276v1
+- PDF: https://arxiv.org/pdf/2608.28276v1
+- Local PDF: pdf/2026-09-01_18_Parser States Already Know_ Structure-Conditioned KV Persistence for Structured Generation.pdf
+
+Structured generation underpins large language model (LLM) agents that produce JSON, SQL, and function calls, where a single wrong field can cause the downstream action to fail. Constrained decoding already tracks parser transitions to enforce formal validity, and these transitions expose how generated tokens participate in schema-critical decisions such as required fields, arguments, and structural boundaries under the active grammar. Existing KV compression largely leaves this task-relevant structural signal unused. We introduce PASK (Parser-Aware Structural KV Persistence), which turns parser-derived structure into layer-group-specific KV persistence decisions. PASK addresses the mismatch between model-side KV sensitivity and task-level structured risk by using task-error sensitivity to set minimum protection floors and attention-output distortion to allocate residual KV capacity. An offline calibration stage compiles these signals into a persistence policy, leaving only lightweight structure-conditioned lookup online. At a targe total KV budget of 0.33, PASK outperforms the strongest compressed baseline by 17.39 percentage points on average across eight BFCL non-live and Live subcategories on Qwen3-4B. In end-to-end serving, PASK achieves up to 2.2x higher throughput and 3.3x lower TPOT, while using 0.53x the peak GPU memory of Full KV.
+
+## 19. Trajectory-Level Speculative Decoding for Diffusion Language Models
+
+- Authors: Tianxiang Pan, Baitao Gong, Mo Guang, Hongwei Yong, Tianpeng Jiang, Yaqian Li, Zheng Cao, Kaiwen Long
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-27
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 2.8391031121967316
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27514v1
+- PDF: https://arxiv.org/pdf/2608.27514v1
+- Local PDF: pdf/2026-09-01_19_Trajectory-Level Speculative Decoding for Diffusion Language Models.pdf
+
+Diffusion-based language models (dLLMs) enable parallel token generation through iterative denoising, but existing decoding strategies collapse to single-token generation under low confidence, severely limiting throughput. Unlike autoregressive models where speculative decoding operates on token sequences in a fixed left-to-right order, dLLMs require speculating over denoising trajectories-sequences of multi-token updates with explicit positions and unmasking orders. We develop a trajectory-level speculative framework that constructs draft denoising trajectories via confidence-stratified tree exploration and verifies them through blockwise parallel evaluation with bidirectional attention masking. Our method further introduces inter-block speculation, exploiting diffusion models' bidirectional structure to perform cross-block lookahead. We formally characterize when this approach is exact and identify trajectory drift as the fundamental cost of increased parallelism. Building on Fast-dLLM's dual-cache infrastructure, our framework reduces denoising iterations by 30-40% and increases tokens-per-step from 2.6 to 4.3, achieving 7-14x speedup over vanilla dLLMs and 1.3x over Fast-dLLM with less than 1% accuracy change across reasoning and code benchmarks.
+
+## 20. A Correspondence Score for Validating Learned Patient Representations in Clinical Tabular Data
+
+- Authors: Majid Lotfian Delouee, Sjors G. J. G. In 't Veld, Martijn C. Schut
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-26
+- DOI: Unavailable
+- Categories: q-bio.QM
+- Relevance: 2.831671737634809
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27489v1
+- PDF: https://arxiv.org/pdf/2608.27489v1
+- Local PDF: pdf/2026-09-01_20_A Correspondence Score for Validating Learned Patient Representations in Clinical Tabular Data.pdf
+
+Identifying patients with similar clinical characteristics is important for cohort discovery, clinical decision support, and personalized medicine. However, it is unclear whether learned patient representations preserve the similarities present in the original clinical data. We propose a correspondence score to directly assess how well these relationships are preserved, independently of labeled outcomes. The score combines complementary relationship-preservation metrics, with dataset-specific weights estimated through Bayesian optimization. We evaluated the approach on four complete blood count datasets using representations generated by five tabular foundation models and six classical transformation methods. Correspondence differed substantially across methods and representation dimensionalities. Patient relationships were generally best preserved at intermediate dimensionalities, while stronger reduction or expansion introduced greater deviations from the original data structure. Foundation models preserved correspondence more consistently than classical methods, with improvements ranging from approximately 5% to over 125%. The proposed score provides a way to evaluate representation quality before downstream use and supports informed selection of representation methods and dimensionalities.
+
+## 21. Credo: Reusable Declarative Primitives for Agentic Workflows
+
+- Authors: Duo Lu, Andrew Crotty, Uğur Çetintemel
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.AI, cs.DB
+- Relevance: 2.7986138827050286
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27790v1
+- PDF: https://arxiv.org/pdf/2608.27790v1
+- Local PDF: pdf/2026-09-01_21_Credo_ Reusable Declarative Primitives for Agentic Workflows.pdf
+
+An LLM application depends on both a model and a harness: the program that determines what each call sees, how many calls to make, and which answers to trust. Coding agents can now discover strong harnesses by searching over candidate programs, but the resulting artifact is an opaque block of imperative code whose logical steps, runtime signals, physical execution decisions, and prompt strategies remain implicit and task-specific, forcing subsequent tasks to start the harness search process from scratch. The potential for reuse, however, is substantial. A searched harness encodes significant knowledge, such as the logical steps that work, the signals that matter, the physical operator decisions that adapt execution, and the prompt strategies that are effective, yet this knowledge is buried in imperative code with no inspectable or reusable structure, nor does it carry any provenance or metadata. Credo addresses this problem by recovering a structured declarative description of a searched harness, tagging each extracted primitive with relevant metadata, and cataloguing all of it with provenance. A compiler can then bind stored primitives to generate harnesses for new tasks without having to start the search over from scratch. This paper provides preliminary results demonstrating the potential of our approach and lays out a related research agenda that the database community is well-positioned to tackle, including cost-based compilation over declarative catalogs and catalog maintenance under model and workload drift.
+
+## 22. MAIL: Memory-driven, Adaptive, Incremental, and Literature-grounded Framework for Hypothesis Generation in Chemistry
+
+- Authors: Mahdi Babaei, Xueshen Li, Yutao Kuang, Jolene P. Reid, Yu Gan
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.7867943208582666
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.28315v1
+- PDF: https://arxiv.org/pdf/2608.28315v1
+- Local PDF: pdf/2026-09-01_22_MAIL_ Memory-driven, Adaptive, Incremental, and Literature-grounded Framework for Hypothesis Generation in Chemistry.pdf
+
+The ever-expanding volume of the chemical literature offers unprecedented opportunities to generate novel and impactful hypotheses. However, the bottleneck lies in efficiently navigating this vast knowledge base to formulate high-quality, experimentally meaningful insights.
+  While Large Language Models (LLMs) show promise for this task, existing methods often rely on static inspiration corpora, predefined heuristics, or laborious human-in-the-loop pipelines and decision-support frameworks that limit scalability and novelty. In this work, we propose an automated approach, a Memory-augmented, Adaptive, Incremental, and Literature-grounded (MAIL) framework for hypothesis generation in chemistry. Our MAIL method formulates hypothesis generation as a temporally grounded, memory-driven reasoning process, where hypotheses emerge from an evolving conceptual path that continuously accumulates and reinterprets prior knowledge. We evaluated the MAIL framework on a public TOMATO-Chem dataset and a newly curated and disseminated high-novelty nature/science challenge (HN-NS) dataset. Across both datasets, MAIL generates structurally coherent and mechanistically plausible hypotheses, achieves the highest MIOS and MPOS by more effectively recovering the central ideas and methodological elements of the historical target hypotheses, and obtains the highest overall expert-evaluation scores for scientific quality. These results demonstrate the potential of LLMs to autonomously explore chemical domains and generate hypotheses that are both innovative and chemically plausible.
+
+## 23. CoRe-MoE: Compact Reusable MoE for Continual Multimodal Instruction Tuning
+
+- Authors: Runze Liu, Naibin Gu, Mingxu Ai, Yuqing Li, Peng Fu, Zheng Lin, Weiping Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-28
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.7803816176475755
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27867v1
+- PDF: https://arxiv.org/pdf/2608.27867v1
+- Local PDF: pdf/2026-09-01_23_CoRe-MoE_ Compact Reusable MoE for Continual Multimodal Instruction Tuning.pdf
+
+Continual multimodal instruction tuning requires multimodal large language models to acquire new task abilities sequentially while preserving previously learned knowledge. LoRA-MoE provides a promising solution by introducing expert-based capacity, but repeatedly learning and maintaining full LoRA experts leads to substantial parameter overhead. This raises a natural question: is full expert expansion necessary for every new task? To answer it, we analyze the SVD of task-specific LoRA updates and observe substantial overlap in their input- and output-side LoRA direction subspaces, with task-specific adaptation largely captured by lightweight coordinates over these subspaces. Motivated by this observation, we propose CoRe-MoE, a Compact Reusable MoE framework for parameter-efficient continual multimodal instruction tuning. CoRe-MoE extracts reusable input- and output-side direction bases from an initial expert bank, and for subsequent tasks trains only compact coordinate experts together with task-specific low-rank routers. Experiments on two representative MLLMs show that CoRe-MoE improves final average performance over the strongest competing baseline by up to 5.90 points, while using less than 1% of the trainable parameters required by sequential LoRA for later tasks. The code is publicly available at https://github.com/runzezz/CoRe-MoE.
+
+## 24. Destroy Me: Automatic Artifact Generation for Histopathology Images
+
+- Authors: Zuzanna Krawczyk-Borysiak, Adam Krawczyk, Mateusz Miller, Gabriela Kaczmarek, Sławomir Pakuło, Małgorzata Sokół, Żaneta Swiderska-Chadaj
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-27
+- DOI: Unavailable
+- Categories: eess.IV, cs.AI, cs.CV, cs.LG
+- Relevance: 2.77984977715629
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2608.27516v1
+- PDF: https://arxiv.org/pdf/2608.27516v1
+- Local PDF: pdf/2026-09-01_24_Destroy Me_ Automatic Artifact Generation for Histopathology Images.pdf
+
+Deep learning's diagnostic utility in pathology is constrained by model vulnerability to real-world data imperfections. While current strategies favor "perfect data" by filtering low-quality regions, which can lead to the loss of valuable diagnostic context, we propose a paradigm shift: engineering models to thrive in imperfect environments using "Destroy Me", a hybrid framework for realistic artifact synthesis and robust data augmentation. Our approach combines Stable Diffusion, fine-tuned to preserve morphological continuity by realistically integrating artifacts with the underlying tissue architecture, with physics-based procedural modeling to synthesize six common artifact types: tissue folds, precipitates, blur, stitching errors, dust, and pen markers. Artifact fidelity is assessed using Kernel Inception Distance (KID) and color Wasserstein distance metrics. Validating this strategy on lung adenocarcinoma pattern classification with an nnU-Net, we confirm that models trained on "destroyed" patches consistently outperform baselines on independent real-world datasets. Specifically, we observed a 10.5% relative improvement in macro F1-score and a 15% relative increase in the Cohen's Kappa ($κ$) coefficient. Crucially, our results demonstrate that selective, impact-weighted augmentation is vital for balancing practical robustness with the preservation of subtle diagnostic features.
+
+## 25. Grounding Agent Memory in Contextual Intent
+
+- Authors: Ruozhen Yang, Yucheng Jiang, Yueqi Jiang, Priyanka Kargupta, Yunyi Zhang, Jiawei Han
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7402616144898455
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.584/
+- PDF: https://aclanthology.org/2026.findings-acl.584.pdf
+- Local PDF: pdf/2026-09-01_25_Grounding Agent Memory in Contextual Intent.pdf
+
+Deploying large language models in long-horizon, goal-oriented interactions remains challenging because similar entities and facts recur under different latent goals and con-straints, causing memory systems to retrieve context-mismatched evidence. We propose STITCH (Structured Intent Tracking in Contextual History), an agentic memory system that indexes each trajectory step with a structured retrieval cue, contextual intent, and retrieves history by matching the current step’s intent. Contextual intent provides compact signals that disambiguate repeated mentions and reduce interference: (1) the current latent goal defining a thematic segment, (2) the action type, and (3) the salient entity types anchoring which attributes matter. During inference, STITCH filters and prioritizes memory snippets by intent compatibility, suppressing semantically similar but context-incompatible history.For evaluation, we introduce CAME-Bench, a benchmark for context-aware retrieval in realistic, dynamic, goal-oriented trajectories. Across CAME-Bench and LongMemEval, STITCH achieves state-of-the-art performance, outperforming the strongest baseline by 35.6%, with the largest gains as trajectory length increases. Our analysis shows that intent indexing substantially reduces retrieval noise, supporting intent-aware memory for robust long-horizon reasoning.
+
+## 26. Eliciting Medical Reasoning with Knowledge-enhanced Data Synthesis: A Semi-Supervised Reinforcement Learning Approach
+
+- Authors: Haolin Li, Shuyang Jiang, Ruipeng Zhang, Jiangchao Yao, Ya Zhang, Yanfeng Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7399831335796536
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.137/
+- PDF: https://aclanthology.org/2026.findings-acl.137.pdf
+- Local PDF: pdf/2026-09-01_26_Eliciting Medical Reasoning with Knowledge-enhanced Data Synthesis_ A Semi-Supervised Reinforcement Learning Approach.pdf
+
+While large language models hold promise for complex medical applications, their development is hindered by the scarcity of high-quality reasoning data. To address this issue, existing approaches typically distill chain-of-thought reasoning traces from large proprietary models via supervised fine-tuning, then conduct reinforcement learning (RL). These methods exhibit limited improvement on underrepresented domains like rare diseases while incurring substantial costs from generating complex reasoning chains. To efficiently enhance medical reasoning, we propose MedSSR, a Medical Knowledge-enhanced data Synthesis and Semi-supervised Reinforcement learning framework. Our framework first employs rare disease knowledge to synthesize distribution-controllable reasoning questions. We then utilize the policy model itself to generate high-quality pseudo-labels. This enables a two-stage, intrinsic-to-extrinsic training paradigm: self-supervised RL on the pseudo-labeled synthetic data, followed by supervised RL on the human-annotated real data. MedSSR scales model training efficiently without relying on costly trace distillation. Extensive experiments on Qwen and Llama demonstrate that our method outperforms existing methods across ten medical benchmarks, achieving up to +5.93% gain on rare-disease tasks. Our code is available at https://github.com/tdlhl/MedSSR .
+
+## 27. EpiCaR: Knowing What You Don’t Know Matters for Better Reasoning in LLMs
+
+- Authors: Jewon Yeom, Jaewon Sok, Seonghyeon Park, Jeongjae Park, Taesup Kim
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.73966130107318
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1026/
+- PDF: https://aclanthology.org/2026.acl-long.1026.pdf
+- Local PDF: pdf/2026-09-01_27_EpiCaR_ Knowing What You Don’t Know Matters for Better Reasoning in LLMs.pdf
+
+Improving the reasoning abilities of large language models (LLMs) has largely relied on iterative self-training with model-generated data. While effective at boosting accuracy, existing approaches primarily reinforce successful reasoning paths, incurring a substantial calibration cost: models become overconfident and lose the ability to represent uncertainty. This failure has been characterized as a form of model collapse in alignment, where predictive distributions degenerate toward low-variance point estimates.We address this issue by reframing open-ended reasoning training as an epistemic learning problem, in which models must learn not only how to reason, but also when their reasoning should be trusted. We propose epistemically-calibrated reasoning (EpiCaR) as a training objective that jointly optimizes reasoning performance and calibration, and instantiate it within an iterative supervised fine-tuning framework using explicitly extracted meta-cognitive self-evaluation signals. Experiments on Llama-3 and Qwen-3 families demonstrate that our approach achieves Pareto-superiority over standard baselines in both accuracy and calibration, particularly in models with sufficient reasoning capacity (e.g., 3B+). This framework generalizes effectively to OOD mathematical reasoning (GSM8K) and code generation (MBPP). Ultimately, our approach enables a 3× reduction in the overall inference compute budget, matching the K=30 majority-vote performance of STaR with only K=10 confidence-weighted samples, entirely without the multi-model overhead of external verifiers.
+
+## 28. ToolCPT: Improving Tool Utilization in LLM Agents via Continuous Pre-training
+
+- Authors: Yifan Yang, Jinghui Lu, Evadeng, Ao Yang, Peijie Yu, TingHao YU, Feng Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7394507671807276
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.776/
+- PDF: https://aclanthology.org/2026.findings-acl.776.pdf
+- Local PDF: pdf/2026-09-01_28_ToolCPT_ Improving Tool Utilization in LLM Agents via Continuous Pre-training.pdf
+
+Autonomous agents powered by large language models (LLM-based agents) are capable of using off-the-shelf tools to interact with the environment, solve real-world problems, and boost work efficiency. However, current approaches to enhancing tool use for LLM-based agents primarily focus on post-training fine-tuning or test-time context extension. These methods overlook the fundamental tool knowledge acquisition during the early training phase, where models actually learn and internalize core knowledge representations, restricting model performance on out-of-distribution tool usage. To solve such a problem, we introduce enhancing tool knowledge for LLM-based agents during c ontinuous p re- t raining ( ToolCPT ). We identify and bridge a key gap in current LLM training by shifting focus from tool-calling patterns to deep internalization of core tool-knowledge representations. We begin by curating 5.1 million code artifacts from large-scale, high-quality code repositories. These artifacts are selected based on a set of criteria that defines a usable “proxy agent tool”, thereby forming a comprehensive agent tool library. For each proxy tool, we then create a detailed playbook covering implementation specifications, core functionalities, interaction protocols with other tools, and illustrative positive and negative examples. This process yields a large-scale tool knowledge corpus comprising 18 billion tokens, which is used to continuously pre-train our model. Experiments show our playbook-enhanced corpus catalyzes deep knowledge internalization, driving the model to notable performance gains on multiple standard benchmarks.
+
+## 29. FineSteer: A Unified Framework for Fine-Grained Inference-Time Steering in Large Language Models
+
+- Authors: Zixuan Weng, Jinghuai Zhang, Kunlin Cai, Ying Li, Peiran Wang, Yuan Tian
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.739389871892486
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.852/
+- PDF: https://aclanthology.org/2026.acl-long.852.pdf
+- Local PDF: pdf/2026-09-01_29_FineSteer_ A Unified Framework for Fine-Grained Inference-Time Steering in Large Language Models.pdf
+
+Large language models (LLMs) often exhibit undesirable behaviors, such as safety violations and hallucinations. Although inference-time steering offers a cost-effective way to adjust model behavior without updating its parameters, existing methods often fail to be simultaneously effective, utility-preserving, and training-efficient due to their rigid, one-size-fits-all designs and limited adaptability. In this work, we present FineSteer, a novel steering framework that decomposes inference-time steering into two complementary stages—conditional steering and fine-grained vector synthesis—allowing fine-grained control over when and how to steer internal representations. In the first stage, we introduce a Subspace-guided Conditional Steering (SCS) mechanism that preserves model utility by avoiding unnecessary steering. In the second stage, we propose a Mixture-of-Steering-Experts (MoSE) mechanism that captures the multimodal nature of desired steering behaviors and generates query-specific steering vectors for improved effectiveness. Through tailored designs in both SCS and MoSE, FineSteer maintains robust performance on general queries while adaptively optimizing steering vectors for targeted inputs in a training-efficient manner. Extensive experiments on safety and truthfulness benchmarks show that FineSteer outperforms the state-of-the-art methods in overall performance (e.g., a 7.6% improvement on TruthfulQA over Llama-3), achieving stronger steering performance with minimal utility loss. The code is available at https://github.com/YukinoAsuna/FineSteer
+
+## 30. SPIDE: Serial and Parallel Intertwined Speculative Decoding
+
+- Authors: Wenru Xu, Peixuan Xu, Ziqi Yang, Ming Hu, Zihui Wang, Jianzhong Qi, Rongshan Yu, Xiaoliang Fan, Cheng Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7391364976711396
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1040/
+- PDF: https://aclanthology.org/2026.findings-acl.1040.pdf
+- Local PDF: pdf/2026-09-01_30_SPIDE_ Serial and Parallel Intertwined Speculative Decoding.pdf
+
+Speculative Decoding (SD) reduces inference latency for Large Language Models (LLMs) by leveraging an efficient draft model to generate candidate tokens, which are subsequently verified by the target model. To enhance acceleration while reducing the LLM usage costs, we propose Serial and Parallel Intertwined Speculative DEcoding (SPIDE) — a novel training-free SD framework that orchestrates dynamic alternation combining serial dynamic drafting with parallel draft verification. We maintain a confidence-acceptance mapping table during the decoding process. In the serial dynamic drafting module, we leverage this table to evaluate the reliability of the draft sequence and adjust draft lengths adaptively. In the parallel draft verification module, we alleviate drafting-termination conflicts that compromise efficiency, and we update the mapping table synchronously. We conduct experimental evaluations on diverse model pairs and text generation tasks to assess the effectiveness of SPIDE. Compared with autoregressive decoding, SPIDE is speeded up by 3.25× on average and up to 4.56×. Compared with vanilla SD, SPIDE only increases the LLM usage cost by 8.2% on average, but brings an additional 67.7% speedup on average.
