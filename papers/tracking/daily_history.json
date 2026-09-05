@@ -251,6 +251,13 @@
     "title": "Maia 200: A Software Defined Dataflow System for Large-scale AI Acceleration",
     "url": "http://arxiv.org/abs/2608.24664v1"
   },
+  "title:metastructatlasagrounded3dvisionlanguagedatasetandbenchmarkforfunctionalandstructuralreasoninginwholebodypetct": {
+    "doi": null,
+    "sent_date": "2026-09-05",
+    "source": "arxiv",
+    "title": "MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structural Reasoning in Whole-Body PET/CT",
+    "url": "http://arxiv.org/abs/2609.03690v1"
+  },
   "title:mmagentr2learningtorerankandrejectforagenticmrag": {
     "doi": null,
     "sent_date": "2026-07-10",
