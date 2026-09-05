@@ -631,3 +631,633 @@ Differentiable causal discovery methods increasingly encode expert priors as for
 - Local PDF: pdf/2026-09-05_30_High-Dimensional Learning Dynamics of Attention-Indexed Models.pdf
 
 Attention mechanisms are central to modern foundation models, yet their training dynamics remain poorly understood, especially when the attention matrices have extensive rank. In this work, we study attention-indexed models, a broad framework that can represent multi-layer and multi-head attention architectures. First, we show that, in a suitable high-dimensional limit, the population-loss landscape is characterized by a finite set of trace order parameters. In contrast, online stochastic gradient descent (SGD) is governed by an infinite hierarchy of matrix moments, which we show can be exponentially well-approximated by a finite truncated system. Second, this framework reveals that attention parameterization itself can act as an architectural implicit bias. Direct optimization of an attention matrix $S\in\mathbb{R}^{d\times d}$ can remain trapped in an uninformative state. Tied attention ($S=WW^\top$) induces an automatic symmetry-breaking mechanism and yields weak recovery in $Θ(d^2\log d)$ samples. For untied attention, $S=UV^\top$, we uncover a fast-slow mechanism: the pre-activation mean first evolves on a fast timescale, while the overlaps evolve on a slower one. Weak recovery on the $Θ(d^2\log d)$ scale occurs when the state selected by the fast dynamics breaks the initial symmetry.
+
+## 31. Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types
+
+- Authors: Lieke Michielsen, Andrey D. Prjibelski, Careen Foord, Yelizaveta Spiegelman, Taewoo Kim, Wen Hu, Julien Jarroux, Justine Hsu, Rebecca Pfeil, Xinyi Zhang, Li Gan, Alexandru I. Tomescu, Iman Hajirasouliha, Hagen Tilgner
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Methods
+- Publication status: published
+- Publication date: 2026-09-01
+- DOI: https://doi.org/10.1038/s41592-026-03211-w
+- Categories: Single-cell and spatial transcriptomics, Neurogenesis and neuroplasticity mechanisms, Neuroinflammation and Neurodegeneration Mechanisms
+- Relevance: 3.013372478203224
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41592-026-03211-w
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract Spatial long-read technologies are increasingly common but usually lack single-cell resolution. This leaves unanswered whether spatially variable isoforms reflect variability within one cell type or differences in region-specific cell-type composition. Here, we developed Spl-ISO-Seq2 (500-nm resolution) and accompanying software, Spl-IsoQuant-2 and Spl-IsoFind, enabling long-read sequencing of >450 million barcodes versus 80,000 previously. Applying this to the adult mouse brain, we compared differential isoform abundance between known regions and spatial isoform patterns independent of predefined regions. Both identified overlapping hits, for example, Rps24 in oligodendrocytes. For known Snap25 spatial isoform variation, we show that it occurs in excitatory neurons. The region-agnostic approach also uncovered patterns missed by region-based comparisons, for example, for Ighm . Notably, many spatial isoform signals are not driven by cell-type composition alone. Finally, our software is applicable to many spatial and single-cell protocols, demonstrating reproducibility between platforms (for example, Visium HD/Stereo-seq). Overall, our experimental/analytical methods enable a submicron-resolution-isoform view and open avenues for spatial isoform disease research.
+
+## 32. An in silico transcription factor perturbation simulator uncovers diverse genetic architectures of brain disorders
+
+- Authors: Haiyang Wang, Qingyu Li, Ying Zhu
+- Source: openalex
+- Venue type: journal
+- Journal: Genome Medicine
+- Publication status: published
+- Publication date: 2026-09-04
+- DOI: https://doi.org/10.1186/s13073-026-01752-5
+- Categories: Single-cell and spatial transcriptomics, Genomics and Chromatin Dynamics, Genetic Associations and Epidemiology
+- Relevance: 2.7422608821302297
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1186/s13073-026-01752-5
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Determining mechanisms and developing treatments for brain disorders with complex genetic architectures remains a challenge. We developed TFdisc, an in silico transcription factor (TF) perturbation simulator that uses wild-type single-cell RNA sequencing data to emulate corresponding post-TF perturbations. TFdisc’s accuracy in reconstructing gene regulatory networks, identifying differentially expressed genes, and predicting alterations in cell identity and lineage differentiation post-TF perturbations was validated across multiple perturbation datasets.Applying TFdisc to brain disorder risk factors revealed distinct molecular and cellular mechanisms. Further simulation of multiple TF simultaneous perturbations uncovered a “jigsaw mechanism” for schizophrenia and a “monolithic mechanism” for autism spectrum disorder.
+
+## 33. Language Models Struggle to Use Representations Learned In-Context
+
+- Authors: Michael A. Lepori, Tal Linzen, Ann Yuan, Katja Filippova
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.742187345559194
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.676/
+- PDF: https://aclanthology.org/2026.acl-long.676.pdf
+- Local PDF: pdf/2026-09-05_33_Language Models Struggle to Use Representations Learned In-Context.pdf
+
+Though large language models (LLMs) have enabled great success across a wide variety of tasks, they still appear to fall short of one of the loftier goals of artificial intelligence research: creating an artificial system that can adapt its behavior to radically new contexts upon deployment. One important step towards this goal is to create systems that can induce rich representations of data that are seen in-context, and then flexibly deploy these representations to accomplish goals. Recently, Park et al. 2024 demonstrated that current LLMs are indeed capable of inducing such representation from context (i.e., in-context representation learning). The present study investigates whether LLMs can use these representations to complete simple downstream tasks.We first assess whether open-weights LLMs can use in-context representations for next-token prediction, and then probe models using a novel task, adaptive world modeling. In both tasks, we find evidence that open-weights LLMs struggle to deploy representations of novel semantics that are defined in-context, even if they encode these semantics in their latent representations. Furthermore, we assess closed-source, state-of-the-art reasoning models on the adaptive world modeling task, demonstrating that even the most performant LLMs cannot reliably leverage novel patterns presented in-context. Overall, this work seeks to inspire novel methods for encouraging models to not only encode information presented in-context, but to do so in a manner that supports flexible deployment of this information.
+
+## 34. I²B-LPO: Latent Policy Optimization via Iterative Information Bottleneck
+
+- Authors: Huilin Deng, Hongchen Luo, Yue Zhu, Long Li, Zhuoyue Chen, Xinghao Zhao, Ming LI, Chuyang Zhao, Jihai Zhang, MengChang Wang, Yang Cao, Yu Kang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.739040755778566
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1084/
+- PDF: https://aclanthology.org/2026.acl-long.1084.pdf
+- Local PDF: pdf/2026-09-05_34_I²B-LPO_ Latent Policy Optimization via Iterative Information Bottleneck.pdf
+
+Despite recent advances in Reinforcement learning with verifiable rewards (RLVR) for large language model (LLM) reasoning, most methods suffer from exploration collapse, as the semantic homogeneity of random rollouts traps models in narrow, over-optimized behaviors. Existing methods leverage policy entropy to encourage exploration, but face inherent limitations: global entropy regularization is susceptible to reward hacking, inducing meaningless verbosity, whereas local token-selective updates struggle with the strong inductive bias of pre-trained models. To this end, we propose Latent Policy Optimization via Iterative Information Bottleneck ( I²B-LPO), which shifts from statistical perturbation of token distributions to topological branching of reasoning trajectories. I²BLPO triggers latent branching at high-entropy states to diversify reasoning trajectories and applies the Information Bottleneck as a trajectory filter and self-reward to ensure concise and informative exploration. Empirical results on four mathematical benchmarks demonstrate that I²B-LPO achieves state-of-the-art performance, with margins of up to 5.3% in accuracy and 7.4% in diversity metrics. Code is available at https://github.com/denghuilin-cyber/IIB-LPO .
+
+## 35. Beyond Transcription: Unified Audio Schema for Perception-Aware AudioLLMs
+
+- Authors: Linhao Zhang, Yuhan Song, Aiwei Liu, Chuhan Wu, Sijun Zhang, Wei Jia, Yuan Liu, Houfeng Wang, Zhou Xiao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.73864352729774
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.967/
+- PDF: https://aclanthology.org/2026.findings-acl.967.pdf
+- Local PDF: pdf/2026-09-05_35_Beyond Transcription_ Unified Audio Schema for Perception-Aware AudioLLMs.pdf
+
+Recent Audio Large Language Models (AudioLLMs) exhibit a striking performance inversion: while excelling at complex reasoning tasks, they consistently underperform on fine-grained acoustic perception. We attribute this gap to a fundamental limitation of ASR-centric training, which provides precise linguistic targets but implicitly teaches models to suppress paralinguistic cues and acoustic events as noise. To address this, we propose Unified Audio Schema (UAS), a holistic and structured supervision framework that organizes audio information into three explicit components—Transcription, Paralinguistics, and Non-linguistic Events—within a unified JSON format. This design achieves comprehensive acoustic coverage without sacrificing the tight audio-text alignment that enables reasoning. We validate the effectiveness of this supervision strategy by applying it to both discrete and continuous AudioLLM architectures. Extensive experiments on MMSU, MMAR, and MMAU demonstrate that UAS-Audio yields consistent improvements, boosting fine-grained perception by 10.9% on MMSU over the same-size state-of-the-art models while preserving robust reasoning capabilities. Our code and model are publicly available at https://github.com/Tencent/Unified_Audio_Schema .
+
+## 36. BubbleRAG: Interactive Cognitive Offloading with Thought Bubble in Retrieval-Augmented Generation
+
+- Authors: Fuda Ye, Jiachuan Wang, Yongqi Zhang, Lei Chen, Shuangyin Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7376789740683116
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2163/
+- PDF: https://aclanthology.org/2026.findings-acl.2163.pdf
+- Local PDF: pdf/2026-09-05_36_BubbleRAG_ Interactive Cognitive Offloading with Thought Bubble in Retrieval-Augmented Generation.pdf
+
+Retrieval-augmented generation (RAG) extends the capabilities of large language models (LLMs) by providing access to external knowledge. However, traditional retrieval-augmented LLMs rely on a silent reading paradigm that processes all retrieved documents passively, forcing them to reason without any interaction with the documents. This paradigm contrasts sharply with human interactive reading behavior, where external tools, such as bookmarks and notes, are used to offload cognitive demands. This paper introduces BubbleRAG, an enhanced RAG framework that emulates human interactive reading through annotation and re-reading. Specifically, BubbleRAG utilizes a lightweight thought bubble module that offloads LLM’s internal cognition into external bookmark tokens, which are then annotated back into the context. These bookmarks serve as externalized memory, allowing the LLM to revisit these annotations in subsequent reading and answering. Notably, BubbleRAG is particularly suitable for low-resource scenarios, as the LLM parameters remain frozen. Extensive experiments confirm the effectiveness, robustness, and generalizability of BubbleRAG. Our findings demonstrate that BubbleRAG enables LLMs to achieve superior evidence identification abilities typically seen in retrievers, while establishing a cognitive link between external and internal information during answer generation. The source code is available at https://github.com/yefd/BubbleRAG .
+
+## 37. TokenTiming: A Dynamic Alignment Method for Universal Speculative Decoding Model Pairs
+
+- Authors: Sibo Xiao, Fu Jinyuan, Zhongle Xie, Lidan Shou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7368932405538575
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1983/
+- PDF: https://aclanthology.org/2026.acl-long.1983.pdf
+- Local PDF: pdf/2026-09-05_37_TokenTiming_ A Dynamic Alignment Method for Universal Speculative Decoding Model Pairs.pdf
+
+Accelerating the inference of large language models (LLMs) has been a critical challenge in generative AI. Speculative decoding (SD) substantially improves LLM inference efficiency. However, its utility is limited by a fundamental constraint: the draft and target models must share the same vocabulary, thus limiting the herd of available draft models and often necessitating the training of a new model from scratch. Inspired by Dynamic Time Warping (DTW), a classic algorithm for aligning time series, we propose the algorithm TokenTiming for universal speculative decoding. It operates by re-encoding the draft token sequence to get a new target token sequence, and then uses DTW to build a mapping to transfer the probability distributions for speculative sampling. Benefiting from this, our method accommodates mismatched vocabularies and works with any off-the-shelf models without retraining and modification. We conduct comprehensive experiments on various tasks, demonstrating 1.57x speedup. This work enables a universal approach for draft model selection, making SD a more versatile and practical tool for LLM acceleration.
+
+## 38. Temporal Evidence Chain for Temporal Knowledge Graph Question Answering with Large Language Models
+
+- Authors: Shihao Liu, Xiaofei Zhou, Bo Wang, Geyuan Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7367159473798397
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1361/
+- PDF: https://aclanthology.org/2026.acl-long.1361.pdf
+- Local PDF: pdf/2026-09-05_38_Temporal Evidence Chain for Temporal Knowledge Graph Question Answering with Large Language Models.pdf
+
+Temporal Knowledge Graph Question Answering (TKGQA) aims to answer temporal questions using knowledge from Temporal Knowledge Graphs (TKGs).Existing LLM-based TKGQA methods typically utilize RAG-based or Agent-based paradigms, yet both struggle to construct reliable temporal evidence chains. RAG-based approaches primarily rely on semantic retrieval to fetch question-relevant contexts but overlook the structural dependencies within TKGs, leading to broken evidence chains, whereas iterative agents are prone to error propagation during multi-step reasoning.To address these limitations, we propose TECQA, a framework designed to construct temporal evidence chains for LLM reasoning. Firstly, TECQA employs structure-guided subgraph retrieval to capture structural dependencies and intermediate reasoning paths. Subsequently, it utilizes a k-nearest temporal neighbor pruning strategy to filter irrelevant noise while strictly preserving the continuous local history surrounding critical events. Finally, the retained temporal neighbors are serialized by temporal proximity to explicitly reconstruct a coherent temporal evidence chain. Extensive experiments on MultiTQ and CronQuestions demonstrate that TECQA achieves state-of-the-art performance, outperforming strong baselines by 45.3% particularly on complex queries. Code is available at https://github.com/SimonsLiu/TECQA .
+
+## 39. CARO: Chain-of-Analogy Reasoning Optimization for Robust Content Moderation
+
+- Authors: Bingzhe Wu, Haotian Lu, Yuchen Mou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.736492398796524
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1442/
+- PDF: https://aclanthology.org/2026.findings-acl.1442.pdf
+- Local PDF: pdf/2026-09-05_39_CARO_ Chain-of-Analogy Reasoning Optimization for Robust Content Moderation.pdf
+
+Current large language models (LLMs), even those explicitly trained for reasoning, often struggle with ambiguous content moderation cases due to misleading “decision shortcuts” embedded in context. Inspired by cognitive psychology insights into expert moderation, we introduce CᴀʀO (Chain-of-Analogy Reasoning Optimization), a novel two-stage training framework to induce robust analogical reasoning in LLMs. First, CᴀʀO bootstraps analogical reasoning chains via retrieval-augmented generation (RAG) on moderation data and performs supervised fine-tuning (SFT). Second, we propose a customized direct preference optimization (DPO) approach to reinforce analogical reasoning behaviors explicitly. Unlike static retrieval methods, CᴀʀO dynamically generates tailored analogical references during inference, effectively mitigating harmful decision shortcuts. Extensive experiments demonstrate that CᴀʀO substantially outperforms state-of-the-art reasoning models (DeepSeek R1, QwQ), specialized moderation models (LLaMA Guard), and advanced fine-tuning and retrieval-augmented methods, achieving an average F1 score improvement of 24.9% on challenging ambiguous moderation benchmarks.
+
+## 40. Mitigating Hallucinations in VLMs: Enhancing Visual Attention via Head-Wise Perturbation
+
+- Authors: Zhenghua Wang, Yixin Wu, Feiran Zhang, Qi Qian, Changze Lv, Xuanjing Huang, Xiaoqing Zheng
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.736428988832333
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1016/
+- PDF: https://aclanthology.org/2026.findings-acl.1016.pdf
+- Local PDF: pdf/2026-09-05_40_Mitigating Hallucinations in VLMs_ Enhancing Visual Attention via Head-Wise Perturbation.pdf
+
+Vision–Language Models (VLMs) have demonstrated strong capabilities in tasks that require joint understanding of text and images. However, as many VLMs are built upon pre-trained large language models, they often over-rely on linguistic priors at the expense of visual features, causing persistent hallucinations. We observe that these hallucinations stem not only from insufficient visual attention but also from imbalanced activation profiles across attention heads, while hallucinated samples tend to disproportionately activate heads that fail to capture visual cues. To promote a more balanced attention distribution, we propose HWP , a strategy that incorporates head-wise attention perturbation via continuous multiplicative noise, coupled with a visual-guided loss focused on vision-sensitive text tokens. Beyond simply strengthening visual grounding, this design encourages a broader set of attention heads to engage with visual signals, thereby alleviating information loss caused by activation concentration on a few dominant heads. Consistent gains across different architectures and scales on multiple benchmarks demonstrate the effectiveness and robustness of our approach in mitigating VLM hallucinations.
+
+## 41. FIFA: Unified Faithfulness Evaluation Framework for Text-to-Video and Video-to-Text Generation
+
+- Authors: Liqiang Jing, Viet Dac Lai, Seunghyun Yoon, Trung Bui, Xinya Du
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7361061909229454
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.555/
+- PDF: https://aclanthology.org/2026.findings-acl.555.pdf
+- Local PDF: pdf/2026-09-05_41_FIFA_ Unified Faithfulness Evaluation Framework for Text-to-Video and Video-to-Text Generation.pdf
+
+Video Multimodal Large Language Models (VideoMLLMs) have achieved remarkable progress in both Video-to-Text and Text-to-Video tasks. However, they often suffer from hallucinations, generating content that contradicts the visual input. Existing evaluation methods are limited to one task (V2T) and also fail to assess hallucinations in open-ended, free-form responses. To address this gap, we propose FIFA, a unified F a I th F ulness ev A luation framework that extracts comprehensive descriptive facts, models their semantic dependencies via a Spatio-Temporal Semantic Dependency Graph, and verifies them using VideoQA models. We further introduce , a tool-based correction framework that revises hallucinated content. Extensive experiments demonstrate that FIFA aligns more closely with human judgment than existing evaluation methods, and that effectively improves factual consistency in both text and video generation.
+
+## 42. GRASPrune: Global Gating for Budgeted Structured Pruning of Large Language Models
+
+- Authors: Ziyang Wang, Jiangfeng Xiao, Chuan Xiao, Ruoxiang LI, Rui Mao, Jianbin Qin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.735492080321796
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.491/
+- PDF: https://aclanthology.org/2026.acl-long.491.pdf
+- Local PDF: pdf/2026-09-05_42_GRASPrune_ Global Gating for Budgeted Structured Pruning of Large Language Models.pdf
+
+Large language models (LLMs) are expensive to serve because dense FFN blocks, multi-head attention, and KV caches dominate memory, making structured pruning a natural way to reduce serving costs under tight parameter and memory budgets. We present GRASPrune, a global budgeted structured pruning framework applied post-hoc to a pretrained model that jointly prunes FFN channels and attention KV head groups under a single global parameter budget. GRASPrune attaches lightweight learnable gates to prunable units and optimizes only these gates on a small unlabeled language-modeling calibration set, keeping all backbone weights frozen while enforcing the target sparsity at every step. A final budget-preserving scaling calibration reweights the surviving channels and heads to correct scale shifts introduced by pruning. On LLaMA-2-7B, GRASPrune removes 50% of parameters and achieves 12.18 perplexity on WikiText-2 while maintaining competitive average zero-shot accuracy on five downstream benchmarks, using a short calibration run of four epochs on 512 unlabeled sequences on a single NVIDIA A100 80GB GPU, all without any full-model fine-tuning.
+
+## 43. Beyond Experience Retrieval: Learning to Generate Utility-Optimized Structured Experience for Frozen LLMs
+
+- Authors: Xuancheng Li, Haitao Li, Yujia Zhou, Yiqun Liu, Qingyao Ai
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7348834801572375
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1831/
+- PDF: https://aclanthology.org/2026.acl-long.1831.pdf
+- Local PDF: pdf/2026-09-05_43_Beyond Experience Retrieval_ Learning to Generate Utility-Optimized Structured Experience for Frozen LLMs.pdf
+
+Large language models (LLMs) are largely static and often redo reasoning or repeat mistakes. Prior experience reuse typically relies on external retrieval, which is similarity-based, can introduce noise, and adds latency. We introduce SEAM ( S tructured E xperience A dapter M odule), a lightweight, executor-specific plug-in that stores experience in its parameters and generates a structured, instance-tailored experience entry in a single forward pass to guide a frozen LLM executor. SEAM is trained for utility via executor rollouts and GRPO while keeping the executor frozen, and can be further improved with logged-success SFT after deployment. Experiments on mathematical reasoning benchmarks show consistent accuracy gains across executors with low overhead. Extensive ablation and analysis further elucidate the mechanisms underlying SEAM’s effectiveness and robustness.
+
+## 44. The Inner Monologue of Language Models: When Reasoning Traces Reveal More Than They Hide
+
+- Authors: Pratham Singla, Shivank Garg, Ayush Singh, Ishan Garg, Ketan Suhaas Saichandran
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.734797605446877
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2078/
+- PDF: https://aclanthology.org/2026.findings-acl.2078.pdf
+- Local PDF: pdf/2026-09-05_44_The Inner Monologue of Language Models_ When Reasoning Traces Reveal More Than They Hide.pdf
+
+Recent advances in post-training techniques have endowed Large Language Models (LLMs) with enhanced capabilities for tackling complex, logic-intensive tasks through the generation of supplementary planning tokens. This development raises a fundamental question – Are these models aware of what they "learn” and "think”? To address this, we define three core competencies: (1) awareness of learned latent policies, (2) generalization of these policies across domains, and (3) alignment between internal reasoning traces and final outputs. We empirically evaluate these abilities on several tasks, each designed to require learning a distinct policy. Furthermore, we contrast the profiles of models post-trained via Supervised Fine-Tuning (SFT), Direct Policy Optimization (DPO), and Group Relative Policy Optimization (GRPO). Our findings indicate that RL-trained models not only demonstrate greater awareness of their learned behaviors and stronger generalizability to novel, structurally similar tasks than SFT models but also often exhibit weak alignment between their reasoning traces and final outputs, an effect most pronounced in GRPO-trained models.
+
+## 45. SPAGBias: Uncovering and Tracing Structured Spatial Gender Bias in Large Language Models
+
+- Authors: Binxian Su, Haoye Lou, Shucheng Zhu, Weikang Wang, Ying Liu, Dong Yu, Pengyuan Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.734405956257074
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.55/
+- PDF: https://aclanthology.org/2026.acl-long.55.pdf
+- Local PDF: pdf/2026-09-05_45_SPAGBias_ Uncovering and Tracing Structured Spatial Gender Bias in Large Language Models.pdf
+
+Large language models (LLMs) are being increasingly used in urban planning, but since gendered space theory highlights how gender hierarchies are embedded in spatial organization, there is concern that LLMs may reproduce or amplify such biases. We introduce SPAGBias — the first systematic framework to evaluate spatial gender bias in LLMs. It combines a taxonomy of 62 urban micro-spaces, a prompt library, and three diagnostic layers: explicit (forced-choice resampling), probabilistic (token-level asymmetry), and constructional (semantic and narrative role analysis). Testing six representative models, we identify structured gender-space associations that go beyond the public-private divide, forming nuanced micro-level mappings. Story generation reveals how emotion, wording, and social roles jointly shape “spatial gender narratives”. We also examine how prompt design, temperature, and model scale influence bias expression. Tracing experiments indicate that these patterns are embedded and reinforced across the model pipeline (pre-training, instruction tuning, and reward modeling), with model associations found to substantially exceed real-world distributions. Downstream experiments further reveal that such biases produce concrete failures in both normative and descriptive application settings. This work connects sociological theory with computational analysis, extending bias research into the spatial domain and uncovering how LLMs encode social gender cognition through language.
+
+## 46. Potato 2.0: A Comprehensive Annotation Platform with AI-in-the-Loop Support
+
+- Authors: David Jurgens, Michael Chen, Lina Iyer
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7341605378497276
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-demo.37/
+- PDF: https://aclanthology.org/2026.acl-demo.37.pdf
+- Local PDF: pdf/2026-09-05_46_Potato 2.0_ A Comprehensive Annotation Platform with AI-in-the-Loop Support.pdf
+
+Annotated data remains essential for training and evaluating NLP systems. Large language models have broadened the kinds of data researchers need, including multimodal and agentic system data. Here, we introduce Potato 2.0, a major update to our open source annotation platform designed for easy deployment, customization, and fully reproducible and shareable annotation designs. Potato offers broad support for many types of annotations in NLP, including 39 different types of annotation tasks, support for text, audio, image, and video modalities, or mixtures thereof. Potato 2.0 includes robust support for labeling agentic system outputs through reading common trace formats, or live interaction and annotation with agents in multiple settings, such as chatting, web-browsing, and coding. Potato also includes multiple AI-assistance features to help annotators more easily label data. Finally, Potato introduces a new agentic AI-in-the-loop workflow where a single human annotator collaborates with an LLM through iterative prompt refinement, uncertainty-driven instance selection, and progressive autonomy—enabling efficient dataset creation without a large annotation team.
+
+## 47. AutoRubric: Rubric-Based Generative Rewards for Faithful Multimodal Reasoning
+
+- Authors: Mengzhao Jia, Zhihan Zhang, Ignacio Cases, Zheyuan Liu, Meng Jiang, Peng Qi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7339000112594696
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1282/
+- PDF: https://aclanthology.org/2026.findings-acl.1282.pdf
+- Local PDF: pdf/2026-09-05_47_AutoRubric_ Rubric-Based Generative Rewards for Faithful Multimodal Reasoning.pdf
+
+Multimodal large language models (MLLMs) have rapidly advanced from perception tasks to complex multi-step reasoning, yet reinforcement learning with verifiable rewards (RLVR) often leads to spurious reasoning since only the final-answer correctness is rewarded. To address this limitation, we propose AutoRubric, a framework that integrates RLVR with process-level supervision through automatically collected rubric-based generative rewards. Our key innovation lies in a scalable self-aggregation method that distills consistent reasoning checkpoints from successful trajectories, enabling problem-specific rubric construction without human annotation or stronger teacher models. By jointly leveraging rubric-based and outcome rewards, AutoRubric-R1V achieves state-of-the-art performance on six multimodal reasoning benchmarks and substantially improves reasoning faithfulness in dedicated evaluations.
+
+## 48. Multi-Hop Knowledge Editing via Critic-Guided Multi-Agent Reasoning
+
+- Authors: Xudong Li, Yuhang Tian, Dandan Song, Zhijing Wu, Shuhao Zhang, Jun Yang, Yongyu Huo, Changzhi Zhou, Xinyu Zhang, Chenhao Li, Huipeng Ma, Luan Zhang, Yan Xu, Qian Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7337189939524427
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.853/
+- PDF: https://aclanthology.org/2026.findings-acl.853.pdf
+- Local PDF: pdf/2026-09-05_48_Multi-Hop Knowledge Editing via Critic-Guided Multi-Agent Reasoning.pdf
+
+Knowledge within large language models (LLMs) inevitably lags behind an evolving world, motivating knowledge editing methods that update facts without expensive retraining. In multi-hop knowledge editing, models must not only recall updated facts but also correctly propagate them through multi-step reasoning chains. However, most existing approaches rely on unidirectional, feed-forward pipelines, decomposing questions and retrieving edited facts in a rigid hop-wise sequence. This design is brittle: a minor retrieval error or logical mismatch at an early hop can become a silent failure that cascades to the final answer without an explicit recovery mechanism. To address this limitation, we propose Critic-Guided Multi-Agent Reasoning for Knowledge Editing (CARE), a framework for closed-loop post-edit reasoning. A Critic agent performs chain-level verification by checking both global coherence and step-wise correctness, and triggers bounded backtracking for iterative self-correction, while a Selector agent supplies high-fidelity, low-noise candidate pools from the edit store to enable effective revision. Experiments on MQuAKE-2002 and MQuAKE-hard demonstrate that CARE effectively mitigates error propagation, achieving a new state-of-the-art.
+
+## 49. RISER: Orchestrating Latent Reasoning Skills for Adaptive Activation Steering
+
+- Authors: Wencheng Ye, Xiaoyang Yuan, Yi Bin, Hengyu Jin, Liang Peng, Pengpeng Zeng, Heng Tao Shen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.732680105672658
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.226/
+- PDF: https://aclanthology.org/2026.findings-acl.226.pdf
+- Local PDF: pdf/2026-09-05_49_RISER_ Orchestrating Latent Reasoning Skills for Adaptive Activation Steering.pdf
+
+Recent work on domain-specific reasoning with large language models (LLMs) has largely relied on training-intensive approaches that require updating model parameters. Although activation steering has emerged as a parameter-efficient alternative, existing methods typically rely on static and manually designed interventions, limiting their ability to adapt to the dynamic nature of complex reasoning. To address this limitation, we propose RISER (Router-based Intervention for Steerable Enhancement of Reasoning), a plug-and-play intervention framework that adaptively steers LLM reasoning in activation space. RISER builds a library of reusable reasoning vectors and employs a lightweight Router to dynamically compose these vectors for each input. The Router is optimized via reinforcement learning under task-level rewards, enabling the emergent and compositional activation of latent cognitive primitives. Across seven diverse benchmarks, RISER achieves average zero-shot accuracy improvements of 3.4–6.5% over the base model, while outperforming chain-of-thought-style reasoning with 2–3× higher token efficiency and robust accuracy gains. Further analysis demonstrates that RISER autonomously combines multiple vectors into interpretable and precise control strategies, pointing toward more controllable and efficient LLM reasoning.
+
+## 50. What Resources Matter for Interlinear Glossing? Using LLMs and RAG for the Low-Resource Mapudungun Language
+
+- Authors: Anaís Almendra, Arianna Bisazza, Claudio Gutierrez, Felipe Hasler
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.732472191264873
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.americasnlp-6.6/
+- PDF: https://aclanthology.org/2026.americasnlp-6.6.pdf
+- Local PDF: pdf/2026-09-05_50_What Resources Matter for Interlinear Glossing_ Using LLMs and RAG for the Low-Resource Mapudungun Language.pdf
+
+Interlinear glossing is essential for the study and revitalization of endangered languages. However, it remains a time-consuming process that requires extensive linguistic expertise. Recent advances in Large Language Models (LLMs) offer a potential solution. In this research, we study the case of Mapudungun, an endangered language spoken in Chile and Argentina, to generate automatic interlinear glosses using the Gemini 2.5 Pro model. Our study investigates which information configuration through Retrieval-Augmented Generation (RAG) yields the best results. We compare the integration of a formal grammar, a dictionary, a small annotated corpus, and a combination of all these resources. Our evaluation shows that while dictionary integration causes a significant degradation in performance, grounding the model with a structured corpus maximizes accuracy relative to the resources employed. Notably, we find that a remarkably small dataset of 589 meaning units provides enough normative guidance to significantly improve the morphological tagging task. This work highlights the viability of utilizing minimally annotated corpora to assist in the documentation of morphologically complex languages.
+
+## 51. RAG or Learning? Understanding the Limits of LLM Adaptation under Continuous Knowledge Drift in the Real World
+
+- Authors: Hanbing Liu, Lang Cao, Yang Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7322449439069665
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.546/
+- PDF: https://aclanthology.org/2026.findings-acl.546.pdf
+- Local PDF: pdf/2026-09-05_51_RAG or Learning_ Understanding the Limits of LLM Adaptation under Continuous Knowledge Drift in the Real World.pdf
+
+Large language models (LLMs) acquire most of their knowledge during pretraining, which ties them to a fixed snapshot of the world and makes adaptation to continuously evolving knowledge challenging. As facts, entities, and events change over time, models may experience continuous knowledge drift, resulting not only in outdated predictions but also in temporally inconsistent reasoning. Although existing approaches, such as continual finetuning, knowledge editing, and retrieval-augmented generation (RAG), aim to update or supplement model knowledge, they are rarely evaluated in settings that reflect chronological, evolving, and real-world knowledge evolution. In this work, we introduce a new benchmark of real-world dynamic events, constructed from time-stamped evidence that captures how knowledge evolves over time, which enables systematic evaluation of model adaptation under continuous knowledge drift. The benchmark reveals that most existing methods, including vanilla RAG and several learning-based approaches, struggle under this setting, exposing critical limitations such as catastrophic forgetting and temporal inconsistency. To mitigate these limitations, we propose a time-aware retrieval baseline, Chronos, which progressively organizes retrieved evidence into an Event Evolution Graph to enable more temporally consistent understanding in LLMs without additional training. Overall, this work provides a foundation for analyzing and advancing LLM adaptation to continuous knowledge drift in realistic settings.
+
+## 52. IDP Accelerator: Agentic Document Intelligence from Extraction to Compliance Validation
+
+- Authors: Md Mofijul Islam, Md Sirajus Salekin, Joe King, Priyashree Roy, Vamsi Thilak Gudi, Spencer Romo, Akhil Nooney, Bob Strahan, Boyi Xie, Diego A. Socolinsky
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7320152684422307
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-demo.11/
+- PDF: https://aclanthology.org/2026.acl-demo.11.pdf
+- Local PDF: pdf/2026-09-05_52_IDP Accelerator_ Agentic Document Intelligence from Extraction to Compliance Validation.pdf
+
+Understanding and extracting structured insights from unstructured documents remains a foundational challenge in industrial NLP. While Large Language Models (LLMs) enable zero-shot extraction, traditional pipelines often fail to handle multi-document packets, complex reasoning, and strict compliance requirements. We present IDP (Intelligent Document Processing) Accelerator, a framework enabling agentic AI for end-to-end document intelligence with four key components: (1) DocSplit, a novel benchmark dataset and multimodal classifier using BIO tagging to segment complex document packets; (2) configurable Extraction Module leveraging multimodal LLMs to transform unstructured content into structured data; (3) Agentic Analytics Module, compliant with the Model Context Protocol (MCP) providing data access through secure, sandboxed code execution; and (4) Rule Validation Module replacing deterministic engines with LLM-driven logic for complex compliance checks. The interactive demonstration enables users to upload document packets, visualize classification results, and explore extracted data through an intuitive web interface. We demonstrate effectiveness across industries, highlighting a production deployment at a leading healthcare provider achieving 98% classification accuracy, 80% reduced processing latency, and 77% lower operational costs over legacy baselines. IDP Accelerator is open-sourced with a live demonstration available to the community.
+
+## 53. ERRV: Eliciting Efficient Reasoning through Reasoning Vectors for Policy Optimization in Large Language Models
+
+- Authors: Zhuowen Han, Lei Yang, Renren Jin, Dan Shi, Chenxi Sun, Deyi Xiong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7318528242804248
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1425/
+- PDF: https://aclanthology.org/2026.findings-acl.1425.pdf
+- Local PDF: pdf/2026-09-05_53_ERRV_ Eliciting Efficient Reasoning through Reasoning Vectors for Policy Optimization in Large Language Models.pdf
+
+Recently, large reasoning models have achieved impressive performance, but their lengthy reasoning processes incur substantial inference overhead. To mitigate this issue, we propose the concept of reasoning vectors, representations extracted from the model’s hidden states, which can guide the model towards generating more concise and accurate responses. Building upon this, we present ERRV, a training framework that elicits efficient reasoning through reasoning vectors, which enables the model to generate high-quality responses during reinforcement learning. By performing targeted policy optimization on both accuracy and length objectives, ERRV effectively activates the model’s latent capability for efficient reasoning. Our experiments demonstrate that after training with ERRV, the model achieves approximately 30% reduction in reasoning length while maintaining stable accuracy, without guidance from the reasoning vector during inference. This establishes a trade-off between efficiency and performance. Furthermore, we identify key properties of reasoning vectors: robustness, characterized by high similarity before and after training, and generalizability, demonstrating applicability across base models, distilled models, RL-trained models, parameter-merged models, and mixed-thought models. These properties collectively guarantee the reliability and broad applicability of our approach.
+
+## 54. SemPA: Improving Sentence Embeddings of Large Language Models through Semantic Preference Alignment
+
+- Authors: Ziyang Chen, Zhenxuan Huang, Yile Wang, Weiqin Wang, Lu Yin, Hui Huang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.731066412695638
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1858/
+- PDF: https://aclanthology.org/2026.findings-acl.1858.pdf
+- Local PDF: pdf/2026-09-05_54_SemPA_ Improving Sentence Embeddings of Large Language Models through Semantic Preference Alignment.pdf
+
+Traditional sentence embedding methods employ token-level contrastive learning on non-generative pre-trained models. Recently, there have emerged embedding methods based on generative large language models (LLMs). These methods either rely on fixed prompt templates or involve modifications to the model architecture. The former lacks further optimization of the model and results in limited performance, while the latter alters the internal computational mechanisms of the model, thereby compromising its generative capabilities. We propose SemPA, a novel approach that boosts the sentence representations while preserving the generative ability of LLMs via semantic preference alignment. We leverage sentence-level Direct Preference Optimization (DPO) to efficiently optimize LLMs on a paraphrase generation task, where the model learns to discriminate semantically equivalent sentences while preserving inherent generative capacity. Theoretically, we establish a formal connection between DPO and contrastive learning under the Plackett-Luce model framework. Empirically, experimental results on both semantic textual similarity tasks and various benchmarks for LLMs show that SemPA achieves better semantic representations without sacrificing the inherent generation capability of LLMs.
+
+## 55. Efficient Agent Evaluation via Diversity-Guided User Simulation
+
+- Authors: Itay Nakash, George Kour, Ateret Anaby Tavor
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.730974244631984
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.112/
+- PDF: https://aclanthology.org/2026.acl-industry.112.pdf
+- Local PDF: pdf/2026-09-05_55_Efficient Agent Evaluation via Diversity-Guided User Simulation.pdf
+
+Large language models (LLMs) are increasingly deployed as customer-facing agents, yet evaluating their reliability remains challenging due to stochastic, multi-turn interactions. Current evaluation protocols rely on linear Monte Carlo rollouts of full agent-user conversations to estimate success. This approach is computationally inefficient - reprocessing identical conversation prefixes across runs, and often fails to uncover deep failure modes triggered by rare user behaviors.We introduce DIVERT (Diversity-Induced Evaluation via Branching of Trajectories), a snapshot-based, coverage-guided user simulation framework for efficient and systematic exploration of multi-turn agent behavior. DIVERT captures the full agent–environment state at critical junctions and resumes execution from these points, reusing shared prefixes to avoid redundant regeneration and reduce token cost. From each junction, it branches with targeted, diverse user responses, enabling directed exploration of alternative interaction paths while preserving task intent.By reallocating computation from redundant restarts to behaviorally salient mid-trajectory states, DIVERT steers evaluation toward under-explored semantic regions and rare interaction failures. Experiments on realistic multi-domain benchmarks show that our method consistently improves failure discovery efficiency and task-level coverage compared to standard linear rollout evaluation, without increasing overall cost.
+
+## 56. Reducing Peak Memory Usage for Modern Multimodal Large Language Model Pipelines
+
+- Authors: Junwan Kim, Hyunkyung Bae
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.730682689748265
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1422/
+- PDF: https://aclanthology.org/2026.findings-acl.1422.pdf
+- Local PDF: pdf/2026-09-05_56_Reducing Peak Memory Usage for Modern Multimodal Large Language Model Pipelines.pdf
+
+Multimodal large language models (MLLMs) have recently demonstrated strong capabilities in understanding and generating responses from diverse visual inputs, including high-resolution images and long video sequences. As these models scale to richer visual representations, inference increasingly relies on storing large numbers of vision tokens in the key–value (KV) cache, making memory consumption a central bottleneck. Existing methods address this issue by identifying redundancy in vision tokens and compressing the cache, but such compression is typically applied only after all inputs are processed, resulting in high peak memory usage during the prefill stage. In this work, we show that MLLMs exhibit inherent structural regularities and representational redundancy that can be exploited to control memory growth throughout inference. Based on this insight, we propose a sequential input-compression mechanism that enforces a fixed memory budget by performing structure-aware key–value cache compression during the prefill process. This approach substantially reduces peak memory usage while maintaining generative performance with only minimal degradation, enabling more practical and memory-efficient multimodal inference.
+
+## 57. MT 3 : A Synergistic Multi-Task RL Framework for Specializing MLLMs in Text Image Machine Translation
+
+- Authors: Zhaopeng Feng, Yupu Liang, Shaosheng Cao, Jiayuan Su, Jiahan Ren, Zhijie Zhou, Wenxuan Huang, Jian Wu, Zuozhu Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7304353216838297
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.460/
+- PDF: https://aclanthology.org/2026.acl-long.460.pdf
+- Local PDF: pdf/2026-09-05_57_MT 3 _ A Synergistic Multi-Task RL Framework for Specializing MLLMs in Text Image Machine Translation.pdf
+
+Text Image Machine Translation (TIMT)—the task of translating textual content embedded in images—is critical for applications in accessibility, cross-lingual information access, and real-world document understanding. However, TIMT remains a complex challenge due to the need for accurate optical character recognition (OCR), robust visual-text reasoning, and high-quality translation, often requiring cascading multi-stage pipelines. Recent advances in large-scale Reinforcement Learning (RL) have improved reasoning in Large Language Models (LLMs) and Multimodal LLMs (MLLMs), but their application to end-to-end TIMT is still underexplored. To bridge this gap, we introduce MT 3 , a novel Multi-Task RL framework to specialize MLLMs into end-to-end expert TIMT models. MT 3 adopts a synergistic multi-task optimization paradigm targeting three key sub-skills: text recognition, context-aware reasoning, and translation. It is trained using a novel multi-mixed reward mechanism that provides fine-grained feedback, fostering a controllable and transparent optimization process. Furthermore, to facilitate the evaluation of TIMT in authentic cross-cultural and real-world social media contexts, we introduced XHSPost, the first social media TIMT benchmark. Our MT 3 -7B-Zero achieves state-of-the-art results on the latest in-domain MIT-10M benchmark, outperforming strong baselines such as Qwen2.5-VL-72B and InternVL2.5-78B by notable margins across multiple metrics. Additionally, the model shows strong generalization to out-of-distribution language pairs and datasets. In-depth analyses reveal how multi-task synergy, reinforcement learning initialization, curriculum design, and reward formulation contribute to advancing MLLM-driven TIMT.
+
+## 58. NoisyCausal: A Benchmark for Evaluating Causal Reasoning Under Structured Noise
+
+- Authors: Zhi Xu, Yun Fu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.730087982114501
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1833/
+- PDF: https://aclanthology.org/2026.acl-long.1833.pdf
+- Local PDF: pdf/2026-09-05_58_NoisyCausal_ A Benchmark for Evaluating Causal Reasoning Under Structured Noise.pdf
+
+Causal reasoning in natural language requires identifying relevant variables, understanding their interactions, and reasoning about effects and interventions, often under noisy or ambiguous conditions. While large language models (LLMs) exhibit strong general reasoning abilities, they struggle to disentangle correlation from causation, particularly when observations are partially incorrect or irrelevant information is present. In this work, we introduce NoisyCausal, a new benchmark designed to evaluate causal reasoning under structured noise. Each instance is generated from a ground-truth causal graph and contextualized with a natural language scenario by injecting controllable forms of noise, such as irrelevant distractors, value perturbations, confounding, and partial observability. Moreover, we propose a modular reasoning framework that combines LLMs with explicit causal structure to address these challenges. Our method prompts the LLM to extract variables, construct a causal graph from context, and then reformulates the reasoning task as a structured prompt grounded in this graph. Rather than relying on statistical patterns alone, the LLM is guided by symbolic structure, enabling more interpretable and robust inference. Experimental results show that our method significantly outperforms standard prompting and reasoning baselines on NoisyCausal. Furthermore, it generalizes well to external benchmarks such as Cladder without task-specific tuning. Our findings highlight the importance of combining causal abstractions with language-driven reasoning to achieve faithful and robust causal understanding in LLMs.
+
+## 59. Robust In-Context Selection via Online Learned Position-Corrected Attention
+
+- Authors: Deeksha Koul, Gaurav Kumar, Yash Sabale, Sunita Sarawagi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7294034693819826
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1743/
+- PDF: https://aclanthology.org/2026.findings-acl.1743.pdf
+- Local PDF: pdf/2026-09-05_59_Robust In-Context Selection via Online Learned Position-Corrected Attention.pdf
+
+Large Language Models (LLMs) are often deployed in tasks that require selecting an item from a long list provided in the model’s context. LLMs’ native selection behavior is brittle: predictions are sensitive to the surface form of the identifiers, their placement within the context, and the ordering of candidate items. We present OLR-Heads, a robust method for list selection that harnesses attention patterns available from a single forward call on the LLM. OLR-Heads learns the logic for item selection using a few in-context examples, and a simple online position-debiasing mechanism to correct attention distortion. Across multiple database and tool selection benchmarks, OLR-Heads consistently improves selection performance over direct generation and prior attention-based methods, while remaining robust to prompt variations and item ordering.The LLM’s KV cache states are unaffected, and can be reused for subsequent response generation. In contrast, existing approaches either entail additional LLM calls, or task-specific offline learning, or position debiasing methods that modify the attention or encoding rendering the KV states unusable for subsequent generation.
+
+## 60. Tailored Primitive Initialization is the Secret Key to Reinforcement Learning
+
+- Authors: Yihang Yao, Guangtao Zeng, Raina Wu, Yang Zhang, Ding Zhao, Zhang-Wei Hong, Chuang Gan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7293641709638883
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1537/
+- PDF: https://aclanthology.org/2026.acl-long.1537.pdf
+- Local PDF: pdf/2026-09-05_60_Tailored Primitive Initialization is the Secret Key to Reinforcement Learning.pdf
+
+Reinforcement learning (RL) has emerged as a powerful paradigm for improving the reasoning capabilities of large language models (LLMs). Despite its success, RL faces fundamental challenges, including low sample efficiency and a strong dependence on the quality of the base model: while some models improve rapidly with limited RL updates, others require substantial training data to achieve meaningful gains. Recent studies suggest that the patterns of thinking tokens play a critical role in RL performance, and that supervised fine-tuning (SFT) on datasets exhibiting desirable reasoning patterns can reduce reliance on base models and better prepare LLMs for RL. However, how to automatically discover such patterns across tasks remains unclear. In this work, we describe thinking token patterns with reasoning primitives and argue that initializing LLMs with diverse, high-quality primitives is crucial for stable and efficient RL training. We propose Tailor, a pipeline that automatically discovers such reasoning primitives and curates SFT datasets to prepare LLMs for RL. Extensive experiments on mathematical and logical reasoning benchmarks demonstrate that Tailor consistently improves downstream RL performance, outperforming strong baselines, including methods with expert domain knowledge.
