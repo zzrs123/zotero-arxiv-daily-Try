@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-09-07
+
+## 1. Benchmarking copy number alteration inference methods for spatial transcriptomics
+
+- Authors: Shi Han, Zhixi Xiong, Ying Zhou, Can Yang
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-09-05
+- DOI: https://doi.org/10.1038/s41467-026-77500-5
+- Categories: Single-cell and spatial transcriptomics, Genomic variations and chromosomal abnormalities, Cancer Genomics and Diagnostics
+- Relevance: 3.1206085854744754
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-77500-5
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Copy number alterations (CNAs), gains or losses of genomic regions, contribute to malignant progression and tumor heterogeneity. Advances in spatial transcriptomics have expanded opportunities to study clonal structure in situ, but direct spatial genomic profiling remains difficult in practice, motivating the increasing use of computational methods to infer CNAs from spatial transcriptomics data. However, their performance across diverse spatial transcriptomics settings remains unclear. Here, we present a benchmark of nine CNA inference methods across 69 spatial transcriptomics tissue sections from six cancer types and four spatial transcriptomics platforms. By evaluating these methods across four key tasks, we show that no single method consistently outperforms all others, with performance depending on the analytical goal and data characteristics. We therefore provide task-specific and data-aware guidance to help users select appropriate methods in practical settings. More broadly, this benchmark provides a basis for the future development and optimization of CNA inference methods. Copy number alteration inference from spatial transcriptomics remains challenging. Here, the authors benchmark nine methods across a variety of tissue sections, showing that no method dominates across all tasks and providing practical guidance for method selection.
+
+## 2. Alignment Data Map for Efficient Preference Data Selection and Diagnosis
+
+- Authors: Seohyeong Lee, Eunwon Kim, Hwaran Lee, Buru Chang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7321831190518897
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1906/
+- PDF: https://aclanthology.org/2026.findings-acl.1906.pdf
+- Local PDF: pdf/2026-09-07_02_Alignment Data Map for Efficient Preference Data Selection and Diagnosis.pdf
+
+Human preference data is essential for aligning large language models (LLMs) with human values, but collecting such data is often costly and inefficient-motivating the need for efficient data selection methods that reduce annotation costs while preserving alignment effectiveness. To address this issue, we propose Alignment Data Map, a data analysis tool for identifying and selecting effective preference data. We first evaluate alignment scores of the preference data by LLM-as-a-judge, explicit reward model, and reference-based approaches. The Alignment Data Map considers both response quality and inter-response variability based on the alignment scores. From our experimental findings, training on only 33% of samples that exhibit high-quality and low-variability, achieves comparable or superior alignment performance on MT-Bench, Evol-Instruct, and AlpacaEval, compared to training with the full dataset. In addition, Alignment Data Map detects potential label misannotations by analyzing correlations between annotated labels and alignment scores, improving annotation accuracy. The implementation is available at https://github.com/01choco/Alignment-Data-Map .
+
+## 3. SiLP: Enhancing Non-Dominant Language Capabilities with a Selective Bidirectional Language Projection Framework
+
+- Authors: Junpeng Liu, Jiuyi Li, Kaiyu Huang, Bo Jin, Degen Huang, Hui Xiong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7311294731843585
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.2005/
+- PDF: https://aclanthology.org/2026.acl-long.2005.pdf
+- Local PDF: pdf/2026-09-07_03_SiLP_ Enhancing Non-Dominant Language Capabilities with a Selective Bidirectional Language Projection Framework.pdf
+
+Current large language models (LLMs) often exhibit performance imbalances between dominant languages (e.g., English) and non-dominant ones due to the skewed distribution of pretraining data. A common strategy to address this issue is to enhance cross-lingual alignment, thereby facilitating non-dominant language processing. However, existing methods typically rely on additional training objectives or language-specific parameters, which increase training complexity and cost. In this work, we propose a selective bidirectional language projection framework that enables efficient multilingual alignment and language shift using the intrinsic parameters. Specifically, we first identify the layers most sensitive to language projection between non-dominant and dominant languages through neuron activation analysis. We then perform sequential language projection within the selected layers by mapping non-dominant representations into the dominant language space and reverting them before generation. The bidirectional projection benefits the subsequent instruction tuning in non-dominant languages. Experiments on seven benchmarks demonstrate that our method remarkably enhances the performance of non-dominant languages. Further analyses indicate that our method learns better internal representations and exhibits strong generalization capabilities.
+
+## 4. Crossroads of Optimization under Uncertainty: How to Choose the Optimal Model
+
+- Authors: Chengxi She, Zhiqiang Chen, Xingyu Lu, Caihua Chen, Piaoyang Zhao, Xuedong Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.730561723467421
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.172/
+- PDF: https://aclanthology.org/2026.findings-acl.172.pdf
+- Local PDF: pdf/2026-09-07_04_Crossroads of Optimization under Uncertainty_ How to Choose the Optimal Model.pdf
+
+To address two correlated question in Optimization under Uncertainty (OuU): Expertise Threshold and Selection Conundrum, we propose LLM4OuU, a multi-agent framework that automates both the modeling and solving of six distinct types of uncertainty models and generates mapping pairs to explore the potential relationship between optimization problems and optimal models. Firstly, we decompose the complex modeling process into five sequential steps and design specialized LLM agents combining high-level domain expertise. Secondly, we introduce a hybrid dataset spanning various industries based on Retrieval-Augmented Generation (RAG) to benchmark performance. Extensive experiments demonstrate that LLM4OuU achieves superior performance compared to baselines, even reaching up to 99% on specific model types. Finally, we establish a mapping from problem features to optimal models, with correlation analysis revealing that not only data scale but also the specific scenario significantly influence model selection.
+
+## 5. AgentCoMa: A Compositional Benchmark Mixing Commonsense and Mathematical Reasoning in Real-World Scenarios
+
+- Authors: Lisa Alazraki, Lihu Chen, Ana Brassard, Joe Stacey, Hossein A. Rahmani, Marek Rei
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7277950729525147
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.380/
+- PDF: https://aclanthology.org/2026.acl-long.380.pdf
+- Local PDF: pdf/2026-09-07_05_AgentCoMa_ A Compositional Benchmark Mixing Commonsense and Mathematical Reasoning in Real-World Scenarios.pdf
+
+Large Language Models (LLMs) have achieved high accuracy on complex commonsense and mathematical problems that involve the composition of multiple reasoning steps. However, current compositional benchmarks testing these skills tend to focus on either commonsense or math reasoning, whereas LLM agents solving real-world tasks would require a combination of both . In this work, we introduce an Agent ic Co mmonsense and Ma th benchmark (AgentCoMa), where each compositional task requires a commonsense reasoning step and a math reasoning step. We test it on 61 LLMs of different sizes, model families, and training strategies. We find that LLMs can usually solve both steps in isolation, yet their accuracy drops by nearly 30% on average when the two are combined. This is a substantially greater performance gap than the one we observe in prior compositional benchmarks that combine multiple steps of the same reasoning type. In contrast, non-expert human annotators can solve the compositional questions and the individual steps in AgentCoMa with similarly high accuracy. Furthermore, we conduct a series of interpretability studies to better understand the performance gap, examining neuron patterns, attention maps and membership inference. Our work underscores a substantial degree of model brittleness in the context of mixed-type compositional reasoning and offers a test bed for future improvement.
+
+## 6. Multi-Persona Thinking for Bias Mitigation in Large Language Models
+
+- Authors: Yuxing Chen, Guoqing Luo, Zijun Wu, Lili Mou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7277799823946736
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1389/
+- PDF: https://aclanthology.org/2026.findings-acl.1389.pdf
+- Local PDF: pdf/2026-09-07_06_Multi-Persona Thinking for Bias Mitigation in Large Language Models.pdf
+
+Large Language Models (LLMs) exhibit social biases, which can lead to harmful stereotypes and unfair outcomes. We propose Multi-Persona Thinking (MPT), a simple inference-time framework that reduces social bias by encouraging reasoning from multiple perspectives. MPT guides the model to consider contrasting social identities, such as male and female, together with a neutral viewpoint. These viewpoints then interact through an iterative reasoning process to identify and correct biased judgments. This design transforms the potential weakness of persona assignment into a mechanism to mitigate bias. We evaluate MPT on two widely used bias benchmarks with both open-source and closed-source models. Our results show that MPT achieves a lower bias than the existing prompting-based methods while maintaining the core reasoning ability.
+
+## 7. Closing the Spatial Execution Gap in Digital Whiteboards via Verifiable Reinforcement Learning
+
+- Authors: Chang Liu, Benjamin Wagley, Zibo Wang, Mehmet E. Belviranli, Bo Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.727574087272735
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.630/
+- PDF: https://aclanthology.org/2026.acl-long.630.pdf
+- Local PDF: pdf/2026-09-07_07_Closing the Spatial Execution Gap in Digital Whiteboards via Verifiable Reinforcement Learning.pdf
+
+While multi-modal large language models such as GPT-5 demonstrate exceptional general understanding, they suffer from a fundamental Spatial Execution Gap, failing to translate visual semantics into precise, schema-valid coordinate operations in interactive environments. In this work, we show that model scale alone cannot close this gap; instead, verifiable structured reasoning provides the key to spatial precision. We present a comprehensive pipeline that leverages Group Relative Policy Optimization to enforce a strict Identify-Reason-Verify protocol, effectively shifting the computational burden from parameters to test-time reasoning. By utilizing a multi-agent system to distill optimal reasoning schemas and training on execution-verifiable rewards, our specialized 3B agent achieves 100% format coherence and 81.12% operation accuracy on digital whiteboard tasks. Crucially, our approach outperforms a state-of-the-art frontier model, GPT-5, by 16.75% in operation accuracy. The results suggest that for complex user interface manipulation, small, RL-aligned models with dedicated reasoning protocols are superior to generalist frontier models, offering a promising direction for building reliable web agents.
+
+## 8. Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
+
+- Authors: Fengyuan Liu, Yi Huang, Sichun Luo, Yuqi Wang, Yazheng Yang, Xinye Li, Zefa Hu, Junlan Feng, Qi Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7273871224820723
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.538/
+- PDF: https://aclanthology.org/2026.acl-long.538.pdf
+- Local PDF: pdf/2026-09-07_08_Cognitive Alpha Mining via LLM-Driven Code-Based Evolution.pdf
+
+Discovering effective predictive signals, or “alphas,” from financial data with high dimensionality and extremely low signal-to-noise ratio remains a difficult open problem. Despite progress in deep learning, genetic programming, and, more recently, large language model (LLM)–based factor generation, existing approaches still explore only a narrow region of the vast alpha search space. Neural models tend to produce opaque and fragile patterns, while symbolic or formula-based methods often yield redundant or economically ungrounded expressions that generalize poorly. Although different in form, these paradigms share a key limitation: none can conduct broad, structured, and human-like exploration that balances logical consistency with creative leaps.To address this gap, we introduce the Cognitive Alpha Mining Framework (CogAlpha), which combines code-level alpha representation with LLM-driven reasoning and evolutionary search. Treating LLMs as adaptive cognitive agents, our framework iteratively refines, mutates, and recombines alpha candidates through multi-stage prompts and financial feedback. This synergistic design enables deeper thinking, richer structural diversity, and economically interpretable alpha discovery, while greatly expanding the effective search space.Experiments on 5 stock datasets from 3 stock markets demonstrate that CogAlpha consistently discovers alphas with superior predictive accuracy, robustness, and generalization over existing methods. Our results highlight the promise of aligning evolutionary optimization with LLM-based reasoning for automated and explainable alpha discovery.
+
+## 9. From Static Inference to Dynamic Interaction: A Survey of Streaming Large Language Models
+
+- Authors: Junlong Tong, Zilong Wang, YuJie Ren, Peiran Yin, Hao Wu, Wei Zhang, Xiaoyu Shen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.727279999414674
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.498/
+- PDF: https://aclanthology.org/2026.findings-acl.498.pdf
+- Local PDF: pdf/2026-09-07_09_From Static Inference to Dynamic Interaction_ A Survey of Streaming Large Language Models.pdf
+
+Standard Large Language Models (LLMs) are predominantly designed for static inference with pre-defined inputs, which limits their applicability in dynamic, real-time scenarios. To address this gap, the streaming LLM paradigm has emerged. However, existing definitions of streaming LLMs remain fragmented, conflating streaming generation, streaming inputs, and interactive streaming architectures, while a systematic taxonomy is still lacking. This paper provides a comprehensive overview and analysis of streaming LLMs. First, we establish a unified definition of streaming LLMs based on data flow and dynamic interaction to clarify existing ambiguities. Building on this definition, we propose a systematic taxonomy of current streaming LLMs and provide an in-depth discussion of their underlying methodologies across text, speech, and video streaming scenarios. Furthermore, we explore the applications of streaming LLMs in real-world scenarios and outline promising research directions to support ongoing advances in streaming intelligence. We maintain a continuously updated repository of relevant papers at https://github.com/EIT-NLP/Awesome-Streaming-LLMs .
+
+## 10. WaveDetect: Robust Framework for Machine-Generated Text Detection via Wavelet Transform
+
+- Authors: Zhichen Liu, Kaitong Qin, Linhan He, Yang Xu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7270539354559773
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.424/
+- PDF: https://aclanthology.org/2026.findings-acl.424.pdf
+- Local PDF: pdf/2026-09-07_10_WaveDetect_ Robust Framework for Machine-Generated Text Detection via Wavelet Transform.pdf
+
+As Large Language Models asymptotically approach human-level fluency in natural language generation, solely relying on surface-level semantic artifacts for detecting LLM-generated texts has become increasingly precarious. Existing detectors often falter when facing three critical challenges: adversarial perturbations, cross-domain shifts, and the rapid temporal evolution of the foundation model. To address these issues, we propose , a novel framework that reformulates text detection as a signal processing task within the time-frequency domain. Unlike previous methods that analyze static token probability distributions, models the generated output as a probability signal, upon which a differentiable Continuous Wavelet Transform is applied to convert them into learnable spectral representations. This process reveals the intrinsic “spectral fingerprints” in machine-generated texts–patterns that remain invisible in time domain. Comprehensive evaluations on three well-curated datasets (RAID, EvoBench, and Domain-Shift) show that our method achieves a new state-of-the-art. It not only achieves superior accuracy but also exhibits remarkable robustness against sophisticated attacks, generalization across out-of-distribution topics and unseen evolving LLMs. Our results validate the efficacy of spectral analysis as a promising paradigm for LLM-generated texts detection.
+
+## 11. RegTrack: A Fine-Grained Benchmark for Multi-Class Legal Change Detection
+
+- Authors: Joe Yu, Kevin Chenhao Li, Julian Ostarek
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.726333917855679
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-srw.68/
+- PDF: https://aclanthology.org/2026.acl-srw.68.pdf
+- Local PDF: pdf/2026-09-07_11_RegTrack_ A Fine-Grained Benchmark for Multi-Class Legal Change Detection.pdf
+
+Organizations must continuously monitor evolving regulations to maintain compliance. While current tools are limited to surface-level text comparison, existing models lack the finegrained classification schemes to determine whether small changes impact legal obligations or merely update formatting. To address this gap, we introduce a novel benchmark for change detection in EU regulations. It comprises 4,772 manually annotated pairs of structurally distinct provisions, defined as Atomic Legal Units (ALUs), mapped to a six-class taxonomy of legal change types. We formalize three core tasks: structural alignment, change classification, and a combined task requiring simultaneous alignment and classification. Evaluating lexical algorithms, dense encoders, and Large Language Models (LLMs) as baselines, we find LLMs excel at isolated change classification, whereas domain-specific dense encoders offer the most robust combined performance. By providing fine-grained labeled data, this benchmark enables the development of AI systems that can help organizations analyze regulatory shifts and support version-aware retrieval in the legal domain.
+
+## 12. CURaTE: Continual Unlearning in Real Time with Ensured Preservation of LLM Knowledge
+
+- Authors: Seyun Bae, Seokhan Lee, Eunho Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7259482674960376
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1102/
+- PDF: https://aclanthology.org/2026.findings-acl.1102.pdf
+- Local PDF: pdf/2026-09-07_12_CURaTE_ Continual Unlearning in Real Time with Ensured Preservation of LLM Knowledge.pdf
+
+The inability to filter out in advance all potentially problematic data from the pre-training of large language models has given rise to the need for methods for unlearning specific pieces of knowledge after training. Existing techniques overlook the need for continuous and immediate action, causing them to suffer from degraded utility as updates accumulate and protracted exposure of sensitive information. To address these issues, we propose C ontinual U nlearning in R e a l T ime with E nsured Preservation of LLM Knowledge ( CURaTE ). Our method begins by training a sentence embedding model on a dataset designed to enable the formation of sharp decision boundaries for determining whether a given input prompt corresponds to any stored forget requests. The similarity of a given input to the forget requests is then used to determine whether to answer or return a refusal response. We show that even with such a simple approach, not only does CURaTE achieve more effective forgetting than existing methods, but by avoiding modification of the language model parameters, it also maintains near perfect knowledge preservation over any number of updates and is the only method capable of continual unlearning in real-time.
+
+## 13. One-step Nonautoregressive Natural Language Generation with Shortcut Flow Matching Models
+
+- Authors: Jędrzej Warczyński, Ondrej Dusek, Mateusz Lango
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.725814717795089
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-short.53/
+- PDF: https://aclanthology.org/2026.acl-short.53.pdf
+- Local PDF: pdf/2026-09-07_13_One-step Nonautoregressive Natural Language Generation with Shortcut Flow Matching Models.pdf
+
+While having a significant potential for parallel processing in theory, diffusion-based non-autoregressive text generation remains inefficient due to the need for multiple denoising steps. Performance degrades sharply if a low number of steps is used, such as in flow matching. To enable accurate one-step generation, we propose a novel shortcut flow-matching model that learns to directly predict multi-step denoising outcomes in a single step. Experiments conducted on three datasets demonstrate consistent improvements over classic flow-matching, with BLEU scores more than doubling on two datasets. We also tested five different ways of extending shortcut models with commonly used techniques.
+
+## 14. One Token Is Enough: Improving Diffusion Language Models with a Sink Token
+
+- Authors: Zihou Zhang, Zheyong Xie, Li Zhong, Haifeng Liu, Shaosheng Cao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7252574286526237
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.323/
+- PDF: https://aclanthology.org/2026.findings-acl.323.pdf
+- Local PDF: pdf/2026-09-07_14_One Token Is Enough_ Improving Diffusion Language Models with a Sink Token.pdf
+
+Diffusion Language Models (DLMs) have emerged as a compelling alternative to autoregressive approaches, enabling parallel text generation with competitive performance. Despite these advantages, there is a critical instability in DLMs: the moving sink phenomenon. Our analysis indicates that sink tokens exhibit low-norm representations in the Transformer’s value space, and that the moving sink phenomenon serves as a protective mechanism in DLMs to prevent excessive information mixing. However, their unpredictable positions across diffusion steps undermine inference robustness. To resolve this, we propose a simple but effective extra sink token implemented via a modified attention mask. Specifically, we introduce a special token constrained to attend solely to itself, while remaining globally visible to all other tokens. Experimental results demonstrate that introducing a single extra token stabilizes attention sinks, substantially improving model performance. Crucially, further analysis confirms that the effectiveness of this token is independent of its position and characterized by negligible semantic content, validating its role as a robust and dedicated structural sink.
+
+## 15. pQuant: Towards Effective Low-Bit Language Models via Decoupled Linear Quantization-Aware Training
+
+- Authors: Wenzheng Zhang, Bingzheng Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7248053601507323
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1566/
+- PDF: https://aclanthology.org/2026.findings-acl.1566.pdf
+- Local PDF: pdf/2026-09-07_15_pQuant_ Towards Effective Low-Bit Language Models via Decoupled Linear Quantization-Aware Training.pdf
+
+Quantization-Aware Training from scratch has emerged as a promising approach for building efficient large language models (LLMs) with extremely low-bit weights (sub 2-bit), which can offer substantial advantages for edge deployment. However, existing methods still fail to achieve satisfactory accuracy and scalability. In this work, we identify a parameter democratization effect as a key bottleneck: the sensitivity of all parameters becomes homogenized, severely limiting expressivity. To address this, we propose pQuant, a method that decouples parameters by splitting linear layers into two specialized branches: a dominant 1-bit branch for efficient computation and a compact high-precision branch dedicated to preserving the most sensitive parameters. Through tailored feature scaling, we explicitly guide the model to allocate sensitive parameters to the high-precision branch. Furthermore, we extend this branch into multiple, sparsely-activated experts, enabling efficient capacity scaling. Extensive experiments indicate our pQuant achieves state-of-the-art performance in extremely low-bit quantization.
+
+## 16. Neuronal Insights into LLM Attacks: Targeted Neuron Tuning for Precise and Robust Vulnerability Patching
+
+- Authors: Dan Shi, Renren Jin, Zhuowen Han, Yuqi Ren, Xinwei Wu, Zhigen Li, Deyi Xiong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7244078968751073
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1719/
+- PDF: https://aclanthology.org/2026.findings-acl.1719.pdf
+- Local PDF: pdf/2026-09-07_16_Neuronal Insights into LLM Attacks_ Targeted Neuron Tuning for Precise and Robust Vulnerability Patching.pdf
+
+Despite recent advances in safety alignment, large language models (LLMs) remain highly susceptible to adversarial attacks, while the internal mechanisms behind such vulnerabilities are still poorly understood. Existing gradient-based attribution methods offer valuable interpretability for analyzing information storage and processing in LLMs. However, they are inapplicable to adversarial attacks, which typically occur in open-ended generation settings without fixed ground-truth outputs. To address these challenges, we propose a novel similarity-based gradient attribution method to identify key neurons sensitive to adversarial behaviors in open-ended generation tasks. The detected neurons, termed targeted neurons, play a critical role in safety training. Building on this neuron-level perspective, we uncover two key neuronal patterns: (i) universal neurons that are consistently exploited across multiple attack strategies, and (ii) interference neurons that hinder safety improvements when fine-tuned indiscriminately, providing mechanistic insights into the interpretability of adversarial vulnerabilities. Inspired by these findings, we propose a neuron-level defense strategy, Targeted Neuron Tuning (TNT), which selectively fine-tunes the identified targeted neurons for specific attacks. Experimental evaluations across multiple LLM architectures and scales demonstrate that TNT substantially improves model robustness against a wide range of jailbreak attacks, achieving safe rates exceeding 90% and even approaching 100%, while preserving general task performance, enabling precise and robust safety interventions. Warning: This paper contains example data that may be harmful.
+
+## 17. SPARD: Self-Paced Curriculum for RL Alignment via Integrating Reward Dynamics and Data Utility
+
+- Authors: Xuyang Zhi, Peilun Zhou, Chengqiang Lu, Hang Lv, Yiwei Liang, Rongyang Zhang, Yan Gao, Yiwu, Yao Hu, Hongchao Gu, Defu Lian, Hao Wang, Enhong Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7243118582130577
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.2191/
+- PDF: https://aclanthology.org/2026.acl-long.2191.pdf
+- Local PDF: pdf/2026-09-07_17_SPARD_ Self-Paced Curriculum for RL Alignment via Integrating Reward Dynamics and Data Utility.pdf
+
+The evolution of Large Language Models (LLMs) is shifting the focus from single, verifiable tasks toward complex, open-ended real-world scenarios, imposing significant challenges on the post-training phase. In these settings, the scale and complexity of reward systems have grown significantly, transitioning toward multi-objective formulations that encompass a comprehensive spectrum of model capabilities and application contexts. However, traditional methods typically rely on fixed reward weights, ignoring non-stationary learning dynamics and struggling with data heterogeneity across dimensions. To address these issues, we propose SPARD, a framework that establishes an automated, self-paced curriculum by perceiving learning progress to dynamically adjust multi-objective reward weights and data importance, thereby synchronizing learning intent with data utility for optimal performance. Extensive experiments across multiple benchmarks demonstrate that SPARD significantly enhances model capabilities across all domains. Our code is publicly available at https://github.com/USTC-StarTeam/SPARD .
+
+## 18. UERLens: Understanding Event Relations in Large Language Models
+
+- Authors: Yong Guan, Zhiyuan Li, Shaoru Guo
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.723825630790847
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-short.38/
+- PDF: https://aclanthology.org/2026.acl-short.38.pdf
+- Local PDF: pdf/2026-09-07_18_UERLens_ Understanding Event Relations in Large Language Models.pdf
+
+Events exhibit rich semantic relations that are essential for understanding the unfolding of real-world processes. Although large language models (LLMs) have achieved strong performance on event relation extraction, how event relations are internally represented and utilized remains unclear. In this paper, we present UERLens, an interpretability framework for understanding event relations in LLMs. Specifically, we first construct UERBench, a counterfactual dataset for event relation analysis that covers causal, temporal, and sub-event relations. Based on counterfactual pairs, we identify relation-sensitive internal features by comparing model activations. We then examine the functional role of these features through model manipulation, including model intervention and model training. Experimental results show that event relations are encoded through structured and layer-specific internal features. Disabling relation-sensitive features leads to performance drops of over 22%, while enhancing them yields improvements of up to 7%. Furthermore, leveraging these interpretable features to train a lightweight classifier significantly improves event relation extraction, achieving F1 gains of up to 24% for causal relations.
+
+## 19. ConvX: A Lightweight Converter to Bridge Indexed Dense Representations and Large Language Models for Retrieval-Augmented Generation
+
+- Authors: Bonggeun Choi, Keunha Kim, Junho Han, Youngjoong Ko
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.723589895116199
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1823/
+- PDF: https://aclanthology.org/2026.findings-acl.1823.pdf
+- Local PDF: pdf/2026-09-07_19_ConvX_ A Lightweight Converter to Bridge Indexed Dense Representations and Large Language Models for Retrieval-Augmented.pdf
+
+Retrieval-Augmented Generation (RAG) has significantly advanced open-domain question answering systems by incorporating external knowledge into large language models. Despite its effectiveness, existing RAG pipelines suffer from critical efficiency limitations. In particular, modern transformer-based generators exhibit quadratic or higher computational complexity with respect to input sequence length and hidden dimensionality, leading to substantial inference latency as model scales and contextual inputs increase. This issue is exacerbated in RAG settings, where retrieved contexts substantially expand the input prompt. To alleviate this challenge, we propose an effective compression-based RAG framework, ConvX, that directly leverages indexed dense representations produced by a retriever, entirely substituting to long text contexts. Our approach expands a single dense representation into a fixed number of memory slots using a lightweight converter to provide rich lexical information. This design enables efficient knowledge integration while significantly reducing input length and computational overhead. Empirical evaluations demonstrate that the proposed model achieves competitive performances compared to the existing state-of-the-art model that uses a large ad-hoc context compressor, while offering substantially improved inference efficiency.
+
+## 20. LightReasoner: Can Small Language Models Teach Large Language Models Reasoning?
+
+- Authors: Jingyuan Wang, Yankai Chen, Zhonghang Li, Chao Huang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7232814395189973
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.122/
+- PDF: https://aclanthology.org/2026.acl-long.122.pdf
+- Local PDF: pdf/2026-09-07_20_LightReasoner_ Can Small Language Models Teach Large Language Models Reasoning.pdf
+
+Large language models (LLMs) have demonstrated remarkable progress in reasoning, often through supervised fine-tuning (SFT). However, SFT is resource-intensive, relying on large curated datasets, rejection-sampled demonstrations, and uniform optimization across all tokens—even though only a fraction carry meaningful learning value. In this work, we explore a counterintuitive idea: can smaller language models (SLMs) teach larger language models (LLMs) by revealing high-value reasoning moments that reflect the latter’s unique strength? We propose LightReasoner, a novel framework that leverages the behavioral divergence between a stronger expert model (LLM) and a weaker amateur model (SLM). LightReasoner operates in two stages: (1) a sampling stage that pinpoints critical reasoning moments and constructs supervision examples capturing the expert’s advantage through expert–amateur contrast, and (2) a fine-tuning stage that aligns the expert model with these distilled examples, amplifying its reasoning strengths. Across seven benchmarks, LightReasoner improves accuracy by up to 28.1%, while reducing time consumption by 90%, sampled problems by 80%, and tuned token usage by 99%, all without relying on ground-truth labels. By turning weaker SLMs into effective teaching signals, LightReasoner offers a scalable and resource-efficient approach for advancing LLM reasoning.
+
+## 21. FactVerse: A Benchmark for Factual Consistency in Interleaved Image–Text Generation
+
+- Authors: Yubo Shan, Kun Zhang, Qiming Xu, Liping Cao, Yingying Cao, Jian Zhang, Yu Wang, Jingyuan Li, Yuanzhuo Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7225955264129342
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1323/
+- PDF: https://aclanthology.org/2026.acl-long.1323.pdf
+- Local PDF: pdf/2026-09-07_21_FactVerse_ A Benchmark for Factual Consistency in Interleaved Image–Text Generation.pdf
+
+Interleaved multimodal understanding and generation—where models can interactively comprehend and produce images and text in arbitrary orders—has emerged as a key research direction in generative Multimodal Large Language Models(MLLMs). Such interleaved image–text content plays an increasingly important role in information dissemination. However, the compounded persuasive power of multimodal narratives also raises the risk of factual misinformation. Despite this, existing benchmarks lack effective mechanisms to evaluate factual consistency in interleaved image–text content. To bridge this gap, we introduce FactVerse, a benchmark dedicated to evaluating factual consistency in interleaved image-text generation. FactVerse comprises 3,000 human-verified instances across four categories and 50 domains, supporting both English and Chinese. We also establish a multi-dimensional evaluation framework designed to rigorously assess factual consistency. Experiments demonstrate that our framework achieves high alignment with human judgments, significantly outperforming existing evaluation methods. Furthermore, our analysis reveals systematic deficiencies in current models, offering critical insights for future design.
+
+## 22. Causal Evidence Extraction and Triangulation in Crisis Reports using Large Language Models: A ReliefWeb-based Study
+
+- Authors: Yuanjun Zhang, Mourad Oussalah
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.722538093127533
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1626/
+- PDF: https://aclanthology.org/2026.findings-acl.1626.pdf
+- Local PDF: pdf/2026-09-07_22_Causal Evidence Extraction and Triangulation in Crisis Reports using Large Language Models_ A ReliefWeb-based Study.pdf
+
+Humanitarian reports are long, noisy, and multi-topic, making it difficult to consolidate decision-relevant causal evidence. We present a ReliefWeb study (2000–2024) and a two-stage Large Language Model (LLM) pipeline that extracts structured intervention-outcome records with direction and strength attributes. Query-conditioned extraction restricts output to a specified intervention class, reducing retrieval-induced over-extraction, while snippet grounding links each relation to supporting text for auditability and classification. In an expert-annotated dataset of 100 reports, the best closed-source LLM achieved a weighted F1 score of 90.73% with strong cost-efficiency, while Llama-3.1-8B with supervised fine-tuning reached 94.15% weighted F1 score. We further propose context-preserving triangulation that aggregates strength-weighted evidence within disaster × source cells, applies Laplace smoothing and equally weights cells to quantify cross-context convergence via a Level-of-Evidence score. Applied to cash assistance, food-related outcomes show strong positive convergence (LoE=0.865) and stable long-horizon trajectories.
+
+## 23. HIPO: A Hierarchical Prompt Optimization Framework with Task Awareness and Fine-Grained Debugging
+
+- Authors: Lu Qi, Lei Chai, Hongrui Yu, Binhang Qi, Hailong Sun
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7224310603168833
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.996/
+- PDF: https://aclanthology.org/2026.findings-acl.996.pdf
+- Local PDF: pdf/2026-09-07_23_HIPO_ A Hierarchical Prompt Optimization Framework with Task Awareness and Fine-Grained Debugging.pdf
+
+Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse natural language processing tasks. However, their performance often hinges on carefully designed prompts, whose creation requires substantial human effort. While numerous automatic prompt optimization techniques have been proposed, existing methods typically apply the same prompt across all samples within a dataset, ignoring variation in sample difficulty. To address these limitations, we propose HIPO, a HIerarchical Prompt Optimization framework that shifts the paradigm from dataset-level to sample-level optimization. Our framework first employs a lightweight router model, trained offline, to predict the difficulty of each sample at test time. Based on this prediction, HIPO dynamically selects a prompt from a five-tiered hierarchy, tailoring complexity to sample difficulty. Furthermore, two refinement stages—Task Description Prompt Refine and Attribution-Based Prompt Refine—enhance generalizability and fine-grained optimization. Extensive experiments on 27 tasks demonstrate that HIPO outperforms all baselines, achieving state-of-the-art performance on 25% more tasks than the strongest baseline. Cost analysis further demonstrates substantial efficiency gains, reducing API calls, token consumption, and overall cost by 1.2× to 80×. Our implementation is publicly available at https://github.com/LuQiCode/HIPO .
+
+## 24. Graph-Based Phonetic Error Correction of Noisy ASR
+
+- Authors: Pratik Rakesh Singh, Mohammadi Zaki, Aneesh Mukkamla, Pankaj Wasnik
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7221371960027616
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.151/
+- PDF: https://aclanthology.org/2026.acl-industry.151.pdf
+- Local PDF: pdf/2026-09-07_24_Graph-Based Phonetic Error Correction of Noisy ASR.pdf
+
+Automatic speech recognition (ASR) systems, despite low overall word error rates, produce residual lexical errors that disproportionately affect semantically critical tokens such as named entities, negations, and sentiment-bearing words. These errors are often structured, arising from phonetic similarity rather than random noise, making naive token-level correction insufficient.We propose a structured ASR correction framework, that we call G-SPIN, that combines phonetic graph modeling with contextual language understanding. A graph neural network (GNN) first constructs acoustically plausible candidate neighborhoods for flagged tokens, explicitly restricting the correction search space to phonetic alternatives. A masked language model (MLM) then provides local contextual scoring, and an instruction-tuned large language model (LLM) performs final context-aware re-ranking over this compact candidate set. By decoupling structured phonetic reasoning from contextual semantic selection, our method avoids unconstrained generation while improving correction accuracy. The framework is lightweight, modular, and operates entirely at inference time.
+
+## 25. Relaxing the Constraints: A Dual-Importance Projection Mechanism for Lifelong Model Editing
+
+- Authors: Zhenghai Chen, Senbin Xu, Jiaxi Tan, Xinhua Wu, Yan Zhang, Xiawu Zheng, Shengchuan Zhang, Ke Li, Sicheng Zhao, Liujuan Cao, Rongrong Ji
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.722083466809991
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1910/
+- PDF: https://aclanthology.org/2026.findings-acl.1910.pdf
+- Local PDF: pdf/2026-09-07_25_Relaxing the Constraints_ A Dual-Importance Projection Mechanism for Lifelong Model Editing.pdf
+
+Factual knowledge stored in Large Language Models (LLMs) inevitably becomes outdated or erroneous over time, making it critical to update these models without incurring the high cost of retraining. Existing sequential knowledge editing methods predominantly rely on strict orthogonal projection to preserve previously edited knowledge. However, this excessive constraint limits gradient expressiveness, resulting in a significant degradation of model generalization and overall performance as the number of edits increases. To address this challenge, we propose Dual-Importance Projection Editing (DipEdit). This method leverages Singular Value Decomposition (SVD) to identify critical gradient subspaces and introduces a dual mechanism comprising “accumulated importance” and “projection importance.” Unlike traditional approaches that enforce strict orthogonality, DipEdit dynamically scales gradient components parallel to key subspaces based on their projection importance rather than discarding them directly. This approach enhances the model’s adaptability to new knowledge while maximally preserving historical knowledge. Extensive experiments conducted on five mainstream LLMs using the ZsRE and Counterfact datasets demonstrate that DipEdit effectively handles thousands of sequential edits. The proposed method achieves an average comprehensive performance improvement of 10.36% and effectively maintains the model’s general capabilities on downstream tasks. Code is available at: https://github.com/czhhhla/DipEdit .
+
+## 26. GenProve: Learning to Generate Text with Fine-Grained Provenance
+
+- Authors: Jingxuan Wei, Xingyue Wang, Yanghaoyu Liao, Jie Dong, Yuchen Liu, Caijun Jia, Bihui Yu, Junnan Zhu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.722074993087249
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.228/
+- PDF: https://aclanthology.org/2026.acl-long.228.pdf
+- Local PDF: pdf/2026-09-07_26_GenProve_ Learning to Generate Text with Fine-Grained Provenance.pdf
+
+Large language models (LLM) often hallucinate, and while adding citations is a common solution, it is frequently insufficient for accountability as users struggle to verify how a cited source supports a generated claim. Existing methods are typically coarse-grained and fail to distinguish between direct quotes and complex reasoning. In this paper, we introduce Generation-time Fine-grained Provenance, a task where models must generate fluent answers while simultaneously producing structured, sentence-level provenance triples. To enable this, we present ReFInE (Relation-aware Fine-grained Interpretability Evidence), a dataset featuring expert-verified annotations that distinguish between Quotation, Compression, and Inference. Building on ReFInE, we propose GenProve, a framework that combines Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO). By optimizing a composite reward for answer fidelity and provenance correctness, GenProve significantly outperforms 14 strong LLMs in joint evaluation. Crucially, our analysis uncovers a reasoning gap where models excel at surface-level quotation but struggle significantly with inference-based provenance, suggesting that verifiable reasoning remains a frontier challenge distinct from surface-level citation.
+
+## 27. Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory
+
+- Authors: Shiqi He, Yue Cui, Xinyu Ma, Yaliang Li, Bolin Ding, Mosharaf Chowdhury
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.722002857288483
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.838/
+- PDF: https://aclanthology.org/2026.acl-long.838.pdf
+- Local PDF: pdf/2026-09-07_27_Branch-and-Browse_ Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory.pdf
+
+Autonomous web agents powered by large language models (LLMs) show strong potential for performing goal-oriented tasks such as information retrieval, report generation, and online transactions. These agents mark a key step toward practical embodied reasoning in open web environments. However, existing approaches remain limited in reasoning depth and efficiency: vanilla linear methods fail at multi-step reasoning and lack effective backtracking, while other search strategies are coarse-grained and computationally costly. We introduce Branch-and-Browse , a fine-grained web agent framework that unifies structured reasoning-acting, contextual memory, and efficient execution. It (i) employs explicit subtask management with tree-structured exploration for controllable multi-branch reasoning, (ii) bootstraps exploration through efficient web state replay with background reasoning, and (iii) leverages a page action memory to share explored actions within and across sessions. On the WebArena benchmark, Branch-and-Browse achieves a task success rate of 35.8% and reduces execution time by up to 40.4% relative to state-of-the-art methods. These results demonstrate that Branch-and-Browse is a reliable and efficient framework for LLM-based web agents. Code is available at https://anonymous.4open.science/r/Branch_and_Browse/ .
+
+## 28. For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs
+
+- Authors: Wenlong Deng, Qi Zeng, Jiaming Zhang, Minghui Chen, Zixin Ding, Christos Thrampoulidis, Boying Gong, Xiaoxiao Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.721951654830686
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.664/
+- PDF: https://aclanthology.org/2026.acl-long.664.pdf
+- Local PDF: pdf/2026-09-07_28_For-Value_ Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs.pdf
+
+Data valuation is essential for enhancing the transparency and accountability of large language models (LLMs) and vision-language models (VLMs). However, existing methods typically rely on gradient computations, making them computationally prohibitive for billion-parameter models and precluding batch parallelization. In this work, we introduce For-Value, a forward-only data valuation framework that enables efficient batch-scalable value estimation while maintaining effectiveness. Leveraging the expressive power of pretrained LLMs/VLMs, we theoretically demonstrate that data valuation can be captured by the alignment between the final hidden representations and prediction errors at the last layer. In light of this insight, For-Value computes data value using a simple closed-form expression with a single forward pass, eliminating the need for costly backpropagation and enabling efficient batch calculating at scale. Extensive experiments show that For-Value matches or outperforms gradient-based baselines in detecting influential data and mislabeled data, while achieving significant efficiency improvements.
+
+## 29. DeCoVec: Building Decoding Space based Task Vector for Large Language Models via In-Context Learning
+
+- Authors: Feiyang Li, Yile Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7218529184666194
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.953/
+- PDF: https://aclanthology.org/2026.findings-acl.953.pdf
+- Local PDF: pdf/2026-09-07_29_DeCoVec_ Building Decoding Space based Task Vector for Large Language Models via In-Context Learning.pdf
+
+Task vectors, representing directions in model or activation spaces that encode task-specific behaviors, have emerged as a promising tool for steering large language models (LLMs). However, existing approaches typically require fine-tuning or invasive manipulation of internal states, limiting their flexibility and scalability. We propose DeCoVec (Decoding Space based Task Vector), a training-free and non-invasive framework that constructs task vectors directly in the decoding space by leveraging in-context learning (ICL). Specifically, DeCoVec captures the task essence as the difference between the output logit distributions of few-shot and zero-shot prompts, then steers generation by injecting this vector into the decoding process. Experiments across seven LLMs (0.5B–9B) on TruthfulQA, Math-500, and AQUA-RAT show that DeCoVec consistently outperforms standard few-shot baselines, with gains up to +5.50 average accuracy. Further analysis demonstrates that DeCoVec effectively suppresses generation degeneration and logical flaws while exhibiting strong robustness to demonstration ordering, all without incurring additional input token costs. Our method offers a training-free and non-invasive solution for LLM steering without requiring weight updates or auxiliary models.
+
+## 30. SimpleOCR: Rendering Visual Questions to Teach MLLMs to Read
+
+- Authors: Yibo Peng, Peng Xia, Ding Zhong, Kaide Zeng, Siwei Han, Yiyang Zhou, Jiaqi Liu, Ruiyi Zhang, Huaxiu Yao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.721661394549196
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.519/
+- PDF: https://aclanthology.org/2026.findings-acl.519.pdf
+- Local PDF: pdf/2026-09-07_30_SimpleOCR_ Rendering Visual Questions to Teach MLLMs to Read.pdf
+
+Despite the rapid advancements in Multimodal Large Language Models (MLLMs), a critical question regarding their visual grounding mechanism remains unanswered: do these models genuinely read text embedded in images, or do they merely rely on parametric shortcuts in the text prompt? In this work, we diagnose this issue by introducing the Visualized-Question (VQ) setting, where text queries are rendered directly onto images to structurally mandate visual engagement. Our diagnostic experiments on Qwen2.5-VL reveal a startling capability-utilization gap: despite possessing strong OCR capabilities, models suffer a performance degradation of up to 12.7% in the VQ setting, exposing a deep-seated modality laziness. To bridge this gap, we propose SimpleOCR, a plug-and-play training strategy that imposes a structural constraint on the learning process. By transforming training samples into the VQ format with randomized styles, SimpleOCR effectively invalidates text-based shortcuts, compelling the model to activate and optimize its visual text extraction pathways. Empirically, SimpleOCR yields robust gains without architectural modifications. On four representative OOD benchmarks, it surpasses the base model by 5.4% and GRPO based on original images by 2.7%, while exhibiting extreme data efficiency, achieving superior performance with 30x fewer samples (8.5K) than recent RL-based methods. Furthermore, its plug-and-play nature allows seamless integration with advanced RL strategies like NoisyRollout to yield complementary improvements. Code is available at https://github.com/aiming-lab/SimpleOCR .
