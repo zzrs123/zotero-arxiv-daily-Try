@@ -1,0 +1,632 @@
+# Paper Daily Reading - 2026-09-10
+
+## 1. Towards Unified Multimodal Graph Foundation Model: A Bridge-Router-Adapter Based Approach
+
+- Authors: Sirui Zhang, Yubing Zhou, Xunkai Li, Zekai Chen, Shumeng Li, Wang Luo, Yinlin Zhu, Yujin Gao, Rong-Hua Li
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-06
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.9930302357093823
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.06668v1
+- PDF: https://arxiv.org/pdf/2609.06668v1
+- Local PDF: pdf/2026-09-10_01_Towards Unified Multimodal Graph Foundation Model_ A Bridge-Router-Adapter Based Approach.pdf
+
+Multimodal graphs couple node attributes in different modalities, such as text and images, with relational structure, enabling topological structure and cross-modality attributes to be modeled jointly. Multimodal graph foundation models seek unified representations from such data that transfer across different graph domains and downstream tasks. However, existing methods exhibit two fundamental limitations. (1) Cross-Scope Context Entanglement. They merge scope-specific graph contexts into a unified representation, obscuring their distinctions during multimodal construction. (2) Scope-Ignorant Modality Routing. They route modalities within a fixed graph scope, overlooking how modality relevance varies across neighborhood ranges. To address these challenges, we propose BRAIN, a unified model that focuses on graph context that combines neighborhood scope with modality composition. BRAIN comprises a scope-conditioned Bridge that combines structural information spanning local-to-global neighborhood scopes with different modality compositions; a hierarchical Router that estimates the relevance between the scope and the task, and selects compositions separately within each scope, allowing modality utility to vary with graph range; and a lightweight residual Adapter that further specializes the routed embedding for downstream prediction. BRAIN is trained through multi-graph pretraining followed by task-specific adaptation. Experiments across nine datasets and four task families demonstrate its broad effectiveness, improving node-classification and link-prediction performance by up to 4.73% relative to the strongest baseline, while achieving an average relative improvement of 14.72% across four graph-to-text and two graph-to-image metrics.
+
+## 2. $α$-Graph: Attention-Infused Normalizing Flow Approach to Tractable Graph Modeling
+
+- Authors: Thanh-Dat Truong, Sarah Alharbi, Susan Gauch, Xinghui Zhao, Marios Savvides, Khoa Luu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.LG, cs.CV
+- Relevance: 3.837242371392487
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.07961v1
+- PDF: https://arxiv.org/pdf/2609.07961v1
+- Local PDF: pdf/2026-09-10_02_$α$-Graph_ Attention-Infused Normalizing Flow Approach to Tractable Graph Modeling.pdf
+
+Graph modeling, a crucial task for representing complex relationships in graph-structured data, has achieved significant success in recent years. However, current graph modeling methods rely on traditional Graph Neural Networks and pre-training approaches to implicitly learn the underlying relational structure of graph data. Thus, these prior methods cannot capture the complex graph structure and correlations among inputs. In this paper, we introduce a novel Attention-based Normalizing Flow-based Approach\footnote{Our implementation and models will be released publicly for research reproducibility.} (ANFA or $α$) that provides an explicit, interpretable, and tractable Graph Modeling ($α$-Graph). In particular, we propose a new Unconditional Graph Normalizing Flow with an Invertible Attention Mechanism to capture the complex relational structure of graph data. To further enhance the expressiveness of the model, we introduce Conditional Graph Normalizing Flow with Learnable Queries that enables efficient modeling of correlations in graph-structured data. We show that our Conditional Graph Normalizing Flows behave similarly to Unconditional Graph Normalizing Flows, enhancing expressiveness while maintaining training stability and efficiency. Our experimental results on three benchmarks will illustrate the effectiveness and the state-of-the-art (SoTA) performance of the proposed $α$-Graph method.
+
+## 3. Topology-induced Operators Reveal Complementary Graph Representations without Training
+
+- Authors: Meng Qin, Jinqiang Cui, Hongwei Zheng, Weihua Li, Sen Pei
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.LG, cs.SI
+- Relevance: 3.7644427483517378
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08152v1
+- PDF: https://arxiv.org/pdf/2609.08152v1
+- Local PDF: pdf/2026-09-10_03_Topology-induced Operators Reveal Complementary Graph Representations without Training.pdf
+
+Graph representation learning has largely focused on designing increasingly sophisticated models to transform graph topology into vector representations, or embeddings. However, the extent to which embedding quality depends on model learning, rather than on the underlying topological transformations, remains unclear. Here, we show that informative embeddings can be derived without complicated model design and gradient-based training. Propagating random features through implicit hierarchical structures induced by random walks and anonymous walks yields embeddings that capture node proximity and structural role, respectively. These two training-free embeddings preserve complementary aspects of graph organization and perform competitively with classic and recent methods across various node-, edge-, and graph-level tasks. They often require substantially less computation, resulting in a favorable quality-efficiency trade-off. Combining the two types of embeddings further improves inference quality of some tasks compared with using either embedding type alone. Our results suggest that informative graph embeddings can arise from carefully chosen topological transformations before any learning operation is applied.
+
+## 4. Chimaera: A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning
+
+- Authors: Jonathan Frank, David Richerby, Ansgar Scherp
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.706578203498929
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08709v1
+- PDF: https://arxiv.org/pdf/2609.08709v1
+- Local PDF: pdf/2026-09-10_04_Chimaera_ A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning.pdf
+
+Designing foundation models for graphs is challenging due to the irregular structure of graphs and the different sizes and characteristics of embeddings. Chimaera integrates mixture-of-experts with graph foundation models (GFM). It integrates different GFM architectures, such as graph prompts and linear GNN models. Large language models are used to generate embeddings, and experts can be trained and combined following different strategies, GFMs, embeddings, etc. Furthermore, Chimaera extends existing linear GNNs to support link-level and graph-level tasks in addition to node-level tasks. Empirical analyses are performed on same-task and cross-task experiments with node, link, and graph classification tasks using six benchmark text-attributed graph datasets. The experiments demonstrate the effectiveness of Chimaera and its capabilities for transfer across tasks and datasets. Further insights include the need to use both large and small language models to generate embeddings for the experts, a strong cross-task transferability of simple but effective linear GNNs, and using few samples only to provide strong results.
+
+## 5. Multi-granularity Adaptive Hypergraph Representation Learning via Granular-ball
+
+- Authors: Sen Zhao, Yifan Guan, Jinyuan Ni, Gaojie Xu, Zhang Xu, Xiaoyu Lian, Yi Liu, Yi Wang, Wei Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-04
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.678936202760668
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.05574v1
+- PDF: https://arxiv.org/pdf/2609.05574v1
+- Local PDF: pdf/2026-09-10_05_Multi-granularity Adaptive Hypergraph Representation Learning via Granular-ball.pdf
+
+Hypergraph representation learning aims to capture high-order information in graphs by constructing hyperedges that simultaneously connect multiple nodes. These hyperedges adapt to the graph's topological features, facilitating the extraction of high-order relationships at multiple granularities. Most prior work relies on predefined definitions to generate hyperedges, overlooking the diversity in graph topological structures and the multi-granularity characteristics of hyperedges. As a result, this limits their ability to effectively and adaptively discover high-order relationships and efficiently process complex structural information. To address this limitation, we propose a novel framework called \underline{M}ulti-\underline{G}ranularity \underline{H}ypergraph \underline{R}epresentation \underline{L}earning (MGHRL). MGHRL introduces an Adaptive Granular Hypergraph Generation strategy, which generates hyperedges at multiple levels of granularity through the adaptive splitting of granular-ball, effectively capturing high-order relationships based on the graph's topological structure. Additionally, we propose a Multi-Granularity Hypergraph Network with multiple sub-networks, capturing features from hyperedges at different granularities and integrating them via hierarchical reversible connections. Experimental results show that MGHRL significantly outperforms baseline models on benchmark datasets.
+
+## 6. Structural Entropy-Driven Graph Diffusion Generation for One-Shot Federated Graph Learning
+
+- Authors: Shutong Zheng, Lele Fu, Sheng Huang, Wei Yang Bryan Lim, Chuan Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-06
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.648788597578246
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.06499v1
+- PDF: https://arxiv.org/pdf/2609.06499v1
+- Local PDF: pdf/2026-09-10_06_Structural Entropy-Driven Graph Diffusion Generation for One-Shot Federated Graph Learning.pdf
+
+One-shot federated graph learning (FGL) requires the server to estimate client contributions from highly compressed information, yet conventional volume-based weighting captures the amount of client data while overlooking how its connectivity is organized. In this paper, we propose SPIRE, a Structural Entropy-Driven Graph Diffusion Generation method that introduces topology-aware client differentiation into one-shot FGL. Specifically, we employ first-order degree-distribution structural entropy as a compact descriptor of degree-mass dispersion and use it to derive structural client weights, providing an inductive bias that accounts for differences in graph topology beyond data volume. On the generation side, a graph diffusion model on the server synthesizes pseudographs conditioned on the weighted client prototypes, capturing both semantic and structural information without requiring additional client-side training. The generated pseudographs are then assembled via disjoint union fusion to train a global graph neural network. Extensive experiments on seven real-world graph datasets demonstrate that SPIRE consistently outperforms conventional and one-shot FGL methods, with particularly strong gains under highly heterogeneous (non-IID) and graph-perturbed settings.
+
+## 7. LoGIC: Budgeted Context Construction for Node-Level Graph In-Context Learning with Tabular Foundation Models
+
+- Authors: Mingqi Yang, Zidong Guo, Jihui Yang, Wenming Zuo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-05
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.5204772159537825
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.05955v1
+- PDF: https://arxiv.org/pdf/2609.05955v1
+- Local PDF: pdf/2026-09-10_07_LoGIC_ Budgeted Context Construction for Node-Level Graph In-Context Learning with Tabular Foundation Models.pdf
+
+Tabular foundation models have become powerful graph learners. Systems such as G2T-FM and GraphPFN encode each node as a feature row and make predictions through in-context learning (ICL), with labeled rows serving as the prompt. Current protocols employ the complete training table as context, causing attention to scale quadratically with the labeled pool and introducing preprocessing and memory bottlenecks. We investigate context construction for node-level graph ICL: which labeled nodes and auxiliary unlabeled nodes should constitute the prompt for specified queries. We formulate this allocation in terms of two resources: a labeled-context budget for predictive evidence and an unlabeled-halo budget for adapter message passing without using label capacity. We present LoGIC, which retrieves labeled nodes via structural, feature-based, and coverage channels, shares each context across the queries in a graph-local cluster, incorporates an unlabeled halo for adapter backbones, and chooses the channel and context budget without test labels. Across three backbone configurations drawn from two model families on GraphLand, budgeted contexts maintain locally runnable full-context performance, stay competitive with published large-dataset results, and markedly lower peak memory requirements compared with full-context and whole-graph inference. They further permit frozen graph ICL on million-node graphs without retraining. Our analysis identifies when retrieval channels work best and connects their behavior with graph properties.
+
+## 8. TTGBench: Benchmarking Topological Evolution and Semantic Drift in Text-attributed Temporal Graphs
+
+- Authors: Longfei Ma, Zemin Liu, Fei Wu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.4268653981527244
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08226v1
+- PDF: https://arxiv.org/pdf/2609.08226v1
+- Local PDF: pdf/2026-09-10_08_TTGBench_ Benchmarking Topological Evolution and Semantic Drift in Text-attributed Temporal Graphs.pdf
+
+Temporal graph learning models the evolution of dynamic systems, where both structural interactions and semantic states change over time. However, existing benchmarks primarily emphasize structural evolution via temporal link prediction (TLP), while support for semantic evolution remains limited. Although temporal node classification (TNC) is sometimes included, it is typically restricted to simplistic binary settings that fail to capture realistic semantic drift. Moreover, commonly used datasets exhibit high link repetition, leading to inflated performance estimates and obscuring true model capability. To address these limitations, we introduce \textbf{TTGBench}, a new benchmark that jointly evaluates structural and semantic evolution. TTGBench comprises six real-world, text-rich datasets characterized by \emph{Dual Volatility}, enabling rigorous and fair evaluation of existing models. Notably, it is the first benchmark to support both multi-class and multi-label TNC, filling a critical gap in evaluating temporal semantic drift. We conduct a comprehensive evaluation of 17 state-of-the-art methods across Temporal Graph Neural Networks (TGNNs) and Large Language Model (LLM)-based paradigms. The results reveal a clear \emph{capability divide} between the two paradigms: TGNN-based methods excel at structural prediction but fail at semantic tracking, whereas LLM-based predictors show the opposite trend. Through in-depth analysis, we uncover their fundamental limitations and provide insights for developing more comprehensive temporal graph models.
+
+## 9. Revisiting Spectral Representations in Generative Diffusion Models
+
+- Authors: Yuehao Wang, Peihao Wang, Hanwen Jiang, Ziyi Yang, Qixing Huang, Zhangyang Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.3653437859195794
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08253v1
+- PDF: https://arxiv.org/pdf/2609.08253v1
+- Local PDF: pdf/2026-09-10_09_Revisiting Spectral Representations in Generative Diffusion Models.pdf
+
+Diffusion models have shown remarkable performance on diverse generation tasks. Recent work finds that imposing representation alignment on the hidden states of diffusion networks can both facilitate training convergence and enhance sampling quality, yet the mechanism driving this synergy remains insufficiently understood. In this paper, we investigate the connection between self-supervised spectral representation learning and diffusion generative models through a shared perspective on perturbation kernels. On the diffusion side, samples (e.g., images, videos) are produced by reversing a stochastic noise-injection process specified by Gaussian kernels; on the spectral representation side, spectral embeddings emerge from contrasting positive and negative relations induced by random perturbation kernels. Motivated by this, we propose a self-supervised spectral representation alignment method to facilitate diffusion model training. In addition, we clarify how joint spectral learning can benefit diffusion training from a geometric perspective. Furthermore, we find that the optimization of the spectral alignment objective is in an equivalent form of diffusion score distillation in the representation space. Building on these findings, we integrate a spectral regularizer into diffusion training objectives to improve the performance of diffusion models on multiple datasets. Experiments across images and 3D point clouds show consistent gains in generation quality. Code is released at https://github.com/yuehaowang/spectral-reg-diffusion.
+
+## 10. MV-STRIDE: Enabling MLLMs to Master Multi-View Spatial Reasoning via Hierarchical Capability Modeling
+
+- Authors: Jin Xu, Xiaojian Huang, Zhuodong Luo, Zhihong Zhang, Xin Liu, Jiansheng Wei, Xinzhi Wang, Jie Zhao, Xuejin Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.241842570508803
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.07258v1
+- PDF: https://arxiv.org/pdf/2609.07258v1
+- Local PDF: pdf/2026-09-10_10_MV-STRIDE_ Enabling MLLMs to Master Multi-View Spatial Reasoning via Hierarchical Capability Modeling.pdf
+
+Despite the rapid progress of Multimodal Large Language Models (MLLMs) in 2D vision-language tasks, robust multi-view spatial reasoning remains a fundamental bottleneck due to the lack of structured 3D cognitive pathways in existing datasets. To address this, we introduce MV-STRIDE, a Multi-View hierarchical SpaTial Reasoning dataset with Interdependent and DEcomposed capabilitiEs. Moving beyond flat data structures, MV-STRIDE explicitly models the dependency relationships between foundational perception, scene understanding, and complex contextual reasoning, providing a coherent learning pathway aligned with human spatial cognition. We develop a systematic QA generation pipeline leveraging diverse 3D scene sources that enforces cross-view dependency constraints to prevent single-view solvability, generating multi-level spatial reasoning tasks supported by cognitively grounded chain-of-thought supervision for complex inference. Extensive evaluations demonstrate that our multi-stage training framework based on our hierarchical dataset achieves state-of-the-art performance across multiple spatial reasoning benchmarks, notably the multi-view oriented MMSI-Bench. Our approach enables MLLMs to maintain robust, 3D-consistent spatial reasoning across diverse viewpoints. The code and dataset are available at https://co1dspring.github.io/MV-STRIDE/.
+
+## 11. Procedural Graphs: Self-Evolving Execution Structures for LLM Agents
+
+- Authors: Yuxing Lu, Yicheng Chen, Shanchan Wu, Sercan Ö. Arık
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.AI, cs.CL, cs.MA
+- Relevance: 3.240387542681301
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.09153v1
+- PDF: https://arxiv.org/pdf/2609.09153v1
+- Local PDF: pdf/2026-09-10_11_Procedural Graphs_ Self-Evolving Execution Structures for LLM Agents.pdf
+
+Large language models are increasingly deployed as agents that plan over long horizons and act through external tools. Most agents select actions through unconstrained generation over an accumulating history, leaving implicit the procedural knowledge of what to do, in what order, and under which conditions. As trajectories lengthen, agents can lose track of their objectives, invoke tools out of order, and repeat unproductive actions. We introduce the Procedural Graph: just as a knowledge graph organizes factual knowledge into (entity, relation, entity) triplets for what-is questions, a Procedural Graph organizes procedural knowledge into (procedure, relation, procedure) triplets for what-to-do questions. At each decision step, the framework localizes the agent's active node, and a guidance model translates the surrounding subgraph into step-level situational guidance that biases the solver's next action without dictating it. The graph is self-evolving: an LLM refiner contrasts failed trajectories with successful ones and edits the graph's topology and attributes, committing edits that preserve or improve held-out validation performance while retaining rejected ones to discourage repetition. Starting from a minimal skeleton, the loop builds graphs that match or surpass hand-designed ones. It can also repair a flawed expert prior. Across multiple datasets, task types, and LLMs, the Procedural Graph delivers consistent gains over memory-based baselines, and self-evolution further improves performance without manual engineering.
+
+## 12. A Network-Structured Bayesian Hierarchical Model for Sparse Mutation-Drug Response Associations: Application to Cancer Pharmacogenomics
+
+- Authors: Hammed A. Olayinka, Saheed O. Olayemi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-05
+- DOI: Unavailable
+- Categories: stat.AP, q-bio.GN, q-bio.QM, stat.ME
+- Relevance: 3.2356400237735365
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.05784v1
+- PDF: https://arxiv.org/pdf/2609.05784v1
+- Local PDF: pdf/2026-09-10_12_A Network-Structured Bayesian Hierarchical Model for Sparse Mutation-Drug Response Associations_ Application to Cancer P.pdf
+
+We develop a network-structured Bayesian hierarchical model for sparse association mapping between genomic alterations and quantitative treatment-response phenotypes. The framework combines a Gaussian Markov random field prior that borrows strength across pathway-connected genes, a global-local horseshoe prior inducing sparsity, and a conjugate Gibbs sampler requiring no Metropolis-Hastings steps. Though broadly applicable to high-dimensional settings with known predictor networks, we validate it using cancer cell-line drug-sensitivity data. Applied to GDSC2 ($N=951$ cell lines, $G=219$ driver genes, $D=295$ drugs), the model identifies 126 gene-drug associations (0.195\% of 64{,}605 pairs), concentrated in EZH2 (45 drugs, all sensitivity-direction, mean effect $-0.911$ $\ln$IC50) and KMT2D (36 drugs, all sensitivity-direction, mean effect $-0.496$ $\ln$IC50). These markers show external support in an independent PRISM screen (1{,}518 compounds), with KMT2D achieving complete directional replication (36/36) and EZH2 partial replication (8/12). Five-fold cross-validated predictive log-likelihood confirms each prior layer's value: the full model outperforms the no-network ablation by $+3{,}109$ log-units per fold and the no-horseshoe ablation by $+14{,}039$ log-units, consistently across folds. Simulations under three scenarios show the full model achieves the highest precision and lowest false-discovery rate throughout, while the network prior improves sensitivity recovery under network-structured signal. A tissue-stratified extension identifies coherent subgroup refinements, including lung-specific EGFR-inhibitor sensitivity and skin-specific BRAF-Dabrafenib sensitivity. These results show the framework identifies sparse, interpretable, externally supported drug-sensitivity markers while enabling principled investigation of tissue-specific departures from shared effects.
+
+## 13. SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale
+
+- Authors: Dawei Fu, Cheng Jiang, Sitian Qian, Huainan Wang, Zhongkai Hao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.AI, cs.CL
+- Relevance: 3.2243326606994973
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08228v1
+- PDF: https://arxiv.org/pdf/2609.08228v1
+- Local PDF: pdf/2026-09-10_13_SE-GoS_ Self-Evolving Graph-of-Skills for Skill Library at Scale.pdf
+
+Modern LLM agents increasingly rely on reusable skills, yet as skill libraries scale to thousands of entries, effective retrieval becomes a bottleneck. Graph-of-Skills (GoS) addresses this challenge by exploiting dependency-aware graph structure for scalable skill retrieval, while SkillDAG further demonstrates that skill graphs can accumulate execution-backed structure online. However, these approaches leave open whether historical execution traces can be systematically distilled into a better retrieval graph that generalizes to unseen tasks. We present Self-Evolving Graph-of-Skills (SE-GoS), a training-free framework that evolves an existing GoS graph from execution traces while preserving the original retrieval pipeline. SE-GoS performs three complementary updates: topology evolution that discovers and prunes skill relationships from execution evidence, edge-weight evolution that reinforces retrieval-relevant relationships based on historical effectiveness, and description evolution that optimizes retrieval-facing skill descriptions using execution feedback. Across three LLMs on SkillsBench, SE-GoS consistently improves task reward while reducing input tokens relative to full skill loading, with gains varying across model families. In a representative setting, one evolution round improves reward from 52.4\% to 59.4\% while reducing input tokens by approximately one-third relative to full skill loading, and the resulting graph transfers to a disjoint held-out split with a 5.4-point improvement over the static GoS baseline. These results show that skill graphs can be improved from execution experience without model training, changes to the retrieval algorithm, or modifications to skill content, turning a static retrieval graph into an evolving retrieval infrastructure.
+
+## 14. LLMs for Social Network Modeling: From Network Generation to Dynamic Processes
+
+- Authors: Shikha Mallick, Alex Thomo, Akrati Saxena
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.SI, cs.AI
+- Relevance: 3.1769996222323513
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08049v1
+- PDF: https://arxiv.org/pdf/2609.08049v1
+- Local PDF: pdf/2026-09-10_14_LLMs for Social Network Modeling_ From Network Generation to Dynamic Processes.pdf
+
+Large language models (LLMs) are rapidly emerging as a new paradigm for modeling social networks by representing users and their relationships and interactions through natural language. Unlike classical network models or deep learning approaches, LLMs can simulate context-aware social behavior and language-driven interactions, enabling more realistic modeling of network formation and dynamic social processes. However, existing studies are scattered across different research communities and lack a unified perspective. This survey presents the first comprehensive review of LLMs for social network modeling by organizing the literature into two broad categories: network generative models and dynamic process models. Network generative models are further classified into selection-based and interaction-based approaches, while dynamic process models are categorized into opinion dynamics, information diffusion, and rumor propagation, each with their underlying modeling mechanisms. LLMs enable rich textual social interactions and decision-making, but they also exhibit many limitations, including inherent social biases and prompt sensitivity. We outline these open research challenges and discuss future directions in LLM-based social network modeling.
+
+## 15. Graph-Based Personalized Memory for LLM Agents: Representation, Evolution, Retrieval, and Evaluation
+
+- Authors: Dac Duy Anh Nguyen, Zhangchi Qiu, Shigeng Chen, Alan Wee-Chung Liew
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.1741784427830497
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08599v1
+- PDF: https://arxiv.org/pdf/2609.08599v1
+- Local PDF: pdf/2026-09-10_15_Graph-Based Personalized Memory for LLM Agents_ Representation, Evolution, Retrieval, and Evaluation.pdf
+
+Large Language Model (LLM) agents are evolving from single-session tools toward long-term personal assistants that must adapt to individual users across tasks, contexts, and interactions. This shift makes memory a core requirement for personalization, since user preferences, goals, constraints, relationships, and past experiences are accumulated gradually and often change over time. Graph-based personalized memory provides a structured way to model such user information through explicit relations, temporal context, and evidence links. Such representations can model not only what an agent remembers about a user but also how memories are connected, revised, and retrieved to support personalized decisions. However, existing work remains fragmented across personalized agents and generic graph memory frameworks, making it difficult to understand the design space as a whole. This survey develops a lifecycle-oriented view of graph-based personalized memory for LLM agents. We organize existing studies around memory representation, memory evolution, memory retrieval, and memory evaluation. We further compare key design choices, discuss current evaluation practices, and open challenges in building reliable long-term personalized agents. This survey aims to clarify how graph-based memory can support adaptive, controllable, and user-centric LLM agents.
+
+## 16. Dual-Latent Memory Routing for Vision-Language Reasoning
+
+- Authors: Hao-Xuan Ma, Jin-Fei Qi, Yicheng Xiao, Han-Jia Ye
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-02
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.168107275629538
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.05539v1
+- PDF: https://arxiv.org/pdf/2609.05539v1
+- Local PDF: pdf/2026-09-10_16_Dual-Latent Memory Routing for Vision-Language Reasoning.pdf
+
+Multimodal large language models (MLLMs) have recently made strong progress in vision-language reasoning, yet their performance often degrades as generations grow longer. A key factor is that they frequently lose track of earlier visual evidence and intermediate constraints under a monolithic growing context. Inspired by how humans separately recall what they see and what they infer when solving complex tasks, we propose DLMR, a parameter-efficient mechanism that equips MLLMs with Dual Latent Memories: a visual memory that compresses image evidence and a reasoning memory that tracks intermediate conclusions and constraints. A Router then dynamically decides which memory and how much to reuse during inference, preserving visual grounding while maintaining coherent long-horizon reasoning. DLMR is trained in three stages, from latent memory construction to selective router learning, while keeping the base MLLM frozen, yielding substantial gains on both general and reasoning benchmarks with only a small number of additional trainable parameters. Analyses further show interpretable, state-dependent routing with specialized memory roles and reduced decoding tokens over long generations. Code is available at https://github.com/Hunter-Wrynn/DLMR.
+
+## 17. Streaming Hierarchical Inference with Tabular Foundation Models
+
+- Authors: Vitor Crista, Afonso Lourenço, Diogo Martinho, Goreti Marreiros
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.1674619327533327
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.07956v1
+- PDF: https://arxiv.org/pdf/2609.07956v1
+- Local PDF: pdf/2026-09-10_17_Streaming Hierarchical Inference with Tabular Foundation Models.pdf
+
+Tabular Foundation Models (TFMs) have recently demonstrated strong predictive performance through in-context learning, but their deployment in high-throughput data streams remains challenging due to communication overhead and latency. We propose \textit{HINT}, a hierarchical inference framework that combines edge-based retrieval with cloud-based TFM inference. A graph-based approximate nearest neighbor memory maintained over a sliding window provides local predictions and uncertainty estimates, allowing confident samples to be processed locally while uncertain instances are selectively offloaded, together with their retrieved context, to a cloud-hosted TFM. The framework exposes an offloading threshold and a neighborhood retrieval policy that can be varied to balance predictive performance and communication cost. Experiments show \textit{HINT} consistently identifies favorable trade-offs.
+
+## 18. A*-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM
+
+- Authors: Xiaoang Xu, Siyuan Liu, Shuo Wang, Junlan Feng, Fanyu Meng, Zhu Zhang, Jixun Wang, Xiaorong Wang, Zihan Zhou, Xin Li, Chaojun Xiao, Yiming Zhang, Huijia Wu, Liuyu Xiang, Peipei Li, Zhaofeng He
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, cs.LG
+- Relevance: 3.1370259658952016
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.07821v1
+- PDF: https://arxiv.org/pdf/2609.07821v1
+- Local PDF: pdf/2026-09-10_18_A_-Thought-V2_ Efficient Latent Reasoning via Geometric Dynamics of LLM.pdf
+
+Chain-of-Thought (CoT) improves the reasoning ability of Large Language Models (LLMs) but incurs substantial computation and context costs. Existing methods either lose intermediate information through hard pruning or lack a principled criterion for continuous compression. We present A*-Thought-V2, a geometric dynamics of LLM guided framework that models CoT as a hidden-state trajectory and replaces hard deletion with an explicit-implicit interleaved latent architecture. After projecting question, step, and solution representations into a 3D PCA space, it measures alignment between each local transition and global question-to-solution direction. Aligned steps remain explicit text, whereas deviating steps are compressed into continuous latent tokens. Directional angles capture both local semantics and reasoning dynamics: small angles indicate direct execution and answer formation, while large angles more frequently involve checking, correction, and branch exploration; their temporal variation reveals exploration, convergence, and refinement stages. To train this architecture, we introduce stepwise embedding forcing, which pools each redundant step into a single latent embedding, and label forcing, which supervises that latent token with a soft multi-modal vocabulary distribution instead of a hard one-hot label. Experiments on Qwen3.5-9B and Qwen3.6-27B across six in-domain and out-of-domain benchmarks show that A*-Thought-V2 improves average accuracy by up to 2.6% while reducing response length by up to half, increasing Accuracy per Computation Unit by 2.29$\times$, and reducing preprocessing and training time by 94.6% and up to 80.3%, respectively. Representation analyses suggest that latent states form a compact region distinct from textual states, while higher entropy at latent-token positions reflects broader soft targets that encourage richer step-level feature learning.
+
+## 19. Reconstructing signaling histories of single cells via perturbation screens and transfer learning
+
+- Authors: Nicholas Hutchins, Miram Meziane, Chao Lü, Maisam Mitalipova, David W. Fischer, Pulin Li
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Methods
+- Publication status: published
+- Publication date: 2026-09-08
+- DOI: https://doi.org/10.1038/s41592-026-03213-8
+- Categories: Cell Image Analysis Techniques, Single-cell and spatial transcriptomics, Gene Regulatory Network Analysis
+- Relevance: 3.13557188606709
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41592-026-03213-8
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Manipulating the signaling environment is an effective approach to alter cellular states for broad-ranging applications, from engineering tissues to treating diseases. Such manipulation requires knowing the signaling states and histories of the cells in situ , for which high-throughput discovery methods are lacking. Here, we present an integrated experimental-computational framework that learns signaling response signatures from a high-throughput in vitro perturbation atlas and infers combinatorial signaling activities in in vivo cell types with high accuracy and temporal resolution. Specifically, we generated signaling perturbation atlas across diverse cell types/states through multiplexed sequential combinatorial screens on human pluripotent stem cells. Using the atlas to train IRIS, a neural network-based model, and predicting on mouse embryo scRNAseq atlas, we discovered global features of combinatorial signaling code usage over time, identified biologically meaningful heterogeneity of signaling states within each cell type, and reconstructed signaling histories along diverse cell lineages. We further demonstrated that IRIS greatly accelerates the optimization of stem cell differentiation protocols by drastically reducing the combinatorial space that needs to be tested. This framework leads to the revelation that different cell types share robust signal response signatures, and provides a scalable solution for mapping complex signaling interactions in vivo to guide targeted interventions.
+
+## 20. SwiftExplorer: Training-free Diffusion Model Alignment with Swift Diversity Exploration
+
+- Authors: Renye Yan, Jikang Cheng, You Wu, Bojin Huang, Wei Peng, Zongwei Wang, Ling Liang, Yimao Cai
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-06
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.127505895195559
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.06651v1
+- PDF: https://arxiv.org/pdf/2609.06651v1
+- Local PDF: pdf/2026-09-10_20_SwiftExplorer_ Training-free Diffusion Model Alignment with Swift Diversity Exploration.pdf
+
+Diffusion models have general generative abilities but struggle to align with specific objectives. Fine-tuning can improve alignment, yet its training cost is often prohibitive. This led to training-free methods that apply objective-guided terms in sampling to bias the generation distribution toward designated regions, e.g., high-reward areas. However, these methods face two issues: (1) the strong directional bias narrows the pretrained distribution and generation diversity, and (2) indiscriminate constant guidance fails to prune redundant signals, hurting both quality and efficiency. To address the above challenges, we propose SwiftExplorer, a plugin that mitigates distribution collapse caused by excessive diversity loss and reduces compute costs. First, we adopt an Inheritance-Restart exploration mechanism to avoid early convergence, while exploration also increases the likelihood of high-reward trajectories. Additionally, it balances diversity and fidelity, adding diversity without causing a distribution over-shift. Second, our Quality-Efficiency arbitration mechanism improves guidance by removing incorrect signals, and it reduces computation by dynamically stopping generation when completeness and marginal reward gain are optimal. In an extensive number of experiments and different types of evaluation metrics, the proposed SwiftExplorer achieves excellent performance on all metrics, including preference, fidelity, diversity, and richness.
+
+## 21. Typed Federated Artifacts for the Agentic Web:Sharing Tool-Routing Knowledge Across Frozen,Heterogeneous LLM Agents
+
+- Authors: Abhijit Chakraborty, Ni Trieu, Vivek Gupta
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-06
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 3.116546427753609
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.06815v1
+- PDF: https://arxiv.org/pdf/2609.06815v1
+- Local PDF: pdf/2026-09-10_21_Typed Federated Artifacts for the Agentic Web_Sharing Tool-Routing Knowledge Across Frozen,Heterogeneous LLM Agents.pdf
+
+An open, networked web will allow agents to run frozen models from multiple vendors, keep their history private, and teach each other which tool to call and when. Flat text (prompts, example pools) makes it difficult for the protocol to distinguish between noise statistics, merging rules, and documentation. Weights and adapters cannot transfer that knowledge between platforms. We suggest sharing typed federated artifacts, schema-validated objects with well-defined fields for per-field privacy (described here, but measured), dispute resolution, and cross-model transfer, and instantiating them as SYNAPSE1, a common tool-routing knowledge. After deleting 192 garbage entries and 1,916 training items that duplicate or almost duplicate test queries, a federated compendium routes within 1.1 points of a centralized one at 20 MB of JSON per client each round on StableToolBench (3,180 tools). The same experience merged and shown to the router as typed fields rather than one flat string is worth 8.5 points on clean data and 7.4 under 60% injected contradiction. Crossing merge and rendering shows the halves are inseparable (the typed merge shown flat is the worst arm), while three conflict policies are indistinguishable, so the conflict log that motivated this work is not the On τ-bench retail, each compendium arm improves GPT-4o agents' per-step tool-call accuracy by at least 6.7 points, attributed to format rather than federated experience. Two cautionary findings conclude the paper: on a topic-labeled math proxy and StableToolBench, a TF-IDF classifier over the same labeled experience beats every LLM routing arm (by 48 and 26 points, mostly retrieval recall) because the benchmark's pool holds labeled queries for every supposedly unseen tool and every test query verbatim before our filter. It cannot measure routing to tools without labels, which routing exists for.
+
+## 22. Mapping the Emerging Social Science of Large Language Models
+
+- Authors: Yi Yang, Xiao Jia, Zeyun Dong, Chenzhang Wang, Zhanzhan Zhao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.CY, cs.AI, cs.CL
+- Relevance: 3.1043666399895358
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.07598v1
+- PDF: https://arxiv.org/pdf/2609.07598v1
+- Local PDF: pdf/2026-09-10_22_Mapping the Emerging Social Science of Large Language Models.pdf
+
+Large language models (LLMs) increasingly shape communication, learning, work, creativity, and decision-making, yet social-science research on these developments remains fragmented. We map this emerging field using a curated corpus of 198 papers reviewed in full and a field-scale corpus of 47,719 published papers from five bibliographic databases. Combining sentence embeddings, K-means clustering, within-cluster Latent Dirichlet Allocation (LDA), author and LLM classifications, and structural topic modeling, we identify three domains: LLM as Social Minds, examining socially interpretable model behavior; LLM Societies, examining collective dynamics among interacting model-based agents; and LLM-Human Interactions, examining how people perceive, use, and are affected by LLMs. These domains contain 13 subcategories spanning reasoning, personality and bias, behavioral games, collective intelligence, simulation, trust, work, creativity, and education. In the curated corpus, the three-domain solution is highly stable under resampling (adjusted Rand index = 0.952), and K-means assignments agree with author full-text classifications for 77.78% of papers. At field scale, 13 of 15 topics map onto the taxonomy, while K-means and structural-topic-model domains agree for 73.83% of overlapping papers. LLM-Human Interactions accounts for 78.02% of domain-mapped topic mass, but venue analysis reveals a contrasting pattern: Social Minds and LLM Societies together account for 66.37% of highly cited papers in leading conference venues, whereas LLM-Human Interactions accounts for 76.81% in the corresponding journal subset. The resulting taxonomy provides a reproducible framework for understanding how model behavior, agent interaction, and institutional context jointly shape the social consequences of LLMs.
+
+## 23. AutoKD: Autonomous Knowledge Discovery
+
+- Authors: Qinwen Ge, Bo Ni, Haowei Fu, Ngoc N. Tran, Erik Blasch, Tyler Derr
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-06
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.0842984453114006
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.06366v1
+- PDF: https://arxiv.org/pdf/2609.06366v1
+- Local PDF: pdf/2026-09-10_23_AutoKD_ Autonomous Knowledge Discovery.pdf
+
+Scientific discovery in data-rich domains is currently constrained by human bandwidth: the growth in the volume and complexity of real-world data far outpaces the rate at which researchers can read, reason, and synthesize. Recent LLM-based multi-agent systems have begun to automate portions of the research cycle, but they target hypothesis generation in settings where validation cannot itself be automated, and each run is one-shot, with no mechanism for findings to accumulate or steer subsequent inquiry. This paper introduces AutoKD, a multi-agent framework for autonomous knowledge discovery that is both computational and cumulative, allowing validated findings to persist and inform subsequent inquiry. Six coordinated LLM agents collaborate in an open-ended discovery loop, where accepted findings are stored in a persistent insight graph that serves as both long-term memory and an exploration-steering mechanism. We evaluate AutoKD on three diverse datasets from two perspectives: Open-ended Quality against published findings, and Conditioned Quality via literature-derived queries. Across both evaluation perspectives, AutoKD covers known findings and surfaces substantive discoveries that complement human-driven research. Our code is available at https://github.com/GeQinwen/AutoKD.
+
+## 24. Beyond Cross-Lingual Transfer: Benchmarking Propagation Boundaries in Multilingual LLM Unlearning
+
+- Authors: Pengyang Shao, Chuanpeng Lu, Wei Qin, Yanzheng Jin, Xiaohao Liu, Xi Ai, Kenji Kawaguchi, Richang Hong
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-05
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 3.083711759533797
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.05976v1
+- PDF: https://arxiv.org/pdf/2609.05976v1
+- Local PDF: pdf/2026-09-10_24_Beyond Cross-Lingual Transfer_ Benchmarking Propagation Boundaries in Multilingual LLM Unlearning.pdf
+
+Large Language Model (LLM) unlearning aims to suppress target knowledge while preserving general capabilities. In multilingual settings, unlearning must additionally propagate within its intended linguistic scope. However, existing evaluations mainly measure cross-lingual transfer and cannot distinguish insufficient from excessive propagation. We introduce CLLPU (Cross-Lingual and Language-Bound Protocol for LLM Unlearning), a multilingual benchmark that formulates this problem through two settings: common-goal forgetting, where target knowledge should be suppressed across all languages, and language-conditioned forgetting, where suppression should remain confined to a designated language. CLLPU combines goal-guided topic pairing, schema-aware relation matching, and dual-anchor multilingual translation to construct 800 matched knowledge-unit pairs and 72,000 QA instances across ten languages. Experiments with six representative methods on Llama-3.1-8B-Instruct reveal opposite failure modes: forgetting remains incomplete when universal suppression is required, yet spreads beyond the intended boundary when language-conditioned confinement is required. We further find that general multilingual utility can conceal damage to neighbor knowledge. These findings establish propagation control as a central challenge for multilingual LLM unlearning. We publicly release CLLPU together with its construction pipeline.
+
+## 25. Disentangling Steering Vectors
+
+- Authors: Takeru Hiramatsu, Kyohei Atarashi, Koh Takeuchi, Hisashi Kashima
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.079581264482375
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.07037v1
+- PDF: https://arxiv.org/pdf/2609.07037v1
+- Local PDF: pdf/2026-09-10_25_Disentangling Steering Vectors.pdf
+
+Activation steering has emerged as a lightweight, inference-time approach to control the behavior of Large Language Models (LLMs). However, traditional steering vectors used to intervene in LLMs' activations, such as those derived from the difference-in-means method, tend to entangle multiple semantic and stylistic concepts into a single composite direction, leading to unpredictable steering effects. Our core objective is to disentangle this composite direction into its constituent concepts. To this end, we propose Steering Vector Dissection, a framework to explicitly isolate individual and semantically consistent features from these composite directions. Specifically, we pair positive and negative activations and take their differences to generate a set of instance-level steering vectors, and train a dedicated Sparse Autoencoder (SAE) directly on them. Quantitative evaluations across two datasets, two models, and two intervention depths show that our method yields a set of semantically consistent basis vectors whose steering effects are mutually distinguishable. Furthermore, we show that this disentanglement enables precise control over model behaviors.
+
+## 26. DrugReason: Dynamic Multi-View Reasoning over Knowledge Graph and Language Evidence for Drug Repurposing
+
+- Authors: Zijie Liu, Hongxuan Li, Zhen Tan, Jinhao Duan, Baixiang Huang, Zunpeng Liu, Kai Shu, Tianlong Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-06
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.0755268179470403
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.06779v1
+- PDF: https://arxiv.org/pdf/2609.06779v1
+- Local PDF: pdf/2026-09-10_26_DrugReason_ Dynamic Multi-View Reasoning over Knowledge Graph and Language Evidence for Drug Repurposing.pdf
+
+Drug repurposing aims to identify new therapeutic uses for existing compounds and, compared with de novo drug discovery, offers a faster and more cost-effective path to clinical translation. However, the space of candidate drug-disease pairs is enormous and their underlying relationships often depend on complex multi-hop biological mechanisms, making it difficult to reliably predict which pairs represent true therapeutic relationships. Existing approaches tackle this from two directions: knowledge graph-based methods organize curated biomedical evidence into structured relational networks for grounded multi-hop reasoning, while LLM-based methods leverage pretrained knowledge to generate flexible mechanistic rationales. Yet neither is sufficient alone - KGs are confined to observed graph structure while LLMs lack factual grounding and risk hallucination. To address this gap, we propose DrugReason, a multi-view reasoning framework that integrates grounded KG reasoning with LLM-generated mechanistic inference for drug repurposing. DrugReason adaptively routes diverse reasoning paths to specialized experts conditioned on the query context, while a cross-expert distillation objective enables knowledge sharing without sacrificing expert specialization. Experiments on PharmaDB, DDInter, and DrugBank show that DrugReason improves average performance over strong single-view reasoning baselines and achieves competitive or superior results compared with graph-based alternatives, while providing interpretable routing-based predictions.
+
+## 27. InfluenceField: A Differentiable Field with Interventionally Identifiable Causal Structure for Multimodal World Modeling
+
+- Authors: Zihao Yang, Zijia Wang, Zhiqiu Huang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.LG, stat.ML
+- Relevance: 3.0636026544672483
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.07874v1
+- PDF: https://arxiv.org/pdf/2609.07874v1
+- Local PDF: pdf/2026-09-10_27_InfluenceField_ A Differentiable Field with Interventionally Identifiable Causal Structure for Multimodal World Modeling.pdf
+
+Multimodal large language models often capture visual-linguistic correlations but struggle to predict how local visual interventions propagate and affect downstream answers. We introduce InfluenceField, an intervention-aware latent field inserted between the visual encoder and language decoder. It lifts patch features into a continuous spatial representation, propagates directed influence over multiple steps, and predicts local intervention effects through a shared transition operator. Training jointly optimizes language modeling, cross-environment invariance, counterfactual rollout supervision, and structural regularization. For a nonlinear finite-basis population model, we show that target-aligned interventional supervision, together with a one-step separation condition on the transition, restricts admissible representations to within-location reparameterizations, so that the directed dependency graph of the full transition is recovered exactly. A linear specialization gives an exact partial-coverage characterization and a finite-loss stability bound, and the field analysis derives the spatial profile of coefficient interventions together with a shared-channel calibration result. On CausalVQA, InfluenceField improves overall accuracy over its backbone by 13.1 percentage points, with the largest gains on the planning and hypothetical categories. Capacity-matched baselines and structural controls attribute the gains in robustness and factual-counterfactual consistency to the causal objectives rather than to added capacity.
+
+## 28. CrossModalQA: A Cross-modal and Multi-hop Benchmark for Multimodal Retrieval-augmented Generation
+
+- Authors: Jiacheng Cai, Zijin Hong, Zheng Yuan, Huachi Zhou, Qinggang Zhang, Xiao Huang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-31
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.063448015568438
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.05518v1
+- PDF: https://arxiv.org/pdf/2609.05518v1
+- Local PDF: pdf/2026-09-10_28_CrossModalQA_ A Cross-modal and Multi-hop Benchmark for Multimodal Retrieval-augmented Generation.pdf
+
+Despite the strong capabilities of multimodal large language models (MLLMs), their parametric knowledge remains incomplete and difficult to update, motivating multimodal retrieval-augmented generation (RAG) to ground responses in external text and images. However, existing benchmarks face two major limitations: (i) they typically emphasize single-hop retrieval or reasoning over a small set of provided contexts rather than open-domain evidence discovery; and (ii) they provide fragmented coverage of cross-modal reasoning paths, leaving complex multi-hop and multi-image reasoning underexplored. In this paper, we introduce CrossModalQA, an open-domain benchmark for evaluating multimodal retrieval and reasoning over heterogeneous corpora. CrossModalQA contains 1,863 question-answer pairs constructed from 4,987 Wikipedia articles and 4,431 Wikimedia Commons images. It covers five complementary reasoning paths: vision-to-text, text-to-vision, vision-to-text-to-vision, multi-image intersection, and image-set reasoning. Every question requires retrieving and composing distributed textual and visual evidence, with an average reasoning depth of 3.50 hops. We construct the benchmark through multimodal knowledge graph-guided subgraph sampling and apply rule-based consistency checking and LLM verification to ensure multimodal dependence and traceable evidence. Extensive experiments demonstrate that existing multimodal RAG systems struggle to recover complete evidence chains and can underperform closed-book models when incomplete retrieval introduces distracting context. Further analysis reveals that complete cross-modal retrieval contributes more to answer accuracy than generator scaling, while multi-image retrieval and reasoning remain the primary bottlenecks limiting end-to-end performance.
+
+## 29. Transformers as In-Context Samplers: From Closed-Form Diffusion to Estimation-Free Sampling
+
+- Authors: Arman Adibi, Alireza Jafari, Mohammad Ghavamzadeh, Hadi Daneshmand
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-08
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, stat.AP, stat.CO, stat.ML
+- Relevance: 3.044423132584911
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.08981v1
+- PDF: https://arxiv.org/pdf/2609.08981v1
+- Local PDF: pdf/2026-09-10_29_Transformers as In-Context Samplers_ From Closed-Form Diffusion to Estimation-Free Sampling.pdf
+
+A growing body of work establishes that large language models are not mere statistical memorizers, but are capable of in-context learning: performing inference at test time using only examples provided in the prompt, without any parameter updates. Prior theoretical work has shown that this capability extends to supervised learning tasks such as linear regression. We prove that in-context learning extends further to \emph{data generation}: frozen transformers can simulate iterative generative samplers from in-context samples. We first show that transformers can realize closed-form and smoothed closed-form diffusion samplers. The construction identifies a concrete generative role for softmax attention: it computes responsibility weights and weighted empirical averages, while feedforward layers implement Euler updates.
+  To empirically relate these constructions to pretrained language models, we study \emph{semantic-topic sampling}: prompts consisting of words drawn from a common semantic category, such as animals, foods, or cities. Across transformer layers, the normalized hidden states exhibit a two-stage geometry: they move toward a uniform spherical reference in intermediate layers and then return to structured, topic-dependent representations near the output. We further measure an interacting-particle energy on these hidden-state clouds and observe the same U-shape pattern. We then prove that transformers can approximate an energy-based sampler, constructing the same U-shape energy across the layers.
+
+## 30. From Synthetic Priors to Model Behavior: Structural Coverage in Tabular Foundation Models
+
+- Authors: He Zhao, Ryan Thompson, Daniel M. Steinberg, Ashfaqur Rahman, Edwin V. Bonilla, Cheng Soon Ong
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-07
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.035408368520951
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.06912v1
+- PDF: https://arxiv.org/pdf/2609.06912v1
+- Local PDF: pdf/2026-09-10_30_From Synthetic Priors to Model Behavior_ Structural Coverage in Tabular Foundation Models.pdf
+
+Tabular foundation models (TFMs) are commonly pretrained on large collections of procedurally generated synthetic tasks, yet it remains unclear how well these synthetic pretraining priors support the downstream tasks on which the models are evaluated. We study this question from a distribution-level attribution perspective. We recover or reconstruct the synthetic data generators of four TFMs and compare their generated tasks with datasets from two widely used tabular benchmarks. Each dataset is represented by a common set of structural descriptors capturing schema, feature distributions, dependence structure, response properties, and feature--response relationships. In this space, we measure how broadly and repeatedly each synthetic prior reaches benchmark tasks using structural coverage and normalized density, and examine whether stronger local support is associated with better predictive performance. We find substantial differences across synthetic pretraining priors: some generators provide consistently broader and denser support for benchmark tasks than others. Moreover, stronger synthetic-to-benchmark support is generally associated with better relative model performance. These results suggest that structural coverage provides a useful diagnostic for characterizing synthetic pretraining priors and relating their data-generating assumptions to downstream model behavior.
