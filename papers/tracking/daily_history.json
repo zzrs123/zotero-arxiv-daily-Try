@@ -209,6 +209,13 @@
     "title": "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs",
     "url": "http://arxiv.org/abs/2607.25853v1"
   },
+  "title:hopeheterophilyawareopensetnodeclassificationwithpseudoextrapolation": {
+    "doi": null,
+    "sent_date": "2026-09-10",
+    "source": "arxiv",
+    "title": "HOPE: Heterophily-Aware Open-Set Node Classification with Pseudo-Extrapolation",
+    "url": "http://arxiv.org/abs/2609.08685v1"
+  },
   "title:hypergraphbasedmultimodalretrievalaugmentedgenerationwithincrementalrefinement": {
     "doi": null,
     "sent_date": "2026-08-18",
@@ -362,6 +369,13 @@
     "source": "arxiv",
     "title": "Scopes equivalence for blocks of Ariki-Koike algebras",
     "url": "http://arxiv.org/abs/2608.11568v1"
+  },
+  "title:simsubspaceinteractionbasedmethodfortokenleveltextanomalydetection": {
+    "doi": null,
+    "sent_date": "2026-09-10",
+    "source": "arxiv",
+    "title": "SIM: Subspace Interaction-based Method for Token-Level Text Anomaly Detection",
+    "url": "http://arxiv.org/abs/2609.08200v1"
   },
   "title:simultaneousheisenberglimitedmultiparametermetrologyviaindefiniteevolution": {
     "doi": null,

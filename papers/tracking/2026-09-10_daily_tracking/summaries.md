@@ -1,0 +1,32 @@
+# Researcher Tracking - 2026-09-10 (daily)
+
+Total new tracked papers: 2
+Highlighted papers: 2
+
+## 1. HOPE: Heterophily-Aware Open-Set Node Classification with Pseudo-Extrapolation
+
+- Authors: Yumeng Dai, Yue Tan, Yixin Liu, Chenxu Wang, Pinghui Wang, Tao Qin
+- Source hits: arxiv
+- Matched researchers: Yixin Liu
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-09-08
+- Article: http://arxiv.org/abs/2609.08685v1
+
+Standard open-set node classification methods rely on the homophily assumption, where connected nodes share labels. However, real-world graphs are often heterophilic, exposing the limitations of current methods and posing new challenges to open-set node classification. On the one hand, cross-class connectivity causes representations from different known or unknown classes to become intertwined after aggregation, undermining their discriminative capacity. On the other hand, structural mixture invalidates threshold-based open-set methods and cross-class feature interpolation, leading to unreliable unknown-class rejection. To address these challenges, we propose HOPE, a Heterophily-aware Open-set node classification method with Pseudo-Extrapolation. To adapt open-set graph neural networks (GNNs) to heterophilic scenarios, HOPE uses a structure-augmented feature initialization layer to capture multi-hop structural patterns. Meanwhile, we design a trustworthy neighborhood aggregation mechanism for standard GNNs to dynamically filter noisy cross-class neighbors. To enhance unknown-class rejection, we introduce a heterophily-guided pseudo-extrapolation strategy. It dynamically maintains known-class centers and extrapolates along cross-class neighborhood displacement directions, synthesizing pseudo-unknown proxies near structurally ambiguous regions. Finally, we optimize the network with joint classification and logit margin regularization, routing synthetic proxies into a dedicated rejection slot without imposing geometric margin constraints in the representation space. Extensive experiments on multiple datasets show that HOPE consistently outperforms state-of-the-art models, validating its effectiveness, robustness, and efficiency.
+
+## 2. SIM: Subspace Interaction-based Method for Token-Level Text Anomaly Detection
+
+- Authors: Kehan Yan, Yue Tan, Qingfeng Chen, Shiyuan Li, Yu Zheng, Yixin Liu
+- Source hits: arxiv
+- Matched researchers: Yixin Liu
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-09-08
+- Article: http://arxiv.org/abs/2609.08200v1
+
+Token-level text anomaly detection, as an emerging trend of text anomaly detection, moves beyond coarse-grained document-level detection by localizing anomalous tokens within text. By providing fine-grained abnormality prediction, token-level text anomaly detection plays a critical role in various real-world applications, such as spam filtering and fake news detection. However, existing methods still rely on the global distance calculation for scoring, during which the local anomaly signals are severely diluted by numerous redundant normal feature dimensions. Moreover, pre-trained language models used in these methods inevitably smooth out surface anomalies, further limiting their effectiveness in token-level anomaly detection. To address these limitations, we propose a Subspace Interaction-based Method (SIM for short) for token-level text anomaly detection. To prevent local signal dilution, SIM adopts a subspace interaction-based anomaly detector, which decouples high-dimensional token embeddings into multiple low-dimensional ones, amplifying localized anomaly signals hidden within specific dimensions. To counteract the over-smoothing effect, we design a hard pseudo-anomaly generation module to construct pseudo-anomalous tokens, simulating the subtle anomalies obscured by semantic smoothing. Also, a probabilistic boundary loss is developed to standardize anomaly scores into statistical distances, effectively enforcing anomalous instances to deviate significantly from the normal distribution center. Extensive experiments on multiple benchmark datasets verify the effectiveness of SIM and demonstrate its remarkable efficiency, robustness, and interpretability. The source code is available at: https://github.com/yankehan/SIM-TAD.
