@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-09-14
+
+## 1. Towards Effective and Efficient Multi-Agent Language Model Systems: Foundations, Prospects, and Applications
+
+- Authors: Xuan Wang, Shuxiang Cao, Yuchen Zhuang, Wenqi Shi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.7013281887847054
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-tutorials.3/
+- PDF: https://aclanthology.org/2026.acl-tutorials.3.pdf
+- Local PDF: pdf/2026-09-14_01_Towards Effective and Efficient Multi-Agent Language Model Systems_ Foundations, Prospects, and Applications.pdf
+
+Multi-agent systems powered by large language models (LLMs) offer a promising paradigm for tackling complex reasoning, decision-making, and problem-solving tasks. However, achieving both effectiveness and efficiency in such systems remains a critical challenge. This tutorial introduces recent advances in building effective and efficient multi-agent LLM systems, focusing on three core components. First, we discuss the design of individual LLM agents. We present state-of-the-art techniques for enabling capable agents using efficient and compact LLMs, including model distillation, dynamic routing, and memory- and compute efficient serving, providing a foundation for scalable and responsive agent design under resource constraints. Second, we cover coordination and communication among agents, crucial for collective performance, highlighting methods for improving multi-agent reasoning and decision-making through prompt and graph optimization, sycophancy mitigation, and structured LLM-based frameworks. Last, we explore real-world applications of LLM agents in areas such as industry, healthcare, quantum computing, and various scientific domains.
+
+## 2. MARS: Unleashing the Power of Speculative Decoding via Margin-Aware Verification
+
+- Authors: Jingwei Song, Xinyu Wang, Hanbin Wang, Xiaoxuan Lei, Tianyu Shi, Shixin Han, Eric Yang, Xiao-Wen Chang, Lynn Ai
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6984165723852693
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.421/
+- PDF: https://aclanthology.org/2026.findings-acl.421.pdf
+- Local PDF: pdf/2026-09-14_02_MARS_ Unleashing the Power of Speculative Decoding via Margin-Aware Verification.pdf
+
+Speculative Decoding (SD) accelerates autoregressive large language model (LLM) inference by decoupling generation and verification. While recent methods improve draft quality by tightly coupling the drafter with the target model, the verification mechanism itself remains largely unchanged, relying on strict token-level rejection sampling. In practice, modern LLMs frequently operate in low-margin regimes where the target model exhibits weak preference among top candidates. In such cases, rejecting plausible runner-up tokens yields negligible information gain while incurring substantial rollback cost, leading to a fundamental inefficiency in verification.We propose Margin-Aware Speculative Verification, a training-free and domain-agnostic verification strategy that adapts to the target model’s local decisiveness. Our method conditions verification on decision stability measured directly from the target logits and relaxes rejection only when strict verification provides minimal benefit. Importantly, the approach modifies only the verification rule and is fully compatible with existing target-coupled speculative decoding frameworks. Extensive experiments across model scales ranging from 8B to 235B demonstrate that our method delivers consistent and significant inference speedups over state-of-the-art baselines while preserving generation quality across diverse benchmarks. The code is available at https://github.com/5SSjw/MARS .
+
+## 3. Claim Verification in the Age of Large Language Models: A Survey
+
+- Authors: Alphaeus Dmonte, Roland R Oruche, Marcos Zampieri, Prasad Calyam, Isabelle Augenstein
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.69835692000333
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-srw.2/
+- PDF: https://aclanthology.org/2026.acl-srw.2.pdf
+- Local PDF: pdf/2026-09-14_03_Claim Verification in the Age of Large Language Models_ A Survey.pdf
+
+The large and ever-increasing amount of data available on the Internet, coupled with the laborious task of manual claim and fact verification, has sparked interest in the development of automated claim verification systems. Several deep learning and transformer-based models have been proposed for this task over the years. With the introduction of Large Language Models (LLMs) and their superior performance in several NLP tasks, we have seen a surge of LLM-based approaches to claim verification along with the use of novel methods such as Retrieval Augmented Generation (RAG). In this survey, we present a comprehensive account of recent claim verification frameworks using LLMs. We describe the different components of the claim verification pipeline used in these frameworks in detail, including common approaches to retrieval, prompting, and fine-tuning. Finally, we describe publicly available English datasets for this task.
+
+## 4. Unleashing the Native Recommendation Potential: LLM-Based Generative Recommendation via Structured Term Identifiers
+
+- Authors: Zhiyang Zhang, Junda She, Kuo Cai, Bo Chen, Shiyao Wang, Xinchen Luo, Qiang Luo, Ruiming Tang, Han Li, Kun Gai, Guorui Zhou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.698115587165162
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.984/
+- PDF: https://aclanthology.org/2026.findings-acl.984.pdf
+- Local PDF: pdf/2026-09-14_04_Unleashing the Native Recommendation Potential_ LLM-Based Generative Recommendation via Structured Term Identifiers.pdf
+
+Leveraging the vast open-world knowledge and understanding capabilities of Large Language Models (LLMs) to develop general-purpose, semantically-aware recommender systems has emerged as a pivotal research direction in generative recommendation. However, existing methods face bottlenecks in constructing item identifiers. Text-based methods introduce LLMs’ vast output space, leading to hallucination, while methods based on Semantic IDs (SIDs) encounter a semantic gap between SIDs and LLMs’ native vocabulary, requiring costly vocabulary expansion and alignment training. To address this, this paper introduces Term IDs (TIDs), defined as a set of semantically rich and standardized textual keywords, to serve as robust item identifiers. We propose GRAM, a novel framework centered on TIDs, employs Context-aware Term Generation to convert item’s metadata into standardized TIDs and utilizes Integrative Instruction Fine-tuning to collaboratively optimize term internalization and sequential recommendation. Additionally, Elastic Identifier Grounding is designed for robust item mapping. Extensive experiments on real-world datasets demonstrate that GRAM significantly outperforms baselines across multiple scenarios, pointing a promising direction for generalizable and high-performance generative recommendation systems.
+
+## 5. Temp-R1: A Unified Autonomous Agent for Complex Temporal KGQA via Reverse Curriculum Reinforcement Learning
+
+- Authors: Zhaoyan Gong, Zhiqiang Liu, Songze Li, Xiaoke Guo, Yuanxiang Liu, Xinle Deng, Zhizhen Liu, Lei Liang, Huajun Chen, Wen Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.697645907639915
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1184/
+- PDF: https://aclanthology.org/2026.acl-long.1184.pdf
+- Local PDF: pdf/2026-09-14_05_Temp-R1_ A Unified Autonomous Agent for Complex Temporal KGQA via Reverse Curriculum Reinforcement Learning.pdf
+
+Temporal Knowledge Graph Question Answering (TKGQA) is inherently challenging, as it requires sophisticated reasoning over dynamic facts with multi-hop dependencies and complex temporal constraints. Existing methods rely on fixed workflows and expensive closed-source APIs, limiting flexibility and scalability. We propose Temp-R1 , the first autonomous end-to-end agent for TKGQA trained through reinforcement learning. To address cognitive overload in single-action reasoning, we expand the action space with specialized internal actions alongside external action. To prevent shortcut learning on simple questions, we introduce reverse curriculum learning that trains on difficult questions first, forcing the development of sophisticated reasoning before transferring to easier cases. Our 8B-parameter Temp-R1 achieves state-of-the-art performance on MultiTQ and TimelineKGQA, improving 19.8% over strong baselines on complex questions. Our work establishes a new paradigm for autonomous temporal reasoning agents. The code is available at https://github.com/zjukg/Temp-R1 .
+
+## 6. Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs
+
+- Authors: Xinzhu Chen, Xuesheng Li, Zhongxiang Sun, Weijie Yu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6975879015371698
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1650/
+- PDF: https://aclanthology.org/2026.findings-acl.1650.pdf
+- Local PDF: pdf/2026-09-14_06_Beyond High-Entropy Exploration_ Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs.pdf
+
+Reinforcement Learning with Verifiable Rewards (RLVR) has become a central approach for improving the reasoning ability of large language models. Recent work studies RLVR through token entropy, arguing that high-entropy tokens drive exploration and should receive stronger updates. However, they overlook the fact that most of a reasoning trajectory consists of low-entropy segments that encode stable and reusable structural patterns. Through qualitative and quantitative analyses, we find that the overlap of low-entropy segments across correct responses strongly correlates with model accuracy, while overlaps involving incorrect responses exhibit stable but unproductive patterns. Motivated by these findings, we propose LESS, a correctness-aware reinforcement framework that performs fine-grained advantage modulation over low-entropy segments. LESS amplifies segments unique to correct responses, suppresses those unique to incorrect ones, and neutralizes segments shared by both, while preserving high-entropy exploration in the underlying RL algorithm. Instantiated on top of GRPO and GSPO, LESS not only improves accuracy over strong RL baselines across three backbones and six math benchmarks, but also achieves stronger robustness of the performance floor.
+
+## 7. LLMs as ASP Programmers: Self-Correction Enables Task-Agnostic Nonmonotonic Reasoning
+
+- Authors: Adam Ishay, Joohyung Lee
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6975857694755585
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1151/
+- PDF: https://aclanthology.org/2026.findings-acl.1151.pdf
+- Local PDF: pdf/2026-09-14_07_LLMs as ASP Programmers_ Self-Correction Enables Task-Agnostic Nonmonotonic Reasoning.pdf
+
+Recent large language models (LLMs) have achieved impressive reasoning milestones but continue to struggle with high computational costs, logical inconsistencies, and sharp performance degradation on high-complexity problems. While neuro-symbolic methods attempt to mitigate these issues by coupling LLMs with symbolic reasoners, existing approaches typically rely on monotonic logics (e.g., SMT) that cannot represent defeasible reasoning—essential components of human cognition. We present “LLM+ASP,” a framework that translates natural language into Answer Set Programming (ASP), a nonmonotonic formalism based on stable model semantics. Unlike prior LLM+ASP approaches that require manually authored knowledge modules, domain-specific prompts, or evaluation restricted to single problem classes, our framework operates without any per-task engineering and applies uniformly across diverse reasoning tasks. Our system utilizes an automated self-correction loop where structured feedback from the ASP solver enables iterative refinement. Evaluating across six diverse benchmarks, we demonstrate that: (1) stable model semantics allow LLMs to naturally express default rules and exceptions, outperforming SMT-based alternatives by significant margins on nonmonotonic tasks; (2) iterative self-correction is the primary driver of performance, effectively replacing the need for handcrafted domain knowledge; (3) compact in-context reference guides substantially outperform verbose documentation, revealing a “context rot" phenomenon where excessive context hinders constraint adherence.
+
+## 8. Bridging Internal Consistency and External Alignment: A Causal and Dynamic Interpretability Framework for LLM Generation
+
+- Authors: Shuyao Xiao, Shengling Wang, Ke Chao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.697234623474216
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.933/
+- PDF: https://aclanthology.org/2026.acl-long.933.pdf
+- Local PDF: pdf/2026-09-14_08_Bridging Internal Consistency and External Alignment_ A Causal and Dynamic Interpretability Framework for LLM Generation.pdf
+
+Large Language Models (LLMs) are widely used in high-stakes applications, making their interpretability increasingly important. Existing interpretability methods are typically categorized into internal and external perspectives, which are often studied in isolation and tend to overlook two key aspects: causality and temporal dynamics. Explanations are often limited to surface correlations or static dependencies, failing to capture how influences evolve during autoregressive generation. To address these limitations, we propose a causal and dynamic interpretability framework for LLM generation. We first characterize the backdoor-adjusted causal effects of both the generated prefix and the prompt on the current token using the Structural Causal Model. Next, we introduce two metrics to quantify contextual causal influence and question–answer causal influence. Overall, our work provides a unified causal view of internal consistency and external alignment in LLM generation dynamics.
+
+## 9. VLN-MME: Diagnosing MLLMs as Language-guided Visual Navigation Agents
+
+- Authors: Xunyi Zhao, Gengze Zhou, Qi Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6971837611725116
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1300/
+- PDF: https://aclanthology.org/2026.acl-long.1300.pdf
+- Local PDF: pdf/2026-09-14_09_VLN-MME_ Diagnosing MLLMs as Language-guided Visual Navigation Agents.pdf
+
+Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities across a wide range of vision-language tasks. However, their performance as embodied agents, which requires multi-round interaction with spatial reasoning and sequential action prediction, needs further exploration. Our work investigates this potential in the context of Vision-and-Language Navigation (VLN) by introducing a unified and extensible simulation-free evaluation framework to probe MLLMs as zero-shot agents, named VLN-MME. Simplifying the evaluation with a highly modular and accessible design streamlines experiments, enabling structured comparisons and component-level ablations across diverse MLLM architectures, agent designs, and navigation tasks. Crucially, enabled by VLN-MME, we observe that enhancing prevalent agents with Chain-of-Thought (CoT) reasoning and self-reflection leads to an unexpected performance decrease. This suggests MLLMs exhibit poor context awareness in embodied navigation tasks; although they can follow instructions and structure their output, their 3D spatial reasoning fidelity is low. Furthermore, we demonstrate that agent performance could be largely improved with simple failure cases in context learning. VLN-MME lays the groundwork for systematic evaluation of general-purpose MLLMs in embodied navigation settings and reveals limitations in their sequential decision-making capabilities. We believe these findings offer crucial guidance for MLLM post-training as embodied agents.
+
+## 10. Infinite Babble: Inflating 3D Vision-Language Model Inference Overhead via Adversarial Geometric Perturbation
+
+- Authors: Shuoyang Sun, Jiaxin Hong, Yv Zhang, Kuofeng Gao, Hao Fang, Bin Chen, Shu-Tao Xia
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6971625030691504
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.259/
+- PDF: https://aclanthology.org/2026.findings-acl.259.pdf
+- Local PDF: pdf/2026-09-14_10_Infinite Babble_ Inflating 3D Vision-Language Model Inference Overhead via Adversarial Geometric Perturbation.pdf
+
+3D Vision-Language Models (3D-VLMs) have emerged as the critical cognitive backbone for spatial intelligence, enabling precise reasoning over unstructured 3D data. While these models serve as the foundation for downstream robotics and embodied systems, their reliance on autoregressive decoding introduces a fundamental vulnerability regarding inference efficiency. In this work, we present Inflate3D , a novel adversarial framework designed to trigger computational and economic exhaustion in 3D-VLMs. Specifically, we exploit the model’s sensitivity to untrusted 3D assets to hijack the generation process. Inflate3D operates by injecting imperceptible noise that forces the model into a state of pathological verbosity, effectively stalling the inference pipeline. Our approach comprises two synergistic strategies: (1) a semantic-aware adversarial manipulation that leverages internal representations to selectively perturb semantically critical regions while preserving geometric structure, and (2) a trajectory disruption mechanism that manipulates token probabilities to suppress End-of-Sequence (EOS) emission, thereby prolonging decoding and inducing verbose outputs. Experiments on standard benchmarks show that Inflate3D amplifies output length and energy consumption by up to 6.45× , demonstrating a potent capability to drain system resources. These findings expose a critical blind spot in multimodal alignment, highlighting the urgent need to secure spatial foundation models against resource exhaustion attacks.
+
+## 11. Exploring Attention Attractors in Large Language Models
+
+- Authors: Ziheng Wang, Zihao Yue, Wenxuan Wang, Qin Jin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6969172673056043
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.51/
+- PDF: https://aclanthology.org/2026.acl-long.51.pdf
+- Local PDF: pdf/2026-09-14_11_Exploring Attention Attractors in Large Language Models.pdf
+
+This paper explores attention attractors —tokens that draw significantly high attention—in large language models. We analyze them from three perspectives: (1) Functionality : We demonstrate their role in aggregating information from preceding contexts to facilitate future predictions. (2) Distribution : Through layer-wise and token-wise analysis, we reveal that attention attractors are widely distributed across layers but predominantly originate from low-semantic words like “ _the ”. (3) Mechanism : We demonstrate the correlation between attention weights allocated to tokens with their specific activation dimension values. We hope these findings provide new insights into the attention mechanisms of large language models and inspire further exploration. Code will be released at https://github.com/luyouqi233/AttentionAttractor .
+
+## 12. Across Programming Language Silos: A Study on Cross-Lingual Retrieval-Augmented Code Generation
+
+- Authors: Qiming Zhu, Jialun Cao, Xuanang Chen, Weili Zhang, Yaojie Lu, Hongyu Lin, Xianpei Han, Le Sun, Shing-Chi Cheung
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6965014404158882
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1216/
+- PDF: https://aclanthology.org/2026.findings-acl.1216.pdf
+- Local PDF: pdf/2026-09-14_12_Across Programming Language Silos_ A Study on Cross-Lingual Retrieval-Augmented Code Generation.pdf
+
+Current research on large language models (LLMs) with retrieval-augmented code generation (RACG) has largely focused on single-language settings, leaving their cross-lingual effectiveness underexplored. Multilingual RACG systems are increasingly important for migrating and reusing code across programming languages (PLs), a common yet challenging task in modern software development. To systematically study cross-lingual code knowledge transfer in RACG, we construct a dataset covering 13 PLs with nearly 14K instances. Our experiments reveal three key insights: (1) Knowledge transfer in RACG across PLs is non-trivial even using direct injection. (2) RACG exhibits unequal cross-lingual knowledge transfer, and its efficacy depends on linguistic affinity of PL pair and diversity of LLM pretraining corpus. (3) RACG shows limited reliance on natural language information embedded in code when equipped with a code-specific retriever. These findings provide practical guidance for designing effective multilingual RACG systems. https://github.com/icip-cas/Cross-Lingual-RACG
+
+## 13. DORA: A Dual-Objective Reinforcement Learning Framework for Effective and Efficient Multimodal Agentic Search
+
+- Authors: Guangming Qin, Yuhao Deng, Yukun Zhao, Zhenyang Li, Junfeng Wang, Dawei Yin, Ye Yuan, Guoren Wang, Yizhou Yan, Chengliang Chai, Lei Cao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.696499217090098
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.605/
+- PDF: https://aclanthology.org/2026.acl-long.605.pdf
+- Local PDF: pdf/2026-09-14_13_DORA_ A Dual-Objective Reinforcement Learning Framework for Effective and Efficient Multimodal Agentic Search.pdf
+
+The most recent research uses reinforcement learning (RL) to post-train Multi-modal Large Language Models (MLLMs) such that these models are able to iteratively call search engines to dynamically access external knowledge when handling complex Visual Question Answering (VQA) tasks. However, existing methods face two major limitations in effectiveness and efficiency: i) For effectiveness, the objective of these methods, which only considers the correctness of the generated final response, overlooks the quality of intermediate search results, thus leading to suboptimal search strategies. ii) For efficiency, existing methods often unnecessarily invoke search calls during reasoning, making the inference inefficient. To address these issues, we propose , a customized dual-objective reinforcement learning framework to improve the search strategies of MLLMs, enhancing their search quality yet minimizing search frequency. The key ideas include (1) a reward function that promotes correct reasoning trajectories with fewer search calls; and (2) dual optimization objectives that jointly optimize search quality and answer correctness. Extensive experiments on 3 real-world datasets demonstrate that DORA outperforms state-of-the-art methods, achieving up to 8.4% higher accuracy while reducing the number of search calls by 9.7%.
+
+## 14. Saber: Efficient Sampling with Adaptive Acceleration and Backtracking Enhanced Remasking for Diffusion Language Model in Code Generation
+
+- Authors: Yihong Dong, Zhaoyu Ma, Xue Jiang, Zhiyuan Fan, Jiaru Qian, Yongmin Li, Jianha Xiao, Zhi Jin, Ge Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.696054343874107
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.165/
+- PDF: https://aclanthology.org/2026.acl-long.165.pdf
+- Local PDF: pdf/2026-09-14_14_Saber_ Efficient Sampling with Adaptive Acceleration and Backtracking Enhanced Remasking for Diffusion Language Model in.pdf
+
+Diffusion language models (DLMs) are emerging as a compelling alternative to the dominant autoregressive paradigm, offering inherent advantages in parallel generation and bidirectional context modeling. However, for the tasks with strict structural constraints such as code generation, DLMs face a critical trade-off between inference speed and output quality, where accelerating generation by reducing sampling steps often leads to catastrophic performance collapse.We find that the fundamental reasons are: 1) the generation difficulty is uneven in the structured sequence decoding steps, making DLM’s static acceleration strategy suboptimal; 2) the context of tokens generated by DLM evolves continuously, causing early high-confidence predictions to turn into irreversible errors.In this paper, we introduce efficient S ampling with A daptive acceleration and B acktracking E nhanced R emasking (i.e., Saber ), a novel training-free sampling algorithm for DLMs that the first to improve both inference speed and output quality in code generation. Saber dynamically adjusts the number of tokens unmasked per step based on the model’s evolving confidence, and utilizes a backtracking mechanism to revert tokens whose confidence drops as new context emerges, with its effectiveness supported by theoretical analysis.Extensive experiments on multiple mainstream code generation benchmarks show that Saber boosts Pass@1 accuracy by an average of 1.9% over mainstream DLM sampling methods, while achieving an average 251.4% inference speedup. By leveraging the inherent advantages of DLMs, our work significantly narrows the performance gap with autoregressive models in code generation.
+
+## 15. Robust Membership Inference for Large Language Models under Adversarial Generative Corruption
+
+- Authors: Yuanhong Huang, Huili Wang, Xueying Bai, Jinrui Wang, Jiajun Liu, Ziqin Wang, Wanchun Ni, Shangguang Wang, Tao Qi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.695520803698501
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1835/
+- PDF: https://aclanthology.org/2026.acl-long.1835.pdf
+- Local PDF: pdf/2026-09-14_15_Robust Membership Inference for Large Language Models under Adversarial Generative Corruption.pdf
+
+Membership inference attack (MIA) has emerged as a promising tool for auditing the training data of LLMs, supporting data privacy and copyright protection. Most existing MIA methods rely on the assumption that LLMs assign higher confidence scores to training samples than to non-training ones.However, since LLMs generate text by sampling high-confidence tokens, they naturally produce AI-generated texts (AIGTs) that also satisfy this assumption.In this work, we empirically confirm that such AIGTs, regardless of whether they are generated by the target LLM, can lead existing MIAs to assign even higher membership likelihoods than those of true training samples, thereby significantly undermining their reliability.To address this challenge, we propose a robust membership inference framework for reliably identifying training data.Our method adopts a mixture-of-experts formulation to jointly model interactions across complementary features derived from multiple MIA methods and AIGT detectors, which can remain robust against adversarially generated samples.Furthermore, by leveraging expert components, our method provides explainable insights into the characteristics of member data.Experiments on various datasets and LLMs show that adversarial samples substantially degrade the performance of baselines, whereas our method preserves performance close to that of the unattacked setting.Codes and datasets are released at https://github.com/kong-hyh/MoMIA .
+
+## 16. LLM Program Optimization via Retrieval Augmented Search
+
+- Authors: Sagnik Anupam, Alexander Shypula, Osbert Bastani
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6953110380662726
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2092/
+- PDF: https://aclanthology.org/2026.findings-acl.2092.pdf
+- Local PDF: pdf/2026-09-14_16_LLM Program Optimization via Retrieval Augmented Search.pdf
+
+Recent work has demonstrated the potential of large language models (LLMs) for program optimization, a key challenge in programming languages. We propose a blackbox adaptation method called Retrieval Augmented Search (RAS) that performs beam search over candidate optimizations; at each step, it retrieves in-context examples from a given training dataset of slow-fast program pairs to guide the LLM. Critically, we find that performing contextual retrieval based on an LLM-generated natural language description significantly outperforms retrieval based on the source code. We also propose AEGIS, a method for improving interpretability by decomposing training examples into "atomic edits” that are significantly more incremental in nature. We show that RAS performs up to 2.06 × better than prior state-of-the-art blackbox adaptation strategies on optimizing C++ programs, and that AEGIS performs up to 1.37 × better while making significantly smaller edits. We also show that using RAS improves the mean runtime percentile of Python programs by 10.27 compared to baselines.
+
+## 17. EvoMD-LLM: Learning the Language of Species Evolution in Reactive Molecular Dynamics
+
+- Authors: Zhichen Tang, Zhengzheng Dang, Yulin Chen, Jixin Wu, Haiwen Li, Yanming Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.695242471739432
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1947/
+- PDF: https://aclanthology.org/2026.findings-acl.1947.pdf
+- Local PDF: pdf/2026-09-14_17_EvoMD-LLM_ Learning the Language of Species Evolution in Reactive Molecular Dynamics.pdf
+
+While large language models (LLMs) excel at static scientific reasoning, they struggle to model the temporal structure of dynamic physical processes. We present EvoMD-LLM (Evolutionary Molecular Dynamics Large Language Model), a framework that reformulates species-level molecular dynamics as a symbolic temporal language modeling problem. Reactive MD trajectories are discretized into sequences of molecular events, where each token represents a chemical species augmented with its persistence duration, enabling standard autoregressive LLMs to learn compositional evolution over time through efficient fine-tuning. A key component of EvoMD-LLM is temporal scaffolding, which treats event duration as an explicit linguistic token and serves as a structured inductive bias, significantly reducing invalid or hallucinated molecular outputs compared to conventional sequence modeling approaches. We evaluate EvoMD-LLM on multiple temporal prediction tasks, achieving up to 66.14% accuracy and consistently outperforming sequential neural networks and language-based baselines. Beyond quantitative improvements, we qualitatively observe that the model can generate plausible physical interpretations of reaction dynamics, despite not being explicitly trained for explanation. These results demonstrate that symbolic temporal language modeling provides an effective framework for grounding LLMs in dynamic physical simulations.
+
+## 18. SADA: Bridging In-Context Learning and Fine-Tuning via State-Aligned Distillation Adapters
+
+- Authors: Wenhao Gao, Tianlong Wang, Wei Jia, Linhao Zhang, Aiwei Liu, Miao Fan, Zhou Xiao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6951179486694943
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1046/
+- PDF: https://aclanthology.org/2026.acl-long.1046.pdf
+- Local PDF: pdf/2026-09-14_18_SADA_ Bridging In-Context Learning and Fine-Tuning via State-Aligned Distillation Adapters.pdf
+
+Prompt-based in-context learning (ICL) and parameter fine-tuning are two dominant paradigms for incorporating external information into large language models (LLMs), but they incur high inference costs or require expensive retraining. To bridge this gap, context-to-parameter mapping converts prompts into temporary adapter weights. However, we identify a critical failure mode in existing methods: hidden-state collapse , where the adapter-augmented model’s internal states diverge sharply from the full-context oracle in deeper layers. We trace this failure to two coupled gaps: suboptimal Input-Selection and inadequate Supervision-Signal . To address these issues, we propose SADA ( S tate- A ligned D istillation A dapters). We establish the attention-block output as a principled feature interface to improve input selection and introduce state-alignment distillation to enforce consistency between the adapter-augmented model and the full-context oracle. Experiments on long-context language modeling (PG19) and downstream NLU and summarization benchmarks show that SADA consistently outperforms strong baselines like StreamAdapter and GenerativeAdapter , achieving performance comparable to ICL while significantly reducing memory footprint and latency. We further analyze when parameterized context compression is effective and when explicit context retention remains preferable. Our code is available at https://github.com/Taylor-Gavel/SADA.git .
+
+## 19. AT²PO: Agentic Turn-based Policy Optimization via Tree Search
+
+- Authors: Zefang Zong, Dingwei Chen, Yang Li, Qi Yi, Bo Zhou, Chengming Li, BO Qian, Peng Chen, Jie Jiang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.695073435246349
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1106/
+- PDF: https://aclanthology.org/2026.acl-long.1106.pdf
+- Local PDF: pdf/2026-09-14_19_AT²PO_ Agentic Turn-based Policy Optimization via Tree Search.pdf
+
+LLM agents have emerged as powerful systems for tackling multi-turn tasks by interleaving internal reasoning and external tool interactions. Agentic Reinforcement Learning has recently drawn significant research attention as a critical post-training paradigm to further refine these capabilities. In this paper, we present AT²PO ( A gentic T urn-based P olicy O ptimization via T ree Search), a unified framework for multi-turn agentic RL that addresses three core challenges: limited exploration diversity, sparse credit assignment, and misaligned policy optimization. AT²PO introduces a turn-level tree structure that jointly enables Entropy-Guided Tree Expansion for strategic exploration and Turn-wise Credit Assignment for fine-grained reward propagation from sparse outcomes. Complementing this, we propose Agentic Turn-based Policy Optimization, a turn-level learning objective that aligns policy updates with the natural decision granularity of agentic interactions. ATPO is orthogonal to tree search and can be readily integrated into any multi-turn RL pipeline. Experiments across seven benchmarks demonstrate consistent improvements over the state-of-the-art baseline by up to 1.84 percentage points in average, with ablation studies validating the effectiveness of each component.
+
+## 20. Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment
+
+- Authors: Bobo Li, Rui Wu, Zibo Ji, Meishan Zhang, Hao Fei, Min Zhang, Mong-Li Lee, Wynne Hsu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.694877525884017
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1104/
+- PDF: https://aclanthology.org/2026.acl-long.1104.pdf
+- Local PDF: pdf/2026-09-14_20_Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment.pdf
+
+Large Language Model agents have rapidly evolved from static text generators into dynamic systems capable of executing complex autonomous workflows. To enhance reliability, multi-agent frameworks assigning specialized roles are increasingly adopted to enable self-reflection and mutual auditing. While such role-playing effectively leverages domain expert knowledge, we find it simultaneously induces a human-like cognitive bias known as Actor-Observer Asymmetry (AOA). Specifically, an agent acting as an actor (during self-reflection) tends to attribute failures to external factors, whereas an observer (during mutual auditing) attributes the same errors to internal faults. We quantify this using our new Ambiguous Failure Benchmark, which reveals that simply swapping perspectives triggers the AOA effect in over 20% of cases for most models. To tame this bias, we introduce ReTAS (Reasoning via Thesis-Antithesis-Synthesis), a model trained through dialectical alignment to enforce perspective-invariant reasoning. By integrating dialectical chain-of-thought with Group Relative Policy Optimization, ReTAS guides agents to synthesize conflicting viewpoints into an objective consensus. Experiments demonstrate that ReTAS effectively mitigates attribution inconsistency and significantly improves fault resolution rates in ambiguous scenarios.
+
+## 21. EmoS: A High-Fidelity Multimodal Benchmark for Fine-grained Streaming Emotional Understanding
+
+- Authors: Pengze Guo, Jingxi Liang, Zhiwen Xie, Qifeng Wang, Derek F. Wong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.694170917902088
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1813/
+- PDF: https://aclanthology.org/2026.acl-long.1813.pdf
+- Local PDF: pdf/2026-09-14_21_EmoS_ A High-Fidelity Multimodal Benchmark for Fine-grained Streaming Emotional Understanding.pdf
+
+In the context of today’s high-pressure, aging society, the demand for large-scale emotional models capable of providing empathetic support is more critical than ever. However, existing benchmarks fail to simultaneously achieve ecological validity, signal clarity, and reliable fine-grained labeling. We introduce EmoS, a high-fidelity bilingual benchmark designed to resolve the limitations of ecological validity and noise in existing datasets by combining strictly filtered static slices with a dynamic Streaming Monologue subset. Supported by a rigorous dual-layer human annotation pipeline, EmoS provides trusted ground truth that captures continuous emotional evolution. Empirical results show that fine-tuning MLLMs (multimodal large language models) on EmoS yields significant gains over zero-shot baselines, laying the foundation for the training and evaluation of future emotion recognition models and empathy models. The dataset and code are publicly available at https://github.com/NLP2CT/EmoS .
+
+## 22. EvoEdit: Evolving Null-space Alignment for Robust and Efficient Knowledge Editing
+
+- Authors: Sicheng Lyu, Yu Gu, Xinyu Wang, Jerry Huang, Sitao Luan, Yufei Cui, Xiao-Wen Chang, Peng Lu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6939125979469516
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.75/
+- PDF: https://aclanthology.org/2026.findings-acl.75.pdf
+- Local PDF: pdf/2026-09-14_22_EvoEdit_ Evolving Null-space Alignment for Robust and Efficient Knowledge Editing.pdf
+
+Large language models (LLMs) require continual updates to rectify outdated or erroneous knowledge. Model editing has emerged as a compelling paradigm for introducing targeted modifications without the computational burden of full retraining. Existing approaches are mainly based on a locate-then-edit framework. However, in sequential editing contexts, where multiple updates are applied over time, they exhibit significant limitations and suffer from catastrophic interference, i.e., new edits compromise previously integrated updates and degrade preserved knowledge. To address these challenges, we introduce EvoEdit, a novel editing strategy that mitigates catastrophic interference through sequential null-space alignment, enabling stable and efficient model editing. By performing sequential null-space alignment for each incoming edit, EvoEdit preserves both original and previously modified knowledge representations and maintains output invariance on preserved knowledge even across long edit sequences, effectively mitigating interference. Evaluations on real-world sequential knowledge-editing benchmarks show that EvoEdit achieves better or comparable performance than prior state-of-the-art locate-then-edit techniques, with up to 3.53× speedup. Overall, these results underscore the necessity of developing more principled approaches for designing LLMs in dynamically evolving information settings, while providing a simple yet effective solution with strong theoretical guarantees.
+
+## 23. Lightweight LLM Agent Memory with Small Language Models
+
+- Authors: Jiaquan Zhang, Chaoning Zhang, Shuxu Chen, Zhenzhen Huang, Pengcheng Zheng, Zhicheng Wang, Ping Guo, Fan Mo, Sung-Ho Bae, Jie Zou, Jiwei Wei, Yang Yang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.693577812431939
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.588/
+- PDF: https://aclanthology.org/2026.acl-long.588.pdf
+- Local PDF: pdf/2026-09-14_23_Lightweight LLM Agent Memory with Small Language Models.pdf
+
+Although LLM agents can leverage tools for complex tasks, they still need memory to maintain cross-turn consistency and accumulate reusable information in long-horizon interactions. However, retrieval-based external memory systems incur low online overhead but suffer from unstable accuracy due to limited query construction and candidate filtering. In contrast, many systems use repeated large-model calls for online memory operations, improving accuracy but accumulating latency over long interactions. We propose LightMem, a lightweight memory system for better agent memory driven by Small Language Models (SLMs). LightMem modularizes memory retrieval, writing, and long-term consolidation, and separates online processing from offline consolidation to enable efficient memory invocation under bounded compute. We organize memory into short-term memory (STM) for immediate conversational context, mid-term memory (MTM) for reusable interaction summaries, and long-term memory (LTM) for consolidated knowledge, and uses user identifiers to support independent retrieval and incremental maintenance in multi-user settings. Online, LightMem operates under a fixed retrieval budget and selects memories via a two-stage procedure: vector-based coarse retrieval followed by semantic consistency re-ranking. Offline, it abstracts reusable interaction evidence and incrementally integrates it into LTM. Experiments show consistent gains across model scales, with an average F1 improvement of about 2.5 over A-MEM on LoCoMo, while achieving higher efficiency and low median latency (83 ms for retrieval and 581 ms end-to-end).
+
+## 24. BalanceSFT: Improving LLM Function Calling with Balanced Training Signals and Data Hardness
+
+- Authors: Bingguang Hao, Zengzhuang Xu, Maolin Wang, Yuntao Wen, Yicheng Chen, Cunyin Peng, Long Chen, Xiangyu Zhao, Jinjie Gu, Chenyi Zhuang, Ji Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.693520571790428
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.900/
+- PDF: https://aclanthology.org/2026.findings-acl.900.pdf
+- Local PDF: pdf/2026-09-14_24_BalanceSFT_ Improving LLM Function Calling with Balanced Training Signals and Data Hardness.pdf
+
+While Supervised Fine-Tuning (SFT) is the prevailing method for equipping Large Language Models (LLMs) with function calling capabilities, its effectiveness is often compromised by two critical challenges: 1) Imbalanced Training Signals , where lengthy Chain-of-Thought (CoT) reasoning tokens dominate the training signals over concise function calls in the learning objective, and 2) Imbalanced Data Hardness , characterized by a scarcity of hard training examples. To overcome these limitations, we propose Balanced Supervised Fine-tuning ( BalanceSFT ), a novel framework that incorporates two key components: a Self-adjusted Signal Balancing (SSB) loss that employs a learnable hyperparameter to dynamically adjust the token contributions of CoT reasoning and function calls, together with a Hard Data Re-sampling (HDR) strategy that establishes a feedback loop to selectively generate new, high-quality complex data guided by model errors. Extensive experiments demonstrate the effectiveness of our proposed BalanceSFT framework. With BalanceSFT, a 7B model achieves function calling performance that surpasses state-of-the-art models like GPT-5. Our code, models, and dataset are open-sourced.
+
+## 25. Dialectic-Med: Mitigating Diagnostic Hallucinations via Counterfactual Adversarial Multi-Agent Debate
+
+- Authors: Zhixiang Lu, Jionglong Su
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.693394523393426
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1837/
+- PDF: https://aclanthology.org/2026.findings-acl.1837.pdf
+- Local PDF: pdf/2026-09-14_25_Dialectic-Med_ Mitigating Diagnostic Hallucinations via Counterfactual Adversarial Multi-Agent Debate.pdf
+
+Multimodal Large Language Models (MLLMs) in healthcare suffer from severe confirmation bias, often hallucinating visual details to support initial, potentially erroneous diagnostic hypotheses. Existing Chain-of-Thought (CoT) approaches lack intrinsic correction mechanisms, rendering them vulnerable to error propagation. To bridge this gap, we propose Dialectic-Med, a multi-agent framework that enforces diagnostic rigor through adversarial dialectics. Unlike static consensus models, Dialectic-Med orchestrates a dynamic interplay between three role-specialized agents: a proponent that formulates diagnostic hypotheses; an opponent equipped with a novel visual falsification module that actively retrieves contradictory visual evidence to challenge the Proponent; and a mediator that resolves conflicts via a weighted consensus graph. By explicitly modeling the cognitive process of falsification, our framework guarantees that diagnostic reasoning is tightly grounded in verified visual regions. Empirical evaluations on MIMIC-CXR-VQA, VQA-RAD, and PathVQA demonstrate that Dialectic-Med not only achieves state-of-the-art performance but also fundamentally enhances the trustworthiness of the reasoning process. Beyond accuracy, our approach significantly enhances explanation faithfulness and decisively mitigates hallucinations, establishing a new standard over single-agent baselines.
+
+## 26. FastDiSS: Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation
+
+- Authors: Dat Nguyen Cong, Tung Kieu, Hoang Thanh-Tung
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6932896951139633
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.870/
+- PDF: https://aclanthology.org/2026.findings-acl.870.pdf
+- Local PDF: pdf/2026-09-14_26_FastDiSS_ Few-step Match Many-step Diffusion Language Model on Sequence-to-Sequence Generation.pdf
+
+Self-conditioning has been central to the success of continuous diffusion language models, as it allows models to correct previous errors. Yet its ability degrades precisely in the regime where diffusion is most attractive for deployment: few-step sampling for fast inference. In this study, we show that when models only have a few denoising steps, inaccurate self-conditioning induces a substantial approximation gap; this mistake compounds across denoising steps and ultimately dominate the sample quality. To address this, we propose a novel training framework that handles these errors during learning by perturbing the self-conditioning signal to match inference noise, improving robustness to prior estimation errors. In addition, we introduce a token-level noise-awareness mechanism that prevents training from saturation, hence improving optimization. Extensive experiments across conditional generation benchmarks demonstrate that our framework surpasses standard continuous diffusion models while providing up to 400x faster inference speed, and remains competitive against other one-step diffusion frameworks.
+
+## 27. Large Language Models Are Effective Human Annotation Assistants, But Not Good Independent Annotators
+
+- Authors: Feng Gu, Zongxia Li, Carlos R. Colon, Benjamin Evans, Ishani Mondal, Jordan Lee Boyd-Graber
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6932139330089004
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.4/
+- PDF: https://aclanthology.org/2026.findings-acl.4.pdf
+- Local PDF: pdf/2026-09-14_27_Large Language Models Are Effective Human Annotation Assistants, But Not Good Independent Annotators.pdf
+
+Event annotation is important for identifying, monitoring, and understanding sociological trends. Although expert annotators set the gold standard, they are expensive and inefficient. While state-of-the-art NLP models are an attractive alternative, they are often evaluated on standalone subtasks rather than entire workflows. Thus, we evaluate a holistic workflow that summarizes news with event coreference resolution and argument extraction in three modes: AI-only, AI assistance, and human only. Although AI’s recall is seven times higher than the tf-idf baseline at coreference resolution, it is far from replacing experts. However, experts adopt AI-extracted arguments 60% of the time, reducing extraction time by 25%. Our code and data are in https://github.com/Obertura777/gtd-data .
+
+## 28. Select2Reason: Efficient Instruction-Tuning Data Selection for Long-CoT Reasoning
+
+- Authors: Cehao Yang, Xueyuan Lin, Xiaojun Wu, Chengjin Xu, Xuhui Jiang, Honghao Liu, Hui Xiong, Jian Guo
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6927527044800295
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.331/
+- PDF: https://aclanthology.org/2026.findings-acl.331.pdf
+- Local PDF: pdf/2026-09-14_28_Select2Reason_ Efficient Instruction-Tuning Data Selection for Long-CoT Reasoning.pdf
+
+A practical approach to activate long chain-of-thoughts reasoning ability in large language models is to perform supervised fine-tuning on instruction datasets synthesized by strong large reasoning models, offering a cost-effective alternative to reinforcement learning. However, large-scale instruction sets incur significant training overhead, while effective strategies for automatic data selection still remain unexplored. We propose Select2Reason, a novel and efficient instruction-tuning data selection framework for long-CoT reasoning. From the perspective of emergence of rethinking behaviors like self-correction and backtracking, we investigate metrics that may determine the quality of long-CoT instructions. Select2Reason leverages a difficulty-aware reward model to estimate the learning value of questions and jointly incorporates a reasoning trace length-based heuristic through a weighted scheme for ranking to prioritize high-utility examples. Empirical results on OpenR1-Math-220k demonstrate that fine-tuning LLM on only 10% of the data selected by our method achieves performance competitive with or superior to full-data tuning and open-source baseline across nine competition-level mathematical benchmarks and four broader reasoning tasks. Further experiments highlight the scalability in varying data size, efficiency during inference, and adaptability to other instruction pools of Select2Reason with minimal cost.
+
+## 29. TrendFact: A Benchmark Towards Hotspot Perception in Automatic Fact-Checking
+
+- Authors: Xiaocheng Zhang, Xi Wang, Yifei Lu, Jianing Wang, Zhuangzhuang Ye, Mengjiao Bao, Peng Yan, Xiaohong Su
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.692603066008428
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1219/
+- PDF: https://aclanthology.org/2026.acl-long.1219.pdf
+- Local PDF: pdf/2026-09-14_29_TrendFact_ A Benchmark Towards Hotspot Perception in Automatic Fact-Checking.pdf
+
+With the surge of online misinformation, Large Language Models (LLMs) and Reasoning Large Language Models (RLMs) serving as Automatic Fact-Checking (AFC) systems have emerged as a prominent paradigm for reliable, explainable verification. However, our empirical study reveals that this paradigm faces a critical risk asymmetry challenge when deployed in real-world under resource-constrained environments. While Hotspot Perception Ability (HPA), the capacity to dynamically allocate reasoning resources based on social impact, is essential to mitigate this risk, existing benchmarks lack the social metadata and evaluation framework to meet this urgent evaluation needs, thereby hindering the advancement of these AFC systems. To bridge this gap, we introduce TrendFact, the first benchmark capable of evaluating HPA and three fact-checking tasks. It consists of 7,643 curated samples sourced from trending platforms and professional datasets, with an evidence library containing 366,634 entries. To enable HPA assessment, we propose two novel metrics: the Explanation Consistency Score (ECS) to evaluate the reliability of verification reasoning, and the Hotspot Claim Perception Index (HCPI) to quantify the overall HPA of AFC systems. Extensive experiments demonstrate that existing AFC systems exhibit limited performance on TrendFact. Furthermore, our proposed FactISR framework effectively enhances HPA and computational efficiency for RLM-driven systems.
+
+## 30. Beyond Instruction Optimization: Multi-Agent Error-Driven Class Description Refinement for LLM-Based Classification
+
+- Authors: Hamvir Dev, Shivam Ratnakant Mhaskar, Sasanka Vutla, Anup Pattnaik
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6925943790506865
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.137/
+- PDF: https://aclanthology.org/2026.acl-industry.137.pdf
+- Local PDF: pdf/2026-09-14_30_Beyond Instruction Optimization_ Multi-Agent Error-Driven Class Description Refinement for LLM-Based Classification.pdf
+
+Large Language Models (LLMs) have demonstrated considerable efficacy in classification tasks, yet their performance depends on two critical prompt components: Task Instructions (HOW to classify) and Class Descriptions (WHAT defines each class). While prompt engineering research has extensively explored instruction optimization, class descriptions have received comparatively less attention, often being treated as fixed inputs or simple label names. This represents a critical gap for real-world classification tasks, particularly in contact center domains, where labels often suffer from ambiguous boundaries, overlapping definitions, and incomplete coverage of possible cases—substantially limiting accuracy regardless of instruction quality.We propose a multi-agent framework for iteratively refining class descriptions based on classification errors. By analyzing misclassified instances, language agents automatically generate improved descriptions that better capture class distinctions and resolve ambiguities. Empirical evaluation across contact center and public benchmark datasets demonstrates upto 20.71% accuracy improvements over static class descriptions, addressing an orthogonal dimension to existing instruction optimization techniques.
