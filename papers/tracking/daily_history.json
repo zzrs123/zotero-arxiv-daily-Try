@@ -335,6 +335,13 @@
     "title": "Point as Skeleton: Accumulated Point Cloud Enhanced Autoregressive Generation for Closed-Loop Autonomous Driving Simulation",
     "url": "http://arxiv.org/abs/2607.06516v1"
   },
+  "title:positionanchortuningtowardsefficientadaptationofpretrainedpointcloudtransformers": {
+    "doi": null,
+    "sent_date": "2026-09-18",
+    "source": "arxiv",
+    "title": "Position Anchor Tuning: Towards Efficient Adaptation of Pre-Trained Point Cloud Transformers",
+    "url": "http://arxiv.org/abs/2609.18056v1"
+  },
   "title:registrationgroundedspectralfusionforunregisteredwlinbiendoscopiclesionsegmentation": {
     "doi": null,
     "sent_date": "2026-07-30",
