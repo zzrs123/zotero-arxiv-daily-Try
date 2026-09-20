@@ -370,6 +370,13 @@
     "title": "Microenvironment-aware transcriptome reconstruction in spatial transcriptomics",
     "url": "https://doi.org/10.1038/s41467-026-77349-8"
   },
+  "doi:10.1038/s41467-026-77360-z": {
+    "doi": "https://doi.org/10.1038/s41467-026-77360-z",
+    "sent_date": "2026-09-20",
+    "source": "openalex",
+    "title": "ConvexGating infers gating strategies from clusters in single cell cytometry data",
+    "url": "https://doi.org/10.1038/s41467-026-77360-z"
+  },
   "doi:10.1038/s41467-026-77381-8": {
     "doi": "https://doi.org/10.1038/s41467-026-77381-8",
     "sent_date": "2026-09-19",
@@ -404,6 +411,20 @@
     "source": "openalex",
     "title": "Interpretable machine learning enables de novo mapping of cell type-specific RNA splicing regulation from scRNA-seq data",
     "url": "https://doi.org/10.1038/s41467-026-77627-5"
+  },
+  "doi:10.1038/s41467-026-77645-3": {
+    "doi": "https://doi.org/10.1038/s41467-026-77645-3",
+    "sent_date": "2026-09-20",
+    "source": "openalex",
+    "title": "Learning chemical-induced gene expression perturbations with WAVE",
+    "url": "https://doi.org/10.1038/s41467-026-77645-3"
+  },
+  "doi:10.1038/s41467-026-77838-w": {
+    "doi": "https://doi.org/10.1038/s41467-026-77838-w",
+    "sent_date": "2026-09-20",
+    "source": "openalex",
+    "title": "BEAR-GRN: Systematic assessment of single-cell multi-omics-based gene regulatory network inference methods",
+    "url": "https://doi.org/10.1038/s41467-026-77838-w"
   },
   "doi:10.1038/s41588-026-02695-8": {
     "doi": "https://doi.org/10.1038/s41588-026-02695-8",
@@ -3366,6 +3387,13 @@
     "title": "BCL: Bayesian In-Context Learning Framework for Information Extraction",
     "url": "https://aclanthology.org/2026.findings-acl.1560/"
   },
+  "title:beargrnsystematicassessmentofsinglecellmultiomicsbasedgeneregulatorynetworkinferencemethods": {
+    "doi": "https://doi.org/10.1038/s41467-026-77838-w",
+    "sent_date": "2026-09-20",
+    "source": "openalex",
+    "title": "BEAR-GRN: Systematic assessment of single-cell multi-omics-based gene regulatory network inference methods",
+    "url": "https://doi.org/10.1038/s41467-026-77838-w"
+  },
   "title:benchmarkingcopynumberalterationinferencemethodsforspatialtranscriptomics": {
     "doi": "https://doi.org/10.1038/s41467-026-77500-5",
     "sent_date": "2026-09-07",
@@ -3659,6 +3687,13 @@
     "source": "arxiv",
     "title": "Beyond Stationarity in Time Series: Discovering Causal Structures and Latent Regimes via Markov Blankets",
     "url": "http://arxiv.org/abs/2609.05150v1"
+  },
+  "title:beyondstochasticexplorationwhatmakestrainingdatavaluableforagenticsearch": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search",
+    "url": "https://aclanthology.org/2026.findings-acl.160/"
   },
   "title:beyondstraightnessnoncrossingflowmatchingviaquantilealigntreecoupling": {
     "doi": null,
@@ -5151,6 +5186,13 @@
     "title": "Compositional Cross-Modality Translation via Whole-Volume Multitask Latent Flow Matching",
     "url": "http://arxiv.org/abs/2608.08135v1"
   },
+  "title:compositionalsteeringoflargelanguagemodelswithsteeringtokens": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Compositional Steering of Large Language Models with Steering Tokens",
+    "url": "https://aclanthology.org/2026.acl-long.1435/"
+  },
   "title:compressingllmknowledgeintographrepresentationsfortextattributedgraphslearning": {
     "doi": null,
     "sent_date": "2026-06-24",
@@ -5333,6 +5375,13 @@
     "title": "Constructing Interpretable Features from Compositional Neuron Groups",
     "url": "https://aclanthology.org/2026.acl-long.1959/"
   },
+  "title:contentfuzzingforescapinginformationcocoonsondigitalsocialmedia": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Content Fuzzing for Escaping Information Cocoons on Digital Social Media",
+    "url": "https://aclanthology.org/2026.findings-acl.547/"
+  },
   "title:contextattendedadversarialreinforcementlearningforrobustmultistepretrievalaugmentedgeneration": {
     "doi": null,
     "sent_date": "2026-09-15",
@@ -5410,6 +5459,13 @@
     "title": "Continual Safety Alignment via Gradient-Based Sample Selection",
     "url": "https://aclanthology.org/2026.findings-acl.942/"
   },
+  "title:continuouscontextsamplingallowsextendingdiversityboundariesoflargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Continuous Context Sampling Allows Extending Diversity Boundaries of Large Language Models",
+    "url": "https://aclanthology.org/2026.acl-srw.126/"
+  },
   "title:continuousinteractiondiffusionadiffusionnativeruntimeforasynchronoustoolaugmentedreasoning": {
     "doi": null,
     "sent_date": "2026-08-13",
@@ -5451,6 +5507,13 @@
     "source": "arxiv",
     "title": "Convergent Emergence of In-Context Learning Across Modalities",
     "url": "http://arxiv.org/abs/2609.14011v1"
+  },
+  "title:convexgatinginfersgatingstrategiesfromclustersinsinglecellcytometrydata": {
+    "doi": "https://doi.org/10.1038/s41467-026-77360-z",
+    "sent_date": "2026-09-20",
+    "source": "openalex",
+    "title": "ConvexGating infers gating strategies from clusters in single cell cytometry data",
+    "url": "https://doi.org/10.1038/s41467-026-77360-z"
   },
   "title:convmemconvolutionalmemoryforlongcontextreasoning": {
     "doi": null,
@@ -5696,6 +5759,13 @@
     "source": "openalex",
     "title": "Cross-Granularity Hypergraph Retrieval-Augmented Generation for Multi-hop Question Answering",
     "url": "https://doi.org/10.1609/aaai.v40i39.40623"
+  },
+  "title:crossguardsafeguardingmllmsagainstjointmodalimplicitmaliciousattacks": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "CrossGuard: Safeguarding MLLMs against Joint-Modal Implicit Malicious Attacks",
+    "url": "https://aclanthology.org/2026.acl-long.1178/"
   },
   "title:crossmodalcoreferencealignmentenablingreliableinformationtransferinomnillms": {
     "doi": null,
@@ -7062,6 +7132,13 @@
     "title": "Efficient Paths and Dense Rewards: Probabilistic Flow Reasoning for Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.1215/"
   },
+  "title:efficientpriorguidedreasoningforrobustretrievalaugmentedgenerationunderconflicts": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Efficient Prior-Guided Reasoning for Robust Retrieval-Augmented Generation under Conflicts",
+    "url": "https://aclanthology.org/2026.acl-long.1013/"
+  },
   "title:efficientrlvrschedulingviagraphstructuredonlinedifficultyestimation": {
     "doi": null,
     "sent_date": "2026-08-20",
@@ -7180,6 +7257,13 @@
     "source": "acl_anthology",
     "title": "Empirical Analysis of Task Mixture Effects in Small-scale Instruction Tuning: A Statistical Approach",
     "url": "https://aclanthology.org/2026.findings-acl.643/"
+  },
+  "title:empoweringtabulardatapreparationwithlanguagemodelswhyandhow": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Empowering Tabular Data Preparation with Language Models: Why and How?",
+    "url": "https://aclanthology.org/2026.acl-long.8/"
   },
   "title:enablingknowledgegraphunderstandingatscalewiththeexploreyourgraphsengineexygen": {
     "doi": null,
@@ -8517,6 +8601,13 @@
     "source": "acl_anthology",
     "title": "From Recognition to Reasoning: Benchmarking and Enhancing MLLMs on Real-World Receipt Document Understanding",
     "url": "https://aclanthology.org/2026.acl-long.2135/"
+  },
+  "title:fromrelevancetoauthorityauthorityawaregenerativeretrievalinwebsearchengines": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "From Relevance to Authority: Authority-aware Generative Retrieval in Web Search Engines",
+    "url": "https://aclanthology.org/2026.acl-industry.54/"
   },
   "title:fromselectiontogenerationasurveyofllmbasedactivelearning": {
     "doi": null,
@@ -11024,6 +11115,13 @@
     "title": "LaMPE: Length-aware Multi-grained Positional Encoding for Adaptive Long-context Scaling Without Training",
     "url": "https://aclanthology.org/2026.findings-acl.1608/"
   },
+  "title:langreinforcementlearningformultilingualreasoningwithlanguageadaptivehintguidance": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "LANG: Reinforcement Learning for Multilingual Reasoning with Language-Adaptive Hint Guidance",
+    "url": "https://aclanthology.org/2026.acl-long.2029/"
+  },
   "title:languageacquisitiondeviceinlargelanguagemodels": {
     "doi": null,
     "sent_date": "2026-07-05",
@@ -11212,6 +11310,13 @@
     "source": "arxiv",
     "title": "Learning-Based Reconstruction of Optical Properties in Bilayered Media from Single-distance Time-Resolved Reflectance Measurements",
     "url": "http://arxiv.org/abs/2609.19786v1"
+  },
+  "title:learningchemicalinducedgeneexpressionperturbationswithwave": {
+    "doi": "https://doi.org/10.1038/s41467-026-77645-3",
+    "sent_date": "2026-09-20",
+    "source": "openalex",
+    "title": "Learning chemical-induced gene expression perturbations with WAVE",
+    "url": "https://doi.org/10.1038/s41467-026-77645-3"
   },
   "title:learningcontinuoustemporaldynamicsonsymplecticmanifoldsfortemporalknowledgegraphembedding": {
     "doi": null,
@@ -12360,6 +12465,13 @@
     "source": "arxiv",
     "title": "Measuring Graph-to-Graph Semantic Similarity in Knowledge Graphs: An Empirical Evaluation of Knowledge Graph Embeddings",
     "url": "http://arxiv.org/abs/2606.29180v1"
+  },
+  "title:measuringwhatmattersbeyondtextevaluatingmultimodalsummariesbyqualityalignmentanddiversity": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Measuring What Matters Beyond Text: Evaluating Multimodal Summaries by Quality, Alignment, and Diversity",
+    "url": "https://aclanthology.org/2026.findings-acl.1448/"
   },
   "title:meavmodeleditingwithalignmentvectorsforinferencetimellmalignmentinsingleandmultidomainpreferencespectrum": {
     "doi": null,
@@ -13880,6 +13992,13 @@
     "title": "Object-Uni: A Unified Model for Object-Centric Spatial Understanding and Controllable Generation",
     "url": "http://arxiv.org/abs/2608.22757v1"
   },
+  "title:ocrmemoryopticalcontextretrievalforlonghorizonagentmemory": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "OCR-Memory: Optical Context Retrieval for Long-Horizon Agent Memory",
+    "url": "https://aclanthology.org/2026.acl-long.474/"
+  },
   "title:octopusgatedselectiveattentionformemoryboundedlongcontextinferenceinlargelanguagemodels": {
     "doi": null,
     "sent_date": "2026-07-11",
@@ -14068,6 +14187,20 @@
     "source": "arxiv",
     "title": "OntologyAligner: Ontology-Aligned Retrieval and Hierarchy-Guided Large Language Model Reranking for Biomedical Ontology Normalization",
     "url": "http://arxiv.org/abs/2609.10055v1"
+  },
+  "title:openproblemssolvedbyllmsasurveyofverifiablemathematicaldiscovery": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Open Problems Solved by LLMs? A Survey of Verifiable Mathematical Discovery",
+    "url": "https://aclanthology.org/2026.bigpicture-main.2/"
+  },
+  "title:openschrödingersclosedboxidentifyingretrievalaugmentedgenerationinapiaccessiblelargelanguagemodelservices": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Open Schrödinger’s Closed Box: Identifying Retrieval Augmented Generation in API-Accessible Large Language Model Services",
+    "url": "https://aclanthology.org/2026.acl-long.208/"
   },
   "title:openvisionreasonertransferringlinguisticcognitivebehaviorforvisualreasoning": {
     "doi": null,
@@ -14692,6 +14825,13 @@
     "title": "PretrainRL: Alleviating Factuality Hallucination of Large Language Models at the Beginning",
     "url": "https://aclanthology.org/2026.findings-acl.910/"
   },
+  "title:printsrewardmodelingforlonghorizoninformationseeking": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "PRInTS: Reward Modeling for Long-Horizon Information Seeking",
+    "url": "https://aclanthology.org/2026.acl-long.1574/"
+  },
   "title:priorconditionedgaussiandiscriminantsforgeneralizableaigeneratedimagedetection": {
     "doi": null,
     "sent_date": "2026-08-20",
@@ -14958,6 +15098,13 @@
     "title": "Purging the Gray Zone: Latent-Geometric Denoising for Precise Knowledge Boundary Awareness",
     "url": "https://aclanthology.org/2026.findings-acl.122/"
   },
+  "title:pushingthelimitsofllmtoolcallingviaexperientialknowledgeintegrationandactivation": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Pushing the Limits of LLM Tool Calling via Experiential Knowledge Integration and Activation",
+    "url": "https://aclanthology.org/2026.findings-acl.710/"
+  },
   "title:puzzlekvpagewiselowrankdecompositionforkvcachecompression": {
     "doi": null,
     "sent_date": "2026-08-27",
@@ -15161,6 +15308,13 @@
     "title": "RAP: Research Attention Prediction Reveals Target-Conditioned Evidence Acquisition Biases",
     "url": "http://arxiv.org/abs/2609.10092v1"
   },
+  "title:rarrgmultimodalretrievalaugmentedradiologyreportgenerationwithkeyphraseextraction": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "RA-RRG: Multimodal Retrieval-Augmented Radiology Report Generation with Key Phrase Extraction",
+    "url": "https://aclanthology.org/2026.findings-acl.247/"
+  },
   "title:rationentropydriventaskadaptivevisualattentionallocationframeworkformultimodalreasoning": {
     "doi": null,
     "sent_date": "2026-07-05",
@@ -15307,6 +15461,13 @@
     "source": "acl_anthology",
     "title": "Reasoning with Ontology Graph: Toward Type-Constrained Knowledge Graph Question Answering",
     "url": "https://aclanthology.org/2026.acl-long.489/"
+  },
+  "title:reasonkealigningtheprocessnotjusttheoutcomeforfaithfulllmknowledgeediting": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Reason-KE++: Aligning the Process, Not Just the Outcome, for Faithful LLM Knowledge Editing",
+    "url": "https://aclanthology.org/2026.findings-acl.1137/"
   },
   "title:reasonrankempoweringpassagerankingwithstrongreasoningability": {
     "doi": null,
@@ -15650,6 +15811,13 @@
     "source": "acl_anthology",
     "title": "Resonant Context Anchoring: Decoupling Attention Routing and Signal Gain at Inference Time",
     "url": "https://aclanthology.org/2026.findings-acl.1824/"
+  },
+  "title:resqlselfimprovingframeworkforreasoningawaretexttosqldatasetgeneration": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "ReSQL: Self-Improving Framework for Reasoning-Aware Text-to-SQL Dataset Generation",
+    "url": "https://aclanthology.org/2026.findings-acl.1677/"
   },
   "title:ressatenhancingspatialtranscriptomicspredictionfromhampestainedhistologyimageswithaninteractivespottransformer": {
     "doi": "https://doi.org/10.1186/s13059-026-04168-x",
@@ -16302,6 +16470,13 @@
     "title": "Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding",
     "url": "https://aclanthology.org/2026.acl-long.204/"
   },
+  "title:scalingexternalknowledgeinputbeyondcontextwindowsofllmsviamultiagentcollaboration": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Scaling External Knowledge Input Beyond Context Windows of LLMs via Multi-Agent Collaboration",
+    "url": "https://aclanthology.org/2026.acl-long.468/"
+  },
   "title:scalinglawformultimodallargelanguagemodelsupervisedfinetuning": {
     "doi": null,
     "sent_date": "2026-09-04",
@@ -16798,6 +16973,13 @@
     "source": "acl_anthology",
     "title": "Self-Correcting RAG: Enhancing Faithfulness via MMKP Context Selection and NLI-Guided MCTS",
     "url": "https://aclanthology.org/2026.findings-acl.1052/"
+  },
+  "title:selfcorrectingtexttovideogenerationwithmisalignmentdetectionandlocalizedrefinement": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Self-Correcting Text-to-Video Generation with Misalignment Detection and Localized Refinement",
+    "url": "https://aclanthology.org/2026.findings-acl.1817/"
   },
   "title:selfevolvingagentsasdynamicgraphtransformationasurveyandnewperspective": {
     "doi": null,
@@ -17534,6 +17716,13 @@
     "title": "SpecAgent: A Speculative Retrieval and Forecasting Agent for Code Completion",
     "url": "https://aclanthology.org/2026.acl-long.786/"
   },
+  "title:specboundadaptiveboundedselfspeculationwithlayerwiseconfidencecalibration": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "SpecBound: Adaptive Bounded Self-Speculation with Layer-wise Confidence Calibration",
+    "url": "https://aclanthology.org/2026.findings-acl.802/"
+  },
   "title:spectralcharacterizationandmitigationofsequentialknowledgeeditingcollapse": {
     "doi": null,
     "sent_date": "2026-08-07",
@@ -17701,6 +17890,13 @@
     "source": "acl_anthology",
     "title": "STAR-Teaming: A Strategy-Response Multiplex Network Approach to Automated LLM Red Teaming",
     "url": "https://aclanthology.org/2026.findings-acl.1470/"
+  },
+  "title:staticmodelsdynamicworldaunifiedperspectiveontemporalperceptioninlargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Static Models, Dynamic World: A Unified Perspective on Temporal Perception in Large Language Models",
+    "url": "https://aclanthology.org/2026.findings-acl.92/"
   },
   "title:steeringintonewembeddingspacesanalyzingcrosslingualalignmentinducedbymodelinterventionsinmultilinguallanguagemodels": {
     "doi": null,
@@ -17890,6 +18086,13 @@
     "source": "arxiv",
     "title": "Structure Learning on Clustered Data",
     "url": "http://arxiv.org/abs/2607.08238v1"
+  },
+  "title:strunragevaluationofocrinducedstructuralnoiseonragrobustness": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "StruNRAG: Evaluation of OCR-Induced Structural Noise on RAG Robustness",
+    "url": "https://aclanthology.org/2026.findings-acl.955/"
   },
   "title:studentguidesteacherweaktostronginferenceviaspectralorthogonalexploration": {
     "doi": null,
@@ -19060,6 +19263,13 @@
     "title": "Toward Structured Knowledge Reasoning: Contrastive Retrieval-Augmented Generation on Experience",
     "url": "https://aclanthology.org/2025.findings-acl.1224/"
   },
+  "title:towardsunderstandingtherobustnessofsparseautoencoders": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Towards Understanding the Robustness of Sparse Autoencoders",
+    "url": "https://aclanthology.org/2026.findings-acl.1298/"
+  },
   "title:towardsunifiedmultimodalgraphfoundationmodelabridgerouteradapterbasedapproach": {
     "doi": null,
     "sent_date": "2026-09-10",
@@ -19263,6 +19473,13 @@
     "title": "Trojaning the Alignment: Stealthy Backdoor Attacks against Graph Foundation Models",
     "url": "http://arxiv.org/abs/2608.20991v1"
   },
+  "title:trustwithinseekbeyondknowledgeboundaryawarepolicyoptimizationforagenticsearch": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Trust Within? Seek Beyond? Knowledge Boundary Aware Policy Optimization for Agentic Search",
+    "url": "https://aclanthology.org/2026.acl-long.1276/"
+  },
   "title:trustworthyandexplainablecausalrepresentationlearningintransformers": {
     "doi": null,
     "sent_date": "2026-07-06",
@@ -19423,6 +19640,13 @@
     "source": "arxiv",
     "title": "Uncovering Cellular Resolution in scRNAseq via Unbiased Cell and Gene Network Analysis",
     "url": "http://arxiv.org/abs/2608.22982v1"
+  },
+  "title:uncoveringsentimentanalysiscircuitinlargelanguagemodel": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "Uncovering Sentiment Analysis Circuit in Large Language Model",
+    "url": "https://aclanthology.org/2026.acl-long.928/"
   },
   "title:understandingandmitigatingpoliticalstancecrosstopicgeneralizationinlargelanguagemodels": {
     "doi": null,
@@ -19976,6 +20200,13 @@
     "source": "acl_anthology",
     "title": "What Makes AI Research Replicable? Executable Knowledge Graphs as Scientific Knowledge Representations",
     "url": "https://aclanthology.org/2026.acl-short.70/"
+  },
+  "title:whatmakesanllmagoodoptimizeratrajectoryanalysisofllmguidedevolutionarysearch": {
+    "doi": null,
+    "sent_date": "2026-09-20",
+    "source": "acl_anthology",
+    "title": "What Makes an LLM a Good Optimizer? A Trajectory Analysis of LLM-Guided Evolutionary Search",
+    "url": "https://aclanthology.org/2026.findings-acl.1252/"
   },
   "title:whatmakesgoodagenticdataanacelensondatagenerationforllmagents": {
     "doi": null,
