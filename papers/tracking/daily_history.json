@@ -90,6 +90,13 @@
     "title": "Code as Representation: A Compilable Parsing Paradigm for Academic Documents",
     "url": "http://arxiv.org/abs/2608.17550v1"
   },
+  "title:compoworldcompositionalenvironmentscalingforgeneralagents": {
+    "doi": null,
+    "sent_date": "2026-09-29",
+    "source": "arxiv",
+    "title": "CompoWorld: Compositional Environment Scaling for General Agents",
+    "url": "http://arxiv.org/abs/2609.33665v1"
+  },
   "title:continualskillbenchcanllmagentstrulyevolvetheircapabilities": {
     "doi": null,
     "sent_date": "2026-08-05",
@@ -138,6 +145,13 @@
     "source": "arxiv",
     "title": "DUET: A Diversity-Quality Duet of Distillation Experts for Two-Step Video Generation",
     "url": "http://arxiv.org/abs/2608.09637v1"
+  },
+  "title:duras2stchainofthoughtandreinforcementlearningfordurationalignedspeechtospeechtranslation": {
+    "doi": null,
+    "sent_date": "2026-09-29",
+    "source": "arxiv",
+    "title": "DuraS2ST: Chain-of-Thought and Reinforcement Learning for Duration-Aligned Speech-to-Speech Translation",
+    "url": "http://arxiv.org/abs/2609.33742v1"
   },
   "title:equilibriumtrainingofenergybasedmodelswithparalleltrajectorytempering": {
     "doi": null,
@@ -391,6 +405,13 @@
     "title": "Scopes equivalence for blocks of Ariki-Koike algebras",
     "url": "http://arxiv.org/abs/2608.11568v1"
   },
+  "title:seopdselfevolvingllmsviaonlinepolicydistillationfromselfgeneratedchainofthought": {
+    "doi": null,
+    "sent_date": "2026-09-29",
+    "source": "arxiv",
+    "title": "SeOPD: Self-Evolving LLMs via Online Policy Distillation from Self-Generated Chain-of-Thought",
+    "url": "http://arxiv.org/abs/2609.33181v1"
+  },
   "title:simsubspaceinteractionbasedmethodfortokenleveltextanomalydetection": {
     "doi": null,
     "sent_date": "2026-09-10",
@@ -404,6 +425,20 @@
     "source": "arxiv",
     "title": "Simultaneous Heisenberg-Limited Multiparameter Metrology via Indefinite Evolution",
     "url": "http://arxiv.org/abs/2608.10490v1"
+  },
+  "title:siviarsisourcegroundedadaptationofdiagrammingskills": {
+    "doi": null,
+    "sent_date": "2026-09-29",
+    "source": "arxiv",
+    "title": "SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills",
+    "url": "http://arxiv.org/abs/2609.33386v1"
+  },
+  "title:skill2envcapabilityorientedenvironmentsynthesisfromskillsforgeneralagents": {
+    "doi": null,
+    "sent_date": "2026-09-29",
+    "source": "arxiv",
+    "title": "Skill2Env: Capability-Oriented Environment Synthesis from Skills for General Agents",
+    "url": "http://arxiv.org/abs/2609.33772v1"
   },
   "title:spacellagentaselfevolvingllmbasedmultiagentframeworkfortrajectoryanalysis": {
     "doi": null,
@@ -481,5 +516,12 @@
     "source": "arxiv",
     "title": "WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA",
     "url": "http://arxiv.org/abs/2608.01035v1"
+  },
+  "title:zerogarbenchmarkingtheadversarialrobustnessofzeroshotgraphmodels": {
+    "doi": null,
+    "sent_date": "2026-09-29",
+    "source": "arxiv",
+    "title": "ZeroGAR: Benchmarking the Adversarial Robustness of Zero-Shot Graph Models",
+    "url": "http://arxiv.org/abs/2609.33314v1"
   }
 }
