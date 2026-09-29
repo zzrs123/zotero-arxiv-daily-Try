@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-09-29
+
+## 1. Training Graph Foundation Models on The Web Graph
+
+- Authors: Ryoma Sato
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.AI, cs.LG
+- Relevance: 3.5640198727595473
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30894v1
+- PDF: https://arxiv.org/pdf/2609.30894v1
+- Local PDF: pdf/2026-09-29_01_Training Graph Foundation Models on The Web Graph.pdf
+
+We introduce Acacia, a graph foundation model, trained on the web graph. Acacia (i) supports arbitrary feature dimensionalities and semantics without additional training, (ii) supports a wide range of tasks, including node classification, link prediction, node clustering, and graph generation, without additional training, (iii) has in-context learning capabilities, and (iv) does not rely on pretrained LLMs. In particular, existing graph foundation models often require training additional classification heads or feature projectors to accommodate new graphs or new labels, whereas Acacia does not. Moreover, existing graph foundation models often gain their capabilities by being stitched together with pretrained LLMs, whereas Acacia is trained from scratch using only the Common Crawl web graph. This is also an important result because it provides evidence that graph models can acquire emergent capabilities from scratch like LLMs.
+
+## 2. Interpretable-by-Design Descriptor Portfolios Match a 2048-Dimensional Foundation Embedding on Low-Data Molecular Assays
+
+- Authors: Yiqi Yao, Miquel Duran-Frigola
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.3691343399637876
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30789v1
+- PDF: https://arxiv.org/pdf/2609.30789v1
+- Local PDF: pdf/2026-09-29_02_Interpretable-by-Design Descriptor Portfolios Match a 2048-Dimensional Foundation Embedding on Low-Data Molecular Assays.pdf
+
+In low-data structure-activity prediction, the choice of molecular representation can matter more than the choice of predictor, and tabular foundation models sharpen that effect. We ask whether a portfolio of compact, semantically named descriptor blocks can reach the accuracy of a 2048-dimensional CheMeleon embedding while staying auditable at the feature level, meaning that every input dimension carries a model name and a recorded training provenance. Starting from a fixed 11-dimensional physicochemical base, we greedily concatenate provenance-screened blocks using the labelled context alone. Across nine ADME/Tox assays and 50 evaluation cells, scored on common-coverage subsets restricted to the molecules that every representation covers, the portfolio reaches a mean test AUC of 0.762, against 0.764 for CheMeleon and 0.756 for Mordred. The pooled gap to CheMeleon is +0.003 AUC (task-bootstrap 95% CI [-0.020, +0.030]), which satisfies our predeclared pooled parity gate but not the per-assay gate. At 25 context labels the headline rule again satisfies the pooled gate; at 10 labels it does not. We also report four predeclared candidate-selection rules that we falsified. Post-freeze checks over ten seeds and three previously unseen assays support pooled competitiveness for compact, auditable representations; a same-width random-bundle control does not establish that greedy membership itself adds accuracy. Assay-level differences remain unresolved.
+
+## 3. Persistent Homology of Time Series through Complex Networks
+
+- Authors: İsmail Güzel
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-05-02
+- DOI: Unavailable
+- Categories: math.AT, cs.LG, stat.AP, stat.ML
+- Relevance: 3.339327399940848
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2605.01624v1
+- PDF: https://arxiv.org/pdf/2605.01624v1
+- Local PDF: pdf/2026-09-29_03_Persistent Homology of Time Series through Complex Networks.pdf
+
+We present a unified pipeline for univariate time series classification via complex networks and persistent homology. A time series is mapped to a graph through one of five constructions across three families (visibility (natural and horizontal visibility graphs), transition, and proximity) and the graph is converted to a dissimilarity matrix from which a Vietoris-Rips filtration yields persistence diagrams. These diagrams are vectorized into fixed-length features through persistence landscapes and topological summary statistics. By standardizing the downstream processing, differences in classification performance are attributable to the network construction and distance metric alone. Experiments on twelve UCR benchmarks show that (i) no single construction dominates: the optimal graph type depends on the signal's discriminative structure; (ii) the graph distance metric is a first-order design choice, with diffusion distance uniformly outperforming shortest-path alternatives; and (iii) persistence-based features degrade gracefully under noise, consistent with the classical stability theorem of persistent homology.
+
+## 4. Fixed Points Without Fixed Diffusion: Implicit Neural Sheaves for Convergent Test-Time Computation
+
+- Authors: Rémi Bourgerie, Šarūnas Girdzijauskas, Viktoria Fodor
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-08-12
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.3284516417369483
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30277v1
+- PDF: https://arxiv.org/pdf/2609.30277v1
+- Local PDF: pdf/2026-09-29_04_Fixed Points Without Fixed Diffusion_ Implicit Neural Sheaves for Convergent Test-Time Computation.pdf
+
+Implicit Graph Neural Networks (IGNNs) define node representations as fixed points of message-passing operators, enabling effectively infinite-depth propagation, iteration-independent parameterization, and flexible test-time computation. Yet these benefits depend on the equilibrium being unique and attainable by fixed-point iteration. Existing constructions often impose constraints on recurrent updates to obtain these guarantees, limiting the transformations available at equilibrium. This raises a central question: can IGNNs gain expressiveness through richer, edge-dependent transformations while retaining the inherent strengths of their equilibrium formulation? We introduce SheafDEQ, a subhomogeneous deep-equilibrium architecture with adaptive neural-sheaf propagation. Its learned, matrix-valued sheaf restriction maps can align, mix, or reverse neighbouring representations. Under mild regularity conditions, we prove that SheafDEQ admits a unique equilibrium reached globally by fixed-point iteration from any positive initialization. Contractivity further guarantees convergence under bounded communication staleness. We evaluate SheafDEQ on distributed-inference tasks requiring repeated nonlocal aggregation and on community detection whose rewiring increasingly favours cross-community interactions. SheafDEQ improves over fixed-propagation implicit baselines on Sums, MNIST Terrain, and Coordinates, and on community detection as connectivity becomes increasingly heterophilic. Continued-iteration diagnostics show decreasing residuals and low prediction sensitivity after 100 iterations for initialization scales from $0.001$ to $10$, while delayed-update experiments show low sensitivity to bounded communication staleness.
+
+## 5. Skip the Talk, Re-Focus on Vision: Latent Reasoning for Reasoning Segmentation in Multimodal Large Language Models
+
+- Authors: Tianhang Guo, Yulin He, Wei Chen, Wenjuan Zhou, Yuhang Li, Xinbiao Gan
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.1859326056762995
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30783v1
+- PDF: https://arxiv.org/pdf/2609.30783v1
+- Local PDF: pdf/2026-09-29_05_Skip the Talk, Re-Focus on Vision_ Latent Reasoning for Reasoning Segmentation in Multimodal Large Language Models.pdf
+
+Reasoning segmentation aims to interpret implicit textual queries and enable fine-grained visual perception, which is critical for applications such as human-computer interaction and embodied agents. Existing methods typically generate explicit Chain-of-Thought (CoT) by multimodal large language models (MLLMs) before localizing the target. Although intuitive, such explicit verbal reasoning introduces substantial attention interference: redundant textual tokens disrupt attention during perception-token generation and also increase the effective distance between visual tokens. To address this issue, we propose LIRSeg, which fully replaces explicit CoT with a compact set of learnable latent tokens for reasoning segmentation. LIRSeg is trained in two stages: spatial alignment grounds the latent tokens in object-relevant visual evidence, and GRPO further optimizes them with segmentation rewards. To make these compact latent tokens more informative, we introduce three complementary mechanisms from an information perspective: extreme-advantage sampling for selecting informative training signals, decoupled exploration-stability updates for learning complementary representations, and latent diversity amplification for preventing representational collapse. Extensive experiments on benchmarks demonstrate that LIRSeg consistently improves both segmentation accuracy and reasoning efficiency. Compared with the VisionReasoner baseline, LIRSeg achieves absolute gIoU improvements of 4.9% on ReasonSeg, 7.1% on MUSE, and 4.7% on MMR, while achieving a approximately 16x reduction in reasoning tokens. Code is available in supplementary materials.
+
+## 6. A Flow Matching Framework for Neural Representational Dissimilarity
+
+- Authors: Zeyuan Ye, Xue-Xin Wei
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.AI, cs.IT, cs.LG
+- Relevance: 3.1775908814518306
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31544v1
+- PDF: https://arxiv.org/pdf/2609.31544v1
+- Local PDF: pdf/2026-09-29_06_A Flow Matching Framework for Neural Representational Dissimilarity.pdf
+
+Neural representational dissimilarity quantifies differences between neural response distributions, and is essential for comparing neural codes across stimuli, brain areas, tasks, and models. Commonly used distance metrics involve different assumptions and are estimated with separate methods. Here, we show that a variety of distance metrics can be unified under a flow matching framework developed in deep generative models. That is, these distances arise as Jeffreys divergences under different velocity constraints. We find that flow matching has advantages for estimating distances involving complicated distributions and continuous variables. Furthermore, this framework enables the design of new distance metrics in a principled way. Together, flow matching provides a unified approach for understanding, estimating, and designing neural representational dissimilarity metrics.
+
+## 7. Nonparametric In-Context Learning under Growing Geometric Complexity: Minimax Optimality and Local Geometry-Adaptivity of Transformers
+
+- Authors: Jaehee Seo, Jisu Kim
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG, math.ST
+- Relevance: 3.1697471172909775
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31458v1
+- PDF: https://arxiv.org/pdf/2609.31458v1
+- Local PDF: pdf/2026-09-29_07_Nonparametric In-Context Learning under Growing Geometric Complexity_ Minimax Optimality and Local Geometry-Adaptivity o.pdf
+
+Transformers have become a central architecture for in-context learning (ICL), particularly through their state-of-the-art performance in large language models. This success motivates understanding how transformers exploit task-relevant structure in geometrically heterogeneous data. However, existing nonparametric ICL theory has largely focused on Euclidean domains or single-manifold models. To address this gap, we study the prediction problem under unknown local geometry, modeled by sample size-dependent mixtures of manifolds with heterogeneous dimensions, smoothness, and sampling masses. Under local separation and small-perturbation conditions, we establish a minimax lower bound capturing the aggregate difficulty of the components and construct an oracle tangent local-polynomial estimator with a matching upper bound. This estimator is connected to a structure-informed, two-stage softmax transformer with a geometric preconditioner and chartwise reduced local-polynomial solvers. The transformer achieves negligible approximation error relative to the minimax rate with logarithmic depth and polynomial size. Finally, we derive an in-context generalization bound for near empirical risk minimizers over this class. Together, these results identify conditions under which the resulting predictor exploits local geometry and attains the aggregate minimax rate.
+
+## 8. CRNDiff: Count-Native Diffusion Framework via Chemical Reaction Networks
+
+- Authors: Yuxuan Qiu, Praful Gagrani, Tetsuya J Kobayashi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.0882266940925804
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31149v1
+- PDF: https://arxiv.org/pdf/2609.31149v1
+- Local PDF: pdf/2026-09-29_08_CRNDiff_ Count-Native Diffusion Framework via Chemical Reaction Networks.pdf
+
+Scientific measurements such as single-cell RNA (scRNA) sequencing often take the form of nonnegative integer counts, whereas continuous-state diffusion models approximate this discrete structure using continuous coordinates. Building on stochastic chemical reaction networks (CRNs), a class of count-native Markov jump processes, we introduce CRNDiff, a structured framework that combines count-space diffusion with inference-time conditioning on rare subpopulations. An independent birth--death instantiation yields a closed-form transition kernel for forward noising. This kernel enables reverse sampling via forward-filtering backward-sampling (FFBS) and supports data-driven selection of the terminal noising time, eliminating the need for a validation sweep. This tractability also lets us introduce tilted Feynman--Kac (FK) steering, a method for sampling target subpopulations from a frozen generator without retraining. By tilting posterior marginals before FK particle correction, steering mitigates importance-weight concentration when the target population is rare. Using scRNA-seq data from the human heart cell atlas, we test the ability of CRNDiff to generate cell-type-specific distributions. Across the three evaluated target populations, CRNDiff achieves the highest conditional fidelity among the evaluated generative models, with larger mean purity margins for rarer target populations. Generated cells preserve marker-level differential-expression structure. Replacing real training cells for the target classes with generated cells yields downstream classification performance approaching that of the real-data reference.
+
+## 9. FTB Graph: Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Language Models
+
+- Authors: Arjun Pillai, Christian Hoang, Anjelo Laroza
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.083514389568618
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30954v1
+- PDF: https://arxiv.org/pdf/2609.30954v1
+- Local PDF: pdf/2026-09-29_09_FTB Graph_ Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Langu.pdf
+
+Large language models operating in multilingual contexts must resolve target response languages early in generation, yet the causal circuitry governing first-token language identity decisions remains poorly mapped. We present an end-to-end structural circuit analysis across six model architectures spanning four families: GPT-2, BLOOM-560M, Pythia-1B/2.8B, and Qwen2.5-1.5B Base/Instruct. Using Edge Attribution Patching (EAP) with FP16 active clamping, followed by exact activation patching verification with a 2,000-candidate-edge search ceiling, we extract directed acyclic graphs driving first-token language broadcasting. Across the standalone models, we observe deep or mid-to-deep broadcasting hubs, though the evidence is strongest for Pythia-2.8B and BLOOM-560M because GPT-2 and Pythia-1B leave few out-of-graph heads for comparison, while both Qwen2.5-1.5B variants invert the necessity check. Scaling from Pythia-1B to 2.8B expands node participation while maintaining a similar verified edge budget, producing sparser topology. The Qwen2.5-1.5B base and instruct circuits retain 84.7% Jaccard similarity, including the Layer 27 hub, indicating that first-token routing is largely established during pretraining and preserved by instruction tuning. Finally, EAP scores correlate weakly with exact patching deltas across most models, showing that linear gradient approximations can diverge from causal interventions in FP16 and motivating exact-patching verification for reliable circuit discovery.
+
+## 10. Neural State Prediction: Obstructing Shortcut Learning in EEG Foundation Models
+
+- Authors: Kieren Yu, Ziyang Liu, Chang Huang, Jintai Chen, Kaishun Wu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.0749090957311473
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31167v1
+- PDF: https://arxiv.org/pdf/2609.31167v1
+- Local PDF: pdf/2026-09-29_10_Neural State Prediction_ Obstructing Shortcut Learning in EEG Foundation Models.pdf
+
+EEG foundation models increasingly use masked prediction to learn from unlabeled recordings, but optimizing this objective does not ensure transferable neural representations. A central challenge is that stable positional cues and local correlations can make masked regions predictable without integrating distributed neural context. To reduce this reliance on low-information prediction paths, we introduce Neural State Prediction (NSP), a latent-predictive framework that constrains both the prediction target and the available context. NSP uses a Target Encoder updated by an exponential moving average (EMA) to define latent supervision. Identity residualization removes additive effects associated with channel identity and relative time from the targets, while topology-separated context excludes their immediate spatial and temporal neighborhood from the visible input. We pretrain NSP on 2.2 million EEG segments from TUEG and evaluate it across 30 downstream datasets spanning clinical diagnosis, sleep staging, emotion recognition, motor imagery, event-related potentials, cognitive-state decoding, and language retrieval. Under full-parameter multi-task fine-tuning on EEG-FM-Bench, NSP achieves 63.94 macro balanced accuracy across 14 datasets, exceeding the strongest evaluated baseline by 2.35 percentage points. Controlled component ablations assess the contribution of each mechanism, while matched context controls and held-out interventions characterize the role of context geometry, signal content, and positional information. Jointly designing latent targets and their context offers a promising direction for EEG foundation models that learn from distributed signal structure.
+
+## 11. Combining General and Domain-Specific Pretext Tasks for Brain MR Image Segmentation
+
+- Authors: Tasneem Nasser, Susanne Schmid, Roberto Souza, Naser El-Sheimy
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.067437716737034
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30708v1
+- PDF: https://arxiv.org/pdf/2609.30708v1
+- Local PDF: pdf/2026-09-29_11_Combining General and Domain-Specific Pretext Tasks for Brain MR Image Segmentation.pdf
+
+A key challenge in medical image analysis is the scarcity of large annotated datasets for specific populations and diseases. As deep learning models rely heavily on labeled data, effective transfer learning strategies are needed to reduce the dependence on manual annotations. Self-supervised learning has emerged as a promising approach for developing foundation models by enabling the learning of transferable feature representations from large-scale unlabeled medical imaging datasets. In this study, we investigate voxel-level brain age prediction as a domain-specific self-supervised pretext task and compare it with image inpainting, a widely used non-domain-specific alternative. We further propose a multitask self-supervised pretraining framework that jointly optimizes both objectives to learn complementary neuroimaging representations. The pretrained models are evaluated on three downstream magnetic resonance image segmentation tasks: multiple sclerosis lesion segmentation, ischemic stroke lesion segmentation, and cortical brain structure segmentation. Overall, the proposed multitask pretraining framework consistently outperformed the single-task pretrained models and training from scratch across most experimental settings, demonstrating the benefit of combining domain-specific and general self-supervised learning pretext tasks for the development of generalizable neuroimaging foundation models.\ Code Availability: The source code used in this study is publicly available at https://github.com/TasneemN/Combining-General-and-Domain-Specific-Pretext-Tasks-for-Brain-MR-Image-Segmentation/
+
+## 12. Semantic Navigation for Issue Localization in Code Repository
+
+- Authors: Yunxiang Wei, Zhenyu Lei, Jundong Li
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.0543602492211797
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31176v1
+- PDF: https://arxiv.org/pdf/2609.31176v1
+- Local PDF: pdf/2026-09-29_12_Semantic Navigation for Issue Localization in Code Repository.pdf
+
+Repository-level issue localization aims to identify and rank the files and functions relevant to resolving a reported issue. LLM agents approach this task iteratively: they identify a set of potentially relevant locations, inspect the corresponding code, and revise their judgments about these candidates as new evidence is acquired. Existing environments, however, provide limited support for this loop: agents must search for unresolved relation targets, reconstruct entity semantics from raw source code, and revise candidates without evidential basis. To address these limitations, we present SemNav, a framework that leverages deterministic retrieval to seed a broad candidate set and an LLM agent to continually refine that set, thereby combining initial coverage with evidence-guided revision. SemNav supports this process through three key components. A Semantic Navigation Graph resolves program relations on demand through a language server, enabling direct navigation to related entities across files. Issue-conditioned Semantic Cards provide compact, source-grounded interpretations of each entity's role and relevance to the issue. A persistent Candidate Workspace records each candidate together with its evidential basis, enabling grounded verification, revision, and ranking. Across SWE-bench Lite and PLocBench, SemNav outperforms existing baselines, improving File Hit@10 from 68.33\% to 82.67\% with Gemma 4B. Component ablations and trajectory analysis support the complementary roles of all three components, while Semantic Cards reduce working-context load by 48.2\% relative to full-source reading. SemNav further ranks first on all seven evidence-quality metrics on SWE-Explore and improves downstream issue resolution from 44.00\% to 52.33\%.
+
+## 13. Moment-guided edge sampling
+
+- Authors: Weibin Cai, Reza Zafarani
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: cs.LG, cs.SI
+- Relevance: 3.0156240721393757
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30472v1
+- PDF: https://arxiv.org/pdf/2609.30472v1
+- Local PDF: pdf/2026-09-29_13_Moment-guided edge sampling.pdf
+
+Edge sampling makes local decisions to achieve graph-level objectives, such as preserving structural properties. This creates a fundamental challenge: \textit{how can the effect of a local edge edit (i.e., edge addition or removal) on global graph structure be quantified and controlled?} We address this challenge with a \textit{moment-guided edge sampling framework} based on spectral moments of the random-walk transition matrix. We compute exact moment changes through two complementary methods: a combinatorial method with closed-form updates for low-order moments, and a low-rank method that exploits \textit{locality} and \textit{cyclic trace invariance} to compress computations to edited endpoints, supporting arbitrary moment orders and batched edits. For single-edge edits at fixed moment orders, the low-rank method reduces the cost from $O(mn)$ to $O(m)$, while the combinatorial method evaluates low-order changes in constant time given maintained local statistics. These moment changes provide \textbf{interpretable structural signatures} of local edge motifs that aggregate into graph-level fingerprints. This structural meaning motivates us to ask whether preserving moments also preserves the graph properties. We further derive and validate that moment-preserving sampling can \textbf{retain related structural properties}, including triangle-weighted clustering coefficient. These structural insights enable \textbf{analysis and improvement of graph learning}: different edge structures have distinct effects on supervised node classification, while moment-guided augmentation is competitive for graph contrastive learning. Together, these findings establish moments as an interpretable and controllable bridge from local edge edits to global graph structure and learning.
+
+## 14. Do LLMs Understand Context? A Knowledge Graph-Based Evaluation Framework
+
+- Authors: Subavarshana Arumugam, Mamta Nallaretnam, Kithuni Wickramasinghe, Chamath Gunapala, Pragatheeswaran Vipulanandan, Kamal Premaratne, Uthayasanker Thayasivam
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: cs.AI, cs.LG
+- Relevance: 2.985029978899112
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30484v1
+- PDF: https://arxiv.org/pdf/2609.30484v1
+- Local PDF: pdf/2026-09-29_14_Do LLMs Understand Context_ A Knowledge Graph-Based Evaluation Framework.pdf
+
+While large language models (LLMs) have achieved remarkable linguistic capabilities, a profound question lingers at their core: do these models truly comprehend context or simply excel at pattern matching on an unprecedented scale? Contextual understanding in LLMs refers to the ability to correctly extract relevant information from a given context, integrate it into a coherent internal representation, and reason over it to produce factually consistent and contextually grounded responses. However, traditional methods such as BiLingual Evaluation Understudy (BLEU) and perplexity simply measure surface-level performance. This reveals a critical gap in question answering (QA), where responses must be contextually grounded rather than simply being memorized associations. To fill this void, we propose a novel knowledge graph (KG) based evaluation framework for LLM contextual understanding in QA. Central to this is Semantic Structural Similarity for KGs (S3KG), a hybrid similarity measure combining structural and semantic signals into a single score. In addition, a diagnostic analysis framework is developed to identify and categorize reasoning errors at the triplet level, enabling fine-grained analysis of model failures. Together, across nine benchmarks, S3KG achieves F1 gains of up to $+7.6$ points over the strongest baseline and AUROC up to $0.973$.
+
+## 15. MARCEDES: Score-based causal discovery under non-Gaussianity with continuous optimization
+
+- Authors: Anamitra Chaudhuri, Anirban Bhattacharya, Yang Ni
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG, stat.CO, stat.ME
+- Relevance: 2.9762896311501796
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30643v1
+- PDF: https://arxiv.org/pdf/2609.30643v1
+- Local PDF: pdf/2026-09-29_15_MARCEDES_ Score-based causal discovery under non-Gaussianity with continuous optimization.pdf
+
+We consider the problem of learning the underlying causal directed acyclic graph (DAG) structure corresponding to a structural equation model (SEM) with non-Gaussian errors. Motivated by an intentionally misspecified non-Gaussian SEM with all Laplace errors, we first introduce the mean absolute residual risk, defined over the space of all real matrices, and show that, asymptotically, the risk of the true weighted causal DAG matrix is strictly smaller than that of any other matrix. Nevertheless, to enhance generality and account for high-dimensional and finite-sample settings, we further incorporate row-specific sparsity penalties along with a soft DAG constraint to derive a continuous score function over the space of real matrices. Accordingly, we propose a score-based DAG learning method, named MARCEDES, formulated as an unconstrained score minimization problem, which can be efficiently solved using gradient-based optimization techniques, thereby circumventing the challenges associated with constrained optimization. Furthermore, we develop a computational algorithm to handle the non-smoothness of the score objective and to enable optimal tuning of row-specific sparsity penalties under a generalized Bayes framework. Finally, we demonstrate the efficiency and improved performance of the proposed method over existing approaches through an extensive simulation study.
+
+## 16. Spectral Feedback for Test-Time Alignment of Protein Diffusion Models
+
+- Authors: Shai Dickman, Mert Cemri, Landon Butler, Kannan Ramchandran
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.9726503261170767
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30456v1
+- PDF: https://arxiv.org/pdf/2609.30456v1
+- Local PDF: pdf/2026-09-29_16_Spectral Feedback for Test-Time Alignment of Protein Diffusion Models.pdf
+
+Reward maximization alignment methods for discrete diffusion models have primarily focused on steering the reverse process, either by influencing token logits or by selecting favorable sequences at intermediate steps. These approaches largely treat inference as a unidirectional process, lacking mechanisms for revisiting undesirable token selections. We introduce Spectral Feedback, an algorithm that selects edit-positions in a feedback loop, allowing the model to iteratively correct its own generations. This approach leverages the mask structure of discrete diffusion models by re-masking and re-sampling tokens, analogous to image editing methods that reintroduce noisy latents and re-run the reverse process. While prior alignment methods focus on what token labels to assign to maximize a target reward, we instead treat which tokens to revisit as the central alignment problem. Selecting edit-positions is challenging because edit effects are interdependent: the impact of modifying one token depends on which others are edited simultaneously. We define an edit-set as a set of token positions to re-mask and re-sample. Motivated by prior work on sparse interactions in biological systems, we find empirically that edit-set value functions for protein inverse folding admit sparse Fourier representations. This structure enables Spectral Feedback to efficiently learn and optimize the value functions for edit-position selection. Spectral Feedback is model-agnostic and can be applied to pretrained, test-time aligned, and fine-tuned diffusion models. For all of these models, the algorithm improves alignment performance without modifying the underlying generative process. Applied to inverse folding with a protein stability reward oracle, it achieves a 32.3% increase in stable proteins for a pretrained model, 24.8% for Best-of-10, and 5.8% for a state-of-the-art RL fine-tuned diffusion model.
+
+## 17. LocUS: Head Selection and Subspace Projection for Targeted Activation Steering
+
+- Authors: Irene Tallini, Lorenzo Basile, Valentino Maiorca, Francesco Locatello, Alberto Cazzaniga
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.CL, cs.LG
+- Relevance: 2.9697039292422667
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31122v1
+- PDF: https://arxiv.org/pdf/2609.31122v1
+- Local PDF: pdf/2026-09-29_17_LocUS_ Head Selection and Subspace Projection for Targeted Activation Steering.pdf
+
+Activation steering is a powerful training-free paradigm for controlling large language models at inference time. However, standard approaches estimate a per-layer steering direction from contrastive data and apply it on the layer's entire representation space, which may couple the intervention to off-target properties present in the contrastive data and degrade unrelated capabilities. To mitigate this issue, we introduce LocUS (Localized Unembedding Steering), a method which grounds activation steering to the model's own output vocabulary subspace. By identifying a property-specific linear subspace within the unembedding matrix, LocUS enforces a geometric constraint that restricts the steering transformation to a specific subspace and at the same time localizes its application to a sparse subset of attention heads. Extensive evaluations across three model families on toxicity mitigation, sentiment redirection and sycophancy suppression show that LocUS matches or outperforms state-of-the-art baselines while intervening on under 6% of parameters and better preserving general capability.
+
+## 18. Pocket-STVG: lightweight architecture for Spatio-Temporal Video Grounding
+
+- Authors: Alberto Presta, Michal Byra, Grzegorz Stefański, Karol Szurkowski, Eryk Kołodziejczyk, Krzysztof Arendt
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI, cs.MM
+- Relevance: 2.9631812045855503
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31135v1
+- PDF: https://arxiv.org/pdf/2609.31135v1
+- Local PDF: pdf/2026-09-29_18_Pocket-STVG_ lightweight architecture for Spatio-Temporal Video Grounding.pdf
+
+Spatio-Temporal Video Grounding (STVG) aims to localize the spatio-temporal tube in a video corresponding to a natural language query. While recent methods achieve strong performance in fully supervised, weakly supervised, and zero-shot settings, they typically rely on computationally expensive architectures, complex training pipelines, or multimodal large language models. We present Pocket-STVG (P-STVG), a lightweight cascade architecture that addresses STVG by combining efficient pre-trained components instead of large end-to-end models. P-STVG integrates a temporal-aware video encoder based on MobileViCLIP, a spatial encoder-decoder derived from MDETR, and a shared aligned text encoder. Temporal localization is performed through either a lightweight 1D U-Net or a simple thresholding strategy, enabling the same framework to operate in both weakly supervised and zero-shot settings. Furthermore, video representations are precomputed independently of the query, yielding an indexing-friendly pipeline for efficient inference and large-scale video collections. Despite requiring fewer than 90M parameters, P-STVG performs on par with weakly supervised methods and improves on earlier zero-shot approaches at a fraction of their memory and computational cost, establishing a favorable performance-efficiency trade-off for STVG.
+
+## 19. Spackle: Completing Large View Single Image NVS with Adaptive Gaussians
+
+- Authors: Xuanzhi Liu, Yuhe Zhou, Xinyi Wu, Zhenyao Wu, Jinghao Chen, Ruize Han, Song Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 2.9518316886227054
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30941v1
+- PDF: https://arxiv.org/pdf/2609.30941v1
+- Local PDF: pdf/2026-09-29_19_Spackle_ Completing Large View Single Image NVS with Adaptive Gaussians.pdf
+
+Single-image novel view synthesis (NVS) enables photorealistic rendering of un- observed viewpoints from a single input. Practical NVS systems require two key capabilities: robust reconstruction of occluded regions and high inference effi- ciency. While hybrid decoupled frameworks combining feedforward 3D Gaussian Splatting (3DGS) and diffusion models show promise for large-view-deviation NVS, they suffer from capacity competition: a fixed number of Gaussians forces resource shifts from visible to newly disoccluded areas, degrading original scene fidelity when the target view deviates significantly from the input. To address this, we propose Spackle, a lightweight residual learning framework that mit- igates capacity competition without sacrificing efficiency. Spackle operates in three stages: predicting base 3DGS attributes from given views, automatically identifying poorly reconstructed regions, and learning a residual 3DGS optimized exclusively for these areas. At inference, we combine the baseline and aug- mented Gaussians for NVS. We conduct comprehensive experiments and show that Spackle achieves state-of-the-art performance on large-view-deviation cases.
+
+## 20. Cartograph: Federated Tool Discovery with Operator-Attested Retrieval for AI Agents
+
+- Authors: Justice Owusu Agyemang, Michael Agyare, Kwame Opuni-Boachie Obour Agyekum, Kwame Agyeman-Prempeh Agyekum, Francisca Adoma Acheampong, Jerry John Kponyo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-13
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 2.930328705137816
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30293v1
+- PDF: https://arxiv.org/pdf/2609.30293v1
+- Local PDF: pdf/2026-09-29_20_Cartograph_ Federated Tool Discovery with Operator-Attested Retrieval for AI Agents.pdf
+
+The Model Context Protocol (MCP) enables AI agents to discover and call tools, but loading every definition becomes expensive as connected catalogs grow. We present Cartograph, a federated MCP proxy that changes agent-visible tool discovery from $O(n)$ catalog traversal to $O(k)$ progressive disclosure. Cartograph combines three mechanisms: (1) operator-attested capability cards, Ed25519-signed descriptions generated under the deploying operator's control rather than ranked publisher copy; (2) Rift, a three-layer confusable-cluster analysis comprising density clustering, query-margin analysis, and token diagnosis; and (3) two-stage retrieval, which ranks servers before tools. On a 22-server, 374-tool deployment, Cartograph exposes three proxy tools instead of 374 definitions. A 49-query author-constructed benchmark yields R@5 of 0.816, compared with 0.592 for a Jaccard keyword baseline, while a measured top-5 discovery exchange uses 475 tokens rather than 42,450 under the stated full-catalog accounting. Rift identifies 49 confusable clusters, including four HIGH-risk clusters in bootstrap-generated cards. An exploratory comparison of 119 LLM-generated descriptions removes the observed zero-distance cluster but shows that mixing card-generation regimes can reduce R@5. Gateway measurements over ten trials add 5ms mean latency (0.8%) relative to direct stdio MCP calls. Cartograph is complementary to code-execution approaches: it controls which tool descriptions are surfaced and records the provenance of the descriptions used for ranking for each query.
+
+## 21. New LoRA Skills Should Read but Never Write
+
+- Authors: Zeyan Li, Panqi Yang, Qirong Guo, Shengda Zhuo, SIyuan Qiu, Hu Xu, Chun Li, Jianfeng Xu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.9171852513888368
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31600v1
+- PDF: https://arxiv.org/pdf/2609.31600v1
+- Local PDF: pdf/2026-09-29_21_New LoRA Skills Should Read but Never Write.pdf
+
+Low-rank adapters (LoRA) make it cheap to fine-tune a large language model once per task, but combining several independently trained adapters into one model remains difficult: merging the updates in weight space causes interference, retraining on all task data is expensive, and routing between separate adapters gives up the goal of a single combined model. We trace the difficulty to two choices that every composition method makes implicitly. A LoRA update admits infinitely many equivalent factorizations; the choice among them is invisible while an adapter serves alone, but it determines what a learned interaction between adapters can see. A coupling between an old skill and a new one can likewise point in either direction, and the direction decides whether the old skills keep computing what they computed before. We introduce READ (Read-only Expansion of Adapter Deltas), which fixes both choices: each adapter is rewritten into a balanced canonical form that preserves its update exactly, and the coupling grows in one direction only, so a new skill can read the input subspaces of old skills but cannot write into their output subspaces. The only trainable object at each append is the new skill's row of the coupling matrix, and the composed update folds into the base weights with no inference cost, routing, or task-specific rules. We evaluate READ across four benchmark suites and two model families, adding skills one at a time. Across several families, READ improves every suite average over the strongest published baselines built from the same adapters---by more than twenty points on SuperGLUE and more than seven points on the domain suite---and nearly all complete addition sequences end above every direct baseline. Factor coordinates and coupling direction, which a lone adapter never exposes, are what decide whether composed skills survive.
+
+## 22. AutoResearch at Production Scale: Failure Modes and a Multi-Agent Framework
+
+- Authors: Aparajith Chandran, Juwon Kim, Saurav Jha, Pablo Castells, Florian Hottier
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: cs.LG, cs.IR
+- Relevance: 2.883861578289241
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30541v1
+- PDF: https://arxiv.org/pdf/2609.30541v1
+- Local PDF: pdf/2026-09-29_22_AutoResearch at Production Scale_ Failure Modes and a Multi-Agent Framework.pdf
+
+Optimizing embedding systems for production recommendation pipelines demands systematic exploration that consumes disproportionate engineering effort at scale. We apply Andrej Karpathy's AutoResearch paradigm -- a large language model that iteratively edits a training script and retains modifications that improve a held-out scalar metric -- to automate this exploration. We report on twelve weeks of running this paradigm at production scale, where iterations consume hours of multi-GPU compute, evaluation involves competing criteria, and campaigns span weeks across many training jobs. Across two independently developed representation-learning systems for a book recommendation pipeline, we ran 220+ experiments and observed five recurring failure modes absent from the original setting: infrastructure fragility, agent memory decay, search-direction stagnation, iteration-cost asymmetry, and metric fixation. We contribute a three-principle scaffolding design -- prevent, persist, redirect -- that maps each failure mode to a structural remedy and whose instantiation scales with iteration cost. The framework produced a 1.82x Recall@6 lift and a 2.1x coherence lift over hand-tuned baselines, and the agent autonomously designed a text-only fallback that expanded catalog coverage by 5.8x. The two systems span nearly three orders of magnitude in per-iteration cost yet exhibit the same failure modes, suggesting these are structural properties of production-scale autonomous research rather than artifacts of either application.
+
+## 23. Can Linguistic Reasoning Vectors Enhance Multimodal Reasoning Ability?
+
+- Authors: Ziyi Wang, Li Li, Aolin Zhou, Yankun Shen, Chonghan Liu, Shuxia Lin, Xu Yang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.8224525600426063
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31140v1
+- PDF: https://arxiv.org/pdf/2609.31140v1
+- Local PDF: pdf/2026-09-29_23_Can Linguistic Reasoning Vectors Enhance Multimodal Reasoning Ability.pdf
+
+Most Vision-Language Models (VLMs) are built by extending pretrained Large Language Models (LLMs) with visual modules and multimodal alignment. However, this multimodal scaling often degrades the language-side reasoning ability originally encoded in the base LLM. While the base LLM retains usable reasoning after scaling, the aligned VLM itself cannot reliably access this ability. Therefore, recovering the degraded reasoning capability in VLMs would benefit more from seeking help from the base LLM than from the VLM alone. Motivated by this, we propose LIFT (Language-side reasonIng Facilitation and Transfer), a lightweight vector-intervention method that transfers reasoning capability from the base LLM to the VLM without retraining the backbone. LIFT defines Reasoning Vectors as answer-token hidden-state differences between a Reasoner path with an explicit reasoning trace and a Solver path without it, and injects these vectors into language-side activations of the target VLM. LIFT further supports learnable vector adaptation while keeping the VLM backbone frozen. We evaluate LIFT on two VLMs across six reasoning benchmarks, comparing Reasoning Vectors extracted from the base LLM and from the aligned VLM under matched protocols. Results show that LLM-derived vectors consistently outperform VLM-derived vectors, confirming that the base LLM is a more effective source for recovering reasoning. LIFT partially recovers degraded reasoning through lightweight language-side interventions. Further analyses show that Reasoning Vectors influence intermediate reasoning behavior rather than merely altering final answers. The source code will be released soon.
+
+## 24. Improving Visual Sensitivity of LLMs on Multimodal Machine Translation with Metric-based Loss Weighting
+
+- Authors: Paweł Mąka, Piotr Andruszkiewicz, Yusuf Can Semerci, Jan Scholtes, Gerasimos Spanakis
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 2.8041080870175983
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31169v1
+- PDF: https://arxiv.org/pdf/2609.31169v1
+- Local PDF: pdf/2026-09-29_24_Improving Visual Sensitivity of LLMs on Multimodal Machine Translation with Metric-based Loss Weighting.pdf
+
+Multimodal Machine Translation aims to incorporate additional signal from non-textual modalities to improve translations by resolving ambiguities. While models, through multimodal fusion, are able to accept images related to the source text, they can ignore this information. Therefore, increasing their visual sensitivity remains an active research area. In this work, we introduce a training method, Metric-based Loss Weighting, that improves visual grounding of translations by increasing the loss function for tokens that benefit from the accompanying image. We identify these tokens using the Point-wise Cross-mutual Information (PCXMI) metric, which compares the model's output probabilities with and without visual context. We introduce a Congruency-based PCXMI metric and experimentally show that both metrics working in combination yield the best results. We evaluate our method by fine-tuning three pretrained Multimodal Large Language Models on the task of Image-guided Machine Translation for three language directions. Metric-based Loss Weighting outperforms other tested methods on the CoMMuTE contrastive dataset, improving accuracy by up to more than 7 percentage points compared to standard fine-tuning, while maintaining strong general translation performance.
+
+## 25. Learning to Replace MCMC in Split-Gibbs Diffusion Posterior Sampling via Deep Unfolding
+
+- Authors: Yi Zhang, Rui Guo, Mengchu Xu, Zhaofeng Liu, Yonina C. Eldar
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: eess.SP, cs.LG, stat.ML
+- Relevance: 2.7704693485249288
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30539v1
+- PDF: https://arxiv.org/pdf/2609.30539v1
+- Local PDF: pdf/2026-09-29_25_Learning to Replace MCMC in Split-Gibbs Diffusion Posterior Sampling via Deep Unfolding.pdf
+
+Split Gibbs sampling enables diffusion posterior inference for general nonlinear inverse problems by decoupling prior and likelihood computations, allowing a pretrained diffusion prior to be reused across measurement models. However, its likelihood update often relies on iterative MCMC, which can hinder parallelization, require algorithm-specific tuning, and incur substantial computational cost. In this work, we propose a learning-based framework to replace this MCMC step by reformulating both Gibbs updates as Gaussian denoising problems and implementing them through ODE diffusion. The prior step reuses a pretrained denoiser, while the likelihood denoiser exploits known likelihood structure through a lightweight deep-unfolded network. Experiments on nonlinear phase retrieval demonstrate the effectiveness of the proposed method as an alternative to MCMC-based split Gibbs at lower likelihood-update cost.
+
+## 26. LUCID: Learning Under Confounding for Inference and Discovery in Time Series
+
+- Authors: Mohammad Fesanghary
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.LG, stat.ML
+- Relevance: 2.766990284694273
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.31315v1
+- PDF: https://arxiv.org/pdf/2609.31315v1
+- Local PDF: pdf/2026-09-29_26_LUCID_ Learning Under Confounding for Inference and Discovery in Time Series.pdf
+
+Unobserved common causes are pervasive in real-world time series and can induce spurious associations that causal discovery methods mistake for direct edges. We propose LUCID (Learning Under Confounding for Inference and Discovery, a regime-adaptive deconfounding layer that first estimates the confounding regime from data using a Marčenko--Pastur spectral router, then applies a deconfounding strategy matched to that regime. When the spectrum indicates pervasive factor confounding, LUCID attenuates factor-dominated variation and recovers contemporaneous (lag-$0$) structure from the resulting innovations, with edge selection calibrated against a data-driven edge-free null. Rather than being tied to a particular discovery algorithm, it can wrap existing discovery engines; we demonstrate consistent improvements across three such methods. On a diverse synthetic out-of-distribution benchmark spanning changes in confounder strength and sparsity, loading density, lag structure, volatility dynamics, edge heterogeneity, persistence, intermittency, and tail behavior, LUCID achieves the best family-weighted directed, lag-resolved graph $F_1$ ($0.60$), improving over the strongest baseline by $0.19$ absolute ($\approx\!46\%$ relative). Its advantage widens relative to looser lag-collapsed scoring, and remains robust under intermittent and heavy-tailed confounding. Code reproducing the method, the benchmark generators, and every reported experiment is available at https://github.com/bloomberg/causal-ts.
+
+## 27. BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering
+
+- Authors: Shun Ye, Vinny Chandran Suja, Chenlong Li, Chongming Jiang, Reza Zamani, Xiang Li, Christopher Bain, Yuqi Zhou, Walker Peterson, Huidong Wang, Chenglang Hu, Jongchan Park, Xiao Cheng, Benjamin Swedlund, Sandra Murillo, Anjali Sivanandan, Shiyu Sun, Liang Lanfeng, Mohammad Tariqul Islam, Baju C. Joy, Ishaq N. Khan, Sreedhar S. Kumar, Gabriel Mercado-Vásquez, James V. Vizzard, Jonathan M. Matthews, Helen Huang, Xiaolu Guo, Ethan Nicklow, Guorui Chen, Ryan A. Neff, Surjendu Maity, Hyeonjin Park, Han-ho Joo, Katherine Dong, Yuyan Cai, Weihang Huang, Yichen Zou, Rui Yan, Raphael Figueroa, Artem Goncharov, Bella Rose Schremmer, Lian Elsa Linton, Keisuke Goda, Liang Gao, Ke Cheng, Leonardo Morsut, Jennifer L. Wilson, Jianping Fu, Lim Chwee Teck, Deblina Sarkar, Andreas Hierlemann, Savaş Tay, Alexander Hoffmann, Donald Richieri Griffin, Jun Chen, Shana O. Kelley, Shyni Varghese, Jinwoo Cheon, Wilbur A. Lam, James J. Moon, Wilson W. Wong, Samir Mitragotri, Dino Di Carlo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.766205825097239
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30489v1
+- PDF: https://arxiv.org/pdf/2609.30489v1
+- Local PDF: pdf/2026-09-29_27_BioEVAL_ A global, multi-institutional benchmark of large language and multimodal models for bioengineering.pdf
+
+Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-institutional initiative designed to assess experimental reasoning capability across bioengineering (BE) subfields. BioEVAL spans 11 major BE subfields plus a set of uncategorized items, bringing together 22 research groups to create a PhD-level benchmark comprising 608 evaluation items: 1) 380 multiple-choice questions (MCQs, 359 retained after audit), 2) 218 literature synthesis tasks, and 3) 10 multimodal problems with experimental image interpretation. Benchmark items underwent authoring-group expert review and centralized quality control before evaluation. Following evaluation, a blinded cross-group consensus audit of the highest- and lowest-accuracy MCQ items flagged 21 questions for revision or removal; these were withheld, and all reported MCQ results are computed on the 359 retained items. We evaluated diverse cloud-scale foundation/multimodal models (e.g., ChatGPT, Gemini, and Grok) and locally deployable models suitable for inference on consumer-grade GPUs. Models achieved the highest accuracy of up to 90% on MCQs, similarity score of 0.72 on literature synthesis, and accuracy of 80% on a small sample of multimodal reasoning questions, with substantial performance variation across subfields. Leaderboard rankings characterize current capabilities, limitations, and development priorities across the evaluated BE task categories. BioEVAL is maintained as an extensible benchmark with standardized protocols for continuing expert item contribution and model evaluation.
+
+## 28. Bridging LLM Agents and Data Spaces: An Architectural Mediation Approach using the Model Context Protocol
+
+- Authors: Jaime Alonso Ruiz, Carlos Aparicio, Gabriel Huecas, Joaquín Salvachúa, Andres Munoz-Arcentales
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: cs.AI, cs.DB
+- Relevance: 2.743113413053168
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30341v1
+- PDF: https://arxiv.org/pdf/2609.30341v1
+- Local PDF: pdf/2026-09-29_28_Bridging LLM Agents and Data Spaces_ An Architectural Mediation Approach using the Model Context Protocol.pdf
+
+Data Spaces enable sovereign and governed data sharing across organizational boundaries, but their integration with AI agents remains challenging due to mismatches between probabilistic language model interactions and policy-driven data infrastructures. This article presents an architectural mediation approach based on the Model Context Protocol (MCP), implemented through the Eunomia Agent, to enable controlled interaction between large language model (LLM) agents and data space services. The proposed mediation layer translates data space capabilities into structured, schema-driven tools that AI agents can discover and invoke while preserving governance constraints. A prototype implementation validates end-to-end interaction across catalog discovery, metadata retrieval, and data service invocation without modifying existing data space components. Results demonstrate that protocol-based mediation enables interoperable and standards-aligned integration of AI agents into data space ecosystems. The approach provides practical guidance for organizations seeking to introduce AI-driven automation into governed data-sharing environments while maintaining compliance, interoperability, and architectural separation of concerns.
+
+## 29. Cost-Aware Best-LLM Identification using Dueling Feedback
+
+- Authors: Sarvesh Gharat, Nikhil Karamchandani, Jayakrishnan Nair
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-24
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, stat.ML
+- Relevance: 2.739944919604623
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30360v1
+- PDF: https://arxiv.org/pdf/2609.30360v1
+- Local PDF: pdf/2026-09-29_29_Cost-Aware Best-LLM Identification using Dueling Feedback.pdf
+
+Inspired by the problem of identifying the best model from a collection of large language models (LLMs) with heterogeneous querying costs, we formulate and analyse a variant of the multi-armed bandit (MAB) with (i) dueling feedback, where pairwise comparisons between model responses provide robust preference signals, and (ii) heterogeneous sampling costs, reflecting the differing costs of querying different LLMs. Assuming the existence of a Condorcet winner, a condition we empirically validate across multiple real-world datasets, we propose a Track-and-Stop style algorithm for best-arm identification with prescribed confidence. We prove that the algorithm almost surely achieves the asymptotically optimal cost as the error tends to zero. Finally, we extensively evaluate our approach on both synthetic and real-world instances, demonstrating consistent improvements over classical cost-unaware algorithms and their cost-aware extensions.
+
+## 30. Estimating and Orthogonalizing Unknown Pre-training Gradients for Continual Fine-tuning of Large Language Models
+
+- Authors: Bing Wang, Changchun Li, Xin-Qiang Cai, Lin Yuanbo Wu, Ximing Li, Gang Niu, Masashi Sugiyama
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-25
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, cs.LG
+- Relevance: 2.71994384794551
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2609.30935v1
+- PDF: https://arxiv.org/pdf/2609.30935v1
+- Local PDF: pdf/2026-09-29_30_Estimating and Orthogonalizing Unknown Pre-training Gradients for Continual Fine-tuning of Large Language Models.pdf
+
+Continual fine-tuning is essential for large language models (LLMs) to dynamically adapt to real-world environments, yet it inevitably suffers from catastrophic forgetting, particularly the performance degradation of previous tasks and LLMs' general-purpose knowledge. Although existing methods, such as orthogonal gradient projection, mitigate the forgetting across various fine-tuning tasks, they fundamentally fail to preserve pre-training LLMs' inherent general-purpose knowledge because the original data and gradients of off-the-shelf pre-training LLMs required by these methods are strictly unknown and highly diverse. To bridge this critical gap, we propose EoupCT, a novel framework designed to Estimate and Orthogonalize Unknown Pre-training gradients for Continual LLM fine-Tuning. Specifically, EoupCT estimates pre-training gradients by dynamically generating pseudo data that is most susceptible to forgetting for new tasks through a learnable soft prompt equipped with Gumbel-Softmax relaxation. Furthermore, we formulate a multi-objective optimization problem and introduce a first-order efficient Pareto optimizer that jointly optimizes LLM parameters and the soft prompt, rigorously enforcing orthogonality between new task updates and the estimated pre-training gradients. Extensive experiments across multiple LLMs demonstrate that EoupCT effectively preserves both task-specific proficiency and inherent general-purpose knowledge, successfully mitigating the catastrophic forgetting.
