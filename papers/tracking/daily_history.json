@@ -1,4 +1,11 @@
 {
+  "doi:10.1145/3798063.3837138": {
+    "doi": "10.1145/3798063.3837138",
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "\"Black Mirror?\": Public Sensemaking of AI-Powered Lifelogging",
+    "url": "http://arxiv.org/abs/2609.34950v1"
+  },
   "doi:10.3847/1538-4357/ae9d64": {
     "doi": "10.3847/1538-4357/ae9d64",
     "sent_date": "2026-08-27",
@@ -55,6 +62,13 @@
     "title": "Beyond KV Reconstruction: Functional Reconstruction for MLA Draft Models in Speculative Decoding",
     "url": "http://arxiv.org/abs/2607.27269v1"
   },
+  "title:beyondteacherassignmentdomainnormalizedmultiteacheronpolicydistillation": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "Beyond Teacher Assignment: Domain-Normalized Multi-Teacher On-Policy Distillation",
+    "url": "http://arxiv.org/abs/2609.35347v1"
+  },
   "title:beyondtheeyeefficientmultimodalreasoningviaselfregulatedimplicitvisualtools": {
     "doi": null,
     "sent_date": "2026-07-14",
@@ -68,6 +82,13 @@
     "source": "arxiv",
     "title": "BioM-JEPA: joint-embedding prediction of graph-connected gene blocks in single cells",
     "url": "http://arxiv.org/abs/2608.05928v1"
+  },
+  "title:blackmirrorpublicsensemakingofaipoweredlifelogging": {
+    "doi": "10.1145/3798063.3837138",
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "\"Black Mirror?\": Public Sensemaking of AI-Powered Lifelogging",
+    "url": "http://arxiv.org/abs/2609.34950v1"
   },
   "title:booguimage01boostingopensourceunifiedmultimodalunderstandingandgeneration": {
     "doi": null,
@@ -110,6 +131,13 @@
     "source": "arxiv",
     "title": "CORE: In-Context Reconstruction for Unified Tabular Anomaly Detection",
     "url": "http://arxiv.org/abs/2607.27615v1"
+  },
+  "title:cyclostationaryphaseconditioningformedicaltimeseriesdiffusion": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "Cyclostationary Phase Conditioning for Medical Time Series Diffusion",
+    "url": "http://arxiv.org/abs/2609.34965v2"
   },
   "title:decomposeandreorganizeplanningwithprimitivesandvisuomotorpolicieslearnedfromdemonstrations": {
     "doi": null,
@@ -159,6 +187,13 @@
     "source": "arxiv",
     "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
     "url": "http://arxiv.org/abs/2607.27077v1"
+  },
+  "title:explainableandgeneralisablellmbasedcognitivedeclinedetectionwithspontaneousspeech": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "Explainable and Generalisable LLM-based Cognitive Decline Detection with Spontaneous Speech",
+    "url": "http://arxiv.org/abs/2609.34217v1"
   },
   "title:fasttpsanoptimizedmethodforllmtokenphaseforaiaccelerators": {
     "doi": null,
@@ -216,6 +251,13 @@
     "title": "Graphing the Everyday: A Neurosymbolic Approach to Eliciting Routines for Just-In-Time Adaptive Interventions",
     "url": "http://arxiv.org/abs/2608.09294v1"
   },
+  "title:hardwareawarefeaturesforcutlasskernelselection": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "Hardware-Aware Features for CUTLASS Kernel Selection",
+    "url": "http://arxiv.org/abs/2609.35587v1"
+  },
   "title:highdimensionalmultiobjectivebayesianoptimizationwithlearnedvariableinteractions": {
     "doi": null,
     "sent_date": "2026-08-13",
@@ -265,6 +307,13 @@
     "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
     "url": "http://arxiv.org/abs/2608.03974v1"
   },
+  "title:learningpropagationgeometryfrommessagepassingfeedback": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "Learning Propagation Geometry from Message-Passing Feedback",
+    "url": "http://arxiv.org/abs/2609.34711v1"
+  },
   "title:learningsocialnormsenhancescompatibilityindynamichumanaicoordination": {
     "doi": null,
     "sent_date": "2026-07-10",
@@ -292,6 +341,13 @@
     "source": "arxiv",
     "title": "MMAgent-R$^2$: Learning to Rerank and Reject for Agentic mRAG",
     "url": "http://arxiv.org/abs/2607.07383v1"
+  },
+  "title:mmhritowardsprivacypreservinghumanrobotinteractionwithmillimeterwaveradar": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "mmHRI: Towards Privacy-Preserving Human-Robot Interaction with Millimeter-Wave Radar",
+    "url": "http://arxiv.org/abs/2609.34220v1"
   },
   "title:multivariatetimeseriesforecastingneedscrossvariableloss": {
     "doi": null,
@@ -461,6 +517,13 @@
     "title": "Strong-Field Coulomb Explosion of Ethane, Propane, and Butane in Circularly Polarized Laser Fields",
     "url": "http://arxiv.org/abs/2607.12843v1"
   },
+  "title:structuredinteractionvisuallocalizationandrobustexecutionforcomplexwebtasksatechnicalreportonthewebretrieverchallenge": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "Structured Interaction, Visual Localization, and Robust Execution for Complex Web Tasks: A Technical Report on the WebRetriever Challenge",
+    "url": "http://arxiv.org/abs/2609.35904v1"
+  },
   "title:suvfuturesceneunderstandingasvideogenerationforendtoenddriving": {
     "doi": null,
     "sent_date": "2026-08-05",
@@ -474,6 +537,13 @@
     "source": "arxiv",
     "title": "TCellAlign: Cross-study T-cell Populations Alignment with Nomenclature-Guided Multi-Agent Workflow",
     "url": "http://arxiv.org/abs/2607.24093v1"
+  },
+  "title:theuniversalclassifierforgraphlearning": {
+    "doi": null,
+    "sent_date": "2026-09-30",
+    "source": "arxiv",
+    "title": "The Universal Classifier for Graph Learning",
+    "url": "http://arxiv.org/abs/2609.36302v1"
   },
   "title:tiredactorfatigueinformedcharactercontrol": {
     "doi": null,
