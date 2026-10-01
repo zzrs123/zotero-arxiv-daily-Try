@@ -1,0 +1,74 @@
+# Researcher Tracking - 2026-10-01 (daily)
+
+Total new tracked papers: 5
+Highlighted papers: 5
+
+## 1. GraphForge: Training Working Agents with Graph-Anchored Workspace Synthesis
+
+- Authors: Qisheng Su, Hanchen Wang, Guanru Zhu, Huicheng Jiang, Qiuyinzhe Zhang, Kou Shi, Zhen Fang, Ziao Zhang, Qingnan Ren, Zehui Chen, Tao Gui, Feng Zhao
+- Source hits: arxiv
+- Matched researchers: Hanchen Wang
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-09-30
+- Article: http://arxiv.org/abs/2609.38923v1
+
+Working agents need to read diverse files, coordinate tools, and produce deliverables. Training such agents requires tasks built on many real files with verifiable results, but few pipelines exist to synthesize this kind of data. Existing pipelines either generate files with models, which lack realism and diversity, or build tasks on real files without task-specific verifiers, leaving result quality unchecked. We introduce GraphForge, an evidence-graph based framework that grounds both the task and its verification in real files. Starting from occupation-grounded seeds for controlled diversity, GraphForge assembles a workspace of real files for each seed and builds an evidence graph over their relations. Since the task statement and rubrics are both derived from this graph, task requirements are backed by the workspace files and each criterion is anchored to the files needed to verify it. An initial rollout further tests executability, and a revision agent repairs the task and rubrics against the original files before trajectories are collected. Fine-tuning Qwen3.6-27B on 2,169 GraphForge trajectories brings GDPVal to 1445.7 (+65.7) under OpenHands, and Workspace-Bench-Lite and SpreadsheetBench II to 63.7 (+7.7) and 24.0 (+13.7) under Claude Code. Rejection fine-tuning on the SFT model's own rollouts, with candidates selected by the evidence-anchored rubrics, yields further improvements on all three benchmarks, suggesting that the rubrics provide a useful selection signal. The data and models are available.
+
+## 2. UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement
+
+- Authors: Fang Wu, Da Xing, Yanjie Huang, Junxi Wang, Ji Wang, Hejia Geng, Guancheng Wan, Bowen Zuo, Xiaomin Li, Shixiang Tang, Xinyu Xiang, Zehong Wang, Shiyi Du, Peng Xia, Shuangjia Zheng, Yining Hong, Li Erran Li, Jure Leskovec, Yejin Choi
+- Source hits: arxiv
+- Matched researchers: Jure Leskovec
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: diffusion
+- Journal/source: arxiv
+- Publication date: 2026-09-30
+- Article: http://arxiv.org/abs/2609.38721v1
+
+Modern multimodal models bring generation and understanding into a single unified system, which enables them to provide and learn from their own feedback. Motivated by this unified capacity, we introduce UniEvo-VL, a self-evolving framework for multimodal models to learn from this constructive self-correction feedback during test-time compute. Instead of relying on a separate, often larger, teacher, we leverage their self-critiques as privileged information and ask a single multimodal model to act as both teacher and student with different contexts. The student only sees the vanilla question, while the teacher conditions on the privileged critique. Then training minimizes the per-state divergence between their denoising diffusion distributions over the student's own sampling trajectories. Experiments demonstrate that UniEvo-VL improves the image generation capabilities of multimodal models, while maintaining their sensitivity to additional reflection information. Specifically, we build on top of the open-source Qwen-image-2512 and observe a significant performance gain from 0.747 to 0.808 on GenEval and from 32.97 to 35.53 on GenEval2 Soft-TIFA. Moreover, attempts with more powerful external critics (e.g., GPT5.6-Luna) show that multimodal models with strong judge capabilities can anticipate a higher self-evolving ceiling. Last but not least, mixed text-rendering outcomes show that our self-improvements may not be uniform across different tasks. Our study aims to shed light on the current hot recursive self-improvement research line to enhance the user experience when using multimodal models without external supervision or guidance.
+
+## 3. ThinkV2V: Unleashing the Reasoning Capability of MLLMs for Instruction-Guided Video Editing
+
+- Authors: Donghao Zhou, Haoyang He, Fan Zhang, Hao Yang, Guisheng Liu, Xin Gao, Zhongwei Wan, Xingyuan Bu, Jie Wang, Qiangpeng Yang, Shilei Wen, Chi-Wing Fu, Pheng-Ann Heng
+- Source hits: arxiv
+- Matched researchers: Xin Gao
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: large language model, multimodal large language model
+- Journal/source: arxiv
+- Publication date: 2026-09-29
+- Article: http://arxiv.org/abs/2609.38541v1
+
+Instruction-guided video editing has made significant progress, yet existing methods use multimodal large language models (MLLMs) primarily as semantic encoders, so they often fall short in working with implicit edits that require causal or semantic reasoning. To bridge this fundamental gap in video editing, we propose ThinkV2V, a reasoning-driven framework for complex instruction-guided video editing, explicitly activating MLLM thinking before visual generation. At its core, ThinkV2V builds on a practical MLLM-to-DiT architecture to turn explicit thinking over the source video and instruction into refined conditioning signals for video editing. Further, we equip it with a dedicated training and inference recipe, combining Progressive Curriculum Training, which gradually cultivates the model from basic editing to reasoning-intensive cases, with Inference-Time Thinking Scaling, which iteratively refines candidate prompts and selects the most reliable one, to better elicit reasoning in challenging editing scenarios. We also curate the ThinkV2V-150K dataset and introduce ThinkV2V-Bench to support training and evaluation of video editing with implicit intent and causal reasoning. Experimental results demonstrate the state-of-the-art performance of ThinkV2V on both complex and standard editing scenarios, in which our 5B-scale DiT model substantially outperforms larger 10B-scale baselines.
+
+## 4. WUSH-KV: KV Cache Quantization with Data-Adaptive Transforms
+
+- Authors: Jiale Chen, Vage Egiazarian, Eldar Kurtić, Torsten Hoefler, Dan Alistarh
+- Source hits: arxiv
+- Matched researchers: Torsten Hoefler
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-09-29
+- Article: http://arxiv.org/abs/2609.38121v1
+
+KV cache memory and bandwidth costs grow with context length and batch size, which limits efficient long-context inference. To address this bottleneck, we introduce WUSH-KV for low-bit KV-cache quantization. It adapts WUSH, which constructs a data-aware transform from the second-order statistics of both factors in a matrix product to reduce quantization error. WUSH-KV uses calibration data to construct separate key and value transforms, with the value transform folded into the model weights and the key transform applied after RoPE. The transforms can be paired with clipped quantizers. For one such quantizer, QuEST INT, we show that, under mild assumptions, the WUSH transform is near-optimal. With this quantizer, WUSH-KV reduces layerwise reconstruction error and achieves the lowest end-to-end perplexity among other tested transforms. For end-to-end evaluation, we integrate WUSH-KV into SGLang using OSCAR-style percentile-clipped affine quantization. At 2-bit, WUSH-KV performs comparably to or outperforms the OSCAR transform across all evaluated models and downstream tasks.
+
+## 5. FP64 Is All You Want, INT8 Is All You Need, FP4/6/8 Is All You Have
+
+- Authors: Pratyai Mazumder, Alexandru Calotoiu, Torsten Hoefler
+- Source hits: arxiv
+- Matched researchers: Torsten Hoefler
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-09-29
+- Article: http://arxiv.org/abs/2609.37693v1
+
+Ozaki scheme II emulates FP64 matrix products with INT8 ones through residues modulo pairwise coprime moduli, and variants for FP8 and FP4 have followed. We treat these schemes as one family and pose the choice of a scheme as a combinatorial program that minimizes the number of low-precision GEMMs. Given, for each modulus, a finite set of ways to compute products modulo it from low-precision GEMMs, we find the choice of moduli and ways with the fewest GEMMs, for any format, accumulator and inner dimension, and derive lower bounds on the GEMM count over the whole family. Applied to the formats of current GPUs, the method gives the first FP6 schemes, an FP8 scheme with fewer GEMMs than any previous one, and an FP4 scheme that the bounds show needs the fewest GEMMs of any scheme in the family whose moduli lie in a stated range. Implemented on three Blackwell GPUs, the INT8, FP8 and FP4 schemes run faster than native FP64, up to 83x on B300.

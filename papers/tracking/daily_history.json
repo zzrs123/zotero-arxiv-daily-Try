@@ -223,6 +223,13 @@
     "title": "FORGE: Towards Functional Tool-Use Generalization via Keypoint Trajectory Reasoning",
     "url": "http://arxiv.org/abs/2607.05780v1"
   },
+  "title:fp64isallyouwantint8isallyouneedfp468isallyouhave": {
+    "doi": null,
+    "sent_date": "2026-10-01",
+    "source": "arxiv",
+    "title": "FP64 Is All You Want, INT8 Is All You Need, FP4/6/8 Is All You Have",
+    "url": "http://arxiv.org/abs/2609.37693v1"
+  },
   "title:gabenchacomprehensivebenchmarkforevaluatingllmagentsongraphanalysistasks": {
     "doi": null,
     "sent_date": "2026-08-04",
@@ -243,6 +250,13 @@
     "source": "arxiv",
     "title": "GPTQ-2D: Cubic-Time Two-Sided Adaptive Rounding",
     "url": "http://arxiv.org/abs/2607.27042v1"
+  },
+  "title:graphforgetrainingworkingagentswithgraphanchoredworkspacesynthesis": {
+    "doi": null,
+    "sent_date": "2026-10-01",
+    "source": "arxiv",
+    "title": "GraphForge: Training Working Agents with Graph-Anchored Workspace Synthesis",
+    "url": "http://arxiv.org/abs/2609.38923v1"
   },
   "title:graphingtheeverydayaneurosymbolicapproachtoelicitingroutinesforjustintimeadaptiveinterventions": {
     "doi": null,
@@ -545,6 +559,13 @@
     "title": "The Universal Classifier for Graph Learning",
     "url": "http://arxiv.org/abs/2609.36302v1"
   },
+  "title:thinkv2vunleashingthereasoningcapabilityofmllmsforinstructionguidedvideoediting": {
+    "doi": null,
+    "sent_date": "2026-10-01",
+    "source": "arxiv",
+    "title": "ThinkV2V: Unleashing the Reasoning Capability of MLLMs for Instruction-Guided Video Editing",
+    "url": "http://arxiv.org/abs/2609.38541v1"
+  },
   "title:tiredactorfatigueinformedcharactercontrol": {
     "doi": null,
     "sent_date": "2026-08-05",
@@ -566,6 +587,13 @@
     "title": "Unfolding Scientific Papers into Multi-Turn Generation Trajectories for Continued Pre-Training",
     "url": "http://arxiv.org/abs/2608.25826v1"
   },
+  "title:unievovlanonpolicyselfdistillationtrainingrecipeformultimodalmodelselfimprovement": {
+    "doi": null,
+    "sent_date": "2026-10-01",
+    "source": "arxiv",
+    "title": "UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement",
+    "url": "http://arxiv.org/abs/2609.38721v1"
+  },
   "title:unirefuavamultimodalbenchmarkforuniversalreferringinuavimagery": {
     "doi": null,
     "sent_date": "2026-07-10",
@@ -586,6 +614,13 @@
     "source": "arxiv",
     "title": "WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA",
     "url": "http://arxiv.org/abs/2608.01035v1"
+  },
+  "title:wushkvkvcachequantizationwithdataadaptivetransforms": {
+    "doi": null,
+    "sent_date": "2026-10-01",
+    "source": "arxiv",
+    "title": "WUSH-KV: KV Cache Quantization with Data-Adaptive Transforms",
+    "url": "http://arxiv.org/abs/2609.38121v1"
   },
   "title:zerogarbenchmarkingtheadversarialrobustnessofzeroshotgraphmodels": {
     "doi": null,
