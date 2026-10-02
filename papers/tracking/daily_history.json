@@ -188,6 +188,13 @@
     "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
     "url": "http://arxiv.org/abs/2607.27077v1"
   },
+  "title:ewamemergentdepthwisespecializationinaunifiedembodiedmodelfromsemanticunderstandingthroughvisualforesighttoaction": {
+    "doi": null,
+    "sent_date": "2026-10-02",
+    "source": "arxiv",
+    "title": "EWAM: Emergent Depth-Wise Specialization in a Unified Embodied Model -- From Semantic Understanding through Visual Foresight to Action",
+    "url": "http://arxiv.org/abs/2609.39973v1"
+  },
   "title:explainableandgeneralisablellmbasedcognitivedeclinedetectionwithspontaneousspeech": {
     "doi": null,
     "sent_date": "2026-09-30",
@@ -482,6 +489,13 @@
     "title": "SeOPD: Self-Evolving LLMs via Online Policy Distillation from Self-Generated Chain-of-Thought",
     "url": "http://arxiv.org/abs/2609.33181v1"
   },
+  "title:sharedweightsselectedcomputationshowloopedtransformersroutewhateachloopdoes": {
+    "doi": null,
+    "sent_date": "2026-10-02",
+    "source": "arxiv",
+    "title": "Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does",
+    "url": "http://arxiv.org/abs/2609.39892v1"
+  },
   "title:simsubspaceinteractionbasedmethodfortokenleveltextanomalydetection": {
     "doi": null,
     "sent_date": "2026-09-10",
@@ -614,6 +628,13 @@
     "source": "arxiv",
     "title": "WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA",
     "url": "http://arxiv.org/abs/2608.01035v1"
+  },
+  "title:waveletflowmatchingfortimeseries": {
+    "doi": null,
+    "sent_date": "2026-10-02",
+    "source": "arxiv",
+    "title": "Wavelet Flow Matching for Time Series",
+    "url": "http://arxiv.org/abs/2609.39374v1"
   },
   "title:wushkvkvcachequantizationwithdataadaptivetransforms": {
     "doi": null,
