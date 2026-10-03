@@ -286,6 +286,13 @@
     "title": "High-dimensional Multi-objective Bayesian Optimization with Learned Variable Interactions",
     "url": "http://arxiv.org/abs/2608.11713v1"
   },
+  "title:higherordermoleculargrammarsforgenerativeandfoundationmodelsinchemistry": {
+    "doi": null,
+    "sent_date": "2026-10-03",
+    "source": "arxiv",
+    "title": "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+    "url": "http://arxiv.org/abs/2610.02186v1"
+  },
   "title:hiskillempoweringllmagentswithhierarchicalskillgraphs": {
     "doi": null,
     "sent_date": "2026-07-29",
@@ -622,6 +629,13 @@
     "title": "VA-Judger: Reward Modeling from Human Preference Feedback for Joint Video-Audio Generation",
     "url": "http://arxiv.org/abs/2608.18607v1"
   },
+  "title:vistaavisualharnessforreasoninginaninteractiveworld": {
+    "doi": null,
+    "sent_date": "2026-10-03",
+    "source": "arxiv",
+    "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+    "url": "http://arxiv.org/abs/2610.02200v1"
+  },
   "title:wamdiff2hierarchicalartodiffusiondistillationforhighlyefficientautonomousdrivingvla": {
     "doi": null,
     "sent_date": "2026-08-04",
@@ -635,6 +649,13 @@
     "source": "arxiv",
     "title": "Wavelet Flow Matching for Time Series",
     "url": "http://arxiv.org/abs/2609.39374v1"
+  },
+  "title:whichllmtopickonlineactivemodelselectionforlargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-10-03",
+    "source": "arxiv",
+    "title": "Which LLM to pick? Online Active Model Selection for Large Language Models",
+    "url": "http://arxiv.org/abs/2610.01592v1"
   },
   "title:wushkvkvcachequantizationwithdataadaptivetransforms": {
     "doi": null,
