@@ -181,6 +181,13 @@
     "title": "DuraS2ST: Chain-of-Thought and Reinforcement Learning for Duration-Aligned Speech-to-Speech Translation",
     "url": "http://arxiv.org/abs/2609.33742v1"
   },
+  "title:echochatstructuredcognitivereasoninginempatheticspokendialogue": {
+    "doi": null,
+    "sent_date": "2026-10-06",
+    "source": "arxiv",
+    "title": "EchoChat: Structured Cognitive Reasoning in Empathetic Spoken Dialogue",
+    "url": "http://arxiv.org/abs/2610.04826v1"
+  },
   "title:equilibriumtrainingofenergybasedmodelswithparalleltrajectorytempering": {
     "doi": null,
     "sent_date": "2026-07-30",
@@ -236,6 +243,13 @@
     "source": "arxiv",
     "title": "FP64 Is All You Want, INT8 Is All You Need, FP4/6/8 Is All You Have",
     "url": "http://arxiv.org/abs/2609.37693v1"
+  },
+  "title:freespeedtrainingfreespeedcontrolforgenerativerobotpolicies": {
+    "doi": null,
+    "sent_date": "2026-10-06",
+    "source": "arxiv",
+    "title": "FreeSpeed: Training-Free Speed Control for Generative Robot Policies",
+    "url": "http://arxiv.org/abs/2610.05734v1"
   },
   "title:gabenchacomprehensivebenchmarkforevaluatingllmagentsongraphanalysistasks": {
     "doi": null,
