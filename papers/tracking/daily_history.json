@@ -55,6 +55,13 @@
     "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
     "url": "http://arxiv.org/abs/2609.15818v1"
   },
+  "title:auraselowhallucinationgenerativespeechenhancementviamultimodalflowmatchingandinferencepolicyoptimization": {
+    "doi": null,
+    "sent_date": "2026-10-07",
+    "source": "arxiv",
+    "title": "AuraSE: Low-Hallucination Generative Speech Enhancement via Multimodal Flow Matching and Inference Policy Optimization",
+    "url": "http://arxiv.org/abs/2610.06632v1"
+  },
   "title:beyondkvreconstructionfunctionalreconstructionformladraftmodelsinspeculativedecoding": {
     "doi": null,
     "sent_date": "2026-07-31",
@@ -138,6 +145,13 @@
     "source": "arxiv",
     "title": "Cyclostationary Phase Conditioning for Medical Time Series Diffusion",
     "url": "http://arxiv.org/abs/2609.34965v2"
+  },
+  "title:decepevalabenchmarkforevaluatingdeceptioninllmagents": {
+    "doi": null,
+    "sent_date": "2026-10-07",
+    "source": "arxiv",
+    "title": "DecepEval: A Benchmark for Evaluating Deception in LLM Agents",
+    "url": "http://arxiv.org/abs/2610.07967v1"
   },
   "title:decomposeandreorganizeplanningwithprimitivesandvisuomotorpolicieslearnedfromdemonstrations": {
     "doi": null,
@@ -264,6 +278,13 @@
     "source": "arxiv",
     "title": "Gaussian Mixture Modeling for Event-Aware Visual Allocation in Long Video Understanding",
     "url": "http://arxiv.org/abs/2607.12557v1"
+  },
+  "title:globaltransportcouplingsforclassifierfreeguidedflows": {
+    "doi": null,
+    "sent_date": "2026-10-07",
+    "source": "arxiv",
+    "title": "Global Transport Couplings for Classifier-Free Guided Flows",
+    "url": "http://arxiv.org/abs/2610.07555v1"
   },
   "title:gptq2dcubictimetwosidedadaptiverounding": {
     "doi": null,
