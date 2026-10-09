@@ -1,0 +1,88 @@
+# Researcher Tracking - 2026-10-09 (daily)
+
+Total new tracked papers: 6
+Highlighted papers: 6
+
+## 1. An Interpretable Approach to PDE Solution Discovery via Structural Experience Distillation
+
+- Authors: Yunpeng Gong, Huolong Wu, Can Yang, Min Jiang
+- Source hits: arxiv
+- Matched researchers: Can Yang
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-10-08
+- Article: http://arxiv.org/abs/2610.12003v1
+
+PDE solution discovery aims to identify explicit symbolic expressions for unknown physical fields from observations under known physical constraints. Existing methods, however, collapse data fidelity and physical consistency into a single terminal score used as the sole feedback signal, providing little information about which subexpressions are responsible for a candidate's final performance. This opaque terminal feedback severely limits the interpretability of the search process itself, offering no insight into why a candidate succeeds or fails. Consequently, reusable structures in otherwise suboptimal candidates are often discarded, whereas incidental syntax along successful search trajectories may be repeatedly reinforced. We propose SED-MCTS, a Monte Carlo tree search approach that distills structural experience from evaluated expressions and reuses it to guide subsequent symbolic solution search. Through counterfactual subtree interventions, SED-MCTS estimates local structural contributions, routes reliable evidence to the responsible construction edges, and preserves useful components in a refined structural archive. The approach naturally extends to coupled multiphysics systems. Across a diverse suite of PDE benchmarks, SED-MCTS achieves strong performance under a fixed evaluation budget and improves search efficiency and robustness under noisy or scarce observations.
+
+## 2. AdaptEvo: Adaptive Agent Learning with Evolving Supervision
+
+- Authors: Shijun Wan, Jiancong Xie, Hang Xu, Jin Duan, Qixiong Wang, Xi Xiang, Maofei Que, Yahui Liu, Zhongyu Wei, Mu Chuan
+- Source hits: arxiv
+- Matched researchers: Hang Xu
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-10-08
+- Article: http://arxiv.org/abs/2610.11354v1
+
+Rule-governed contextual decision tasks require models to apply specified rules to case-specific context and evidence. Written rules can leave gaps in decision guidance and process evaluation, while reference judgments vary in their support from the rules and evidence. To address these challenges, we introduce AdaptEvo, a framework for learning under imperfect supervision that couples confidence-adaptive policy optimization with evolving decision knowledge and evaluation rubrics. Its Training module uses Confidence-Adaptive GRPO (CA-GRPO) to balance outcome and process rewards according to reference confidence. Its Evolution module synthesizes reusable decision knowledge from recurring failures across training cases and refines process rubrics to detect overlooked errors. To support empirical evaluation, we construct an industrial multimodal content moderation dataset comprising a training set and In-Period and Out-of-Period test sets, with the latter collected under changed rules. Using Qwen3.6-35B-A3B, AdaptEvo achieves 61.9% exact-label accuracy and 72.2% binary decision accuracy on In-Period, exceeding GRPO by 7.5 and 3.7 percentage points, respectively. On Out-of-Period, the policy trained with CA-GRPO retains exact-label accuracy gains over the base model across evaluated checkpoints without injected decision knowledge, while GRPO declines with continued training. CA-GRPO also outperforms the tested fixed reward mixtures on both Out-of-Period metrics.
+
+## 3. Is Real-World Training Data Necessary for Generalist Graph Anomaly Detection?
+
+- Authors: Yujing Liu, Yixin Liu, Yue Tan, Xiaofeng Cao, Alan Wee-Chung Liew, Heng Tao Shen, Shirui Pan
+- Source hits: arxiv
+- Matched researchers: Yixin Liu
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: foundation model
+- Journal/source: arxiv
+- Publication date: 2026-10-08
+- Article: http://arxiv.org/abs/2610.12167v1
+
+Generalist graph anomaly detection (GAD) aims to build a foundation model that detects anomalies on arbitrary unseen graphs without retraining or fine-tuning. Sufficient data are essential for foundation model training, yet generalist GAD still faces a data shortage, as real-world anomalous graphs are scarce and costly to collect and annotate. To fill this gap, we propose AG-FORGE, an Anomalous Graph generation Forge for automatic synthesis of anomalous graphs, exploring the feasibility of synthetic data-driven training for generalist GAD. Empirically, we find that synthetic data can achieve performance comparable to real-world training, but fail to push the performance boundary further due to the limited capacity of existing methods. To further unlock model capacity as training data scale up, we develop TS-GGAD, a Topology-Semantic coordinated Generalist GAD that captures complementary topological and semantic anomaly evidence, together with a curriculum learning strategy tailored to large-scale synthetic training. Extensive experiments on 14 real-world datasets demonstrate that TS-GGAD, trained on data generated by AG-FORGE, significantly outperforms state-of-the-art methods.
+
+## 4. FastBench: Can Streaming VLMs Perceive High-Dynamic Real-World Streams?
+
+- Authors: Yuxuan Hu, Weikang Shi, Yang Bo, Xudong Lu, Xintong Guo, Shuhan Li, Yuyang He, Huankang Guan, Peiwen Sun, Yunqiao Yang, Wenbo Li, Rui Liu, Hongsheng Li
+- Source hits: arxiv
+- Matched researchers: Yuxuan Hu
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: large language model
+- Journal/source: arxiv
+- Publication date: 2026-10-08
+- Article: http://arxiv.org/abs/2610.12427v1
+
+Streaming Video Large Language Models (VLMs) enable continuous video understanding, yet existing benchmarks focus on low-dynamic scenarios. Under bounded context budgets, models must balance temporal history, spatial resolution, and temporal granularity; sparse sampling at 1--2 FPS misses fast events. We introduce FastBench to evaluate high-dynamic perception in real-world video streams. Its trajectory-grounded pipeline combines QA generation from high-FPS clips, filtering of questions answerable at 2 FPS, answer verification using SAM3 and CoTracker3 trajectories, and three rounds of human inspection. FastBench contains 306 QA pairs across eight domains, six capabilities, and forward, instant, and backward temporal scopes, with human-annotated evidence intervals. We also present ProactiveFrame, a training-free baseline that adjusts incoming frame rates through text tokens. A dual-tier sliding window retains recent high-FPS observations while downsampling older ones into sparse history. Experiments reveal substantial limitations: the strongest model, Gemini-3.5-Flash, scores only 50.7%. Denser sampling improves Qwen3-VL-8B from 32.9% at 2 FPS to 44.6% at 24 FPS, but gains saturate as history is compressed. ProactiveFrame outperforms sparse uniform sampling by 5.4 and 1.5 percentage points, yet remains well below oracle-guided focusing, showing that current VLMs struggle to determine from the stream alone when finer temporal perception is needed. FastBench provides a testbed for high-dynamic streaming video understanding. Code and data: https://github.com/Ashone3/FastBench.
+
+## 5. Correspondences as Decisions: JevNexus for Decision-Centric Schema Matching
+
+- Authors: Runze Li, Hanchen Wang, Ying Zhang, Wenjie Zhang
+- Source hits: arxiv
+- Matched researchers: Hanchen Wang
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-10-07
+- Article: http://arxiv.org/abs/2610.09487v1
+
+Schema matching increasingly uses generative language models to rerank retrieved column candidates, although the underlying task is a bounded correspondence decision. We present JevNexus, which combines typed pairwise decisions with schema/instance evidence and invokes listwise refinement only when the evidence disagrees and the fused margin is small. The evaluation covers 561 cases from six benchmark families. JevNexus obtains dataset-macro MRR and Hits@1 of 0.930 and 0.909, compared with 0.926 and 0.903 for Magneto, while reducing mean latency from 123.452 to 15.929 seconds (7.750). Paired analysis finds no statistically significant difference in either MRR or Hits@1. The gate invokes listwise refinement for only 5.665% of source columns and avoids the degradation caused by unconditional refinement. Code and experimental artifacts are available at https://github.com/RazeenLI/JevNexus.
+
+## 6. Visualizing Three-Dimensional Quantum Fluctuations of Ground-State C$_3$H$_4$ via Deep Sub-Angstrom Coulomb Explosion Imaging
+
+- Authors: Mei Wang, Yue Gao, Hang Yuan, Yang Wang, Bo Yang, Shaofei Gu, Shaofeng Zhang, Xinwen Ma, Shenyue Xu
+- Source hits: arxiv
+- Matched researchers: Yue Gao
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-10-07
+- Article: http://arxiv.org/abs/2610.10981v1
+
+Coulomb explosion imaging (CEI) is a powerful tool for determining static geometries of isolated gas-phase molecules. In this work, taking allene and propyne as prototype, we demonstrate sub-angstrom resolution achieved with highly charged ion-induced CEI. Using 41.9 keV/u Xe$^{20+}$ beam, minute variations of CC single, double and triple bond lengths are clearly visualized, indicating that an ultrahigh resolution of 0.1 $\mathring{\mathrm{A}}$ is achieved. This unprecedented resolution not only makes it possible to distinguish CC bonds with different bond orders, but also lays a solid foundation for direct observation of quantum fluctuations inherent to 3D structure of a ground-state molecule. Notably, the coupled collective motion of the two CH$_2$ moieties spaced by a central carbon within allene is unambiguously visualized in our measurements.
