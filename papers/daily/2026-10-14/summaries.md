@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-10-14
+
+## 1. Less can be more for predicting properties with large language models
+
+- Authors: Nawaf Alampara, Santiago Miret, Kevin Maik Jablonka
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Computational Science
+- Publication status: published
+- Publication date: 2026-10-12
+- DOI: https://doi.org/10.1038/s43588-026-01045-2
+- Categories: Machine Learning in Materials Science, Advanced Chemical Physics Studies, Computational Drug Discovery Methods
+- Relevance: 3.1257260241016525
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s43588-026-01045-2
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract Predicting properties from coordinate–category data—sets of vectors paired with categorical information—is fundamental to computational science, manifesting in materials science as predicting formation energies or elastic moduli from crystal structures. While large language models (LLMs) have increasingly been applied to such tasks, optimal strategies for achieving reliable predictions remain elusive. Here we report fundamental limitations in LLM’s ability to learn from coordinate information in coordinate–category data. Through systematic experiments using synthetic datasets with tunable coordinate and category contributions, and a comprehensive benchmarking framework (MatText), we find that LLMs consistently fail to capture coordinate information while excelling at category patterns. This geometric blindness persists regardless of model size (up to 70 billion parameters), dataset scale (up to 2 × 10 6 structures) or text representation strategy. For material property prediction tasks dominated by structural effects, specialized geometric architectures consistently outperform LLMs, as evidenced by a clear ‘Graph Neural Network Language Model (GNN-LM) wall’ in performance benchmarks. Our analysis provides concrete guidelines for architecture selection in scientific machine learning.
+
+## 2. scGEN: Leveraging an Adaptive Weighting Strategy for Challenging Cell Clustering in Single‐Cell RNA‐seq
+
+- Authors: Fang Huang, Dayu Hu, Yaqi Dai, Aoyi Geng, Renxiang Guan, Hao Quan, Brett A. McGregor, Zhihan Wang, Nadeem Khan, Hongsheng Zhang, Jinghua Zhang, Mingyang Xia, Xiaoqiong Gu, Di Che, Junguk Hur, Xiaoyu Cui, Kai Guo
+- Source: openalex
+- Venue type: journal
+- Journal: Advanced Science
+- Publication status: published
+- Publication date: 2026-10-11
+- DOI: https://doi.org/10.1002/advs.77746
+- Categories: Single-cell and spatial transcriptomics, Gene expression and cancer classification, Gene Regulatory Network Analysis
+- Relevance: 3.1036591511758314
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1002/advs.77746
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Recent advancements in single-cell RNA sequencing (scRNA-seq) have greatly enhanced our ability to dissect cellular heterogeneity. However, unsupervised clustering often struggles to identify transitional or developmental boundary cells, as existing methods rely on highly variable genes without considering expression levels, thereby overlooking subtle but crucial signals. To address this challenge, we developed a single-cell gene-aware embedded network (scGEN), which captures complex intercellular relationships. scGEN employs adaptive feature weighting and iterative fine-tuning to prioritize ambiguous or transitional cells with overlapping transcriptional profiles. Evaluation across eight distinct scRNA-seq datasets demonstrated that scGEN consistently outperformed nine leading clustering approaches. Additionally, scGEN generated refined assignments for approximately 10% of cells with ambiguous transcriptional profiles and revealed biologically meaningful differences, providing a more detailed view of cellular heterogeneity in the human fetal pituitary. Cell-cell communication analysis identified developmental signaling networks associated with the refined annotations, including a putative Pre.Gonado-like population detected at 7 weeks with prominent involvement in BMP, NOTCH, and extracellular matrix remodeling pathways. Furthermore, histological analysis of 6-8-week embryos provided orthogonal tissue-level support for early gonadotrope-lineage states and SOX2-GATA2-NR5A1 bridging populations. Together, these results highlight scGEN's ability to enhance cell-type assignments and detect subtle biological differences.
+
+## 3. ETSAM: effectively segmenting cell membranes in cryo-electron tomograms
+
+- Authors: Joel Selvaraj, Jianlin Jack Cheng
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-10-11
+- DOI: https://doi.org/10.1038/s41467-026-77962-7
+- Categories: Advanced Electron Microscopy Techniques and Applications, Cell Image Analysis Techniques, Medical Image Segmentation Techniques
+- Relevance: 2.7206564804678623
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-77962-7
+- PDF: https://www.nature.com/articles/s41467-026-77962-7_reference.pdf
+- Local PDF: pdf/2026-10-14_03_ETSAM_ effectively segmenting cell membranes in cryo-electron tomograms.pdf
+
+Cryogenic Electron Tomography (cryo-ET) is an emerging experimental technique used to visualize cell structures and macromolecules in their native cellular environment. Accurate segmentation of cell structures in cryo-ET tomograms, such as cell membranes, supports the study of cellular organization and function. However, several inherent limitations in cryo-ET, including the very low signal-to-noise ratio, missing wedge artifacts from limited tilt angles, and other noise artifacts, collectively hinder the reliable identification and delineation of these structures. In this study, we present ETSAM, a two-stage Segment Anything Model 2 (SAM2)-based fine-tuned AI method that effectively segments cell membranes in tomograms. It is trained on a diverse dataset comprising 83 experimental tomograms from the CryoET Data Portal (CDP) database and 28 simulated tomograms generated using PolNet. On an independent test set of 17 experimental tomograms for which ground-truth annotations are available, ETSAM outperforms other deep learning based methods by robustly identifying cell membranes with high sensitivity while also maintaining better precision. Cell membranes are hard to distinguish in the noisy 3D volumes from cryo-electron tomography. Here, authors adapt a video segmentation foundation model to the task, segmenting membranes across diverse organisms more accurately than existing tools.
+
+## 4. All Languages Matter: Understanding and Mitigating Language Bias in Multilingual RAG
+
+- Authors: Dan Wang, Guozhao Mo, Yafei Shi, Cheng Zhang, Bo Zheng, Boxi Cao, Xuanang Chen, Yaojie Lu, Hongyu Lin, Ben He, Xianpei Han, Le Sun
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.638415731401808
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.338/
+- PDF: https://aclanthology.org/2026.acl-long.338.pdf
+- Local PDF: pdf/2026-10-14_04_All Languages Matter_ Understanding and Mitigating Language Bias in Multilingual RAG.pdf
+
+Multilingual Retrieval-Augmented Generation (mRAG) leverages cross-lingual evidence to ground Large Language Models (LLMs) in global knowledge. However, we show that current mRAG systems suffer from a language bias during reranking, systematically favoring English and the query’s native language. By introducing an estimated oracle evidence analysis, we quantify a substantial performance gap between existing rerankers and the achievable upper bound. Further analysis reveals a critical distributional mismatch: while optimal predictions require evidence scattered across multiple languages, current systems systematically suppress such “answer-critical” documents, thereby limiting downstream generation performance. To bridge this gap, we propose L anguage- A gnostic U tility-driven R eranker A lignment (LAURA) , Experiments across diverse languages and generation models show that LAURA effectively mitigates language bias and consistently improves mRAG performance.
+
+## 5. Prompt-R1: Collaborative Automatic Prompting Framework via End-to-end Reinforcement Learning
+
+- Authors: Wenjin Liu, Haoran Luo, Xueyuan Lin, Haoming Liu, Tiesunlong Shen, Jiapu Wang, Rui Mao, Erik Cambria
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6349598891477632
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.799/
+- PDF: https://aclanthology.org/2026.findings-acl.799.pdf
+- Local PDF: pdf/2026-10-14_05_Prompt-R1_ Collaborative Automatic Prompting Framework via End-to-end Reinforcement Learning.pdf
+
+Recently, various excellent and powerful large language models (LLMs) have been utilized to solve a wide range of human problems. However, when faced with complex problems, most users are often unable to provide accurate and effective prompts to interact with LLMs, thus limiting their performance. To address this challenge, we propose Prompt-R1, an end-to-end reinforcement learning framework that utilizes a small-scale LLM (as agent ) to collaborate with large-scale LLMs (as environment ), replacing users to interact better. This collaboration is presented as a multi-turn interaction, where the small-scale LLM thinks and generates prompts, and the large-scale LLM performs complex reasoning. A double-constrained reward is designed to optimize correctness and quality of generation. Prompt-R1 provides a plug-and-play framework that supports both inference and training with various large-scale LLMs. Experimental results on twelve datasets show that Prompt-R1 significantly outperforms baseline LLMs across various tasks.Our code is available at https://github.com/QwenQKing/Prompt-R1 .
+
+## 6. Probing Bias Formation in Medical LLMs through Activation Steering
+
+- Authors: Bayram Ayadi, Annette Hautli-Janisz
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6330850268284296
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-srw.54/
+- PDF: https://aclanthology.org/2026.acl-srw.54.pdf
+- Local PDF: pdf/2026-10-14_06_Probing Bias Formation in Medical LLMs through Activation Steering.pdf
+
+Large Language Models specialized for the medical domain achieve high performance on static benchmarks, but remain vulnerable to sycophantic confabulation, where the models generate medically spurious rationales to justify incorrect user hints. This robustness gap poses severe risks in clinical environments, as models may prioritize contextual faithfulness to a biased prompt over their internal parametric medical knowledge. This study introduces a mechanistic approach to identify and mitigate these failures in MedGemma-27B, isolating hint integration circuits using Sparse Autoencoders and geometric manifold analysis. Our findings reveal that sycophantic bias is a highly distributed and polymorphic concept, with biased reasoning routed through shifting dimensions across transformer layers. We identify the optimal layer for intervention and demonstrate that cluster-conditioned dynamic steering tailored to the geometric subspace of the prompt outperforms static global interventions, though it reveals a fundamental tension between bias resilience and the retention of internal parametric knowledge. This work proposes a principled framework toward clinical AI systems that are more robust and aligned with expert medical logic, demonstrating the potential of cluster-conditioned geometric interventions while characterizing the inherent trade-offs in clinical knowledge retention.
+
+## 7. MATA: Multi-Agent Framework for Reliable and Flexible Table Question Answering
+
+- Authors: Sieun Hyeon, Jusang Oh, Sunghwan Steve Cho, Jaeyoung Do
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6329161005110717
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1672/
+- PDF: https://aclanthology.org/2026.findings-acl.1672.pdf
+- Local PDF: pdf/2026-10-14_07_MATA_ Multi-Agent Framework for Reliable and Flexible Table Question Answering.pdf
+
+Recent advances in Large Language Models (LLMs) have significantly improved table understanding tasks such as Table Question Answering (TableQA), yet challenges remain in ensuring reliability, scalability, and efficiency, especially in resource-constrained or privacy-sensitive environments. In this paper, we introduce MATA, a multi-agent TableQA framework that leverages multiple complementary reasoning paths and a set of tools built with small language models. MATA generates candidate answers through diverse reasoning styles for a given table and question, then refines or selects the optimal answer with the help of these tools. Furthermore, it incorporates an algorithm designed to minimize expensive LLM agent calls, enhancing overall efficiency. MATA maintains strong performance with small, open-source models and adapts easily across various LLM types. Extensive experiments on two benchmarks of varying difficulty with ten different LLMs demonstrate that MATA achieves state-of-the-art accuracy and highly efficient reasoning while avoiding excessive LLM inference. Our results highlight that careful orchestration of multiple reasoning pathways yields scalable and reliable TableQA. The code is available at https://github.com/AIDASLab/MATA .
+
+## 8. R³A: Reinforced Reasoning for Relevance Assessment for RAG in User-Generated Content Platforms
+
+- Authors: Xiaowei Yuan, Lei Jin, Haoxin Zhang, Ziyang Huang, Yan Gao, Yiwu, Yao Hu, Jun Zhao, Kang Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.631722132286086
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.10/
+- PDF: https://aclanthology.org/2026.acl-industry.10.pdf
+- Local PDF: pdf/2026-10-14_08_R³A_ Reinforced Reasoning for Relevance Assessment for RAG in User-Generated Content Platforms.pdf
+
+Retrieval-augmented generation (RAG) plays a critical role in user-generated content (UGC) platforms, but its effectiveness critically depends on accurate query–document relevance assessment. Despite recent advances in applying large language models (LLMs) to relevance modeling, UGC platforms present unique challenges: 1) ambiguous user intent due to sparse user feedback in RAG scenarios, and 2) asymmetric relevance, where relevance is driven by localized answer-bearing content rather than global query–document similarity. To address these issues, we propose the Reinforced Reasoning model for Relevance Assessment (R³A), which decomposes relevance assessment into intent inference and evidence grounding. R³A leverages auxiliary high-clicked documents to infer latent query intent, and extracts verbatim evidence fragments to ground relevance decisions, reducing noise sensitivity and improving asymmetric relevance modeling. Experimental results demonstrate that R³A substantially outperforms strong baselines on offline benchmarks, while the distilled R³A-1.5B model achieves significant gains in large-scale online A/B testing, effectively balancing performance and practical deployability.
+
+## 9. NiuTrans.LMT: Toward Inclusive and Scalable Multilingual Machine Translation with LLMs
+
+- Authors: Yingfeng Luo, Ziqiang Xu, Yuxuan Ouyang, MuRun Yang, DingYang Lin, Kaiyan Chang, Tong Zheng, Bei Li, Peinan Feng, Quan Du, Tong Xiao, JingBo Zhu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6311809464733256
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1153/
+- PDF: https://aclanthology.org/2026.acl-long.1153.pdf
+- Local PDF: pdf/2026-10-14_09_NiuTrans.LMT_ Toward Inclusive and Scalable Multilingual Machine Translation with LLMs.pdf
+
+Large language models have significantly advanced Multilingual Machine Translation (MMT), yet scaling to many languages while keeping quality robust across directions remains challenging.In this paper, we identify a failure mode of multilingual supervised fine-tuning (SFT) on multi-way parallel data: when such data are reused symmetrically around a pivot language (e.g., English), performance on reverse directions (X → pivot) can drop substantially.We term this phenomenon Directional Degeneration and attribute it to excessive many-to-one mappings, which encourage shortcut learning.We propose Strategic Downsampling (SD), a simple yet effective method to mitigate this degeneration.In addition, we introduce Parallel Multilingual Prompting (PMP), which augments translation instructions with an auxiliary parallel sentence to promote cross-lingual transfer during training and enables optional test-time enhancement when auxiliary translations are available. We further develop NiuTrans.LMT ( L arge-scale M ultilingual T ranslation, abbreviated as LMT ), a Chinese–English-centric suite of multilingual translation models spanning four sizes (0.6B/1.7B/4B/8B) and covering 60 languages and 234 directions.Comprehensive evaluations show that LMT is competitive among open-source MMT systems, and that our 4B LMT model performs on par with or better than substantially larger baselines. We release our models and project resources to support inclusive and scalable MMT.
+
+## 10. Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets
+
+- Authors: Hanna Yukhymenko, Anton Alexandrov, Martin Vechev
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.630825036935218
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.2067/
+- PDF: https://aclanthology.org/2026.findings-acl.2067.pdf
+- Local PDF: pdf/2026-10-14_10_Recovered in Translation_ Efficient Pipeline for Automated Translation of Benchmarks and Datasets.pdf
+
+The reliability of multilingual Large Language Model (LLM) evaluation is currently compromised by the inconsistent quality of translated benchmarks. Existing resources often suffer from semantic drift and context loss, which can lead to misleading performance metrics. In this work, we present a fully automated framework designed to address these challenges by enabling scalable, high-quality translation of datasets and benchmarks. We demonstrate that adapting test-time compute scaling strategies, specifically Universal Self-Improvement (USI) and our proposed multi-round ranking method, T-RANK, allows for significantly higher quality outputs compared to traditional pipelines. Our framework ensures that benchmarks preserve their original task structure and linguistic nuances during localization. We apply this approach to translate popular benchmarks and datasets into eight Eastern and Southern European languages (Ukrainian, Bulgarian, Slovak, Romanian, Lithuanian, Estonian, Turkish, Greek). Evaluations using both reference-based metrics and LLM-as-a-judge show that our translations surpass existing resources, resulting in more accurate downstream model assessment. We release both the framework and the improved benchmarks to facilitate robust and reproducible multilingual AI development.
+
+## 11. AnnoHID: LLM-Assisted Annotation Framework for Low-Resource Medical Texts
+
+- Authors: Annisa Maulida Ningtyas, Guntur Budi Herwanto, Yunita Sari, Rifki Afina Putri, Filip Kovacevic, Alaa El-Ebshihy, Varvara Arzt, Florina Piroi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6307461242476022
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-demo.67/
+- PDF: https://aclanthology.org/2026.acl-demo.67.pdf
+- Local PDF: pdf/2026-10-14_11_AnnoHID_ LLM-Assisted Annotation Framework for Low-Resource Medical Texts.pdf
+
+This paper introduces AnnoHID, a semi-automated annotation framework designed for medical texts in low-resource languages. The system integrates large language models (LLMs) for pre-annotation and human validation to support efficient and consistent annotation. We demonstrate its application to Bahasa Indonesia medical social media texts from Alodokter, a medical Q A platform, for Named Entity Recognition (NER) and Medical Concept Normalization (MCN). We conducted a user study with 21 participants to demonstrate the effectiveness of AnnoHID. The results show that LLM-assisted annotation yields higher inter-annotator agreement for both NER ( 𝜅 = 0.76) and MCN ( 𝜅 = 0.63) and that human review improves raw LLM NER output, raising the F1 score from 0.39 to 0.45. However, LLM assistance did not reduce annotation time and may introduce normalization bias in MCN. The framework is multilingual, human-in-the-loop, and interoperable with standard medical terminologies, such as SNOMED-CT. Future work focuses on mitigating pre-annotation bias, reducing annotation overhead, and scaling evaluations to larger datasets and additional low-resource languages.
+
+## 12. Fine-Grained Semantic Comparison of Legal Documents using LLMs
+
+- Authors: Elisei Rykov, Nikolay Ivanov, Maria Bandulevich, Kseniia Petrushina, Valentin Malykh, Vasily Konovalov, Alexander Panchenko, Ilseyar Alimova
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.630564867592822
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-srw.86/
+- PDF: https://aclanthology.org/2026.acl-srw.86.pdf
+- Local PDF: pdf/2026-10-14_12_Fine-Grained Semantic Comparison of Legal Documents using LLMs.pdf
+
+Frequent revisions of complex regulatory documents in large organizations often introduce inconsistencies and contradictions that are difficult for lawyers and auditors to detect manually. Existing tools rely on character-level diffs and therefore miss paraphrases and semantic shifts. We introduce LegDiff, a novel benchmark for evaluating span-aware semantic comparison of legal texts, and use it to investigate the ability of large language models to detect semantic changes beyond token- and character-level matching. LegDiff comprises manually annotated pairs of legal paragraphs drawn from different documents. In addition, we present a pipeline to generate synthetic training data that aligns with the manual annotations and mirrors the structure and label distribution of the manually curated benchmark, and a visualization tool for clearly displaying detected differences and inconsistencies. The dataset, code, and a visualization tool are publicly available to facilitate reproducibility and further research ( https://github.com/s-nlp/SLeDoC ).
+
+## 13. Sherry: Hardware-Efficient 1.25-Bit Ternary Quantization via Fine-grained Sparsification
+
+- Authors: Hong Huang, Decheng Wu, Qiangqiang Hu, Guanghua Yu, Jinhai Yang, Jianchen Zhu, Xue Liu, Dapeng Wu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6304233746531427
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.513/
+- PDF: https://aclanthology.org/2026.acl-long.513.pdf
+- Local PDF: pdf/2026-10-14_13_Sherry_ Hardware-Efficient 1.25-Bit Ternary Quantization via Fine-grained Sparsification.pdf
+
+The deployment of Large Language Models (LLMs) on resource-constrained edge devices is increasingly hindered by prohibitive memory and computational requirements. While ternary quantization offers a compelling solution by reducing weights to -1, 0, +1, current implementations suffer from a fundamental misalignment with commodity hardware. Most existing methods must choose between 2-bit aligned packing, which incurs significant bit wastage, or 1.67-bit irregular packing, which degrades inference speed. To resolve this tension, we propose Sherry, a hardware-efficient ternary quantization framework. Sherry introduces a 3:4 fine-grained sparsity that achieves a regularized 1.25-bit width by packing blocks of four weights into five bits, restoring power-of-two alignment. Furthermore, we identify weight trapping issue in sparse ternary training, which leads to representational collapse. To address this, Sherry introduces Arenas, an annealing residual synapse mechanism that maintains representational diversity during training. Empirical evaluations on LLaMA-3.2 across five benchmarks demonstrate that Sherry matches state-of-the-art ternary performance while significantly reducing model size. Notably, on an Intel i7-14700HX CPU, our 1B model achieves zero accuracy loss compared to SOTA baselines while providing 25% bit savings and 10% speed up. The code is available at https://github.com/Tencent/AngelSlim .
+
+## 14. Mitigating Legal Hallucinations via Symbolic Constraints and Analogical Precedents
+
+- Authors: Zixuan Huang, Yanxiang Ma, Luhan Wang, Yunke Wang, Duo Shi, Chang Xu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6299613303345604
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.633/
+- PDF: https://aclanthology.org/2026.acl-long.633.pdf
+- Local PDF: pdf/2026-10-14_14_Mitigating Legal Hallucinations via Symbolic Constraints and Analogical Precedents.pdf
+
+With the growing potential of large language models (LLMs) in the legal domain, domain-specific finetuning and retrieval-augmented generation (RAG) methods have received widespread attention. However, current methods still suffer from hallucination risk and failing to resolve semantic drift and adapt to varying citation numbers. To address this, we propose Authoritative and Accurate Lawyer (AALawyer), a complementary dual-retriever framework based on the Legal Syllogism and the nature of different legal data. First, we introduce Symbolic Constrained Retrieval (SCR) for closed-set article retrieval, by constraining retrieval to the generative prediction. Second, we build Analogical Precedent Retrieval (APR) to retrieve open-set judicial precedents for reasoning with a newly collected large criminal dataset.Extensive experiments, including LawBench, our Hallucination Risk-Benchmark, and comprehensive ablation studies, demonstrate the effectiveness of AALawyer, which mitigates hallucinations while improving the explainability of legal reasoning.
+
+## 15. LLM-Generated Text May Harm Your Retrieval! A Robust Detection Strategy for Retrieval-Augmented Generation
+
+- Authors: Zhaoheng Huang, Yutao Zhu, Ji-Rong Wen, Zhicheng Dou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6296069071065165
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1475/
+- PDF: https://aclanthology.org/2026.acl-long.1475.pdf
+- Local PDF: pdf/2026-10-14_15_LLM-Generated Text May Harm Your Retrieval! A Robust Detection Strategy for Retrieval-Augmented Generation.pdf
+
+Retrieval-augmented generation (RAG) effectively enhances the accuracy and timeliness of large language models (LLMs) by incorporating external knowledge retrieved from external sources. However, with the increasing prevalence of LLM-generated content, external corpora used by RAG systems may become contaminated with LLM-generated texts. Such contamination compromises the reliability and quality of retrieved results, ultimately leading to a degradation in RAG performance, and raises concerns about the diminishing presence of human texts and the “Spiral of Silence” effect. A natural solution is to incorporate LLM text detectors into the RAG pipeline to filter out LLM-generated texts from the retrieved results. However, their effective use in RAG remains under-explored. In this paper, we explore the usage paradigms of LLM text detectors for RAG and highlight key limitations of off-the-shelf or directly fine-tuned detectors. To this end, we propose a RAG-aware data augmentation strategy that aligns detector training with realistic contamination patterns. Our approach synthesizes training data from both LLM and human texts under diverse generation modes. Experiments show that our method mitigates performance degradation and improves the long-term stability of RAG systems.
+
+## 16. ReflexiCoder: Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement Learning
+
+- Authors: Juyong Jiang, Jiasi Shen, Sunghun Kim, Kang Min Yoo, Jeonghoon Kim, Sungju Kim
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6295454195890415
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1872/
+- PDF: https://aclanthology.org/2026.findings-acl.1872.pdf
+- Local PDF: pdf/2026-10-14_16_ReflexiCoder_ Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement Lea.pdf
+
+While Large Language Models (LLMs) have revolutionized code generation, standard “System 1” approaches that generate solutions in a single forward pass often hit a performance ceiling on complex algorithmic tasks. Existing iterative refinement strategies attempt to bridge this gap at inference time, yet they predominantly rely on external oracles, execution feedback, or computationally expensive prompt-response cycles. In this work, we propose ReflexiCoder, a novel reinforcement learning (RL) framework that internalizes the structured reasoning trajectory, encompassing initial generation, bug and optimization aware reflection, and self-correction, directly into the model’s weights. Unlike prior methods, ReflexiCoder shifts the paradigm from external-dependent refinement to an intrinsic, fully autonomous self-reflection and self-correction capabilities at inference time. We utilize an RL-only training paradigm with granular reward functions to optimize the entire reflection-correction trajectory, teaching the model how to debug without reliance on ground-truth feedback or execution engines at inference time. Extensive experiments across seven benchmarks demonstrate that our ReflexiCoder-8B establishes a new state-of-the-art (SOTA) among leading open-source models in the 1.5B-14B range, achieving 94.51% (87.20%) on HumanEval (Plus), 81.80% (78.57%) on MBPP (Plus), 35.00% on BigCodeBench, 52.21% on LiveCodeBench, and 37.34% on CodeForces in a single-attempt setting, rivaling or surpassing proprietary models like GPT-5.1. Notably, our framework is significantly more token-efficient than base models, reducing inference-time compute overhead by approximately 40% through disciplined, efficient reasoning and reflection patterns. The source code and data are available at https://github.com/juyongjiang/ReflexiCoder .
+
+## 17. d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models
+
+- Authors: Leyi Pan, Shuchang Tao, Yunpeng Zhai, Zheyu Fu, Liancheng Fang, Minghua He, Lingzhe Zhang, Zhaoyang Liu, Bolin Ding, Aiwei Liu, Lijie Wen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6287151436332215
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.994/
+- PDF: https://aclanthology.org/2026.acl-long.994.pdf
+- Local PDF: pdf/2026-10-14_17_d-TreeRPO_ Towards More Reliable Policy Optimization for Diffusion Language Models.pdf
+
+Reinforcement learning (RL) is pivotal for enhancing the reasoning capabilities of diffusion large language models (dLLMs). However, existing dLLM policy optimization methods suffer from two critical reliability bottlenecks: (1) reward sparsity, arising from coarse or unverifiable signals that impede accurate advantage calculation; and (2) their probability estimates do not account for the gap to the unbiased expectation over all decoding orders, which are intractable to compute. To mitigate these issues, we propose d -TreeRPO, a reliable RL framework for dLLMs that leverages tree-structured rollouts and bottom-up advantage computation based on verifiable outcome rewards to provide fine-grained and verifiable step-wise reward signals. Furthermore, we provide a theoretical proof demonstrating that increasing prediction confidence effectively minimizes the gap between unbiased expected prediction probabilities and its single-step forward pass estimate. Guided by this analysis, we introduce a time-scheduled self-distillation loss during training that enhances prediction confidence in later training stages, thereby enabling more accurate probability estimation and better performance. Experiments demonstrate that d -TreeRPO outperforms existing baselines and achieves significant improvements across multiple reasoning benchmarks. Specifically, it achieves +86.2% on Sudoku, +51.6% on Countdown, +4.5% on GSM8K, and +5.3% on Math500 compared to the base model.
+
+## 18. DetectRL-X: Towards Reliable Multilingual and Real-World LLM-Generated Text Detection
+
+- Authors: Junchao Wu, Yefeng Liu, Chenyu Zhu, Hao Zhang, Zeyu Wu, Tianqi Shi, Yichao Du, Longyue Wang, Weihua Luo, Jinsong Su, Derek F. Wong
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.628526259857024
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1773/
+- PDF: https://aclanthology.org/2026.acl-long.1773.pdf
+- Local PDF: pdf/2026-10-14_18_DetectRL-X_ Towards Reliable Multilingual and Real-World LLM-Generated Text Detection.pdf
+
+The effective detection and governance of Large Language Model (LLM) generated content has become increasingly critical due to the growing risk of misuse. Despite the impressive performance of existing detectors, their reliability and potential in multilingual, real-world scenarios remain largely underexplored.In this study, we introduce DetectRL-X, a comprehensive multilingual benchmark designed to evaluate advanced detectors across 8 dimensions. The benchmark encompasses 8 languages commonly used in commercial contexts and collects human-written texts from 6 domains highly susceptible to LLM misuse. To better aligned with real-world applications, We create LLM-generated texts using 4 popular commercial LLMs, and include typical AI-assisted writing operations such as polishing, expanding, and condensing to capture authentic usage patterns. Furthermore, we develop a multilingual framework for paraphrasing and perturbation attacks to simulate diverse human modifications and writing noise, enabling stress testing of detectors across languages.Experimental results on DetectRL-X reveal the strengths and limitations of current state-of-the-art detectors when applied to diverse linguistic resources. We further analyze how domains, generators, attack strategies, text length, and refinement operations influence performance in different languages, underscoring DetectRL-X as an effective benchmark for strengthening multilingual and language-specific detectors.
+
+## 19. RouteLMT: Learned Sample Routing for Hybrid LLM Translation Deployment
+
+- Authors: Yingfeng Luo, Hongyu Liu, DingYang Lin, Kaiyan Chang, Chenglong Wang, Bei Li, Quan Du, Tong Xiao, JingBo Zhu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.628456707121832
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.129/
+- PDF: https://aclanthology.org/2026.acl-industry.129.pdf
+- Local PDF: pdf/2026-10-14_19_RouteLMT_ Learned Sample Routing for Hybrid LLM Translation Deployment.pdf
+
+Large Language Models (LLMs) have achieved remarkable performance in Machine Translation (MT), but deploying them at scale remains prohibitively expensive. A widely adopted remedy is the hybrid system paradigm, which balances cost and quality by serving most requests with a small model and selectively routing a fraction to a large model. However, existing routing strategies often rely on heuristics, external predictors, or absolute quality estimation, which fail to capture whether the large model actually provides a worthwhile improvement over the small one. In this paper, we formulate routing as a budget allocation problem and identify marginal gain, i.e., the large model’s improvement over the small model, as the optimal signal for budgeted decisions. Building on this, we propose RouteLMT (routing for LLM-based MT), an efficient in-model router that predicts this expected gain by probing the small translator’s prompt-token representation, without requiring external models or hypothesis decoding. Extensive experiments demonstrate that our RouteLMT outperforms heuristics, quality/difficulty estimation baselines, achieving a superior quality–budget Pareto frontier. Furthermore, we analyze regression risks and show that a simple guarded variant can mitigate severe quality losses.
+
+## 20. Diversity Collapse in Multi-Agent LLM Systems: Structural Coupling and Collective Failure in Open-Ended Idea Generation
+
+- Authors: Nuo Chen, Yicheng Tong, Yuzhe Yang, Yufei He, Xueyi Zhang, Zou Qingyun, Qian Wang, Bingsheng He
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6281513395600884
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.13/
+- PDF: https://aclanthology.org/2026.findings-acl.13.pdf
+- Local PDF: pdf/2026-10-14_20_Diversity Collapse in Multi-Agent LLM Systems_ Structural Coupling and Collective Failure in Open-Ended Idea Generation.pdf
+
+Multi-agent systems (MAS) are increasingly used for open-ended idea generation, driven by the expectation that collective interaction will broaden the exploration diversity. However, when and why such collaboration truly expands the solution space remains unclear. We present a systematic empirical study of diversity in MAS-based ideation across three bottom-up levels: model intelligence, agent cognition, and system dynamics. At the model level, we identify a compute efficiency paradox, where stronger, highly aligned models yield diminishing marginal diversity despite higher per-sample quality. At the cognition level, authority-driven dynamics suppress semantic diversity compared to junior-dominated groups. At the system level, group-size scaling yields diminishing returns and dense communication topologies accelerate premature convergence. We characterize these outcomes as collective failures emerging from structural coupling, a process where interaction inadvertently contracts agent exploration and triggers diversity collapse. Our analysis shows that this collapse arises primarily from the interaction structure rather than inherent model insufficiency, highlighting the importance of preserving independence and disagreement when designing MAS for creative tasks. Our code is available at https://github.com/Xtra-Computing/MAS_Diversity .
+
+## 21. Cognitive Analysis Graph-Guided Multi-Turn Safety Enhancement for Large Language Models
+
+- Authors: Lanxue Zhang, Yuqiang Xie, Fang Fang, Yubing Ren, Xuebin Wang, Yanan Cao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.627792118586027
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1558/
+- PDF: https://aclanthology.org/2026.findings-acl.1558.pdf
+- Local PDF: pdf/2026-10-14_21_Cognitive Analysis Graph-Guided Multi-Turn Safety Enhancement for Large Language Models.pdf
+
+Large Language Models exhibit advanced reasoning capabilities that enable them to address complex tasks, but these capabilities also increase the risk of generating harmful content, particularly in multi-turn dialogues. Existing inference-phase safety alignment methods face three major challenges. First, they lack the relationship consideration between question and response, making the model easy to provide harmful content toward complex scenarios. Second, they are difficult to adapt to defense instruction. Third, these methods fail to effectively leverage historical information for safe response generation. To address these challenges, we propose CogGSE, an inference-time safety alignment framework that explicitly models the cognitive process of problem solving through a structured cognitive analysis graph. We retrieve a question-specific graph to ensure the safety information is tailored to the query. To fully exploit historical information in multi-turn settings, we retrieve relevant graphs from previous turns and selectively retain safety-related nodes, which are jointly used with the current-turn graph to guide safe response generation. This design enables transparent, controllable reasoning while maintaining strong safety guarantees. Extensive experiments demonstrate the effectiveness of our approach in multiple safety scenarios.
+
+## 22. VEG: Verbal 𝜖 -greedy for Semantic Exploration in Multi-Turn RL Agents
+
+- Authors: Yongchang Hao, Jie Hao, Yongsheng Mei, Ze Ye, Junyi Chai, Bin Guo, Benjamin Z. Yao, Chenlei Guo, Lili Mou
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.627380985900901
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-industry.82/
+- PDF: https://aclanthology.org/2026.acl-industry.82.pdf
+- Local PDF: pdf/2026-10-14_22_VEG_ Verbal 𝜖 -greedy for Semantic Exploration in Multi-Turn RL Agents.pdf
+
+Reinforcement learning (RL) has become a cornerstone of the post-training pipeline for large language models (LLMs), enabling capabilities such as complex reasoning and tool use. However, standard RL approaches face significant challenges due to reward sparsity. Moreover, LLMs typically exhibit mode-seeking behavior, concentrating probability mass on high-likelihood regions. This lack of diversity biases the model toward premature exploitation, hindering the exploration necessary for optimal learning. To address this, we propose VEG (verbal 𝜖 -greedy), a novel framework that leverages external feedback as a dynamic control variable to explicitly balance exploration and exploitation within the semantic space. This method not only supplements sparse final rewards with intermediate signals but also enforces sustained exploration throughout the training process. Experiments on Tau Bench and SearchQA demonstrate that our method achieves superior accuracy compared to standard RL baselines. Notably, the trained policy eventually outperforms the external feedback model itself, demonstrating that VEG enables the agent to effectively filter and improve upon the guidance it receives.
+
+## 23. x1: Learning to Think Adaptively Across Languages and Cultures
+
+- Authors: Yangfan Ye, Xiaocheng Feng, Xiachong Feng, Yichong Huang, Zekun Yuan, Lei Huang, Weitao Ma, Qichen Hong, Yunfei Lu, Dandan Tu, Bing Qin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.62712090738705
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.712/
+- PDF: https://aclanthology.org/2026.findings-acl.712.pdf
+- Local PDF: pdf/2026-10-14_23_x1_ Learning to Think Adaptively Across Languages and Cultures.pdf
+
+Languages encode distinct abstractions and inductive priors, yet most large language models (LLMs) overlook this diversity by reasoning in a single dominant language. In this work, we introduce x1, a family of reasoning models that can adaptively reason in an advantageous language on a per-instance basis. To isolate the effect of reasoning-language choice, x1 is constructed without expanding the model’s knowledge boundaries and is trained by contrasting linguistically distinct reasoning trajectories for the same input. Our extensive experiments demonstrate the benefits of adaptive multilingual reasoning across multilingual mathematical reasoning and culturally grounded tasks. Moreover, our results challenge a simplistic view of scaling laws: while scaling reduces cross-lingual disparities in procedural domains such as math reasoning, it does not eliminate the advantages of culture-associated languages in culturally grounded tasks, as we empirically show that such reasoning enables more efficient and accurate cultural knowledge recall. Overall, our findings establish language choice as a functional component of reasoning, with implications for building more generalist and globally competent reasoning models.
+
+## 24. Specialization without Sparsity: Efficient and Expressive Split-Path Experts for LLM Fine-Tuning
+
+- Authors: Ganghao Liu, Qin Zhou, Zhe Wang, Xuehan Lu, Haihua Huang, Yunfei Tong, Heng Tian
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6265768066301955
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.975/
+- PDF: https://aclanthology.org/2026.findings-acl.975.pdf
+- Local PDF: pdf/2026-10-14_24_Specialization without Sparsity_ Efficient and Expressive Split-Path Experts for LLM Fine-Tuning.pdf
+
+Parameter-efficient fine-tuning (PEFT) enables low-cost adaptation of large language models but often suffers from limited representational flexibility. To address this, we incorporate a Mixture-of-Experts (MoE) design and propose Efficient and Expressive split-path experts that enhance specialization while maintaining low resource overhead. Split-Path Adaptive Representation Mixture-of-Experts (SparMoE) replaces discrete hard routing with a soft routing and fully-activated mixture, enabling stable optimization. Each expert is parameterized as a split-path modulation module, consisting of a scaling path that promotes expert specialization and a bias path that preserves expert-specific signals. This design significantly enhances expressive capacity while maintaining strict parameter efficiency and architectural compatibility with PEFT. Extensive evaluations on GLUE, GSM8K, MBPP, and a text rewriting task from SmolTalk show that our approach consistently outperforms or matches state-of-the-art PEFT methods under comparable parameter budgets, achieving a favorable trade-off between adaptability and efficiency.
+
+## 25. WISCA: A Lightweight Model Transition Method to Improve LLM Training via Weight Scaling
+
+- Authors: Jiacheng Li, Jianchao Tan, Zhidong Yang, Pingwei Sun, Feiye Huo, Jiayu Qin, Xiangyu Zhang, Maoxin He, Guangming Tan, Weile Jia, Xunliang Cai, Tong Zhao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6263720557381474
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.79/
+- PDF: https://aclanthology.org/2026.findings-acl.79.pdf
+- Local PDF: pdf/2026-10-14_25_WISCA_ A Lightweight Model Transition Method to Improve LLM Training via Weight Scaling.pdf
+
+Transformer architecture gradually dominates the LLM field. Recent advances in training optimization for Transformer-based large language models (LLMs) primarily focus on architectural modifications or optimizer adjustments. However, these approaches lack systematic optimization of weight patterns during training. Weight pattern refers to the distribution and relative magnitudes of weight parameters in a neural network. To address this issue, we propose a Weight Scaling method called WISCA to enhance training efficiency and model quality by strategically improving neural network weight patterns—without changing network structures. By rescaling weights while preserving model outputs, WISCA indirectly optimizes the model’s training trajectory. Experiments demonstrate that WISCA significantly improves convergence quality (measured by generalization capability and loss reduction), particularly in LLMs with Grouped Query Attention (GQA) architectures and LoRA fine-tuning tasks. Empirical results show 5.6% average improvement on zero-shot validation tasks and 2.12% average reduction in training perplexity across multiple architectures.
+
+## 26. Differentially Private Synthetic Text Generation for Retrieval-Augmented Generation (RAG)
+
+- Authors: Junki Mori, Kazuya Kakizaki, Taiki Miyagawa, Jun Sakuma
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6263506879677676
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.62/
+- PDF: https://aclanthology.org/2026.findings-acl.62.pdf
+- Local PDF: pdf/2026-10-14_26_Differentially Private Synthetic Text Generation for Retrieval-Augmented Generation (RAG).pdf
+
+Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by grounding them in external knowledge. However, its application in sensitive domains is limited by privacy risks. Existing private RAG methods typically rely on query-time differential privacy (DP), which requires repeated noise injection and leads to accumulated privacy loss. To address this issue, we propose DP-SynRAG, a framework that uses LLMs to generate differentially private synthetic RAG databases. Unlike prior methods, the synthetic text can be reused once created, thereby avoiding repeated noise injection and additional privacy costs. To preserve essential information for downstream RAG tasks, DP-SynRAG extends private prediction, which instructs LLMs to generate text that mimics subsampled database records in a DP manner. Experiments show that DP-SynRAG achieves superior performance to the state-of-the-art private RAG systems while maintaining a fixed privacy budget, offering a scalable solution for privacy-preserving RAG.
+
+## 27. Apertus: Democratizing Open and Compliant LLMs for Global Language Environments
+
+- Authors: Alejandro Hernández-Cano, Alexander Hägele, Allen Hao Huang, Angelika Romanou, Antoni-Joan Solergibert, Barna Pásztor, Bettina Messmer, Dhia Garbaya, Eduard Frank Ďurech, Ido Hakimi, Juan Garcia Giraldo, Mete Ismayilzada, Negar Foroutan, Skander Moalla, Tiancheng Chen, Vinko Sabolčec, Yixuan Xu, Michael Aerni, Badr AlKhamissi, Inés Altemir Marinas, Mohammad Hossein Amani, Matin Ansaripour, Ilia Badanin, Harold Benoit, Emanuela Boros, Nicholas John Browning, Fabian Bösch, Maximilian Böther, Niklas Canova, Camille Challier, Clément Charmillot, Jonathan Coles, Jan Milan Deriu, Arnout Devos, Lukas Drescher, Daniil Dzenhaliou, Maud Ehrmann, Dongyang Fan, Simin Fan, Silin Gao, Miguel Gila, María Grandury, Diba Hashemi, Alexander Miserlis Hoyle, Jiaming Jiang, Mark Klein, Andrei Kucharavy, Anastasiia Kucherenko, Frederike Lübeck, Roman Machacek, Theofilos Ioannis Manitaras, Andreas Marfurt, Kyle Matoba, Simon Matrenok, Henrique Mendonça, Fawzi Roberto Mohamed, Syrielle Montariol, Luca Mouchel, Sven Najem-Meyer, Jingwei Ni, Gennaro Oliva, Matteo Pagliardini, Elia Palme, Andrei Panferov, Léo Paoletti, Marco Passerini, Ivan Pavlov, Auguste Poiroux, Kaustubh Ponkshe, Nathan Ranchin, Javier Rando, Mathieu Sauser, Jakhongir Saydaliev, Mukhammadali Sayfiddinov, Marian Schneider, Stefano Schuppli, Marco Scialanga, Andrei Semenov, Kumar Shridhar, Raghav Singhal, Anna Sotnikova, Alexander Sternfeld, Ayush Kumar Tarun, Paul Teiletche, Jannis Vamvas, Xiaozhe Yao, Hao Zhao, Alexander Ilic, Ana Klimovic, Andreas Krause, Caglar Gulcehre, David Rosenthal, Elliott Ash, Florian Tramèr, Joost VandeVondele, Livio Veraldi, Martin Rajman, Thomas C. Schulthess, Torsten Hoefler, Antoine Bosselut, Martin Jaggi, Imanol Schlag
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.6262464266209404
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.2172/
+- PDF: https://aclanthology.org/2026.acl-long.2172.pdf
+- Local PDF: pdf/2026-10-14_27_Apertus_ Democratizing Open and Compliant LLMs for Global Language Environments.pdf
+
+Open LLMs enable AI practitioners to control development costs by building on an existing foundation for downstream applications. While offering substantial promise, current models often fail to meet the needs of users needing open solutions aligned with responsible AI principles, including data compliance, transparency, and inclusivity. In this work, we present Apertus, a fully open suite of large language models (LLMs) designed to address responsibility shortcomings in today’s open model ecosystem, namely data responsibility and global representation. Unlike many prior models that release weights without reproducible data pipelines or regard for content-owner rights, Apertus models are pretrained exclusively on openly available data, retroactively respecting robots.txt exclusions and filtering for non-permissive, toxic, and personally identifiable content. To mitigate risks of data memorization, we also adopt the Goldfish objective during pretraining, strongly suppressing verbatim recall of data while retaining downstream task performance. Apertus also drastically expands multilingual coverage, training on 15T tokens from over approximately 1800 languages, with about 40% of pretraining data allocated to non-English content. Released at 8B and 70B scales, Apertus approaches state-of-the-art results among fully open models on multilingual benchmarks, rivaling or surpassing open-weight counterparts.
+
+## 28. How Training Data Shapes the Use of Parametric and In-Context Knowledge in Language Models
+
+- Authors: Minsung Kim, Dong-Kyum Kim, Jea Kwon, Nakyeong Yang, Kyomin Jung, Meeyoung Cha
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.625965103045071
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1064/
+- PDF: https://aclanthology.org/2026.acl-long.1064.pdf
+- Local PDF: pdf/2026-10-14_28_How Training Data Shapes the Use of Parametric and In-Context Knowledge in Language Models.pdf
+
+Large language models leverage both parametric knowledge acquired during pretraining and in-context knowledge provided at inference time. Crucially, when these sources conflict, models arbitrate based on their internal confidence, preferring parametric knowledge for high-confidence facts while deferring to context for less familiar ones. However, the training conditions that give rise to these fundamental behaviors remain unclear. Here we conduct controlled experiments using synthetic corpora to identify the specific data properties that shape knowledge utilization. Our results reveal a counterintuitive finding: the robust, balanced use of both knowledge sources is an emergent property that requires the co-occurrence of three factors typically considered detrimental, including (i) intra-document repetition, (ii) a moderate degree of intra-document inconsistency, and (iii) a skewed knowledge distribution. We further show that these dynamics arise in real-world language model pretraining and analyze how post-training procedures reshape arbitration strategies. Together, our findings provide empirical guidance for designing training data that supports the reliable integration of parametric and in-context knowledge in language models.
+
+## 29. Stabilizing Efficient Reasoning with Step-Level Advantage Selection
+
+- Authors: Han Wang, Xiaodong Yu, Jialian Wu, Jiang Liu, Ximeng Sun, Mohit Bansal, Zicheng Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.625894158142036
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1333/
+- PDF: https://aclanthology.org/2026.findings-acl.1333.pdf
+- Local PDF: pdf/2026-10-14_29_Stabilizing Efficient Reasoning with Step-Level Advantage Selection.pdf
+
+Large language models (LLMs) achieve strong reasoning performance by allocating substantial computation at inference time, often generating long and verbose reasoning traces. While recent work on efficient reasoning reduces this overhead through length-based rewards or pruning, many approaches are post-trained under a much shorter context window than base-model training, a factor whose effect has not been systematically isolated. We first show that short-context post-training alone, using standard GRPO without any length-aware objective, already induces substantial reasoning compression—but at the cost of increasingly unstable training dynamics and accuracy degradation. To address this, we propose Step-level Advantage Selection (SAS), which operates at the reasoning-step level and assigns a zero advantage to low-confidence steps in correct rollouts and to high-confidence steps in verifier-failed rollouts, where failures often arise from truncation or verifier issues rather than incorrect reasoning. Across diverse mathematical and general reasoning benchmarks, SAS reduces average reasoning length by over 30% while improving Pass@1 accuracy by 3.79 points over the strongest length-aware baseline, yielding a better accuracy–efficiency trade-off.
+
+## 30. Preventing Safety Drift in Large Language Models via Coupled Weight and Activation Constraints
+
+- Authors: Songping Peng, Zhiheng Zhang, Daojian Zeng, Lincheng Jiang, Xieping Gao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.625721721071371
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.874/
+- PDF: https://aclanthology.org/2026.findings-acl.874.pdf
+- Local PDF: pdf/2026-10-14_30_Preventing Safety Drift in Large Language Models via Coupled Weight and Activation Constraints.pdf
+
+Safety alignment in Large Language Models (LLMs) remains highly fragile during fine-tuning, where even benign adaptation can degrade pre-trained refusal behaviors and enable harmful responses. Existing defenses typically constrain either weights or activations in isolation, without considering their coupled effects on safety. In this paper, we first theoretically demonstrate that constraining either weights or activations alone is insufficient for safety preservation. To robustly preserve safety alignment, we propose Coupled Weight and Activation Constraints (CWAC), a novel approach that simultaneously enforces a precomputed safety subspace on weight updates and applies targeted regularization to safety-critical features identified by sparse autoencoders. Extensive experiments across four widely used LLMs and diverse downstream tasks show that CWAC consistently achieves the lowest harmful scores with minimal impact on fine-tuning accuracy, substantially outperforming strong baselines even under high harmful data ratios.
