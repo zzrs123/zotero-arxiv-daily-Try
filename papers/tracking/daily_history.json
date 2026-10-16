@@ -244,6 +244,13 @@
     "title": "DuraS2ST: Chain-of-Thought and Reinforcement Learning for Duration-Aligned Speech-to-Speech Translation",
     "url": "http://arxiv.org/abs/2609.33742v1"
   },
+  "title:dynthinkerunifyingstatic3danddynamic4dspatialreasoning": {
+    "doi": null,
+    "sent_date": "2026-10-16",
+    "source": "arxiv",
+    "title": "DynThinker: Unifying Static 3D and Dynamic 4D Spatial Reasoning",
+    "url": "http://arxiv.org/abs/2610.20598v1"
+  },
   "title:echochatstructuredcognitivereasoninginempatheticspokendialogue": {
     "doi": null,
     "sent_date": "2026-10-06",
@@ -789,6 +796,13 @@
     "source": "arxiv",
     "title": "Wavelet Flow Matching for Time Series",
     "url": "http://arxiv.org/abs/2609.39374v1"
+  },
+  "title:whichknowledgeshouldllmstrustuncoveringageneralizablesteeringdirectionacrossknowledgeconflicts": {
+    "doi": null,
+    "sent_date": "2026-10-16",
+    "source": "arxiv",
+    "title": "Which Knowledge Should LLMs Trust? Uncovering a Generalizable Steering Direction Across Knowledge Conflicts",
+    "url": "http://arxiv.org/abs/2610.20067v1"
   },
   "title:whichllmtopickonlineactivemodelselectionforlargelanguagemodels": {
     "doi": null,
