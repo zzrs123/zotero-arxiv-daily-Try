@@ -111,6 +111,13 @@
     "title": "BioM-JEPA: joint-embedding prediction of graph-connected gene blocks in single cells",
     "url": "http://arxiv.org/abs/2608.05928v1"
   },
+  "title:bishieldteeontheinsecurityofunilateralweightobfuscationinondeviceteeshieldedllmpartition": {
+    "doi": null,
+    "sent_date": "2026-10-17",
+    "source": "arxiv",
+    "title": "BiShield-TEE: On the (In-)Security of Unilateral Weight Obfuscation in On-Device TEE-Shielded LLM Partition",
+    "url": "http://arxiv.org/abs/2610.21565v1"
+  },
   "title:blackmirrorpublicsensemakingofaipoweredlifelogging": {
     "doi": "10.1145/3798063.3837138",
     "sent_date": "2026-09-30",
@@ -215,6 +222,13 @@
     "source": "arxiv",
     "title": "Decoupling Semantics and Geometric Grounding: Spatial Visual Prompts for Language-Conditioned Imitation Learning",
     "url": "http://arxiv.org/abs/2606.25360v1"
+  },
+  "title:dkvlmgeometryaspositionforspatialreasoninginvisionlanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-10-17",
+    "source": "arxiv",
+    "title": "DK-VLM: Geometry as Position for Spatial Reasoning in Vision-Language Models",
+    "url": "http://arxiv.org/abs/2610.22356v1"
   },
   "title:docantoneseadaptedlanguagemodelsbetterpredictcantonesereadingacrossmodeleyetrackingevaluation": {
     "doi": null,
@@ -426,6 +440,13 @@
     "title": "Information-Theoretic Adaptive Cooling for Deterministic MPPI via Entropy Feedback",
     "url": "http://arxiv.org/abs/2607.14245v1"
   },
+  "title:interfacesandmodulesascalablerepresentationforweightspacelearningacrossarchitectures": {
+    "doi": null,
+    "sent_date": "2026-10-17",
+    "source": "arxiv",
+    "title": "Interfaces and Modules: A Scalable Representation for Weight-Space Learning across Architectures",
+    "url": "http://arxiv.org/abs/2610.21995v1"
+  },
   "title:isrealworldtrainingdatanecessaryforgeneralistgraphanomalydetection": {
     "doi": null,
     "sent_date": "2026-10-09",
@@ -460,6 +481,13 @@
     "source": "arxiv",
     "title": "Maia 200: A Software Defined Dataflow System for Large-scale AI Acceleration",
     "url": "http://arxiv.org/abs/2608.24664v1"
+  },
+  "title:memorillalatentsemanticmemoryforllms": {
+    "doi": null,
+    "sent_date": "2026-10-17",
+    "source": "arxiv",
+    "title": "Memorilla: Latent Semantic Memory for LLMs",
+    "url": "http://arxiv.org/abs/2610.21375v1"
   },
   "title:metastructatlasagrounded3dvisionlanguagedatasetandbenchmarkforfunctionalandstructuralreasoninginwholebodypetct": {
     "doi": null,
