@@ -475,6 +475,13 @@
     "title": "Learning social norms enhances compatibility in dynamic human-AI coordination",
     "url": "http://arxiv.org/abs/2607.07021v1"
   },
+  "title:logitaveragingduringtrainingsetsanewstateoftheartfornoninvasivespeechbci": {
+    "doi": null,
+    "sent_date": "2026-10-21",
+    "source": "arxiv",
+    "title": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI",
+    "url": "http://arxiv.org/abs/2610.26347v1"
+  },
   "title:maia200asoftwaredefineddataflowsystemforlargescaleaiacceleration": {
     "doi": null,
     "sent_date": "2026-08-27",
@@ -544,6 +551,13 @@
     "source": "arxiv",
     "title": "P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning",
     "url": "http://arxiv.org/abs/2607.25541v1"
+  },
+  "title:parallellanguagemodelsviavariationaldecoding": {
+    "doi": null,
+    "sent_date": "2026-10-21",
+    "source": "arxiv",
+    "title": "Parallel Language Models via Variational Decoding",
+    "url": "http://arxiv.org/abs/2610.26693v1"
   },
   "title:pastanoisynodeclassificationwithpartiallabellearning": {
     "doi": null,
