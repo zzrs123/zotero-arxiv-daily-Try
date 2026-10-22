@@ -657,6 +657,13 @@
     "title": "Scopes equivalence for blocks of Ariki-Koike algebras",
     "url": "http://arxiv.org/abs/2608.11568v1"
   },
+  "title:seeingthroughdenoisingfrequencyguidedonestepdenoisingforinfraredsmalltargetdetection": {
+    "doi": null,
+    "sent_date": "2026-10-22",
+    "source": "arxiv",
+    "title": "Seeing through Denoising: Frequency-guided One-step Denoising for Infrared Small Target Detection",
+    "url": "http://arxiv.org/abs/2610.29361v1"
+  },
   "title:seopdselfevolvingllmsviaonlinepolicydistillationfromselfgeneratedchainofthought": {
     "doi": null,
     "sent_date": "2026-09-29",
@@ -838,6 +845,13 @@
     "source": "arxiv",
     "title": "Wavelet Flow Matching for Time Series",
     "url": "http://arxiv.org/abs/2609.39374v1"
+  },
+  "title:wheredoestimbrehidelocalizingspeakerinformationinspeechsignals": {
+    "doi": null,
+    "sent_date": "2026-10-22",
+    "source": "arxiv",
+    "title": "Where Does Timbre Hide? Localizing Speaker Information in Speech Signals",
+    "url": "http://arxiv.org/abs/2610.29150v1"
   },
   "title:whichknowledgeshouldllmstrustuncoveringageneralizablesteeringdirectionacrossknowledgeconflicts": {
     "doi": null,
