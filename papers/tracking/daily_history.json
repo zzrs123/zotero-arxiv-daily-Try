@@ -391,6 +391,13 @@
     "title": "Hardware-Aware Features for CUTLASS Kernel Selection",
     "url": "http://arxiv.org/abs/2609.35587v1"
   },
+  "title:harnessinglanguagemodelsasoptimizationmodelingagents": {
+    "doi": null,
+    "sent_date": "2026-10-23",
+    "source": "arxiv",
+    "title": "Harnessing Language Models as Optimization Modeling Agents",
+    "url": "http://arxiv.org/abs/2610.30917v1"
+  },
   "title:highdimensionalmultiobjectivebayesianoptimizationwithlearnedvariableinteractions": {
     "doi": null,
     "sent_date": "2026-08-13",
