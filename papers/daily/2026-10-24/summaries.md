@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-10-24
+
+## 1. NEST: Nested Embedding Representation for Multiscale Clustering
+
+- Authors: Zhanqi Zhang, Mikio Aoi, Gal Mishne
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-21
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.7451234821630894
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30520v1
+- PDF: https://arxiv.org/pdf/2610.30520v1
+- Local PDF: pdf/2026-10-24_01_NEST_ Nested Embedding Representation for Multiscale Clustering.pdf
+
+Real-world data often exhibits cluster structure at multiple resolutions, yet existing methods typically learn a single partition or construct an explicit hierarchy. Inspired by Matryoshka Representation Learning, we introduce NEST, an unsupervised framework that encodes coarse-to-fine structure within a single embedding. NEST jointly optimizes clustering and separation across nested prefix subspaces, enabling progressively finer distinctions as embedding dimensionality increases, with rank and within-cluster regularization that keep the embedding from collapsing. Empirically, distances in the learned embedding follow the hierarchy distance more closely than those of the input, although the hierarchy is never observed during training. On synthetic hierarchies, NEST recovers multiscale structure given only the number of clusters per level. Experiments on vision, text, and single-cell data further demonstrate multiscale organization across real-world representations. By making clustering granularity an intrinsic property of the representation, NEST provides a unified approach to multiscale structure discovery.
+
+## 2. Federated Graph Retrieval-Augmented Generation
+
+- Authors: Xiaobao Wang, Renda Han, Zhiliang Xia, Meng Liu, Renxiang Guan, Di Jin
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.5420609210601217
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30728v1
+- PDF: https://arxiv.org/pdf/2610.30728v1
+- Local PDF: pdf/2026-10-24_02_Federated Graph Retrieval-Augmented Generation.pdf
+
+Graph Retrieval-Augmented Generation (GraphRAG) leverages centralized knowledge graphs to enhance large language models with structured knowledge retrieval. However, real-world knowledge is inherently distributed across multiple organizations rather than being centrally accessible. Privacy constraints further prohibit sharing entire local knowledge graphs, preventing GraphRAG from effectively retrieving and utilizing distributed knowledge. To this end, we propose Federated GraphRAG (FedGRAG), a unified framework for distributed graph retrieval and knowledge-enhanced generation over multiple clients with knowledge graphs. Specifically, we address two fundamental challenges in federated GraphRAG. First, the absence of a global knowledge graph makes unified retrieval impossible. To address this, we develop a Federated Knowledge Routing mechanism that efficiently identifies relevant clients through lightweight knowledge indices without exposing local graph structures. Second, local graph memory cannot be shared directly because it contains sensitive entities and knowledge information. We therefore propose a controlled-disclosure evidence construction method. It extracts retrieved evidence subgraphs and converts them into an evidence abstract, enabling evidence conversion and reconstruction on the server. Extensive experiments demonstrate that Federated GraphRAG consistently outperforms existing baselines in both retrieval and downstream generation tasks, establishing a new paradigm for deploying GraphRAG in federated environments.
+
+## 3. Beyond Phenotypic Similarity: Relation Refinement and Selective Population Graph Learning for Multimodal Brain Disorder Diagnosis
+
+- Authors: Yinyu Lan
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.5148491342011994
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30902v1
+- PDF: https://arxiv.org/pdf/2610.30902v1
+- Local PDF: pdf/2026-10-24_03_Beyond Phenotypic Similarity_ Relation Refinement and Selective Population Graph Learning for Multimodal Brain Disorder.pdf
+
+Population graph learning supports brain disorder diagnosis by sharing information across subjects. Its effectiveness, however, depends on whether the relationships guiding this exchange are relevant to diagnosis. Similarity in demographic or acquisition attributes does not necessarily indicate diagnostic agreement, and heterogeneous subjects may require different representation updates within the same population graph. We propose PopDRP, a framework that combines diagnosis-guided relation refinement with hierarchical selective state-space learning. Using only training labels, Contrastive Affinity Refinement calibrates attribute-based affinities according to diagnostic agreement. Neural Graph Rectification then refines these relationships using fused functional-connectivity and non-imaging representations, guided by graph reconstruction and dual-view alignment objectives. On the resulting graph, a Selective Pyramid State-Space backbone integrates input-dependent state updates, graph diffusion, and hierarchical pooling and unpooling to learn population representations at multiple resolutions. Together, these components connect the refinement of inter-subject relationships with selective representation learning over the population graph. Experiments on ABIDE and ADHD-200 under stratified ten-fold cross-validation show improved accuracy and AUC over the compared baselines. Ablation studies further support the contributions of relation refinement and the selective hierarchical backbone to classification performance.
+
+## 4. When Forgotten Facts Return: Relearning-Aware Unlearning of Knowledge Graph Embeddings via Tangent Kernels
+
+- Authors: Parnian Fazel, Mohammad M Maheri, Hamed Haddadi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.3298284912774667
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31075v1
+- PDF: https://arxiv.org/pdf/2610.31075v1
+- Local PDF: pdf/2026-10-24_04_When Forgotten Facts Return_ Relearning-Aware Unlearning of Knowledge Graph Embeddings via Tangent Kernels.pdf
+
+Approximate unlearning answers a deletion request on a knowledge-graph embedding by editing entity embeddings instead of retraining from scratch. These embeddings keep being updated as new facts arrive. Under this ordinary continued training, forgotten facts recover more than in the exact-unlearning baseline, a model retrained without them and given the same continued training. We trace this relearning to entity embeddings shared by forgotten and new facts. To our knowledge, this is the first study of relearning in knowledge-graph embeddings. Relearning-robust methods developed for deep networks do not account for the graph structure underlying this recovery. We propose Kernel-Anticipated Unlearning (KAU), which uses the tangent kernel to model how continued training changes forgotten facts' scores through these shared parameters. KAU expresses this first-order response in closed form and differentiates through it inside the forgetting loss. The objective steers edits toward directions that continued training reverses less. We compare KAU with state-of-the-art knowledge-graph unlearners and relearning-robust methods under identical continued training, measuring leakage beyond the exact-unlearning baseline. Across three backbones, KAU reduces the strongest knowledge-graph unlearner's leakage by 46-63% on FB15k-237 and 50-82% on CoDEx-L, at higher retained utility.
+
+## 5. SurveyGraph: Generating Academic Surveys via Methods-Entity Knowledge Graphs
+
+- Authors: Yifan Yuan, Yancheng Zhu, Zuoyu Zhang, Xiaogang Peng
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, cs.IR
+- Relevance: 3.239219326813126
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31317v1
+- PDF: https://arxiv.org/pdf/2610.31317v1
+- Local PDF: pdf/2026-10-24_05_SurveyGraph_ Generating Academic Surveys via Methods-Entity Knowledge Graphs.pdf
+
+Most automated survey generation systems retrieve papers as flat documents, limiting their ability to capture research structure. We present SurveyGraph, a framework built around a Methods-Entity Knowledge Graph (MEKG) encoding method-level follow-on, competition, and shared-resource relations. The graph supports core-paper discovery, retrieval, hybrid outlining, and evidence-gated narrative synthesis. We evaluate retrieval, semantic edges, citation grounding, collection coverage, and generation-stage components. In a controlled seven-method equal-budget benchmark, MEKG-anchored fusion balances recall and structural density, with an independent co-citation check. In a separate archived graph-native diagnostic, graph-aware retrieval nearly doubles recall over flat lexical baselines across eight runs (p = 0.004). A semantic evidence gate achieves AUC = 0.75. Audits of 160 generated sentences find 80.6% anchored-or-partial citation support. Human adjudication of 108 stratified semantic edges finds 68.5% supported-or-partial relations (binary-support Cohen's kappa = 0.64), with improves strongest (80.6%) and extends weakest (52.8%). A SurveyBench-facing collection probe reaches mean reference coverage of 0.521 across four topics with an eight-paper budget. Same-backend Qwen diagnostics on a 30-paper/74-relation graph show reduced organization signals when hybrid outlining is removed. Concurrent-system comparisons provide bounded context rather than matched-backend end-to-end evidence. The results position MEKG as an auditable structural layer for typed diagnostics, relation-specific filtering, and controlled survey generation. Code and artifacts: https://github.com/xzzvsxd/SurveyGraph.
+
+## 6. Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference
+
+- Authors: Amirhossein Aghaei, Liangyan Li, Shiyi Yang, Shaohua Wang, Yan Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI, cs.IR
+- Relevance: 3.228850024118021
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30611v1
+- PDF: https://arxiv.org/pdf/2610.30611v1
+- Local PDF: pdf/2026-10-24_06_Better Reasoning, Not Just Bigger Models_ A Structure-Grounded Framework for Efficient and Reliable Inference.pdf
+
+Scaling large language models has substantially improved linguistic fluency, yet reliable autonomous agents require more than fluent generation. In multi-turn inference, current agentic systems often produce semantically plausible but structurally ungrounded reasoning, especially under incomplete observations. We propose Structure-Grounded Uncertainty Reduction (SGUR), a training-free framework that complements token-level generation with active uncertainty reduction over structured hypothesis spaces. SGUR represents incomplete observations as a query graph and aligns them with candidate hypothesis graphs through a prior-weighted partial graph matching mechanism, where database-derived empirical priors assign greater importance to decision-relevant relations rather than treating all graph edges uniformly. The resulting inference state is iteratively refined by an active information-gain strategy that selects the next most informative node to query, systematically pruning the candidate space. We instantiate SGUR on a challenging PrimeKG-derived sequential medical diagnosis benchmark, demonstrating that structural grounding can partially substitute for model scale: starting from only two observed symptoms, SGUR achieves 92.5% Hit@3, outperforming the strongest Graph-RAG baseline by 9.4 percentage points while using approximately 5x fewer tokens. Notably, SGUR enables smaller backbone models to match or exceed the performance of models up to 10x larger, suggesting that structural grounding provides a more robust and efficient paradigm for scaling agent performance than relying exclusively on increasing model size.
+
+## 7. Bridging the Data Gap: Source-Informed Task-Space Transport for Few-Shot Diffusion
+
+- Authors: Jinjian Jiang, Jing Peng, Rehan Deen, Yu Cao, Ziquan Liu, Muhammad Salman Haleem, David Mguni
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.1762486454489918
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31323v1
+- PDF: https://arxiv.org/pdf/2610.31323v1
+- Local PDF: pdf/2026-10-24_07_Bridging the Data Gap_ Source-Informed Task-Space Transport for Few-Shot Diffusion.pdf
+
+Many deployments require a model to move rapidly from a data-rich source to a related target observed only sparsely. This is especially consequential where target data are difficult to collect, as in healthcare settings with persistent population or acquisition imbalances. Retraining or fine-tuning a high-capacity generator for every target is costly and can be statistically unreliable when target data are scarce. We introduce Meta-Diff, which instead learns a recurring source--target relation once in a compact task space. A shared encoder maps each distribution to a low-dimensional coordinate; a learned relation transports a new source coordinate to its predicted target, and a shared diffusion backbone generates from that prediction without target-specific retraining. Controlled Gaussian-mixture experiments identify when this works: task identity must survive the representation, the relation must generalise across tasks, and the source--target shift must leave useful headroom for transport. On held-out CIFAR-100 validation tasks, correct source $+$ transport achieves 13.9% lower mean SW than transport from the wrong source. With validation-selected adaptation settings in the final-test one-target comparison, its mean SW is 14.7% lower than target-only modelling and 32.7% lower than full fine-tuning; the main route itself uses no target image and assumes the applicable relation is known. On matched CIFAR test episodes, generating from the clean-source coordinate and then applying the known corruption yields lower SW than task-space transport. Office-Home exposes a complementary boundary: transport can align target-domain statistics without reliable object identity. Together, these results recast extreme-few-shot adaptation as reusable transport in task space, while making the conditions for its success and failure directly measurable.
+
+## 8. When Reconstruction Is Not Enough: Doubly Robust Counterfactual and Interventional Mediation Analysis with Learned Multimodal Representations
+
+- Authors: Cong Cao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-21
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, stat.ME, stat.ML
+- Relevance: 3.0633123443457344
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30220v1
+- PDF: https://arxiv.org/pdf/2610.30220v1
+- Local PDF: pdf/2026-10-24_08_When Reconstruction Is Not Enough_ Doubly Robust Counterfactual and Interventional Mediation Analysis with Learned Multi.pdf
+
+Learned representations of high-dimensional multimodal health records are increasingly used to adjust for confounding, yet they are usually trained to reconstruct the data rather than preserve the information that causal identification requires. We study counterfactual outcomes under alternative treatments, including phenotype-specific effects and patient-level counterfactual risk profiles of the kind digital twins provide, and interventional direct and indirect effects under exposure-induced intermediate confounding. We give conditions under which a representation preserves identification and show that interventional mediation is more demanding than counterfactual comparison. We prove that no covariate-only training objective, whether reconstruction, contrastive, or physics-informed, can certify that a representation is sufficient, and that, in a linear structural model, a representation can lose arbitrarily little reconstruction accuracy yet induce arbitrarily large bias. We decompose the error of cross-fitted doubly robust estimators into a first-order representation bias, which neither double robustness nor cross-fitting removes, and a second-order remainder of nuisance-estimation errors, so coverage worsens as the sample size grows when the representation is insufficient. We propose a workflow combining modality-specific variational autoencoders trained outside the estimation sample, cross-fitted doubly robust estimators, locked phenotypes, select-then-confirm pathway analysis, portable representations, and diagnostics for representation insufficiency, exposure leakage, and sensitivity. In simulations, discarding a rare, moderately strong confounder gave indirect-effect intervals with 2% coverage at n = 3,000; reconstruction loss missed the problem, and a simple predictive diagnostic flagged it in every replicate.
+
+## 9. Trion-1: Unifying Language, Protein Sequence, and Structure with Diffusion Language Models
+
+- Authors: Tianyu Lu, Kaicheng Yang, Jiangtao Feng, Keyue Qiu, Yawen Ouyang, Yixin Wu, Xinbo Zhang, Lihao Wang, Wei-Ying Ma, Hao Zhou
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.022374316154226
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31215v1
+- PDF: https://arxiv.org/pdf/2610.31215v1
+- Local PDF: pdf/2026-10-24_09_Trion-1_ Unifying Language, Protein Sequence, and Structure with Diffusion Language Models.pdf
+
+We envision a general-purpose protein foundation model as a unified, interactive model of sequence, structure, and function, capable of understanding, generation, and cross-modal translation while retaining the instruction-following and reasoning capabilities of modern LLMs. Toward this vision, we introduce Trion-1, the first native, unified, multimodal diffusion language model (dLLM) for proteins. Trion-1 is built on two key design choices: (1) a unified discrete token space that jointly represents sequence, structure, and natural language; (2) a dLLM backbone that replaces strict left-to-right factorization with bidirectional or semi-bidirectional token interactions, enabling global residue communication and long-range contact modeling that are naturally suited to structure modeling. This formulation unifies six core capabilities: folding, inverse folding, sequence understanding, structure understanding, sequence design, and structure design, while retaining the native language capabilities of general-purpose LLMs. On established benchmarks, Trion-1 achieves broadly competitive performance. In folding, Trion-1 achieves a TM-score above 0.8 with a single sample under strict homology control, matching or exceeding the existing tri-modal model using 200 samples. For sequence understanding, Trion-1 performs on par with top-tier LLMs such as Claude Opus 4.7 (62.37%). These results support well-aligned sequence-structure-language representations and strong cross-modal generative capabilities.
+
+## 10. Same molecule, Different Knowledge: Cross-Identifier Binding Failures in LLMs For chemistry
+
+- Authors: Khouloud Saadi, Di Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.997252379288422
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30903v1
+- PDF: https://arxiv.org/pdf/2610.30903v1
+- Local PDF: pdf/2026-10-24_10_Same molecule, Different Knowledge_ Cross-Identifier Binding Failures in LLMs For chemistry.pdf
+
+Chemical AI workflows routinely represent the same molecule through multiple co-referring identifiers, including trivial names, IUPAC names, and SMILES, implicitly assuming that these representations provide interchangeable access to an LLM's knowledge. To test this assumption, we first introduce a controlled benchmark and show that it does not hold. Across foundation models spanning 7B to 72B parameters, even chemistry-specialized models, co-referring molecular identifiers consistently expose different subsets of the model's knowledge. We then conduct a series of controlled behavioral, representational, and causal analyses to characterize this failure. We show that even when a model can identify a molecule from its SMILES and retrieve a fact through the corresponding name, the same fact can remain inaccessible directly from SMILES. We term this phenomenon \emph{cross-identifier binding failure}. Further analysis of internal representations, conflicting identifiers, and parameter editing shows that neither improved chemical representation competence nor modification of individual facts is sufficient to establish reliable access across identifiers. Together, these results indicate that the core failure lies in the binding between an identifier and knowledge already present in the model. Motivated by this diagnosis, we introduce Binding Self-Distillation, a simple mitigation that uses lexical identity during training to transfer the model's existing knowledge access to the structural route. This enables factual retrieval directly from SMILES at inference time, without requiring a name lookup or training the underlying model from scratch.
+
+## 11. DConstrain: Compiling Context-Parameterized Transitions for Diffusion Language Model Constrained Decoding
+
+- Authors: Shidong Cao, Jing Ma, Wenhao Chai, Yuchen Tian, Lun Du, Da Zheng
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.992479779584108
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30920v1
+- PDF: https://arxiv.org/pdf/2610.30920v1
+- Local PDF: pdf/2026-10-24_11_DConstrain_ Compiling Context-Parameterized Transitions for Diffusion Language Model Constrained Decoding.pdf
+
+Diffusion language models (DLMs) decode multiple tokens in parallel, so individually valid tokens can be incompatible together under a schema. Exact joint inference over a grammar graph enforces compatibility, but it requires token-labeled successors across many hypothetical parser configurations. Encoding stacks and field histories in compiled states can cause exponential growth, which forces prior exact decoders to fix property orders and exclude valid outputs. We present DConstrain, which compiles schemas into context-parameterized transition programs. Cold compilation specializes token consumption to local grammar states while retaining context-dependent stack operations, environment guards, and caller-dependent deferred parsing symbolically. Tracking field histories as runtime values supports arbitrary property order without enumerating field subsets offline. At runtime, warm compilation binds reached configurations to these programs to construct exact successors, overlapping with the model forward pass because graph construction requires no model scores. Furthermore, token-effect grouping merges tokens with identical compiled effects before runtime contexts are bound, so groups are reused across stacks and environments even when concrete successors differ. Objective-specific score aggregation and token restoration provably preserve both the Viterbi optimum and the token-labeled path distribution of ungrouped inference. Across three benchmarks and two DLM families, DConstrain compiles 100% of BFCL schemas under arbitrary property orders, whereas an optimized finite-state baseline compiles only 71.30-85.81%. Under arbitrary property order, it reduces BFCL end-to-end decoding latency by 6.65-46.26 times with 100% schema validity and raises DiffusionGemma's BFCL accuracy from 37.27% under fixed order to 81.56%.
+
+## 12. Track finding and particle identification performance with particle physics foundation models
+
+- Authors: Shuhang Li, Haiwang Yu, Gabor Galgoczi, Yeonju Go, Yi Huang, David Park, Michael Peters, Christof Roland, Jin Huang, Yihui Ren, Joseph D. Osborn
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: physics.data-an, cs.LG, hep-ex, nucl-ex
+- Relevance: 2.930630280801323
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31180v1
+- PDF: https://arxiv.org/pdf/2610.31180v1
+- Local PDF: pdf/2026-10-24_12_Track finding and particle identification performance with particle physics foundation models.pdf
+
+Modern high energy nuclear and particle physics experiments produce large amounts of sparse data that must be reduced significantly in size before performing physics analysis. Recently, there has been an effort to evaluate Foundation Models as a potential tool for performing data analysis. These models have been shown to learn features in high dimensional datasets based on the multi-modal data they are trained on. To show their effectiveness at performing complex pattern recognition tasks, such as reconstructing charged particles in a magnetic field, we evaluated the performance of a Foundation Model based reconstruction on several downstream tasks with a dataset composed of spacepoints in a Time Projection Chamber. We show that the performance of the Foundation Model based data analysis significantly improves upon that of traditional methods, and furthermore can be adapted to learn additional tasks that are not necessarily related to the initial training objective.
+
+## 13. Learning Domain Trajectories with Flow Matching for Gradual Domain Adaptation
+
+- Authors: Yubo Huang, Yushe Cao, Zixi Wang, Jingzehua Xu, Xin Lai, Xiongyu Hu, Shuai Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.897873398047559
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30685v1
+- PDF: https://arxiv.org/pdf/2610.30685v1
+- Local PDF: pdf/2026-10-24_13_Learning Domain Trajectories with Flow Matching for Gradual Domain Adaptation.pdf
+
+Large distribution shifts remain a primary obstacle for domain generalization and unsupervised adaptation. Although gradual domain adaptation alleviates this difficulty by introducing ordered intermediate domains, most existing approaches still operate in a discrete, step-wise manner, which can accumulate errors and often relies on unstable Min--Max optimization. We propose \textbf{FlowGDA}, a flow-matching framework that models gradual adaptation as \emph{continuous} transport on a statistical manifold in a representation space. FlowGDA learns time-dependent velocity fields that induce smooth domain trajectories, using a simulation-free regression objective rather than adversarial training. To prevent semantic drift, we couple left-to-right transport between consecutive domains with a source-anchored transport and a semantic consistency loss, and we further stabilize learning via a two-stage sequential optimization scheme. Extensive experiments demonstrate that our method outperforms state-of-the-art techniques, validating flow matching as an effective alternative for domain adaptation.
+
+## 14. Meaning Contracts: Local Semantic Geometry in Large Language Models
+
+- Authors: Andrés Daniel Godoy Ortiz
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 2.8933477809176567
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30715v1
+- PDF: https://arxiv.org/pdf/2610.30715v1
+- Local PDF: pdf/2026-10-24_14_Meaning Contracts_ Local Semantic Geometry in Large Language Models.pdf
+
+This paper studies the local geometry of semantic meaning in large language models. Current representation analyses ask whether meanings are close in embedding space, or whether linear probes separate semantic classes, but they do not characterize the within-concept local geometry: what is invariant across realizations of a single semantic factor, what varies, and what changes when meaning is refined. This paper characterizes that geometry through two controlled probes evaluated on four architecturally diverse decoder-only LLMs (Gemma 4, Llama 3.2, Qwen 2.5, Pythia). A cross-lingual probe uses language as a perturbation to separate exact meaning matches, same-factor realizations, nearby concepts, and out-of-domain contrasts. A refinement probe separates specificity-bearing semantic narrowing from high-probability attributive elaboration and adversarial controls; both probes are validated by blind human judgments. Four findings recur across all models: under mean pooling, once dominant variance directions are removed, sentence pairs order by semantic relatedness (same factor, then same domain, then different domain) without overlap over a band of layers; semantic factors organize around an invariant core surrounded by structured realization-specific variation; refinement produces directed displacement into tighter neighborhoods, including against controls built on the same base noun; and sentence-level and token-local readouts expose complementary geometry (volume contraction at the sentence level, sharper anisotropic endpoints at token-local readout). We interpret these results as evidence that LLM semantics are organized as local anisotropic neighborhoods in which meaning contracts under refinement.
+
+## 15. Agentic Knowledge-Model Co-Evolution via Consistency Regularization
+
+- Authors: Sirui Chen, Zhining Liu, Chao Zhang, Jingrui He, Zheng Li
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.864822340436028
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30790v1
+- PDF: https://arxiv.org/pdf/2610.30790v1
+- Local PDF: pdf/2026-10-24_15_Agentic Knowledge-Model Co-Evolution via Consistency Regularization.pdf
+
+LLM agents can evolve by learning from accumulated experience. Existing approaches extract reusable external knowledge, such as skills and memories, from experience to guide subsequent task solving, with some further internalizing this knowledge through model training. However, different ways of analyzing and transforming the same experience can yield knowledge with substantially different utility, even when the resulting guidance appears reasonable. Inspired by consistency regularization, we identify consistent utility gains across different ways of analyzing the same experience, rather than relying on any single way of analyzing it. We introduce SPLICE, a framework for consistency-regularized knowledge-model co-evolution. It constructs evolution views by perturbing how the same experience is analyzed, producing different knowledge candidates. Knowledge updates are then guided by common gain, which accounts for utility gains and their consistency across views. During model evolution, self-distillation internalizes the evolved knowledge alongside reinforcement learning, using knowledge associated with consistent utility degradation as a contrastive reference. The two processes interleave, with model updates driving further knowledge evolution. Experiments across diverse domains show that SPLICE outperforms knowledge evolution and model training baselines by up to 7.1 and 4.6 points in average accuracy, while its evolved knowledge reduces output tokens per correct solution by up to 44% and transfers across model sizes and families.
+
+## 16. QProtFuse: Query-Guided Layer Fusion for Retrieval-Augmented Protein Function Prediction
+
+- Authors: Mianzhi Pan, Peishuo Liu, Yawen Ouyang, Botian Wang, Yiming Rong, Hao Zhou, Jianbing Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-19
+- DOI: Unavailable
+- Categories: cs.IR, q-bio.QM
+- Relevance: 2.859956347427458
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30180v1
+- PDF: https://arxiv.org/pdf/2610.30180v1
+- Local PDF: pdf/2026-10-24_16_QProtFuse_ Query-Guided Layer Fusion for Retrieval-Augmented Protein Function Prediction.pdf
+
+Predicting protein functions from amino acid sequences is essential to understanding biological processes. Large language models (LLMs) offer flexible function descriptions to natural-language queries, yet their limited protein understanding motivates retrieval-augmented generation (RAG). Existing protein RAG methods primarily expand external retrieval signals while overlooking the rich knowledge encoded within a single protein language model (PLM). We show that retrieval performance varies across PLM layers and biological tasks, making conventional final-layer selection suboptimal. To this end, we propose QProtFuse, which uses queries to adaptively fuse multi-layer protein features and jointly learns protein and annotation retrieval through intra-modal and cross-modal contrastive objectives. On Prot-Inst-OOD, QProtFuse achieves the best protein and annotation retrieval scores, reaching 16.4\% Recall@1 with annotation reranking. These gains improve downstream RAG-based function descriptions, yielding the highest LLM-as-a-judge scores for both Qwen3-8B (6.22/10) and DeepSeek-V4-Pro (6.68/10). Ablations and weight analyses demonstrate the value of query-guided fusion and complementary training objectives for exploiting a PLM's internal knowledge.
+
+## 17. Network topology shapes consensus and vulnerability in LLM populations
+
+- Authors: Roberto Passaro, Ariel Flint, Romualdo Pastor-Satorras, Andrea Baronchelli, Luca Maria Aiello
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: physics.soc-ph, cs.AI, cs.CY
+- Relevance: 2.8460074228194943
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31165v1
+- PDF: https://arxiv.org/pdf/2610.31165v1
+- Local PDF: pdf/2026-10-24_17_Network topology shapes consensus and vulnerability in LLM populations.pdf
+
+As large language models (LLMs) are deployed in interacting populations, their collective behaviour depends not only on the models but also on who interacts with whom. Studies of convention formation in LLM populations have mainly tested well-mixed interactions. We place policies extracted from four LLMs on fully connected, random regular, and heterogeneous networks, with $10^3$ to $10^5$ agents playing the naming game. Topology affects how quickly consensus emerges, sometimes whether it emerges at all, and, in rare cases, which convention wins. Sparsest networks slow consensus up to twelvefold. Yet, by preserving correlations between persistent neighbours, they restore consensus in some cases that fail to converge under well-mixed interactions. Networks also govern vulnerability to adversarial attack. We measure the critical mass of committed agents needed to overturn an established convention. Tipping thresholds follow the same ordering across models and conditions: hubs $\leq$ random $\leq$ low-degree nodes. On the most heterogeneous topology, median critical masses are 3%, 16%, and 35%, respectively; targeting hubs requires one-sixth as many committed agents as random placement. For most models, networked populations are easier to tip than well-mixed ones, so well-mixed estimates can overstate robustness. Assessing the safety of multi-agent AI requires mapping who interacts with whom.
+
+## 18. SetCommit: Coordinated Token Commitments for Few-Step Diffusion Language Model Decoding
+
+- Authors: Yuannuo Feng, Yubing Ye, Wenshuai Yao, Yizhe Chen, Ngai Wong, Wenyong Zhou, Wang Kang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.845324230091841
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31120v1
+- PDF: https://arxiv.org/pdf/2610.31120v1
+- Local PDF: pdf/2026-10-24_18_SetCommit_ Coordinated Token Commitments for Few-Step Diffusion Language Model Decoding.pdf
+
+Diffusion language models generate multiple token positions in parallel, but few-step decoding makes parallel commitment difficult: tokens that appear reliable individually may be jointly inconsistent, while premature commitments can prevent later context-dependent refinement. In this paper, we introduce SetCommit, a training-free method for coordinated parallel token commitment. Instead of selecting tokens independently by confidence, SetCommit selects a commitment set that balances token reliability against local joint commitment risk, preserving conditioning opportunities for subsequent denoising steps. It further performs budget-neutral local exchanges, replacing vulnerable earlier commitments when newly revealed context supports more reliable alternatives. SetCommit requires no retraining or architectural modification and is compatible with existing diffusion decoding strategies. Experiments with LLaDA-8B and Dream-7B on GSM8K, MATH-500, MBPP, and HumanEval show accuracy/pass@1 gains of up to 7.4 percentage points over native decoding at 32 model evaluations. At common quality targets, geometric-mean incremental speedups range from $1.44$ to $1.74\times$. Code is available at https://github.com/Kissmetothemoon/SetCommit.
+
+## 19. Route-and-Generate: KL-Regularized Router Improvement for Reasoning Routing in LLMs
+
+- Authors: Tien-Phat Nguyen, Truong Nguyen, Thanh-Thien Le, Hoang Phan, Thien Huu Nguyen, Linh Ngo Van, Trung Le
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-21
+- DOI: Unavailable
+- Categories: cs.AI, cs.LG
+- Relevance: 2.8438060813407207
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30351v1
+- PDF: https://arxiv.org/pdf/2610.30351v1
+- Local PDF: pdf/2026-10-24_19_Route-and-Generate_ KL-Regularized Router Improvement for Reasoning Routing in LLMs.pdf
+
+Large language models often apply complex reasoning indiscriminately, leading to overthinking on simple tasks and underthinking on harder ones. We present Route-and-Generate (Rouge), a hierarchical training framework that enables LLMs to adaptively decide when and how much reasoning is required for each input. Our approach decouples reasoning effort allocation from answer generation by introducing a routing policy that allocates a fixed sampling budget across multiple reasoning formats, while the base model is optimized with GRPO using per-sample rewards. To promote efficient reasoning, we employ a rank-based reward that favors shorter correct solutions, and update the routing policy via a closed-form KL-regularized policy improvement step distilled into a neural router. This design encourages concise answers on easy problems while reserving longer reasoning for harder ones, achieving improved accuracy-efficiency trade-offs across multiple reasoning benchmarks.
+
+## 20. RoleFlow: Self-Evolving Multi-Role Agentic Collaboration via Structural Adaptation
+
+- Authors: Yi Ge, Pan Wang, Xuehao Cui, Zian Zeng, Xu Hu, Heng Huang, Furong Huang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-21
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.835406908328694
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30429v1
+- PDF: https://arxiv.org/pdf/2610.30429v1
+- Local PDF: pdf/2026-10-24_20_RoleFlow_ Self-Evolving Multi-Role Agentic Collaboration via Structural Adaptation.pdf
+
+Large language model (LLM) based multi-agent systems often rely on predefined collaboration structures, limiting their adaptability to evolving task requirements. Although recent approaches enable dynamic orchestration, trajectory-level rewards they apply assign one outcome to each decision, ofen struggling to identify the contributions of individual structural changes. We propose RoleFlow, a self-evolving multi-role agentic system that refines collaboration structures through feedback-driven atomic edits and on-demand role synthesis. To make structural adaptation learnable, we introduce Single-Edit Counterfactual Policy Optimization (SECPO), which evaluates each edit against its no-edit counterpart at the same chain state and assigns targeted credit to edit-specific tokens. Across seven benchmarks spanning four domains, RoleFlow achieves the optimal average performance, surpassing the strongest competitor by 4.7 points. It leads on all three multi-hop QA benchmarks by 3.2-7.5 F1 points and also shows supremacy on mathematical reasoning, web interaction, and code generation. Further analyses demonstrate cross-benchmark transferability, training-data efficiency, and cross-executor generalization.
+
+## 21. Direct Forcing: A Single-Stage Training Recipe for Few-Step Autoregressive Text-to-Video Generation
+
+- Authors: Haojun Xu, Jie Huang, Xin Lu, Mingchen Zhong, Zihao Fan, Linjiang Huang, Si Liu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 2.8330007536654023
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30861v1
+- PDF: https://arxiv.org/pdf/2610.30861v1
+- Local PDF: pdf/2026-10-24_21_Direct Forcing_ A Single-Stage Training Recipe for Few-Step Autoregressive Text-to-Video Generation.pdf
+
+Few-step autoregressive video generation enables low-latency streaming, yet prevailing training pipelines separate causal adaptation from distribution matching. Recent representation-based text-to-video methods retain this separation by starting from ODE-initialized checkpoints, even when the target distribution is defined directly by reference videos. We introduce Direct Forcing, a single-stage framework that uses reference videos both as paired examples of how a history continues and as a target population for self-generated rollouts. Causal Continuation Alignment learns paired spatiotemporal correspondence under reference histories, while Rollout Distribution Matching uses maximum mean discrepancy to align the representation distributions of self-generated and reference videos. Together, these complementary signals allow a pretrained video model to learn causal continuation and the target video distribution in a single training stage. Dynamic Gradient Balancing adapts the relative gradient contributions of continuation alignment and distribution matching during training. Starting from bidirectional Wan2.1-1.3B, Direct Forcing learns a four-step autoregressive generator in 250 updates without a separate initialization stage or online diffusion-score supervision, achieving 84.63 VBench Total and 86.01 Quality. Ablation studies further demonstrate the benefits of dynamic gradient balancing and reveal distinct representation preferences: deeper features benefit continuation alignment, whereas intermediate features yield better performance for rollout distribution matching.
+
+## 22. Predictable performance is suboptimal, and what it means for model routing
+
+- Authors: Guanhua Zhang, Moritz Hardt
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 2.829917176918327
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31428v1
+- PDF: https://arxiv.org/pdf/2610.31428v1
+- Local PDF: pdf/2026-10-24_22_Predictable performance is suboptimal, and what it means for model routing.pdf
+
+Large language models (LLMs) differ in capabilities and costs, motivating routing methods that adaptively choose a model for each query. These methods rely on performance prediction: given a query, estimate whether a model will answer it correctly. Most routing methods train separate predictors of candidate models' performance to guide model selection. Our work shows that performance prediction only beats a simple baseline when the candidate model is suboptimal on the task or the performance predictor adds significant capacity relative to the candidate model. Specifically, we take a model's self-confidence, the probability it assigns to its chosen answer, as a baseline and study how much a performance predictor can improve on it. First, we show that any performance predictor that outperforms a model's self-confidence can be used to improve the model's loss: the predictor's advantage transfers exactly in log loss through recalibration. Second, accounting for the predictor's additional parameters, we bound its advantage by the model's suboptimality plus the gain from those parameters. Third, we extend our theoretical results to two-model cascades, which route queries to a more capable model when the first model is predicted to fail. Experiments with 16 language models on four benchmarks show that predictors gain a larger advantage over self-confidence on more suboptimal models. This advantage shrinks as models improve through finetuning. Cascading exhibits the same two patterns: predictor-based routing offers larger gains over confidence-based routing for more suboptimal models, and these gains diminish after finetuning.
+
+## 23. SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs
+
+- Authors: Arnon Mazza, Elad Levi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI, cs.CL
+- Relevance: 2.82062477431765
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31062v1
+- PDF: https://arxiv.org/pdf/2610.31062v1
+- Local PDF: pdf/2026-10-24_23_SCOPE_ Compiling Natural-Language Policies into Neurosymbolic Predicate Programs.pdf
+
+Policy enforcement for LLM agents has shifted from single-turn content moderation to compound, application-specific policies evaluated over multi-turn transcripts and tool-call trajectories. Fine-tuned guardrail models are efficient but degrade on compound policies, and while LLM-as-a-judge approaches achieve higher accuracy, they incur high inference cost and tend to produce unstable predictions. Neurosymbolic methods offer a natural alternative, decomposing the policy into narrow neural decisions composed under explicit logic. However, existing symbolic layers lack the required expressiveness and are optimized against fixed data rather than the policy itself. To address this, we introduce SCOPE, which compiles a policy into an executable program of neural predicates executed by small models, deterministic extractors, and code that composes their outputs. The program is optimized jointly with its training data, using adversarial generation of counterexamples that target where the program deviates from the policy. We evaluate SCOPE on a benchmark of real-world policy tasks against prompt optimization, task decomposition, and workflow generation methods, achieving the highest average accuracy across tasks and models. Programs optimized with the weakest executor transfer to other models without further optimization. This allows them to be deployed in production on inexpensive models, where they reach accuracy comparable to frontier reasoning models. Unlike these monolithic models, SCOPE produces substantially more stable predictions, and each verdict is interpretable through the predicate outputs that produced it. Additionally, we validate the key components of our method through an ablation study. SCOPE thus enables reliable, interpretable, and efficient policy enforcement at production scale.
+
+## 24. Flow-based Spectral Kernel Learning for Nonstationary Attention
+
+- Authors: Zi Yang, Ying Li, Alejandro Lancho, Darío C. Larese, Pablo M. Olmos, Michael Minyi Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-21
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG
+- Relevance: 2.81981507138323
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30465v1
+- PDF: https://arxiv.org/pdf/2610.30465v1
+- Local PDF: pdf/2026-10-24_24_Flow-based Spectral Kernel Learning for Nonstationary Attention.pdf
+
+Kernelized attention provides a useful perspective for understanding self-attention as a similarity-based aggregation mechanism, but existing approaches often rely on fixed or stationary kernels, limiting their ability to adapt the similarity structure to complex token interactions. In this paper, we propose flow-based spectral kernel attention (FSKA), a framework for learning expressive nonstationary attention kernels. FSKA formulates kernelized attention through spectral density learning and parameterizes the resulting bivariate spectral density with normalizing flows. This design enables flexible and regularizable kernel learning while remaining compatible with scalable linear-attention computation. We further show that expressive kernel learning enables a simplified attention design with removed query--key projections and fixed orthogonal value projections, resulting in a more parameter-efficient architecture. Controlled experiments on classification, ablation, and scalability profiling show that FSKA achieves competitive or improved performance over existing attention mechanisms, while reducing projection-related trainable parameters by approximately $40\%$--$47\%$ compared with most baselines and maintaining favorable linear-attention memory scaling. Code Available: https://github.com/ziyang18/FSKA.
+
+## 25. SciFusion: Physics-Guided Compositional Diffusion for Multimodal 3D Scientific Image Generation
+
+- Authors: Luoxi Wang, Alessio Quercia, Hanno Scharr, Arya Bangun
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-21
+- DOI: Unavailable
+- Categories: eess.IV, cs.LG
+- Relevance: 2.8087800201469952
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30313v1
+- PDF: https://arxiv.org/pdf/2610.30313v1
+- Local PDF: pdf/2026-10-24_25_SciFusion_ Physics-Guided Compositional Diffusion for Multimodal 3D Scientific Image Generation.pdf
+
+Existing 3D generative approaches are typically developed for individual imaging modalities, requiring substantial modality-specific data and limiting their ability to exploit shared structure across scientific imaging domains. We present SciFusion, a multimodal framework for unified 3D scientific image generation built on a latent diffusion backbone, with two key contributions. First, we introduce a compositional conditioning scheme that factorizes each modality into domain, object, and contrast representations. Sharing these factors across related modalities enables knowledge transfer across heterogeneous imaging domains and allows the factors to be recombined at inference time to synthesize unseen domain-object-contrast compositions in a zero-shot manner. Second, we incorporate domain-specific physics-informed objectives: Fourier spectral consistency for MRI, Radon projection consistency for CT, and multislice diffraction consistency for electron microscopy, to encourage generated samples to respect modality-dependent image formation processes. Extensive experiments across 15 medical and scientific imaging modalities demonstrate that SciFusion improves generation fidelity and cross-domain generalization over modality-specific and flattened multimodal conditioning strategies, while enabling zero-shot synthesis of unseen compositions without training on those target compositions. These results demonstrate that compositional, physics-guided conditioning provides a scalable framework for unified 3D scientific image generation, particularly for emerging modalities where large-scale training data are difficult to obtain.
+
+## 26. Rethinking Sequence Compression with Test-time Regression
+
+- Authors: Sihan Yang, Jie Huang, Hanxuan Li, Yifan Guo, Weigao Sun, Yiran Zhong, Weiyang Liu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.801171844597846
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31574v1
+- PDF: https://arxiv.org/pdf/2610.31574v1
+- Local PDF: pdf/2026-10-24_26_Rethinking Sequence Compression with Test-time Regression.pdf
+
+Sequence compression is a fundamental operation and a critical information bottleneck in efficient language and multimodal models, and yet prevailing approaches based on pooling or learned projections remain underperforming. We revisit sequence compression through the lens of test-time regression: input tokens define a regression problem whose fitted coefficients form the compressed representation. Importantly, the regression problem is learned end-to-end via backpropagation, while its coefficients are computed efficiently in closed form during the forward pass. This leads to TTR-Compressor, a general alternative to conventional pooling and projection-based compression. We evaluate TTR-Compressor as the compressor for block-wise sparse attention and the visual token merger for multimodal large language models. On block-wise sparse attention, TTR-Compressor improves RULER performance over attention-based compressors by a large margin. For visual token merging, it consistently outperforms the standard MLP merger and matches its performance with 55.6% fewer visual tokens. These results establish test-time regression as an effective primitive for sequence compression in efficient language and multimodal models.
+
+## 27. ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling
+
+- Authors: Yang Liu, Zhiqiang Yuan, Shu-Dong Huang, Jiancheng Lv, Liwei Yang, Qiwei Yan, Kailin Lv, Jinchao Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 2.7821921998587795
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30705v1
+- PDF: https://arxiv.org/pdf/2610.30705v1
+- Local PDF: pdf/2026-10-24_27_ULME_ Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling.pdf
+
+Text embedding and text generation are two of the most useful capabilities of modern large language models, yet they are typically provided by separate specialized models (an embedder and a generator) trained with incompatible objectives and deployed side by side in retrieval-augmented generation and agent systems. Recent unified embedding-generation models such as GritLM share parameters between the two capabilities, but they either switch attention regimes between modes or optimize embedding and language modeling as parallel objectives that never supervise each other. We argue that these designs are only partially unified: the two capabilities coexist on the same weights, but do not shape each other. We propose ULME, a post-training framework that unifies embedding and language modeling on a causal decoder-only LLM through predictive coupling. ULME inserts a chain of learnable slots between the query and the answer, reads a semantic embedding and a reasoning embedding from two designated slots, and trains three objectives on a shared causal backbone: a contrastive loss anchoring the semantic slot to document representations, a language-modeling loss supervising answer generation, and a stop-gradient predictive loss that aligns the reasoning slot with a pooled summary of the answer, so that generation actively shapes what the embedding encodes. Across two model families (Qwen2.5, Qwen3) and eight scales spanning 0.5B-8B parameters, a single ULME checkpoint improves MTEB by 3.3-4.1 points over the strongest open-source baseline, tightens BRIGHT and AdvBench-IR simultaneously, and remains on par with a generation-only fine-tune on standard accuracy benchmarks (MMLU, GSM8K, MMLU-Pro, HumanEval), demonstrating that genuine unification yields mutually reinforcing rather than merely coexisting capabilities.
+
+## 28. GIFT: Gradient Informed Filtering for Distillation Augmented Reasoning RL
+
+- Authors: Shijie Li, Yilin Gao, Tieyuan Chen, Yun Luo, Weiyao Lin, Hang Yu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.7523932790327748
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30796v1
+- PDF: https://arxiv.org/pdf/2610.30796v1
+- Local PDF: pdf/2026-10-24_28_GIFT_ Gradient Informed Filtering for Distillation Augmented Reasoning RL.pdf
+
+Training large language models for complex reasoning tasks relies on two complementary signals: sparse, outcome-grounded reinforcement learning (RL) for correctness, and dense, token-level distillation for guidance. However, complementarity in supervision does not guarantee compatibility in optimization; imitation-focused distillation can conflict with the outcome-driven RL objective, and existing hybrids lack a principled resolution. We propose \textbf{GIFT} (\textbf{G}radient-\textbf{I}nformed \textbf{F}il\textbf{T}ering for Distillation-Augmented Reasoning RL), a novel method that directly addresses the allocation problem of which teacher updates to apply. GIFT performs a token-level geometric analysis, decomposing the distillation gradient into a component \textbf{parallel} to the RL gradient, which measures first-order conflict and provides a \textbf{safety} filter, and a component \textbf{orthogonal} to it, which quantifies novel directional guidance and provides a measure of \textbf{value}. This decomposition yields a principled scoring rule to rank token-level guidance. We combine this with a progressive \textbf{coverage annealing} schedule that shrinks the budget of tokens receiving distillation, ensuring that the most conflicting updates are discarded first while the most complementary ones are retained at full strength. This facilitates a smooth transition from dense, geometrically-filtered guidance to a pure, outcome-grounded objective at convergence. Extensive experiments on mathematical and logical reasoning benchmarks show that GIFT consistently outperforms strong baselines across multiple model scales, achieving relative gains of up to 9.5\% on difficult mathematical reasoning tasks. Code: https://github.com/lilifree/GIFT
+
+## 29. Harnessing Language Models as Optimization Modeling Agents
+
+- Authors: Yunxiang Luo, Xin Xu, Tianhao Chen, Zhixi Xiong, Peiqi Jiang, Fan Zhang, Wei Shao, Xuejian Gao, Yuwei Fan, Can Yang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.739502341986075
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.30917v1
+- PDF: https://arxiv.org/pdf/2610.30917v1
+- Local PDF: pdf/2026-10-24_29_Harnessing Language Models as Optimization Modeling Agents.pdf
+
+Large language models (LLMs) can translate natural-language optimization problems into solver programs, but reliably producing correct formulations and implementations remains challenging. Existing approaches improve optimization modeling through agentic workflows or task-specific post-training. This raises a practical question: can a lightweight harness using a single model role achieve competitive performance without additional training? We introduce OPTICYCLE and OPTISTATE, two lightweight inference harnesses for optimization modeling, and evaluate them on nine benchmarks comprising 2,634 problems using 11 Qwen variants spanning 0.6B-27B parameters. Our results show that execution-guided revision consistently improves macro accuracy over direct generation for all evaluated models, with gains of up to 49.46 percentage points. Despite their simplicity, both harnesses outperform six adapted agentic workflows in same-model comparisons and four evaluated post-trained optimization models at comparable model sizes, without additional training. Explicit formulation state provides further but model-dependent improvements, suggesting that additional structure is not universally beneficial.
+
+## 30. Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models
+
+- Authors: Ofek Avivi, Eliron Rahimi, Avi Mendelson, Chaim Baskin
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-22
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.7366187852988566
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.31198v1
+- PDF: https://arxiv.org/pdf/2610.31198v1
+- Local PDF: pdf/2026-10-24_30_Different Tasks, Different Timesteps_ Temporal Task-Aware Quantization for Diffusion Language Models.pdf
+
+Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.
