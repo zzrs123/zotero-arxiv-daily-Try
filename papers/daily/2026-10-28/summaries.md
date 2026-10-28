@@ -1,0 +1,636 @@
+# Paper Daily Reading - 2026-10-28
+
+## 1. Biology-Guided Context-Aware Residual Propagation for Spatial Gene Expression Prediction from Histology
+
+- Authors: Vu Van An, Long D. Nguyen, Ho Viet Duc Luong, Binh P. Nguyen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.728059724184641
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35167v1
+- PDF: https://arxiv.org/pdf/2610.35167v1
+- Local PDF: pdf/2026-10-28_01_Biology-Guided Context-Aware Residual Propagation for Spatial Gene Expression Prediction from Histology.pdf
+
+Spatial transcriptomics provides spatially resolved molecular profiling, but its cost, limited throughput and experimental complexity hinder routine large-scale use. Predicting spatial gene expression from hematoxylin-and-eosin-stained histology images offers a scalable alternative, yet remains challenging because histology provides only an indirect morphological view of molecular activity. Existing methods typically decode expression from visual features in a single stage, even when enhanced with spatial aggregation, retrieval or multi-resolution fusion. This formulation is restrictive because spot-level expression reflects not only local morphology but also cellular identity, neighborhood composition and tissue-level organization. We propose BCARP, a Biology-guided Context-Aware Residual Propagation framework for histology-guided spatial transcriptomics prediction. Instead of directly predicting gene expression from histology embeddings, BCARP treats them as morphology visual priors and progressively refines spot representations in a transcriptomics-oriented latent space. Each refinement step integrates nuclei-guided local cellular context with prototype-guided global context propagation, enabling information exchange across both neighboring and spatially distant spots. A pattern-scale decoder further separates spatial expression into pattern prediction from raw expression with scale calibration. Evaluated on three ST datasets and ten HEST-1k cohorts, BCARP achieves the highest mean correlation-based performance against other baselines. Numerical results support biology-guided local-global residual propagation as an effective alternative to visual decoding for histology-to-transcriptomics prediction.
+
+## 2. MOSAIC: Towards a Universal Latent Space for Computational Pathology Foundation Models
+
+- Authors: Dibaloke Chanda, Praveen Madiraju
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-19
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.727194601804622
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33059v1
+- PDF: https://arxiv.org/pdf/2610.33059v1
+- Local PDF: pdf/2026-10-28_02_MOSAIC_ Towards a Universal Latent Space for Computational Pathology Foundation Models.pdf
+
+Pathology foundation models (PFMs) differ substantially in architecture, pretraining objective, training data and representation dimensionality, yet it remains unclear whether they learn fundamentally different feature spaces or alternative coordinate systems of a shared underlying representation. We present MOSAIC, a systematic study of latent-space similarity, alignment and interoperability across $12$ patch-level and $6$ slide-level PFMs. We first quantify representational agreement using complementary similarity measures and analyze how architecture, pretraining objective, network depth and magnification influence latent geometry. We then evaluate multiple alignment strategies for mapping independently learned representations into a common latent space. The resulting representations are evaluated through cross-model agreement, retrieval, geometry preservation, and downstream multiple-instance learning across molecular and morphological prediction tasks. MOSAIC provides a unified framework for studying whether heterogeneous PFMs can move beyond representational similarity toward a shared and functionally transferable pathology representation space. Our code, benchmarks and additional results are available at https://researchsubmissions66.github.io/MOSAIC/.
+
+## 3. Multiscale Topology-Regulated Nonlinear Dynamics for Protein B-Factor Prediction and Single-Cell Type Classification
+
+- Authors: Zihan Wang, Mushal Zia, Xiaoqi Wei, Li Shen, Jian Jiang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-24
+- DOI: Unavailable
+- Categories: q-bio.QM
+- Relevance: 3.6707291466242737
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33727v1
+- PDF: https://arxiv.org/pdf/2610.33727v1
+- Local PDF: pdf/2026-10-28_03_Multiscale Topology-Regulated Nonlinear Dynamics for Protein B-Factor Prediction and Single-Cell Type Classification.pdf
+
+Protein B-factor prediction and single-cell type classification are important for characterizing structural variability and cellular heterogeneity, with applications in biological function analysis and drug discovery. However, static geometric descriptors do not directly capture how multiscale connectivity shapes responses to local perturbations. Here, we introduce multiscale graph-coupled Burgers response learning (MGCBRL), a framework integrating algebraic topology and nonlinear dynamics to construct predictive biological representations. Specifically, a filtration converts protein coordinates or cellular principal component scores into weighted graphs at ten neighborhood scales. Independent unit impulses initiate node-specific responses governed by nonlinear Burgers dynamics. Statistical summaries or sampled source-node trajectories then encode the influence of structural neighborhoods on transient signal evolution. The simulated responses serve as computational probes rather than models of biological motion. For cross-protein prediction, multiscale response statistics are combined with spectral perturbation descriptors measuring changes in Laplacian spectra after node removal. For single-cell classification, principal component scores augment these features to retain explicit expression-space information, and the resulting descriptors support downstream supervised learning. Across 104 proteins and 13 single-cell datasets, MGCBRL achieved configuration-selected mean scores of 0.888 for within-protein Pearson correlation and 0.950 for transductive cell classification balanced accuracy, with leave-one-protein-out mean correlations of 0.496-0.558. Our framework provides a shared strategy for transforming multiscale biological connectivity into informative response descriptors, supporting predictive analysis of protein structures and transcriptomic profiles.
+
+## 4. UniGFM-RAG: Unify Graph Foundation Models and Large Language Models for End-to-End Retrieval and Reasoning
+
+- Authors: Zicheng Zhao, Linhao Luo, Zongji Yu, Junnan Dong, Yanchao Tan, Shirui Pan, Chen Gong
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.465295031823219
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.34866v1
+- PDF: https://arxiv.org/pdf/2610.34866v1
+- Local PDF: pdf/2026-10-28_04_UniGFM-RAG_ Unify Graph Foundation Models and Large Language Models for End-to-End Retrieval and Reasoning.pdf
+
+Large Language Models (LLMs) have shown remarkable capabilities across tasks, but they still struggle with complex reasoning that requires integrating scattered knowledge. Graph Retrieval-Augmented Generation (GraphRAG) addresses this challenge by organizing fragment knowledge as graphs, while recent Graph Foundation Models (GFMs) further improve GraphRAG with graph-native retrieval and reasoning capabilities. However, existing GraphRAG methods usually adopt decoupled retrieve-then-generate pipelines, which create objective misalignment between retrieval and reasoning, and training GFM retrievers typically depends on expensive human annotations. To address these limitations, we propose \ourmethod, a unified end-to-end GraphRAG framework that tightly couples a GFM retriever with an LLM generator. Given a query, the GFM retriever first reasons over the graph to score and retrieve relevant document nodes. These node embeddings are then passed through a fully differentiable graph bridge, which projects them into soft-weighted graph prefixes according to retrieval scores and combines them with raw document texts to form graph-augmented prompts. In this way, structural information is injected directly into LLM generation, while the final answer loss can be back-propagated through the bridge to jointly optimize retrieval and reasoning. To stabilize training and reduce reliance on costly annotations, we further introduce a semantic-guided distillation module that provides auxiliary supervision using pseudo-labels derived from query-document semantic similarities. Extensive experiments on three multi-hop QA datasets and three out-of-domain GraphRAG benchmarks show that \ourmethod consistently outperforms strong baseline methods and generalizes well, which demonstrates the effectiveness of end-to-end GraphRAG with tightly integrated GFM retrieval and LLM reasoning.
+
+## 5. TargetAgent: Mathematical AI Co-Scientist for Drug Target Identification
+
+- Authors: Sean Cottrell, Guo-Wei Wei
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-06
+- DOI: Unavailable
+- Categories: q-bio.QM
+- Relevance: 3.4509863926518634
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33003v1
+- PDF: https://arxiv.org/pdf/2610.33003v1
+- Local PDF: pdf/2026-10-28_05_TargetAgent_ Mathematical AI Co-Scientist for Drug Target Identification.pdf
+
+Given the challenges of pharmaceutical development, there is increasing interest in computational approaches for identifying novel drug targets. Transcriptomics technologies enable the analysis of disease mechanisms at unprecedented resolution, while spatially resolved platforms further preserve the spatial organization of cells within tissues, allowing analysis to focus on specific regions of disease localization. To derive actionable therapeutic targets from these data, it is necessary to identify mechanisms that recur across a population rather than those observed in individual patients, which requires integrated analysis across disease conditions and donor cohorts. Here, we present the groundwork for an AI co-scientist framework for the sequential analysis of multi-batch spatial transcriptomics data that integrates interpretable mathematical models, including optimal transport, tensor factorizations, and topological data analysis, with LLM-powered agentic interpretation. Leveraging the complementary information provided by these mathematical models, the agents sequentially identify regions in which the disease is localized, molecular targets within these regions, and the direction in which each target should be modulated. Applied as a proof of concept to a public Stereo-seq study of the Alzheimer's disease (AD)-affected prefrontal cortex, we demonstrate that the agents converge on the white matter as the primary locus of the moderate-disease signal and identify a loss of myelin programme usage despite increasing oligodendrocyte abundance. The agents subsequently propose 29 candidate therapeutic targets, led by an oligodendrocyte differentiation module on which multiple mathematical perspectives converge, and flag 20 genes whose relevance to AD has not been previously reported. These results are hypothesis-generating and motivate further validation in larger, independent cohorts.
+
+## 6. Evolve on Graph: Self-Evolving Knowledge Graph Reasoning without Question Annotations
+
+- Authors: Zongyuan Sun, Shuai Zhao, Ke Shu, Ziyue Zhu, Shangyang Wu, Yuanlin Lin, Tao Wang, Shiyue Li, Yingjun Du, Anh Tuan Luu, Haoran Luo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.356176615155629
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35598v1
+- PDF: https://arxiv.org/pdf/2610.35598v1
+- Local PDF: pdf/2026-10-28_06_Evolve on Graph_ Self-Evolving Knowledge Graph Reasoning without Question Annotations.pdf
+
+Knowledge graphs (KGs) provide reliable external knowledge for multi-hop factual reasoning with large language models (LLMs), yet most KGs in real-world domains such as finance and industry lack question--answer (QA) annotations. Without such annotations, existing methods struggle to improve LLM graph reasoning: training-free agents cannot improve their exploration through interaction; reinforcement learning (RL) agents depend on QA data annotated by humans or synthesized by closed-source models; and training data is typically built offline, so its topology mix is fixed and cannot follow the agent's ability. We propose Evolve on Graph (EoG), a framework that lets an LLM self-evolve its graph reasoning without any QA annotations. Through Graph Self-Play, a single LLM alternates between a Proposer that poses questions and a Solver that answers them. To make questions verifiable, Symbolically Verifiable Topology Synthesis (SVTS) samples reasoning topologies on the KG and executes the corresponding first-order logic queries, yielding topology skeletons with correct and complete answer sets; guided by a skeleton, the Proposer explores the graph to pose a multi-hop question. To let task topologies follow the Solver, a Boundary-Aware Graph Curriculum rewards the Proposer by the Solver's score variance, keeping questions at the Solver's capability boundary so that complex topologies enter training as the Solver improves. On six benchmarks over Freebase, Wikidata, and an industrial KG, EoG consistently outperforms prompting-, retrieval-, and agent-based methods, showing that LLM graph reasoning can improve through self-play without QA annotations. Our code is available at https://github.com/Szy5/EoG
+
+## 7. Shared-Factor-Conditioned Diffusion for Low-Rank Tensor Recovery
+
+- Authors: Zhengyun Cheng, Guanwen Zhang, Wei Zhou
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.2714453609765517
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35368v1
+- PDF: https://arxiv.org/pdf/2610.35368v1
+- Local PDF: pdf/2026-10-28_07_Shared-Factor-Conditioned Diffusion for Low-Rank Tensor Recovery.pdf
+
+Tensor recovery spans heterogeneous data structures and observation processes, calling for a representation that can adapt across modalities and tasks. We propose DiffTR, an unsupervised framework that unifies tensor completion, denoising, and hyperspectral super-resolution through coordinate-conditioned diffusion. Shared factors indexed by tensor coordinates condition a compact score network, and score matching jointly learns the factors and an implicit tensor representation from the available observations. Scalar and vector-valued outputs accommodate individual entries and entire tubes, enabling a common formulation for tabular tensors, images, and videos. The framework separates representation learning from task-specific observation modeling: reverse diffusion recovers missing values; estimation via Tweedie's formula, soft thresholding, and optional spatial consistency support mixed-noise denoising; and measurement-guided sampling transfers a prior learned from low-resolution hyperspectral observations to high-resolution reconstruction, followed by post-sampling refinement with data consistency and spectral subspace regularization. This separation makes the representation compatible with different corruption models and permits task-specific constraints to be incorporated within the same recovery framework. Experiments across multiple tensor modalities and recovery tasks demonstrate competitive reconstruction quality and the flexibility of a unified conditional generative representation. The code is available at https://github.com/CZY-Code/DiffTR
+
+## 8. SUDO: From Scientific Publications to Global Scholarly Discourse
+
+- Authors: Nipun D. Pathirage, Henrique Santos, Deborah L. McGuinness
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-08
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI, cs.DL
+- Relevance: 3.228949856456891
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33018v1
+- PDF: https://arxiv.org/pdf/2610.33018v1
+- Local PDF: pdf/2026-10-28_08_SUDO_ From Scientific Publications to Global Scholarly Discourse.pdf
+
+Scholarly Knowledge Graphs (SKGs) support literature search, scientific discovery, and agent-assisted research. Yet, most approaches to SKG construction pre-specify the knowledge unit to be represented, typically named scholarly entities or contribution-level statements, and retain only the publication content expressible through that unit. This choice produces two dominant yet distinct paradigms: concept-centric SKGs that preserve entities and local relations, and statement-centric SKGs that capture high-level discourse in sentences. In both cases, the graph reflects a chosen extraction target rather than how a paper constructs and communicates knowledge. We introduce SUDO, the Scholarly Upper Discourse Ontology, which defines how knowledge elements are organized and related to form a paper's research narrative, namely its scholarly discourse. Using linguistic principles that generalize across fields and tasks, SUDO enables each publication's scholarly discourse to be constructed from the bottom up as a coherent, source-grounded representation. Applied consistently across papers, the same structure connects their research narratives into a global scholarly discourse without discarding local context or provenance. We demonstrate SUDO's capabilities across a comprehensive suite of scholarly knowledge-modeling use cases and performance improvements on a downstream Large Language Model (LLM)-based scientific QA task.
+
+## 9. H-GLow: Accelerating Graph Generation via Hazard-Guided Discrete Flow Matching
+
+- Authors: Sirine Ayadi, Stephan Günnemann
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-24
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.188079198975247
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33599v1
+- PDF: https://arxiv.org/pdf/2610.33599v1
+- Local PDF: pdf/2026-10-28_09_H-GLow_ Accelerating Graph Generation via Hazard-Guided Discrete Flow Matching.pdf
+
+Discrete flow matching (DFM) offers a promising approach to graph generation; however, generating high-quality graphs with few steps remains challenging due to the strong dependencies between nodes and edges. Although DFM decouples training from sampling, enabling flexible sampling strategies without retraining, existing graph DFM samplers often rely on task-specific heuristics, substantially expanding the hyperparameter space. Moreover, graph DFM models still require sampling budgets comparable to those of diffusion-based approaches, leaving their potential for accelerating graph generation only partially realized. In this work, we introduce H-Glow, a hazard-guided framework for accelerating graph generation built on the decomposition of Continuous-Time Markov chain (CTMC) generators into hazards and conditional jump distributions. H-Glow leverages these quantities to plan graph edits and dynamically adjust the sampling time to graph activity. H-Glow can be adapted to pretrained graph DFM models, substantially improving the generation quality with fewer steps. We further introduce a novel graph DFM model based on the conditional generator matching framework, which directly predicts hazards and conditional jumps, and show that its training objective decomposes exactly into hazard matching and hazard-weighted jump prediction. Experiments on molecular and synthetic graph benchmarks demonstrate improved generation quality with substantially fewer sampling steps.
+
+## 10. LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection
+
+- Authors: Yixuan Chen, Hongyu Zhan, Jie Sheng, Weiyu Han, Shuai Chen, Tianyi Zhang, Xiao Tan, Jun Xia
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.1722892418523703
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35298v1
+- PDF: https://arxiv.org/pdf/2610.35298v1
+- Local PDF: pdf/2026-10-28_10_LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection.pdf
+
+Financial fraud detection increasingly relies on heterogeneous transaction graphs, in which entities such as cards and merchants play distinct business roles and the risk meaning of an attribute depends on the entity's role: a high transaction volume may be routine for a merchant but unusual for a card. Heterogeneous graph neural networks preserve typed entities and relations but typically treat these attributes as role-agnostic inputs and leave their business meaning implicit. Meanwhile, most existing methods integrating large language models (LLMs) with graphs focus on homogeneous graphs or heterogeneous graphs with naturally available textual attributes, leaving their use on transaction graphs with structured attributes underexplored. To address this issue, we propose SemHGT, an LLM-enhanced framework that interprets structured attributes according to entity roles and makes the business semantics explicit in three stages: (1) role-aware prompts elicit risk-related business descriptions from node attributes, and a text encoder maps them to semantic vectors that enrich node representations; (2) semantic similarity guides multi-round sampling of target-specific path instances under transaction-to-transaction schemas; (3) schema-level tokens that combine local path evidence with global neighbor summaries are processed together with the target transaction by a unified transformer. Across three benchmark datasets, SemHGT leads the evaluated baselines on most dataset--metric comparisons. Further analyses provide additional evidence for the effectiveness of SemHGT's design and clarify how its semantic modeling and evidence selection contribute to fraud detection. Code is available at https://anonymous.4open.science/r/SemHGT-528A/.
+
+## 11. Scoped Semantic Invariance as a Foundation for LLM Reliability
+
+- Authors: Rosario Uceda-Sosa, Maria Chang, Karthikeyan Natesan Ramamurthy, Moninder Singh
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-23
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.16849151586009
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33267v1
+- PDF: https://arxiv.org/pdf/2610.33267v1
+- Local PDF: pdf/2026-10-28_11_Scoped Semantic Invariance as a Foundation for LLM Reliability.pdf
+
+LLMs often answer semantically equivalent queries inconsistently, even when the underlying facts are known. We formalize consistency as semantic invariance over equivalence classes of queries and show that invariance under arbitrary meaning-preserving transformations is undecidable in general. This motivates scoped semantic invariance, where model behavior is evaluated relative to bounded semantic domains.
+  We operationalize this framework using knowledge graphs (KGs), which act as explicit semantic control structures defining local semantic constraints and grounding contexts. Across the MITRE D3FEND ontology and eight Wikidata- derived domains, we show that inconsistencies are structured rather than random, concentrating in localized hotspot subgraphs organized around recurring TREE, STAR, and CYCLE patterns that remain stable across models and domains.
+  We further show that selective graph grounding improves correctness and cross-model consistency, while indiscriminate grounding introduces regressions. A layered grounding strategy achieves the strongest monotonicity profile, preserving correct knowledge while reducing inconsistency. Finally, we show that hotspot structures discovered from simple consistency probes transfer to more realistic compositional reasoning tasks.
+
+## 12. CoLink: Global Compression and Knowledge Linking for Multi-Turn Dialogue Modeling
+
+- Authors: Lian Yan, Zhenbo Xia, Haotian Wang, Chen Tang, Yi Guan, Jie Liu, Jingchi Jiang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-25
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 3.147126731291845
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.34335v1
+- PDF: https://arxiv.org/pdf/2610.34335v1
+- Local PDF: pdf/2026-10-28_12_CoLink_ Global Compression and Knowledge Linking for Multi-Turn Dialogue Modeling.pdf
+
+Extracting salient information from long-horizon dialogue histories remains a significant challenge for Large Language Models (LLMs) due to the restricted context windows and efficient retrieval challenges. Current methods typically rely on history organization or local token-level optimization, suffering from information loss, retrieval redundancy, and myopic attention. Inspired by the view in cognitive science that dialogue constitutes sense-making and memory association, we propose CoLink, a framework that enhances LLMs' global context awareness in domain-specific multi-turn dialogues through information linking and compression. CoLink first clusters historical contexts into topic graphs to establish cross-semantic associations with external knowledge. Guided by the adaptive control of thought, it then retrieves and activates knowledge via synergizing semantic relevance and graph-structural topology. Crucially, to achieve effective compression of history and knowledge, we ground multi-turn dialogues in information theory and derive a principled optimization objective for extracting the core sense-making information. Coupled with a competitive slot mechanism, CoLink condenses the global context into dedicated memory and knowledge slots, efficiently distilling lengthy, redundant inputs into an extremely compact latent representation. Extensive empirical results on both public and our MMD datasets validate CoLink's superiority and generalizability in knowledge linking and sense modeling.
+
+## 13. How To Build A Modern Diffusion Language Model
+
+- Authors: Volodymyr Kuleshov, Marianne Arriola, Yair Schiff, Gilad Turok, Guanghan Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-24
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.124445773231151
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33391v1
+- PDF: https://arxiv.org/pdf/2610.33391v1
+- Local PDF: pdf/2026-10-28_13_How To Build A Modern Diffusion Language Model.pdf
+
+The frontier of large language model (LLM) performance has advanced rapidly in recent years, fueled by scaling laws for pretraining on large text corpora. However, mainstream LLMs have fundamental limitations: they generate text autoregressively, producing outputs sequentially from left to right one token at a time. This sequential process leaves parallel GPU hardware underutilized during inference--a bottleneck that has grown acute as progress shifts toward scaling post-training and inference-time compute--and commits irreversibly to each token without the ability to revise earlier mistakes. Discrete diffusion models address these limitations by generating tokens in parallel, starting from a noisy or masked sequence and iteratively refining the entire output over a series of denoising steps. This parallel generative process enables speeds of thousands of tokens per second, provides a new axis of inference-time compute scaling, and supports built-in error correction and controllable generation. Over the past two years, discrete diffusion has scaled to billions of parameters across biological sequence modeling and natural language, with open-weights and commercial releases from leading labs. This article provides a survey of key ideas in discrete diffusion and a high-level introduction to how modern diffusion LLMs are built, covering their foundations, core algorithmic and architectural building blocks, applications in biology and language, and implications for future LLM scaling laws.
+
+## 14. Towards a Learnable Retriever for Textual Graph Question Answering
+
+- Authors: Kaifeng Jin, Yuchen Yan, Zhichen Zeng, Xiao Lin, Lihui Liu, Yinglong Xia, Hanghang Tong
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-24
+- DOI: Unavailable
+- Categories: cs.CL, cs.LG
+- Relevance: 3.120750896374027
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33511v1
+- PDF: https://arxiv.org/pdf/2610.33511v1
+- Local PDF: pdf/2026-10-28_14_Towards a Learnable Retriever for Textual Graph Question Answering.pdf
+
+Textual graph question answering (GraphQA) and graph-based retrieval-augmented generation (GraphRAG) have gained increasing attention as a way to ground large language models (LLMs) on structured knowledge. Despite extensive efforts, existing methods still face two key gaps. The first is an architectural gap: existing methods typically fine-tune an LLM-based generator, but do not also make the retriever itself a learnable LLM for graph evidence selection within one end-to-end retrieve-then-generate pipeline. The second is a retrieval-supervision gap: existing retrievers rarely use gold answer signals to supervise evidence selection. As a result, they may fail to recall evidence nodes required for reasoning, resulting in insufficient coverage of the gold answer set; meanwhile, naive attempts to boost recall often introduce excessive irrelevant information that compromises compactness and overwhelms the LLM. To address these gaps, we propose TaLenT, an LLM-based end-to-end retriever-generator framework for textual GraphQA. To bridge the architectural gap, TaLenT pairs a learnable LLM-based retriever for evidence selection with a fine-tuned LLM-based generator within one unified retrieve-then-generate pipeline. To bridge the retrieval-supervision gap, we leverage gold answer signals as retriever supervision. Specifically, we stratify graph nodes into gold answers, answer-related nodes, and irrelevant noise. We then adopt a weighted pseudo-label loss to prioritize gold answers and preserve answer-related nodes for coverage, while discarding irrelevant noise for compactness. Experimental results across three GraphQA datasets demonstrate that TaLenT consistently improves downstream performance.
+
+## 15. HobbyLM: A Sparse Mixture-of-Experts Model Family on a Hobby Budget
+
+- Authors: Harish Santhanalakshmi Ganesan, Hariharan M. S., Prabhurajhan R
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-25
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.070458189799022
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.34582v1
+- PDF: https://arxiv.org/pdf/2610.34582v1
+- Local PDF: pdf/2026-10-28_15_HobbyLM_ A Sparse Mixture-of-Experts Model Family on a Hobby Budget.pdf
+
+We describe HobbyLM, a family of small sparse Mixture-of-Experts (MoE) models trained from scratch with a few hundred to a few thousand dollars of rented GPU time. The core is a decoder-only transformer with fine-grained experts, sigmoid routing with auxiliary-loss-free load balancing, grouped-query attention with per-head QK-normalization, and aMuon/AdamW optimizer split. Each of these choices was selected with a single-variable ablation suite at 130M parameters. On this architecture we train a 500M-parameter model (169M active) on 40B FineWeb tokens and post-train it into a chat model, a masked-diffusion language model, a function-calling and computer-use agent, and a single "omni" checkpoint that reads text, images, video, sound and speech through frozen encoders and small projectors. We run these models on a laptop CPU with a from-scratch Rust inference engine. Two of the authors then adopted the architecture without architectural changes to build HobbyLM-1B (1.04B total, 305M active parameters), trained on a 100B-token curated mixture with a high-quality anneal. HobbyLM-1B reaches a 47.5 average on seven zero-shot benchmarks, and its builders also release an instruction-tuned model and an on-device macOS computer-use adapter. Finally, we describe HobbyLM-Image, a 333M-parameter flow-matching diffusion transformer that generates 1024x1024 images in a 32x-compressed latent space, together with a dependency-light CPU implementation of the full text-to-image pipeline. We report what worked, what did not, and where the small-scale ceilings lie. We also state for each component which author designed or built it.
+
+## 16. TIAgent: From Natural Language to Grounded Agentic Workflows for Computational Pathology
+
+- Authors: Aakash Madhav Rao, Mark Eastwood, Danielle Belgrave, Fayyaz Minhas
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-30
+- DOI: Unavailable
+- Categories: q-bio.QM, cs.AI, cs.CL, cs.MA
+- Relevance: 3.0600605230937243
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.32993v1
+- PDF: https://arxiv.org/pdf/2610.32993v1
+- Local PDF: pdf/2026-10-28_16_TIAgent_ From Natural Language to Grounded Agentic Workflows for Computational Pathology.pdf
+
+Computational pathology (CPath) analyses increasingly depend on multi-step computational workflows that require substantial programming expertise, limiting their accessibility to pathologists and other domain experts without extensive coding experience. Although large language models (LLMs) provide a promising natural-language interface for constructing such analyses, hallucinated operations and incorrect workflow specifications limit their reliability in scientific settings. We introduce Tissue Image Analysis Agent (TIAgent), an automated CPath workflow generation framework that, given a natural-language prompt specifying a complex analytical task together with an input dataset, automatically constructs a verifiable computational graph employing existing CPath operations. The resulting graph can be inspected and executed, enabling natural-language construction of complex CPath workflows for applications including automated biomarker discovery and tissue analysis. We demonstrate end-to-end workflow generation and execution and systematically benchmark 14 backbone LLMs across 90 unit tasks spanning 18 CPath operation types. The ability of each LLM to generate a complete and correct unit workflow is quantified using Unit Workflow Success (UWS). Performance varied substantially across backbone models, with Kimi-K2.7-Code achieving the highest UWS of 0.967 (95% CI: 0.907-0.989). Analysis of node and parameter correctness further revealed that selecting the appropriate computational operation and correctly configuring it represent distinct challenges for LLM-based workflow generation. TIAgent provides a foundation for making complex CPath workflow construction more accessible while enabling systematic evaluation of LLM-driven scientific workflow generation.
+
+## 17. MultiEvoSkill: Structure-Aware Multi-Agent Skill Evolution for Generalizable Skill Artifacts
+
+- Authors: Kounianhua Du, Jianxing Liu, Ruoshui Shan, Yucheng Zhang, Ke Li, Xing Sun, Weinan Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-25
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.047147054565136
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.34260v1
+- PDF: https://arxiv.org/pdf/2610.34260v1
+- Local PDF: pdf/2026-10-28_17_MultiEvoSkill_ Structure-Aware Multi-Agent Skill Evolution for Generalizable Skill Artifacts.pdf
+
+Skill documents are becoming the default adaptation surface for frozen large language model (LLM) agents, but current skill generators face two key limitations. First, humans and different LLMs differ in how they organize procedural knowledge and approach task solving. Skills authored from a human or single-model perspective may therefore fail to align with the reasoning behaviors of other backbones, limiting cross-model generalization. Second, sequential skill descriptions inadequately represent procedures with parallel branches and explicit dependencies, while existing skill optimizers primarily operate on prose and lack explicit support for graph-structured skill evolution. We introduce MultiEvoSkill, a skill-optimization framework comprising three core components: 1) Skill compiler casts the skill as a typed graph with tailored operators, producing a compact, informative representation with explicit procedural topology; 2) Heterogeneous agent system proposes revision advices using collective intelligence, where minimal and informative issues are identified based on multiple sets of experiences. 3) Structure-aware debate and evolution mechanism organizes candidate edits into a heterogeneous graph, resolves them under dependency and importance constraints, and distills the collective proposal into the artifact. Multi-dimensional gating ensures the information gain and topological correctness of each evolution. Optimal skills are then obtained when the system converges at a consistent state. Various experiments and ablations against SOTA methods validate the effectiveness and generalization of MultiEvoSkill.
+
+## 18. HIFI: A Highly Efficient Framework for Statistical Inference with Foundation Models
+
+- Authors: Po-Wei Chen, Shan Yu, Chunlin Li
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-25
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG
+- Relevance: 3.042582070224614
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.34550v1
+- PDF: https://arxiv.org/pdf/2610.34550v1
+- Local PDF: pdf/2026-10-28_18_HIFI_ A Highly Efficient Framework for Statistical Inference with Foundation Models.pdf
+
+Foundation models provide powerful representations for unstructured data, such as text and images, and parameter-efficient fine-tuning (PEFT) makes their adaptation to downstream tasks increasingly practical. For neural estimators that lack a tractable sampling distribution, resampling-based procedures offer a flexible route to statistical inference, but they often require hundreds of model fits, making them computationally prohibitive at foundation-model scale. We introduce HIFI, a two-stage fine-tuning framework for statistical inference on parameters such as conditional means. Stage 1 adapts a foundation model once on a larger sample, capturing the complex structure of the data and controlling estimation bias through a single fit. Stage 2 applies a resampling inference procedure to a smaller independent sample, concurrently fitting multiple lightweight PEFT estimators to the residual to quantify estimation variability without relearning the full task. HIFI accommodates a broad class of resampling procedures, including ensemble subsampling and the nonparametric bootstrap. Across vision and text experiments, HIFI scales to pretrained models ranging from tens of millions to more than ten billion parameters while providing accurate point estimates and well-calibrated confidence intervals across diverse architectures, and reduces training compute by up to 91.9% relative to direct resampling. An application to gene-expression inference illustrates the practical value of the framework for uncertainty-aware scientific inference.
+
+## 19. Adaptive Transfer of Representational Signatures for LLM Reliability Detection
+
+- Authors: Yongtong Li, Yixuan Florence Wu, Jiawei Zhang, Naichen Shi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-24
+- DOI: Unavailable
+- Categories: cs.CL, cs.LG
+- Relevance: 3.0182055873177216
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33442v1
+- PDF: https://arxiv.org/pdf/2610.33442v1
+- Local PDF: pdf/2026-10-28_19_Adaptive Transfer of Representational Signatures for LLM Reliability Detection.pdf
+
+Large language models (LLMs) are reported to be susceptible to reliability issues including hallucinations and reasoning errors. Existing quality detectors can predict unreliable outputs based on internal representations with decent accuracies. However, training these detectors often requires substantial domain-specific labeled data, which limits their applicability to new domains. We propose to address this challenge by transferring representational signatures across related domains. More specifically, we build a statistical framework that first extracts low-dimensional signatures for each domain, then uses cross-fitting to learn composition weights of domain-specific predictors. The weights adapt to each source domain's predictive relevance to the target domain. Our asymptotic analysis of a least-squares analogue characterizes the limiting prediction risk and aggregation weights in terms of domain discrepancies and representation bias. Experiments across multiple hallucination datasets and open-weight LLMs show that, with only 25 labeled questions in the new domain, adaptive transfer improves hallucination-detection AUROC by 6.8%. For reasoning-step prediction, it improves AUROC by 8.4%.
+
+## 20. Intrinsic Gradient Barriers in Pushforward Deep Generative Models
+
+- Authors: Edric Tam, Qingyang Liu, Barbara Engelhardt, Ray Bai
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-25
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG, math.ST
+- Relevance: 3.007065477031917
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.34484v1
+- PDF: https://arxiv.org/pdf/2610.34484v1
+- Local PDF: pdf/2026-10-28_20_Intrinsic Gradient Barriers in Pushforward Deep Generative Models.pdf
+
+Broad classes of deep generative models (DGMs) operate by learning to map a simple source distribution, such as a standard Gaussian, to a complex high-dimensional target distribution. Despite their success, DGMs often empirically struggle to accurately represent distributions with heavy tails or well-separated modes. In this work, we show that these difficulties reflect intrinsic properties of the underlying transport problem rather than particular neural network architectures or training procedures. We establish quantitative lower bounds on the gradients and Jacobians of pushforward mappings that transport log-concave source distributions to such targets. For heavy-tailed target distributions, the required gradient magnitude grows as the target develops increasingly large moments. For multimodal target distributions, the low-probability regions between well-separated modes similarly force large gradients in the transport map. We discuss how such large derivatives relate to trade-offs between expressivity and numerical stability. Our results hold under substantially weaker regularity conditions than previous analyses and remain stable under perturbations of the target distribution. Finally, we show that these obstructions can be mitigated when the goal is approximation of a given density rather than generative modeling. Specifically, we propose simple classes of bijective reparametrizations that can alleviate the difficult geometric structure and reduce the gradient burden placed on the learned generative map. Numerical experiments support our theoretical analysis.
+
+## 21. A Comprehensive Framework for All Stages of Large-Model Training: From Data and Tokenization, through Pretraining, to Post-Training Alignment
+
+- Authors: Xiangjing An, Zhibin Jiao, Aiting Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-24
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.993168951954648
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33451v1
+- PDF: https://arxiv.org/pdf/2610.33451v1
+- Local PDF: pdf/2026-10-28_21_A Comprehensive Framework for All Stages of Large-Model Training_ From Data and Tokenization, through Pretraining, to Po.pdf
+
+The capabilities of large language models (LLMs) and multimodal LLMs (MLLMs) arise from the synergy of the full training pipeline, including data and tokenization, pretraining, and post-training (supervised fine-tuning, preference alignment, reinforcement learning, and continual optimization), rather than any individual stage. Existing surveys mostly adopt a single-stage or single-technique perspective, treating related research as isolated systems without unified stage division or a horizontally comparable basis.
+  This paper proposes a unified stage division and a six-dimensional analytical framework covering data, objective function, optimization strategy, system constraints, evaluation, and risk and governance. We systematically review 395 core references from 2017 to 2026, and present a conceptual map of cross-stage effects: forward constraints of pretraining on post-training, and reverse empowerment of post-training on data and pretraining.
+  We derive three core findings. First, the comparability of scaling laws depends on data quality and mixture, a long-neglected variable. Second, preference alignment methods (RLHF, DPO) and reasoning reinforcement learning with verifiable rewards redefine post-training boundaries, while the Pass@1 versus Pass@K debate remains unresolved. Third, multimodal training poses structural challenges to the pure-text paradigm in tokenizer design, training objectives, and evaluation.
+  The paper provides a cross-stage effects diagram, a method-family map, a practical decision tree, and at least 10 verifiable open problems, with an extensible skeleton for focused sub-surveys per stage. As of the retrieval date, peer-reviewed evidence (A+B) accounts for approximately 79% of the 395 references.
+
+## 22. CounterFlow: Target-Conditioned Flow Matching for Visual Counterfactuals
+
+- Authors: Paul Sevellec, Elisa Fromont, Romaric Gaudel, Laurence Roze, Paul Viallard, Laetitia Houeix
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, cs.CV
+- Relevance: 2.959172616138484
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35679v1
+- PDF: https://arxiv.org/pdf/2610.35679v1
+- Local PDF: pdf/2026-10-28_22_CounterFlow_ Target-Conditioned Flow Matching for Visual Counterfactuals.pdf
+
+In eXplainable AI, counterfactual explanations have gained significant traction by offering users direct, intuitive, and actionable insights into model decisions. We introduce CounterFlow, a novel framework based on Conditional Flow Matching that generates visual counterfactual explanations by directly steering a source image toward a user-specified target class. By leveraging target-conditioned vector fields, CounterFlow identifies highly realistic semantic modifications while requiring substantially lower computational overhead than traditional GAN- or diffusion-based architectures. Empirical evaluations on standard benchmarks demonstrate that CounterFlow achieves state-of-the-art performance in both visual realism and target class switching. By working directly in the raw pixel space, CounterFlow offers a more practical solution for real-world deployment.
+
+## 23. GEMS-RAG: Graph-grounded Engineering Multimodal Standards Retrieval-Augmented Generation
+
+- Authors: Abdul Hannan Azad, Irvin Wang, Jiwan Jiang, Chenchen Kuai, Bofeng Cao, Keshu Wu, Yuzhou Wang, Xiaopeng Li, Yang Zhou
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-23
+- DOI: Unavailable
+- Categories: cs.AI, cs.LG
+- Relevance: 2.958379966903708
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33277v1
+- PDF: https://arxiv.org/pdf/2610.33277v1
+- Local PDF: pdf/2026-10-28_23_GEMS-RAG_ Graph-grounded Engineering Multimodal Standards Retrieval-Augmented Generation.pdf
+
+Engineering standards are challenging knowledge sources for large language models (LLMs) because they are hierarchical, multimodal, and densely connected through figures, tables, cross-references, and normative rules. Existing retrieval-augmented generation (RAG) methods often rely on unstructured text retrieval and struggle with questions requiring joint reasoning over textual provisions, visual specifications, and document structure. We propose GEMS-RAG (Graph-grounded Engineering Multimodal Standards Retrieval-Augmented Generation), a framework for grounded reasoning over engineering standards. GEMS-RAG combines hierarchical parsing, fine-grained visual entity extraction, multimodal knowledge graph construction, and graph-grounded hybrid retrieval. Instead of treating figures as monolithic images, it decomposes them into meaningful visual entities linked to textual provisions, engineering concepts, and regulatory rules. During inference, dense, sparse, and visual retrieval are combined with graph expansion to identify relevant evidence across text, figures, and document structure. We evaluate GEMS-RAG on the Manual on Uniform Traffic Control Devices (MUTCD), a large engineering standard containing egulations, technical drawings, and standardized traffic-control devices. Results show that graph-grounded multimodal retrieval improves retrieval effectiveness and question-answering performance over text-only, multimodal, and graph-based RAG baselines. Beyond MUTCD, GEMS-RAG offers a general framework for reasoning over engineering codes, technical manuals, regulatory documents, and scientific standards in safety-critical applications.
+
+## 24. TraceQuery: learning what to recompute from full-denoising trajectory in diffusion language models
+
+- Authors: Yukai Jin, Zhankai Ye, Jiayue Yang, Fangyi Li, Shuoqiu Li, Xu Gao, Shibo Li, Xin Liu, Shangqian Gao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-07
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 2.9572729930796946
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33008v1
+- PDF: https://arxiv.org/pdf/2610.33008v1
+- Local PDF: pdf/2026-10-28_24_TraceQuery_ learning what to recompute from full-denoising trajectory in diffusion language models.pdf
+
+Diffusion large language models (dLLMs) enable flexible generation through iterative masked denoising, but incur substantial inference cost because token representations are repeatedly recomputed across denoising steps. Existing cache-based methods reduce this cost by reusing intermediate results across denoising steps and recomputing only a subset of positions at each step, chosen either on a fixed schedule or by heuristic signals of change. Our trajectory experiments instead point to decoding trajectory as the more relevant quantity. Cached generation remains accurate when it stays close to the full-denoising trajectory, with errors concentrated around unmask-order deviations and reduced as longer reference prefixes are recovered. This suggests a more direct principle: limiting representation error helps, but keeping generation on the full-denoising trajectory is a more direct route to accurate decoding. We therefore formulate efficient dLLM inference as trajectory-guided querying. Rather than broadly repairing representation error, we use full-denoising trajectories to supervise which unresolved positions should receive limited fresh computation. Based on this formulation, we introduce TRACEQUERY, a lightweight sparse decoding framework that predicts a small set of near-future trajectory-relevant positions, queries only those candidates, and lets the backbone select which one to commit from their fresh predictions. TRACEQUERY delivers the strongest quality-computation trade-off among cache-based approaches, sustaining high accuracy with substantially fewer fresh token computations, and generalizes across tasks, model variants, and families. Code: https://github.com/fish1928/tracequery.git
+
+## 25. Data Optimization for LLMs: A Survey
+
+- Authors: Ou Wu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-24
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.946823215379818
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33405v1
+- PDF: https://arxiv.org/pdf/2610.33405v1
+- Local PDF: pdf/2026-10-28_25_Data Optimization for LLMs_ A Survey.pdf
+
+Large language models (LLMs) have attracted great attention in both academic and industrial communities in recent years. Numerous survey studies have covered various aspects of LLMs, such as learning strategies, applications, alignment, explainability, and evaluation. However, little headway has been made in reviewing data-related aspects for LLMs, despite data being recognized as a key factor contributing to the emergence of the LLMs era. A wide range of data optimization algorithms and techniques are employed in LLMs' training and application processes. These techniques often originate from diverse deep learning domains, with their theoretical inspirations and heuristic motivations appearing unrelated to each other. This study aims to develop a comprehensive framework for LLMs' data optimization techniques to enhance data utilization and efficiency. We first discuss data challenges in LLMs' training and inference. Second, we summarize data perception dimensions for evaluating LLMs' data properties. These dimensions primarily include quality, difficulty, diversity, and redundancy, laying a foundation for subsequent optimization. Third, existing optimization techniques are reviewed and categorized into four groups: data selection, augmentation, reweighting, and others. Fourth, we analyze interconnections between these categories. Finally, we identify key challenges and future directions for LLMs' data optimization compared with conventional deep learning approaches.
+
+## 26. Triage: Skip, Skim, or Refine Attention Tiles in Video Diffusion Transformers
+
+- Authors: Yeonjae Kim, Omin Kwon, Seong Hoon Seo, Jae W. Lee
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.LG, cs.CV
+- Relevance: 2.9457668253718494
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35706v1
+- PDF: https://arxiv.org/pdf/2610.35706v1
+- Local PDF: pdf/2026-10-28_26_Triage_ Skip, Skim, or Refine Attention Tiles in Video Diffusion Transformers.pdf
+
+Attention over tens of thousands of visual tokens dominates the inference of video diffusion transformers (DiTs). Existing methods reduce this cost through sparsity, low precision, or both, but use a single precision for all kept tiles. We observe that the output error introduced by approximation varies widely across tiles. Many tiles can be skipped with little error, others must be computed but gain little beyond low precision, and a few retain substantial error even at low precision. We present Triage, a training-free attention method that assigns each tile one of three approximation tiers: skipping it by replacing it with its block means, skimming it in NVFP4, or refining it with NVFP4 residual correction. A lightweight router predicts each tile's error under each tier from block statistics and moves a tile to a more accurate tier only when the predicted error reduction justifies the extra compute, with a single price setting this trade-off. A fused kernel executes all three tiers in a single pass on the FP4 tensor cores of RTX Blackwell GPUs. Across Wan2.2, HunyuanVideo, and LTX-2.5, Triage accelerates end-to-end generation by up to 2.32x over dense FlashAttention, and in each of five settings it runs faster than every baseline while reaching 0.3-3.0 dB higher PSNR than the highest-PSNR baseline.
+
+## 27. BellowsKV: One Latent for Many Layers, Expanded on Demand
+
+- Authors: Jiamu Zhang, Hanjie Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.9108201898242236
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35023v1
+- PDF: https://arxiv.org/pdf/2610.35023v1
+- Local PDF: pdf/2026-10-28_27_BellowsKV_ One Latent for Many Layers, Expanded on Demand.pdf
+
+Large language models (LLMs) now serve as the backbone of agents that reason over many turns, call tools, and pursue long-horizon tasks. To avoid recomputation, a model stores the attention keys and values of all past tokens in a key-value (KV) cache. Each layer maintains its own cache, so KV-cache memory can become the main bottleneck for GPU serving. Most compression methods operate within a single layer, by quantizing the cache entries, reducing the channel dimension, or evicting less important tokens. All three lose substantial accuracy at high compression ratios. Cross-layer methods share one compressed cache across adjacent layers to go beyond this limit. However, these methods also degrade sharply at high compression ratios. We find that the KV-cache representations of adjacent layers are quite different, whereas the input hidden states of adjacent layers are highly similar. We also find that, under the same memory budget, reducing the dimension of this shared latent loses far more accuracy than quantizing it. Based on these findings, we propose BellowsKV, a training-free method that maps the hidden states of n adjacent layers to one shared latent per token. At inference time, each layer reads its own keys and values from this latent through a layer-specific projection. We keep the latent at full dimension and compress it in two other ways: BellowsKV-Quant stores the latent at low precision, which is nearly lossless because the latent has no dominant outlier channels; BellowsKV-Evict makes one shared eviction decision per block, because the layers rank token importance very similarly. Across Llama-3.1-8B, Mistral-7B and Qwen2.5-7B, BellowsKV-Quant retains about 99% of full-cache accuracy at 3.6x compression and 97-98% at 13-14x, where the strongest cross-layer method retains at most 84% at 16x. Code: https://github.com/MorrisZJ/BellowsKV
+
+## 28. Critic's Eye: Review-Grounded Graph Reasoning for Long-Form Motif Discovery
+
+- Authors: Xinyu Sun, Zhangyue Yin, Xinyi Ju, Xin Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.9086313502461607
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35011v1
+- PDF: https://arxiv.org/pdf/2610.35011v1
+- Local PDF: pdf/2026-10-28_28_Critic's Eye_ Review-Grounded Graph Reasoning for Long-Form Motif Discovery.pdf
+
+Deep narrative understanding requires distinguishing what happens from how it is presented, moving beyond the chronological fabula to decode the sjuzet, the discursive organization through which themes are staged. We study this through the recurrence of literary motifs (blood in Macbeth, for instance), where symbolic significance emerges not from local cues, but through repetition-with-variation across the whole work. We operationalize this setting as Computational Motif Discovery, a transductive task that predicts missing line-motif links using the full narrative structure of a play. We propose Critic's Eye, which models the work as a heterogeneous Narrative Topology Graph and performs discriminative inference over global structural evidence. Critic's Eye achieves 84.8% Hit@5 on our benchmark, nearly quadrupling state-of-the-art proprietary foundation models (Gemini-3-pro-preview, ~22.6%). Our analysis reveals that despite massive scaling, sequence-based models hit a "semantic ceiling", struggling to resolve dispersed dependencies. These findings suggest that explicit structural priors are a far more effective inductive bias than parameter scaling for decoding the complex architecture of long-form literature.
+
+## 29. AutoPRL: Automated Path Representation Learning via a Learnable View Generator
+
+- Authors: Sean Bin Yang, Ying Sun, Yunyao CHeng, Hao Miao, Jilin Hu, Bin Yang, Torben Bach Pedersen, Christian S. Jensen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-26
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 2.907853452109295
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.35032v1
+- PDF: https://arxiv.org/pdf/2610.35032v1
+- Local PDF: pdf/2026-10-28_29_AutoPRL_ Automated Path Representation Learning via a Learnable View Generator.pdf
+
+Self-supervised learning has emerged as a powerful paradigm for Path Representation Learning (PRL) in road networks. PRL aims to learn informative representations of paths traversed by moving objects, such as vehicles, where each path consists of a sequence of connected road segments. These representations are essential for various downstream tasks, including travel-time estimation and path ranking. However, existing methods often suffer from ineffective view generation and inefficient training procedures due to their reliance on heuristic augmentations and computationally intensive contrastive learning. To address these issues, we propose AutoPRL, an effective and efficient self-supervised PRL framework that integrates three key components. The Automatic Data Augmentation (AutoDA) module employs variational autoencoders to generate semantically meaningful and diverse feature-level path views by modeling each topology-aware node embedding with a Gaussian latent distribution, thereby mitigating information loss and enhancing representation quality. Second, the Cross-View Decoupled Contrastive (CVDC) learning mechanism improves training efficiency by disentangling the optimization of positive and negative pairs across node- and path-level views, enabling more stable contrastive learning. Third, an Adaptive Co-Training (ACT) module dynamically adjusts uncertainty-based loss weights to balance multiple objectives, ensuring efficient and scalable training. Extensive experiments on three real-world datasets demonstrate that AutoPRL achieves strong and consistent performance in both effectiveness and efficiency across multiple downstream tasks.
+
+## 30. Information-Theoretic Scaling Laws for Generative Diffusion Training
+
+- Authors: Druv Pai, Dejan Stancevic, Yi Ma, Luca Ambrogioni
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-23
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 2.9061414900638782
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2610.33337v1
+- PDF: https://arxiv.org/pdf/2610.33337v1
+- Local PDF: pdf/2026-10-28_30_Information-Theoretic Scaling Laws for Generative Diffusion Training.pdf
+
+Diffusion models trained on increasingly large datasets sampled from the same data distribution will converge to the same learned distribution. However, in practice, a model trained on finite data depends on the particular training dataset; this dependence is reflected in properties of the model's outputs, such as memorization and sample quality. To understand this dependence through an information-theoretic lens, we study \textit{model information}, a computationally tractable measure of how much samples from the trained model depend on the particular training dataset. We explore its scaling behavior as model size and training dataset size vary. Specifically, we uncover two qualitatively distinct scaling regimes: (1) a nonlinear model information regime marking the transition from pure memorization to imperfect generalization, and (2) a generalization regime characterized by linear scaling of the model information and progressively improved generalization and sample quality. We then posit an information-theoretically principled scaling law to quantify these two regimes, and show that this law yields induced scaling laws for memorization and sample quality. We finally demonstrate that these induced scaling laws extrapolate well outside the fit's domain. Our results demonstrate information-theoretic principles for memorization and sample quality scaling laws in diffusion models. Our code is publicly available on \href{https://github.com/DruvPai/diffusion_info_theory_scaling_law}{GitHub}.
