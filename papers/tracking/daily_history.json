@@ -307,6 +307,13 @@
     "title": "FastBench: Can Streaming VLMs Perceive High-Dynamic Real-World Streams?",
     "url": "http://arxiv.org/abs/2610.12427v1"
   },
+  "title:fastslowevolutionaryoccupancypredictionviacontrolleddynamics": {
+    "doi": null,
+    "sent_date": "2026-11-04",
+    "source": "arxiv",
+    "title": "Fast-Slow Evolutionary Occupancy Prediction via Controlled Dynamics",
+    "url": "http://arxiv.org/abs/2611.02499v1"
+  },
   "title:fasttpsanoptimizedmethodforllmtokenphaseforaiaccelerators": {
     "doi": null,
     "sent_date": "2026-07-14",
@@ -629,6 +636,13 @@
     "title": "Position Anchor Tuning: Towards Efficient Adaptation of Pre-Trained Point Cloud Transformers",
     "url": "http://arxiv.org/abs/2609.18056v1"
   },
+  "title:proteocraftproteindesignasproposalverificationsearch": {
+    "doi": null,
+    "sent_date": "2026-11-04",
+    "source": "arxiv",
+    "title": "ProteoCraft: Protein Design as Proposal-Verification Search",
+    "url": "http://arxiv.org/abs/2611.03963v1"
+  },
   "title:quantumcomputerswillnotbethatdifferentablueprintforquantumcomputerarchitectureatscale": {
     "doi": null,
     "sent_date": "2026-09-19",
@@ -803,6 +817,13 @@
     "source": "arxiv",
     "title": "The Universal Classifier for Graph Learning",
     "url": "http://arxiv.org/abs/2609.36302v1"
+  },
+  "title:thinkgloballygeneratepersonallymultiviewthinkingwithadaptivegenerationforgenerativerecommendation": {
+    "doi": null,
+    "sent_date": "2026-11-04",
+    "source": "arxiv",
+    "title": "Think Globally, Generate Personally: Multi-View Thinking with Adaptive Generation for Generative Recommendation",
+    "url": "http://arxiv.org/abs/2611.02463v1"
   },
   "title:thinkv2vunleashingthereasoningcapabilityofmllmsforinstructionguidedvideoediting": {
     "doi": null,
