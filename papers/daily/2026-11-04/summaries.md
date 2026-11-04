@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-11-04
+
+## 1. ReCoG: Relative Node Contexts for Multi-Domain Graph Pre-training
+
+- Authors: Yupeng Tong, Lianze Shan, Jitao Zhao, Dongxiao He
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-01
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.9177400465994694
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.01753v1
+- PDF: https://arxiv.org/pdf/2611.01753v1
+- Local PDF: pdf/2026-11-04_01_ReCoG_ Relative Node Contexts for Multi-Domain Graph Pre-training.pdf
+
+The success of foundation models in language and vision has motivated Graph Foundation Models (GFMs), which learn transferable knowledge through multi-domain graph pre-training. Existing methods advance GFMs through feature unification and structural learning, and in doing so they rely on the raw graph structure to organize node contexts. However, we observe that removing a large proportion of edges from source graphs during pre-training improves cross-domain transfer accuracy across four representative methods. Our theoretical analysis identifies the raw graph structure as a source of conflict in cross-graph model sharing. We therefore advocate defining node contexts using criteria consistent across graphs. Achieving this requires (1) constructing node contexts consistently across graphs without a shared positional structure, such as the token order of text or the pixel grid of images, and (2) retaining the structural and neighborhood information of the original graphs. To this end, we introduce Relative Contexts for Graphs (ReCoG) for multi-domain graph pre-training. Specifically, we first construct attribute contexts to provide a comparison rule independent of the raw graph structure. Furthermore, we construct structural contexts based on common neighbors and semantic contexts based on neighborhood attribute summaries to retain the topological and neighborhood information of the original graphs. Since all graphs share these construction rules, we pre-train a single graph encoder by reconstructing node attributes over these contexts, without domain-specific modules. We conduct extensive experiments on 18 target datasets, which demonstrate the effectiveness of ReCoG. In particular, ReCoG exceeds the strongest baseline by 7.61 percentage points in mean 1-shot cross-domain node classification accuracy and by 4.47 points in cross-type transfer to heterophilous graphs.
+
+## 2. HistoTx: Early fusion of H&E images and spatial transcriptomics at varying spatial transcriptomics resolution with self-supervised learning
+
+- Authors: Alice Driessen, Emil Malmsten, Steffen Wolf, Bernd Illing, Isinsu Katircioglu, Adriano Martinelli, Rolf Stahel, Solange Peters, Enriqueta Felip, Sanjay Popat, Krisztian Homicsko, Raphael Gottardo, Marianna Rapsomaniki, Fei Tang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, q-bio.GN, q-bio.QM
+- Relevance: 3.8224081500711273
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02681v1
+- PDF: https://arxiv.org/pdf/2611.02681v1
+- Local PDF: pdf/2026-11-04_02_HistoTx_ Early fusion of H&E images and spatial transcriptomics at varying spatial transcriptomics resolution with self-.pdf
+
+Spatial transcriptomics maps gene expression across tissue sections and, when integrated with whole slide images, jointly captures both morphological architecture and molecular activity to provide a rich, multimodal view of tissue biology. ML approaches combining spatial transcriptomics and WSIs typically learn a mapping from morphological features to molecular profiles via contrastive alignment or supervised fine-tuning of pathology foundation models. In both cases, transcriptomics serves as a training signal rather than a true input modality, leaving inference fundamentally image-driven. We propose an early-fusion vision transformer architecture in which transcript tokens are constructed at arbitrary spatial resolution, merged with image patch tokens, and jointly processed through a shared transformer stack for deep cross-modal interaction. Starting from a pretrained vision-only pathology foundation model, we train HistoTx by continuing self-supervised pretraining on paired image and spatial transcriptomics data and demonstrate that: 1) at inference with image only, performance remains on par with the baseline on most tasks while improving on tasks that inherently benefit from molecular knowledge, such as gene expression prediction; 2) when both modalities are available at inference, jointly providing image and transcript inputs outperforms either modality alone.
+
+## 3. ILR-SMO: Iterative Latent Refinement for Robust Spatial Multi-Omics Integration
+
+- Authors: Anqi Yu, Xudong Xu, Jianzhi Lu, Yuqi Sun, Bingguo Chen, Chenxi Ma, Weimin Tan, Bo Yan
+- Source: arxiv
+- Venue type: preprint
+- Journal: Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI-26), pp. 5227-5235, 2026
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: 10.24963/ijcai.2026/582
+- Categories: cs.LG
+- Relevance: 3.810720761136819
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02932v1
+- PDF: https://arxiv.org/pdf/2611.02932v1
+- Local PDF: pdf/2026-11-04_03_ILR-SMO_ Iterative Latent Refinement for Robust Spatial Multi-Omics Integration.pdf
+
+Spatial multi-omics technologies jointly profile diverse molecular modalities with spatial context, providing a comprehensive view of cellular heterogeneity and tissue organization. To integrate spatial multi-omics data and identify spatial domains, a wide range of unsupervised methods has been proposed. However, recent approaches rely on single-step fusion, directly aggregating heterogeneous modalities into a shared representation, making embeddings sensitive to modality imbalance and measurement noise that are inherent to spatial multi-omics data, as well as unstable optimization under weak supervision. Here, we propose ILR-SMO (Iterative Latent Refinement for Spatial Multi-Omics), a unified self-supervised framework that reformulates multimodal integration as a stability-aware refinement process over a shared latent representation. Instead of single-step plain fusion, ILR-SMO progressively integrates modality-specific information through sequential updates, allowing information to be injected in a controlled manner. This incremental refinement enables later updates to correct or compensate for earlier deviations, resulting in more stable and robust representation learning under heterogeneous and noisy modalities. ILR-SMO further incorporates reliability-aware modality gating for adaptive modulation of modality contributions, and employs a joint objective to enforce spatial coherence while preventing representation collapse. Extensive experiments on five spatial multi-omics benchmarks demonstrate that ILR-SMO consistently outperforms seven state-of-the-art methods and exhibits strong robustness across diverse settings.
+
+## 4. Efficient and Scalable Multi-View Masked Autoencoder for Heterogeneous Graph Self-Supervised Learning
+
+- Authors: Hao Geng, Deqing Wang, Lihao Ge, Chenguang Du, Fuzhen Zhuang, Bowen Yang, Yanlin Hu, Songtao Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-31
+- DOI: 10.1109/TNNLS.2026.3745261
+- Categories: cs.LG
+- Relevance: 3.751297096037829
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.00511v1
+- PDF: https://arxiv.org/pdf/2611.00511v1
+- Local PDF: pdf/2026-11-04_04_Efficient and Scalable Multi-View Masked Autoencoder for Heterogeneous Graph Self-Supervised Learning.pdf
+
+Recent years have witnessed the flourishing of self-supervised learning on heterogeneous graphs, e.g., masked autoencoder-based methods. However, existing methods suffer from three issues, including the prohibitive computational cost of constructing meta-path-induced subgraphs, the limitations of uniform random masking, and the suboptimal objective of reconstructing potentially noisy or uninformative original node features. To address these issues, we propose the Multi-View Masked Auto Encoder (MVMAE), a novel, efficient, and scalable framework for heterogeneous graph self-supervised learning. First, MVMAE introduces a novel multi-view mask-then-reconstruct strategy. Instead of masking individual nodes or features, MVMAE randomly masks entire meta-path views and guides the model to reconstruct their representations from remaining visible views. This approach shifts the learning objective to a high-level and semantic task, providing a more robust and informative supervisory signal that is effective even when initial node features are absent or flawed. Then, to handle the computational demands, MVMAE employs an efficient offline aggregation mechanism that pre-computes and reuses representations for each meta-path view, completely avoiding the costly construction of meta-path-induced subgraphs. Next, to fuse the representations of each view, MVMAE uses a Transformer-based multi-view fusion encoder to capture the complex correlations between views, and a deliberately simple MLP decoder to compel the encoder to learn highly expressive and robust node representations. Extensive experiments on six real-world datasets, including three large-scale graphs, demonstrate that MVMAE consistently outperforms state-of-the-art self-supervised and even semi-supervised baselines, confirming its superior effectiveness and scalability. Our source code is released at https://github.com/hcmdgh/MVMAE.
+
+## 5. Versatile Graph Foundation Models from Frozen Time-Series Foundation Models via Parallel Flows
+
+- Authors: Jielong Yang, Feng Ji
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-31
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.6803872454899804
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.00670v1
+- PDF: https://arxiv.org/pdf/2611.00670v1
+- Local PDF: pdf/2026-11-04_05_Versatile Graph Foundation Models from Frozen Time-Series Foundation Models via Parallel Flows.pdf
+
+Graph foundation models aim to serve unseen graphs across tasks, feature spaces, and label sets. Most current models learn how to represent a new graph by pre-training on other graphs. Because graph data are scarce and differ across domains in features and structures, what they learn may not transfer to a graph from an unseen domain. We show that a frozen time-series foundation model, pre-trained on abundant time series, can instead serve as a graph foundation model without graph pre-training and without any gradient update on the target graph. Such a model reads ordered multivariate sequences, but a graph has no time axis, and covering all its edges with sequences is nontrivial because a node can have many neighbors. We therefore propose GraphFlowFM, which decomposes a graph into parallel flows, sets of vertex-disjoint paths that jointly cover every edge, and reads each path as a multivariate time series with the nodes as time steps. A frozen TimesFM encodes the paths with causal attention, which gives each node a self token and a context token, and a closed-form ridge readout weighs these tokens by their alignment with the labels. In node classification, GraphFlowFM attains the best average rank on 21 datasets among graph foundation models published in 2025 and 2026, ranks first on 17 datasets, and leads on six of the seven heterophilous datasets. It also exceeds pre-trained graph foundation models in link prediction on all six datasets and ranks second in molecule classification, behind only a model fine-tuned after pre-training on molecules.
+
+## 6. Building a pre-trained model for single-cell multi-omics analysis beyond highly variable feature selection
+
+- Authors: Zhen Yuan, Shaoqing Jiao, Yihang Xiao, Jiajie Peng
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-11-02
+- DOI: https://doi.org/10.1038/s41467-026-78933-8
+- Categories: Single-cell and spatial transcriptomics, Bioinformatics and Genomic Networks, Genomics and Chromatin Dynamics
+- Relevance: 3.5954608563252197
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-78933-8
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract Single-cell multi-omics technologies enable simultaneous measurement of transcriptomic, epigenomic, and proteomic modalities in individual cells, offering a unique opportunity to dissect cellular identity and regulation. The heterogeneity of multi-omics data, together with the wide range of downstream analytical tasks, underscores the need for a versatile computational framework for integrative analysis. However, current multi-omics analysis approaches typically rely on task-specific training and highly variable feature selection, which can hinder effective knowledge transfer across datasets and discard biologically informative signals. Here, we present scPMMI, a pre-trained multimodal model for integrative analysis of single-cell multi-omics data. By grouping features into patches according to genomic coordinates, scPMMI processes tens of thousands of features per cell with reduced reliance on prior feature selection, thereby preserving more complete biological information. Our results demonstrate that scPMMI learns biologically coherent cell representations by jointly modeling multi-omics data. Through further transfer learning, the model can be readily adapted to achieve superior performance across diverse downstream tasks, including multi-omics integration, cell type annotation, protein abundance prediction, transcriptomic enhancement, and trajectory reconstruction.
+
+## 7. A Common Language for Dynamic Graphs: Interaction Tokenization Enables Foundation Models
+
+- Authors: Fuyuan Ma, Yili Wang, Xin He, Xin Zhang, Ying Wang, Xin Wang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.LG, cs.SI
+- Relevance: 3.501688405189042
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.03246v1
+- PDF: https://arxiv.org/pdf/2611.03246v1
+- Local PDF: pdf/2026-11-04_07_A Common Language for Dynamic Graphs_ Interaction Tokenization Enables Foundation Models.pdf
+
+Dynamic graphs capture evolving interactions in Web systems, including online communication, user engagement, and recommendation. Graph foundation models aim to reuse predictive capabilities across networks, but extending this capability to dynamic graphs faces two challenges. First, node identities are graph-specific, and similar interaction patterns can appear at different temporal and activity scales, making histories difficult to represent consistently across networks. Second, the predictive roles of historical patterns vary across interaction dynamics, limiting transfer from a narrow range of training processes. In this paper, we show that a common interaction language, combined with learning across diverse interaction processes, offers a basis for dynamic graph foundation modeling. We propose CL-DGFM, a Common Language Dynamic Graph Foundation Model for temporal link prediction. Its Dynamic Interaction Tokenizer encodes interaction memory, historical connectivity, and ordered destination transitions into calibrated tabular inputs, making dynamic histories accessible to existing predictors without an additional trainable graph encoder. Its Dynamic Interaction Prior trains a pretrained tabular foundation predictor across diverse synthetic dynamics. Labeled historical context guides prediction, with a Contextual Value Adapter modulating attention values. The model transfers to real graphs without target-graph parameter updates. Experiments on TGB and TGB-Seq demonstrate competitive performance. Further comparisons show that the common language supports basic machine learning and neural models, and enables direct use of frozen tabular foundation models on dynamic graphs.
+
+## 8. Data-Scarce, Multi-Granular, Multimodal: Benchmark Design for Biosynthetic Gene Clusters
+
+- Authors: Hanlin Xiao, Eriko Takano, Mauricio A. Álvarez, Rainer Breitling
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-01
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.4913186693858305
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02275v1
+- PDF: https://arxiv.org/pdf/2611.02275v1
+- Local PDF: pdf/2026-11-04_08_Data-Scarce, Multi-Granular, Multimodal_ Benchmark Design for Biosynthetic Gene Clusters.pdf
+
+Biosynthetic gene clusters (BGCs) are co-located genes that encode the biosynthesis of specialized metabolites, an important source of antibiotics, anticancer agents, immunosuppressants, and agricultural bioactives. Deep learning, particularly self-supervised foundation models, has spurred interest in BGC sequence modeling, but evaluation has lagged behind: existing benchmarks often rely on coarse classification over small curated datasets, providing limited discrimination among models and insight into downstream utility. We propose a benchmark-design framework in which an informative benchmark should be discriminative, separating models with statistical confidence, and applicable, spanning scientifically meaningful tasks under different levels of generalization. We instantiate this framework as BGC-Bench, which derives five tasks from MIBiG, ranging from A-domain substrate prediction to BGC-molecule retrieval, evaluates them under genotype- and phenotype-shift splits, includes an active-learning setting for label-scarce discovery, and is easily extensible to new tasks and encoders. BGCs further provide a shared testbed across granularities and modalities: BGC-Bench compares twelve encoders on nucleotide, amino-acid, or Pfam-domain sequences, including compositional baselines for each input type, and combines BGC and chemical encoders for cross-modal retrieval. No single representation dominates: the best granularity depends on the biological scale of the task, and pretrained encoders do not consistently outperform other representations across tasks and splits. Active-learning experiments show that most tasks remain data-limited, encoder rankings change with labeling budget, and acquisition strategies yield modest gains. These results show that BGC model evaluation requires task-diverse, shift-aware benchmarks, and the framework can be generalized to benchmark design beyond BGCs.
+
+## 9. Discovering hierarchical governing equations for community-structured complex network dynamics with LLM agents
+
+- Authors: Jinlei Zhang, Zixuan Zhang, Hao Qiu, Feng Chen, Jiateng Yin, Xiaoyong Yan, Xiaolei Ma, Hao Sun, Jianxi Gao, Lixing Yang, Ziyou Gao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: physics.soc-ph, cs.AI
+- Relevance: 3.4456231801439885
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02816v1
+- PDF: https://arxiv.org/pdf/2611.02816v1
+- Local PDF: pdf/2026-11-04_09_Discovering hierarchical governing equations for community-structured complex network dynamics with LLM agents.pdf
+
+Governing equations provide an interpretable description of the mechanisms underlying complex network dynamics, yet their discovery from observational data remains challenging when shared community-level dynamics coexist with individual-level variations and the relevant functional structures may be absent from the initial candidate library or not explicitly specified in advance. Here we formulate this task as a hierarchical law-discovery problem and introduce SAGE, a large language model-guided self-reflective agent framework for discovering community-shared governing laws and individual-specific dynamical variations. SAGE organizes equation discovery into an iterative Library-Discovery-Review process that first identifies shared community-level structures and then resolves node-specific residual dynamics, while adaptively refining the candidate space to introduce missing dynamical terms when needed. This hierarchical and interpretable formulation enables SAGE to distinguish shared community-level dynamics from individual-level variations and to reveal the mechanisms underlying complex network dynamics. Across two synthetic networks and four real-world networks spanning mobile communication, brain electrophysiology, power grids and urban rail transit, SAGE recovers compact and interpretable governing equations, reproduces observed system dynamics and outperforms representative equation-discovery baselines. The framework remains robust under incomplete observations and can transfer community-level governing laws to nodes with entirely missing observations. These results establish a hierarchical and adaptive approach for disentangling shared and individual dynamical mechanisms in community-structured complex networks.
+
+## 10. NIR: Approximate Neural Instance Retrieval for ALCIQ
+
+- Authors: N'Dah Jean Kouagou, Pritilata Saha, Caglar Demir, Axel-Cyrille Ngonga Ngomo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.3612369110199265
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02842v1
+- PDF: https://arxiv.org/pdf/2611.02842v1
+- Local PDF: pdf/2026-11-04_10_NIR_ Approximate Neural Instance Retrieval for ALCIQ.pdf
+
+Instance retrieval is the main bottleneck of concept-learning systems based on refinement operators. We present NIR, a family of neural instance retrievers for ALCIQ that output graded membership scores from knowledge graph embeddings. We compare tokenization-based encoders (GRU, LSTM, Transformer) with a Compositional encoder that mirrors DL operators via primitive sub-networks. On eight benchmarks, all variants approximate Pellet closely on complete knowledge bases, while the Transformer model is most robust under incompleteness. The source code of our approach is at https://github.com/dice-group/owlapy.
+
+## 11. Strictly proper scoring rules for node selection tasks on graphs
+
+- Authors: Lorenz Hilfiker, Nathan Cincera Brack, Martin Sterchi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.LG, cs.SI, stat.ML
+- Relevance: 3.3197421498429764
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.03274v1
+- PDF: https://arxiv.org/pdf/2611.03274v1
+- Local PDF: pdf/2026-11-04_11_Strictly proper scoring rules for node selection tasks on graphs.pdf
+
+In node selection tasks, the goal is to identify a single unknown target node in a graph. We consider probabilistic supervised node selection, where the estimator outputs a probability distribution over the nodes of the graph and the ground-truth node is available for evaluation. Classical evaluation metrics for such tasks are either statistically ill-conceived or blind to the graph structure. To fill this gap, we introduce two strictly proper scoring rules that are explicitly graph-aware: the Resistance score, which is parameter-free, and the Diffusion score, which operates at an adjustable coarse-graining resolution. We show that the Diffusion score interpolates between the multi-category Brier score and a cluster-level weighted Brier score. The Resistance score generalises two classical scoring rules: the multi-category Brier score and the Ranked probability score. Applied to rooted trees, it also serves as the strictly proper version of the improper Hierarchical error distance used in hierarchical classification. In the same setting, we furthermore establish strict propriety of the Hierarchical cross-entropy family, a recently introduced separate class of hierarchy-aware scoring rules. Experiments on epidemic source detection and on ImageNet classification confirm that the proposed scores detect meaningful differences in estimation quality that classical metrics miss.
+
+## 12. Unlocking the Potential of Contrastive Regularization for Diffusion Transformer Training
+
+- Authors: Yi Tan, Beier Zhu, Sirui Chen, Yunzhe Lin, Yuan Zhou, Cheng Chen, Xingyu Zhu, Tianrun Chen, Yanbin Hao, Hanwang Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.CV, cs.LG
+- Relevance: 3.311557060296387
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02921v1
+- PDF: https://arxiv.org/pdf/2611.02921v1
+- Local PDF: pdf/2026-11-04_12_Unlocking the Potential of Contrastive Regularization for Diffusion Transformer Training.pdf
+
+Representation regularization has emerged as an effective way to improve diffusion transformer training. Yet one of the most canonical regularizers--InfoNCE-style contrastive learning--remains largely underexplored in this setting. We naturally ask a question: can standard contrastive learning serve as an effective regularizer for diffusion transformers? Surprisingly, we find that naive InfoNCE regularization brings only marginal gains. Our analysis reveals that the objective is easily dominated by a shortcut: near-orthogonal noise components in diffusion inputs provide a bypass for enlarging negative-pair distances while weakening positive-pair alignment, especially at high noise levels. To unlock the benefit of contrastive regularization, we propose Clean Representation-ANchored Contrastive (CRAN) regularization. Specifically, CRAN anchors contrastive dispersion with clean-sample representation distances, transferring clean relational semantic structure to noisy diffusion representations to suppress the noise shortcut. Extensive experiments on ImageNet show that CRAN consistently improves diffusion transformer training across model scales and training budgets, outperforming internal feature-alignment and dispersive regularization baselines while matching external DINO-guided REPA. These results re-establish InfoNCE-based contrastive learning as an effective regularizer for diffusion training, once its noise-driven over-dispersion is properly constrained.
+
+## 13. Quantifying Local and Global Fidelity of Nonlinear Embeddings
+
+- Authors: Henry Han
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-30
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.3027780080857254
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.00290v1
+- PDF: https://arxiv.org/pdf/2611.00290v1
+- Local PDF: pdf/2026-11-04_13_Quantifying Local and Global Fidelity of Nonlinear Embeddings.pdf
+
+Dimension reduction methods are chosen by a common claim: t-SNE and UMAP preserve local structure, and PCA preserves global structure. Checking it on given data takes local and global scores on one scale and a test that compares two maps. Both scores come from one curve. The locality profile is the chance-corrected share of each point's k nearest neighbors that a map keeps, over all neighborhood sizes. Its value at k = 10 is the local fidelity L, and its mean over 30 to 50 percent of the data is the global fidelity G. We prove that at the midpoint the profile is the agreement on which half of the data is near each point, a rank correlation of the distances. Because L and G are one statistic, two maps can be tested against each other. The LG reversal test applies to any two dimension reduction methods. It decides, with a block-jackknife p-value, whether one map is more local and the other more global, and returns the scale at which to change maps. On 156 maps of twelve datasets with up to 1.38 million points, G agrees with established global scores at 0.89 and 0.96, and 2,000 points estimate it. The test confirms the usual claim on seven datasets. On both retail datasets and both rolled-up manifolds, it finds the neighbor embeddings more global. In an agent memory of one million passages, the two maps cross at 150,000 passages (p = 2.6e-5). Applications span pathology, single cells, supply chains and AI agent memory.
+
+## 14. Attribution-based diagnostics for single-cell foundation models
+
+- Authors: Farnoush Rezaei Jafari, Tristan Lazard, Kenza Bouzid, Shruthi Bannur, Jeremiah Wander, Ashley Mae Conard, Stephanie Hyland, Lorin Crawford, Daniel Coelho de Castro
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.LG, q-bio.QM
+- Relevance: 3.2472315145741693
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02335v1
+- PDF: https://arxiv.org/pdf/2611.02335v1
+- Local PDF: pdf/2026-11-04_14_Attribution-based diagnostics for single-cell foundation models.pdf
+
+Single-cell RNA foundation models (scFMs) are increasingly used for in-silico biological discovery, yet predictive performance alone does not reveal whether their decisions rely on biologically meaningful signals or model-specific shortcuts. We systematically investigate post-hoc attribution of downstream predictions across two tasks: cell-type annotation using pretrained Cell2Sentence and scGPT models, and perturbation prediction using scGPT+STATE in a controlled setting. For cell annotation, we use attribution to assess whether predictions rely on established marker genes and how their relevance varies with model architecture, expression rank, and the surrounding cellular context. For perturbation prediction, we compare attribution patterns with known regulatory ground-truth in a synthetic setting to assess what they reveal about the model's learned computations. Across these tasks, attribution reveals biological feature use, contextual interactions, contributions from different input pathways, learning progression, associations with prediction quality, and potential pitfalls that are not fully captured by standard performance metrics. Experiments with complete and limited regulatory knowledge further demonstrate that conclusions drawn from attribution depend strongly on the choice of biological reference, baseline, and null model. Together, these findings highlight the value of attribution as a flexible post-hoc diagnostic for understanding model behavior, identifying potential issues, and informing the development of scFMs.
+
+## 15. Networked AI: Architecture, Theory, and Applications
+
+- Authors: Liang Song, Jiayue Jin, Peng Sun, Di Li, Yang Liu, Athanassios Skodras, Dimitris Ampeliotis, Yong Yuan, Amit Dvir, Jiangchuan Liu, Victor C. M. Leung, Qi Bi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.AI, cs.NI
+- Relevance: 3.230505004120168
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.03063v1
+- PDF: https://arxiv.org/pdf/2611.03063v1
+- Local PDF: pdf/2026-11-04_15_Networked AI_ Architecture, Theory, and Applications.pdf
+
+Recent advances in Artificial Intelligence (AI), particularly large-scale deep learning, have been driven by monolithic or offline training on massive curated datasets. While successful, these approaches face structural limitations: escalating data and computational demands, limited online adaptability, and a lack of system-level intelligence in open, non-stationary environments. This paper presents Networked AI - a networked intelligent system composed of interacting, heterogeneous, and continuously evolving AI agents. We establish a hierarchical layered architecture comprising an Agent Layer for heterogeneous capability construction, an Interaction Layer for signal-processing-guided online data extraction, and a Regulation Layer for stability-constrained collective evolution. Foundations in data science, signal processing, and system control are hereby synthesized into a unified theoretical framework of Networked AI, providing superior data efficiency, intelligence efficiency, interpretability, and scalability. Theoretical and experimental analysis demonstrates that Networked AI can approach near-linear scaling in resource demand, in contrast to the exponential increase in standalone end-to-end systems. It provides not only online adaptation to out-of-distribution environmental novelties, but also the autonomous evolution towards application-specific intelligence. Application frontiers are discussed for IoT spaces, embodied, spatial, and industrial intelligences, as well as the cellular infrastructure and beyond. Key open challenges are identified towards realizing locally autonomous, collectively intelligent, continuously evolving, globally regulated Networked AI.
+
+## 16. From Cross-Section to Cross-Omics: Conditional Cell Nucleus Image Editing in Spatial Transcriptomics
+
+- Authors: Yuechen Yang, Junchao Zhu, Junlin Guo, Yanfan Zhu, Ruining Deng, Zhengyi Lu, Tianyuan Yao, Chongyu Qu, Marilyn Lionts, Xingyi Guo, Yaohong Wang, Yu Wang, Shilin Zhao, Haichun Yang, Yuankai Huo
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-30
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.2260782441489857
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.00226v1
+- PDF: https://arxiv.org/pdf/2611.00226v1
+- Local PDF: pdf/2026-11-04_16_From Cross-Section to Cross-Omics_ Conditional Cell Nucleus Image Editing in Spatial Transcriptomics.pdf
+
+Spatial transcriptomics (ST) platforms simultaneously measure gene expression and capture cell nucleus images at single-cell resolution. A fundamental property of tissue preparation introduces a confounding relationship between the two measurement modalities: sectioning a three-dimensional tissue into a thin slice produces a two-dimensional cross-section whose area depends on the cutting angle. Larger cross-sections expose more cytoplasm, yielding higher mRNA counts, while pathomics features such as nuclear area are measured directly from the same 2D boundary. This sectioning geometry creates an apparent correlation between gene expression and pathomics that reflects the measurement process rather than independent biology. Existing gene-to-image methods generate cell images from gene features but do not support condition-driven editing of existing images across both omics layers. We apply the Manifold-Aware Diffusion (MAD) framework to this dual-omics editing setting, enabling targeted modification of one feature group while preserving the other. Evaluated on podocyte cells from CosMx SMI kidney tissue, MAD achieves MAE=0.6636 and FID=25.19 for pathomics editing, outperforming all compared baselines. A controlled simulation study further confirms that the VAE component in MAD better preserves cross-group independence than CCDM (MAD without VAE).
+
+## 17. IsoAlign: Isoform-Aware DNA-Protein Alignment via Joint-Embedding Predictive Architectures
+
+- Authors: Niousha Sadjadi, Arman Seyed-Ahmadi, Tony Tu, Micaela Elisa Consens, Kerr Ding, Alif Munim, Lila Kari, Zehui Li, Barry B. Rubin, Bo Wang, Vallijah Subasri
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-30
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.211806619353105
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.00241v1
+- PDF: https://arxiv.org/pdf/2611.00241v1
+- Local PDF: pdf/2026-11-04_17_IsoAlign_ Isoform-Aware DNA-Protein Alignment via Joint-Embedding Predictive Architectures.pdf
+
+Genomic foundation models (GFMs) have emerged as a powerful paradigm for learning DNA sequence representations, yet existing self-supervised pretraining strategies overlook alternative splicing and underperform compared to specialized models. To address this gap, we introduce IsoAlign, a multimodal framework that grounds genomic pretraining in isoform-aware DNA-protein alignment to learn biologically meaningful representations. IsoAlign aligns transcripts to their corresponding protein isoforms, capturing both coding sequences and broader regulatory contexts, using two Joint-Embedding Predictive Architectures (JEPA): DNA-Protein JEPA (DP-JEPA), which predicts protein representations from DNA using contrastive alignment, and Isoform-Masked JEPA (IM-JEPA), which models relationships among alternative isoforms of the same gene through masked protein prediction. We evaluate the learned DNA representations of these architectures across a multi-metric evaluation suite spanning tasks, including the prediction of pathogenicity, fitness, gene expression, and TF binding. Our results demonstrate that isoform-aware cross-modal alignment using JEPA significantly improves functional representations and downstream performance, establishing a promising direction for GFM pretraining.
+
+## 18. Balancing Representations by Identifying and Generating Under-represented Data
+
+- Authors: Filipe Laitenberger, Hirokatsu Kataoka, Yuki Asano, Cees Snoek, Mohammadreza Salehi
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.2011188257438628
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02952v1
+- PDF: https://arxiv.org/pdf/2611.02952v1
+- Local PDF: pdf/2026-11-04_18_Balancing Representations by Identifying and Generating Under-represented Data.pdf
+
+Self-supervised learning inherits the coverage of its source data. When an unlabeled corpus is long-tailed, the representation becomes dense around frequent modes and thin where coverage is weak. Objectives for long-tailed SSL reweight the images already in the corpus and add no new ones. We introduce BRIDGE (Balancing Representations by Identifying and Generating Under-represented Data), a label-free feedback loop around the source set. The current encoder scores every source image by its mean kNN distance, and a budgeted acquisition rule selects images from a band of that score distribution where support is thin and the generator still produces faithful variants. A frozen image-to-image diffusion model then adds local variants of the selected anchors, and pretraining continues on the enlarged source set. We formulate acquisition as recoverability-weighted allocation of local support and derive when a finite budget should favor a sparse band that excludes the extreme tail and when reallocation after each repair is optimal under a fixed objective. Across five long-tailed, web-scraped and synthetic source regimes, BRIDGE has the highest seven-task linear-probe and kNN average of the compared methods, and paired experiments extend the gain to ViT-S under contrastive and self-distillation objectives, to low-label fine-tuning and to semantic segmentation. The linear-probe gain is smaller under masked reconstruction. Generated repair matches an oracle that restores the withheld real images, and under a frozen encoder the inserted images shrink the neighborhoods of the selected anchors about twice as much as those of matched unselected images. BRIDGE needs no labels and leaves the pretraining objective unchanged, so it can be added to pretraining on uncurated web data, where the encoder decides which images to generate.
+
+## 19. Spectral Signatures of Memorization Basins in Diffusion Trajectories
+
+- Authors: Achref Jaziri, Martin Mundt, Ahmed Imtiaz Humayun, Visvanthan Ramesh
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-01
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.1724919674342806
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.01775v1
+- PDF: https://arxiv.org/pdf/2611.01775v1
+- Local PDF: pdf/2026-11-04_19_Spectral Signatures of Memorization Basins in Diffusion Trajectories.pdf
+
+Diffusion models are known to reproduce individual examples from their training data as a form of memorization with implications for generalization, privacy, and downstream use. Recent work demonstrated that memorized training samples reside inside contiguous regions of the data/latent space known as basins of memorization -- once a denoising trajectory enters a basin, under finite perturbations it irreversibly reproduces a memorized example. Prior empirical work on such basins in trained models has primarily focused on classifier-free guidance based detection and mitigation strategies in text-to-image models, leaving basin entry and their formation largely uncharacterized. In this paper, we present a geometric characterization of memorization basins for conditional, unconditional, and rectified-flow-based diffusion models. We observe a characteristic signature in the local spectrum of the function geometry that distinguishes basin entry: the emergence of a dominant singular mode followed by a sharp spectral recovery. This signature appears at two timescales: along denoising trajectories during inference and over the course of training. We further investigate whether these geometric signatures can be used to intervene on memorization. During training, we suppress memorization by acting on the dominant mode. At inference, we develop methods to identify trajectories entering memorization basins and steer them away. We find that these interventions remain effective even with low-dimensional approximations of the underlying geometry, and demonstrate that geometry-informed steering extends to large-scale text-to-image diffusion models. Together, our results corroborate that local spectral geometry provides a common basis for characterizing memorization and for suppressing, detecting, and steering away from it across training and generation.
+
+## 20. Structured Visual Landscape: Generating Preferred Representations in Biological and Artificial Neural Networks
+
+- Authors: Yusong Zhao, Edgar Y. Walker, Hao Wang, Mi Lu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.CV, cs.LG, cs.NE
+- Relevance: 3.168108356342363
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.03597v1
+- PDF: https://arxiv.org/pdf/2611.03597v1
+- Local PDF: pdf/2026-11-04_20_Structured Visual Landscape_ Generating Preferred Representations in Biological and Artificial Neural Networks.pdf
+
+Understanding how neurons respond to visual stimulus is an important question in both deep learning and neuroscience. It has significant implications for enhancing the interpretability of black-box artificial neural networks and for understanding the visual representation in the human brain. We propose a structured visual representations landscape and design an activation-based prior that allows us to effectively regularize the landscape with activations from brain regions or neural network units. Our model Vis-Lens integrates a variational autoencoder and a diffusion model into an image generation framework. It enables the generation of natural, realistic preferred images by directly modifying the activation-regularized latent codes without per-image iterative optimization. We demonstrate the effectiveness of our framework on both artificial neural networks and human visual cortex using functional magnetic resonance imaging (fMRI) data. Our framework improves activation modulation and image realism compared with a recent state-of-the-art method for generating preferred visual representations of these neural targets.
+
+## 21. Genome-anchored foundation model embeddings improve molecular prediction from histology images
+
+- Authors: Cheng Jin, Fengtao Zhou, Yunfang Yu, Jiabo Ma, Yihui Wang, Yingxue Xu, Hua-Jun Zhou, Hao Jiang, Luyang Luo, Luhui Mao, Zhiguo Hé, Xiuming Zhang, Jing Zhang, Ronald Chan, Herui Yao, Hao Chen
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-11-02
+- DOI: https://doi.org/10.1038/s41467-026-78947-2
+- Categories: AI in cancer detection, Radiomics and Machine Learning in Medical Imaging, Single-cell and spatial transcriptomics
+- Relevance: 3.1649671815388523
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-78947-2
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Precision oncology requires accurate molecular insights, yet obtaining these directly from genomics is costly and time-consuming for broad clinical use. Predicting complex molecular features and patient prognosis directly from routine whole-slide images (WSI) remains a major challenge for current deep learning methods. Here we introduce PathLUPI, which uses transcriptomic privileged information during training to extract genome-anchored histological embeddings, enabling effective molecular prediction using only WSIs at inference. Through extensive evaluation across 49 molecular oncology tasks using 11,257 cases among 20 cohorts, PathLUPI demonstrated superior performance compared to conventional methods trained solely on WSIs. Crucially, it achieves AUC $\geq$ 0.80 in 14 of the biomarker prediction and molecular subtyping tasks and C-index $\geq$ 0.70 in survival cohorts of 5 major cancer types. Moreover, PathLUPI embeddings reveal distinct cellular morphological signatures associated with specific genotypes and related biological pathways within WSIs. By effectively encoding molecular context to refine WSI representations, PathLUPI overcomes a key limitation of existing models and offers a novel strategy to bridge molecular insights with routine pathology workflows for wider clinical application.
+
+## 22. Geometric and algebraic inference in humans and neural networks
+
+- Authors: Jacob Russin, Joonhwa Kim, Ellie Pavlick, Michael J. Frank
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-30
+- DOI: Unavailable
+- Categories: q-bio.NC, cs.AI, cs.CL, cs.LG
+- Relevance: 3.152883137540956
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.00387v1
+- PDF: https://arxiv.org/pdf/2611.00387v1
+- Local PDF: pdf/2026-11-04_22_Geometric and algebraic inference in humans and neural networks.pdf
+
+Humans possess a remarkable ability to draw inferences from limited data. While some inferences are made intuitively from past experience, others require online reasoning based on novel information given in context. Here, we formalize these strategies, which we term geometric and algebraic inference, and study their computational tradeoffs in humans and neural networks. The geometric strategy gradually shapes representational geometry to reflect underlying relational structure, making subsequent inference cheap. The algebraic strategy flexibly attends to and reasons over novel relations given in context, but costs additional computation at inference time. We identify opposing signatures of these two strategies in transitive inference, a domain widely studied across species, and characterize the conditions under which each is observed. Our framework predicts that the geometric strategy should be dominant when relations are familiar, whereas the algebraic should emerge to support de novo inferences drawn in context. Multiple experiments demonstrate these opposing signatures in humans, neural networks trained from scratch, and large language models (LLMs). Causal interventions in the neural networks reveal that the geometric and algebraic strategies depend on representational geometry and selective attention mechanisms, respectively, and reproduce the effects of analogous neurobiological disruptions in humans. Our framework unifies these effects with disparate phenomena, including content effects observed in human and LLM reasoning and data-distribution effects observed in machine learning. Our findings reconcile competing views of cognitive flexibility that emphasize either representational geometry or algebraic manipulation by showing that each can have unique strengths, and can characterize different aspects of both human and neural network behavior.
+
+## 23. Coupling cellular trajectories and RNA kinetics on continuous expression manifolds with ManifoldVelo
+
+- Authors: Zhen Zhou, Jiachen Li, Yuan Liu, Xiaoyong Pan, Hong-Bin Shen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: q-bio.QM
+- Relevance: 3.124846504305212
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.03056v1
+- PDF: https://arxiv.org/pdf/2611.03056v1
+- Local PDF: pdf/2026-11-04_23_Coupling cellular trajectories and RNA kinetics on continuous expression manifolds with ManifoldVelo.pdf
+
+Jointly recovering pseudotime and RNA velocity from static single-cell transcriptomes requires reconciling global trajectory structure with local expression changes, particularly in complex cycles and branching differentiation. Here we introduce ManifoldVelo, a topology-conditioned framework that jointly learns cellular coordinates, continuous RNA trajectories and regulatory kinetics. Derivatives of unspliced and spliced RNA trajectories are matched to transcription-splicing-degradation dynamics, including between observed cells, allowing expression reconstruction, cellular ordering and kinetic estimation to inform one another. ManifoldVelo recovers pseudotime across all evaluated single-cell trajectory types, including cyclic, multibranch and smooth non-branching trajectories. ManifoldVelo achieves the best pseudotime recovery among compared methods in multipeak cyclic simulations and the highest directional agreement for spliced RNA velocity in both multipeak cyclic and branching simulations. Real-data analyses support phase prediction across experimental plates and differentiation trajectories consistent with pancreatic developmental stages and marker expression. Its central advantage is the joint recovery of temporal position and local dynamics across distinct trajectory structures within a reusable dynamic reference. New cells are assigned pseudotime and velocity predictions from spliced RNA alone, without refitting the reference model. ManifoldVelo provides a foundation for dynamic cell atlases that transfer learned temporal and kinetic information to new samples.
+
+## 24. Geometric Morphology Learning: Empowering Foundation Models from Structure to Spacetime Intelligence
+
+- Authors: Li Sun, Philip S. Yu
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-01
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.0939459436178463
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.01932v1
+- PDF: https://arxiv.org/pdf/2611.01932v1
+- Local PDF: pdf/2026-11-04_24_Geometric Morphology Learning_ Empowering Foundation Models from Structure to Spacetime Intelligence.pdf
+
+Geometry is the very form that connects space, time, and matter, serving as the fundamental fabric of the physical world, from continuous fields to discrete structures. Despite its importance, deep learning is inherently blind to geometry. Riemannian geometry stands as a well-established mathematical foundation for studying geometry, yet it remains largely incompatible with deep learning architectures. To bridge this gap, we establish a new learning framework--Geometric Morphology Learning--that learns geometric or topological structures, shapes or conformations for representation learning, reasoning and action modeling. Moving beyond early attempts limited to specific geometric priors, this theory centers on modeling the intrinsic geometry of objects and learning from such geometric or topological knowledge. Specifically, we construct a neural bundle, a unified scaffolding linking local and global structures, and formulate differentiable operators, including connection and curvature, thereby enabling the study of geometry with advanced geometric concepts such as holonomy and cohomology. Consequently, Geometric Morphology Learning opens new horizons in foundation models, reasoning and planning, graph modeling, physical simulation, PDE systems, and dynamics, marking a fundamental shift toward instilling systematic geometry in artificial intelligence.
+
+## 25. Lie Routing Vision Language Models for View-Robust 3D Understanding
+
+- Authors: Jingjun Yi, Chen Hu, Qi Bi, Hao Zheng, Huimin Huang, Yongkang, Wei Ji, Yawen Huang, Xian Wu, Yefeng Zheng
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-01
+- DOI: Unavailable
+- Categories: cs.CV, cs.LG
+- Relevance: 3.081602150849576
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02306v1
+- PDF: https://arxiv.org/pdf/2611.02306v1
+- Local PDF: pdf/2026-11-04_25_Lie Routing Vision Language Models for View-Robust 3D Understanding.pdf
+
+Multimodal Large Language Models (MLLMs) have made substantial progress in 3D scene understanding from multi-view RGB observations. Yet a fixed object and query can elicit inconsistent target-related responses across camera viewpoints, a phenomenon we characterize as viewpoint-induced semantic drift. We introduce LieVLM, a Lie routing framework for view-robust 3D understanding. Motivated by the rotational component of viewpoint change, Lie routing adapts visual representations by applying local $\mathrm{SO}(3)$ transformations to projected features within learned three-dimensional subspaces. Geometry tokens extracted by VGGT predict local rotation parameters and channel-wise routing coefficients. A closed-form Padé--Cayley map transforms projected visual features, whose identity-relative corrections are projected back and gated into the original visual and geometry features. This design retains the pretrained semantic and direct spatial context while learning view-dependent feature adjustments. Experiments on 3D captioning, grounding, detection, and spatial reasoning show consistent improvements over additive fusion across training scales and backbones. Controlled ablations examine the roles of geometric conditioning and transformation structure. Viewpoint analyses further reveal systematic variation in the predicted routing states alongside more localized target responses and stronger task performance across viewpoint changes.
+
+## 26. RouteREPA: Routed Representation Alignment for Just Image Transformers
+
+- Authors: Yi Tan, Beier Zhu, Sirui Chen, Cheng Chen, Xingyu Zhu, Yuan Zhou, Zhenshan Tan, Tianrun Chen, Hanwang Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.CV, cs.LG
+- Relevance: 3.05274915689538
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02941v1
+- PDF: https://arxiv.org/pdf/2611.02941v1
+- Local PDF: pdf/2026-11-04_26_RouteREPA_ Routed Representation Alignment for Just Image Transformers.pdf
+
+Representation alignment (REPA) is widely used to accelerate the training of latent-space diffusion transformers (DiTs). However, applying it to pixel-space models such as Just Image Transformers (JiT) is challenging. Our analysis reveals a pronounced representation conflict between discriminative alignment and pixel-space generation. Compared with its latent counterpart, JiT learns representations that are substantially less aligned with DINOv2. Applying REPA to JiT consistently reduces the reconstructability of its intermediate representations, whereas this effect is not observed in Latent JiT. We attribute this conflict to JiT directly reconstructing pixels, which requires its representations to hierarchically encode discriminative semantics and reconstruction-relevant visual information across network depths. To address these challenges, we propose Routed Representation Alignment (RouteREPA), which uses lightweight, representation-dependent routers to adaptively route task-oriented representations for alignment and generation. We further apply routing across multiple network depths to accommodate their depth-dependent representation requirements. Extensive experiments on ImageNet-1K at 256x256 resolution show that RouteREPA consistently improves JiT across model scales and training budgets, outperforming standard REPA. On JiT-H/16, RouteREPA further surpasses PixelREPA using only one-third of its training epochs without classifier-free guidance.
+
+## 27. Tracing the Scientific Discovery Capacity of LLMs to Their Training Data
+
+- Authors: Arda Uzunoglu, Mahler Revsine, Michael Schatz, Benjamin Van Durme, Mehrdad Farajtabar, Daniel Khashabi, Eric Nalisnick
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 3.027398523586058
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.03617v1
+- PDF: https://arxiv.org/pdf/2611.03617v1
+- Local PDF: pdf/2026-11-04_27_Tracing the Scientific Discovery Capacity of LLMs to Their Training Data.pdf
+
+Large language models (LLMs) show growing promise for scientific discovery, yet basic questions remain about what enables reliable discovery. How can we trace the scientific discovery capacity of LLMs to their training data? We study this question as one of missing probability mass and develop a theoretical account in which monofacts-the facts observed once during training-set the discovery capacity. In materials science and regulatory genomics, we directly manipulate monofact rates in training sets and find that more monofacts consistently yield more discoveries across two open-weight model families, sampling strategies, and reasoning budgets. Further experiments show the relationship cannot be explained by training-set diversity alone and can transfer across scientific domains when paired with in-domain data. Together, our results identify monofact rate in training data as a key factor governing discoveries in language models.
+
+## 28. Restrained Diffusion Bridges: Targeted Denoiser Training and Refinement
+
+- Authors: Xuanxi Zhang, Kevin S. Cheng, Weizhou Wang, Jonathan Weare
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-01
+- DOI: Unavailable
+- Categories: cs.LG, physics.chem-ph
+- Relevance: 3.0206393381868315
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.02170v1
+- PDF: https://arxiv.org/pdf/2611.02170v1
+- Local PDF: pdf/2026-11-04_28_Restrained Diffusion Bridges_ Targeted Denoiser Training and Refinement.pdf
+
+Diffusion models are often inaccurate in critical, data-sparse regions of the target distribution. Sampling from restrained distributions, biased distributions used in classical enhanced sampling to concentrate data near chosen configurations, can control where training data are collected but biases the learned distribution. We establish that this bias cancels exactly when forward noising from restrained data is conditioned on the restrained configuration at an appropriately chosen intermediate time. This allows a pretrained model fine-tuned on restrained data to achieve high accuracy in any chosen region of the target distribution, regardless of its probability, using standard denoising or flow matching objectives without importance weights. When no target data are available, Gibbs sampling enables inference from a model trained exclusively on restrained data.
+
+## 29. TopoSteer: Topological Layer Selection for Activation Steering in LLMs
+
+- Authors: Tuc Nguyen, Marcos Gutiérrez-del-Pozo, Eduardo Paluzo-Hidalgo, Yifan Hu, Adaku Uchendu, Thai Le
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-01
+- DOI: Unavailable
+- Categories: cs.CL, cs.LG
+- Relevance: 3.009624654977184
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.01493v1
+- PDF: https://arxiv.org/pdf/2611.01493v1
+- Local PDF: pdf/2026-11-04_29_TopoSteer_ Topological Layer Selection for Activation Steering in LLMs.pdf
+
+Activation steering controls large language models at inference time by adding a vector to their internal representations. Most work asks how to build that vector, and far less attention has gone to where to add it, even though steering at a poorly chosen layer can be worse than not steering at all. Prior selectors choose a layer without ever steering the model to test it: they score how separable the target behavior is at that layer, and how consistently the individual examples point along the steering direction. We argue that what matters is not the separability of the two activation clouds, nor the alignment of individual displacements with their mean, but the extent of the cloud of per-example displacements that mean-difference steering averages. We propose a topology-based layer selection method, called TopoSteer, which scores a layer by the total H_0 persistence of its displacement cloud, computed as the length of the cloud's Euclidean minimum spanning tree. We show that the score focuses on the displacement cloud's relative geometry, while class separation affects it only through standardization. We also provide a theoretical explanation for our method by proving that, as example-level variation increases, TopoSteer and discriminability move in opposite directions, so the two criteria can rank layers in opposite ways. Across multiple language models and steering tasks, TopoSteer provides a principled alternative to discriminability- and separability-based layer selection and yields more effective steering without requiring held-out validation.
+
+## 30. ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction
+
+- Authors: Aashish Bohra, Vivek Vijay
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-02
+- DOI: Unavailable
+- Categories: cs.LG, eess.SP, stat.ML
+- Relevance: 3.0022726174868843
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.03512v1
+- PDF: https://arxiv.org/pdf/2611.03512v1
+- Local PDF: pdf/2026-11-04_30_ST-GFM_ Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction.pdf
+
+Graph forecasters for sensor networks are trained in one regime and deployed in others, where sensor coupling and signal frequency content both change. We split this spectral shift into an operator channel and a frequency channel, each with a dimensionless measure. ST-GFM (Spectral-Temporal Graph Forecasting Model) filters every input step with Chebyshev and bidirectional diffusion filters on one learned, non-symmetric operator and alternates them with per-node temporal attention. For the operator channel we prove Frobenius-norm perturbation bounds for both graph branches, show that the Chebyshev bound is attained to first order, and compute its constant from the trained weights and the measured operator norm: 17.9 on METR-LA and 21.5 on PEMS-BAY. Under random edge dropout the trained layer moves by 2.0% to 3.1% of this bound. Masked Spectral Reconstruction (MSR), a self-supervised loss active in the first 40 epochs, matches the log power spectrum of the encoder output to that of the input. For small log-spectral residuals on unclamped bins it is proportional to an Itakura-Saito divergence to leading order. Removing it raises the 60-minute MAE by 0.30 on METR-LA, close to the 0.33 lost when all three self-supervised losses go. Under one shared evaluation pipeline, the 60-minute MAE of ST-GFM is 3.5% below a retrained STAEformer on METR-LA and 13.0% below it on PEMS-BAY. Its 60-minute MAE is 3.0980.017 on METR-LA (five seeds) and 1.5760.006 on PEMS-BAY (three seeds), the lowest PEMS-BAY MAE among twelve published baselines.
