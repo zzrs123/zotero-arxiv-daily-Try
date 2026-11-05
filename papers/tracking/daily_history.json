@@ -580,6 +580,13 @@
     "title": "MUX-USCT: A Noise-Robust Neural Network for Ultrasound Computed Tomography",
     "url": "http://arxiv.org/abs/2607.10648v1"
   },
+  "title:ocrinthefoundationmodelerafromspecialistmodelstounifiedmodels": {
+    "doi": null,
+    "sent_date": "2026-11-05",
+    "source": "arxiv",
+    "title": "OCR in the Foundation Model Era: From Specialist Models to Unified Models",
+    "url": "http://arxiv.org/abs/2611.04874v1"
+  },
   "title:oneblockaheadpromotingsamplerstateindiffusionlanguagemodels": {
     "doi": null,
     "sent_date": "2026-10-15",
@@ -664,6 +671,13 @@
     "title": "Registration-Grounded Spectral Fusion for Unregistered WLI/NBI Endoscopic Lesion Segmentation",
     "url": "http://arxiv.org/abs/2607.26395v1"
   },
+  "title:relistentrainingfreeevidencelocalizationinhourlongaudiowithfrozenaudiolanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-11-05",
+    "source": "arxiv",
+    "title": "ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models",
+    "url": "http://arxiv.org/abs/2611.04480v1"
+  },
   "title:researchprogressinhighpressuretuningoflayeredmagneticmaterials": {
     "doi": null,
     "sent_date": "2026-07-16",
@@ -733,6 +747,13 @@
     "source": "arxiv",
     "title": "Share the Symbol, Not the Vector: Training-Free Fact Communication Across Language Models",
     "url": "http://arxiv.org/abs/2610.19696v1"
+  },
+  "title:sheafmpnnalibraryforsheafneuralnetworksasmessagepassing": {
+    "doi": null,
+    "sent_date": "2026-11-05",
+    "source": "arxiv",
+    "title": "Sheaf-MPNN: A Library for Sheaf Neural Networks as Message Passing",
+    "url": "http://arxiv.org/abs/2611.04670v1"
   },
   "title:simsubspaceinteractionbasedmethodfortokenleveltextanomalydetection": {
     "doi": null,
