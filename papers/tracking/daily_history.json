@@ -69,6 +69,13 @@
     "title": "An Interpretable Approach to PDE Solution Discovery via Structural Experience Distillation",
     "url": "http://arxiv.org/abs/2610.12003v1"
   },
+  "title:atlasulpdomainawareuniversallinkpredictionviarelationatlas": {
+    "doi": null,
+    "sent_date": "2026-11-06",
+    "source": "arxiv",
+    "title": "AtlasULP: Domain-aware Universal Link Prediction via Relation Atlas",
+    "url": "http://arxiv.org/abs/2611.07347v1"
+  },
   "title:atriadawnthedawnofagenticsuperintelligence": {
     "doi": null,
     "sent_date": "2026-09-16",
@@ -174,6 +181,13 @@
     "title": "ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?",
     "url": "http://arxiv.org/abs/2608.03874v1"
   },
+  "title:continuoustimeqlearningforfinitehorizonportfoliochoicewithoptimalstoppinginjumpdiffusionmarkets": {
+    "doi": null,
+    "sent_date": "2026-11-06",
+    "source": "arxiv",
+    "title": "Continuous-time q-Learning for Finite-Horizon Portfolio Choice with Optimal Stopping in Jump-Diffusion Markets",
+    "url": "http://arxiv.org/abs/2611.07362v1"
+  },
   "title:coreincontextreconstructionforunifiedtabularanomalydetection": {
     "doi": null,
     "sent_date": "2026-07-31",
@@ -271,6 +285,13 @@
     "source": "arxiv",
     "title": "EchoChat: Structured Cognitive Reasoning in Empathetic Spoken Dialogue",
     "url": "http://arxiv.org/abs/2610.04826v1"
+  },
+  "title:editinglargelanguagemodelswithgeometryawareregularization": {
+    "doi": null,
+    "sent_date": "2026-11-06",
+    "source": "arxiv",
+    "title": "Editing Large Language Models with Geometry-Aware Regularization",
+    "url": "http://arxiv.org/abs/2611.06185v1"
   },
   "title:equilibriumtrainingofenergybasedmodelswithparalleltrajectorytempering": {
     "doi": null,
@@ -804,6 +825,13 @@
     "title": "SPARK: Skeleton-Guided Reasoning Synthesis from Large-Scale Scientific Literature",
     "url": "http://arxiv.org/abs/2608.30214v1"
   },
+  "title:spinswappingmediatedbyspinorbitaltexturesincentrosymmetricmultiorbitalmaterials": {
+    "doi": null,
+    "sent_date": "2026-11-06",
+    "source": "arxiv",
+    "title": "Spin swapping mediated by spin-orbital textures in centrosymmetric multiorbital materials",
+    "url": "http://arxiv.org/abs/2611.06163v1"
+  },
   "title:strongfieldcoulombexplosionofethanepropaneandbutaneincircularlypolarizedlaserfields": {
     "doi": null,
     "sent_date": "2026-07-15",
@@ -895,6 +923,13 @@
     "title": "UniRef-UAV: A Multimodal Benchmark for Universal Referring in UAV Imagery",
     "url": "http://arxiv.org/abs/2607.08267v1"
   },
+  "title:unirestorerscalableuniversalimagerestorationwithmultigranularitydegradationmodeling": {
+    "doi": null,
+    "sent_date": "2026-11-06",
+    "source": "arxiv",
+    "title": "UniRestorer++: Scalable Universal Image Restoration with Multi-Granularity Degradation Modeling",
+    "url": "http://arxiv.org/abs/2611.06042v1"
+  },
   "title:vajudgerrewardmodelingfromhumanpreferencefeedbackforjointvideoaudiogeneration": {
     "doi": null,
     "sent_date": "2026-08-20",
@@ -929,6 +964,13 @@
     "source": "arxiv",
     "title": "Wavelet Flow Matching for Time Series",
     "url": "http://arxiv.org/abs/2609.39374v1"
+  },
+  "title:weightloopweightspaceprogrammingwithexperimentalfeedback": {
+    "doi": null,
+    "sent_date": "2026-11-06",
+    "source": "arxiv",
+    "title": "WeightLoop: Weight-Space Programming with Experimental Feedback",
+    "url": "http://arxiv.org/abs/2611.07319v1"
   },
   "title:wheredoestimbrehidelocalizingspeakerinformationinspeechsignals": {
     "doi": null,
