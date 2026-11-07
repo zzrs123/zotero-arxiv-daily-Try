@@ -580,6 +580,13 @@
     "title": "mmHRI: Towards Privacy-Preserving Human-Robot Interaction with Millimeter-Wave Radar",
     "url": "http://arxiv.org/abs/2609.34220v1"
   },
+  "title:multimodalinformationinteractionsbottleneckformultimodalselfsupervisedlearning": {
+    "doi": null,
+    "sent_date": "2026-11-07",
+    "source": "arxiv",
+    "title": "Multimodal Information Interactions Bottleneck for Multimodal Self-Supervised Learning",
+    "url": "http://arxiv.org/abs/2611.07718v1"
+  },
   "title:multivariatetimeseriesforecastingneedscrossvariableloss": {
     "doi": null,
     "sent_date": "2026-08-07",
@@ -888,6 +895,13 @@
     "title": "Tired Actor: Fatigue-Informed Character Control",
     "url": "http://arxiv.org/abs/2608.03528v1"
   },
+  "title:towardsgeneralistgraphlevelanomalydetection": {
+    "doi": null,
+    "sent_date": "2026-11-07",
+    "source": "arxiv",
+    "title": "Towards Generalist Graph-Level Anomaly Detection",
+    "url": "http://arxiv.org/abs/2611.07706v1"
+  },
   "title:traceanevidencegroundedbenchmarkforsafetyevaluationoflargereasoningmodels": {
     "doi": null,
     "sent_date": "2026-08-27",
@@ -957,6 +971,13 @@
     "source": "arxiv",
     "title": "WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA",
     "url": "http://arxiv.org/abs/2608.01035v1"
+  },
+  "title:wamsim01worldanchoredmemorymeetsonlinerlforconsistentandrealisticdrivingsimulation": {
+    "doi": null,
+    "sent_date": "2026-11-07",
+    "source": "arxiv",
+    "title": "WAM-Sim0.1: World Anchored Memory Meets Online RL for Consistent and Realistic Driving Simulation",
+    "url": "http://arxiv.org/abs/2611.07939v1"
   },
   "title:waveletflowmatchingfortimeseries": {
     "doi": null,
