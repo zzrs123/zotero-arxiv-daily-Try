@@ -1,0 +1,631 @@
+# Paper Daily Reading - 2026-11-16
+
+## 1. A subspecialty diagnostic system powered by self-supervised learning for cervical histopathology
+
+- Authors: Yizhi Wang, Li Chen, Qiang Huang, Tian Guan, Xi Deng, Zhiyuan Shen, Jiawen Li, Xinrui Chen, Bin Hu, Zhe Lei, Xitong Ling, Taojie Zhu, Zirui Huang, Deshui Yu, Fanyi Zeng, Yan Liu, Qiming He, Lianghui Zhu, Qiming He, Hanzhong Liu, Diwei Shi, Hanzhong Liu, Junbo Hu, Hongyi Gao, Zhen Song, Mingwen Zhao, Lingchuan Guo, Chao He, Mingwen Zhao, Yonghong He
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-11-14
+- DOI: https://doi.org/10.1038/s41467-026-79121-4
+- Categories: AI in cancer detection, Cervical Cancer and HPV Research, Artificial Intelligence in Healthcare and Education
+- Relevance: 2.665289686067408
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-79121-4
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Cervical cancer remains a major malignancy in women, with large-scale human papillomavirus-based screening generating a large volume of biopsies and, for advanced cases, surgical specimens, imposing an overwhelming diagnostic burden that necessitates precise histopathological evaluation. Although deep learning shows promise, general foundation models offer a broader reach but remain limited in capturing subspecialty-specific features and task adaptability. We introduce the Cervical Subspecialty Pathology (CerS-Path) diagnostic system, built upon the subspecialized dataset and developed through two synergistic pretraining stages: self-supervised learning on approximately 190 million tissue patches to build a cervical-specific feature extractor, and multimodal enhancement with 2.5 million image-text pairs, followed by diagnostic functions integration and downstream task enhancement. CerS-Path integrates eight functions—across morphological diagnosis, predictive analytics, and multimodal tasks—to cover the diagnostic workflow from biopsies to resection specimens. Comprehensive evaluations demonstrate improved performance in cervical pathology in female patients, where CerS-Path outperforms state-of-the-art foundation models across 26 of 30 diagnostic tasks. Furthermore, in multicenter retrospective and prospective validation across six independent cohorts of women, CerS-Path achieves up to 99% sensitivity for clinically relevant lesion detection with acceptable specificity across sites, highlighting its potential for screening-derived histopathology and suitability for integration into high-volume diagnostic pathways. Foundation models could be promising for cervical cancer screening, but have important limitations for their clinical deployment. Here, the authors introduce the Cervical Subspecialty Pathology (CerS-Path) diagnostic system, a self-supervised learning framework for cervical cancer pathology that outperforms state-of-the-art foundation models across multiple diagnostic tasks.
+
+## 2. Detecting What Queries Seek: Steering LLM Safety with FFN Output Activation Monitoring
+
+- Authors: Xiaohao Luo, Ying Wei, Rui Zhao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5475407372636845
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1360/
+- PDF: https://aclanthology.org/2026.acl-long.1360.pdf
+- Local PDF: pdf/2026-11-16_02_Detecting What Queries Seek_ Steering LLM Safety with FFN Output Activation Monitoring.pdf
+
+Recently, activation steering has attracted considerable attention as a low-cost approach to improving the safety of large language models (LLMs). However, most existing methods apply interventions indiscriminately, often causing excessive refusal of benign queries. Although recent works have begun to explore selective intervention, their intervention decisions typically rely on residual stream activations where information is highly entangled, resulting in limited discriminative power and unreliable interventions. To address this issue, we propose FFN-Guided activation steering (FGAS). Motivated by the observation that feed-forward networks (FFNs) in LLMs serve as core modules for knowledge storage, we propose leveraging FFN output activations as more discriminative signals for intervention, since these activations more explicitly reflect the intent of a query. For a given query, FGAS projects the corresponding FFN output activation into a low-dimensional subspace that effectively separates harmful and benign queries, and then makes precise intervention decisions by assessing its similarity to pre-constructed prototype activations representing harmful and benign classes. Extensive experiments demonstrate that FGAS achieves state-of-the-art defense performance against various jailbreak attacks, while nearly preserving the model’s original performance on benign tasks.
+
+## 3. Do LLM Agents Really Mimic Humans? Diagnosing and Aligning Microeconomic Behaviors in Macro-ABMs
+
+- Authors: Guangya Liu, Cheng Wang, Jiangtong Li, Huafei Wu, Changjun Jiang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5429915281187103
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1799/
+- PDF: https://aclanthology.org/2026.findings-acl.1799.pdf
+- Local PDF: pdf/2026-11-16_03_Do LLM Agents Really Mimic Humans_ Diagnosing and Aligning Microeconomic Behaviors in Macro-ABMs.pdf
+
+Large Language Models (LLMs) are increasingly adopted in macroeconomic agent-based modeling(ABM). However, existing research focuses on replicating macro-level stylized facts while often neglecting verification of micro-level decision-making. We investigate this gap by comparing LLM agents to human responses from the Survey of Consumer Expectations (SCE) dataset. Our empirical analysis identifies specific limitations: weak trend responsiveness, mode collapse, and a potential data leakage. We propose the Heterogeneous Shock-Response Causal Transmission Framework to tackle these issues. To ensure theoretical consistency, we use LLMs to build a literature-verified causal graph in which macroeconomic shocks influence decisions via generated mediator nodes, while agent profiles serve as edge moderators. Building on this, during inference, we perform a path search to retrieve relevant causal chains and inject them as an explicit Chain-of-Thought(CoT), prioritizing mechanistic logic over statistical pattern matching. To evaluate the effectiveness of our inference approach, we validate it via a two-stage process that combines micro-level dataset testing and macro-level simulation in the EconAgent system. Results from these experiments indicate that our framework improves alignment with human trends and effectively captures behavioral heterogeneity. Overall, this work contributes to the development of reliable and grounded economic simulations.
+
+## 4. HTMR: Hybrid Token Masking Reinforcement Learning with Verifiable Rewards for Event Argument Extraction with Multi-Perspective Reasoning
+
+- Authors: Jianwen Luo, Yongkang Jin, Yu Hong, Jianmin Yao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5429291758593213
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.910/
+- PDF: https://aclanthology.org/2026.acl-long.910.pdf
+- Local PDF: pdf/2026-11-16_04_HTMR_ Hybrid Token Masking Reinforcement Learning with Verifiable Rewards for Event Argument Extraction with Multi-Persp.pdf
+
+Event Argument Extraction (EAE) aims to identify event arguments and assign semantic roles under a predefined schema. Recent work formulates EAE with large language models as a structured conditional generation task and applies Reinforcement Learning with Verifiable Rewards (RLVR) to optimize sequence-level event structures. However, RLVR-based EAE supervision is coarse-grained, as a single reward is assigned to the whole event structure, while optimization happens at the token level. This misalignment causes the same reward to be applied to all tokens, including those not related to event roles or arguments, introducing noise into the gradient updates and weakening the signals for decisions critical to argument extraction. To mitigate this misalignment, we propose Hybrid Token Masking RLVR (HTMR), which selectively updates policy gradients on both high-entropy forking tokens and event-critical tokens that define event structure, along with multi-perspective reasoning. Experiments across multiple benchmarks and models show that HTMR consistently outperforms full-token and high-entropy only RLVR methods. Moreover, HTMR transfers effectively as a plug-and-play approach to other tasks such as named entity recognition and relation classification. The code is publicly available for reproducibility.
+
+## 5. What Makes LLMs Effective Sequential Recommenders? A Study on Preference Intensity and Temporal Context
+
+- Authors: Zhongyu Ouyang, Qianlong Wen, Chunhui Zhang, Yanfang Ye, Soroush Vosoughi
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.542055185802139
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.656/
+- PDF: https://aclanthology.org/2026.acl-long.656.pdf
+- Local PDF: pdf/2026-11-16_05_What Makes LLMs Effective Sequential Recommenders_ A Study on Preference Intensity and Temporal Context.pdf
+
+What enables large language models (LLMs) to effectively model user preferences in sequential recommendation? Our investigation reveals that existing preference-alignment approaches largely rely on binary pairwise comparisons, overlooking two critical factors: preference intensity (the structured strength of affinity or aversion) and temporal context (the extent to which recent interactions better reflect a user’s current intent). Through controlled experiments, we show that leveraging comprehensive feedback with structured preference signals substantially improves recommendation performance, indicating that binary modeling discards essential information. Motivated by these findings, we propose RecPO, a unified preference optimization framework that maps both explicit and implicit feedback into a common preference signal and constructs adaptive reward margins that jointly account for preference intensity and interaction recency. Experiments across five datasets show that RecPO consistently outperforms state-of-the-art baselines while exhibiting behavioral patterns aligned with human decision-making, including favoring immediate satisfaction, maintaining preference coherence, and avoiding dispreferred items. Our results highlight that preference intensity and temporal context are fundamental ingredients for effective LLM-based recommendation. Code: https://github.com/zyouyang/RecPO
+
+## 6. VeriTaS: The First Dynamic Benchmark for Multimodal Automated Fact-Checking
+
+- Authors: Mark Rothermel, Marcus Kornmann, Marcus Rohrbach, Anna Rohrbach
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5414547638833707
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1948/
+- PDF: https://aclanthology.org/2026.acl-long.1948.pdf
+- Local PDF: pdf/2026-11-16_06_VeriTaS_ The First Dynamic Benchmark for Multimodal Automated Fact-Checking.pdf
+
+The growing scale of online misinformation urgently demands Automated Fact-Checking (AFC). Existing benchmarks for evaluating AFC systems, however, are largely limited in terms of task scope, modalities, domain, language diversity, realism, or coverage of misinformation types. Critically, they are static, thus subject to data leakage as their claims enter the pretraining corpora of LLMs. As a result, benchmark performance no longer reliably reflects the actual ability to verify claims.We introduce Verified Theses and Statements (VeriTaS), the first dynamic benchmark for multimodal AFC, designed to remain robust under ongoing large-scale pretraining of foundation models. VeriTaS currently comprises 25,000 real-world claims from 104 professional fact-checking organizations across 54 languages, covering textual and audiovisual content. Claims are added quarterly via a fully automated seven-stage pipeline that normalizes claim formulation, retrieves original media, and maps heterogeneous expert verdicts to a novel, standardized, and disentangled scoring scheme with textual justifications.Through human evaluation, we demonstrate that the automated annotations closely match human judgments.We commit to updating VeriTaS in the future, establishing a leakage-resistant benchmark, supporting meaningful AFC evaluation in the era of rapidly evolving foundation models.The code and data are publicly available under https://veritas.mai.informatik.tu-darmstadt.de .
+
+## 7. Make LLMs See Like Investigators, Not Just Think More: The Role of Structured Analysis in Investigative Reasoning
+
+- Authors: Jaewook Lee, Myeong-Cheol Kang, Jong-hun Shin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5413092053635333
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1056/
+- PDF: https://aclanthology.org/2026.acl-long.1056.pdf
+- Local PDF: pdf/2026-11-16_07_Make LLMs See Like Investigators, Not Just Think More_ The Role of Structured Analysis in Investigative Reasoning.pdf
+
+Criminal investigators and intelligence analysts have developed structured analytic techniques to evaluate competing hypotheses under incomplete information. This study examines whether such human expert investigative methodologies are also effective for narrative-based culprit inference in large language models (LLMs). Focusing on the task of analyzing evidence from complex narratives and identifying the perpetrator among suspects, we conducted experiments on 10 LLMs using the MuSR murder mystery benchmark. The PRISM framework, which applies investigative techniques, consistently outperformed existing general-purpose strategies across all models, with its effectiveness manifesting regardless of model scale. Ablation studies revealed that the hypothesis structuring stage is particularly crucial, accounting for 89% of the methodological improvement beyond information filtering. This suggests that domain-specific structures that specify “what to analyze” are more effective in LLM reasoning than simply increasing the number of reasoning paths.
+
+## 8. Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+
+- Authors: Wenhao Wang, Yanyan Li, Long Jiao, Jiawei Yuan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5410101952608977
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1720/
+- PDF: https://aclanthology.org/2026.findings-acl.1720.pdf
+- Local PDF: pdf/2026-11-16_08_Ro-SLM_ Onboard Small Language Models for Robot Task Planning and Operation Code Generation.pdf
+
+Recent advances in large language models (LLMs) provide robots with contextual reasoning abilities to comprehend human instructions. Yet, current LLM-enabled robots typically depend on cloud-based models or high-performance computing infrastructure, which limit their deployment on robots under unreliable internet environments or with constrained computational resources, such as UAVs and small ground vehicles. Thus, deploying fine-tuned small language models (SLMs) that support onboard deployment offers a promising alternative. This paper introduces Ro-SLM, a framework that enables reliable SLM-driven robot operation by distilling LLMs’ knowledge and reasoning. Ro-SLM starts from dataset synthesis by leveraging LLMs to generate diverse task instructions, produce corresponding ground truth code with minimal human assistance, and augment instructions into real-world application scenarios. Ro-SLM is then fine-tuned with the dataset, in which LLM serves as a reward function to guide the training. Extensive experiments on UAV operation tasks demonstrate that Ro-SLM improves the performance of SLM from being incapable of supporting robotic task planning and code generation to achieving performance that approaches LLM.
+
+## 9. ODL-TempLLM: Ontology-Guided and Description Logic-Reasoned Temporal Reasoning with LLMs
+
+- Authors: Jinshuo Liu, Cheng Bi, Meng Wang, Juan Deng, Donghong Ji, Jeff Z. Pan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.540976207606802
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.873/
+- PDF: https://aclanthology.org/2026.acl-long.873.pdf
+- Local PDF: pdf/2026-11-16_09_ODL-TempLLM_ Ontology-Guided and Description Logic-Reasoned Temporal Reasoning with LLMs.pdf
+
+Temporal reasoning is crucial for large language models (LLMs) to understand event concurrency and complex temporal interactions in natural language. Recent approaches rely on the LLM to infer temporal relations between events and largely overlook the inherent structural nature of temporal relationships. In this work, we propose ODL-TempLLM (Ontology-Guided and Description Logic–Constrained Temporal Reasoning with LLMs), a novel paradigm for temporal reasoning with LLMs that shifts focus from internal inference to the explicit modeling of temporal structure. ODL-TempLLM leverages ontology learning to explicitly construct structured temporal knowledge, employs a symbolic reasoner to deductively reason about temporal relations and uses logic-constrained retrieval augmentation to obtain relevant facts.Experiments results evaluated across there datasets via various LLM backbones show that our method outperforms state-of-the-art methods by 2.07–31.83 F1 points and 1.00–30.73 EM points, exhibiting strong generalization and highlighting the potential of explicit temporal reasoning.
+
+## 10. EconProver: Towards More Economical Test-Time Scaling for Automated Theorem Proving
+
+- Authors: Mukai Li, Linfeng Song, Zhenwen Liang, Jiahao Xu, Shansan Gong, Qi Liu, Haitao Mi, Dong Yu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.540556432876426
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.2121/
+- PDF: https://aclanthology.org/2026.acl-long.2121.pdf
+- Local PDF: pdf/2026-11-16_10_EconProver_ Towards More Economical Test-Time Scaling for Automated Theorem Proving.pdf
+
+Large Language Models (LLMs) have recently advanced the field of Automated Theorem Proving (ATP), attaining substantial performance gains through widely adopted test-time scaling strategies, notably reflective Chain-of-Thought (CoT) reasoning and increased sampling passes. However, they both introduce significant computational overhead for inference. Moreover, existing cost analyses typically regulate only the number of sampling passes, while neglecting the substantial disparities in sampling costs introduced by different scaling strategies. In this paper, we systematically compare the efficiency of different test-time scaling strategies for ATP models and demonstrate the inefficiency of the current state-of-the-art (SOTA) open-source approaches. We then investigate approaches to significantly reduce token usage and sample passes while maintaining the original performance. Specifically, we propose two complementary methods that can be integrated into a unified EconRL pipeline for amplified benefits: (1) a dynamic Chain-of-Thought (CoT) switching mechanism designed to mitigate unnecessary token consumption, and (2) Diverse parallel-scaled reinforcement learning (RL) with trainable prefixes to enhance pass rates under constrained sampling passes. Experiments on miniF2F and ProofNet demonstrate that our EconProver-GD achieves comparable performance to baseline methods with only 12% of the computational cost. This work provides actionable insights for deploying lightweight ATP models without sacrificing performance.
+
+## 11. What’s Missing in Screen-to-Action? Towards a UI-in-the-Loop Paradigm for Multimodal GUI Reasoning
+
+- Authors: Songze Li, Xiaoke Guo, Tianqi Liu, Biao Yi, Zhaoyan Gong, Zhiqiang Liu, Huajun Chen, Wen Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5404519209556335
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.876/
+- PDF: https://aclanthology.org/2026.findings-acl.876.pdf
+- Local PDF: pdf/2026-11-16_11_What’s Missing in Screen-to-Action_ Towards a UI-in-the-Loop Paradigm for Multimodal GUI Reasoning.pdf
+
+Existing Graphical User Interface (GUI) reasoning tasks remain challenging, particularly in UI understanding. Current methods typically rely on direct screen-based decision-making, which lacks interpretability and overlooks a comprehensive understanding of UI elements, ultimately leading to task failure. To enhance the understanding and interaction with UIs, we propose an innovative GUI reasoning paradigm called UI-in-the-Loop (UILoop). Our approach treats the GUI reasoning task as a cyclic Screen-UI elements-Action process. By enabling Multimodal Large Language Models (MLLMs) to explicitly learn the localization, semantic functions, and practical usage of key UI elements, UILoop achieves precise element discovery and performs interpretable reasoning. Furthermore, we introduce a more challenging UI Comprehension task centered on UI elements with three evaluation metrics. Correspondingly, we contribute a benchmark of 26K samples (UI Comprehension-Bench) to comprehensively evaluate existing methods’ mastery of UI elements. Extensive experiments demonstrate that UILoop achieves state-of-the-art UI understanding performance while yielding superior results in GUI reasoning tasks.
+
+## 12. Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multilingual Translation
+
+- Authors: Yifeng Liu, Siqi Ouyang, Yatish H R, Lei Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.539337772268355
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1682/
+- PDF: https://aclanthology.org/2026.findings-acl.1682.pdf
+- Local PDF: pdf/2026-11-16_12_Mending the Holes_ Mitigating Reward Hacking in Reinforcement Learning for Multilingual Translation.pdf
+
+Large Language Models (LLMs) have demonstrated remarkable capability in machine translation on high-resource language pairs, yet their performance on low-resource translation still lags behind. Existing post-training methods rely heavily on high-quality parallel data, which are often scarce or unavailable for low-resource languages. In this paper, we introduce WALAR, a reinforcement training method using only monolingual text to elevate LLMs’ translation capabilities on massive low-resource languages while retaining their performance on high-resource languages. Our key insight is based on the observation of failure modes (or “holes”) in existing source-based multilingual quality estimation (QE) models. Reinforcement learning (RL) using these QE models tends to amplify such holes, resulting in poorer multilingual LLMs. We develop techniques including word alignment and language alignment to mitigate such holes in WALAR’s reward for RL training. We continually trained an LLM supporting translation of 101 languages using WALAR. The experiments show that our new model outperforms LLaMAX, one of the strongest open-source multilingual LLMs by a large margin on 1,414 language directions on Flores-101 dataset.
+
+## 13. Enhancing LLM-based Search Agents via Contribution Weighted Group Relative Policy Optimization
+
+- Authors: Junzhe Wang, Zhiheng Xi, Yajie Yang, Hao Luo, Shihan Dou, Tao Gui, Qi Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5393224160741545
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1462/
+- PDF: https://aclanthology.org/2026.acl-long.1462.pdf
+- Local PDF: pdf/2026-11-16_13_Enhancing LLM-based Search Agents via Contribution Weighted Group Relative Policy Optimization.pdf
+
+Search agents extend Large Language Models (LLMs) beyond static parametric knowledge by enabling access to up-to-date and long-tail information unavailable during pretraining. While reinforcement learning has been widely adopted for training such agents, existing approaches face key limitations: process supervision often suffers from unstable value estimation, whereas outcome supervision struggles with credit assignment due to sparse, trajectory-level rewards. To bridge this gap, we propose Contribution-Weighted GRPO (CW-GRPO), a framework that integrates process supervision into group relative policy optimization. Instead of directly optimizing process rewards, CW-GRPO employs an LLM judge to assess the retrieval utility and reasoning correctness at each search round, producing per-round contribution weights. These weights are used to rescale outcome-based advantages along the trajectory, enabling fine-grained credit assignment without sacrificing optimization stability. Experiments on multiple knowledge-intensive benchmarks show that CW-GRPO outperforms standard GRPO by 5.0% on Qwen3-8B and 6.3% on Qwen3-1.7B, leading to more effective search behaviors. Additional analysis reveals that successful trajectories exhibit concentrated contributions in specific rounds, providing empirical insight into search agent tasks. Our code is available at https://github.com/zsxmwjz/CW-GRPO .
+
+## 14. HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns
+
+- Authors: Xintao Wang, Jian Yang, Weiyuan Li, Rui Xie, Jen-tse Huang, Jun Gao, Shuai Huang, Yueping Kang, Yuanli Guo, Hongwei Feng, Yanghua Xiao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.539197385820077
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1783/
+- PDF: https://aclanthology.org/2026.acl-long.1783.pdf
+- Local PDF: pdf/2026-11-16_14_HumanLLM_ Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns.pdf
+
+Large Language Models (LLMs) have demonstrated remarkable capabilities in reasoning and generation, serving as the foundation for advanced persona simulation and Role-Playing Language Agents (RPLAs). However, achieving authentic alignment with human cognitive and behavioral patterns remains a critical challenge for these agents. We present HumanLLM, a framework treating psychological patterns as interacting causal forces.We construct 244 patterns from ∼ 12,000 academic papers and synthesize 11,359 scenarios where 2-5 patterns reinforce, conflict, or modulate each other, with multi-turn conversations expressing inner thoughts, actions, and dialogue.Our dual-level checklists evaluate both individual pattern fidelity and emergent multi-pattern dynamics, achieving strong human alignment ( r=0.90 ) while revealing that holistic metrics conflate simulation accuracy with social desirability.HumanLLM-8B outperforms Qwen3-32B on multi-pattern dynamics despite 4 × fewer parameters, demonstrating that authentic anthropomorphism requires cognitive modeling—simulating not just what humans do, but the psychological processes generating those behaviors.Our dataset, code, and model are available at: https://github.com/YJGoodbye2024/HumanLLM
+
+## 15. Rethinking RL Evaluation: Can Benchmarks Truly Reveal Failures of RL Methods?
+
+- Authors: Zihan Chen, Yiming Zhang, Hengguang Zhou, Zenghui Ding, Yining Sun, Cho-Jui Hsieh
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5390460521391818
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.769/
+- PDF: https://aclanthology.org/2026.findings-acl.769.pdf
+- Local PDF: pdf/2026-11-16_15_Rethinking RL Evaluation_ Can Benchmarks Truly Reveal Failures of RL Methods.pdf
+
+Current benchmarks are inadequate for evaluating progress in reinforcement learning (RL) for large language models (LLMs). Despite recent benchmark gains reported for RL, we find that training on these benchmarks’ training sets achieves nearly the same performance as training directly on the test sets, suggesting that the benchmarks cannot reliably separate further progress. To study this phenomenon, we introduce a diagnostic suite and the Oracle Performance Gap (OPG) metric that quantifies the performance difference between training on the train split versus the test split of a benchmark. We further analyze this phenomenon with stress tests and find that, despite strong benchmark scores, existing RL methods struggle to generalize across distribution shifts, varying levels of difficulty, and counterfactual scenarios: shortcomings that current benchmarks fail to reveal. We conclude that current benchmarks are insufficient for evaluating generalization and propose three core principles for designing more faithful benchmarks: sufficient difficulty, balanced evaluation, and distributional robustness.
+
+## 16. From Laboratory to Real-World Applications: Benchmarking Agentic Code Reasoning at the Repository Level
+
+- Authors: Jia Li, Yuxin Su, Michael R. Lyu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5388320089704077
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.399/
+- PDF: https://aclanthology.org/2026.acl-long.399.pdf
+- Local PDF: pdf/2026-11-16_16_From Laboratory to Real-World Applications_ Benchmarking Agentic Code Reasoning at the Repository Level.pdf
+
+As large language models (LLMs) evolve into autonomous agents, evaluating repository-level reasoning, the ability to maintain logical consistency across massive, real-world, interdependent file systems, has become critical. Current benchmarks typically fluctuate between isolated code snippets and black-box evaluations. We present RepoReason, a white-box diagnostic benchmark centered on abductive assertion verification. To eliminate memorization while preserving authentic logical depth, we implement an execution-driven mutation framework that utilizes the environment as a semantic oracle to regenerate ground-truth states. Furthermore, we establish a fine-grained diagnostic system using dynamic program slicing, quantifying reasoning via three orthogonal metrics: ESV (reading load), MCL (simulation depth), and DFI (integration width). Comprehensive evaluations of frontier models (e.g., Claude-4.5-Sonnet, DeepSeek-v3.1-Terminus) reveal a prevalent aggregation deficit, where integration width serves as the primary cognitive bottleneck. Our findings provide granular white-box insights for optimizing the next generation of agentic software engineering.
+
+## 17. CEMT:Controllable Element-Oriented Machine Translation via Structured Linguistic Reasoning
+
+- Authors: Lingling Shi, Haoyu Jin, Ruiyu Fang, Shuangyong Song, Jinsong Su, Yongxiang Li, Xuelong Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.538785888791252
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1882/
+- PDF: https://aclanthology.org/2026.findings-acl.1882.pdf
+- Local PDF: pdf/2026-11-16_17_CEMT_Controllable Element-Oriented Machine Translation via Structured Linguistic Reasoning.pdf
+
+Large Language Models have shown strong performance in Machine Translation, yet they often suffer from paraphrasing errors, omissions, or hallucinations when the input contains translation-specific elements (e.g., URLs, slang, and idioms) that require strict preservation or controlled transformation, undermining the reliability of critical details.We propose CEMT, a Controllable Element-Oriented Machine Translation framework inspired by the analysis–strategy–generation paradigm in human translation. CEMT first employs an Element Detection Module to identify translation-specific elements, and then introduces a Translation Module that decomposes the translation process into linguistically grounded analysis, strategy formulation, and final generation, thereby guiding the reliable translation of these elements. We further introduce a CoT Judge model during training that provides step-wise supervision over the accuracy and consistency of the translation process.On the WMT23/24 Chinese–English benchmarks, CEMT improves performance over existing Machine Translation models while significantly reducing element-level constraint violations.
+
+## 18. PhageBench: Can LLMs Understand Raw Bacteriophage Genomes?
+
+- Authors: Yusen Hou, Weicai Long, Haitao HU, Houcheng su, Junning Feng, Yanlin Zhang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5385149593592953
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1432/
+- PDF: https://aclanthology.org/2026.findings-acl.1432.pdf
+- Local PDF: pdf/2026-11-16_18_PhageBench_ Can LLMs Understand Raw Bacteriophage Genomes.pdf
+
+Bacteriophages, often referred to as the dark matter of the biosphere, play a critical role in regulating microbial ecosystems and in antibiotic alternatives. Thus, accurate interpretation of their genomes holds significant scientific and practical value. While general-purpose Large Language Models (LLMs) excel at understanding biological texts, their ability to directly interpret raw nucleotide sequences and perform biological reasoning remains underexplored. To address this, we introduce PhageBench, the first benchmark designed to evaluate phage genome understanding by mirroring the workflow of bioinformatics experts. The dataset contains 5,600 high-quality samples covering five core tasks across three stages: Screening, Quality Control, and Phenotype Annotation. Our evaluation of eight LLMs reveals that general-purpose reasoning models significantly outperform random baselines in phage contig identification and host prediction, demonstrating promising potential for genomic understanding. However, they exhibit significant limitations in complex reasoning tasks involving long-range dependencies and fine-grained functional localization. These findings highlight the necessity of developing next-generation models with enhanced reasoning capabilities for biological sequences.
+
+## 19. JointCQ: Improving Factual Hallucination Detection with Joint Claim and Query Generation
+
+- Authors: Fan Xu, Huixuan Zhang, Zhenliang Zhang, Jiahao Wang, Xiaojun Wan
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5370233080315217
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.58/
+- PDF: https://aclanthology.org/2026.findings-acl.58.pdf
+- Local PDF: pdf/2026-11-16_19_JointCQ_ Improving Factual Hallucination Detection with Joint Claim and Query Generation.pdf
+
+Current large language models (LLMs) often suffer from hallucination issues, i,e, generating content that appears factual but is actually unreliable. A typical hallucination detection pipeline involves response decomposition (i.e., claim extraction), query generation, evidence collection (i.e., search or retrieval), and claim verification. However, existing methods exhibit limitations in the first two stages, such as context loss during claim extraction and low specificity in query generation, resulting in degraded performance across the hallucination detection pipeline. In this work, we introduce JointCQ, a joint claim-and-query generation framework designed to construct an effective and efficient claim-query generator. Our framework leverages elaborately designed evaluation criteria to filter synthesized training data, and finetunes a language model for joint claim extraction and query generation, providing reliable and informative inputs for downstream search and verification. Experimental results demonstrate that our method outperforms previous methods on multiple open-domain QA hallucination detection benchmarks, advancing the goal of more trustworthy and transparent language model systems.
+
+## 20. CIA: Inferring the Communication Topology from LLM-based Multi-Agent Systems
+
+- Authors: Yongxuan Wu, Xixun Lin, He Zhang, Nan Sun, Kun Wang, Chuan Zhou, Shirui Pan, Yanan Cao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.536916923449972
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.815/
+- PDF: https://aclanthology.org/2026.acl-long.815.pdf
+- Local PDF: pdf/2026-11-16_20_CIA_ Inferring the Communication Topology from LLM-based Multi-Agent Systems.pdf
+
+LLM-based Multi-Agent Systems (MAS) have demonstrated remarkable capabilities in solving complex tasks. Central to MAS is the communication topology which governs how agents exchange information internally. Consequently, the security of communication topologies has attracted increasing attention. In this paper, we investigate a critical privacy risk: MAS communication topologies can be inferred under a restrictive black-box setting, exposing system vulnerabilities and posing significant intellectual property threats. To explore this risk, we propose Communication Inference Attack (CIA) , a novel attack that constructs new adversarial queries to induce intermediate agents’ reasoning outputs and models their semantic correlations through the proposed global bias disentanglement and LLM-guided weak supervision. Extensive experiments on MAS with optimized communication topologies demonstrate the effectiveness of CIA, achieving an average AUC of 0.87 and a peak AUC of up to 0.99, thereby revealing the substantial privacy risk in MAS. The source code is available at https://github.com/aabbbcd/CIA .
+
+## 21. Better LLM Reasoning via Dual-Play
+
+- Authors: Zhengxin Zhang, Chengyu Huang, Aochong Oliver Li, Claire Cardie
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.536728673826171
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1752/
+- PDF: https://aclanthology.org/2026.findings-acl.1752.pdf
+- Local PDF: pdf/2026-11-16_21_Better LLM Reasoning via Dual-Play.pdf
+
+Large Language Models (LLMs) have achieved remarkable progress through Reinforcement Learning with Verifiable Rewards (RLVR), yet still rely heavily on external supervision (e.g., curated labels). Adversarial learning, particularly through self-play, offers a promising alternative that enables models to learn from themselves—thus reducing reliance on external supervision. Dual-play extends adversarial learning by assigning specialized roles to two models and training them against each other, fostering sustained competition and mutual evolution. Despite its promise, adapting dual-play training to LLMs remains limited. In this paper, we introduce PasoDoble, a novel LLM dual-play framework. PasoDoble adversarially trains two models initialized from the same base model: a Proposer, which generates challenging questions with ground-truth answers, and a Solver, which attempts to solve them. We enrich the Proposer with knowledge from a pre-training dataset to ensure the questions’ quality and diversity. To avoid reward hacking, the Proposer is rewarded for producing only valid questions that push the Solver’s limit, while the Solver is rewarded for solving them correctly, and both are updated jointly. Experimental results show that PasoDoble can improve the math reasoning performance of LLMs.
+
+## 22. Exploration-Exploitation Reshaping towards Efficient Reasoning for Large Language Models
+
+- Authors: Yufeng Shi, Weilin Luo, Yuxiang Zhang, Zongmeng Zhang, Haoyang Liu, Yubing Wang, Bin Wang, Wengang Zhou, Houqiang Li
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5363085562960155
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.1520/
+- PDF: https://aclanthology.org/2026.findings-acl.1520.pdf
+- Local PDF: pdf/2026-11-16_22_Exploration-Exploitation Reshaping towards Efficient Reasoning for Large Language Models.pdf
+
+While excelling at solving complex problems, Large Reasoning Models (LRMs) are still constrained by the overthinking issue. Most current studies rely on reward shaping in Reinforcement Learning (RL) to shorten the Chain-of-Thought (CoT) of LRMs, remaining sample-inefficient and non-robust due to the absence of guided exploration and prioritized exploitation. To address these issues, we propose a novel policy optimization framework with S elf- I mitation and self- G uidance M ech A nisms (SIGMA), which reshapes the exploration and exploitation through two core components: (i) self-imitation exploitation , which enables the prioritized exploitation of high-value prompts and rollouts by introducing a self-imitated loss and a dynamic sampling strategy based on compression rate; (ii) self-guidance exploration , which provides a preference-aware exploration guidance through diverse and pluggable self-rewriting strategies. Experiments across various datasets indicate that our method achieves superior reasoning efficiency without compromising, and even facilitating, the overall accuracy. Furthermore, ablation studies show that the proposed mechanisms can provide flexible control interfaces for the tradeoff between the reasoning accuracy and efficiency of LRMs.
+
+## 23. CompTab: A Comprehensive Benchmark for Real-World TableQA with Complex Reasoning and Irregular Tables
+
+- Authors: Zhen Yang, Wei Du, Jie Wang, Wenze Zhou, Xiangfeng Meng, Zhengyang Wang, Suping Sun, Ziwei Du, Haodong Zou, Jie Chen, Yongbin Liu, Shicheng Tan, Jiahao Ying, Shu Zhao
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.536287885508801
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1279/
+- PDF: https://aclanthology.org/2026.acl-long.1279.pdf
+- Local PDF: pdf/2026-11-16_23_CompTab_ A Comprehensive Benchmark for Real-World TableQA with Complex Reasoning and Irregular Tables.pdf
+
+Recent progress in Large Language Model (LLM) based Table Question Answering (TableQA) has demonstrated strong performance on standard benchmarks. However, existing benchmarks mainly focus on well-structured tables and fail to reflect the irregular structures and complex reasoning commonly encountered in real-world scenarios. We propose CompTab, a benchmark designed to evaluate TableQA under complex reasoning and irregular table conditions. CompTab covers six representative types, including semantic ambiguity, multi-hop reasoning, transposed tables, merged cells, missing values, and outliers. It is constructed from real-world seed tables across multiple domains using controlled LLM based generation and human verification to ensure realism and diversity. In addition, to improve the generalization of LLMs under complex and irregular table settings, we propose a two-stage training framework that progressively aligns models with textual reasoning and executable decision signals, instantiated as CompTabLLM. Evaluations on 38 representative LLMs and CompTabLLM show clear limitations of existing LLMs under realistic conditions, while the proposed framework improves generalization. CompTab thus provides a challenging benchmark for advancing TableQA in real-world.
+
+## 24. A Model of the Language Process
+
+- Authors: Brandon Duderstadt, Hayden Helm
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.536255166796006
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.590/
+- PDF: https://aclanthology.org/2026.acl-long.590.pdf
+- Local PDF: pdf/2026-11-16_24_A Model of the Language Process.pdf
+
+Language is a process that changes over time as new vocabulary emerges, word meanings shift, and narratives progress. Despite this fact, most Large Language Models are trained on corpora that lack explicit temporal information, which inhibits their ability to model the language process. In this work, we introduce the Temporal Language Model 1 (TLM-1), a BERT style transformer encoder that models that language process by jointly learning to predict document contents and classify document publication dates. We also introduce a Bayesian framework for querying TLM-1 that disentangles its temporal dynamics from several sources of anachronism. Using this query framework, we demonstrate that TLM-1 effectively surfaces several sociolinguistic trends in contemporary American English and accurately detects semantic changes in word meanings. Furthermore, we perform a mechanistic analysis of TLM-1’s time token embeddings, and find that they learn a curve whose geometry recovers the ordinal progression of time. We take the existence of this curve as evidence that TLM-1 is effectively learning to reconstruct temporal language dynamics.
+
+## 25. IGenBench: Benchmarking the Reliability of Text-to-Infographic Generation
+
+- Authors: Yinghao Tang, Xueding Liu, Boyuan Zhang, Tingfeng Lan, Yupeng Xie, Jiale Lao, Yiyao Wang, Haoxuan Li, Tingting Gao, Bo Pan, Luoxuan Weng, Xiuqi Huang, Minfeng Zhu, Yingchaojie Feng, Yuyu Luo, Wei Chen
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5361585308047543
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.1713/
+- PDF: https://aclanthology.org/2026.acl-long.1713.pdf
+- Local PDF: pdf/2026-11-16_25_IGenBench_ Benchmarking the Reliability of Text-to-Infographic Generation.pdf
+
+Infographics are composite visual artifacts that combine data visualizations with textual and illustrative elements to communicate information. While recent text-to-image (T2I) models can generate aesthetically appealing images, their reliability in generating infographics remains unclear. Generated infographics may appear correct at first glance but contain easily overlooked issues, such as distorted data encoding or incorrect textual content. We present IGenBench, the first benchmark for evaluating the reliability of text-to-infographic generation, comprising 600 curated test cases spanning 30 infographic types. We design an automated evaluation framework that decomposes reliability verification into atomic yes/no questions based on a taxonomy of 10 question types. We employ multimodal large language models (MLLMs) to verify each question, yielding question-level accuracy (Q-ACC) and infographic-level accuracy (I-ACC). We comprehensively evaluate 10 state-of-the-art T2I models on IGenBench. Our systematic analysis reveals key insights for future model development: (i) a three-tier performance hierarchy with the top model achieving Q-ACC of 0.90 but I-ACC of only 0.49; (ii) data-related dimensions emerging as universal bottlenecks (e.g., Data Completeness: 0.21); and (iii) the challenge of achieving end-to-end correctness across all models.
+
+## 26. Invocation Refiner: A Plug-and-Play Module for Rectifying LLM Tool Invocations
+
+- Authors: Qirui Jiao, Dian Jiao, Nan Du, Ying Shen, Liang Lin
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.535908073542247
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.731/
+- PDF: https://aclanthology.org/2026.findings-acl.731.pdf
+- Local PDF: pdf/2026-11-16_26_Invocation Refiner_ A Plug-and-Play Module for Rectifying LLM Tool Invocations.pdf
+
+Large Language Models (LLMs) have shown remarkable capabilities in Tool-Integrated Reasoning (TIR). However, the practical application is often hindered by frequent errors in tool invocations, such as incorrect parameters or malformed formats. Prevailing training paradigms, such as Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL), can mitigate these issues but require modification on the base LLM. This lack of modularity necessitates extensive retraining when deploying the system across different base models. To address the limitation, we introduce the Invocation Refiner, a specialized post-processing module designed to enhance the tool-use reliability of base LLMs without directly training on them. The Refiner takes the output from a frozen upstream LLM and the user’s query as input, performing independent reasoning to rectify the invocation. We construct a dedicated training dataset and train this module using an advanced RL algorithm. On a diverse set of tool-use and reasoning benchmarks, our Refiner improves task completion rates and invocation accuracy over the raw outputs of various upstream LLMs. This highlights our Refiner as a plug-and-play solution for improving the operational reliability of LLM-based agents. We release our code to facilitate future research.
+
+## 27. PrefRAG: Correcting Semantic Errors in Auto-Formalization for Logical Reasoning with Program Preference RAG
+
+- Authors: Yuyin Zhou, Yongmei Liu
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.535897289566029
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.795/
+- PDF: https://aclanthology.org/2026.findings-acl.795.pdf
+- Local PDF: pdf/2026-11-16_27_PrefRAG_ Correcting Semantic Errors in Auto-Formalization for Logical Reasoning with Program Preference RAG.pdf
+
+Recent advances in large language models (LLMs) have spurred interest in neuro-symbolic methods for logical reasoning based on auto-formalization, where LLMs first formalize problems into symbolic programs, for solvers to perform reasoning over.However, existing auto-formalization methods remain prone to both syntactic and semantic errors.Specifically, the absence of a program-level semantic verification mechanism leaves semantic errors largely unaddressed.In this paper, we propose a novel approach to semantic error correction via program preference retrieval-augmented generation (RAG).First, we conduct an in-depth analysis of semantic error patterns, and then automatically synthesize SemanticPref , a program preference dataset to model these patterns. Using the dataset as the knowledge base, we introduce PrefRAG , a general RAG framework for refinement in auto-formalization, which enables LLMs to detect and repair syntactic and semantic errors[ https://github.com/sysulic/PrefRAG ].Extensive evaluations across both in-distribution (ID) benchmarks (i.e., AR-LSAT and FOLIO) and out-of-distribution (OOD) datasets show that PrefRAG consistently outperforms strong baselines, achieving an average accuracy improvement of 2.39% on ID and 6.23% on OOD datasets.
+
+## 28. TriEx: A Game-based Tri-View Framework for Explaining Internal Reasoning in Multi-Agent LLMs
+
+- Authors: Ziyi Wang, Chen Zhang, Wenjun Peng, Qi Wu, Xinyu Wang
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.535892781434071
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.292/
+- PDF: https://aclanthology.org/2026.acl-long.292.pdf
+- Local PDF: pdf/2026-11-16_28_TriEx_ A Game-based Tri-View Framework for Explaining Internal Reasoning in Multi-Agent LLMs.pdf
+
+Explainability for Large Language Model (LLM) agents is especially challenging in interactive, partially observable settings, where decisions depend on evolving beliefs and other agents. We present TriEx, a tri-view explainability framework that instruments sequential decision making with aligned artifacts: (i) structured first-person self-reasoning bound to an action, (ii) explicit second-person belief states about opponents updated over time, and (iii) third-person oracle audits grounded in environment-derived reference signals. This design turns explanations from free-form narratives into evidence-anchored objects that can be compared and checked across time and perspectives. Using imperfect-information strategic games as a controlled testbed, we show that TriEx enables scalable analysis of explanation faithfulness, belief dynamics, and evaluator reliability, revealing systematic mismatches between what agents say, what they believe, and what they do. Our results highlight explainability as an interaction-dependent property and motivate multi-view, evidence-grounded evaluation for LLM agents.
+
+## 29. Scaling Laws for Code: Every Programming Language Matters
+
+- Authors: Jian Yang, Shuyue Guo, Linzheng Chai, Wei Zhang, Aishan Liu, Chuan Hao, Zhoujun Li, Xin Zhao, Xianglong Liu, Weifeng Lv, Bryan Dai
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5345421783532003
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.findings-acl.487/
+- PDF: https://aclanthology.org/2026.findings-acl.487.pdf
+- Local PDF: pdf/2026-11-16_29_Scaling Laws for Code_ Every Programming Language Matters.pdf
+
+Large language models (LLMs) are powerful but costly to train, with scaling laws predicting performance from model size, data, and compute. However, different programming languages (PLs) have varying impacts during pre-training that significantly affect base model performance, leading to inaccurate performance prediction. Existing works focus on language-agnostic settings, neglecting the inherently multilingual nature of modern software development. Therefore, it is first necessary to investigate the scaling laws of different PLs, and then consider their mutual influences to arrive at the final multilingual scaling law. In this paper, we present the first systematic exploration of scaling laws for multilingual code pre-training, conducting over 1000+ experiments (Equivalent to 336,000+ H800 hours) across multiple PLs, model sizes (0.2B to 14B parameters), and dataset sizes (1T tokens). We establish scaling laws for code LLMs across multiple programming languages, showing that interpreted languages benefit more from increased scale than compiled ones. Multilingual pre-training provides synergistic benefits, especially between syntactically similar languages, with parallel pairing (concatenating code with translations) significantly enhancing cross-lingual abilities. We propose a proportion-dependent multilingual scaling law that optimally allocates training tokens by prioritizing high-utility languages (e.g., Python), balancing high-synergy pairs (e.g., JavaScript-TypeScript), and reducing allocation to fast-saturating languages (e.g., Rust), achieving superior performance across all languages compared to uniform distribution.
+
+## 30. TokDrift: When LLM Speaks in Subwords but Code Speaks in Grammar
+
+- Authors: Yinxi Li, Yuntian Deng, Pengyu Nie
+- Source: acl_anthology
+- Venue type: conference
+- Journal: ACL
+- Publication status: formally_published
+- Publication date: 2026-01-01
+- DOI: Unavailable
+- Categories: Unknown
+- Relevance: 2.5343533363730364
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://aclanthology.org/2026.acl-long.2199/
+- PDF: https://aclanthology.org/2026.acl-long.2199.pdf
+- Local PDF: pdf/2026-11-16_30_TokDrift_ When LLM Speaks in Subwords but Code Speaks in Grammar.pdf
+
+Large language models (LLMs) for code rely on subword tokenizers, such as byte-pair encoding (BPE), learned from mixed natural language text and programming language code but driven by statistics rather than grammar. As a result, semantically identical code snippets can be tokenized differently depending on superficial factors such as whitespace or identifier naming. To measure the impact of this misalignment, we introduce TokDrift, a framework that applies semantic-preserving rewrite rules to create code variants differing only in tokenization. Across nine code LLMs, including large ones with over 30B parameters, even minor formatting changes can cause substantial shifts in model behavior. Layer-wise analysis shows that the issue originates in early embeddings, where subword segmentation fails to capture grammar token boundaries. Our findings identify misaligned tokenization as a hidden obstacle to reliable code understanding and generation, highlighting the need for grammar-aware tokenization for future code LLMs.
