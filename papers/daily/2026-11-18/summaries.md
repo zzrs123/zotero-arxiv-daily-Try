@@ -1,0 +1,633 @@
+# Paper Daily Reading - 2026-11-18
+
+## 1. SVP Maps Spatially Variable Functional Programs and Their Coupling in Spatial Transcriptomics
+
+- Authors: Guangchuang Yu, Qianwen Wang, Yanbing Zhou, Junrui Li, Jia Li, Rui Wang, Liangsheng Zhang, Wenqin Xie, Shaodi Wen, Ming Li, Zijing Xie, Lin Li, Hongyuan Zhu, Difei Wang, Huimin Zheng, Wenli Tang, Li Zhan, Bingdong Liu, Yufan Liao, Linhong Deng, Ke Mo, Nan He, Yitong Shao, Shucheng Guo, Guangchuang Yu
+- Source: openalex
+- Venue type: journal
+- Journal: Advanced Science
+- Publication status: published
+- Publication date: 2026-11-16
+- DOI: https://doi.org/10.1002/advs.78741
+- Categories: Single-cell and spatial transcriptomics, Gene expression and cancer classification, Spatial and Panel Data Analysis
+- Relevance: 3.7167983333982386
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1002/advs.78741
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Spatial transcriptomics has made tissue architecture measurable at molecular resolution, yet most computational methods still identify spatially variable genes and infer biology only indirectly. We present SVP, a framework that directly maps spatially variable cell states, pathways and regulatory programs from spatial transcriptomic data. SVP combines location-level functional activity inference with global and local spatial autocorrelation and extends these analyses to bivariate spatial coupling across heterogeneous features. Across simulations and real datasets, SVP recovered cell-state-associated activity patterns at individual captured locations, detected spatially variable features with calibrated statistics, and scaled efficiently to large datasets. In pancreatic ductal adenocarcinoma, SVP identified a spatially co-organized hypoxic and extracellular-matrix-remodeling niche that co-localized with regions of low immune activity. It further captured functional maturation in the developing human heart and plaque-associated glial programs in Alzheimer's disease models. SVP enables direct analysis of functional spatial organization, moving beyond gene-centric descriptions of tissue structure.
+
+## 2. Improving molecular property prediction with score-based diffusion models
+
+- Authors: Julien Horwood, Dino Oglić, José Miguel Hernández-Lobato
+- Source: openalex
+- Venue type: journal
+- Journal: Nature Communications
+- Publication status: published
+- Publication date: 2026-11-16
+- DOI: https://doi.org/10.1038/s41467-026-79240-y
+- Categories: Computational Drug Discovery Methods, Machine Learning in Materials Science, Advanced Chemical Physics Studies
+- Relevance: 3.6509906784752175
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s41467-026-79240-y
+- PDF: Unavailable
+- Local PDF: Not downloaded
+
+Abstract We explore diffusion-based training as a flexible approach to molecular property prediction in settings shaped by chemical, biophysical, and latent heterogeneity. To address this, we build on score-based generative diffusion models and introduce a conditional diffusion module for predictive tasks, equipped with a joint training and sampling guidance scheme and an optional gated residual mechanism that regulates feature- vs target-driven information flow across noise levels. The module acts as a plug-in learning block for existing molecular encoders, making it complementary to advances in representation learning. Across diverse feature extractors and graph neural networks, diffusion-based training improves over conventional maximum-likelihood objectives on small-molecule regression benchmarks and matches or exceeds strong baselines on multitask regression and classification datasets. It also produces well-calibrated predictive uncertainty as measured by prediction interval coverage, enables confidence-guided ranking, and performs well in challenging settings including activity cliffs and class-imbalanced multitask prediction. Overall, these results position diffusion as a promising representation-agnostic approach for effective molecular property prediction.
+
+## 3. BiGSyn: A Bi-Level Heterogeneous Graph Contrastive Learning Framework for Interpretable Drug Synergy Prediction
+
+- Authors: Senquan Wang, Hui Fang, Haoran Nan, Xingwei Wang, Qiang He
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 3.6244331052424017
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20603v1
+- PDF: https://arxiv.org/pdf/2611.20603v1
+- Local PDF: pdf/2026-11-18_03_BiGSyn_ A Bi-Level Heterogeneous Graph Contrastive Learning Framework for Interpretable Drug Synergy Prediction.pdf
+
+Drug combination therapy has become a mainstream of modern medicine, with the potential to enhance efficacy, reduce toxicity, and overcome drug resistance. However, identifying synergistic drug combinations remains challenging, as it requires modeling complex interactions across multiple biological scales---from atom-level molecular structures to entity-level relations in biological networks. Existing approaches typically model these levels in isolation, overlooking complementary signals and long-range dependencies. To address these limitations, we propose BiGSyn, a Bi-level heterogeneous Graph contrastive learning framework for drug Synergy prediction. Specifically, BiGSyn leverages heterogeneous graph transformers to extract high-order dependencies from molecular graphs and biological networks, and introduces a bi-level contrastive learning objective to bridge the cross-level semantic gap. Extensive experiments on two benchmark datasets show that BiGSyn consistently outperforms state-of-the-art baselines. Moreover, its attention mechanism highlights key molecular substructures and biological interactions driving synergy, providing interpretable insights.
+
+## 4. HoloGene: Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields
+
+- Authors: Yumin Zheng, Qingtian Zhu, Ziyan Zhu, Kailu Song, Yinqiang Zheng, Jun Ding
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.LG, q-bio.GN
+- Relevance: 3.524126653079298
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20368v1
+- PDF: https://arxiv.org/pdf/2611.20368v1
+- Local PDF: pdf/2026-11-18_04_HoloGene_ Learning to Lift Sliced Spatial Transcriptomics to Holistic 3D Gene Fields.pdf
+
+Spatial transcriptomics (ST) provides spatially resolved gene expression measurements, but most 3D ST datasets are acquired as independently processed 2D sections. Computational approaches span slice registration and integration, explicit or generative interpolation, and coordinate-field modeling. Within the last family, implicit neural representations (INRs) offer a continuous, coordinate-queryable parameterization, but standard isotropic coordinate encodings do not explicitly reflect that serial-section measurements are dense in-plane and sparse along the axial direction. We present HoloGene, an anisotropic conditional INR framework for estimating continuous 3D gene-expression fields from pre-registered ST sections. Its central contribution is an acquisition-aware factorization that couples dense in-plane synthesis with sparse axial evolution using established GAE, FiLM, pseudo-label supervision, and CORAL components. HoloGene compresses high-dimensional expression profiles into a graph-autoencoder latent manifold, uses pseudo-label-derived signature conditioning to provide coarse intra-section context, and applies depth-dependent FiLM modulation to model axial variation. A signature-stratified correlation-alignment regularizer encourages cross-slice covariance alignment in latent features. Using held-out measured sections as cross-sectional references, HoloGene improves reconstruction accuracy and biological preservation metrics compared with general-purpose INRs and adapted spatial-transcriptomics baselines. These results support anisotropic conditional modeling as a practical strategy for estimating 3D expression fields from discontinuous ST sections. Code is available at https://github.com/Szym29/HoloGene.
+
+## 5. MT-RGCN-DTI: A Multi-Task Relational Graph Convolutional Network for Drug-Target Interaction Prediction
+
+- Authors: Dheeran Sankaran, R Yadunandan, Daniele Santoni, Nimisha Ghosh
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-15
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 3.3951813085040783
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20109v1
+- PDF: https://arxiv.org/pdf/2611.20109v1
+- Local PDF: pdf/2026-11-18_05_MT-RGCN-DTI_ A Multi-Task Relational Graph Convolutional Network for Drug-Target Interaction Prediction.pdf
+
+Prediction of drug-target interaction (DTI) has become a very crucial part of drug discovery. With the increase in the data volume, it has become very important to improve prediction accuracy by integrating multiple data sources. In this regard, utilising multiple resources in the form of heterogeneous information network to address DTI prediction can be rewarding. In this work, we propose a heterogeneous information network based multi-task DTI prediction model which leverages the advantages of relation graph convolutional network (RGCN). To achieve this, the model employs drug-target interaction network, drug-drug similarity network and protein-protein similarity network to construct a heterogeneous information network. Moreover, we use a knowledge graph embedding scoring functions to model interactions between drug and targets, specifically DistMult and ComplEx as decoders over the learned node representations. We performed extensive experiments on multiple benchmark datasets and compared with state-of-the-art methods. We observed that the proposed model shows competitive performance, thereby confirming the effectiveness of our approach. The codes and datasets are available at https://github.com/Dheeran-S/MT-RGCN-DTI/.
+
+## 6. SERAG: SEmantical and Relational approach for Anomaly detection on knowledge Graphs
+
+- Authors: Ludovic Moncla, Antoine Salazar, Yassir Lairgi, Khalid Benabdeslem, Rémy Cazabet
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-14
+- DOI: Unavailable
+- Categories: cs.LG, cs.CL
+- Relevance: 3.3660943481742955
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.18640v1
+- PDF: https://arxiv.org/pdf/2611.18640v1
+- Local PDF: pdf/2026-11-18_06_SERAG_ SEmantical and Relational approach for Anomaly detection on knowledge Graphs.pdf
+
+Knowledge graphs constructed from text can contain facts that are individually plausible yet inconsistent with their relational context. We introduce SERAG, a supervised anomaly detector that combines two complementary plausibility estimates: a semantic score computed from separately encoded subject, relation, and object labels, and a relational score obtained through a relational graph convolutional network. The scores are standardized, calibrated, and fused. We evaluate the method on a subset of ICEWS18 with vocabulary-constrained synthetic anomalies generated by an LLM, using pooled and chronological splits. At 10% anomaly prevalence, SERAG achieves test AUPRCs of 0.321 and 0.258, respectively, compared with 0.159 and 0.146 for the strongest adapted baseline. Fusion improves mean test AUPRC over either branch alone, with a larger gain in the pooled protocol and a smaller validation-selected gain in the chronological protocol. Additional anomaly supervision improves performance. These results support the complementarity of textual and relational signals for detecting synthetic anomalies under the evaluated protocols.
+
+## 7. From Recursion to Convolution: Parallel Self-Improvement for Multi-Agent Systems
+
+- Authors: Zheng Wang, Yuang Liu, Sachith Abeywickrama, Yangkai Ding, Tao Yu, Xinyu Zhang, Hongbo Wang, Qi Ye, Xuefeng Jin, Zhangchun Zhao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.AI, cs.CL, cs.LG
+- Relevance: 3.3101874017825184
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20891v1
+- PDF: https://arxiv.org/pdf/2611.20891v1
+- Local PDF: pdf/2026-11-18_07_From Recursion to Convolution_ Parallel Self-Improvement for Multi-Agent Systems.pdf
+
+Multi-agent self-improvement enables agents to improve through interaction and feedback. However, sequential dependencies across agents and refinement rounds can propagate errors, increase computational costs, and limit parallelism. Moreover, refining individual features or agents in isolation can overlook their dependencies and restrict collective coordination. To address these challenges, we propose ConvRSI, a framework for parallelizing multi-agent self-improvement through convolution. ConvRSI couples intra-agent convolution, which jointly refines related agent features, with inter-agent graph convolution, which aggregates messages according to the collaboration topology. Both stages operate in latent space, enabling parallel updates without repeatedly decoding and re-encoding intermediate messages. Experiments on MATH-500 show that ConvRSI achieves 5.04% performance improvement while reducing 17.27% inference cost, and 45.11% latency compared with RecursiveMAS. It also supports diverse collaboration patterns by representing their topologies as adjacency matrices. These results demonstrate the potential of convolutional co-evolution for efficient multi-agent self-improvement. Our code and datasets are provided in https://github.com/LYA2333/ConvRSI.
+
+## 8. Nahual: A Sequence Model for Language and Atoms
+
+- Authors: Austin H. Cheng, Marcel Müller, Andreas Burger, Yeonghun Kang, Tsz Wai Ko, Marta Skreta, Luka Mucko, Ella Miray Rajaonson, Cher Tian Ser, Jérôme F. Gonthier, Alex Zook, Varinia Bernales, Alán Aspuru-Guzik
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-14
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, cs.CL, physics.chem-ph
+- Relevance: 3.2547306889399823
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.19072v1
+- PDF: https://arxiv.org/pdf/2611.19072v1
+- Local PDF: pdf/2026-11-18_08_Nahual_ A Sequence Model for Language and Atoms.pdf
+
+Generative models play a rapidly growing role in the design and simulation of molecules. The most widely used applications of generative models are in large language models (LLMs), owing to the natural flexibility of language for specifying and answering queries. However, generalist LLMs do not effectively handle large sets of 3D coordinates, whereas specialist generative models of 3D molecules cannot reach the controllability afforded by language. To bridge these capabilities, we propose Nahual, a decoder-only autoregressive diffusion model for any sequence of text and 3D molecules. To enable expressive autoregression on continuous coordinates, we propose next-token diffusion, whereby a causal transformer denoises each token while attending to the clean tokens before it, without increasing context size. We train Nahual on a curated set of twelve 3D chemistry tasks ranging from microsolvation to molecular conformer search to adsorption on metal surfaces, with associated evaluation metrics and baselines. The result is a single set of end-to-end-trained weights that simultaneously performs all tasks and surpasses state-of-the-art models specialized for crystal structure prediction and property-conditional molecule generation. Our results demonstrate the viability of scaling generalist decoder-only models for native multimodal understanding and generation across language and chemistry. Code is available at https://github.com/the-matter-lab/nahual.
+
+## 9. Integrating Latent Block Models into Variational Autoencoders for Disentangled Representation Learning
+
+- Authors: Anasse Essalih, Reda Khoufache, Laurent Durville, Mohamed-Cherif Rahal, Mustapha Lebbah, Hanene Azzag, Walid Kheriji, Fouad Hadj Selem
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-15
+- DOI: Unavailable
+- Categories: stat.ML, cs.AI, cs.LG
+- Relevance: 3.2465159858519144
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20253v1
+- PDF: https://arxiv.org/pdf/2611.20253v1
+- Local PDF: pdf/2026-11-18_09_Integrating Latent Block Models into Variational Autoencoders for Disentangled Representation Learning.pdf
+
+We introduce LBM-VAE, a novel framework that integrates Latent Block Models (LBMs) into Variational Autoencoders (VAEs) to jointly cluster observations and latent dimensions. Beyond its clustering capabilities, LBM-VAE provides a block-structured latent representation that naturally supports disentangled representation learning. In contrast to conventional approaches that associate each factor of variation with an individual latent dimension, our framework allows factors of variation to be encoded across groups of latent dimensions. Experimental results demonstrate the promising clustering performance of LBM-VAE, while achieving competitive results in disentangled representation learning. LBM-VAE highlights the potential of combining co-clustering and variational inference to learn structured and interpretable latent representations.
+
+## 10. IANN: A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation
+
+- Authors: Changzhi Ai, Xueping Qin, Dimosthenis Sokaras, Frank Abild-Pedersen, Johannes Voss
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-15
+- DOI: Unavailable
+- Categories: cond-mat.mtrl-sci, cs.LG, physics.comp-ph
+- Relevance: 3.2005555162260677
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.19793v1
+- PDF: https://arxiv.org/pdf/2611.19793v1
+- Local PDF: pdf/2026-11-18_10_IANN_ A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation.pdf
+
+Machine-learning interatomic potentials (MLIPs) now approach density functional theory (DFT) accuracy at a fraction of its cost, but the practical benefit is limited by software fragmentation: each state-of-the-art architecture is released as a separate codebase, with its own data format, configuration system, training loop and molecular-dynamics interface. Comparing two architectures on the same dataset, or moving a trained model into a production simulation, therefore requires substantial re-engineering. We introduce IANN (InterAtomic Neural Network), an open-source PyTorch framework that reimplements equivariant graph neural networks - PaiNN, NequIP, MACE, Allegro, EquiformerV2, EquiformerV3 and UMA - behind a unified data object, a unified trainer and a single deployment route, so that the architecture is a one-word change in a configuration dictionary. Forces, stresses and virials are obtained for every architecture from one analytic differentiation of the energy with respect to the edge vectors of the atomic graph, exact under periodic boundary conditions. Distributed training is configured automatically from the SLURM, PBS or MPI environment, so the same script runs unchanged from a workstation to a multi-node GPU allocation. Self-describing checkpoints serve directly as ASE calculators, as ensembles reporting uncertainties, or as TorchScript models run inside LAMMPS through bundled C++ pair styles with single- and multi-GPU inference. Trained on a common dataset of millions of structures, the architectures can be compared under identical conditions. We further release PaiNN foundation models trained on 41.9 million curated DFT structures from MPtrj, Alexandria, OMat24, MatPES, OC20, OC22, OC25, MPr2SCAN and MatPESr2SCAN, spanning the PBE, RPBE and r2SCAN functionals. Additionally, IANN provides an agent interface to facilitate integration with autonomous agents.
+
+## 11. TRACE: Topological Representations for Anomaly detection through Contrastive Embeddings
+
+- Authors: Sydney Johns
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.CR, cs.AI
+- Relevance: 3.1885146728048896
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.21548v1
+- PDF: https://arxiv.org/pdf/2611.21548v1
+- Local PDF: pdf/2026-11-18_11_TRACE_ Topological Representations for Anomaly detection through Contrastive Embeddings.pdf
+
+Intrusion detectors must recognize evolving malicious behavior even when confirmed attack labels are scarce or incomplete. We present TRACE, a topology-aware graph contrastive learning framework for label-efficient intrusion detection. TRACE learns from benign system-activity graphs by combining message-passing and topological representations, then assigns anomaly scores in the same projected embedding space optimized by the contrastive objective. This design captures both local interactions and graph-scale structural deviations without using attack labels during representation learning. A labeled validation set containing benign and malicious graphs is used only to calibrate the anomaly threshold. We evaluate TRACE on StreamSpot, GraSec-IoT, and Unicorn Wget against a supervised graph neural network and the benign-only GraphCL baseline. TRACE obtains F1 scores of 0.923, 0.790, and 0.583, respectively. Compared with GraphCL, this is higher on StreamSpot (0.450) and Unicorn Wget (0.203), but lower on GraSec-IoT (0.975). The supervised model leads on StreamSpot and GraSec-IoT, whereas TRACE has the highest F1 on Unicorn Wget. The mixed results show that topology-aware benign-only learning can improve detection in some graph settings but does not provide a uniform advantage.
+
+## 12. The structure of variational autoencoder latent spaces and its consequences for representation and optimization
+
+- Authors: Sergei V. Kalinin
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-15
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.1711970528575573
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.19972v1
+- PDF: https://arxiv.org/pdf/2611.19972v1
+- Local PDF: pdf/2026-11-18_12_The structure of variational autoencoder latent spaces and its consequences for representation and optimization.pdf
+
+Variational autoencoders (VAEs) are widely used to build low-dimensional representations of scientific data, with the expectation that regularization yields smooth coordinates for interpolation, generation and optimization. However, applications in microscopy reveal domains, narrow transitions and rare-state islands in VAE latent spaces that smoothness alone does not explain. We show that, for prototype data with squared-error reconstruction and an optimal decoder, the latent-space objective has a direct correspondence with the Flory-Huggins theory of a regular solution, and use it to analyze how the objective, posterior distributions and latent dimensionality organize the representation. Data families occupy domains separated by finite-width walls that broaden with increasing regularization until class separation is lost through posterior collapse. Class centroids behave like particles in a harmonic trap: the prior confines them, and structural dissimilarity sets a soft repulsion that determines which classes become neighbors and how far apart they sit, with separations growing only logarithmically with dissimilarity. Rare states can remain unresolved, form small islands, accumulate within walls or develop intervening domains, depending on their frequency and similarity to common states. The posterior covariance can align domains with the latent axes, but axis alignment does not imply separation of physical factors. Rotations can produce rings and encoder cuts that reflect data symmetry, while insufficient dimensionality can lead to suppression, mixing or folding of additional factors. Comparisons with flow models, deep kernel learning (DKL) and hybrid VAE-DKL models show how these structures change when reconstruction and prediction play different roles. We discuss implications for interpreting data, discovering rare states, generating intermediate states and optimizing properties.
+
+## 13. Markov-Equivalent Conditional Independence Graphs on Path Spaces
+
+- Authors: Simon Kempf, Niki Kilbertus, Georg Manten
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.LG
+- Relevance: 3.165918232345356
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20877v1
+- PDF: https://arxiv.org/pdf/2611.20877v1
+- Local PDF: pdf/2026-11-18_13_Markov-Equivalent Conditional Independence Graphs on Path Spaces.pdf
+
+Causal discovery for continuous-time stochastic processes with latent confounding typically faces a trade-off between (i) approaches that are highly informative about the causal structure but are difficult to test statistically, and (ii) approaches that admit practical tests from data but yield more coarse-grained conclusions, potentially not leveraging the direction of time. We introduce W-separation, an asymmetric graphical criterion for directed mixed graphs defined as a quaternary relation that allows distinct conditioning on past and future components. This added flexibility yields a highly informative graphical independence model while preserving testability. W-separation satisfies a global Markov property for a broad class of stochastic differential equations with latent confounding, linking it to conditional independence relations among coordinate processes that are testable from data. A central result of this work is the full characterization of W-Markov equivalence classes: we show that every equivalence class admits a unique greatest element that serves as a canonical representative and a principled target for learning algorithms. In addition, we provide necessary and sufficient conditions under which directed or bidirected edges can be added without altering the induced independence model.
+
+## 14. MolReps: Taking SELFIES, Making SMILES, Teaching LLMs
+
+- Authors: Ken Deng, Garrett Morris
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: physics.chem-ph, cs.AI, cs.CL
+- Relevance: 3.162498744331475
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20848v1
+- PDF: https://arxiv.org/pdf/2611.20848v1
+- Local PDF: pdf/2026-11-18_14_MolReps_ Taking SELFIES, Making SMILES, Teaching LLMs.pdf
+
+The same molecule can be expressed in multiple, syntactically distinct representations, yet it remains unclear whether large language models (LLMs) can recognize and relate these equivalent encodings. We introduce MolReps, a pipeline that generates 9,600 question-answer pairs across ten representations for conversion, normalization, and 2D structure recognition. Post-training on MolReps improves text-only and multimodal models, MolQwen3-4B-Instruct (MQ3-4B-I) and MolQwen3-VL-4B-Instruct (MQ3-VL-4B-I), from $4.01\%$ to $75.13\%$ and from $7.11\%$ to $73.14\%$ (InChIKey match) on the molecule-overlap test set, respectively. On the molecule-disjoint test set, post-training increased validity from $20.35\%$ to $58.12\%$ for MQ3-4B-I and from $17.19\%$ to $59.34\%$ for MQ3-VL-4B-I. However, InChIKey match remained low, decreasing from $3.86\%$ to $3.09\%$ and from $6.44\%$ to $2.29\%$, respectively. Furthermore, the resulting models achieve a relative $27.84\%$ improvement in average over their base model on MolRepBench, a comprehensive benchmark for evaluating molecular property prediction. These results show the effectiveness of targeted post-training for enhancing molecular representation understanding and its potential to improve downstream molecular tasks.
+
+## 15. Interactive Structured Environment Scaling for Large Language Model Agentic Reasoning
+
+- Authors: Peng Yu, Luoyi Fu, Xinbing Wang, Ying Wen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-15
+- DOI: Unavailable
+- Categories: cs.AI, cs.LG
+- Relevance: 3.154984274613717
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.19871v1
+- PDF: https://arxiv.org/pdf/2611.19871v1
+- Local PDF: pdf/2026-11-18_15_Interactive Structured Environment Scaling for Large Language Model Agentic Reasoning.pdf
+
+Reinforcement learning via environmental interaction is a cornerstone post-training paradigm for evolving large language models into autonomous agents capable of multi-turn tool use and exploration. Because the environment defines what the policy observes and how actions are verified, its structure directly bounds the capabilities an agent can acquire. Yet existing structured and retrieval environments rely on upstream pre-filtering---extracting a compact subgraph around the gold answer or retrieving fixed passages before the policy acts. We show that such pre-filtering introduces a fundamental measurement confound: because per-question subgraphs enclose ground-truth paths, they compress the candidate space by orders of magnitude and leak answer locations via local topology, allowing a question-blind degree heuristic to surface gold answers far above chance. To restore path selection, candidate pruning, and optimal stopping as genuine policy decisions, we propose RISE (Interactive Structured Environment), which transitions structured reinforcement learning from static subgraphs to full-scale interactive databases along two coupled axes. First, Decision-Space Scaling exposes the unpruned knowledge graph via a five-stage graph-agnostic typed intent adapter under a bounded call budget and a multiplicative grounding reward gate. Second, Learning-Frontier Scaling overcomes within-group variance collapse under group-normalized objectives by uniting model-independent structural tier progression with a self-evolving competence-frontier bandit. Across nineteen benchmarks and three model backbones, RISE substantially advances in-domain and unseen-schema knowledge-graph reasoning, transfers zero-shot to open-domain passage retrieval, and significantly enhances out-of-domain mathematical and logical deduction.
+
+## 16. InferPloidy enables CNV guided tumor cell stratification and biomarker discovery from single cell RNA sequencing
+
+- Authors: Dawon Hong, Wonjung Sung, Jaeyoung Chae, Jucheol Moon, Jong-chan Lee, S Jeong-Yu, Seokhyun Yoon
+- Source: openalex
+- Venue type: journal
+- Journal: Communications Biology
+- Publication status: published
+- Publication date: 2026-11-16
+- DOI: https://doi.org/10.1038/s42003-026-11298-2
+- Categories: Single-cell and spatial transcriptomics, Cancer Genomics and Diagnostics, Gene expression and cancer classification
+- Relevance: 3.141142485669942
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: https://doi.org/10.1038/s42003-026-11298-2
+- PDF: https://www.nature.com/articles/s42003-026-11298-2_reference.pdf
+- Local PDF: pdf/2026-11-18_16_InferPloidy enables CNV guided tumor cell stratification and biomarker discovery from single cell RNA sequencing.pdf
+
+Abstract Identifying malignant cells in single-cell gene expression data is essential for understanding tumor heterogeneity, but existing computational methods can be slow and perform inconsistently across datasets. Here, we present InferPloidy, a framework that combines graph-based cell grouping with iterative probabilistic modeling to distinguish cells with normal and altered chromosome copy numbers using profiles generated by InferCNV. Across breast, lung, pancreatic, and colorectal cancer datasets, the evaluated workflow reduces computation time by up to two orders of magnitude compared with existing tools and improves agreement with published cell annotations. This classification supports the identification of established therapeutic targets and candidate cell surface markers associated with tumor subtypes. The low proportion of unclassified cells helps preserve information for downstream analyses of gene expression differences and tumor population characteristics. These findings support InferPloidy as an efficient framework for tumor cell stratification and biomarker discovery within the evaluated workflow. Its performance with inputs from other copy number inference methods requires further validation.
+
+## 17. Role-Separated Diffusion Transformers: Global Rule Isolation and Deterministic Sampling Manifold Compression
+
+- Authors: Zhiguang Liu, Yi Shang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-13
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.1091110960709214
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.19009v1
+- PDF: https://arxiv.org/pdf/2611.19009v1
+- Local PDF: pdf/2026-11-18_17_Role-Separated Diffusion Transformers_ Global Rule Isolation and Deterministic Sampling Manifold Compression.pdf
+
+We present Role-Separated Diffusion Transformers (RoSeDiT), a new diffusion transformer architecture that isolates the global rule from the image tokens. RoSeViT showed in visual reasoning that a vanilla ViT spreads a shared rule over all $L$ tokens at an entropy of order $Ld$, whereas an enforced controller route reduces it to order $d$. In class-conditional DiT and SiT, the class and the noise level are explicitly conditioned by adaLN, so a RoSeViT-style controller channel on the ViT side is insufficient to establish the full role separation. By introducing the adaLN listening mechanism, which makes adaLN compute under the controller's command, RoSeDiT brings the entropy theorem and role separation into the latent diffusion domain. Under the same SiT training and evaluation protocol at the same level of parameter count, RoSeDiT surpasses SiT at all four model scales at 400K steps, and RoSeDiT-L/2 even surpasses SiT-XL/2's 17.2 FID with 15.34 and 32% fewer parameters. RoSeDiT-XL/2 surpasses SiT-XL/2's 7M-step FID of 8.3 at 1.4M steps with 7.98, using one-fifth as many training steps. We further observe that models with the same denoising loss can have a large FID gap, which indicates a misalignment between the denoising objective and the image manifold. We formalize this phenomenon into Deterministic Sampling Manifold Compression (DSMC), a two-stage training schedule with which RoSeDiT-XL/2 surpasses SiT + REPA's 4M-step FID of 5.9 at 2.4M steps with 5.84.
+
+## 18. Understanding Failures in LLM Reasoning by Learning Structured Representations of Chain-of-Thought
+
+- Authors: Tommaso Felice Banfi, Mubashara Akhtar, Jingwei Ni, Mrinmaya Sachan
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-09-06
+- DOI: Unavailable
+- Categories: cs.CL, cs.AI
+- Relevance: 3.1002572918614204
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.18611v1
+- PDF: https://arxiv.org/pdf/2611.18611v1
+- Local PDF: pdf/2026-11-18_18_Understanding Failures in LLM Reasoning by Learning Structured Representations of Chain-of-Thought.pdf
+
+Chain-of-Thought (CoT) is central to improving reasoning in large language models, yet existing evaluation methods focus on step-level signals and ignore the underlying structure of reasoning traces. This raises a key question: what aspects of reasoning quality (i.e., correctness, efficiency, and failure patterns) are encoded in the structure of a CoT trace? We introduce \textbf{CoT2Graph}, a framework that represents CoT traces as directed dependency graphs, making relationships between reasoning steps explicit and capturing patterns such as backtracking, branching, and subtask merging. We model these graphs with graph neural networks and use attribution-based explanations to identify structural patterns associated with reasoning quality. CoT2Graph reveals distinct patterns of successful and failed reasoning: correct CoTs place greater importance on early planning, whereas incorrect CoTs are associated with overloaded synthesis steps and dependency violations. We further show that graph-based signals better predict whether a CoT leads to a correct answer, outperforming previous tree-based structural methods by up to 2.5\% and simple length-based baselines by 7.8\%, while also improving Best-of-$N$ selection. Overall, our results demonstrate that reasoning structure encodes rich signals about reasoning quality, motivating a shift from sequence-level evaluation to structural analysis.
+
+## 19. Domino: Joint Unmasking via First-order Markov Chain for Few-Step Masked Diffusion
+
+- Authors: Mansoor Ahmed, Lilia Chebbah, Jenny Dinh, Murray Patterson, Hemanth Venkateswara
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-14
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG
+- Relevance: 3.083524595609268
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.18645v1
+- PDF: https://arxiv.org/pdf/2611.18645v1
+- Local PDF: pdf/2026-11-18_19_Domino_ Joint Unmasking via First-order Markov Chain for Few-Step Masked Diffusion.pdf
+
+Masked diffusion models generate a sequence by revealing masked positions over many denoising steps. A few-step sampler has to reveal many positions at once, but the standard reverse kernel draws them independently and primarily ignores the conditional dependence between tokens revealed in the same step. We propose a novel framework called Domino, which models this dependence with a first-order Markov chain over the revealed positions, given the current state. The first revealed position keeps the posterior of a pre-trained masked diffusion model (MDM), and each subsequent position follows a transition given the token of its predecessor. Notably, the resulting step is normalized by construction, contains the factorized step in MDMs as a special case, and has a likelihood in closed form. We implement the Domino transitions via a lightweight module on the hidden states of a pre-trained MDM denoiser with only 2.6% parameter overhead and train by keeping the MDM denoiser frozen. Our extensive evaluations across text, molecules, and images show that Domino lowers the few-step generative perplexity of MDMs by a factor of 1.7 to 3.8 on One Billion Word (LM1B), WikiText-103, and OpenWebText at nearly unchanged sample entropy. It also raises the validity of few-step molecule samples by 1.5x. The source code is available at: https://github.com/mansoor181/domino.git
+
+## 20. Comments on "Deep Fréchet Regression"
+
+- Authors: Jianbin Tan, Anru R. Zhang
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG
+- Relevance: 3.061831137442561
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.21454v1
+- PDF: https://arxiv.org/pdf/2611.21454v1
+- Local PDF: pdf/2026-11-18_20_Comments on _Deep Fréchet Regression.pdf
+
+We discuss the Journal of the American Statistical Association (JASA) discussion paper "Deep Fréchet Regression" and explore an alternative perspective based on conditional flow matching. We propose learning covariate-dependent transport directly within the response space, avoiding separate manifold learning and reverse mapping. This perspective offers a potentially more flexible framework for incorporating geometric structure and modeling full conditional distributions.
+
+## 21. Enhancing Mixed Oil Length Prediction through Graph Representation Learning
+
+- Authors: Xinyi Hong, Hai Shu, Zhaoyang Zhang, Lei Chen, Yanfeng Yang, Ziqi Chen
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.LG, stat.ML
+- Relevance: 3.03307041446992
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.20660v1
+- PDF: https://arxiv.org/pdf/2611.20660v1
+- Local PDF: pdf/2026-11-18_21_Enhancing Mixed Oil Length Prediction through Graph Representation Learning.pdf
+
+During the pipeline transportation of refined oil products, the inevitable formation of mixed oil segments poses considerable economic challenges to pipeline networks. Therefore, it is important to accurately predict the length of these mixed oil segments. Although previous methods have achieved relatively accurate predictions by integrating machine and deep learning algorithms, they ignore the statistical dependencies that remain among real-world mixed oil samples, which degrades model accuracy. To address this issue, we propose a novel Sample Dependencies Incorporated Graph Representation Learning (SDI-GRL) model. By representing samples and pipeline features as nodes of a graph, SDI-GRL connects dependent samples through their shared features, allowing message passing to propagate information across related samples. This graph-based framework allows our model to capture the statistical dependencies among samples absent in prior works. A case study on a mixed oil dataset demonstrates that our SDI-GRL model surpasses the strongest existing approach, reducing both the RMSE and the MAE by more than 10%.
+
+## 22. When Do Histology Foundation Models Need Geometric Test-Time Augmentation?
+
+- Authors: Lars Chen, Valentino F. Foit, Dorry Segev, Michal Mankowski
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.CV, cs.LG
+- Relevance: 3.0153754098259107
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.21565v1
+- PDF: https://arxiv.org/pdf/2611.21565v1
+- Local PDF: pdf/2026-11-18_22_When Do Histology Foundation Models Need Geometric Test-Time Augmentation.pdf
+
+Test-time augmentation (TTA) aggregates model predictions across multiple transformed views of an input during inference. Because histology images lack a canonical orientation, $D_4$ TTA---pooling across the 8 rotations and reflections of a square---is a standard default in computational pathology. However, the rise of self-supervised histology foundation models (FMs) with inherent rotational invariance calls its continued utility into question. We benchmark 9 histology FMs and 6 general-purpose models across four patch-level and two whole-slide image (WSI) datasets. We find that $D_4$ TTA remains a reliable post hoc improvement, but benefits diminish from $+1.98$ percentage points (pp) for general-purpose backbones to $+0.50$ pp for histology FMs on TCGA-UT, and shrink further for the largest models. To eliminate computational overhead, our experiments demonstrate that entropy routing---applying TTA selectively to uncertain predictions---recovers most of the gain while augmenting only ${\sim}13\%$ of samples. Finally, we show that patch-level TTA improvements do not transfer to slide-level multiple instance learning (MIL). Code: https://github.com/lars-chen/histology-tta
+
+## 23. Neural Latent Gaussian Process for 3D reconstruction of Mouse Brain Lipids
+
+- Authors: Daniel Trejo Banos, Artiom Casapu, Luca Fusar Bassini, Halima Hannah Schede, Giovanni D'Angelo, Gioele La Manno, Ekaterina Krymova
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-11
+- DOI: Unavailable
+- Categories: cs.CV, cs.AI
+- Relevance: 3.0017202050933527
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.18744v1
+- PDF: https://arxiv.org/pdf/2611.18744v1
+- Local PDF: pdf/2026-11-18_23_Neural Latent Gaussian Process for 3D reconstruction of Mouse Brain Lipids.pdf
+
+We address the problem of reconstructing continuous three-dimensional lipid profiles of the mouse brain from lipid measurements acquired only on a sparse set of two-dimensional tissue sections. Using MALDI-MSI measurements from coronal sections of two densely sampled and six sparsely sampled mouse brains, registered to the Allen Mouse Brain Common Coordinate Framework (CCF), we seek to interpolate the measured hundreds of lipid profiles across the unobserved voxels of the reference brain. We introduce a Neural Latent-Space Gaussian Process (LGP) architecture for this task and critically evaluate its ability to reconstruct spatial lipid distributions, using held-out mouse brain sections to assess generalization.
+  We propose a Gaussian Process prior for the distribution of low-dimensional lipid profiles across the mouse brain (with Matérn or a Riemann manifold kernel). This allows us to encode 3D coordinates in a small number of latent 3D volumes that are then mapped to particular lipids using a multilayer perceptron (MLP). We performed an exhaustive analysis over a range of algorithms from simple linear regression, XGBoost, MLP to state of the art models such as Neural Transcriptomic Field, graph-based SPA3D for spatial omics reconstruction and DEEPSPATIAL. We additionally evaluate GPLFR as an alternative Gaussian-process-based approach.
+  Across 173 measured lipids, LGP outperforms all evaluated baselines, including recent spatial-omics models and GPLFR, achieving a mean correlation of 0.613 and demonstrating the effectiveness of our approach for sparse 3D lipid interpolation.
+
+## 24. Efficient Modeling of Multi-Agent Systems via Structure-Aware Physics-Informed Learning
+
+- Authors: Yulun Wu, Nicola Bastianello, Karl Henrik Johansson, Matthieu Barreau
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.LG, math.OC
+- Relevance: 2.9885500914261303
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.21404v1
+- PDF: https://arxiv.org/pdf/2611.21404v1
+- Local PDF: pdf/2026-11-18_24_Efficient Modeling of Multi-Agent Systems via Structure-Aware Physics-Informed Learning.pdf
+
+Modeling large multi-agent systems poses challenges for trajectory inference and parameter identification, as network size and coupling increase computational demands and partial observations require reconstructing unobserved states. We propose MAS-PINN, a neural-network architecture with a tailored training algorithm for a physics-informed learning framework that leverages the network topology and the agents' similarity to reduce computational and memory costs of simulating and identifying multi-agent systems. Its architecture represents agent trajectories through shared temporal features and agent-specific coefficients. Training alternates between learning features, fitting coupled trajectories, and estimating physical parameters. A matrix-free update exploits local interactions to fit trajectories without forming large global matrices. Experiments on Lorenz rings, Lotka--Volterra networks, and Rössler oscillators show improved trajectory and parameter accuracy over baselines, including inference in large systems and identification under partial observations or unknown topology, alongside substantial computational savings in coefficient fitting.
+
+## 25. SMELL: Sparsity-aware Memory Efficient Federated Fine-tuning for Long-context LLMs
+
+- Authors: Yin Xu, Yongbo Yang, He Sun, Miao Sun, Mingjun Xiao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-14
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI, cs.DC
+- Relevance: 2.9758346426903404
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.19349v1
+- PDF: https://arxiv.org/pdf/2611.19349v1
+- Local PDF: pdf/2026-11-18_25_SMELL_ Sparsity-aware Memory Efficient Federated Fine-tuning for Long-context LLMs.pdf
+
+Federated fine-tuning enables Large Language Models (LLMs) to collaboratively adapt to distributed private data. However, long-context fine-tuning on resource-constrained devices faces substantial challenges arising from excessive activation memory, heterogeneous token-importance patterns across clients, and communication overhead. To address these challenges, we propose SMELL, a Sparsity-aware and Memory-Efficient federated fine-tuning framework for Long-context LLMs. SMELL integrates three complementary mechanisms: Local Sparse-Forward Adaptation (LSFA), Consensus-Anchored Sparsity Coordination (CASC), and Communication-Efficient Progressive Update Recovery (CPUR). These mechanisms jointly enable memory-efficient local adaptation, heterogeneity-aware sparsity coordination, and lightweight model-update transmission. Experiments on OPT-350M and LLaMA2-7B demonstrate that SMELL reduces peak memory consumption by up to 88.35% compared with conventional fine-tuning and 13.25% compared with forward-only LoRA fine-tuning at a 16K context length. Furthermore, SMELL improves fine-tuning performance under certain non-IID settings and supports compact update transmission with progressive reconstruction, demonstrating its potential for resource-efficient federated long-context LLM adaptation.
+
+## 26. The Limits of Closed-Form Couplings for Few-Step Generation
+
+- Authors: Tobias Höppe, Stefan Bauer, Qiang Liu, Andrea Dittadi, Kirill Neklyudov
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: stat.ML, cs.LG
+- Relevance: 2.965233063767414
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.21119v1
+- PDF: https://arxiv.org/pdf/2611.21119v1
+- Local PDF: pdf/2026-11-18_26_The Limits of Closed-Form Couplings for Few-Step Generation.pdf
+
+Few-step generators via flow models require complicated technical solutions such as a pretrained flow model or a consistency loss. While rectified flows have gained popularity for their success in few-step sampling, they pay a cost of needing a pre-trained model and sampling a large number of couplings per dataset. Yet for a finite dataset and a Gaussian probability path, the probability-flow vector field of the empirical distribution is available in closed form, so one could use this field as the teacher and skip pretraining altogether. We demonstrate that, surprisingly, this approach is impossible for problems of practical relevance. In particular, the analytic solution of the diffusion process in high dimensions becomes almost a linear transformation. The integration returns the noise vector drawn at initialisation, plus a drift that is empirically a faint copy of the data point, almost independent of the noise. The coupling therefore differs from an independent pairing only through this drift. As a result, training a model on these couplings is almost equivalent to training the model on the independent draws of the noise and the data, which does not provide a useful teacher. We highlight that this is the direct consequence of the high-dimensionality of the data, and that for low enough dimensions or large enough datasets, analytic couplings become more efficient teachers. We quantify this effect by the fraction of endpoint energy carried by the drift, which scales as $\frac{\log N}{d}$ for a dataset of size $N$ in a $d$-dimensional space. Finally, we provide an empirical study confirming all the theoretical results presented in the paper.
+
+## 27. GRAFT: Cross-Backbone LoRA Reuse for Continual Language and Multimodal Learning
+
+- Authors: Ha Pham Thien Dinh, Ming Liu, Jiesi Guo, Matteo Vergani, Kewen Liao
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-10-14
+- DOI: Unavailable
+- Categories: cs.LG, cs.CL
+- Relevance: 2.9282449665592134
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.18638v1
+- PDF: https://arxiv.org/pdf/2611.18638v1
+- Local PDF: pdf/2026-11-18_27_GRAFT_ Cross-Backbone LoRA Reuse for Continual Language and Multimodal Learning.pdf
+
+In continual learning, parameter-efficient fine-tuning enables large language models to acquire new capabilities through lightweight adapters such as LoRA, yet the reuse of pretrained adapters is typically restricted to models sharing the same backbone. This limits the transfer of learned capabilities from language models to multimodal models. We propose GRAFT (Generalist Reuse of Adapters via Feature-space Transfer), a framework for cross-backbone LoRA reuse. GRAFT retrieves the most relevant pretrained LoRA adapter from a modality-aware library and maps it into the target backbone through a learned linear bridge between corresponding source and target feature spaces. We evaluate GRAFT on ten Super-NaturalInstructions text tasks, transferring Qwen2.5 LoRAs to Qwen2.5-VL, and five multimodal tasks, where Qwen2.5-VL LoRAs are directly reused. Compared with randomly initialized LoRA adapters, GRAFT improves performance on most evaluated tasks. These results show that GRAFT provides a simple and effective mechanism for reusing learned capabilities across language and multimodal models in continual learning.
+
+## 28. K2-Horizon: A Frontier Fleet of Open Source Language Models
+
+- Authors: K2 Team, Zhengzhong Liu, Haonan Li, Xuezhe Ma, Alexander Moreno, Subham Sekhar Sahoo, Rupesh Kumar Srivastava, Mikhail Yurochkin, Hadi Abdine, Yash Akhauri, Adharsh Babu, David Bellamy, Jalaj Bhandari, Dani Bouch, Wail Bouhedja, Weili Cao, Ahmad Chamma, Po-Chun Chang, Junlin Chen, Lingjie Chen, Zhoujun Cheng, Kyle Chickering, Ryandito Diandaru, Evan Dufraisse, Chaitanya Dwivedi, Bilal El Bouardi, Desai Fan, Richard Fan, Chengqian Gao, Rifo Ahmad Genadi, Jonathan Geuter, Charles Guille-Escuret, Willis Guo, Dhawal Gupta, Seungwook Han, Tingxu Han, Shibo Hao, Besher Hassan, Guowei He, Ming Shan Hee, Joel Hestness, Yu Huang, Yuan Huang, Haolong Jia, Linghao Jin, Junu Kim, Lingjing Kong, Nurkhan Laiyk, Andrej Leban, Liqun Ma, John Maggs, Amr Mohamed, Mukhesh Narra, Omkar Pangarkar, Aldo Pareja, Khiem Pham, Varad Pimpalkhute, Nikhil Ranjan, Elizaveta Rebrova, Hector Ren, Shaurya Rohatgi, Guokan Shang, Jianshu She, Chufan Shi, Aaryamonvikram Singh, Daria Soboleva, Kartik Sreenivasan, Suqi Sun, Yuekai Sun, Bowen Tan, Liping Tang, Shengkun Tang, Muzi Tao, Mallikarjuna Tupakula, Micah Villmow, Hongyi Wang, Huijuan Wang, Renxi Wang, Yongxin Wang, Yuqi Wang, Zhenting Wang, Shicheng Wen, Yingquan Wu, Anze Xie, Andrew Xing, Matthew Yang, Shuanghai Yu, Kerem Zaman, Zenan Zhai, Hongli Zhan, Xuezhou Zhang, Anshun Asher Zheng, Zhe Zhou, Richard Zhuang, Eric P. Xing
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.AI
+- Relevance: 2.9000877587328464
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.21003v1
+- PDF: https://arxiv.org/pdf/2611.21003v1
+- Local PDF: pdf/2026-11-18_28_K2-Horizon_ A Frontier Fleet of Open Source Language Models.pdf
+
+We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep research, office automation, and beyond. The models lead or are competitive with strong open models of their size on agentic and coding benchmarks. On the modeling side, to strengthen reasoning, we introduce Mixture-of-Value Attention (MoVA), applying MoE to attention value projections, and softplus attention gating, a more flexible, theoretically motivated gate. Our 36B-A4B model uses both and nearly matches a 32B dense model trained on the same data, with one-seventh the active parameters. We also introduce Uno, lossless diffusion adapters that speed up decoding by up to 2.2x without a separate draft model. Our release follows the LLM360 definition of open source for transparency and reproducibility: the full development history, including intermediate checkpoints from every training stage, pre-training data, training logs, and all training, evaluation, and infrastructure code, notably our production-scale xLLM framework for dense and MoE training and the RL360 reinforcement-learning stack. Beyond the data itself, we release and document in detail every pipeline that built it, the part of model development that open releases most rarely disclose. These pipelines produced roughly 10T synthetic pre-training tokens, showing that synthetic data can be a major ingredient of pre-training at scale. Four of the models share one 22T-token pre-training corpus and recipe, revealing consistent scaling behavior and enabling controlled studies of scale and sparsity. All artifacts are available at https://ifm.ai/k2/
+
+## 29. Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis
+
+- Authors: Suchit Gupte, Zhongteng Cai, Xueru Zhang, Mohammad Mahdi Khalili
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-16
+- DOI: Unavailable
+- Categories: cs.LG, cs.AI
+- Relevance: 2.8944678763428557
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.21348v1
+- PDF: https://arxiv.org/pdf/2611.21348v1
+- Local PDF: pdf/2026-11-18_29_Representational Change Under Self-Consuming Training_ A Sparse Autoencoder Analysis.pdf
+
+Large language models are increasingly exposed to model-generated text, raising the possibility that future models will be trained recursively on the outputs of their predecessors. Prior work on such self-consuming training loops has largely focused on output quality and downstream performance, leaving their effects on internal representations poorly understood. We study how representations evolve across five generations of self-consumption and whether sparse autoencoders (SAEs) remain reliable under this shift. At each generation, we compare a lineage trained on synthetic data with a matched control trained on real data under the same training settings. We evaluate how well SAEs trained before self-consumption transfer to later generations, measuring reconstruction and sparsity across SAE widths, architectures, and model layers. We then fine-tune the original SAE on each generation and use sparse probing to test whether task-relevant information remains concentrated in a small number of latents or becomes more distributed across the representation. We find that zero-shot SAE performance degrades progressively under self-consumption, with growing reconstruction and sparsity gaps that vary substantially across layers. Fine-tuning largely restores reconstruction, but not feature-level usefulness: task-relevant information remains accessible in the full latent space while becoming less concentrated in individual features. These results show that self-consumption induces representational drift and that reconstruction fidelity alone is insufficient to establish that an adapted SAE remains equally useful for interpretation.
+
+## 30. Model Maps: A Documentation Framework for Tracing Foundation Model Ancestry and Understanding AI Entanglement
+
+- Authors: Rachel Hong, Madeleine Grunde-McLaughlin, Sarah Cen, Jevan Hutson, Jamie Morgenstern, Tadayoshi Kohno
+- Source: arxiv
+- Venue type: preprint
+- Journal: Unknown
+- Publication status: preprint
+- Publication date: 2026-11-13
+- DOI: Unavailable
+- Categories: cs.CY, cs.AI
+- Relevance: 2.892809617194607
+- Tracking confidence: N/A
+- Source hits: N/A
+- Matched researchers: N/A
+- Matched groups: N/A
+- Article: http://arxiv.org/abs/2611.18998v1
+- PDF: https://arxiv.org/pdf/2611.18998v1
+- Local PDF: pdf/2026-11-18_30_Model Maps_ A Documentation Framework for Tracing Foundation Model Ancestry and Understanding AI Entanglement.pdf
+
+The development of foundation models incorporates pre-existing AI artifacts like models, datasets, and benchmarks. These relationships, as part of the broader AI supply chain, produce "entangled" webs in which properties of artifacts upstream can influence the outputs of a foundation model downstream - a phenomenon known as AI entanglement. Without visibility into these connections, a black-box model can inherit upstream properties that result in security vulnerabilities, hallucinations, or biased predictions, yet developers are left with no recourse to identify or mitigate the root issue. To address these concerns, we introduce model maps as a conceptual documentation framework for tracing model ancestry that builds on previous documentation frameworks like ecosystem graphs, datasheets, and model cards. A model map for a given foundation model is a detailed knowledge graph that represents the relationships between artifacts that influence the resulting foundation model. Our framework incorporates a taxonomy of 13 dependency mechanisms including model fine-tuning and synthetic data generation. We apply this framework to construct model maps of 15 closed and open-weight foundation models to illustrate the complexity of AI entanglement in current model development practices. From our model maps, we record 2,778 unique dependencies and trace artifacts that are located up to 9 hops away from a resulting foundation model. Our findings suggest that AI transparency requirements should extend beyond individual models and training-data disclosures to encompass upstream dependencies, which would enable more effective risk assessment, auditing, and accountability across the AI supply chain. To help developers, regulators, and researchers understand and analyze the interactions that can influence the behavior of a foundation model, we release these these model maps at https://modelmaps.ai.
