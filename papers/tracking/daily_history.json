@@ -321,6 +321,13 @@
     "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
     "url": "http://arxiv.org/abs/2607.27077v1"
   },
+  "title:errpediaisyourexactknnvectorsearchreallyexact": {
+    "doi": null,
+    "sent_date": "2026-11-18",
+    "source": "arxiv",
+    "title": "Errpedia: Is Your Exact $k$-NN Vector Search Really Exact?",
+    "url": "http://arxiv.org/abs/2611.22474v1"
+  },
   "title:euclideancrowdingdrivenadaptiveeuclideanhyperbolicgraphlearning": {
     "doi": null,
     "sent_date": "2026-10-29",
@@ -706,6 +713,13 @@
     "title": "Point as Skeleton: Accumulated Point Cloud Enhanced Autoregressive Generation for Closed-Loop Autonomous Driving Simulation",
     "url": "http://arxiv.org/abs/2607.06516v1"
   },
+  "title:pointzipstatisticallylosslesscompressionforclimatedatawithpointwiseerrorbounds": {
+    "doi": null,
+    "sent_date": "2026-11-18",
+    "source": "arxiv",
+    "title": "PointZip: Statistically Lossless Compression for Climate Data with Pointwise Error Bounds",
+    "url": "http://arxiv.org/abs/2611.21312v1"
+  },
   "title:positionanchortuningtowardsefficientadaptationofpretrainedpointcloudtransformers": {
     "doi": null,
     "sent_date": "2026-09-18",
@@ -782,6 +796,13 @@
     "source": "arxiv",
     "title": "RT-J: Large-Scale Pretraining of Relational Transformers for Context-Efficient Predictions",
     "url": "http://arxiv.org/abs/2610.17867v2"
+  },
+  "title:sages21flashtechnicalreport": {
+    "doi": null,
+    "sent_date": "2026-11-18",
+    "source": "arxiv",
+    "title": "Sage S2.1 Flash Technical Report",
+    "url": "http://arxiv.org/abs/2611.21072v1"
   },
   "title:scopesequivalenceforblocksofarikikoikealgebras": {
     "doi": null,
@@ -880,6 +901,13 @@
     "source": "arxiv",
     "title": "Spin swapping mediated by spin-orbital textures in centrosymmetric multiorbital materials",
     "url": "http://arxiv.org/abs/2611.06163v1"
+  },
+  "title:stfateflowcontinuousgenespatialreconstructionwithdifferentiationpotentiallearningfromtimeresolvedspatialtranscriptomics": {
+    "doi": null,
+    "sent_date": "2026-11-18",
+    "source": "arxiv",
+    "title": "ST-FateFlow: Continuous Gene-Spatial Reconstruction with Differentiation-Potential Learning from Time-Resolved Spatial Transcriptomics",
+    "url": "http://arxiv.org/abs/2611.22256v1"
   },
   "title:strongfieldcoulombexplosionofethanepropaneandbutaneincircularlypolarizedlaserfields": {
     "doi": null,
