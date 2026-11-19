@@ -104,6 +104,13 @@
     "title": "AuraSE: Low-Hallucination Generative Speech Enhancement via Multimodal Flow Matching and Inference Policy Optimization",
     "url": "http://arxiv.org/abs/2610.06632v1"
   },
+  "title:betterrankersworseretrieversthehiddencostofrlposttrainingingenerativerecommendation": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Better Rankers, Worse Retrievers: The Hidden Cost of RL Post-Training in Generative Recommendation",
+    "url": "http://arxiv.org/abs/2611.22838v1"
+  },
   "title:beyondkvreconstructionfunctionalreconstructionformladraftmodelsinspeculativedecoding": {
     "doi": null,
     "sent_date": "2026-07-31",
@@ -208,6 +215,13 @@
     "source": "arxiv",
     "title": "Continuous-time q-Learning for Finite-Horizon Portfolio Choice with Optimal Stopping in Jump-Diffusion Markets",
     "url": "http://arxiv.org/abs/2611.07362v1"
+  },
+  "title:continuumboundarystateawaredeterministicschedulingindynamicleonetworks": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Continuum: Boundary-State-Aware Deterministic Scheduling in Dynamic LEO Networks",
+    "url": "http://arxiv.org/abs/2611.24021v1"
   },
   "title:coreincontextreconstructionforunifiedtabularanomalydetection": {
     "doi": null,
@@ -454,6 +468,13 @@
     "title": "Hardware-Aware Features for CUTLASS Kernel Selection",
     "url": "http://arxiv.org/abs/2609.35587v1"
   },
+  "title:hardwaredxafoundationalgraphmodelsystemfordatacentermachinerepairs": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "HardwareDx: A Foundational Graph Model System for Datacenter Machine Repairs",
+    "url": "http://arxiv.org/abs/2611.23398v1"
+  },
   "title:harnessinglanguagemodelsasoptimizationmodelingagents": {
     "doi": null,
     "sent_date": "2026-10-23",
@@ -503,6 +524,13 @@
     "title": "Hypergraph-based Multimodal Retrieval-Augmented Generation with Incremental Refinement",
     "url": "http://arxiv.org/abs/2608.16628v1"
   },
+  "title:hypolooprevisingweighteditingplansfromscientificfeedback": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "HypoLoop: Revising Weight-Editing Plans from Scientific Feedback",
+    "url": "http://arxiv.org/abs/2611.23718v1"
+  },
   "title:impactofnuclearleveldensityonrprocessrareearthpeaknucleosynthesis": {
     "doi": "10.3847/1538-4357/ae9d64",
     "sent_date": "2026-08-27",
@@ -551,6 +579,13 @@
     "source": "arxiv",
     "title": "Large Language Models as a Universal Searcher for Open-World Automated Machine Learning",
     "url": "http://arxiv.org/abs/2611.12791v1"
+  },
+  "title:lashpatdeadlockfreeadaptiveshortestpathroutingforinterchipletinterconnects": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "LASH-PAT: Deadlock-Free Adaptive Shortest-Path Routing for Inter-Chiplet Interconnects",
+    "url": "http://arxiv.org/abs/2611.22937v1"
   },
   "title:learningpropagationgeometryfrommessagepassingfeedback": {
     "doi": null,
@@ -650,6 +685,13 @@
     "title": "MUX-USCT: A Noise-Robust Neural Network for Ultrasound Computed Tomography",
     "url": "http://arxiv.org/abs/2607.10648v1"
   },
+  "title:nvidiakumotabularpushingtheaccuracyefficiencyfrontierfortabularprediction": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "NVIDIA Kumo Tabular: Pushing the Accuracy-Efficiency Frontier for Tabular Prediction",
+    "url": "http://arxiv.org/abs/2611.23001v1"
+  },
   "title:ocrinthefoundationmodelerafromspecialistmodelstounifiedmodels": {
     "doi": null,
     "sent_date": "2026-11-05",
@@ -670,6 +712,13 @@
     "source": "arxiv",
     "title": "P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning",
     "url": "http://arxiv.org/abs/2607.25541v1"
+  },
+  "title:paisfapartiallyadaptiveinorderselectionfunctionforroutinginonchipinterchipletandwaferscalenetworks": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "PAISF: A Partially Adaptive In-Order Selection Function for Routing in On-Chip, Inter-Chiplet, and Wafer-Scale Networks",
+    "url": "http://arxiv.org/abs/2611.22772v1"
   },
   "title:parallellanguagemodelsviavariationaldecoding": {
     "doi": null,
@@ -964,6 +1013,13 @@
     "source": "arxiv",
     "title": "Tired Actor: Fatigue-Informed Character Control",
     "url": "http://arxiv.org/abs/2608.03528v1"
+  },
+  "title:toriccalabiyauorientifoldsconstructionsfixedlociandoplanecharges": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Toric Calabi-Yau orientifolds: constructions, fixed loci and O-plane charges",
+    "url": "http://arxiv.org/abs/2611.22785v1"
   },
   "title:towardsgeneralistgraphlevelanomalydetection": {
     "doi": null,

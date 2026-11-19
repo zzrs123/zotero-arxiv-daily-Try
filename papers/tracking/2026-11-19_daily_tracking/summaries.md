@@ -1,0 +1,117 @@
+# Researcher Tracking - 2026-11-19 (daily)
+
+Total new tracked papers: 8
+Highlighted papers: 8
+
+## 1. HypoLoop: Revising Weight-Editing Plans from Scientific Feedback
+
+- Authors: Mengran Li, Xichen Yan, Bo Li, Chengyang Zhang, Jinfeng Xu, Zheng Lin, Zelin Zang, Zhen Lei, Jiebo Luo, Victor C. M. Leung, Stan Z. Li
+- Source hits: arxiv
+- Matched researchers: Stan Z. Li
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-11-18
+- Article: http://arxiv.org/abs/2611.23718v1
+
+Scientific experiments continually reveal prediction errors. Effective updates depend on which parameters change and which errors drive the correction. We introduce HypoLoop, a family of native weight-editing methods that connects these choices to experimental feedback. Fixed, numerically adaptive, and LLM-guided policies produce editing plans; numerical solvers compute weight patches, and internal validation selects the deployed predictor. Successive observations and validation records support revisions to editable locations and fitting rules. Experiments cover 22 scientific tasks and both DeepSeek and Claude. On Burgers, reallocating a matched parameter budget reduces error by 58.80% and 47.72% relative to fixed locations. On DIODE, positive-residual weighting reduces absolute relative error (AbsRel) by 13.35% in internal cross-validation, with the same 33 editable coordinates. Revising the complete plan across rounds lowers final AbsRel by 10.59% relative to keeping the initial plan fixed. SpaceNet7 and Make3D connect accepted edits to improved spatial predictions. These results show how experimental evidence can shape the update problem itself. Code: https://github.com/limengran98/HypoLoop.
+
+## 2. Continuum: Boundary-State-Aware Deterministic Scheduling in Dynamic LEO Networks
+
+- Authors: Siqi Yang, Zonghui Li, Chaoqun You, Yue Gao
+- Source hits: arxiv
+- Matched researchers: Yue Gao
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-11-18
+- Article: http://arxiv.org/abs/2611.24021v1
+
+Low Earth Orbit (LEO) constellations support mission-critical services requiring bounded latency and predictable delivery. However, conventional snapshot-based schedulers discard the forwarding progress of unfinished time-triggered traffic across topology transitions, degrading schedulability and timing consistency. We present Continuum, aboundary-state-aware rolling-horizon scheduling framework. Continuum inherits buffered-node and arrival-time information, jointly optimizing remaining routes and transmission slots, and refines latency to improve timing consistency while preserving original timing constraints. Ablations show up to 16.6 percentage points higher schedulability from boundary-state inheritance and a 10.9-37.7 times reduction in mean jitter from joint alignment. Scalability experiments evaluate synthesis performance for workloads of up to 10K flows.
+
+## 3. Better Rankers, Worse Retrievers: The Hidden Cost of RL Post-Training in Generative Recommendation
+
+- Authors: Yuheng Chen, Fan Zhang, Yixuan Xu, Chao Yang, Yang Xiang, Can Yang
+- Source hits: arxiv
+- Matched researchers: Can Yang
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-11-17
+- Article: http://arxiv.org/abs/2611.22838v1
+
+Generative recommenders decode the semantic ID of a user's next item with a language model, and post-training them with reinforcement learning (RL) after supervised fine-tuning (SFT) has become standard practice. The gains are mostly reported on the first ten results, yet in deployment such models hand hundreds of candidates to a downstream ranker or reward model. We show that RL post-training has a hidden cost: it improves accuracy at the top of the list (hit@K for small K) but, on all five datasets we study, lowers the recall of the candidate list (hit@K for K in the hundreds). The model becomes a better ranker and a worse retriever. Controlled experiments trace the loss to the negative advantages that RL assigns to the candidates it samples, the rollout. The root cause is that only one next item is logged per user, so RL treats every other candidate as wrong. Yet these candidates are the model's most plausible alternatives, and often the next items of other users with similar histories. Penalising them pushes down exactly what similar users choose next, and these items drop out of those users' candidate lists. This diagnosis points directly to a remedy: out-of-rollout anchoring, a single additional loss term that preserves the SFT model's ordering of the items outside the rollout. It keeps the gain at the top and restores recall to the SFT level on all five datasets, and it is effective under other RL configurations as well. To our knowledge, this is the first systematic study of this recall loss: we measure it, identify its cause, and show that, once the cause is known, a simple remedy suffices.
+
+## 4. Toric Calabi-Yau orientifolds: constructions, fixed loci and O-plane charges
+
+- Authors: Xu Cao, Xin Gao
+- Source hits: arxiv
+- Matched researchers: Xin Gao
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-11-17
+- Article: http://arxiv.org/abs/2611.22785v1
+
+We review the systematic construction of toric orientifold Calabi-Yau threefolds through divisor exchanges and coordinate reflections. We relate the homogeneous-coordinate and lattice descriptions and explain the computation of fixed loci and the geometric data entering Hodge splittings and tadpole conditions. Our triangulation-wise analysis identifies multiple compatible involutions on a single triangulation and tracks their realisations across different triangulations, revealing the orientifold structure within and across toric phases. We complement this review with new calculations and explicit examples that refine the fixed-locus geometry and the associated orientifold charge data. The examples also identify coordinate representatives of the identity and invariant hypersurface families with unavoidable singularities. These results support an ongoing update of the orientifold catalogue and provide geometric input for D-brane configurations, flux compactifications and moduli stabilisation.
+
+## 5. HardwareDx: A Foundational Graph Model System for Datacenter Machine Repairs
+
+- Authors: Yuanlin Wen, Elan Markowitz, Zubo Gu, Sami Abu-El-Haija, Bryan Perozzi, Mikhail Galkin, Ali Parviz, Aayush Gupta, Venkata Chivukula, Griffin Hadfield, Aravind Akella, Daniel J. Frame, Vahab Mirrokni, Amin Vahdat
+- Source hits: arxiv
+- Matched researchers: Bryan Perozzi
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: foundation model
+- Journal/source: arxiv
+- Publication date: 2026-11-17
+- Article: http://arxiv.org/abs/2611.23398v1
+
+The rapid scale-up of AI infrastructure has made datacenter reliability a cornerstone of the cloud business economy. Since hardware failures in hyper-scale AI clusters can stall multi-million dollar training workloads, the downtime of individual machines can cause outsized economic losses. Minimizing machine downtime, therefore, is more important than ever.
+  To address this, we present Hardware Diagnoser (HardwareDx), an AI-driven hardware diagnosis system that applies a graph foundation model approach to automated datacenter maintenance. It allows a single model to diagnose many platforms and accelerate onboarding of new hardware products. Deployed at production scale at Google, HardwareDx yields substantial efficiency gains across diverse compute architectures. Real-world evaluations demonstrate that it reduces production downtime by 18.3% on GPU platforms and 16.1% on TPUs. Furthermore, it significantly accelerates hardware deployment, cutting quality assurance (QA) time by 28.3% for GPUs and 25.1% for TPUs. These results establish HardwareDx as a field-tested solution for maximizing the reliability and cost efficiency of next generation AI fleets.
+
+## 6. NVIDIA Kumo Tabular: Pushing the Accuracy-Efficiency Frontier for Tabular Prediction
+
+- Authors: Jingang Qu, Valter Hudovernik, Martin Jurkovič, Cedric Lorenz, David Holzmüller, Federico Lopez, Dmitry Gordeev, Akihiro Nitta, Ramona Bendias, Ardrian Wong, Vedaant Jain, Vignesh Kothapalli, Gilberto Titericz Junior, Jure Leskovec, Matthias Fey
+- Source hits: arxiv
+- Matched researchers: Jure Leskovec
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: foundation model
+- Journal/source: arxiv
+- Publication date: 2026-11-17
+- Article: http://arxiv.org/abs/2611.23001v1
+
+We introduce Kumo Tabular, a family of open tabular foundation models for classification and regression, in three sizes: Kumo Tabular-S (27M parameters), Kumo Tabular-M (61M), and Kumo Tabular-L (214M). Pretrained only on artificial tables from the Kumo prior, they can make predictions on new tables without any training. In our approach, a table encoder compresses each row into an embedding, and an in-context learning transformer predicts the unlabeled rows from the labeled ones. Kumo Tabular introduces architectural innovations that improve both training stability and predictive performance, enabling the model to scale up to 150M cells on modern GPUs. Kumo Tabular-L ranks first on eight benchmarks: TabArena, TALENT, BeyondArena, ScoringBench, STRABLE, MulTaBench, RamanBench, and TabBench-Bio. These cover probabilistic regression, tables with over 1M rows or 100K columns, and tables with strings, text, or images. Accuracy improves with model size in all tested comparisons. All three sizes lie on the accuracy-speed frontiers of TabArena and BeyondArena. Kumo Tabular-L predicts faster than the runners-up, LimiX-2 on TabArena (36 times) and TabPFN-3.5 on BeyondArena (1.7 times). Weights and pretraining code are released under OpenMDW-1.1 and Apache 2.0, respectively.
+
+## 7. LASH-PAT: Deadlock-Free Adaptive Shortest-Path Routing for Inter-Chiplet Interconnects
+
+- Authors: Patrick Iff, Torsten Hoefler
+- Source hits: arxiv
+- Matched researchers: Torsten Hoefler
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-11-17
+- Article: http://arxiv.org/abs/2611.22937v1
+
+With the slowdown of transistor scaling, chipletbased systems, and in particular chiplet-based wafer-scale integration, have emerged as a promising approach to sustain growth in computing capability per cost for modern processors and accelerators. In recent years, many specialized inter-chiplet interconnect topologies have been proposed. In these topologies, the simple, well-established, and deadlock-free dimension-order routing scheme is not applicable due to its reliance on regular mesh structures. In this work, we study routing in these recently proposed inter-chiplet interconnect topologies by categorizing and evaluating nine deadlock-free routing functions for irregular topologies known from data center networking in this new context. This reveals a trade-off between turn-based routing, which enables path diversity, and layered routing, which ensures shortest-path delivery. To resolve this trade-off, we propose LASH-PAT, a routing function that extends layered shortestpath routing with adaptive path diversity. LASH-PAT supports multiple shortest paths and dynamically selects among them based on local congestion while preserving deadlock freedom. When compared to the best-performing baseline routing function for each combination of topology, traffic pattern, and evaluated metric, LASH-PAT improves throughput by 21.15% and reduces energy per packet by 12.77%, while providing latency comparable to the lowest-latency baseline routing function.
+
+## 8. PAISF: A Partially Adaptive In-Order Selection Function for Routing in On-Chip, Inter-Chiplet, and Wafer-Scale Networks
+
+- Authors: Patrick Iff, Luca Oertig, Andrin Weber, Luca Benini, Torsten Hoefler
+- Source hits: arxiv
+- Matched researchers: Torsten Hoefler
+- Matched groups: N/A
+- Confidence: medium (author_alias)
+- Topic keywords: N/A
+- Journal/source: arxiv
+- Publication date: 2026-11-17
+- Article: http://arxiv.org/abs/2611.22772v1
+
+The growing number of compute elements per chip, along with advances such as chiplet systems and wafer-scale integration, drives the need for scalable and efficient routing algorithms for irregular topologies. A routing algorithm consists of a routing function (RF) that ensures deadlock freedom and a selection function (SF) that avoids congestion and, in some cases, guarantees in-order packet delivery. We propose two novel SFs for irregular topologies, ISF and PAISF, which ensure in-order delivery by hashing a packet's entropy value to determine its path. Packets with the same entropy follow the same path and arrive in order. Compared to a deterministic RF, a deterministic SF, and Multi, three alternative in-order delivery strategies, (PA)ISF improves throughput by 15.2% and reduces energy per packet and latency under load by 12.1% and 11.3%, at the cost of a zero-load latency increase by 3.3% on average across workloads and topologies.
