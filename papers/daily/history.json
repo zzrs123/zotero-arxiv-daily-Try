@@ -699,6 +699,13 @@
     "title": "Visual LLM-guided consensus spatial domain detection with L-STAR",
     "url": "https://doi.org/10.1038/s41467-026-78923-w"
   },
+  "doi:10.1038/s41467-026-78924-9": {
+    "doi": "https://doi.org/10.1038/s41467-026-78924-9",
+    "sent_date": "2026-11-19",
+    "source": "openalex",
+    "title": "EpiPack: A computational framework for reference mapping and out-of-reference detection for single-cell ATAC-seq data with heterogeneous peak features",
+    "url": "https://doi.org/10.1038/s41467-026-78924-9"
+  },
   "doi:10.1038/s41467-026-78933-8": {
     "doi": "https://doi.org/10.1038/s41467-026-78933-8",
     "sent_date": "2026-11-04",
@@ -901,6 +908,13 @@
     "source": "openalex",
     "title": "Benchmarking segmentation methods for spatial transcriptomics",
     "url": "https://doi.org/10.1038/s41592-026-03272-x"
+  },
+  "doi:10.1038/s41592-026-03279-4": {
+    "doi": "https://doi.org/10.1038/s41592-026-03279-4",
+    "sent_date": "2026-11-19",
+    "source": "openalex",
+    "title": "Echidna: a Bayesian framework for integrative inference of copy number alterations impacting phenotypic plasticity",
+    "url": "https://doi.org/10.1038/s41592-026-03279-4"
   },
   "doi:10.1038/s41592-026-03282-9": {
     "doi": "https://doi.org/10.1038/s41592-026-03282-9",
@@ -1132,6 +1146,13 @@
     "source": "openalex",
     "title": "Bridging the Training Gap with Hyperion: A Training-Free Style Transfer Method on Diffusion Transformers",
     "url": "https://doi.org/10.1109/tpami.2026.3752263"
+  },
+  "doi:10.1109/tpami.2026.3754040": {
+    "doi": "https://doi.org/10.1109/tpami.2026.3754040",
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "When AUC Meets Generative Reconstruction: A Unified Principle for Balanced Visual Representation Learning",
+    "url": "http://arxiv.org/abs/2611.22094v1"
   },
   "doi:10.1111/cgf.70633": {
     "doi": "10.1111/cgf.70633",
@@ -1461,6 +1482,13 @@
     "source": "openalex",
     "title": "Mitigating bias in spatial transcriptomic pipelines via human feedback with CSDE",
     "url": "https://doi.org/10.1186/s13059-026-04302-9"
+  },
+  "doi:10.1186/s13059-026-04324-3": {
+    "doi": "https://doi.org/10.1186/s13059-026-04324-3",
+    "sent_date": "2026-11-19",
+    "source": "openalex",
+    "title": "STRUCT: a statistical approach to detect conserved RNA secondary structures from raw sequencing data without multiple sequence alignment",
+    "url": "https://doi.org/10.1186/s13059-026-04324-3"
   },
   "doi:10.1186/s13059-026-04326-1": {
     "doi": "https://doi.org/10.1186/s13059-026-04326-1",
@@ -3659,6 +3687,13 @@
     "source": "arxiv",
     "title": "Amortized Nonlinear Variable Selection with Prior-Data Fitted Networks",
     "url": "http://arxiv.org/abs/2611.04848v1"
+  },
+  "title:amortizingtemperedsamplingwithcorrectedselftraining": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Amortizing Tempered Sampling with Corrected Self-Training",
+    "url": "http://arxiv.org/abs/2611.23072v1"
   },
   "title:amresourcescatalogingargumentminingdatasets": {
     "doi": null,
@@ -7734,6 +7769,13 @@
     "title": "Commonsense Reasoning in Computer Vision: Foundations, Recent Advancements, and Future Directions",
     "url": "http://arxiv.org/abs/2609.05257v1"
   },
+  "title:communicatethechangeefficientexpertparallelismviaactivationcompression": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Communicate the Change: Efficient Expert Parallelism via Activation Compression",
+    "url": "http://arxiv.org/abs/2611.22215v1"
+  },
   "title:communitybenchmarkingofgenerativemodelsforprivacypreservingsyntheticbulkrnaseqdatageneration": {
     "doi": "https://doi.org/10.1186/s13059-026-04326-1",
     "sent_date": "2026-11-12",
@@ -9064,6 +9106,13 @@
     "title": "DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents",
     "url": "http://arxiv.org/abs/2608.18524v1"
   },
+  "title:darwinageospatialfoundationmodelformarineintelligence": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
+    "url": "http://arxiv.org/abs/2611.22496v1"
+  },
   "title:dataarcsyndatatoolkitaunifiedclosedloopframeworkformultipathmultimodalandmultilingualdatasynthesis": {
     "doi": null,
     "sent_date": "2026-08-10",
@@ -10303,6 +10352,13 @@
     "title": "DMT-Dens: Density-preserving manifold visualization for biological data",
     "url": "http://arxiv.org/abs/2608.17571v1"
   },
+  "title:dneoyourparalleldraftmodelneedsbettertargetfeatureencoding": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+    "url": "http://arxiv.org/abs/2611.21925v1"
+  },
   "title:doc2loraprovidesdecodablerepresentationsofscientificideas": {
     "doi": null,
     "sent_date": "2026-10-02",
@@ -10337,6 +10393,13 @@
     "source": "arxiv",
     "title": "DocTrace: Towards Traceable Long Document VQA via Hierarchical Evidence Graph Reasoning",
     "url": "http://arxiv.org/abs/2608.03292v1"
+  },
+  "title:dodiffusionmodelslearntogeneralizebasicvisualskills": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Do Diffusion Models Learn to Generalize Basic Visual Skills?",
+    "url": "http://arxiv.org/abs/2611.22427v1"
   },
   "title:dodomainspecificexpertsexistinmoebasedllms": {
     "doi": null,
@@ -10667,6 +10730,13 @@
     "title": "DrugTargetWorld: A Synthetic Biobank for Training and Benchmarking AI Scientists",
     "url": "http://arxiv.org/abs/2610.09558v1"
   },
+  "title:dsadiffdatastructureawarediffusionforcrystalstructurepredictionviamitigatingcomplexityandimbalanceinducedbiases": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "DSADiff: Data Structure-Aware Diffusion for Crystal Structure Prediction via Mitigating Complexity- and Imbalance-Induced Biases",
+    "url": "http://arxiv.org/abs/2611.22050v1"
+  },
   "title:dscalescalingblockdiffusionspeculativedecodingwithadaptiveverification": {
     "doi": null,
     "sent_date": "2026-10-01",
@@ -10904,6 +10974,13 @@
     "source": "arxiv",
     "title": "Ecdysis: Efficient and Effective Training of Runtime Harnesses for LLM Agents",
     "url": "http://arxiv.org/abs/2609.11677v1"
+  },
+  "title:echidnaabayesianframeworkforintegrativeinferenceofcopynumberalterationsimpactingphenotypicplasticity": {
+    "doi": "https://doi.org/10.1038/s41592-026-03279-4",
+    "sent_date": "2026-11-19",
+    "source": "openalex",
+    "title": "Echidna: a Bayesian framework for integrative inference of copy number alterations impacting phenotypic plasticity",
+    "url": "https://doi.org/10.1038/s41592-026-03279-4"
   },
   "title:econprovertowardsmoreeconomicaltesttimescalingforautomatedtheoremproving": {
     "doi": null,
@@ -11556,6 +11633,13 @@
     "title": "Epidemiological Causal Graph Identification: Challenges, Identifiability and Algorithms",
     "url": "http://arxiv.org/abs/2609.20676v1"
   },
+  "title:epipackacomputationalframeworkforreferencemappingandoutofreferencedetectionforsinglecellatacseqdatawithheterogeneouspeakfeatures": {
+    "doi": "https://doi.org/10.1038/s41467-026-78924-9",
+    "sent_date": "2026-11-19",
+    "source": "openalex",
+    "title": "EpiPack: A computational framework for reference mapping and out-of-reference detection for single-cell ATAC-seq data with heterogeneous peak features",
+    "url": "https://doi.org/10.1038/s41467-026-78924-9"
+  },
   "title:equilibriumtrainingofenergybasedmodelswithparalleltrajectorytempering": {
     "doi": null,
     "sent_date": "2026-07-31",
@@ -11716,6 +11800,13 @@
     "source": "arxiv",
     "title": "Every Cache Entry Earns Its Place: Global Allocation of Resolution and Coverage for KV Cache Compression",
     "url": "http://arxiv.org/abs/2608.07001v1"
+  },
+  "title:everymeasurementeverydirectionallatoncemultimodalflowmatchingformoleculesandspectra": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Every Measurement, Every Direction, All at Once: Multimodal Flow Matching for Molecules and Spectra",
+    "url": "http://arxiv.org/abs/2611.22098v1"
   },
   "title:everytokencountsgeneralizing16multralongcontextinlargelanguagemodels": {
     "doi": null,
@@ -13235,6 +13326,13 @@
     "source": "acl_anthology",
     "title": "From Passive Metric to Active Signal: The Evolving Role of Uncertainty Quantification in Large Language Models",
     "url": "https://aclanthology.org/2026.findings-acl.2064/"
+  },
+  "title:fromperceptiontosimulationunveilingandempoweringmentalspatialdynamicsinmllms": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "From Perception to Simulation: Unveiling and Empowering Mental Spatial Dynamics in MLLMs",
+    "url": "http://arxiv.org/abs/2611.22541v1"
   },
   "title:frompersonaltocollectiveontheroleoflocalandglobalknowledgeinllmpersonalization": {
     "doi": null,
@@ -15371,6 +15469,13 @@
     "title": "HierarchicalDAEW: Domain-Aware Edge-Weighted Graph Convolution with Evidential Uncertainty for Multi-Section Spatial Gene Expression Prediction from H&E Histology",
     "url": "http://arxiv.org/abs/2607.20896v1"
   },
+  "title:hierarchicaldiffusiontransformerforendtoendimagegeneration": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Hierarchical Diffusion Transformer for End-to-End Image Generation",
+    "url": "http://arxiv.org/abs/2611.22962v1"
+  },
   "title:hierarchicalgraphmemoryforllmagentswithpathlevellocalizationandrewrite": {
     "doi": null,
     "sent_date": "2026-08-07",
@@ -15720,6 +15825,13 @@
     "source": "arxiv",
     "title": "How Many and How Much? Contrastive Learning with Negative Samples for Knowledge Graph Embedding",
     "url": "http://arxiv.org/abs/2610.37389v1"
+  },
+  "title:howmuchofsarvehiclerecognitionisthevehiclebackgroundshortcutsanglegapsandpartiallibrariesonmstarandatrnetstar": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "How Much of SAR Vehicle Recognition Is the Vehicle? Background Shortcuts, Angle Gaps and Partial Libraries on MSTAR and ATRNet-STAR",
+    "url": "http://arxiv.org/abs/2611.21827v1"
   },
   "title:howretrievedcontextshapesinternalrepresentationsinrag": {
     "doi": null,
@@ -16602,6 +16714,13 @@
     "source": "arxiv",
     "title": "Invariant Atoms: Sparse Coordinates of Local Semantic Geometry in Language Model Representations",
     "url": "http://arxiv.org/abs/2609.36451v1"
+  },
+  "title:inventadecentralizedselfimprovingagentsforautonomousscientificdiscovery": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Inventa: Decentralized Self-Improving Agents for Autonomous Scientific Discovery",
+    "url": "http://arxiv.org/abs/2611.21847v1"
   },
   "title:investigatingcrossmodalskillinjectionscenariosmethodsandhyperparameters": {
     "doi": null,
@@ -18479,6 +18598,13 @@
     "title": "LLM-XTM: Enhancing Cross-Lingual Topic Models with Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.170/"
   },
+  "title:lmlineagecontentlineageandcontextgovernanceforllmagents": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "LMLineage: Content Lineage and Context Governance for LLM Agents",
+    "url": "http://arxiv.org/abs/2611.22511v1"
+  },
   "title:lmsearchercrossdomainneuralarchitecturesearchwithllmsviaunifiednumericalencoding": {
     "doi": null,
     "sent_date": "2026-06-22",
@@ -18716,6 +18842,13 @@
     "source": "arxiv",
     "title": "Loopholing All the Way: Language Modeling with pure Self-Conditioning",
     "url": "http://arxiv.org/abs/2610.30068v1"
+  },
+  "title:loopprunerecurrentpruningforloopeddiffusiontransformers": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "LoopPrune: Recurrent Pruning for Looped Diffusion Transformers",
+    "url": "http://arxiv.org/abs/2611.22757v1"
   },
   "title:looptoolclosingthedatatrainingloopforrobustllmtoolcalls": {
     "doi": null,
@@ -19108,6 +19241,13 @@
     "source": "arxiv",
     "title": "Marginal-Preserving Coupled Diffusion Composition for Long-Horizon Planning",
     "url": "http://arxiv.org/abs/2611.15585v1"
+  },
+  "title:margindynamicsforlargelanguagemodelalignment": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Margin Dynamics for Large Language Model Alignment",
+    "url": "http://arxiv.org/abs/2611.21766v1"
   },
   "title:marginregularizedstructuredsemanticalignmentforbrainlanguagecorrespondence": {
     "doi": null,
@@ -21678,6 +21818,13 @@
     "title": "nvAgent: Automated Data Visualization from Natural Language via Collaborative Agent Workflow",
     "url": "https://aclanthology.org/2025.acl-long.960/"
   },
+  "title:nvidiakumotabularpushingtheaccuracyefficiencyfrontierfortabularprediction": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "NVIDIA Kumo Tabular: Pushing the Accuracy-Efficiency Frontier for Tabular Prediction",
+    "url": "http://arxiv.org/abs/2611.23001v1"
+  },
   "title:nvtesseractadcurriculumenhancedconditionaldiffusionformultivariatetimeseriesanomalydetection": {
     "doi": null,
     "sent_date": "2026-10-13",
@@ -21712,6 +21859,13 @@
     "source": "arxiv",
     "title": "Object-Uni: A Unified Model for Object-Centric Spatial Understanding and Controllable Generation",
     "url": "http://arxiv.org/abs/2608.22757v1"
+  },
+  "title:occamimprovedsinglecellrepresentationlearningandperturbationeffectprediction": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "OCCAM: Improved Single-Cell Representation Learning and Perturbation Effect Prediction",
+    "url": "http://arxiv.org/abs/2611.21959v1"
   },
   "title:ocrmemoryopticalcontextretrievalforlonghorizonagentmemory": {
     "doi": null,
@@ -25059,6 +25213,13 @@
     "title": "RIMRULE: Improving Tool-Using Language Agents via MDL-Guided Rule Learning",
     "url": "https://aclanthology.org/2026.acl-long.1599/"
   },
+  "title:risarecoverablesparseattentionforblockdiffusionlanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "RISA: Recoverable Sparse Attention for Block-Diffusion Language Models",
+    "url": "http://arxiv.org/abs/2611.22191v1"
+  },
   "title:riserorchestratinglatentreasoningskillsforadaptiveactivationsteering": {
     "doi": null,
     "sent_date": "2026-09-05",
@@ -25380,6 +25541,13 @@
     "source": "acl_anthology",
     "title": "rSIM: Incentivizing Reasoning Capabilities of LLMs via Reinforced Strategy Injection",
     "url": "https://aclanthology.org/2026.acl-long.2054/"
+  },
+  "title:rsiprimetrainingmodelstotrainmodels": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "RSI-Prime: Training Models to Train Models",
+    "url": "http://arxiv.org/abs/2611.23138v1"
   },
   "title:rsvgzeroovexploringatrainingfreeframeworkforzeroshotopenvocabularyvisualgroundinginremotesensingimages": {
     "doi": "https://doi.org/10.1609/aaai.v40i8.37555",
@@ -25772,6 +25940,13 @@
     "source": "arxiv",
     "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
     "url": "http://arxiv.org/abs/2610.37648v1"
+  },
+  "title:scalinglawsforvisionlanguagefusion": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Scaling Laws for Vision-Language Fusion",
+    "url": "http://arxiv.org/abs/2611.22351v1"
   },
   "title:scalingperformanceandlowresourceannotationwithmanyshotincontextlearningfornamedentityrecognition": {
     "doi": null,
@@ -28076,6 +28251,13 @@
     "title": "Stepwise Contrastive Reasoning for Retrieval-Augmented Generation over Knowledge Graphs",
     "url": "https://doi.org/10.1609/aaai.v40i18.38549"
   },
+  "title:stfateflowcontinuousgenespatialreconstructionwithdifferentiationpotentiallearningfromtimeresolvedspatialtranscriptomics": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "ST-FateFlow: Continuous Gene-Spatial Reconstruction with Differentiation-Potential Learning from Time-Resolved Spatial Transcriptomics",
+    "url": "http://arxiv.org/abs/2611.22256v1"
+  },
   "title:stgfmspectraltemporalgraphforecastingwithmeasuredperturbationboundsandmaskedspectralreconstruction": {
     "doi": null,
     "sent_date": "2026-11-04",
@@ -28089,6 +28271,13 @@
     "source": "arxiv",
     "title": "STHMoE: Hypergraph-Enhanced Heterogeneous Dependency Coordination for LLM-Based Urban Traffic Data Forecasting",
     "url": "http://arxiv.org/abs/2609.15172v1"
+  },
+  "title:stitchragconstructingcompactandevidencepreservingcontextsforragwithdiffusionbasedstitching": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "StitchRAG: Constructing Compact and Evidence-Preserving Contexts for RAG with Diffusion-Based Stitching",
+    "url": "http://arxiv.org/abs/2611.22766v1"
   },
   "title:stkadapterincorporatingevolvinggraphandeventchainfortemporalknowledgegraphextrapolation": {
     "doi": null,
@@ -28173,6 +28362,13 @@
     "source": "biorxiv",
     "title": "STR-PG: A Topology-decoupled Pangenome Framework for Scalable Short-read Genotyping of Short Tandem Repeats",
     "url": "https://www.biorxiv.org/content/10.64898/2026.08.07.743532v1.full.pdf"
+  },
+  "title:structastatisticalapproachtodetectconservedrnasecondarystructuresfromrawsequencingdatawithoutmultiplesequencealignment": {
+    "doi": "https://doi.org/10.1186/s13059-026-04324-3",
+    "sent_date": "2026-11-19",
+    "source": "openalex",
+    "title": "STRUCT: a statistical approach to detect conserved RNA secondary structures from raw sequencing data without multiple sequence alignment",
+    "url": "https://doi.org/10.1186/s13059-026-04324-3"
   },
   "title:structbreakstructuralcognitiveoverloadinducedsafetyfailuresinmllms": {
     "doi": null,
@@ -28944,6 +29140,13 @@
     "title": "TeCES: Collaborative Geometric Knowledge Representation Framework under Evolving Fact Snapshots",
     "url": "https://aclanthology.org/2026.acl-long.1181/"
   },
+  "title:telechattoxing4advancingfrontieragenticmodelsondomesticchipsandframeworks": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+    "url": "http://arxiv.org/abs/2611.22115v1"
+  },
   "title:telltaletaskefficientllmswithtaskawarelayerelimination": {
     "doi": null,
     "sent_date": "2026-07-07",
@@ -29538,6 +29741,13 @@
     "source": "arxiv",
     "title": "Think in Latent, Explain in Language: Self-Explainable Latent Reasoning",
     "url": "http://arxiv.org/abs/2608.13570v1"
+  },
+  "title:thinkonceactfastcosteffectiverecursiveselfimprovementfordecisionmodelharness": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
+    "url": "http://arxiv.org/abs/2611.22432v2"
   },
   "title:thinkparallaxsolvingmultihopproblemsviamultiviewknowledgegraphbasedretrievalaugmentedgeneration": {
     "doi": null,
@@ -31576,6 +31786,13 @@
     "title": "VOYAGER: A Training Free Approach for Generating Diverse Datasets using LLMs",
     "url": "https://aclanthology.org/2026.acl-long.784/"
   },
+  "title:vrllmturningllmsintopowerfultabularclassifiers": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "VRLLM: Turning LLMs into Powerful Tabular Classifiers",
+    "url": "http://arxiv.org/abs/2611.22308v1"
+  },
   "title:vrolorarlvrdrivenmoeroutingforsteerablepluralisticalignment": {
     "doi": null,
     "sent_date": "2026-10-04",
@@ -31660,6 +31877,13 @@
     "title": "Weighted sliced inverse regression for scalable supervised dimensionality reduction of spatial transcriptomics data",
     "url": "https://doi.org/10.1038/s41467-026-76871-z"
   },
+  "title:weightspaceprogrammingdoesntneedtransformers": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "Weight-Space Programming Doesn't Need Transformers",
+    "url": "http://arxiv.org/abs/2611.22055v1"
+  },
   "title:welmimageaunifiedimagegenerationmodeltowardsvisualintelligence": {
     "doi": null,
     "sent_date": "2026-11-07",
@@ -31687,6 +31911,13 @@
     "source": "arxiv",
     "title": "What Does a Token Cost? A Mixture-of-Agents Measurement of Sufficient Per-Token Compute",
     "url": "http://arxiv.org/abs/2610.02491v1"
+  },
+  "title:whatdoesweightspaceprogrammingaddtodiffusioneditingprogramconstructionversusscoreguidedrefinement": {
+    "doi": null,
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "What Does Weight-Space Programming Add to Diffusion Editing? Program Construction versus Score-Guided Refinement",
+    "url": "http://arxiv.org/abs/2611.22228v1"
   },
   "title:whatdollmslearnfirstasymmetriclearningdynamicsofinputcomplexityandoutputambiguityinpreferencealignment": {
     "doi": null,
@@ -31827,6 +32058,13 @@
     "source": "acl_anthology",
     "title": "When Agents Look the Same: Quantifying Distillation-Induced Similarity in Tool-Use Behaviors",
     "url": "https://aclanthology.org/2026.acl-long.478/"
+  },
+  "title:whenaucmeetsgenerativereconstructionaunifiedprincipleforbalancedvisualrepresentationlearning": {
+    "doi": "https://doi.org/10.1109/tpami.2026.3754040",
+    "sent_date": "2026-11-19",
+    "source": "arxiv",
+    "title": "When AUC Meets Generative Reconstruction: A Unified Principle for Balanced Visual Representation Learning",
+    "url": "http://arxiv.org/abs/2611.22094v1"
   },
   "title:whenbackdoorsgobeyondtriggerssemanticdriftindiffusionmodelsunderencoderattacks": {
     "doi": null,
