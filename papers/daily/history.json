@@ -174,6 +174,13 @@
     "title": "ReLink: Reliable Deep Learning for Microscopic Motion Tracking",
     "url": "https://doi.org/10.1002/advs.78541"
   },
+  "doi:10.1002/advs.78731": {
+    "doi": "https://doi.org/10.1002/advs.78731",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "A Nuclear Morphology‐Defined State Space Captures Cancer Cell Identity and State Transitions",
+    "url": "https://doi.org/10.1002/advs.78731"
+  },
   "doi:10.1002/advs.78741": {
     "doi": "https://doi.org/10.1002/advs.78741",
     "sent_date": "2026-11-18",
@@ -643,6 +650,13 @@
     "title": "Recommendation system-inspired learning of crossmodal interaction patterns between chromatin accessibility and gene expression",
     "url": "https://doi.org/10.1038/s41467-026-78646-y"
   },
+  "doi:10.1038/s41467-026-78669-5": {
+    "doi": "https://doi.org/10.1038/s41467-026-78669-5",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "velotest: statistical assessment of RNA velocity embeddings reveals quality differences for reliable trajectory visualizations",
+    "url": "https://doi.org/10.1038/s41467-026-78669-5"
+  },
   "doi:10.1038/s41467-026-78715-2": {
     "doi": "https://doi.org/10.1038/s41467-026-78715-2",
     "sent_date": "2026-11-21",
@@ -769,6 +783,13 @@
     "title": "MMC-seq enables efficient long-read eccDNA profiling from low-input samples",
     "url": "https://doi.org/10.1038/s41467-026-79221-1"
   },
+  "doi:10.1038/s41467-026-79229-7": {
+    "doi": "https://doi.org/10.1038/s41467-026-79229-7",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "A spectral framework for revealing the hidden low-dimensional structure in stochastic reaction networks",
+    "url": "https://doi.org/10.1038/s41467-026-79229-7"
+  },
   "doi:10.1038/s41467-026-79240-y": {
     "doi": "https://doi.org/10.1038/s41467-026-79240-y",
     "sent_date": "2026-11-18",
@@ -782,6 +803,20 @@
     "source": "openalex",
     "title": "Isoform-resolved spatial transcriptomics on a lab-made high-density array via a single-chip NGS-TGS workflow",
     "url": "https://doi.org/10.1038/s41467-026-79323-w"
+  },
+  "doi:10.1038/s41467-026-79392-x": {
+    "doi": "https://doi.org/10.1038/s41467-026-79392-x",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "VHSeek: biology foundation model-based virus representations revealing virus host associations",
+    "url": "https://doi.org/10.1038/s41467-026-79392-x"
+  },
+  "doi:10.1038/s41467-026-79450-4": {
+    "doi": "https://doi.org/10.1038/s41467-026-79450-4",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Mapping dynamics of subcellular RNA and protein localization and organization using optimal transport",
+    "url": "https://doi.org/10.1038/s41467-026-79450-4"
   },
   "doi:10.1038/s41588-026-02695-8": {
     "doi": "https://doi.org/10.1038/s41588-026-02695-8",
@@ -1168,6 +1203,13 @@
     "title": "When AUC Meets Generative Reconstruction: A Unified Principle for Balanced Visual Representation Learning",
     "url": "http://arxiv.org/abs/2611.22094v1"
   },
+  "doi:10.1109/tpami.2026.3755119": {
+    "doi": "https://doi.org/10.1109/tpami.2026.3755119",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics",
+    "url": "https://doi.org/10.1109/tpami.2026.3755119"
+  },
   "doi:10.1111/cgf.70633": {
     "doi": "10.1111/cgf.70633",
     "sent_date": "2026-09-22",
@@ -1195,6 +1237,13 @@
     "source": "openalex",
     "title": "Learning stochastic dynamics and cell-fate landscapes from single-cell snapshots via optimal transport",
     "url": "https://doi.org/10.1126/sciadv.aeb4205"
+  },
+  "doi:10.1126/sciadv.aec9323": {
+    "doi": "https://doi.org/10.1126/sciadv.aec9323",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Self-assembly of bacterial volumetric patterns directed by a synthetic reaction-diffusion circuit",
+    "url": "https://doi.org/10.1126/sciadv.aec9323"
   },
   "doi:10.1126/sciadv.aed3414": {
     "doi": "https://doi.org/10.1126/sciadv.aed3414",
@@ -1244,6 +1293,13 @@
     "source": "openalex",
     "title": "GenNA: Conditional generation of nucleotide sequences guided by natural language annotations",
     "url": "https://doi.org/10.1126/sciadv.aej1481"
+  },
+  "doi:10.1126/sciadv.aej5555": {
+    "doi": "https://doi.org/10.1126/sciadv.aej5555",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Cross-domain encoding models reveal shared and domain-specific neural representations across language and mathematics",
+    "url": "https://doi.org/10.1126/sciadv.aej5555"
   },
   "doi:10.1145/3690624.3709242": {
     "doi": "10.1145/3690624.3709242",
@@ -1531,6 +1587,27 @@
     "source": "openalex",
     "title": "G-quadruplex profiling using single-cell CUT&Tag offers insight into the epigenetic landscape of the developing mouse brain",
     "url": "https://doi.org/10.1186/s13059-026-04339-w"
+  },
+  "doi:10.1186/s13059-026-04340-3": {
+    "doi": "https://doi.org/10.1186/s13059-026-04340-3",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "FLORA-seq enables ultra-high throughput full-length single-cell RNA profiling",
+    "url": "https://doi.org/10.1186/s13059-026-04340-3"
+  },
+  "doi:10.1186/s13059-026-04347-w": {
+    "doi": "https://doi.org/10.1186/s13059-026-04347-w",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "scDCF: detecting disease-associated cells from scRNA-seq using GWAS findings and healthy reference panels",
+    "url": "https://doi.org/10.1186/s13059-026-04347-w"
+  },
+  "doi:10.1186/s13059-026-04349-8": {
+    "doi": "https://doi.org/10.1186/s13059-026-04349-8",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Benchmarking computational tools for locus-specific analysis of transposable elements in single-cell RNA-seq datasets",
+    "url": "https://doi.org/10.1186/s13059-026-04349-8"
   },
   "doi:10.1186/s13059-026-04350-1": {
     "doi": "https://doi.org/10.1186/s13059-026-04350-1",
@@ -4080,6 +4157,13 @@
     "title": "AnTenA: Actionable and Explainable Tensor Analysis System with Large Language Models",
     "url": "http://arxiv.org/abs/2606.28708v1"
   },
+  "title:anuclearmorphologydefinedstatespacecapturescancercellidentityandstatetransitions": {
+    "doi": "https://doi.org/10.1002/advs.78731",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "A Nuclear Morphology‐Defined State Space Captures Cancer Cell Identity and State Transitions",
+    "url": "https://doi.org/10.1002/advs.78731"
+  },
   "title:anygraphgraphfoundationmodelinthewild": {
     "doi": null,
     "sent_date": "2026-06-28",
@@ -4331,6 +4415,13 @@
     "source": "neurips",
     "title": "A solvable model of learning generative diffusion: theory and insights",
     "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/082d3d795520c43214da5123e56a3a34-Abstract-Conference.html"
+  },
+  "title:aspectralframeworkforrevealingthehiddenlowdimensionalstructureinstochasticreactionnetworks": {
+    "doi": "https://doi.org/10.1038/s41467-026-79229-7",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "A spectral framework for revealing the hidden low-dimensional structure in stochastic reaction networks",
+    "url": "https://doi.org/10.1038/s41467-026-79229-7"
   },
   "title:assessingthereliabilityofllmgeneratedphenotypegenotypeassociationsthroughexternalvalidation": {
     "doi": "10.64898/2026.08.13.744701",
@@ -5115,6 +5206,13 @@
     "source": "arxiv",
     "title": "Benchmarking and Enhancing Agentic Causal Discovery",
     "url": "http://arxiv.org/abs/2610.22846v1"
+  },
+  "title:benchmarkingcomputationaltoolsforlocusspecificanalysisoftransposableelementsinsinglecellrnaseqdatasets": {
+    "doi": "https://doi.org/10.1186/s13059-026-04349-8",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Benchmarking computational tools for locus-specific analysis of transposable elements in single-cell RNA-seq datasets",
+    "url": "https://doi.org/10.1186/s13059-026-04349-8"
   },
   "title:benchmarkingcopynumberalterationinferencemethodsforspatialtranscriptomics": {
     "doi": "https://doi.org/10.1038/s41467-026-77500-5",
@@ -6572,6 +6670,13 @@
     "title": "Can MLLMs Reason Beyond Language? VisReason: A Comprehensive Benchmark for Vision-Centric Reasoning",
     "url": "https://aclanthology.org/2026.findings-acl.1996/"
   },
+  "title:canmultiagenthelpdisambiguationinmultidomaintranslation": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Can Multi-agent Help Disambiguation in Multi-domain Translation?",
+    "url": "https://aclanthology.org/2026.findings-acl.907/"
+  },
   "title:canmultimodallargelanguagemodelsunderstandspatialrelations": {
     "doi": null,
     "sent_date": "2026-06-18",
@@ -6830,6 +6935,13 @@
     "source": "arxiv",
     "title": "Causal Discovery with False Positive Error Control",
     "url": "http://arxiv.org/abs/2611.25376v1"
+  },
+  "title:causalescreliablepolicylearningforemotionalsupportconversationviacausalinference": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Causal-ESC: Reliable Policy Learning for Emotional Support Conversation via Causal Inference",
+    "url": "https://aclanthology.org/2026.acl-long.886/"
   },
   "title:causalevidenceextractionandtriangulationincrisisreportsusinglargelanguagemodelsareliefwebbasedstudy": {
     "doi": null,
@@ -7418,6 +7530,13 @@
     "source": "acl_anthology",
     "title": "Claim Verification in the Age of Large Language Models: A Survey",
     "url": "https://aclanthology.org/2026.acl-srw.2/"
+  },
+  "title:claocstxcrosslingualtripletextractionwithaspectopinionawarecodeswitchedpromptingandllmguidedcontrastivedistillation": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "CLAOCS-TX: Cross-Lingual Triplet Extraction with Aspect-Opinion-Aware Code-Switched Prompting and LLM-Guided Contrastive Distillation",
+    "url": "https://aclanthology.org/2026.acl-long.2063/"
   },
   "title:claretyamidchaosquantifyingrepresentationalentanglementtopredictrippleeffectsinllmediting": {
     "doi": null,
@@ -8329,6 +8448,13 @@
     "title": "Contextual Linear Activation Steering of Language Models",
     "url": "http://arxiv.org/abs/2604.24693v2"
   },
+  "title:contextualrelevanceandadaptivesamplingforllmbaseddocumentreranking": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Contextual Relevance and Adaptive Sampling for LLM-Based Document Reranking",
+    "url": "https://aclanthology.org/2026.acl-long.94/"
+  },
   "title:contextweighteddiscreteflowmatching": {
     "doi": null,
     "sent_date": "2026-07-25",
@@ -8895,6 +9021,13 @@
     "source": "acl_anthology",
     "title": "Crosscoding Through Time: Tracking Emergence & Consolidation Of Linguistic Representations Throughout LLM Pretraining",
     "url": "https://aclanthology.org/2026.acl-long.60/"
+  },
+  "title:crossdomainencodingmodelsrevealsharedanddomainspecificneuralrepresentationsacrosslanguageandmathematics": {
+    "doi": "https://doi.org/10.1126/sciadv.aej5555",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Cross-domain encoding models reveal shared and domain-specific neural representations across language and mathematics",
+    "url": "https://doi.org/10.1126/sciadv.aej5555"
   },
   "title:crossdomainmultitaskdatatotextgenerationwithoutindomaintrainingdata": {
     "doi": null,
@@ -10583,6 +10716,13 @@
     "title": "Do LLM Agents Really Mimic Humans? Diagnosing and Aligning Microeconomic Behaviors in Macro-ABMs",
     "url": "https://aclanthology.org/2026.findings-acl.1799/"
   },
+  "title:dollmscaptureembodiedcognitionandculturalvariationcrosslinguisticevidencefromdemonstratives": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Do LLMs Capture Embodied Cognition and Cultural Variation? Cross-Linguistic Evidence from Demonstratives",
+    "url": "https://aclanthology.org/2026.acl-long.461/"
+  },
   "title:dollmsencodefunctionalimportanceofreasoningtokens": {
     "doi": null,
     "sent_date": "2026-09-28",
@@ -11114,6 +11254,13 @@
     "source": "openalex",
     "title": "Echidna: a Bayesian framework for integrative inference of copy number alterations impacting phenotypic plasticity",
     "url": "https://doi.org/10.1038/s41592-026-03279-4"
+  },
+  "title:echomllmincentivizingechocardiographicvideounderstandingwithkeyframegroundingandreportgeneration": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "EchoMLLM: Incentivizing Echocardiographic Video Understanding with Keyframe Grounding and Report Generation",
+    "url": "https://aclanthology.org/2026.findings-acl.1001/"
   },
   "title:econprovertowardsmoreeconomicaltesttimescalingforautomatedtheoremproving": {
     "doi": null,
@@ -12934,6 +13081,13 @@
     "source": "acl_anthology",
     "title": "FLOP-Efficient Training: Early Stopping Based on Test-Time Compute Awareness",
     "url": "https://aclanthology.org/2026.findings-acl.1766/"
+  },
+  "title:floraseqenablesultrahighthroughputfulllengthsinglecellrnaprofiling": {
+    "doi": "https://doi.org/10.1186/s13059-026-04340-3",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "FLORA-seq enables ultra-high throughput full-length single-cell RNA profiling",
+    "url": "https://doi.org/10.1186/s13059-026-04340-3"
   },
   "title:floreintegratingfulllorentzgroupanddirectionaloffsetsforeffectiveknowledgegraphembedding": {
     "doi": "https://doi.org/10.1609/aaai.v40i25.39238",
@@ -18332,6 +18486,13 @@
     "title": "LEPO: Latent Reasoning Policy Optimization for Large Language Models",
     "url": "https://aclanthology.org/2026.findings-acl.707/"
   },
+  "title:leprecreasoningasclassificationoverstructuredfactorsforassessingrelevanceoflegalissues": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "LePREC: Reasoning as Classification over Structured Factors for Assessing Relevance of Legal Issues",
+    "url": "https://aclanthology.org/2026.acl-long.350/"
+  },
   "title:lesalearnablellmlayerscalingup": {
     "doi": null,
     "sent_date": "2026-06-21",
@@ -18548,6 +18709,13 @@
     "source": "acl_anthology",
     "title": "LitVISTA: A Benchmark for Narrative Orchestration in Literary Text",
     "url": "https://aclanthology.org/2026.acl-long.1024/"
+  },
+  "title:liveaidalargescaledialoguedatasetandbenchmarkforinterleavedmultipartyinteractionsinlivestreaming": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Live-Aid: A Large-Scale Dialogue Dataset and Benchmark for Interleaved Multi-party Interactions in Live Streaming",
+    "url": "https://aclanthology.org/2026.findings-acl.1193/"
   },
   "title:liveclktbenchtowardsreliableevaluationofcrosslingualknowledgetransferinmultilingualllms": {
     "doi": null,
@@ -19479,6 +19647,13 @@
     "source": "openalex",
     "title": "Mapping cell-type-specific spatial gene programs uncovers tissue architecture and microenvironment organization",
     "url": "https://doi.org/10.1038/s41467-026-78447-3"
+  },
+  "title:mappingdynamicsofsubcellularrnaandproteinlocalizationandorganizationusingoptimaltransport": {
+    "doi": "https://doi.org/10.1038/s41467-026-79450-4",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Mapping dynamics of subcellular RNA and protein localization and organization using optimal transport",
+    "url": "https://doi.org/10.1038/s41467-026-79450-4"
   },
   "title:mappingenhancergeneregulatoryinteractionsfromsinglecelldata": {
     "doi": "https://doi.org/10.1038/s41588-026-02695-8",
@@ -21741,6 +21916,13 @@
     "title": "NeedleChain: Measuring Intact Context Comprehension Capability of Large Language Models",
     "url": "https://aclanthology.org/2026.findings-acl.1637/"
   },
+  "title:neoclassicabenchmarkforevaluatinglinguisticaestheticreasoninginclassicalchinesepoetry": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Neo-Classic: A Benchmark for Evaluating Linguistic-Aesthetic Reasoning in Classical Chinese Poetry",
+    "url": "https://aclanthology.org/2026.acl-long.1266/"
+  },
   "title:neommeasingletowermultimodalnativemultilingualfoundationencoderforefficientfinetuningandinference": {
     "doi": null,
     "sent_date": "2026-09-04",
@@ -22896,6 +23078,13 @@
     "title": "PaSTel: Anchoring Histology in Spatial Transcriptomics via Multi-Scale Hierarchical Bio-Prior Contrastive Pretraining",
     "url": "http://arxiv.org/abs/2608.14924v1"
   },
+  "title:patarmbridgingpairwiseandpointwisesignalsviapreferenceawaretaskadaptiverewardmodeling": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "PaTaRM: Bridging Pairwise and Pointwise Signals via Preference-Aware Task-Adaptive Reward Modeling",
+    "url": "https://aclanthology.org/2026.acl-long.927/"
+  },
   "title:patchesofnonlinearityinstructionvectorsinlargelanguagemodels": {
     "doi": null,
     "sent_date": "2026-07-16",
@@ -23610,6 +23799,13 @@
     "title": "Privacy-Preserving Topology-Guided Safety for LLM-Based Multi-Agent Systems via Federated Graph Learning",
     "url": "http://arxiv.org/abs/2609.02967v1"
   },
+  "title:privacyr1privacyawaremultillmagentcollaborationviareinforcementlearning": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Privacy-R1: Privacy-Aware Multi-LLM Agent Collaboration via Reinforcement Learning",
+    "url": "https://aclanthology.org/2026.acl-long.2130/"
+  },
   "title:probingandsteeringbiologyacrossboltz1strunkdiffusionboundary": {
     "doi": null,
     "sent_date": "2026-08-14",
@@ -23658,6 +23854,13 @@
     "source": "acl_anthology",
     "title": "ProCeedRL: Process Critic with Explorative Demonstration Reinforcement Learning for LLM Agentic Reasoning",
     "url": "https://aclanthology.org/2026.findings-acl.800/"
+  },
+  "title:processinginconsistencypredictslanguagecompetencellmevaluationwithoutanswerlabelsonturkiclanguages": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Processing Inconsistency Predicts Language Competence: LLM Evaluation Without Answer Labels on Turkic Languages",
+    "url": "https://aclanthology.org/2026.acl-srw.94/"
   },
   "title:processrewardmodelsmeetplanninggeneratingpreciseandscalabledatasetsforsteplevelrewards": {
     "doi": null,
@@ -25437,6 +25640,13 @@
     "title": "Reversing Arrows in Large Language Models",
     "url": "http://arxiv.org/abs/2608.03512v1"
   },
+  "title:revisitingentropyregularizationadaptivecoefficientunlocksitspotentialforllmreinforcementlearning": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Revisiting Entropy Regularization: Adaptive Coefficient Unlocks Its Potential for LLM Reinforcement Learning",
+    "url": "https://aclanthology.org/2026.findings-acl.895/"
+  },
   "title:revisitingidentityandspectradispersioninmediabridgedtimeseriesforecastinglinkingmultivariatesignalsandnarrativeflows": {
     "doi": null,
     "sent_date": "2026-10-10",
@@ -26354,6 +26564,13 @@
     "title": "scBOA: Bayesian optimization of single-cell analysis pipelines for robust annotation and discovery",
     "url": "https://doi.org/10.1038/s41467-026-78718-z"
   },
+  "title:scdcfdetectingdiseaseassociatedcellsfromscrnasequsinggwasfindingsandhealthyreferencepanels": {
+    "doi": "https://doi.org/10.1186/s13059-026-04347-w",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "scDCF: detecting disease-associated cells from scRNA-seq using GWAS findings and healthy reference panels",
+    "url": "https://doi.org/10.1186/s13059-026-04347-w"
+  },
   "title:scdeftadeeplearningframeworkfordrugeffectpredictionandcounterfactualreasoning": {
     "doi": null,
     "sent_date": "2026-09-12",
@@ -26962,6 +27179,13 @@
     "source": "arxiv",
     "title": "SelectPFN: Amortized Bayesian Variable Selection for Sparse Nonlinear Regression with Prior-Data Fitted Networks",
     "url": "http://arxiv.org/abs/2610.21950v1"
+  },
+  "title:selfassemblyofbacterialvolumetricpatternsdirectedbyasyntheticreactiondiffusioncircuit": {
+    "doi": "https://doi.org/10.1126/sciadv.aec9323",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "Self-assembly of bacterial volumetric patterns directed by a synthetic reaction-diffusion circuit",
+    "url": "https://doi.org/10.1126/sciadv.aec9323"
   },
   "title:selfconditioningenablesdeepsequentialreasoninginflowmatching": {
     "doi": null,
@@ -28418,6 +28642,13 @@
     "source": "arxiv",
     "title": "SPSC: Zero-Shot Cross-Subject EEG-to-Image Reconstruction via Semantic Preservation and Subspace Calibration",
     "url": "http://arxiv.org/abs/2611.09380v1"
+  },
+  "title:spssteeringprobabilitysqueezingforbetterexplorationinreinforcementlearningforlargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "SPS: Steering Probability Squeezing for Better Exploration in Reinforcement Learning for Large Language Models",
+    "url": "https://aclanthology.org/2026.findings-acl.865/"
   },
   "title:sqlagentlearningtoexplorebeforegeneratingasadataengineer": {
     "doi": null,
@@ -29994,6 +30225,13 @@
     "title": "The Shape of Vulnerability: How Adversarial Perturbations Reshape the Topology of Language Model Latent Spaces",
     "url": "https://aclanthology.org/2026.acl-srw.24/"
   },
+  "title:thesideeffectsofbeingsmartsafetyrisksinmllmsmultiimagereasoning": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "The Side Effects of Being Smart: Safety Risks in MLLMs’ Multi-Image Reasoning",
+    "url": "https://aclanthology.org/2026.acl-long.1710/"
+  },
   "title:thesisproposalintentionalinferenceforinsightgeneration": {
     "doi": null,
     "sent_date": "2026-10-05",
@@ -30281,6 +30519,13 @@
     "title": "TimeSAF: Towards LLM-Guided Semantic Asynchronous Fusion for Time Series Forecasting",
     "url": "https://aclanthology.org/2026.acl-long.1208/"
   },
+  "title:timeseekmultitaskandmultidomainpretrainingforgeneralizedtimeseriesanalytics": {
+    "doi": "https://doi.org/10.1109/tpami.2026.3755119",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics",
+    "url": "https://doi.org/10.1109/tpami.2026.3755119"
+  },
   "title:timeseriesstructurelearningwithlocalcausalparentdiscovery": {
     "doi": null,
     "sent_date": "2026-11-21",
@@ -30336,6 +30581,13 @@
     "source": "acl_anthology",
     "title": "TLPO: Token-Level Policy Optimization for Mitigating Language Confusion in Large Language Models",
     "url": "https://aclanthology.org/2026.acl-long.1976/"
+  },
+  "title:todiffornottodiffstructureawareandadaptiveoutputformatsforefficientllmbasedcodeediting": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "To Diff or Not to Diff? Structure-Aware and Adaptive Output Formats for Efficient LLM-based Code Editing",
+    "url": "https://aclanthology.org/2026.findings-acl.1483/"
   },
   "title:tokdriftwhenllmspeaksinsubwordsbutcodespeaksingrammar": {
     "doi": null,
@@ -31513,6 +31765,13 @@
     "title": "Understanding In-Context Learning Beyond Transformers: An Investigation of State Space and Hybrid Architectures",
     "url": "https://aclanthology.org/2026.findings-acl.39/"
   },
+  "title:understandingstructuredfinancialdatawithllmsacasestudyonfrauddetection": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Understanding Structured Financial Data with LLMs: A Case Study on Fraud Detection",
+    "url": "https://aclanthology.org/2026.acl-long.1071/"
+  },
   "title:understandingtheoutofdistributiongeneralizationofchainofthoughtreasoninginllms": {
     "doi": null,
     "sent_date": "2026-11-06",
@@ -31680,6 +31939,13 @@
     "source": "acl_anthology",
     "title": "Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering",
     "url": "https://aclanthology.org/2025.acl-long.339/"
+  },
+  "title:unlockinghumanlikevisiblelogichowlogicdiagramsboostlogicreasoninginlargelanguagemodels": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Unlocking Human-Like Visible Logic: How Logic Diagrams Boost Logic Reasoning in Large Language Models?",
+    "url": "https://aclanthology.org/2026.findings-acl.1602/"
   },
   "title:unlockingimplicitexperiencesynthesizingtoolusetrajectoriesfromtext": {
     "doi": null,
@@ -31898,6 +32164,13 @@
     "title": "VEG: Verbal 𝜖 -greedy for Semantic Exploration in Multi-Turn RL Agents",
     "url": "https://aclanthology.org/2026.acl-industry.82/"
   },
+  "title:veloteststatisticalassessmentofrnavelocityembeddingsrevealsqualitydifferencesforreliabletrajectoryvisualizations": {
+    "doi": "https://doi.org/10.1038/s41467-026-78669-5",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "velotest: statistical assessment of RNA velocity embeddings reveals quality differences for reliable trajectory visualizations",
+    "url": "https://doi.org/10.1038/s41467-026-78669-5"
+  },
   "title:vengramtriggerindexedexternalmemoryformodulartexttoimagepersonalization": {
     "doi": null,
     "sent_date": "2026-10-01",
@@ -31960,6 +32233,13 @@
     "source": "arxiv",
     "title": "VGL-stGen: Learning a shared multimodal model for lung histology and spatial transcriptomics",
     "url": "http://arxiv.org/abs/2610.28266v1"
+  },
+  "title:vhseekbiologyfoundationmodelbasedvirusrepresentationsrevealingvirushostassociations": {
+    "doi": "https://doi.org/10.1038/s41467-026-79392-x",
+    "sent_date": "2026-11-22",
+    "source": "openalex",
+    "title": "VHSeek: biology foundation model-based virus representations revealing virus host associations",
+    "url": "https://doi.org/10.1038/s41467-026-79392-x"
   },
   "title:videodeltanetavideonativehybridattentionforlivestreamvideogeneration": {
     "doi": null,
@@ -32996,6 +33276,13 @@
     "source": "arxiv",
     "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
     "url": "http://arxiv.org/abs/2609.13356v1"
+  },
+  "title:zipagemaintainhighrequestconcurrencyforllmreasoningthroughcompressedpagedattention": {
+    "doi": null,
+    "sent_date": "2026-11-22",
+    "source": "acl_anthology",
+    "title": "Zipage: Maintain High Request Concurrency for LLM Reasoning through Compressed PagedAttention",
+    "url": "https://aclanthology.org/2026.findings-acl.381/"
   },
   "title:zofiazeroshotfakenewsdetectionwithentityguidedretrievalandmultillminteraction": {
     "doi": null,
