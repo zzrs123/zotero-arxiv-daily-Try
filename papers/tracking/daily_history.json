@@ -209,6 +209,13 @@
     "title": "Computational compressive imaging reconstruction with a simulated-annealing-based Ising solver",
     "url": "http://arxiv.org/abs/2610.19778v1"
   },
+  "title:contactharnessenablingvlmagentstoperformcontactrichmanipulation": {
+    "doi": null,
+    "sent_date": "2026-11-24",
+    "source": "arxiv",
+    "title": "Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation",
+    "url": "http://arxiv.org/abs/2611.29377v1"
+  },
   "title:continualskillbenchcanllmagentstrulyevolvetheircapabilities": {
     "doi": null,
     "sent_date": "2026-08-05",
@@ -1084,6 +1091,13 @@
     "title": "VA-Judger: Reward Modeling from Human Preference Feedback for Joint Video-Audio Generation",
     "url": "http://arxiv.org/abs/2608.18607v1"
   },
+  "title:verifiableonpolicydistillation": {
+    "doi": null,
+    "sent_date": "2026-11-24",
+    "source": "arxiv",
+    "title": "Verifiable On-Policy Distillation",
+    "url": "http://arxiv.org/abs/2611.30325v1"
+  },
   "title:vistaavisualharnessforreasoninginaninteractiveworld": {
     "doi": null,
     "sent_date": "2026-10-03",
@@ -1097,6 +1111,13 @@
     "source": "arxiv",
     "title": "Visualizing Three-Dimensional Quantum Fluctuations of Ground-State C$_3$H$_4$ via Deep Sub-Angstrom Coulomb Explosion Imaging",
     "url": "http://arxiv.org/abs/2610.10981v1"
+  },
+  "title:voiceagentsfromauditoryintelligencetoauditoryagency": {
+    "doi": null,
+    "sent_date": "2026-11-24",
+    "source": "arxiv",
+    "title": "Voice Agents: From Auditory Intelligence to Auditory Agency",
+    "url": "http://arxiv.org/abs/2611.29465v1"
   },
   "title:wamdiff2hierarchicalartodiffusiondistillationforhighlyefficientautonomousdrivingvla": {
     "doi": null,
@@ -1160,5 +1181,12 @@
     "source": "arxiv",
     "title": "ZeroGAR: Benchmarking the Adversarial Robustness of Zero-Shot Graph Models",
     "url": "http://arxiv.org/abs/2609.33314v1"
+  },
+  "title:ζ_0aframeworkforworldactionmodelswithjointsceneandbodyforesightinhumanoidcontrol": {
+    "doi": null,
+    "sent_date": "2026-11-24",
+    "source": "arxiv",
+    "title": "$ζ_0$: A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control",
+    "url": "http://arxiv.org/abs/2611.29277v1"
   }
 }
