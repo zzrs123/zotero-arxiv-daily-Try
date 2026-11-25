@@ -286,6 +286,13 @@
     "title": "Decoupling Semantics and Geometric Grounding: Spatial Visual Prompts for Language-Conditioned Imitation Learning",
     "url": "http://arxiv.org/abs/2606.25360v1"
   },
+  "title:diffanchoranchorspacediffusionformonocular3dhandposeestimation": {
+    "doi": null,
+    "sent_date": "2026-11-25",
+    "source": "arxiv",
+    "title": "DiffAnchor: Anchor-Space Diffusion for Monocular 3D Hand Pose Estimation",
+    "url": "http://arxiv.org/abs/2611.32513v1"
+  },
   "title:dkvlmgeometryaspositionforspatialreasoninginvisionlanguagemodels": {
     "doi": null,
     "sent_date": "2026-10-17",
