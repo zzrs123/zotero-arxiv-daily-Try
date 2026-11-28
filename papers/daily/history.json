@@ -195,6 +195,13 @@
     "title": "SparseKG‐Flow: A Virtual Cell Generative Architecture Unifying Structural Causal Models and Knowledge Graph Priors for Single‐Cell Drug Perturbation Prediction",
     "url": "https://doi.org/10.1002/advs.78922"
   },
+  "doi:10.1002/advs.78924": {
+    "doi": "https://doi.org/10.1002/advs.78924",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Timed Transcription Factor Programming Directs Human Pluripotent Stem Cell‐Derived Hematopoietic Progenitor Cells Toward Functional Natural Killer Cells",
+    "url": "https://doi.org/10.1002/advs.78924"
+  },
   "doi:10.1002/aisy.70486": {
     "doi": "10.1002/aisy.70486",
     "sent_date": "2026-09-16",
@@ -650,6 +657,13 @@
     "title": "A training-free, domain-extensible LLM-based approach for automated extraction of standardized preparation procedures",
     "url": "https://doi.org/10.1038/s41467-026-78605-7"
   },
+  "doi:10.1038/s41467-026-78606-6": {
+    "doi": "https://doi.org/10.1038/s41467-026-78606-6",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Iso-Seq enables discovery of novel isoform variants in human retina at single-cell resolution",
+    "url": "https://doi.org/10.1038/s41467-026-78606-6"
+  },
   "doi:10.1038/s41467-026-78646-y": {
     "doi": "https://doi.org/10.1038/s41467-026-78646-y",
     "sent_date": "2026-10-26",
@@ -691,6 +705,13 @@
     "source": "openalex",
     "title": "Emergence of diffusion models from associative memory through memorization and generalization",
     "url": "https://doi.org/10.1038/s41467-026-78727-y"
+  },
+  "doi:10.1038/s41467-026-78797-y": {
+    "doi": "https://doi.org/10.1038/s41467-026-78797-y",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Ultralow-volume shallow microwell-based collection and processing for scalable spatial proteome mapping of tissues",
+    "url": "https://doi.org/10.1038/s41467-026-78797-y"
   },
   "doi:10.1038/s41467-026-78807-z": {
     "doi": "https://doi.org/10.1038/s41467-026-78807-z",
@@ -776,6 +797,13 @@
     "title": "A subspecialty diagnostic system powered by self-supervised learning for cervical histopathology",
     "url": "https://doi.org/10.1038/s41467-026-79121-4"
   },
+  "doi:10.1038/s41467-026-79176-3": {
+    "doi": "https://doi.org/10.1038/s41467-026-79176-3",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Large language models' complicit responses to illicit instructions across socio-legal contexts",
+    "url": "https://doi.org/10.1038/s41467-026-79176-3"
+  },
   "doi:10.1038/s41467-026-79191-4": {
     "doi": "https://doi.org/10.1038/s41467-026-79191-4",
     "sent_date": "2026-11-01",
@@ -804,6 +832,13 @@
     "title": "Improving molecular property prediction with score-based diffusion models",
     "url": "https://doi.org/10.1038/s41467-026-79240-y"
   },
+  "doi:10.1038/s41467-026-79242-w": {
+    "doi": "https://doi.org/10.1038/s41467-026-79242-w",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "LitMOF: An LLM Multi-Agent for Literature-Validated Metal-Organic Frameworks Database Correction and Expansion",
+    "url": "https://doi.org/10.1038/s41467-026-79242-w"
+  },
   "doi:10.1038/s41467-026-79243-9": {
     "doi": "https://doi.org/10.1038/s41467-026-79243-9",
     "sent_date": "2026-11-23",
@@ -825,6 +860,13 @@
     "title": "VHSeek: biology foundation model-based virus representations revealing virus host associations",
     "url": "https://doi.org/10.1038/s41467-026-79392-x"
   },
+  "doi:10.1038/s41467-026-79414-8": {
+    "doi": "https://doi.org/10.1038/s41467-026-79414-8",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "A scalable pipeline for patient-matched pediatric solid tumor models and cell lines",
+    "url": "https://doi.org/10.1038/s41467-026-79414-8"
+  },
   "doi:10.1038/s41467-026-79450-4": {
     "doi": "https://doi.org/10.1038/s41467-026-79450-4",
     "sent_date": "2026-11-22",
@@ -838,6 +880,13 @@
     "source": "openalex",
     "title": "De novo identification of protein domains in cryo-electron tomography maps from AlphaFold2 models",
     "url": "https://doi.org/10.1038/s41467-026-79502-9"
+  },
+  "doi:10.1038/s41467-026-79690-4": {
+    "doi": "https://doi.org/10.1038/s41467-026-79690-4",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "A multimodal ultrasound foundation model for diagnosis of unexplained lymphadenopathy",
+    "url": "https://doi.org/10.1038/s41467-026-79690-4"
   },
   "doi:10.1038/s41588-026-02695-8": {
     "doi": "https://doi.org/10.1038/s41588-026-02695-8",
@@ -1056,6 +1105,13 @@
     "title": "FLASHS reveals multiscale spatial gene programs at atlas scale",
     "url": "https://doi.org/10.1038/s42003-026-11138-3"
   },
+  "doi:10.1038/s42003-026-11165-0": {
+    "doi": "https://doi.org/10.1038/s42003-026-11165-0",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Dynamic visualization of cell adhesion molecule interactions using reversible split-HaloTag labeling in living cells",
+    "url": "https://doi.org/10.1038/s42003-026-11165-0"
+  },
   "doi:10.1038/s42003-026-11268-8": {
     "doi": "https://doi.org/10.1038/s42003-026-11268-8",
     "sent_date": "2026-11-14",
@@ -1118,6 +1174,20 @@
     "source": "openalex",
     "title": "Multimodal cell foundation models require synergistic integration beyond alignment",
     "url": "https://doi.org/10.1038/s42256-026-01328-3"
+  },
+  "doi:10.1038/s42256-026-01332-7": {
+    "doi": "https://doi.org/10.1038/s42256-026-01332-7",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "A measurement noise scaling law for cellular representation learning",
+    "url": "https://doi.org/10.1038/s42256-026-01332-7"
+  },
+  "doi:10.1038/s42256-026-01334-5": {
+    "doi": "https://doi.org/10.1038/s42256-026-01334-5",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Accelerating inverse materials design using generative diffusion models with reinforcement learning",
+    "url": "https://doi.org/10.1038/s42256-026-01334-5"
   },
   "doi:10.1038/s43588-026-01030-9": {
     "doi": "https://doi.org/10.1038/s43588-026-01030-9",
@@ -1244,6 +1314,13 @@
     "source": "openalex",
     "title": "Q-Zoom: Query-Aware Adaptive Perception for Efficient Multimodal Large Language Models",
     "url": "https://doi.org/10.1109/tpami.2026.3756943"
+  },
+  "doi:10.1109/tpami.2026.3757178": {
+    "doi": "https://doi.org/10.1109/tpami.2026.3757178",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Efficient Indirect LLM Jailbreak by Leveraging Visual Modality",
+    "url": "https://doi.org/10.1109/tpami.2026.3757178"
   },
   "doi:10.1109/tpami.2026.3757200": {
     "doi": "https://doi.org/10.1109/tpami.2026.3757200",
@@ -1672,12 +1749,33 @@
     "title": "Adding layers of information to scRNA-seq data using pre-trained language models",
     "url": "https://doi.org/10.1186/s13059-026-04353-y"
   },
+  "doi:10.1186/s13059-026-04356-9": {
+    "doi": "https://doi.org/10.1186/s13059-026-04356-9",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Unsupervised multi-omics analysis reveals potential interactions and candidate features for phenotype classification in equine pituitary pars intermedia dysfunction",
+    "url": "https://doi.org/10.1186/s13059-026-04356-9"
+  },
   "doi:10.1186/s13059-026-04357-8": {
     "doi": "https://doi.org/10.1186/s13059-026-04357-8",
     "sent_date": "2026-11-26",
     "source": "openalex",
     "title": "AURA decomposes spatial gene expression to reveal composition-dependent regulation",
     "url": "https://doi.org/10.1186/s13059-026-04357-8"
+  },
+  "doi:10.1186/s13059-026-04358-7": {
+    "doi": "https://doi.org/10.1186/s13059-026-04358-7",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Benchmarking of haplotype- and clone-specific detection callers of complex copy number alterations in single-cell DNA sequencing with HCDSIM and HCBench",
+    "url": "https://doi.org/10.1186/s13059-026-04358-7"
+  },
+  "doi:10.1186/s13059-026-04367-6": {
+    "doi": "https://doi.org/10.1186/s13059-026-04367-6",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Single-nucleus proteomics reveals proteins regulating LPS-induced nucleocytoplasmic transport in macrophages",
+    "url": "https://doi.org/10.1186/s13059-026-04367-6"
   },
   "doi:10.1186/s13073-026-01688-w": {
     "doi": "https://doi.org/10.1186/s13073-026-01688-w",
@@ -2799,6 +2897,13 @@
     "title": "Accelerating high-throughput catalyst screening by direct generation of equilibrium adsorption structures",
     "url": "https://doi.org/10.1038/s41467-026-79243-9"
   },
+  "title:acceleratinginversematerialsdesignusinggenerativediffusionmodelswithreinforcementlearning": {
+    "doi": "https://doi.org/10.1038/s42256-026-01334-5",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Accelerating inverse materials design using generative diffusion models with reinforcement learning",
+    "url": "https://doi.org/10.1038/s42256-026-01334-5"
+  },
   "title:acceleratinglargelanguagemodelpretrainingvialfrpedagogylearnfocusandreview": {
     "doi": null,
     "sent_date": "2026-06-23",
@@ -3884,6 +3989,13 @@
     "title": "Ambient Discrete Diffusion: Using the Wrong Data at the Right Time for Data Efficient Learning",
     "url": "http://arxiv.org/abs/2610.12340v1"
   },
+  "title:ameasurementnoisescalinglawforcellularrepresentationlearning": {
+    "doi": "https://doi.org/10.1038/s42256-026-01332-7",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "A measurement noise scaling law for cellular representation learning",
+    "url": "https://doi.org/10.1038/s42256-026-01332-7"
+  },
   "title:amismatchedbenchmarkforscientificnaturallanguageinference": {
     "doi": null,
     "sent_date": "2026-08-24",
@@ -3974,6 +4086,13 @@
     "source": "arxiv",
     "title": "A multimodal foundation model for tissue proteomics and morphology in cancer",
     "url": "http://arxiv.org/abs/2611.31451v1"
+  },
+  "title:amultimodalultrasoundfoundationmodelfordiagnosisofunexplainedlymphadenopathy": {
+    "doi": "https://doi.org/10.1038/s41467-026-79690-4",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "A multimodal ultrasound foundation model for diagnosis of unexplained lymphadenopathy",
+    "url": "https://doi.org/10.1038/s41467-026-79690-4"
   },
   "title:amutualinformationperspectiveonknowledgegraphembedding": {
     "doi": null,
@@ -4499,6 +4618,13 @@
     "source": "arxiv",
     "title": "Artificial Intelligence-Assisted Systems Biology Reconstruction of Diabetic Bone Marrow Dysfunction",
     "url": "http://arxiv.org/abs/2610.13721v1"
+  },
+  "title:ascalablepipelineforpatientmatchedpediatricsolidtumormodelsandcelllines": {
+    "doi": "https://doi.org/10.1038/s41467-026-79414-8",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "A scalable pipeline for patient-matched pediatric solid tumor models and cell lines",
+    "url": "https://doi.org/10.1038/s41467-026-79414-8"
   },
   "title:ascalablevectorgraphicslatentspace": {
     "doi": null,
@@ -5395,6 +5521,13 @@
     "source": "acl_anthology",
     "title": "Benchmarking LLM’s Capability in Reasoning over Conflicting Web References",
     "url": "https://aclanthology.org/2026.acl-long.11/"
+  },
+  "title:benchmarkingofhaplotypeandclonespecificdetectioncallersofcomplexcopynumberalterationsinsinglecelldnasequencingwithhcdsimandhcbench": {
+    "doi": "https://doi.org/10.1186/s13059-026-04358-7",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Benchmarking of haplotype- and clone-specific detection callers of complex copy number alterations in single-cell DNA sequencing with HCDSIM and HCBench",
+    "url": "https://doi.org/10.1186/s13059-026-04358-7"
   },
   "title:benchmarkingsegmentationmethodsforspatialtranscriptomics": {
     "doi": "https://doi.org/10.1038/s41592-026-03272-x",
@@ -9162,6 +9295,13 @@
     "title": "Cracking Factual Knowledge: A Comprehensive Analysis of Degenerate Knowledge Neurons in Large Language Models",
     "url": "https://aclanthology.org/2025.acl-long.505/"
   },
+  "title:craftgraffitiexploringhumanidentitywithcustomgraffitiartviafacialpreservingdiffusionmodels": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "CraftGraffiti: Exploring Human Identity with Custom Graffiti Art via Facial-Preserving Diffusion Models",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/919c7c8884daf4268bfe108c31d19784-Abstract-Creative_AI_Track.html"
+  },
   "title:craftqaacodedrivenadaptiveframeworkforcomplexstructureddatareasoning": {
     "doi": null,
     "sent_date": "2026-07-24",
@@ -11500,6 +11640,13 @@
     "title": "Dynamic Tool Dependency Retrieval for Lightweight Function Calling",
     "url": "https://aclanthology.org/2026.findings-acl.1680/"
   },
+  "title:dynamicvisualizationofcelladhesionmoleculeinteractionsusingreversiblesplithalotaglabelinginlivingcells": {
+    "doi": "https://doi.org/10.1038/s42003-026-11165-0",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Dynamic visualization of cell adhesion molecule interactions using reversible split-HaloTag labeling in living cells",
+    "url": "https://doi.org/10.1038/s42003-026-11165-0"
+  },
   "title:e2egmnerendtoendgenerativegroundedmultimodalnamedentityrecognition": {
     "doi": null,
     "sent_date": "2026-06-28",
@@ -11695,6 +11842,13 @@
     "source": "acl_anthology",
     "title": "Efficient Hallucination Detection in Automatic Code Generation",
     "url": "https://aclanthology.org/2026.findings-acl.2143/"
+  },
+  "title:efficientindirectllmjailbreakbyleveragingvisualmodality": {
+    "doi": "https://doi.org/10.1109/tpami.2026.3757178",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Efficient Indirect LLM Jailbreak by Leveraging Visual Modality",
+    "url": "https://doi.org/10.1109/tpami.2026.3757178"
   },
   "title:efficientkldivergenceestimationviatruncatedtopkintegrationforlargelanguagemodels": {
     "doi": null,
@@ -11996,6 +12150,13 @@
     "source": "arxiv",
     "title": "Encoding and Propagation of Grammatical Number in Large Language Models",
     "url": "http://arxiv.org/abs/2611.07283v1"
+  },
+  "title:encodingvaluesinjectingmoralityintomachinesviapromptconditionedmoralframes": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "Encoding Values: Injecting Morality into Machines via Prompt-Conditioned Moral Frames",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/c8adc62d2e6cede16ed806f58a6cfc16-Abstract-Creative_AI_Track.html"
   },
   "title:endovlmanendoscopyvisionlanguagepretrainingmodelviaanatomyguidedsparsityandprogressivealignment": {
     "doi": null,
@@ -17660,6 +17821,13 @@
     "title": "ISO-RAG: Isoperimetric Noise Control for Retrieval-Augmented Generation",
     "url": "http://arxiv.org/abs/2609.00513v1"
   },
+  "title:isoseqenablesdiscoveryofnovelisoformvariantsinhumanretinaatsinglecellresolution": {
+    "doi": "https://doi.org/10.1038/s41467-026-78606-6",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Iso-Seq enables discovery of novel isoform variants in human retina at single-cell resolution",
+    "url": "https://doi.org/10.1038/s41467-026-78606-6"
+  },
   "title:isrealworldtrainingdatanecessaryforgeneralistgraphanomalydetection": {
     "doi": null,
     "sent_date": "2026-10-10",
@@ -18318,6 +18486,13 @@
     "title": "Large Language Models Are Still Misled by Simple Bias Ensembles",
     "url": "https://aclanthology.org/2026.findings-acl.971/"
   },
+  "title:largelanguagemodelscomplicitresponsestoillicitinstructionsacrosssociolegalcontexts": {
+    "doi": "https://doi.org/10.1038/s41467-026-79176-3",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Large language models' complicit responses to illicit instructions across socio-legal contexts",
+    "url": "https://doi.org/10.1038/s41467-026-79176-3"
+  },
   "title:largescalediversesynthesisformidtraining": {
     "doi": null,
     "sent_date": "2026-11-02",
@@ -18331,6 +18506,13 @@
     "source": "acl_anthology",
     "title": "Large-Scale Multimodal Knowledge Graph about Classical Chinese Poetry: Fine-grained Method and Comprehensive Evaluation",
     "url": "https://aclanthology.org/2026.findings-acl.720/"
+  },
+  "title:largescaletrainingdataattributionformusicgenerativemodelsviaunlearning": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "Large-Scale Training Data Attribution for Music Generative Models via Unlearning",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5392d643eccfce4025f6dd567af05a16-Abstract-Creative_AI_Track.html"
   },
   "title:laribornacodesignviageometrylatentflowmatching": {
     "doi": null,
@@ -19220,6 +19402,13 @@
     "source": "arxiv",
     "title": "LiteTopK: Exploiting the Curse of Dimensionality for a Fused Indexer-TopK Kernel in Long-Context Sparse Attention",
     "url": "http://arxiv.org/abs/2607.11976v1"
+  },
+  "title:litmofanllmmultiagentforliteraturevalidatedmetalorganicframeworksdatabasecorrectionandexpansion": {
+    "doi": "https://doi.org/10.1038/s41467-026-79242-w",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "LitMOF: An LLM Multi-Agent for Literature-Validated Metal-Organic Frameworks Database Correction and Expansion",
+    "url": "https://doi.org/10.1038/s41467-026-79242-w"
   },
   "title:litvistaabenchmarkfornarrativeorchestrationinliterarytext": {
     "doi": null,
@@ -20459,6 +20648,13 @@
     "source": "acl_anthology",
     "title": "MCLE-Mol: Empowering LLM with Molecular Comprehension and Low-Cost Continual Evolution for Interpretable Property Prediction",
     "url": "https://aclanthology.org/2026.findings-acl.262/"
+  },
+  "title:mcpdrivenparametricmodelingintegratingllmagentsintoarchitecturalandlandscapedesignworkflows": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "MCP-Driven Parametric Modeling: Integrating LLM Agents into Architectural and Landscape Design Workflows",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/245a7772c1c6725c1e439d7f789b48c2-Abstract-Creative_AI_Track.html"
   },
   "title:mcpflowfacilitatingllmagentstomasterrealworlddiverseandscalingmcptools": {
     "doi": null,
@@ -24737,6 +24933,13 @@
     "title": "Progressive Re-ranking for Multimodal Retrieval-Augmented Generation via Curriculum Learning",
     "url": "https://aclanthology.org/2026.findings-acl.2045/"
   },
+  "title:progressstructuredmusicgenerationviagraphdiffusionandhierarchicalmusicanalysis": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/d9dbd63fac1856eb10d14e22d6898205-Abstract-Creative_AI_Track.html"
+  },
   "title:projectautoworldtowardsautomatedbenchmarkingofneuralrelationalreasoners": {
     "doi": null,
     "sent_date": "2026-06-25",
@@ -28216,6 +28419,13 @@
     "title": "Semantic Density Does Not Predict Agent-Memory Collapse",
     "url": "http://arxiv.org/abs/2611.33184v1"
   },
+  "title:semanticglitchagencyandartistryinanautonomouspixelcloud": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "Semantic Glitch: Agency and Artistry in an Autonomous Pixel Cloud",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/baa91fd056ba7d6061112b48c012063f-Abstract-Creative_AI_Track.html"
+  },
   "title:semanticlatentalignmentforflowmatchingwithinvertiblebilipschitzadapters": {
     "doi": null,
     "sent_date": "2026-10-17",
@@ -28313,6 +28523,13 @@
     "source": "arxiv",
     "title": "Sensitivity-Aware Thresholding and Token Routing for Activation Sparsification in Large Language Models",
     "url": "http://arxiv.org/abs/2607.08991v1"
+  },
+  "title:sensoriumarcaiagentsystemforoceanicdataexplorationandinteractiveecoart": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "Sensorium Arc: AI Agent System for Oceanic Data Exploration and Interactive Eco-Art",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/e37ba633f46635915994bd99db474305-Abstract-Creative_AI_Track.html"
   },
   "title:sentencesplitteruncoveringlatentfactualstructureforselfsupervisedlearning": {
     "doi": null,
@@ -28698,6 +28915,13 @@
     "source": "openalex",
     "title": "Single-cell machine learning uncovers genetically anchored, cell-type specific programs of Alzheimer’s disease",
     "url": "https://doi.org/10.1038/s41467-026-77651-5"
+  },
+  "title:singlenucleusproteomicsrevealsproteinsregulatinglpsinducednucleocytoplasmictransportinmacrophages": {
+    "doi": "https://doi.org/10.1186/s13059-026-04367-6",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Single-nucleus proteomics reveals proteins regulating LPS-induced nucleocytoplasmic transport in macrophages",
+    "url": "https://doi.org/10.1186/s13059-026-04367-6"
   },
   "title:sinter3dcontinuous3dreconstructionofspatialtranscriptomicsviaimplicitneuralrepresentations": {
     "doi": "https://doi.org/10.1186/s13059-026-04160-5",
@@ -31478,6 +31702,13 @@
     "title": "Time Course MechInterp: Analyzing the Evolution of Components and Knowledge in Large Language Models",
     "url": "https://aclanthology.org/2025.findings-acl.654/"
   },
+  "title:timedtranscriptionfactorprogrammingdirectshumanpluripotentstemcellderivedhematopoieticprogenitorcellstowardfunctionalnaturalkillercells": {
+    "doi": "https://doi.org/10.1002/advs.78924",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Timed Transcription Factor Programming Directs Human Pluripotent Stem Cell‐Derived Hematopoietic Progenitor Cells Toward Functional Natural Killer Cells",
+    "url": "https://doi.org/10.1002/advs.78924"
+  },
   "title:timemtemporalhierarchicalmemoryconsolidationforlonghorizonconversationalagents": {
     "doi": null,
     "sent_date": "2026-09-15",
@@ -32647,6 +32878,13 @@
     "title": "ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling",
     "url": "http://arxiv.org/abs/2610.30705v1"
   },
+  "title:ultralowvolumeshallowmicrowellbasedcollectionandprocessingforscalablespatialproteomemappingoftissues": {
+    "doi": "https://doi.org/10.1038/s41467-026-78797-y",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Ultralow-volume shallow microwell-based collection and processing for scalable spatial proteome mapping of tissues",
+    "url": "https://doi.org/10.1038/s41467-026-78797-y"
+  },
   "title:umpireunveilingllmgeneratedpostsviaredundantexpressions": {
     "doi": null,
     "sent_date": "2026-06-26",
@@ -33038,6 +33276,13 @@
     "source": "arxiv",
     "title": "Unsupervised Causal Abstractions Discovery",
     "url": "http://arxiv.org/abs/2606.19594v1"
+  },
+  "title:unsupervisedmultiomicsanalysisrevealspotentialinteractionsandcandidatefeaturesforphenotypeclassificationinequinepituitaryparsintermediadysfunction": {
+    "doi": "https://doi.org/10.1186/s13059-026-04356-9",
+    "sent_date": "2026-11-28",
+    "source": "openalex",
+    "title": "Unsupervised multi-omics analysis reveals potential interactions and candidate features for phenotype classification in equine pituitary pars intermedia dysfunction",
+    "url": "https://doi.org/10.1186/s13059-026-04356-9"
   },
   "title:unveilinginherentvisualgroundinginmultimodalllmsfortextrichimages": {
     "doi": null,
@@ -34228,6 +34473,13 @@
     "source": "arxiv",
     "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
     "url": "http://arxiv.org/abs/2610.12417v1"
+  },
+  "title:writinginsymbiosismappinghumancreativeagencyintheaiera": {
+    "doi": null,
+    "sent_date": "2026-11-28",
+    "source": "neurips",
+    "title": "Writing in Symbiosis: Mapping Human Creative Agency in the AI Era",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/615229550c97d1c4d006a4bf6b54590e-Abstract-Creative_AI_Track.html"
   },
   "title:x1learningtothinkadaptivelyacrosslanguagesandcultures": {
     "doi": null,
